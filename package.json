@@ -9,12 +9,7 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "api": "backend/.venv/bin/python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000",
-    "test": "backend/.venv/bin/python -m pytest -q backend",
-    "deploy:check": "python3 scripts/antideploy.py check",
-    "deploy:secrets": "python3 scripts/antideploy.py secrets",
-    "deploy": "python3 scripts/antideploy.py deploy",
-    "deploy:status": "python3 scripts/antideploy.py status",
-    "deploy:logs": "python3 scripts/antideploy.py logs"
+    "test": "backend/.venv/bin/python -m pytest -q backend"
   },
   "dependencies": {
     "next": "16.3.5",

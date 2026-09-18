@@ -1,0 +1,4 @@
+# Installed by Vercel for the Python function in api/index.py.
+# Local development uses backend/requirements-dev.txt (adds uvicorn and pytest).
+fastapi>=0.110,<1
+httpx>=0.27,<1

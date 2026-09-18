@@ -41,13 +41,20 @@ class LlmClient:
                  transport: Optional[httpx.BaseTransport] = None) -> None:
         self.on_event = on_event
         self.transport = transport
+        self.deadline: Optional[float] = None  # epoch seconds; set for time-boxed (serverless) runs
         self._sleep = time.sleep  # replaced in tests
+
+    def _time_left(self) -> Optional[float]:
+        return None if self.deadline is None else self.deadline - time.time()
 
     def complete(self, stage: str, description: str, prompt: str, validate: Validator, temperature: float = 0) -> Any:
         provider = config.llm_provider()
         if self.on_event:  # every call is visible in the research trace
             self.on_event({"type": "llm", "stage": stage, "model": "demo" if provider == "demo" else config.llm_model(),
                            "description": description})
+        left = self._time_left()
+        if left is not None and left < 20:
+            raise LlmError("time budget used up; skipping the %s step" % stage)
         if provider == "demo":
             raise LlmError('demo provider has no recorded answer for stage "%s". Set LLM_PROVIDER to gemini or openai.' % stage)
 
@@ -108,6 +115,9 @@ class LlmClient:
                 wait = float(res.headers.get("retry-after", ""))
             except ValueError:
                 wait = 5.0 * (attempt + 1)
+            left = self._time_left()
+            if left is not None and min(wait, MAX_RATE_LIMIT_WAIT_S) > left - 20:
+                raise LlmError("rate limited by the provider with too little time left to wait")
             if self.on_event:
                 self.on_event({"type": "stage", "stage": "llm", "level": "warn",
                                "message": "Provider rate limit hit; waiting %.0fs before retrying" % min(wait, MAX_RATE_LIMIT_WAIT_S)})

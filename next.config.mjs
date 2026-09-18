@@ -1,13 +1,15 @@
-// The backend is the Python API in backend/. Next.js is frontend only: it proxies
-// /api/* so the browser stays same-origin and never learns the API's address.
+// Next.js is frontend only. Every /api/* request goes to the Python API (backend/app):
+//   - on Vercel, to the Python function in api/index.py
+//   - anywhere else, to a Python server (npm run api), whose address API_URL can override
+const onVercel = Boolean(process.env.VERCEL);
 const API_URL = process.env.API_URL ?? "http://127.0.0.1:8000";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // response compression buffers chunks and would stall the SSE research trace
+  // response compression buffers chunks and would stall the streamed research log
   compress: false,
   async rewrites() {
-    return [{ source: "/api/:path*", destination: `${API_URL}/api/:path*` }];
+    return [{ source: "/api/:path*", destination: onVercel && !process.env.API_URL ? "/api/" : `${API_URL}/api/:path*` }];
   },
 };
 

@@ -179,3 +179,31 @@ def test_pipeline_end_to_end(store, monkeypatch):
     assert events[-1]["type"] == "done" and any(e["type"] == "llm" for e in events)
     dump = json.dumps(store.mem)
     assert "serp-secret" not in dump and "llm-secret" not in dump
+
+
+def test_time_boxed_run_wraps_up_instead_of_dying(store, monkeypatch):
+    """Serverless runs have a deadline: optional LLM steps are skipped and the run still completes."""
+    monkeypatch.setenv("SERPAPI_MODE", "live")
+    monkeypatch.setenv("SERPAPI_API_KEY", "k")
+    monkeypatch.setenv("LLM_PROVIDER", "gemini")
+    monkeypatch.setenv("LLM_API_KEY", "k")
+    state = {"deadline_hit": False}
+    llm = LlmClient()
+
+    def llm_handler(request):
+        prompt = json.loads(request.content)["contents"][0]["parts"][0]["text"]
+        if "list existing products" in prompt:  # time runs out once the core findings exist
+            llm.deadline = time.time() - 1
+            state["deadline_hit"] = True
+        return httpx.Response(200, json={"candidates": [{"content": {"parts": [{"text": json.dumps(llm_answer(prompt))}]}}]})
+
+    llm.transport = httpx.MockTransport(llm_handler)
+    store.create_run(make_run(id="run_boxed", question="meal kits for bachelors", region="us"))
+    run_pipeline(store, "run_boxed", "meal kits for bachelors", "us",
+                 serp=SerpApiService(store, transport=httpx.MockTransport(lambda r: httpx.Response(200, json=serp_body(dict(r.url.params))))),
+                 llm=llm, deadline=time.time() + 600)
+    v = store.view("run_boxed")
+    assert state["deadline_hit"] and v["run"]["status"] == "complete" and v["run"]["error"] is None
+    assert len(v["signals"]) == 3 and len(v["clusters"]) == 2   # the core findings survived
+    assert v["gaps"] == [] and v["opportunities"] == []         # the steps after the deadline were skipped
+    assert any("skipped" in (e.get("message") or "").lower() for e in store.events_for("run_boxed"))

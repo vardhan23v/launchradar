@@ -169,3 +169,42 @@ def test_quota_is_refused_up_front_with_a_wait_time(store, monkeypatch):
     assert "hourly" in client.get("/api/runs").json()["pipeline"]["quota"]
     # the recorded example costs nothing, so it still works
     assert client.post("/api/runs", json={"demo": "ai-tools-college-india"}).status_code == 201
+
+
+def _events(body):
+    return [json.loads(line[5:]) for line in body.splitlines() if line.startswith("data:")]
+
+
+def test_single_request_run_streams_results_and_needs_no_server_memory(store, monkeypatch):
+    monkeypatch.setenv("LAUNCHRADAR_INLINE", "1")
+    main.set_store(store)
+    client = TestClient(main.app)
+    assert client.get("/api/runs").json()["pipeline"]["inline"] is True
+
+    res = client.post("/api/runs/live", json={"demo": "ai-tools-college-india"})
+    assert res.status_code == 200 and res.headers["content-type"].startswith("text/event-stream")
+    events = _events(res.text)
+    kinds = [e["type"] for e in events]
+    assert kinds[0] == "view" and kinds[-1] == "done" and kinds[-2] == "view"  # results arrive before `done`
+    final = events[-2]["view"]
+    assert final["run"]["status"] == "complete" and len(final["opportunities"]) == 2 and len(final["evidence"]) == 34
+    assert all("__rows" not in c["params"] for c in final["searchCalls"])
+    assert "search_call" in kinds and "stage" in kinds
+
+    # the browser can export what it holds, with no run on the server
+    fresh = TestClient(main.app)
+    main.set_store(type(store)(store.path.parent / "other.json"))
+    md = fresh.post("/api/export", json=final)
+    assert md.status_code == 200 and "## Opportunities (ranked)" in md.text
+    assert fresh.post("/api/export", json={"nope": 1}).status_code == 400
+
+
+def test_single_request_run_refuses_before_streaming(store, monkeypatch):
+    monkeypatch.setenv("LAUNCHRADAR_INLINE", "1")
+    main.set_store(store)
+    client = TestClient(main.app)
+    res = client.post("/api/runs/live", json={"question": "meal kits"})  # no LLM configured
+    assert res.status_code == 400 and "LLM_PROVIDER" in res.json()["error"] and "Vercel" in res.json()["error"]
+    assert client.post("/api/runs/live", json={}).status_code == 400
+    assert client.post("/api/runs/live", json={"demo": "../x"}).status_code == 404
+    assert store.list_runs() == []

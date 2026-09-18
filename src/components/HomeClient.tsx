@@ -3,13 +3,14 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { Run } from "@/lib/types";
+import { listSavedRuns, setPending, type PendingRun } from "@/lib/history";
 import { Lines, StatusText, Wordmark } from "@/components/ui";
 
 interface HomeData {
   runs: Run[];
   demos: { slug: string; label: string; question: string; region: string; searches: number }[];
   budget?: { run: number; monthUsed: number; monthLimit: number };
-  pipeline?: { mode: string; ready: boolean; reason: string | null; quota?: string | null };
+  pipeline?: { mode: string; ready: boolean; reason: string | null; quota?: string | null; inline?: boolean };
 }
 
 const API_DOWN = "The API is not reachable. Start it with: npm run api";
@@ -25,6 +26,13 @@ export default function HomeClient() {
   const [data, setData] = useState<HomeData | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [saved, setSaved] = useState<Run[]>([]);
+
+  // runs kept in this browser (the durable copy when the host is serverless)
+  useEffect(() => {
+    const id = window.setTimeout(() => setSaved(listSavedRuns()), 0);
+    return () => window.clearTimeout(id);
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -43,9 +51,15 @@ export default function HomeClient() {
     };
   }, []);
 
-  async function start(payload: Record<string, string>) {
+  async function start(payload: PendingRun) {
     setError(null);
     setBusy(true);
+    if (data?.pipeline?.inline) {
+      // serverless host: the run page performs the run inside one streaming request
+      setPending(payload);
+      router.push("/runs/live");
+      return;
+    }
     try {
       const res = await fetch("/api/runs", {
         method: "POST",
@@ -156,7 +170,7 @@ export default function HomeClient() {
               <span className="font-mono text-xs tabular-nums text-muted">{d.searches} searches</span>
             </button>
           ))}
-          {(data?.runs ?? []).slice(0, 8).map((r) => (
+          {[...saved, ...(data?.runs ?? []).filter((r) => !saved.some((x) => x.id === r.id))].slice(0, 8).map((r) => (
             <button
               key={r.id}
               onClick={() => router.push(`/runs/${r.id}`)}

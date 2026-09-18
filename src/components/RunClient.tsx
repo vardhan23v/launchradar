@@ -4,6 +4,8 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Cluster, Evidence, Gap, Opportunity, RunView, Signal, StepEvent } from "@/lib/types";
 import { citeGroups } from "@/lib/evidence";
+import { loadSavedRun } from "@/lib/history";
+import { ensureLiveRun, subscribeLive } from "@/lib/live";
 import { GapText, Lines, Note, ScoreTable, StatusText, Tabs, Wordmark, confidenceWord, engineLabel } from "@/components/ui";
 
 type Cite = (ids: string[], quote?: string) => void;
@@ -440,18 +442,34 @@ export default function RunClient({ runId }: { runId: string }) {
   const [drawer, setDrawer] = useState<{ ids: string[]; quote?: string } | null>(null);
   const [budget, setBudget] = useState<{ monthUsed: number; monthLimit: number } | null>(null);
 
+  const [startError, setStartError] = useState<string | null>(null);
+  const isLive = runId === "live";
+
   const fetchView = useCallback(async () => {
     const res = await fetch(`/api/runs/${runId}`);
-    if (!res.ok) {
-      setNotFound(true);
-      return null;
-    }
+    if (!res.ok) return null;
     const v = (await res.json()) as RunView;
     setView(v);
     return v;
   }, [runId]);
 
+  // (1) a run streamed over a single request — the serverless path
   useEffect(() => {
+    if (!isLive) return;
+    if (!ensureLiveRun()) {
+      router.replace("/");
+      return;
+    }
+    return subscribeLive((s) => {
+      if (s.view) setView(s.view);
+      setEvents(s.events);
+      if (s.error) setStartError(s.error);
+    });
+  }, [isLive, router]);
+
+  // (2) a run the server knows, or (3) one saved in this browser
+  useEffect(() => {
+    if (isLive) return;
     let alive = true;
     let es: EventSource | null = null;
     let poll: number | undefined;
@@ -464,7 +482,18 @@ export default function RunClient({ runId }: { runId: string }) {
 
     void (async () => {
       const v = await fetchView();
-      if (!alive || !v) return;
+      if (!alive) return;
+      if (!v) {
+        // a serverless host forgets runs; this browser keeps the ones it made
+        const saved = loadSavedRun(runId);
+        if (saved) {
+          setView(saved.view);
+          setEvents(saved.events);
+        } else {
+          setNotFound(true);
+        }
+        return;
+      }
       // Always attach: a finished run replays its persisted log instantly. Events are
       // stored by server index, so reconnects and double-invoked effects never duplicate.
       es = new EventSource(`/api/runs/${runId}/stream`);
@@ -480,6 +509,10 @@ export default function RunClient({ runId }: { runId: string }) {
         });
         if (e.type === "status" || e.type === "done") void fetchView();
         if (e.type === "done") stop();
+      };
+      es.onerror = () => {
+        // the run vanished from the server mid-stream (function recycled): stop retrying
+        if (es?.readyState === EventSource.CLOSED) stop();
       };
       if (v.run.status === "running") {
         poll = window.setInterval(() => {
@@ -497,7 +530,7 @@ export default function RunClient({ runId }: { runId: string }) {
       alive = false;
       stop();
     };
-  }, [runId, fetchView]);
+  }, [runId, isLive, fetchView]);
 
   const status = view?.run.status;
   useEffect(() => {
@@ -507,6 +540,19 @@ export default function RunClient({ runId }: { runId: string }) {
       .catch(() => undefined);
   }, [status]);
 
+  // The browser sends the run it holds, so export works even when the server has forgotten it.
+  const exportMarkdown = useCallback(async () => {
+    if (!view) return;
+    const res = await fetch("/api/export", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(view) });
+    if (!res.ok) return;
+    const url = URL.createObjectURL(new Blob([await res.text()], { type: "text/markdown" }));
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `launchradar-${view.run.id}.md`;
+    link.click();
+    URL.revokeObjectURL(url);
+  }, [view]);
+
   const closeDrawer = useCallback(() => setDrawer(null), []);
   const onCite: Cite = useCallback((ids, quote) => setDrawer({ ids, quote }), []);
 
@@ -515,6 +561,15 @@ export default function RunClient({ runId }: { runId: string }) {
       <main className="mx-auto w-full max-w-[880px] flex-1 px-6 pt-24">
         <p className="font-serif text-3xl">There is no run at this address.</p>
         <button onClick={() => router.push("/")} className="mt-4 text-sm font-semibold underline decoration-border underline-offset-4 hover:text-accent">Back to the start</button>
+      </main>
+    );
+  }
+  if (startError && !view) {
+    return (
+      <main className="mx-auto w-full max-w-[880px] flex-1 px-6 pt-24">
+        <p className="font-serif text-3xl">This run could not start.</p>
+        <p className="mt-4 max-w-[62ch] border-l-2 border-danger pl-4 text-sm text-danger">{startError}</p>
+        <button onClick={() => router.push("/")} className="mt-6 text-sm font-semibold underline decoration-border underline-offset-4 hover:text-accent">Back to the start</button>
       </main>
     );
   }
@@ -534,9 +589,9 @@ export default function RunClient({ runId }: { runId: string }) {
           <span className="hidden sm:inline" title="Searches spent by this run, and billed searches this month">
             {run.searchesUsed}/{run.budget} this run{budget ? ` · ${budget.monthUsed}/${budget.monthLimit} this month` : ""}
           </span>
-          <a href={`/api/runs/${runId}/export`} className="font-sans text-sm text-ink underline decoration-border underline-offset-4 hover:text-accent hover:decoration-accent">
+          <button onClick={() => void exportMarkdown()} className="font-sans text-sm text-ink underline decoration-border underline-offset-4 hover:text-accent hover:decoration-accent">
             Export<span className="hidden sm:inline"> as Markdown</span>
-          </a>
+          </button>
         </div>
       </header>
 

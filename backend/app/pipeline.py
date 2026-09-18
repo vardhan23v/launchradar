@@ -58,13 +58,18 @@ GAP_STATUSES = {"open", "partially-served", "served"}
 
 class Ctx:
     def __init__(self, store: Store, run_id: str, question: str, region: str,
-                 serp: Optional[SerpApiService] = None, llm: Optional[LlmClient] = None) -> None:
+                 serp: Optional[SerpApiService] = None, llm: Optional[LlmClient] = None,
+                 deadline: Optional[float] = None) -> None:
         self.store, self.run_id, self.question, self.region = store, run_id, question, region
+        self.deadline = deadline
+        # a time-boxed run trims the optional work so the essential stages fit
+        self.light = deadline is not None
         emit = lambda e: store.append_events(run_id, [e])  # noqa: E731
         self.serp = serp or SerpApiService(store, emit)
         self.llm = llm or LlmClient(emit)
         self.serp.on_event = self.serp.on_event or emit
         self.llm.on_event = self.llm.on_event or emit
+        self.llm.deadline = deadline
         self.order = 0
         # searches each stage may still spend; the sum equals the run budget
         self.allowance = {"discovery": config.DISCOVERY_SHARE, "trends": config.TRENDS_SHARE,
@@ -126,8 +131,9 @@ def _need(d: Any, key: str) -> Any:
 
 
 def run_pipeline(store: Store, run_id: str, question: str, region: str,
-                 serp: Optional[SerpApiService] = None, llm: Optional[LlmClient] = None) -> None:
-    ctx = Ctx(store, run_id, question, region, serp, llm)
+                 serp: Optional[SerpApiService] = None, llm: Optional[LlmClient] = None,
+                 deadline: Optional[float] = None) -> None:
+    ctx = Ctx(store, run_id, question, region, serp, llm, deadline)
     started = time.time()
 
     def finish(status: str) -> None:
@@ -172,7 +178,8 @@ def run_pipeline(store: Store, run_id: str, question: str, region: str,
             raise RuntimeError("Discovery yielded only %d evidence rows (< %d). Try a broader question."
                                % (len(discovered), config.MIN_DISCOVERY_EVIDENCE))
 
-        signals = _extract_signals(ctx, select_for_extraction(discovered))
+        rows = select_for_extraction(discovered)
+        signals = _extract_signals(ctx, rows[:80] if ctx.light else rows)
         if not signals:
             raise RuntimeError("No signal survived the citation validator. Try a broader question.")
         store.add_signals(signals)
@@ -182,7 +189,12 @@ def run_pipeline(store: Store, run_id: str, question: str, region: str,
         _trends(ctx, clusters, signals)
         competitors = _competitors(ctx, clusters, signals)
         store.add_competitors(competitors)
-        gaps = _gap_hypothesis(ctx, clusters, signals, competitors)
+        try:
+            gaps = _gap_hypothesis(ctx, clusters, signals, competitors)
+        except Exception as err:
+            # the problems and competitors found so far are still worth showing
+            ctx.stage("gaps", "Gap analysis skipped: %s" % str(err)[:160], "warn")
+            gaps = []
         store.set_gaps(run_id, gaps)
         _verify(ctx, gaps, clusters, signals)
         _opportunities(ctx, clusters, signals, competitors, gaps)
@@ -400,7 +412,7 @@ def _competitors(ctx: Ctx, clusters: List[dict], signals: List[dict]) -> List[di
     def v_comps(v: Any) -> List[dict]:
         return [c for c in _need(v, "competitors") if isinstance(c, dict) and _s(c.get("name"))]
 
-    for cluster in _by_strength(clusters, signals)[:3]:
+    for cluster in _by_strength(clusters, signals)[:2 if ctx.light else 3]:
         # cluster keywords often already start with "best" or end with "app"
         kw = re.sub(r"^(best|top)\s+|\s+apps?$", "", cluster["searchKeyword"].strip(), flags=re.I)
         ev = ctx.search("competitors", "competitors", "google", {"q": "best %s app" % kw})
@@ -627,7 +639,7 @@ def _opportunities(ctx: Ctx, clusters: List[dict], signals: List[dict], competit
     def v_objections(v: Any) -> List[dict]:
         return [x for x in _need(v, "objections") if isinstance(x, dict) and _s(x.get("objection")) and _s(x.get("basis")) and _s(x.get("wouldChangeMind"))]
 
-    for o in opps[:3]:
+    for o in opps[:1 if ctx.light else 3]:
         try:
             raw = ctx.llm.complete("skeptic", 'Sceptic review of "%s"' % o["title"], prompts.skeptic_prompt(json.dumps(
                 {k: o[k] for k in ("title", "target", "problem", "existingSolutions", "gap", "score", "subScores", "confidence")},

@@ -100,6 +100,8 @@ def demo_delay_base_ms() -> int:
 
 def serpapi_mode() -> str:
     value = os.environ.get("SERPAPI_MODE", "replay").lower()
+    if value == "record" and os.environ.get("VERCEL"):
+        return "live"  # a serverless host has no writable project folder to record fixtures into
     return value if value in ("live", "record") else "replay"
 
 
@@ -144,25 +146,50 @@ def llm_base_url() -> str:
     return (os.environ.get("LLM_BASE_URL") or "https://api.openai.com/v1").rstrip("/")
 
 
+def inline_mode() -> bool:
+    """
+    Serverless hosts (Vercel) freeze a function once its response ends and share no disk between
+    requests. There a run must execute inside one streaming request, and the browser keeps the result.
+    """
+    flag = os.environ.get("LAUNCHRADAR_INLINE", "").lower()
+    if flag in ("1", "true", "on"):
+        return True
+    if flag in ("0", "false", "off"):
+        return False
+    return bool(os.environ.get("VERCEL"))
+
+
+def inline_time_budget_s() -> int:
+    """Seconds a serverless run may take before it wraps up with what it has (platform limit is 300)."""
+    return _int("INLINE_TIME_BUDGET_S", 270)
+
+
 def store_path() -> Path:
-    return Path(os.environ.get("STORE_PATH") or ROOT / "data" / "store.json")
+    if os.environ.get("STORE_PATH"):
+        return Path(os.environ["STORE_PATH"])
+    if inline_mode():
+        return Path("/tmp/launchradar/store.json")  # the only writable place on a serverless host
+    return ROOT / "data" / "store.json"
+
+
+_WHERE = "Locally these go in .env; on Vercel, in Project Settings → Environment Variables (then redeploy)."
 
 
 def pipeline_readiness() -> Tuple[bool, Optional[str]]:
     """Can a fresh (non-demo) question be researched with the current env?"""
     mode = serpapi_mode()
     if mode != "replay" and not serpapi_key():
-        return False, "SERPAPI_MODE=%s needs SERPAPI_API_KEY in .env." % mode
+        return False, "SERPAPI_MODE=%s needs SERPAPI_API_KEY. %s" % (mode, _WHERE)
     provider = llm_provider()
     if provider == "demo":
         return False, (
-            "LLM_PROVIDER=demo can only replay recorded demo runs. Set LLM_PROVIDER "
-            "(gemini or openai) and LLM_API_KEY in .env to research a new question."
+            "LLM_PROVIDER=demo can only replay recorded demo runs. Set SERPAPI_MODE=live, SERPAPI_API_KEY, "
+            "LLM_PROVIDER (gemini or openai) and LLM_API_KEY to research a new question. " + _WHERE
         )
     if provider not in ("gemini", "openai"):
         return False, 'Unsupported LLM_PROVIDER "%s". Use gemini or openai.' % provider
     if not llm_api_key():
-        return False, "LLM_API_KEY is missing in .env."
+        return False, "LLM_API_KEY is missing. " + _WHERE
     if provider == "openai" and os.environ.get("LLM_BASE_URL") and not os.environ.get("LLM_MODEL"):
         return False, "LLM_BASE_URL is set, so LLM_MODEL must name a model that gateway serves."
     return True, None

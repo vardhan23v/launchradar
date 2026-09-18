@@ -1,5 +1,17 @@
 # LaunchRadar
 
+[![Live on Vercel](https://img.shields.io/website?url=https%3A%2F%2Flaunchradar-psi.vercel.app&up_message=live&down_message=down&label=launchradar-psi.vercel.app&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app)
+[![Deployed with Vercel](https://img.shields.io/badge/frontend-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
+[![Next.js 16](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org)
+[![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Tests: pytest](https://img.shields.io/badge/tests-pytest-0A9EDC?logo=pytest&logoColor=white)](backend/tests)
+[![Facts: SerpApi only](https://img.shields.io/badge/facts-SerpApi_only-c2410c)](https://serpapi.com)
+
+**Live:** https://launchradar-psi.vercel.app
+
 A market question goes in; evidence-backed product opportunities come out.
 SerpApi is the **only** source of facts — every claim in the output is traceable
 to verbatim quotes pinned to a recorded SerpApi search response (see
@@ -79,7 +91,7 @@ Progress streams to the UI as SSE step events (persisted events first, then live
 ```
 backend/
   app/
-    main.py        FastAPI routes: runs CRUD, run view, SSE stream, markdown export
+    main.py        FastAPI routes: runs CRUD, single-request runs (serverless), SSE stream, stateless export
     config.py      env, engines, regions, budgets, score weights, routing, readiness check
     serpapi.py     the ONLY module that reaches SerpApi: budget → cache → call → normalise → persist → event
     engines.py     region defaults, sha256 param hash, key redaction
@@ -94,10 +106,15 @@ backend/
     demo.py        recorded demo runs
     export.py      markdown export
   tests/           pytest: units, client, stream, API routes, golden pipeline run (stubbed network)
+api/index.py       Vercel entry point for the Python function (imports backend/app)
+requirements.txt   what Vercel installs for that function
+vercel.json        function limits and bundled files
 src/
   app/             pages only (home, run)
   components/      HomeClient, RunClient, ui primitives
   lib/types.ts     TypeScript shapes of the API's JSON
+  lib/live.ts      a run streamed over one request (serverless), started exactly once
+  lib/history.ts   finished runs kept in the browser
 fixtures/demo/     recorded demo run
 fixtures/serpapi/  hashed SerpApi responses (replay mode) — populated by record mode
 ```
@@ -111,35 +128,56 @@ npm run lint      # eslint (frontend)
 npm run build     # frontend production build
 ```
 
-## Deploying (Antideploy)
+## Deploying (Vercel)
 
-The app runs as **one container with two processes** (`scripts/start.sh`, which `npm start` runs): the Next.js frontend on
-`$PORT`, and the Python API on `127.0.0.1:8000`, reachable only through the frontend's `/api/*` proxy. If either
-process exits, the container exits so the platform restarts it.
+The GitHub repository is connected to Vercel, so **every push to `main` deploys**. One Vercel project serves both halves:
 
-`.antideploy.json` links this folder to the `launchradar` application. `scripts/antideploy.py` does the rest; it reads
-the account token from `~/.antideploy/config.json` and the keys from `.env`, and never prints either.
+| Part | Where it runs on Vercel | Source |
+|---|---|---|
+| Frontend | Next.js build | `src/` |
+| API | one Python serverless function (FastAPI over ASGI) | `api/index.py` → `backend/app`, dependencies from `requirements.txt` |
 
-```bash
-npm run deploy:check     # what would be uploaded, and which platform secrets are still missing
-npm run deploy:secrets   # send SERPAPI_API_KEY, LLM_* from .env to the platform (write-only there)
-npm run deploy           # upload, then follow the build until it is live or failed
-npm run deploy:status    # recent deployments and health
-npm run deploy:logs      # running container output
-```
+`next.config.mjs` rewrites `/api/*` to that function on Vercel, and to `npm run api` (127.0.0.1:8000) everywhere else.
+`vercel.json` gives the function its 300-second limit and bundles `backend/app` and `fixtures/demo` with it.
 
-Things to know:
+### Environment variables (Vercel → Project Settings → Environment Variables)
 
-- **Runs do not survive a deploy.** The platform replaces the container's disk on every deploy, and the app keeps its
-  state in a JSON file (`STORE_PATH=/tmp/launchradar/store.json`). Export a run as Markdown if you need to keep it.
-  Moving `store.py` to the platform's Postgres (`DATABASE_URL`) is the fix when this matters.
-- The server always runs `SERPAPI_MODE=live`; `record` is for local use.
-- `.env`, local run data, recorded SerpApi fixtures, tests and dependencies are never uploaded.
-- **Two build routes.** By default the platform detects and builds the Node project, and `scripts/start.sh` installs the
-  Python API's packages on first boot. If the platform image has no `python3`, the site still starts and the log says so.
-  The sturdier route is a container image: copy `deploy/container-image.txt` to `./Dockerfile` and
-  `deploy/container-ignore.txt` to `./.dockerignore`. Antideploy only accepts a Dockerfile once the account is 24 hours old.
-- The free plan allows 10 successful deploys a month.
+Without them the site works and the recorded example replays; new questions stay switched off, and the home page says why.
+
+| Name | Value |
+|---|---|
+| `SERPAPI_MODE` | `live` |
+| `SERPAPI_API_KEY` | your SerpApi key |
+| `LLM_PROVIDER` | `openai` (for Groq or any OpenAI-compatible gateway) or `gemini` |
+| `LLM_API_KEY` | your LLM key |
+| `LLM_BASE_URL` | e.g. `https://api.groq.com/openai/v1` (omit for OpenAI itself or Gemini) |
+| `LLM_MODEL` | e.g. `openai/gpt-oss-120b` |
+| `LLM_REASONING_EFFORT` | `low` (reasoning models only) |
+
+Redeploy after changing them; a deployment reads its variables when it is built.
+
+### How a run executes: two modes, one codebase
+
+A serverless function is frozen the moment its response ends, and requests share no disk. So the app has two modes,
+chosen automatically (`VERCEL` is set on Vercel; `LAUNCHRADAR_INLINE=1` forces it anywhere):
+
+| | Long-lived server (local, containers) | Serverless (Vercel) |
+|---|---|---|
+| Start | `POST /api/runs`, pipeline in a background thread | `POST /api/runs/live`, pipeline runs **inside that one streaming request** |
+| Progress | resumable SSE: `GET /api/runs/{id}/stream` (`Last-Event-ID`) | the same events on the same response, plus `view` frames carrying the results so far |
+| Where a finished run lives | `data/store.json` | **the browser** (`localStorage`, last 6 runs); the server may forget it at any time |
+| Refresh mid-run | safe | the run is lost (the request is the run) |
+| Time limit | none | 270 s budget: optional steps are skipped so the run completes with what it has |
+| Export | `POST /api/export` — the browser sends the run it holds, so it works in both modes | |
+
+Limits to know on Vercel: the monthly and hourly search guards count per function instance, so they are best-effort
+there (the 25-searches-per-run cap always holds); and a free-tier LLM that rate-limits heavily may hit the time budget,
+in which case the run finishes early with its problems and competitors but fewer opportunities.
+
+### Other hosts
+
+`scripts/start.sh` (`npm start`) runs the API and the frontend together in one container, and
+`deploy/container-image.txt` is a ready Dockerfile for that (copy it to `./Dockerfile`).
 
 ## Recording a new demo run
 
@@ -149,7 +187,7 @@ and add its slug to `DEMO_SLUGS` in `backend/app/demo.py`.
 
 ## Deviations from the design docs
 
-- **Python backend instead of Next.js route handlers** — the design docs specify a single Next.js deployable; the backend was moved to FastAPI by request. Module boundaries follow ARCH §8 one to one.
+- **Python backend instead of Next.js route handlers** — the design docs specify a single Next.js deployable; the backend was moved to FastAPI by request. Module boundaries follow ARCH §8 one to one. On Vercel it still ships as one project.
 - **No Prisma/SQLite** — a JSON file store keeps the prototype dependency-free; swap `store.py` for a DB later without touching callers.
 - **SerpApi client uses HTTPX directly** (not the official `serpapi` package) to keep the payload → evidence pipeline fully under our control and to make `record`/`replay` symmetric.
 - **Validation is hand-written** rather than zod/pydantic models: each LLM stage has a small validator that drops malformed items and fails the stage loudly when the shape is unusable.

@@ -126,3 +126,22 @@ build ignores `backend/`, `npm start` now runs `scripts/start.sh`, which install
 (venv, else `pip --target`), and falls back to frontend-only with a clear log line when the image has no `python3`.
 `next.config.ts` became `next.config.mjs` so `next start` needs no TypeScript after dev dependencies are pruned
 (verified locally with a pruned install).
+
+## Moved to Vercel (Antideploy dropped)
+
+Antideploy was abandoned by request; its helper script and link file are removed. The app now deploys to Vercel from
+GitHub as one project: the Next.js frontend plus the FastAPI backend as a Python serverless function (`api/index.py`).
+
+Serverless changes the rules (no background work after a response, no shared disk, 300 s per request), so:
+
+- **`POST /api/runs/live`** runs the whole pipeline inside one streaming request and sends `view` frames with the
+  results so far; nothing depends on a second request reaching the same instance.
+- **The browser keeps finished runs** (`localStorage`), gives each its own address, and restores it after a refresh
+  even when the server answers 404. Verified by wiping the server store and reloading.
+- **Time-boxed pipeline:** with a deadline, the LLM client refuses calls it cannot finish, optional steps are skipped,
+  a failed gap stage no longer fails the run, and the plan is lighter (80 evidence rows, 2 competitor clusters, 1 sceptic
+  review). Covered by a test that cuts the time mid-run.
+- **Run started exactly once:** the session lives at module level, because a second POST (React double effects,
+  remounts) would spend the search budget twice.
+- **Stateless export** (`POST /api/export`), so Markdown export works when the server has forgotten the run.
+- Setup messages name Vercel's environment settings, and `record` mode becomes `live` on a read-only host.

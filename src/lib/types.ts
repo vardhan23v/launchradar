@@ -97,8 +97,13 @@ export type StepEvent =
   | { type: "status"; status: RunStatus }
   | { type: "done"; runId: string; searchesUsed: number };
 
+/** Extra frame on the single-request stream: the results so far, so no second request is needed. */
+export type LiveFrame = StepEvent | { type: "view"; view: RunView };
+
 export interface RunView {
   run: Run;
+  /** kept opaque: the page never reads it, but the Markdown export needs it back */
+  searchCalls?: unknown[];
   evidence: Evidence[];
   signals: Signal[];
   clusters: Cluster[];
