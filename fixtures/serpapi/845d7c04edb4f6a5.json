@@ -1,0 +1,472 @@
+{
+  "search_metadata": {
+    "id": "6aad730f8da5eae3ca380423",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/hPHxL7FaSMdGpWDRnoGhtlR0Lhc-9pbNisIithKj0WY/6aad730f8da5eae3ca380423.json",
+    "markdown_endpoint": "https://serpapi.com/searches/hPHxL7FaSMdGpWDRnoGhtlR0Lhc-9pbNisIithKj0WY/6aad730f8da5eae3ca380423.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/hPHxL7FaSMdGpWDRnoGhtlR0Lhc-9pbNisIithKj0WY/6aad730f8da5eae3ca380423.json_with_pixel_position",
+    "created_at": "2026-09-18 17:21:19 UTC",
+    "processed_at": "2026-09-18 17:21:19 UTC",
+    "google_url": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&oq=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/hPHxL7FaSMdGpWDRnoGhtlR0Lhc-9pbNisIithKj0WY/6aad730f8da5eae3ca380423.html",
+    "total_time_taken": 6.97
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Best AI flashcard generator for first\u2011year commerce students",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Best AI flashcard generator for first\u2011year commerce students",
+    "total_results": 427000,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "How to Make Flashcards and MCQs with AI for Free",
+      "link": "https://www.youtube.com/watch?v=PyKSKPq50ug",
+      "thumbnail": "https://serpapi.com/searches/6aad730f8da5eae3ca380423/images/b3D_OZoyoB2aii3kz3jw6DNeJUXY6ZbdshEQNyysGAE.jpeg",
+      "channel": "Mateusz Jurga",
+      "duration": "2:01",
+      "platform": "YouTube",
+      "date": "30 Aug 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQ6ySuqVAJ5LwjGmsPsQHrvUhzKMtJ87JKbTQ",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Flashka for Flashcards",
+          "link": "https://www.youtube.com/watch?v=PyKSKPq50ug&t=0"
+        },
+        {
+          "time": "00:36",
+          "title": "Limbiks for Flashcards and MCQs",
+          "link": "https://www.youtube.com/watch?v=PyKSKPq50ug&t=36"
+        },
+        {
+          "time": "01:05",
+          "title": "Memrizz for Flashcards and MCQs",
+          "link": "https://www.youtube.com/watch?v=PyKSKPq50ug&t=65"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "title": "I Made 10000 Flashcards\u2026 Here's How AI Does It Faster",
+      "link": "https://www.youtube.com/watch?v=EF1W_x-hVo4",
+      "thumbnail": "https://serpapi.com/searches/6aad730f8da5eae3ca380423/images/ST0h7riCzP4WcE_B7QGYYo12w9ulP67ztBOOr7JNc3U.jpeg",
+      "channel": "Brainscape",
+      "duration": "4:54",
+      "platform": "YouTube",
+      "date": "2 Sept 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcRbmNOoeGm88KumXH61xk-Olr2ul7vAiLjweQ",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Intro",
+          "link": "https://www.youtube.com/watch?v=EF1W_x-hVo4&t=0"
+        },
+        {
+          "time": "00:20",
+          "title": "How AI creates flashcards in seconds",
+          "link": "https://www.youtube.com/watch?v=EF1W_x-hVo4&t=20"
+        },
+        {
+          "time": "00:38",
+          "title": "What is Brainscape?",
+          "link": "https://www.youtube.com/watch?v=EF1W_x-hVo4&t=38"
+        },
+        {
+          "time": "00:55",
+          "title": "Import notes & files into AI flashcards",
+          "link": "https://www.youtube.com/watch?v=EF1W_x-hVo4&t=55"
+        },
+        {
+          "time": "01:45",
+          "title": "Turn textbooks and lessons into flashcards",
+          "link": "https://www.youtube.com/watch?v=EF1W_x-hVo4&t=105"
+        },
+        {
+          "time": "02:48",
+          "title": "Generate flashcards from any topic with AI",
+          "link": "https://www.youtube.com/watch?v=EF1W_x-hVo4&t=168"
+        },
+        {
+          "time": "03:37",
+          "title": "Do AI flashcards still help you learn?",
+          "link": "https://www.youtube.com/watch?v=EF1W_x-hVo4&t=217"
+        },
+        {
+          "time": "04:19",
+          "title": "Smarter, faster studying with Brainscape AI",
+          "link": "https://www.youtube.com/watch?v=EF1W_x-hVo4&t=259"
+        },
+        {
+          "time": "04:42",
+          "title": "Final thoughts + study tips",
+          "link": "https://www.youtube.com/watch?v=EF1W_x-hVo4&t=282"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "AI-Powered Flashcards in Microsoft 365 \u2014 How to Use Them ...",
+      "link": "https://www.youtube.com/watch?v=zMmRrteuMJ8",
+      "thumbnail": "https://serpapi.com/searches/6aad730f8da5eae3ca380423/images/aANDUYUFgiqQ_I5Gi9hQx1c0G3D3fC9-Jk7fyF1T13s.jpeg",
+      "channel": "Mike Tholfsen",
+      "duration": "10:25",
+      "platform": "YouTube",
+      "date": "8 Jan 2026",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQReb00Jpai_iQtw_3iJqT2ZpK_jJI8FVCBzw"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Which AI is best for making flash cards?",
+      "type": "ai_overview",
+      "page_token": "Ekqm4HicHdBbboJAFADQdDP9VIRIg4lpSpmBoozhcS_KT4MzKjDDQ8Vi-eteuqqupmmXcM7Xtyob-fNwL_q-uy6m02EYJqe2PanDhLeTspnm18-GT3mu1D7ncmE-mbPnI1-S25v9en6zQ-g6dCItNvx54uA6qIqLmIlcaP0586gJBq4ZtVdZLVp0Xj5xpHCgEUE5rxKk80NFL5BEWjDawc5ghFVFzAlrsaabgGYyByE3gA246irQ0sDt1XZEE0dcrdHXmYbk4EX5vhbZTooyAOs1U_4tGH1t7-AmkZ3cGuIDRtJH7vye65a5h6EXmF2EV5QZ-Pd0y2zh0S72mJcAGXdp15BCuDGxtN2W1jmxmEivwzrtQ6asMnB8O47aMoRo5JWqQbZ66nbAqLhnOkquqfDPDDXREa1NWEcGhI9H_rE0Hv8_l-_Hul90l_b0C93Ag6Y",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=Ekqm4HicHdBbboJAFADQdDP9VIRIg4lpSpmBoozhcS_KT4MzKjDDQ8Vi-eteuqqupmmXcM7Xtyob-fNwL_q-uy6m02EYJqe2PanDhLeTspnm18-GT3mu1D7ncmE-mbPnI1-S25v9en6zQ-g6dCItNvx54uA6qIqLmIlcaP0586gJBq4ZtVdZLVp0Xj5xpHCgEUE5rxKk80NFL5BEWjDawc5ghFVFzAlrsaabgGYyByE3gA246irQ0sDt1XZEE0dcrdHXmYbk4EX5vhbZTooyAOs1U_4tGH1t7-AmkZ3cGuIDRtJH7vye65a5h6EXmF2EV5QZ-Pd0y2zh0S72mJcAGXdp15BCuDGxtN2W1jmxmEivwzrtQ6asMnB8O47aMoRo5JWqQbZ66nbAqLhnOkquqfDPDDXREa1NWEcGhI9H_rE0Hv8_l-_Hul90l_b0C93Ag6Y",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTVZubElkSEp3ZG5jME5UVmlPRmt5UmtOVU9GZ3hiMjF4V0Y5UmRXWlpXRVpYV2w4ek9GODNWbUpyTUhob00wdFVVRmxYUlVkWExWRkZUbXc0UzFGYVkxaG5VRlphUlRoNllqRkZMVzlTVkRKclUzRnFNVzlhVGxkalVSSVhSa2hQZEdGeFptaFBUWFZyTUMxclVEWmZZakF5UVVrYUlrRkVjM0k1WmxSdmFuRlVVbEJ3VEhWMGJrTnlORlkyVGxwSk9IVlRjV2sxUm1jIiwiZmN2IjoiMyIsImVpIjoiRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUkiLCJxYyI6ImMtT3lTVW90TGxGSXpGUkl5MGtzemtoT0xFcFJTRV9OU3kxS0xNa3ZVa2dENGN3aW9JTEsxTVFpaGVUODNOelVvdVJVaGVLUzBwVFV2SkppQVliYWNfT0Y3UUUiLCJxdWVzdGlvbiI6IldoaWNoIEFJIGlzIGJlc3QgZm9yIG1ha2luZyBmbGFzaCBjYXJkcz8iLCJsayI6IkdpZDNhR2xqYUNCaGFTQnBjeUJpWlhOMElHWnZjaUJ0WVd0cGJtY2dabXhoYzJnZ1kyRnlaSE0iLCJicyI6ImM0WFBRUXVDUUJBRllMck9xZk1lYWtpanV2b0hSTHdrMFRFNlQtdnFMdFlhdXlQLV9WYUZRQ0k4djQtWjktQUd4N3MyVW1OV29QSDRVSjZ4YWgyLXFERzJ4dXBKWHFNa1ZfbzBPWWxEUDFveUN4WnkyT1prTWRmRTladFJPa1dzNXRkUWJHUWc4aS1CSzhUbnRrZHVzVlpXdVc4OHB0ajU0V2xXcE1sZVJIckprWUVMUk5QVTBKMjFtdnFIMmNNRVFzOWRxU3luU1N4Ml9ROExpMmRzdmZvQSIsImlkIjoiZmNfRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUlfMiJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTVZubElkSEp3ZG5jME5UVmlPRmt5UmtOVU9GZ3hiMjF4V0Y5UmRXWlpXRVpYV2w4ek9GODNWbUpyTUhob00wdFVVRmxYUlVkWExWRkZUbXc0UzFGYVkxaG5VRlphUlRoNllqRkZMVzlTVkRKclUzRnFNVzlhVGxkalVSSVhSa2hQZEdGeFptaFBUWFZyTUMxclVEWmZZakF5UVVrYUlrRkVjM0k1WmxSdmFuRlVVbEJ3VEhWMGJrTnlORlkyVGxwSk9IVlRjV2sxUm1jIiwiZmN2IjoiMyIsImVpIjoiRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUkiLCJxYyI6ImMtT3lTVW90TGxGSXpGUkl5MGtzemtoT0xFcFJTRV9OU3kxS0xNa3ZVa2dENGN3aW9JTEsxTVFpaGVUODNOelVvdVJVaGVLUzBwVFV2SkppQVliYWNfT0Y3UUUiLCJxdWVzdGlvbiI6IldoaWNoIEFJIGlzIGJlc3QgZm9yIG1ha2luZyBmbGFzaCBjYXJkcz8iLCJsayI6IkdpZDNhR2xqYUNCaGFTQnBjeUJpWlhOMElHWnZjaUJ0WVd0cGJtY2dabXhoYzJnZ1kyRnlaSE0iLCJicyI6ImM0WFBRUXVDUUJBRllMck9xZk1lYWtpanV2b0hSTHdrMFRFNlQtdnFMdFlhdXlQLV9WYUZRQ0k4djQtWjktQUd4N3MyVW1OV29QSDRVSjZ4YWgyLXFERzJ4dXBKWHFNa1ZfbzBPWWxEUDFveUN4WnkyT1prTWRmRTladFJPa1dzNXRkUWJHUWc4aS1CSzhUbnRrZHVzVlpXdVc4OHB0ajU0V2xXcE1sZVJIckprWUVMUk5QVTBKMjFtdnFIMmNNRVFzOWRxU3luU1N4Ml9ROExpMmRzdmZvQSIsImlkIjoiZmNfRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUlfMiJ9"
+    },
+    {
+      "question": "Can Chatgpt create flash cards?",
+      "type": "ai_overview",
+      "page_token": "_fQyZHicHdDNboIwAADg7GU8KhV1w8QsQwrKoKaFtsplaYsCWn6mKMpt77Kn2tNs2fm7fV_fuqhOP0_3vG2by3w06rpumNV1pvdDVQ-LaiQuj0qNlNBaCnWaz55n4PWgFvC6tpefaxvTpmEOMaKjDUmfV6JPArRV9zACsQQvU9UTrBiLYkYf1EUzOSYOAVax5_57WGXtxgPnZJXnCfTPe-qygDHx53Hi4AeJ3ZCU7jLtbZ7wCUDGqY8gKRBAFwlzQMxdh4B7F5SOJZ8mcdl0CHYTxqxbqn0tvfZdmihi5QTwmCS0qgEG9lkaahpWb4-E4qnsyVh5rOUndo3GIUi5f2NVasI89SJoGbutWwpooZRfuoC3GGmrCB3fjkhdYEp6ddQlNYkTMAuSUhublY4Fy4MQ5u5O20vJWyEdH2I8OKjbwhz8fy4-DmU7b8519gsapYI1",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=_fQyZHicHdDNboIwAADg7GU8KhV1w8QsQwrKoKaFtsplaYsCWn6mKMpt77Kn2tNs2fm7fV_fuqhOP0_3vG2by3w06rpumNV1pvdDVQ-LaiQuj0qNlNBaCnWaz55n4PWgFvC6tpefaxvTpmEOMaKjDUmfV6JPArRV9zACsQQvU9UTrBiLYkYf1EUzOSYOAVax5_57WGXtxgPnZJXnCfTPe-qygDHx53Hi4AeJ3ZCU7jLtbZ7wCUDGqY8gKRBAFwlzQMxdh4B7F5SOJZ8mcdl0CHYTxqxbqn0tvfZdmihi5QTwmCS0qgEG9lkaahpWb4-E4qnsyVh5rOUndo3GIUi5f2NVasI89SJoGbutWwpooZRfuoC3GGmrCB3fjkhdYEp6ddQlNYkTMAuSUhublY4Fy4MQ5u5O20vJWyEdH2I8OKjbwhz8fy4-DmU7b8519gsapYI1",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTVZubElkSEp3ZG5jME5UVmlPRmt5UmtOVU9GZ3hiMjF4V0Y5UmRXWlpXRVpYV2w4ek9GODNWbUpyTUhob00wdFVVRmxYUlVkWExWRkZUbXc0UzFGYVkxaG5VRlphUlRoNllqRkZMVzlTVkRKclUzRnFNVzlhVGxkalVSSVhSa2hQZEdGeFptaFBUWFZyTUMxclVEWmZZakF5UVVrYUlrRkVjM0k1WmxSdmFuRlVVbEJ3VEhWMGJrTnlORlkyVGxwSk9IVlRjV2sxUm1jIiwiZmN2IjoiMyIsImVpIjoiRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUkiLCJxYyI6ImMtT3lTVW90TGxGSXpGUkl5MGtzemtoT0xFcFJTRV9OU3kxS0xNa3ZVa2dENGN3aW9JTEsxTVFpaGVUODNOelVvdVJVaGVLUzBwVFV2SkppQVliYWNfT0Y3UUUiLCJxdWVzdGlvbiI6IkNhbiBDaGF0Z3B0IGNyZWF0ZSBmbGFzaCBjYXJkcz8iLCJsayI6IkdoNWpZVzRnWTJoaGRHZHdkQ0JqY21WaGRHVWdabXhoYzJnZ1kyRnlaSE0iLCJicyI6ImM0WFBRUXVDUUJBRllMck9xZk1lYWtpanV2b0hSTHdrMFRFNlQtdnFMdFlhdXlQLV9WYUZRQ0k4djQtWjktQUd4N3MyVW1OV29QSDRVSjZ4YWgyLXFERzJ4dXBKWHFNa1ZfbzBPWWxEUDFveUN4WnkyT1prTWRmRTladFJPa1dzNXRkUWJHUWc4aS1CSzhUbnRrZHVzVlpXdVc4OHB0ajU0V2xXcE1sZVJIckprWUVMUk5QVTBKMjFtdnFIMmNNRVFzOWRxU3luU1N4Ml9ROExpMmRzdmZvQSIsImlkIjoiZmNfRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUlfMiJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTVZubElkSEp3ZG5jME5UVmlPRmt5UmtOVU9GZ3hiMjF4V0Y5UmRXWlpXRVpYV2w4ek9GODNWbUpyTUhob00wdFVVRmxYUlVkWExWRkZUbXc0UzFGYVkxaG5VRlphUlRoNllqRkZMVzlTVkRKclUzRnFNVzlhVGxkalVSSVhSa2hQZEdGeFptaFBUWFZyTUMxclVEWmZZakF5UVVrYUlrRkVjM0k1WmxSdmFuRlVVbEJ3VEhWMGJrTnlORlkyVGxwSk9IVlRjV2sxUm1jIiwiZmN2IjoiMyIsImVpIjoiRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUkiLCJxYyI6ImMtT3lTVW90TGxGSXpGUkl5MGtzemtoT0xFcFJTRV9OU3kxS0xNa3ZVa2dENGN3aW9JTEsxTVFpaGVUODNOelVvdVJVaGVLUzBwVFV2SkppQVliYWNfT0Y3UUUiLCJxdWVzdGlvbiI6IkNhbiBDaGF0Z3B0IGNyZWF0ZSBmbGFzaCBjYXJkcz8iLCJsayI6IkdoNWpZVzRnWTJoaGRHZHdkQ0JqY21WaGRHVWdabXhoYzJnZ1kyRnlaSE0iLCJicyI6ImM0WFBRUXVDUUJBRllMck9xZk1lYWtpanV2b0hSTHdrMFRFNlQtdnFMdFlhdXlQLV9WYUZRQ0k4djQtWjktQUd4N3MyVW1OV29QSDRVSjZ4YWgyLXFERzJ4dXBKWHFNa1ZfbzBPWWxEUDFveUN4WnkyT1prTWRmRTladFJPa1dzNXRkUWJHUWc4aS1CSzhUbnRrZHVzVlpXdVc4OHB0ajU0V2xXcE1sZVJIckprWUVMUk5QVTBKMjFtdnFIMmNNRVFzOWRxU3luU1N4Ml9ROExpMmRzdmZvQSIsImlkIjoiZmNfRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUlfMiJ9"
+    },
+    {
+      "question": "How to generate flashcards using AI?",
+      "type": "ai_overview",
+      "page_token": "ewYsq3icHdDBboIwAIDh7GU8SluCiyZmCUpBnDgKtNDLgq2Ko0A32Krc9i57qj3NzI7_6Uv-7x91aevfh2s1DLpfWJYxZnruurM6TkU3vbRW2d9aYYlSqUMp6sXscQafTmLpfW7c1fvGjTOt6ZqABJAo9c9DuoKM17CNgeNxBGDagFGgq0NUxYmt3QMMm6M_sILhlyJ3u3uDQ41LpiiQ2YBSpp1jEPoC4lmcwG0OK5YDZxsr6cZUGIEcEsMoZTWlpacp86-IrzlnLe45DW97X633aaiPOKKydtA-gQ6n85nACtORogip7d0IdoFsxSj7HSQebTnPAr7K7MwQ6m5ow22vkn7izUGR46b05pFkvXlmQxyp-WW3Dt2EdJc4I6N4U03WKLVr5EBxYbjvmWTEOg1UmKLI5HblRHV9lWZyEl9Le_L_c_l6aoaF_ujOf4HNgbY",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=ewYsq3icHdDBboIwAIDh7GU8SluCiyZmCUpBnDgKtNDLgq2Ko0A32Krc9i57qj3NzI7_6Uv-7x91aevfh2s1DLpfWJYxZnruurM6TkU3vbRW2d9aYYlSqUMp6sXscQafTmLpfW7c1fvGjTOt6ZqABJAo9c9DuoKM17CNgeNxBGDagFGgq0NUxYmt3QMMm6M_sILhlyJ3u3uDQ41LpiiQ2YBSpp1jEPoC4lmcwG0OK5YDZxsr6cZUGIEcEsMoZTWlpacp86-IrzlnLe45DW97X633aaiPOKKydtA-gQ6n85nACtORogip7d0IdoFsxSj7HSQebTnPAr7K7MwQ6m5ow22vkn7izUGR46b05pFkvXlmQxyp-WW3Dt2EdJc4I6N4U03WKLVr5EBxYbjvmWTEOg1UmKLI5HblRHV9lWZyEl9Le_L_c_l6aoaF_ujOf4HNgbY",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTVZubElkSEp3ZG5jME5UVmlPRmt5UmtOVU9GZ3hiMjF4V0Y5UmRXWlpXRVpYV2w4ek9GODNWbUpyTUhob00wdFVVRmxYUlVkWExWRkZUbXc0UzFGYVkxaG5VRlphUlRoNllqRkZMVzlTVkRKclUzRnFNVzlhVGxkalVSSVhSa2hQZEdGeFptaFBUWFZyTUMxclVEWmZZakF5UVVrYUlrRkVjM0k1WmxSdmFuRlVVbEJ3VEhWMGJrTnlORlkyVGxwSk9IVlRjV2sxUm1jIiwiZmN2IjoiMyIsImVpIjoiRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUkiLCJxYyI6ImMtT3lTVW90TGxGSXpGUkl5MGtzemtoT0xFcFJTRV9OU3kxS0xNa3ZVa2dENGN3aW9JTEsxTVFpaGVUODNOelVvdVJVaGVLUzBwVFV2SkppQVliYWNfT0Y3UUUiLCJxdWVzdGlvbiI6IkhvdyB0byBnZW5lcmF0ZSBmbGFzaGNhcmRzIHVzaW5nIEFJPyIsImxrIjoiR2lOb2IzY2dkRzhnWjJWdVpYSmhkR1VnWm14aGMyaGpZWEprY3lCMWMybHVaeUJoYVEiLCJicyI6ImM0WFBRUXVDUUJBRllMck9xZk1lYWtpanV2b0hSTHdrMFRFNlQtdnFMdFlhdXlQLV9WYUZRQ0k4djQtWjktQUd4N3MyVW1OV29QSDRVSjZ4YWgyLXFERzJ4dXBKWHFNa1ZfbzBPWWxEUDFveUN4WnkyT1prTWRmRTladFJPa1dzNXRkUWJHUWc4aS1CSzhUbnRrZHVzVlpXdVc4OHB0ajU0V2xXcE1sZVJIckprWUVMUk5QVTBKMjFtdnFIMmNNRVFzOWRxU3luU1N4Ml9ROExpMmRzdmZvQSIsImlkIjoiZmNfRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUlfMiJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTVZubElkSEp3ZG5jME5UVmlPRmt5UmtOVU9GZ3hiMjF4V0Y5UmRXWlpXRVpYV2w4ek9GODNWbUpyTUhob00wdFVVRmxYUlVkWExWRkZUbXc0UzFGYVkxaG5VRlphUlRoNllqRkZMVzlTVkRKclUzRnFNVzlhVGxkalVSSVhSa2hQZEdGeFptaFBUWFZyTUMxclVEWmZZakF5UVVrYUlrRkVjM0k1WmxSdmFuRlVVbEJ3VEhWMGJrTnlORlkyVGxwSk9IVlRjV2sxUm1jIiwiZmN2IjoiMyIsImVpIjoiRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUkiLCJxYyI6ImMtT3lTVW90TGxGSXpGUkl5MGtzemtoT0xFcFJTRV9OU3kxS0xNa3ZVa2dENGN3aW9JTEsxTVFpaGVUODNOelVvdVJVaGVLUzBwVFV2SkppQVliYWNfT0Y3UUUiLCJxdWVzdGlvbiI6IkhvdyB0byBnZW5lcmF0ZSBmbGFzaGNhcmRzIHVzaW5nIEFJPyIsImxrIjoiR2lOb2IzY2dkRzhnWjJWdVpYSmhkR1VnWm14aGMyaGpZWEprY3lCMWMybHVaeUJoYVEiLCJicyI6ImM0WFBRUXVDUUJBRllMck9xZk1lYWtpanV2b0hSTHdrMFRFNlQtdnFMdFlhdXlQLV9WYUZRQ0k4djQtWjktQUd4N3MyVW1OV29QSDRVSjZ4YWgyLXFERzJ4dXBKWHFNa1ZfbzBPWWxEUDFveUN4WnkyT1prTWRmRTladFJPa1dzNXRkUWJHUWc4aS1CSzhUbnRrZHVzVlpXdVc4OHB0ajU0V2xXcE1sZVJIckprWUVMUk5QVTBKMjFtdnFIMmNNRVFzOWRxU3luU1N4Ml9ROExpMmRzdmZvQSIsImlkIjoiZmNfRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUlfMiJ9"
+    },
+    {
+      "question": "Which is the best AI for a student?",
+      "type": "ai_overview",
+      "page_token": "9gEeg3icHZDdcqIwAEZnX6aXSkK3K844O0NJKK6kJeRHuOnEIIpJBJUW6l3fZZ-qT1OnF9_tOWe-z_-2OZqvX-O-77vLfDodhmGya9ud3U50O2mOU3X5OOqpVtZulDbzhz8P4G-tF-gtCR9PSZjxrhMR9XJHm00MDhQEeWVn12yNcW7aa4r3LyIWcYkAZ9j4KZpBIWm9YlgWx_CkIXkuHYCZmXkVWloCl0WO9biV5Kxc9y_j4F353bhiVlHEx4357fEDOag48ZlL_AKWN09HOCZOA0sqVmZbJyiDfSoie1G8r1N5WyRsyYxXGkuEGz2GlgO96nsiSZd9eGPKQUIBfhLr9FqAkKJ9Feco8Io1dgoFpJKXYSX7jNigSaNlmNO2yfiNcLCOM8s2sufP0gAW3fptUCheQvmEUyIKqOUAq-Gu1u8L_-7nz8Vr7fp5d2533ylcgsk",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=9gEeg3icHZDdcqIwAEZnX6aXSkK3K844O0NJKK6kJeRHuOnEIIpJBJUW6l3fZZ-qT1OnF9_tOWe-z_-2OZqvX-O-77vLfDodhmGya9ud3U50O2mOU3X5OOqpVtZulDbzhz8P4G-tF-gtCR9PSZjxrhMR9XJHm00MDhQEeWVn12yNcW7aa4r3LyIWcYkAZ9j4KZpBIWm9YlgWx_CkIXkuHYCZmXkVWloCl0WO9biV5Kxc9y_j4F353bhiVlHEx4357fEDOag48ZlL_AKWN09HOCZOA0sqVmZbJyiDfSoie1G8r1N5WyRsyYxXGkuEGz2GlgO96nsiSZd9eGPKQUIBfhLr9FqAkKJ9Feco8Io1dgoFpJKXYSX7jNigSaNlmNO2yfiNcLCOM8s2sufP0gAW3fptUCheQvmEUyIKqOUAq-Gu1u8L_-7nz8Vr7fp5d2533ylcgsk",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTVZubElkSEp3ZG5jME5UVmlPRmt5UmtOVU9GZ3hiMjF4V0Y5UmRXWlpXRVpYV2w4ek9GODNWbUpyTUhob00wdFVVRmxYUlVkWExWRkZUbXc0UzFGYVkxaG5VRlphUlRoNllqRkZMVzlTVkRKclUzRnFNVzlhVGxkalVSSVhSa2hQZEdGeFptaFBUWFZyTUMxclVEWmZZakF5UVVrYUlrRkVjM0k1WmxSdmFuRlVVbEJ3VEhWMGJrTnlORlkyVGxwSk9IVlRjV2sxUm1jIiwiZmN2IjoiMyIsImVpIjoiRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUkiLCJxYyI6ImMtT3lTVW90TGxGSXpGUkl5MGtzemtoT0xFcFJTRV9OU3kxS0xNa3ZVa2dENGN3aW9JTEsxTVFpaGVUODNOelVvdVJVaGVLUzBwVFV2SkppQVliYWNfT0Y3UUUiLCJxdWVzdGlvbiI6IldoaWNoIGlzIHRoZSBiZXN0IEFJIGZvciBhIHN0dWRlbnQ/IiwibGsiOiJHaUozYUdsamFDQnBjeUIwYUdVZ1ltVnpkQ0JoYVNCbWIzSWdZU0J6ZEhWa1pXNTAiLCJicyI6ImM0WFBRUXVDUUJBRllMck9xZk1lYWtpanV2b0hSTHdrMFRFNlQtdnFMdFlhdXlQLV9WYUZRQ0k4djQtWjktQUd4N3MyVW1OV29QSDRVSjZ4YWgyLXFERzJ4dXBKWHFNa1ZfbzBPWWxEUDFveUN4WnkyT1prTWRmRTladFJPa1dzNXRkUWJHUWc4aS1CSzhUbnRrZHVzVlpXdVc4OHB0ajU0V2xXcE1sZVJIckprWUVMUk5QVTBKMjFtdnFIMmNNRVFzOWRxU3luU1N4Ml9ROExpMmRzdmZvQSIsImlkIjoiZmNfRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUlfMiJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTVZubElkSEp3ZG5jME5UVmlPRmt5UmtOVU9GZ3hiMjF4V0Y5UmRXWlpXRVpYV2w4ek9GODNWbUpyTUhob00wdFVVRmxYUlVkWExWRkZUbXc0UzFGYVkxaG5VRlphUlRoNllqRkZMVzlTVkRKclUzRnFNVzlhVGxkalVSSVhSa2hQZEdGeFptaFBUWFZyTUMxclVEWmZZakF5UVVrYUlrRkVjM0k1WmxSdmFuRlVVbEJ3VEhWMGJrTnlORlkyVGxwSk9IVlRjV2sxUm1jIiwiZmN2IjoiMyIsImVpIjoiRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUkiLCJxYyI6ImMtT3lTVW90TGxGSXpGUkl5MGtzemtoT0xFcFJTRV9OU3kxS0xNa3ZVa2dENGN3aW9JTEsxTVFpaGVUODNOelVvdVJVaGVLUzBwVFV2SkppQVliYWNfT0Y3UUUiLCJxdWVzdGlvbiI6IldoaWNoIGlzIHRoZSBiZXN0IEFJIGZvciBhIHN0dWRlbnQ%2FIiwibGsiOiJHaUozYUdsamFDQnBjeUIwYUdVZ1ltVnpkQ0JoYVNCbWIzSWdZU0J6ZEhWa1pXNTAiLCJicyI6ImM0WFBRUXVDUUJBRllMck9xZk1lYWtpanV2b0hSTHdrMFRFNlQtdnFMdFlhdXlQLV9WYUZRQ0k4djQtWjktQUd4N3MyVW1OV29QSDRVSjZ4YWgyLXFERzJ4dXBKWHFNa1ZfbzBPWWxEUDFveUN4WnkyT1prTWRmRTladFJPa1dzNXRkUWJHUWc4aS1CSzhUbnRrZHVzVlpXdVc4OHB0ajU0V2xXcE1sZVJIckprWUVMUk5QVTBKMjFtdnFIMmNNRVFzOWRxU3luU1N4Ml9ROExpMmRzdmZvQSIsImlkIjoiZmNfRkhPdGFxZmhPTXVrMC1rUDZfYjAyQUlfMiJ9"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "hvUAjXiczVXbcqJIGH6AfY5wYxQ8S6qoqW5E7URHMTHG3FAcmgZFMBxCzN28yz7NPsI-zTaIBhJMZuZiarsKmm4-_v5PH9-Pvx3b3fz71z9WGO6CK5aN47hGPI84uKZ7Ndtl1WDv6qzpOYGvW9-iyMFCXBEBkpGIBrfL9kZdSozlCNhliCPYLrN_FpqMHggcg21hMJqG6pNpTSfRhqtuZh1F4xoAMalVQdHUAK_psS_rgFVYettcNPt0UQtq2FWGsBZP4NPLZtCYaZNag6vztSmrbikG_LkhyQQm8zUQz4PoK-lrU4kBBKCUs4QASWf4hlodXoty-kokZ63Bw5nzFC7Tq6-8juI-3T3mh6Tb5a7AwjJOfQEgTr2EwP46mtyQs1iOcX2SqRO6OLLseW87-RoXfC0MEheWA-qFAkTx7ZD8YdSMVXDjlCmdgN7Ig30IFuf9pvm5QaC9AbJ0Lq0n29J961S58WpId1iD0MblWM2nU521dUtPH_wg6Wfxjuc8yUR9O6y2d-6iy7-Md44znmM0jZSYA6yuUZzjqQY2FEvhvqXreqPe5vhmt3eZckkPTmQK8mTaL6wAL2f32-2qNq7B-pFG4qHo4EPFJLoWUUlgUMygJSXONXZSsKyk8iBvNyslTPpamoNiaW9mSV6HxyXt0Vdamjzi7dSk-T_S6DBIDkxplDqCvAyYR8AUNcxRN1dYBMp-M-_jlkdHQ0BefwAWyCvSeDfgmJjVe8srIItESjggSiOYZU3P26AR37z_KgmP_qHgEXF0UMoCzMWQpADJYAKQRG3aCzQkqXHp5CjKzhpI7xh3puERjWcp_syvr2TAr0iUDPnIl3ftn6fNKKo2eoZ325G9eILGM6K2TBR359YKknKaeFvt10RH_19x6SBJUiZJ57kkfc2lVJLgJ5KUPr9JUtK_oneWS3BYLkmTUkkqxi2CeZ5Ln0vSL3NJ_JRLcnYv4ZJXzqXdWS5lkpTjUlGSpHJJOnHpdyQJ_qYkpdTCh6moT9GanNep3sMKL8ne9JfBfoZbg7E2aYRNbb0l5EudMrfh1VY1nEvFNq5g4zrcG5cK3fCusME8CRAHYQWgiumogaWrvlEh2MW-Gnp-xUwu2w_CC6lx0eMu-Poeq36F0nmLfR1XgjAysBsGzNbxPYFTO9ZIQVbMK81xV3-pXwedW8OcPpoc0sOxNQKdm2ipmN_v59hv-89SR7nrr9GDuKrrHG9Ml0vvsTev8l5z19k9QWItbuH3B_N2ao201wE_0SL06OGBBXuR5loDXHWvu_HeJc-u2lAfrWg0U4wZ6Wj6zGm9WARKdnOfehYITz1YvZP67uNmw2x9XaDN0XLBtQyWhHapmHYvWKgenWMgDzu0eJAJdFXBwbPQ4tQur_Pdrt7sGu1mi9mScL8TeI4JXF-o_wfQGVio",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=hvUAjXiczVXbcqJIGH6AfY5wYxQ8S6qoqW5E7URHMTHG3FAcmgZFMBxCzN28yz7NPsI-zTaIBhJMZuZiarsKmm4-_v5PH9-Pvx3b3fz71z9WGO6CK5aN47hGPI84uKZ7Ndtl1WDv6qzpOYGvW9-iyMFCXBEBkpGIBrfL9kZdSozlCNhliCPYLrN_FpqMHggcg21hMJqG6pNpTSfRhqtuZh1F4xoAMalVQdHUAK_psS_rgFVYettcNPt0UQtq2FWGsBZP4NPLZtCYaZNag6vztSmrbikG_LkhyQQm8zUQz4PoK-lrU4kBBKCUs4QASWf4hlodXoty-kokZ63Bw5nzFC7Tq6-8juI-3T3mh6Tb5a7AwjJOfQEgTr2EwP46mtyQs1iOcX2SqRO6OLLseW87-RoXfC0MEheWA-qFAkTx7ZD8YdSMVXDjlCmdgN7Ig30IFuf9pvm5QaC9AbJ0Lq0n29J961S58WpId1iD0MblWM2nU521dUtPH_wg6Wfxjuc8yUR9O6y2d-6iy7-Md44znmM0jZSYA6yuUZzjqQY2FEvhvqXreqPe5vhmt3eZckkPTmQK8mTaL6wAL2f32-2qNq7B-pFG4qHo4EPFJLoWUUlgUMygJSXONXZSsKyk8iBvNyslTPpamoNiaW9mSV6HxyXt0Vdamjzi7dSk-T_S6DBIDkxplDqCvAyYR8AUNcxRN1dYBMp-M-_jlkdHQ0BefwAWyCvSeDfgmJjVe8srIItESjggSiOYZU3P26AR37z_KgmP_qHgEXF0UMoCzMWQpADJYAKQRG3aCzQkqXHp5CjKzhpI7xh3puERjWcp_syvr2TAr0iUDPnIl3ftn6fNKKo2eoZ325G9eILGM6K2TBR359YKknKaeFvt10RH_19x6SBJUiZJ57kkfc2lVJLgJ5KUPr9JUtK_oneWS3BYLkmTUkkqxi2CeZ5Ln0vSL3NJ_JRLcnYv4ZJXzqXdWS5lkpTjUlGSpHJJOnHpdyQJ_qYkpdTCh6moT9GanNep3sMKL8ne9JfBfoZbg7E2aYRNbb0l5EudMrfh1VY1nEvFNq5g4zrcG5cK3fCusME8CRAHYQWgiumogaWrvlEh2MW-Gnp-xUwu2w_CC6lx0eMu-Poeq36F0nmLfR1XgjAysBsGzNbxPYFTO9ZIQVbMK81xV3-pXwedW8OcPpoc0sOxNQKdm2ipmN_v59hv-89SR7nrr9GDuKrrHG9Ml0vvsTev8l5z19k9QWItbuH3B_N2ao201wE_0SL06OGBBXuR5loDXHWvu_HeJc-u2lAfrWg0U4wZ6Wj6zGm9WARKdnOfehYITz1YvZP67uNmw2x9XaDN0XLBtQyWhHapmHYvWKgenWMgDzu0eJAJdFXBwbPQ4tQur_Pdrt7sGu1mi9mScL8TeI4JXF-o_wfQGVio"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Free flashcard maker: Flashcards for students",
+      "link": "https://www.adobe.com/in/acrobat/online/flashcard-maker.html",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdAHrOzAVVFWnCYx0RxXrTWcmvfWYnVRr4PBCiZYJUlmikKJtgvnf-VmCXmfUQDXsuJ7QEK-ED0CAblEw0bN13GIvot1jb9A5ZNyIveOKqj_o1ANalpttmxErZWhzwLdAsW379smvejxOnsrrwFFnpJ8Ry5lc&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQFnoECCoQAQ&uoh=1",
+      "displayed_link": "https://www.adobe.com \u203a Home \u203a Acrobat",
+      "favicon": "https://serpapi.com/images/i/UklGRiYBAABXRUJQVlA4IBoBAAAQBwCdASocABwAPtFAtFooIqgoFAEAGglsALEUgWQDbAZ6B1gHPgeymD8RUVOOTEKW3RbAFVphHFatI8XvurIgAAD-_NTJ-R_2WmcTzHV2DNCxaZae3Mx23d5YU1qL4XEh4XWoT1n_obYNft_9srdAVmC-Gp7jn_499yFxh34L5PHWGMoi_5NYyq_eUf_OrlvP_yqsX01PuiRlPU9P2BCIyLf2JC1o3c0d8TEtLfkPquz5uXPHFgjyF_xXk0xA9RteqTh1SppzVGEiQn4sktxmfuXtLa6voO06kxjguZdwdfzadUuzfnXiHJY2mQ6555EMXmBXj1fFngE0FSYIYNG-8IYi-dR9SESxl7fWvlsWfz0TxOH76AIAAAA.webp",
+      "snippet": "Create and study with a free online flashcard maker using AI to turn notes and PDFs into flashcards for students, exams, revision and quick study.",
+      "snippet_highlighted_words": [
+        "free online flashcard maker using AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Create and study with a free online flashcard maker using AI to turn notes and PDFs into flashcards for students, exams, revision and quick study.",
+          "source_info_link": "https://www.adobe.com/in/acrobat/online/flashcard-maker.html",
+          "icon": "https://serpapi.com/images/i/UklGRiYBAABXRUJQVlA4IBoBAAAQBwCdASocABwAPtFAtFooIqgoFAEAGglsALEUgWQDbAZ6B1gHPgeymD8RUVOOTEKW3RbAFVphHFatI8XvurIgAAD-_NTJ-R_2WmcTzHV2DNCxaZae3Mx23d5YU1qL4XEh4XWoT1n_obYNft_9srdAVmC-Gp7jn_499yFxh34L5PHWGMoi_5NYyq_eUf_OrlvP_yqsX01PuiRlPU9P2BCIyLf2JC1o3c0d8TEtLfkPquz5uXPHFgjyF_xXk0xA9RteqTh1SppzVGEiQn4sktxmfuXtLa6voO06kxjguZdwdfzadUuzfnXiHJY2mQ6555EMXmBXj1fFngE0FSYIYNG-8IYi-dR9SESxl7fWvlsWfz0TxOH76AIAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Adobe"
+    },
+    {
+      "position": 2,
+      "title": "Best AI for creating flashcards as of now? : r/Anki",
+      "link": "https://www.reddit.com/r/Anki/comments/16oev43/best_ai_for_creating_flashcards_as_of_now/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESkQEB6zswFR5814U1pjMgz91T9zd1lCmKvYTqYs-sOSeTZAFhITlH2QxUd-WJNQWxH92Shq7RFhe3ID-t6dP-mAdgTRE-Csb87MACFX14aztu15aXSZygmc-8otab4KSrwG7YQANbeN4hNr0Z1SDdU-76Q9lDYKj3CCdDqPcGxKt50tO3tPh6cictdlsHI3b7ivm8&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQFnoECDgQAQ&uoh=1",
+      "displayed_link": "220+ comments \u00b7 2 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Hello, I found tons of AIs that make flashcards starting from PDF files; however, many times flashcards are really inefficient and tons of content gets ...",
+      "sitelinks": {
+        "list": [
+          {
+            "title": "My 4-month journey building an AI flashcard generator",
+            "link": "https://www.reddit.com/r/Anki/comments/1jmr8yr/my_4month_journey_building_an_ai_flashcard/",
+            "answer_count": 67,
+            "date": "29 Mar 2025"
+          },
+          {
+            "title": "Best ai flashcard generator for students 2026",
+            "link": "https://www.reddit.com/r/studytips/comments/1q8yikk/best_ai_flashcard_generator_for_students_2026/",
+            "answer_count": 22,
+            "date": "11 Jan 2026"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Anki Decks by SweetBytes is a popular AI tool these days, it supports PDF, card generation, image occlusion, and more. Web Tool : Anki Decks - ...",
+          "source_info_link": "https://www.reddit.com/r/Anki/comments/16oev43/best_ai_for_creating_flashcards_as_of_now/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/Anki"
+    },
+    {
+      "position": 3,
+      "title": "Create Flashcards with AI",
+      "link": "https://support.microsoft.com/en-us/education/copilot/create-flashcards-with-ai",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEShwEB6zswFag67HeUa-u4VeTpC12dOyv5fE-tS1OX9luVIF9fil-RfJjzOlMvCRRR6oftlqm4LWilAe-Is18SpmiPdveY02iwxljVhYVYKzZk77hRTNChTM1wUVvPqOWQkcaSpB24-tz1unwlCUIN4a88COMXMi513HRhfgBpl7TGMMDkCMloZHg&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQFnoECDsQAQ&uoh=1",
+      "displayed_link": "https://support.microsoft.com \u203a education \u203a copilot \u203a cr...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd-UAAAAY0lEQVR4AWL4FKD0n1T810XEq3Afg1c9oL05NgEQiIIguk3Y1MVWZ6rYg1qUDQgrH8R8uQsnmHB4p5wGOAAEBAQErDltXeapKjRN2p8W9oO-1HxkSdvttEI_zGmAgICAgP3gC69IRT5tx_gHAAAAAElFTkSuQmCC.png",
+      "snippet": "Flashcards in Learning Activities use AI to turn your content into study cards. Choose from term and definition, question and answer, or multiple-choice ...",
+      "snippet_highlighted_words": [
+        "AI to turn your content into study cards"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Flashcards in Learning Activities use AI to turn your content into study cards. Choose from term and definition, question and answer, or multiple-choice ...",
+          "source_info_link": "https://support.microsoft.com/en-us/education/copilot/create-flashcards-with-ai",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd-UAAAAY0lEQVR4AWL4FKD0n1T810XEq3Afg1c9oL05NgEQiIIguk3Y1MVWZ6rYg1qUDQgrH8R8uQsnmHB4p5wGOAAEBAQErDltXeapKjRN2p8W9oO-1HxkSdvttEI_zGmAgICAgP3gC69IRT5tx_gHAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Microsoft Support",
+      "read_more_link": "https://support.microsoft.com/en-us/education/copilot/create-flashcards-with-ai#:~:text=Flashcards%20in%20Learning%20Activities%20use,them%20in%20a%20single%20set."
+    },
+    {
+      "position": 4,
+      "title": "AI Flashcard Generator",
+      "link": "https://www.revisely.com/flashcard-generator",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESZAHrOzAVMPuaCfzdV-Ws8MiHIB9wnHYiioFgiiHNE2EEdMkp_0juSHWbxeskKLJI4q9OG691XhvphMfl6Zm_IdX_exBbyOLyd5dA3BNhqYmhGnxQJ05ga5XbC8tRPcbX4lf9WhI&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQFnoECDoQAQ&uoh=1",
+      "displayed_link": "https://www.revisely.com \u203a flashcard-generator",
+      "favicon": "https://serpapi.com/images/i/UklGRkQBAABXRUJQVlA4IDgBAABQBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0yhHj3ukSW2zHPx-f_fMxERnjzzOddrBhpaE2F1lSgKeQkdre0ngIAAP79LFbfdo12BZ3djtyoex96h0whvIRV-j_SZoR6Ejjr30E_VQ93_UHTgKpYZEYEltpvOZjvbPJB6vSPkhO3e7-SbeyrYqo9Gtt4TsoJimG7mL9MOcJaYxntlAE5PxcsFdpG7EEsaFBrsqUT1PifttmC5jlJvJAaKGISDahFmq8yeE_-HQVu4kottL-uJq47TGmiRaveklEzwOKCW5AUUQ2S_5TZuOoLU3yw5uSpzzbqaEnNw6a3e8RNh1OVwVqB5KZeJkHzMKSaEaXyu81FMdjYNwDnl-bz3aCuxS2TsImiL9iGkk9J5FHWHKMZ9G9WYNMAAAA.webp",
+      "snippet": "Revisely's flashcard maker automatically transforms your pictures, notes, PDFs, PowerPoints and other documents into flashcards using the power of AI. Simply ...",
+      "snippet_highlighted_words": [
+        "Revisely's flashcard maker"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Revisely's flashcard maker automatically transforms your pictures, notes, PDFs, PowerPoints and other documents into flashcards using the power of AI. Simply ...",
+          "source_info_link": "https://www.revisely.com/flashcard-generator",
+          "icon": "https://serpapi.com/images/i/UklGRkQBAABXRUJQVlA4IDgBAABQBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0yhHj3ukSW2zHPx-f_fMxERnjzzOddrBhpaE2F1lSgKeQkdre0ngIAAP79LFbfdo12BZ3djtyoex96h0whvIRV-j_SZoR6Ejjr30E_VQ93_UHTgKpYZEYEltpvOZjvbPJB6vSPkhO3e7-SbeyrYqo9Gtt4TsoJimG7mL9MOcJaYxntlAE5PxcsFdpG7EEsaFBrsqUT1PifttmC5jlJvJAaKGISDahFmq8yeE_-HQVu4kottL-uJq47TGmiRaveklEzwOKCW5AUUQ2S_5TZuOoLU3yw5uSpzzbqaEnNw6a3e8RNh1OVwVqB5KZeJkHzMKSaEaXyu81FMdjYNwDnl-bz3aCuxS2TsImiL9iGkk9J5FHWHKMZ9G9WYNMAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Revisely",
+      "read_more_link": "https://www.revisely.com/flashcard-generator#:~:text=Revisely's%20flashcard%20maker%20automatically%20transforms,create%20your%20flashcards%20in%20seconds."
+    },
+    {
+      "position": 5,
+      "title": "Wisdolia - The Best AI Quiz and Flashcard Generator! | Mental ...",
+      "link": "https://www.youtube.com/watch?v=ZOVHMw9tPA4",
+      "displayed_link": "9.9K+ views \u00b7 2 years ago",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh_Kqg4VrY-2VKfHNrmNHV_YIx_JBlKrFb5khXD-vD7uy2MM7rTLDebA&s",
+      "favicon": "https://serpapi.com/images/i/UklGRpwAAABXRUJQVlA4IJAAAAAQAwCdASoQABAAAsBMJbACdEyAZIBvHZEVF_xH8jFr8RAA_vdfqk7B4h7c7SA9EXLm1jvCcvS12TTPc4SgLiYbbdnDtj5mFYsy9rYK8egN-m_wy1bF7_lqaJwe1kOFY9IH8jmlO7DbAWe9V_-WsvvcWurSf-Cp-rbcVf_uF_E7k7jxw1wX2r_PvJ3PjrggAAA.webp",
+      "snippet": "Wisdolia - The Best AI Quiz and Flashcard Generator! | Mental Dental. @mentaldental267 likes9.8K views2 years ago ... How to use Wisdolia AI ...",
+      "duration": "16:59",
+      "key_moments": [
+        {
+          "time": "02:37",
+          "title": "Summary Outline",
+          "link": "https://www.youtube.com/watch?v=ZOVHMw9tPA4&t=157"
+        },
+        {
+          "time": "04:08",
+          "title": "What Type of Nerve Fibers Are Responsible for Conducting Pulpitis Pain Characterized by Dull Throbbing",
+          "link": "https://www.youtube.com/watch?v=ZOVHMw9tPA4&t=248"
+        },
+        {
+          "time": "05:20",
+          "title": "Free Response Questions",
+          "link": "https://www.youtube.com/watch?v=ZOVHMw9tPA4&t=320"
+        },
+        {
+          "time": "05:48",
+          "title": "How Does the Technique of Pulp Capping Contribute to Protecting the Dental Pulp",
+          "link": "https://www.youtube.com/watch?v=ZOVHMw9tPA4&t=348"
+        },
+        {
+          "time": "07:04",
+          "title": "How Does Reparative Dentin Differ from Reactionary Dentin in Terms of Formation and Function",
+          "link": "https://www.youtube.com/watch?v=ZOVHMw9tPA4&t=424"
+        },
+        {
+          "time": "13:18",
+          "title": "What Is the Likely Progression of Alex's Dental Condition",
+          "link": "https://www.youtube.com/watch?v=ZOVHMw9tPA4&t=798"
+        },
+        {
+          "time": "15:09",
+          "title": "Upgrade to the Premium",
+          "link": "https://www.youtube.com/watch?v=ZOVHMw9tPA4&t=909"
+        }
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Wisdolia - The Best AI Quiz and Flashcard Generator! | Mental Dental. @mentaldental267 likes9.8K views2 years ago ... How to use Wisdolia AI ...",
+          "icon": "https://serpapi.com/images/i/UklGRpwAAABXRUJQVlA4IJAAAAAQAwCdASoQABAAAsBMJbACdEyAZIBvHZEVF_xH8jFr8RAA_vdfqk7B4h7c7SA9EXLm1jvCcvS12TTPc4SgLiYbbdnDtj5mFYsy9rYK8egN-m_wy1bF7_lqaJwe1kOFY9IH8jmlO7DbAWe9V_-WsvvcWurSf-Cp-rbcVf_uF_E7k7jxw1wX2r_PvJ3PjrggAAA.webp"
+        }
+      },
+      "source": "YouTube \u00b7 Mental Dental"
+    },
+    {
+      "position": 6,
+      "title": "AI Flashcard Generator | The Best AI Tools for Learning",
+      "link": "https://www.studyfetch.com/features/flashcards",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESZgHrOzAVWOHwkAKPotkHMJmV0v6_sbJKSE-MJUVk193zxbDPFJEUtZEMVdrwOuyEtaarmXrPjE5pINHkxyX1itXhXUljROBJmrjk5WsPULXwfBQV3c2feouQm9N-Z08Ptn_gYzEiSw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQFnoECDUQAQ&uoh=1",
+      "displayed_link": "https://www.studyfetch.com \u203a features \u203a flashcards",
+      "favicon": "https://serpapi.com/images/i/UklGRmoBAABXRUJQVlA4IF4BAACwBwCdASocABwAPtE-tFooIigoFAEAGglAFOaVPNS_PKzRfS3sCfxv-jf7nr1-iaFcEnxHszNeteLZFeofiJIHpffdRzAAAP7nO9RDX3pon5lu8G_fGamRfKLS3v4jH_aVe1Ew-ShPytlY75P0J6Ok6uXqr5Tv_LZwp1MixHn6C4oPUwijn_4Smlnx0kr4UPESvBWFMG5eUz_YTODgY2H_CID3sGv-17zvdxtqRsOPIrwaMRabPmV66Rrlvayq7f_hmnDMsxF49pTOLuangTr5RLsfJ4f_js7_74PGdumvXKIfmcjVkbL9HGzOt5j1VvvmXSVeW9Z9-ePvPWVKCK1WZ8tVZIHmSqfiF_Y_dP9CelXtLdA975H2ogQOfgBHjzyULlbDMmDkmDexH5WTfxR9Eb8vfn0v-t608Rx4Zntm34lFn0u-cPlmX-4-fzbQvwrvreMNVKgOBrccuT1QAA.webp",
+      "snippet": "Upload your notes or study material and Sparky generates flashcards in the format you want. Term and definition, multiple choice, fill-in-the-blank, or audio.",
+      "snippet_highlighted_words": [
+        "Sparky generates flashcards in the format you want"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Upload your notes or study material and Sparky generates flashcards in the format you want. Term and definition, multiple choice, fill-in-the-blank, or audio.",
+          "source_info_link": "https://www.studyfetch.com/features/flashcards",
+          "icon": "https://serpapi.com/images/i/UklGRmoBAABXRUJQVlA4IF4BAACwBwCdASocABwAPtE-tFooIigoFAEAGglAFOaVPNS_PKzRfS3sCfxv-jf7nr1-iaFcEnxHszNeteLZFeofiJIHpffdRzAAAP7nO9RDX3pon5lu8G_fGamRfKLS3v4jH_aVe1Ew-ShPytlY75P0J6Ok6uXqr5Tv_LZwp1MixHn6C4oPUwijn_4Smlnx0kr4UPESvBWFMG5eUz_YTODgY2H_CID3sGv-17zvdxtqRsOPIrwaMRabPmV66Rrlvayq7f_hmnDMsxF49pTOLuangTr5RLsfJ4f_js7_74PGdumvXKIfmcjVkbL9HGzOt5j1VvvmXSVeW9Z9-ePvPWVKCK1WZ8tVZIHmSqfiF_Y_dP9CelXtLdA975H2ogQOfgBHjzyULlbDMmDkmDexH5WTfxR9Eb8vfn0v-t608Rx4Zntm34lFn0u-cPlmX-4-fzbQvwrvreMNVKgOBrccuT1QAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "StudyFetch",
+      "read_more_link": "https://www.studyfetch.com/features/flashcards#:~:text=Upload%20your%20notes%20or%20study,multiple%20choice%2C%20fill%2Din%2Dthe%2Dblank%2C%20or%20audio."
+    },
+    {
+      "position": 7,
+      "title": "Top 5 AI Flashcard Makers | Best Generator Comparison",
+      "link": "https://www.remnote.com/blog/best-flashcard-maker",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESaQHrOzAVxXVa8rFUJ1PRQdtFLwKnVTxcl0ZlCX6pNqhh2PcWp4z9dczf2U9KvB5-Y3cACXkhjKzxOxm2GCJI-8UJRggmvlQYQJIKTQau_-GpLVEN4_0ZAGn5ueFtixkFtK5YXnSQXQeMAw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQFnoECDkQAQ&uoh=1",
+      "displayed_link": "https://www.remnote.com \u203a Blog",
+      "favicon": "https://serpapi.com/images/i/UklGRlABAABXRUJQVlA4IEQBAACwBwCdASocABwAPtE-tFooIigoFAEAGglsALEUGcCAuwDeTVUvgk9YwmAfoAH3_2tLS545YfDzpiEYUEgyxvoRfFhFUiAAAPa_wRNVFW_XdU2w96d6QxiEV7NuI7lhtOocdh5Rer-4Gew_a62ku429JDEDfF6XfBp2A96fUAnU1kfot6vjQnMuAtj_KXkm2346F0ExcRqb8Kzwx_tsbYVA5eo97kk1PbSj9-Lq5ALfZYO-vrM11QKRHZTtwxeuX3D1v_y-oTXh6BGpNOSrRfEIpqfgmLHcbzJISMzdE4BGq59ff97HHB6s9cpc3LctC7_gBipKpWmxibWTP-b6lvuRMH4sqlipmu3akNBPh_lpxlh9kwUbkRJ2BmfeUtmA6nbSu379c5Otxvxb5QdnYX70S40hbyN-fuHQYDykZIUe8h-qAAA.webp",
+      "date": "8 Apr 2026",
+      "snippet": "Stop spending hours making flashcards manually. Let AI do that for you. Read and find a list of the 5 best AI flashcard makers.",
+      "snippet_highlighted_words": [
+        "Read and find a list of the 5 best AI flashcard makers"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Stop spending hours making flashcards manually. Let AI do that for you. Read and find a list of the 5 best AI flashcard makers.",
+          "source_info_link": "https://www.remnote.com/blog/best-flashcard-maker",
+          "icon": "https://serpapi.com/images/i/UklGRlABAABXRUJQVlA4IEQBAACwBwCdASocABwAPtE-tFooIigoFAEAGglsALEUGcCAuwDeTVUvgk9YwmAfoAH3_2tLS545YfDzpiEYUEgyxvoRfFhFUiAAAPa_wRNVFW_XdU2w96d6QxiEV7NuI7lhtOocdh5Rer-4Gew_a62ku429JDEDfF6XfBp2A96fUAnU1kfot6vjQnMuAtj_KXkm2346F0ExcRqb8Kzwx_tsbYVA5eo97kk1PbSj9-Lq5ALfZYO-vrM11QKRHZTtwxeuX3D1v_y-oTXh6BGpNOSrRfEIpqfgmLHcbzJISMzdE4BGq59ff97HHB6s9cpc3LctC7_gBipKpWmxibWTP-b6lvuRMH4sqlipmu3akNBPh_lpxlh9kwUbkRJ2BmfeUtmA6nbSu379c5Otxvxb5QdnYX70S40hbyN-fuHQYDykZIUe8h-qAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "RemNote"
+    }
+  ],
+  "discussions_and_forums": [
+    {
+      "title": "Best free ai flash card maker?",
+      "link": "https://www.reddit.com/r/studytips/comments/1p1lmsk/best_free_ai_flash_card_maker/",
+      "date": "10 months ago",
+      "extensions": [
+        "r/studytips",
+        "10+ comments"
+      ],
+      "source": "Reddit",
+      "answers": [
+        {
+          "link": "https://www.reddit.com/r/studytips/comments/1p1lmsk/best_free_ai_flash_card_maker/nq5h2x0/",
+          "extensions": [
+            "Top answer",
+            "2 votes",
+            "9 months ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/studytips/comments/1p1lmsk/best_free_ai_flash_card_maker/npvg3wn/",
+          "extensions": [
+            "9 months ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/studytips/comments/1p1lmsk/best_free_ai_flash_card_maker/npy2e0e/",
+          "extensions": [
+            "9 months ago"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The best AI app/addon to generate flashcards from pdf - Learning Effectively",
+      "link": "https://forums.ankiweb.net/t/the-best-ai-app-addon-to-generate-flashcards-from-pdf/49616",
+      "date": "2 years ago",
+      "source": "Anki Forums",
+      "answers": [
+        {
+          "link": "https://forums.ankiweb.net/t/the-best-ai-app-addon-to-generate-flashcards-from-pdf/49616"
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvOYLqvI5YuG7ll7R-gwnTh3s5auw:1789752084936&ei=FHOtaqfhOMuk0-kP6_b02AI&start=10&sa=N&sstk=AS6-VmIgLxLxAiEbgeDoJMOf7qAQ_kyZjK2oHK-CeQTJ1-xW90CMgDbKI2fFwhXg0e1tTiZwY9lZNkafJSujjxJ0cNHB3V2jwgMFzw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQ8NMDegQILRAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvOYLqvI5YuG7ll7R-gwnTh3s5auw:1789752084936&ei=FHOtaqfhOMuk0-kP6_b02AI&start=10&sa=N&sstk=AS6-VmIgLxLxAiEbgeDoJMOf7qAQ_kyZjK2oHK-CeQTJ1-xW90CMgDbKI2fFwhXg0e1tTiZwY9lZNkafJSujjxJ0cNHB3V2jwgMFzw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQ8tMDegQILRAE",
+      "3": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvOYLqvI5YuG7ll7R-gwnTh3s5auw:1789752084936&ei=FHOtaqfhOMuk0-kP6_b02AI&start=20&sa=N&sstk=AS6-VmIgLxLxAiEbgeDoJMOf7qAQ_kyZjK2oHK-CeQTJ1-xW90CMgDbKI2fFwhXg0e1tTiZwY9lZNkafJSujjxJ0cNHB3V2jwgMFzw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQ8tMDegQILRAG",
+      "4": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvOYLqvI5YuG7ll7R-gwnTh3s5auw:1789752084936&ei=FHOtaqfhOMuk0-kP6_b02AI&start=30&sa=N&sstk=AS6-VmIgLxLxAiEbgeDoJMOf7qAQ_kyZjK2oHK-CeQTJ1-xW90CMgDbKI2fFwhXg0e1tTiZwY9lZNkafJSujjxJ0cNHB3V2jwgMFzw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQ8tMDegQILRAI",
+      "5": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvOYLqvI5YuG7ll7R-gwnTh3s5auw:1789752084936&ei=FHOtaqfhOMuk0-kP6_b02AI&start=40&sa=N&sstk=AS6-VmIgLxLxAiEbgeDoJMOf7qAQ_kyZjK2oHK-CeQTJ1-xW90CMgDbKI2fFwhXg0e1tTiZwY9lZNkafJSujjxJ0cNHB3V2jwgMFzw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQ8tMDegQILRAK",
+      "6": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvOYLqvI5YuG7ll7R-gwnTh3s5auw:1789752084936&ei=FHOtaqfhOMuk0-kP6_b02AI&start=50&sa=N&sstk=AS6-VmIgLxLxAiEbgeDoJMOf7qAQ_kyZjK2oHK-CeQTJ1-xW90CMgDbKI2fFwhXg0e1tTiZwY9lZNkafJSujjxJ0cNHB3V2jwgMFzw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQ8tMDegQILRAM",
+      "7": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvOYLqvI5YuG7ll7R-gwnTh3s5auw:1789752084936&ei=FHOtaqfhOMuk0-kP6_b02AI&start=60&sa=N&sstk=AS6-VmIgLxLxAiEbgeDoJMOf7qAQ_kyZjK2oHK-CeQTJ1-xW90CMgDbKI2fFwhXg0e1tTiZwY9lZNkafJSujjxJ0cNHB3V2jwgMFzw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQ8tMDegQILRAO",
+      "8": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvOYLqvI5YuG7ll7R-gwnTh3s5auw:1789752084936&ei=FHOtaqfhOMuk0-kP6_b02AI&start=70&sa=N&sstk=AS6-VmIgLxLxAiEbgeDoJMOf7qAQ_kyZjK2oHK-CeQTJ1-xW90CMgDbKI2fFwhXg0e1tTiZwY9lZNkafJSujjxJ0cNHB3V2jwgMFzw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQ8tMDegQILRAQ",
+      "9": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvOYLqvI5YuG7ll7R-gwnTh3s5auw:1789752084936&ei=FHOtaqfhOMuk0-kP6_b02AI&start=80&sa=N&sstk=AS6-VmIgLxLxAiEbgeDoJMOf7qAQ_kyZjK2oHK-CeQTJ1-xW90CMgDbKI2fFwhXg0e1tTiZwY9lZNkafJSujjxJ0cNHB3V2jwgMFzw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQ8tMDegQILRAS",
+      "10": "https://www.google.co.in/search?q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvOYLqvI5YuG7ll7R-gwnTh3s5auw:1789752084936&ei=FHOtaqfhOMuk0-kP6_b02AI&start=90&sa=N&sstk=AS6-VmIgLxLxAiEbgeDoJMOf7qAQ_kyZjK2oHK-CeQTJ1-xW90CMgDbKI2fFwhXg0e1tTiZwY9lZNkafJSujjxJ0cNHB3V2jwgMFzw&ved=2ahUKEwinu4iK0viWAxVL0jQHHWs7HSsQ8tMDegQILRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+flashcard+generator+for+first%E2%80%91year+commerce+students&start=90"
+    }
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "search_metadata": {
+    "id": "6aad744ceb2bd17acc757ce3",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/wfTNnPQ7ddyY_VJZWA7ZJs0R8HUsIhb14cJkdLtJoHM/6aad744ceb2bd17acc757ce3.json",
+    "markdown_endpoint": "https://serpapi.com/searches/wfTNnPQ7ddyY_VJZWA7ZJs0R8HUsIhb14cJkdLtJoHM/6aad744ceb2bd17acc757ce3.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/wfTNnPQ7ddyY_VJZWA7ZJs0R8HUsIhb14cJkdLtJoHM/6aad744ceb2bd17acc757ce3.json_with_pixel_position",
+    "created_at": "2026-09-18 17:26:36 UTC",
+    "processed_at": "2026-09-18 17:26:36 UTC",
+    "google_url": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&oq=free+AI+education+tools+alternatives&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/wfTNnPQ7ddyY_VJZWA7ZJs0R8HUsIhb14cJkdLtJoHM/6aad744ceb2bd17acc757ce3.html",
+    "total_time_taken": 11.44
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "free AI education tools alternatives",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "free AI education tools alternatives",
+    "total_results": 113,
+    "time_taken_displayed": 0.2,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "6 Best FREE AI Tools for Students in 2026 (Study Smarter)",
+      "link": "https://www.youtube.com/watch?v=Sg1CcPNqKE4",
+      "thumbnail": "https://serpapi.com/searches/6aad744ceb2bd17acc757ce3/images/-_Hml-qm8401-Ge7qKL536r00H6MY37EX709EcSvqeI.jpeg",
+      "channel": "Parker Prompts",
+      "duration": "8:29",
+      "platform": "YouTube",
+      "date": "3 weeks ago",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQ3r7K8rqOcPp3KFuoumpcd7t9Gql1zi4RaXw"
+    },
+    {
+      "position": 2,
+      "title": "Stop Paying for AI! These 5 FREE Tools Do It All",
+      "link": "https://www.youtube.com/watch?v=eoF199KWSmo",
+      "thumbnail": "https://serpapi.com/searches/6aad744ceb2bd17acc757ce3/images/5SSUIOVdB2WPuFRauRj2MQumM6zEsnJ8H6j7qv-K0Us.jpeg",
+      "channel": "WsCube Tech",
+      "duration": "11:08",
+      "platform": "YouTube",
+      "date": "3 weeks ago",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcSfTBijB_K0XbrehZN5DlCQZrYTEVnEbWTh_A"
+    },
+    {
+      "position": 3,
+      "title": "Don't Buy AI Tools! Use These 8 FREE Google Alternatives ...",
+      "link": "https://www.youtube.com/watch?v=-wJpoCmMcCY",
+      "thumbnail": "https://serpapi.com/searches/6aad744ceb2bd17acc757ce3/images/WdF7giUUj64hZH6jY8RoprkcF-p-20h06HOZ89g2oAA.jpeg",
+      "channel": "WsCube Tech",
+      "duration": "16:08",
+      "platform": "YouTube",
+      "date": "1 month ago",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcRMpnX3QW4L-9pV78vM1vY4Rc3dJ40as7NOLA"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "What is the best free AI educational tool for students?",
+      "type": "ai_overview",
+      "page_token": "O5jaE3icHdBRboIwGADg7DJ7VIrgholZ4hCmkW60_BT6spSiAq2Ak63o2-6yU-00S_Yd4fv-0XWrfu_Gahj6y2I6NcZMjl131PuJ7CZ1OxWXayunUmhdCKkW84c5ejrI5fpzs3o-b1Yx9H3qE4veCNs3ZRu30hFAPsGyBh46bgkBEcqLuApirHRXWn0O6TbjjIjitnKLdS_KrEyl_egkJ9LkquI08G64JYxnOIxCdxRN5UjEt8I2o9R4vn_hm9TfuBz6hqY9jSxcU7T1pYVYnJE6tcEk4O0o41eRpWe8HgMeknMRooxcUR5pZTKkLRmQN4GIiJOyxsqxOTwaiiqfsnK2rkrGAmzlzDvn4L7S8HKVJy8ufD3sGFqJsatjIDfZ6BOgYBeFGF4BvUU2f0lC6SYpN6JRowhIA2BmEN8f5Ndydv__uXw_nIZF_9Ed_wDXDoL2",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=O5jaE3icHdBRboIwGADg7DJ7VIrgholZ4hCmkW60_BT6spSiAq2Ak63o2-6yU-00S_Yd4fv-0XWrfu_Gahj6y2I6NcZMjl131PuJ7CZ1OxWXayunUmhdCKkW84c5ejrI5fpzs3o-b1Yx9H3qE4veCNs3ZRu30hFAPsGyBh46bgkBEcqLuApirHRXWn0O6TbjjIjitnKLdS_KrEyl_egkJ9LkquI08G64JYxnOIxCdxRN5UjEt8I2o9R4vn_hm9TfuBz6hqY9jSxcU7T1pYVYnJE6tcEk4O0o41eRpWe8HgMeknMRooxcUR5pZTKkLRmQN4GIiJOyxsqxOTwaiiqfsnK2rkrGAmzlzDvn4L7S8HKVJy8ufD3sGFqJsatjIDfZ6BOgYBeFGF4BvUU2f0lC6SYpN6JRowhIA2BmEN8f5Ndydv__uXw_nIZF_9Ed_wDXDoL2",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk9XazRaazVmVFV0Tk5UQjBSM0JoWDNWQ2VYVTJWRlZLVGpKbVkzRlRkWEZUV0dOZlpqbEZabUZYTVVoNFVGTnBUMlp6WlRFM1V6aHNiM2RpYUVWU2NWZDJNV2gwUXpoYU1qUTJZVEJ5UkdGYVluQTBOM0JLT1RkUlVSSVhWbGhUZEdGdmFtRk9Ua2hyTW5KdlVHdzViUzF0UVdzYUlrRkVjM0k1WmxOMU5FUm1TemRxVkVsWVRYUmZWVE5yWlRWUVkwdHBXRWhRZUhjIiwiZmN2IjoiMyIsImVpIjoiVlhTdGFvamFOTkhrMnJvUGw5bS1tQWsiLCJxYyI6IkNpUm1jbVZsSUdGcElHVmtkV05oZEdsdmJpQjBiMjlzY3lCaGJIUmxjbTVoZEdsMlpYTVFBSDEtYlI0XyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBmcmVlIEFJIGVkdWNhdGlvbmFsIHRvb2wgZm9yIHN0dWRlbnRzPyIsImxrIjoiR2labWNtVmxJR1ZrZFdOaGRHbHZibUZzSUdGcElIUnZiMnh6SUdadmNpQnpkSFZrWlc1MGN3IiwiYnMiOiJjMzJQc1E2Q1FCQkVZN3VWOVJsMEs0V1d4RmdTU3UwTjlRcG43cEtUSTl3UzQ5OExpeElseG5wZTNzeEFDWWZDRUtNTnlFYmpSUWZHYTZzMTVrZlVWVmNTVzEtVFFfYmU0ZFczR0xpcmRNMGhTMk8xRmZJVEl5dGstRUloaDNWaGJHa0dxWWlHTnNfazNFUEtzblNqb3JzUUw4R2NnRFBFazZKeHhMM19Oa0RqNEw1c1dwR2xpZHBOc3Y4c25DQ1ItOVJxLWMtLXdmMTdacGdkanRScXpILS1YQzZlIiwiaWQiOiJmY19WWFN0YW9qYU5OSGsycm9QbDltLW1Ba184In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk9XazRaazVmVFV0Tk5UQjBSM0JoWDNWQ2VYVTJWRlZLVGpKbVkzRlRkWEZUV0dOZlpqbEZabUZYTVVoNFVGTnBUMlp6WlRFM1V6aHNiM2RpYUVWU2NWZDJNV2gwUXpoYU1qUTJZVEJ5UkdGYVluQTBOM0JLT1RkUlVSSVhWbGhUZEdGdmFtRk9Ua2hyTW5KdlVHdzViUzF0UVdzYUlrRkVjM0k1WmxOMU5FUm1TemRxVkVsWVRYUmZWVE5yWlRWUVkwdHBXRWhRZUhjIiwiZmN2IjoiMyIsImVpIjoiVlhTdGFvamFOTkhrMnJvUGw5bS1tQWsiLCJxYyI6IkNpUm1jbVZsSUdGcElHVmtkV05oZEdsdmJpQjBiMjlzY3lCaGJIUmxjbTVoZEdsMlpYTVFBSDEtYlI0XyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBmcmVlIEFJIGVkdWNhdGlvbmFsIHRvb2wgZm9yIHN0dWRlbnRzPyIsImxrIjoiR2labWNtVmxJR1ZrZFdOaGRHbHZibUZzSUdGcElIUnZiMnh6SUdadmNpQnpkSFZrWlc1MGN3IiwiYnMiOiJjMzJQc1E2Q1FCQkVZN3VWOVJsMEs0V1d4RmdTU3UwTjlRcG43cEtUSTl3UzQ5OExpeElseG5wZTNzeEFDWWZDRUtNTnlFYmpSUWZHYTZzMTVrZlVWVmNTVzEtVFFfYmU0ZFczR0xpcmRNMGhTMk8xRmZJVEl5dGstRUloaDNWaGJHa0dxWWlHTnNfazNFUEtzblNqb3JzUUw4R2NnRFBFazZKeHhMM19Oa0RqNEw1c1dwR2xpZHBOc3Y4c25DQ1ItOVJxLWMtLXdmMTdacGdkanRScXpILS1YQzZlIiwiaWQiOiJmY19WWFN0YW9qYU5OSGsycm9QbDltLW1Ba184In0%3D"
+    },
+    {
+      "question": "Which AI tool is totally free?",
+      "type": "ai_overview",
+      "page_token": "sNnCHHicHdDbboIwAADQ7Gd8lHaIiyZmCcpVqGmhVHhZoCgVysXL5PK2f9lX7Wu27A9Ozte3vDTVz8sgHo_uvlaUvu_nRdsW8jTn7fzSKOl9bLjCUymzlFfr5dsSvp_5xvh09O3V0THtumhHQFCJ5cEkVd4QQqhmo0ob8eQP8eSmJ1b04QhGHLotMjTAjdWVArSlTbTjDXmmanKglvYasdxhNvHyGoZEFTEyEjVgQ4AAcvFEF75tRrQU-3AiRxzJPVKlhiWyIumGMRPHxILXVK5uGTOdxBK-F5q7uPQXXihgYMsLb_CfiarcdiYSSpiZiZuXDsSTPmDQDURFi6jkr0lj6obIGTMRiNnqGlPtEFj3kdcrnO3kw2NQT4f2gimZeClrGuWVD6CVWag9UQA8WkC_FvJU8Z4ayGBH8sz72Zk_N-rs_3Pzca4f6-7WFr9xQ4M3",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=sNnCHHicHdDbboIwAADQ7Gd8lHaIiyZmCcpVqGmhVHhZoCgVysXL5PK2f9lX7Wu27A9Ozte3vDTVz8sgHo_uvlaUvu_nRdsW8jTn7fzSKOl9bLjCUymzlFfr5dsSvp_5xvh09O3V0THtumhHQFCJ5cEkVd4QQqhmo0ob8eQP8eSmJ1b04QhGHLotMjTAjdWVArSlTbTjDXmmanKglvYasdxhNvHyGoZEFTEyEjVgQ4AAcvFEF75tRrQU-3AiRxzJPVKlhiWyIumGMRPHxILXVK5uGTOdxBK-F5q7uPQXXihgYMsLb_CfiarcdiYSSpiZiZuXDsSTPmDQDURFi6jkr0lj6obIGTMRiNnqGlPtEFj3kdcrnO3kw2NQT4f2gimZeClrGuWVD6CVWag9UQA8WkC_FvJU8Z4ayGBH8sz72Zk_N-rs_3Pzca4f6-7WFr9xQ4M3",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk9XazRaazVmVFV0Tk5UQjBSM0JoWDNWQ2VYVTJWRlZLVGpKbVkzRlRkWEZUV0dOZlpqbEZabUZYTVVoNFVGTnBUMlp6WlRFM1V6aHNiM2RpYUVWU2NWZDJNV2gwUXpoYU1qUTJZVEJ5UkdGYVluQTBOM0JLT1RkUlVSSVhWbGhUZEdGdmFtRk9Ua2hyTW5KdlVHdzViUzF0UVdzYUlrRkVjM0k1WmxOMU5FUm1TemRxVkVsWVRYUmZWVE5yWlRWUVkwdHBXRWhRZUhjIiwiZmN2IjoiMyIsImVpIjoiVlhTdGFvamFOTkhrMnJvUGw5bS1tQWsiLCJxYyI6IkNpUm1jbVZsSUdGcElHVmtkV05oZEdsdmJpQjBiMjlzY3lCaGJIUmxjbTVoZEdsMlpYTVFBSDEtYlI0XyIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgdG9vbCBpcyB0b3RhbGx5IGZyZWU/IiwibGsiOiJHaDEzYUdsamFDQmhhU0IwYjI5c0lHbHpJSFJ2ZEdGc2JIa2dabkpsWlEiLCJicyI6ImMzMlBzUTZDUUJCRVk3dVY5UmwwSzRXV3hGZ1NTdTBOOVFwbjdwS1RJOXdTNDk4TGl4SWx4bnBlM3N4QUNZZkNFS01OeUVialJRZkdhNnMxNWtmVVZWY1NXMS1UUV9iZTRkVzNHTGlyZE0waFMyTzFGZklUSXl0ay1FSWhoM1ZoYkdrR3FZaUdOc19rM0VQS3NuU2pvcnNRTDhHY2dEUEVrNkp4eEwzX05rRGo0TDVzV3BHbGlkcE5zdjhzbkNDUi05UnEtYy0td2YxN1pwZ2RqdFJxekgtLVhDNmUiLCJpZCI6ImZjX1ZYU3Rhb2phTk5IazJyb1BsOW0tbUFrXzgifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk9XazRaazVmVFV0Tk5UQjBSM0JoWDNWQ2VYVTJWRlZLVGpKbVkzRlRkWEZUV0dOZlpqbEZabUZYTVVoNFVGTnBUMlp6WlRFM1V6aHNiM2RpYUVWU2NWZDJNV2gwUXpoYU1qUTJZVEJ5UkdGYVluQTBOM0JLT1RkUlVSSVhWbGhUZEdGdmFtRk9Ua2hyTW5KdlVHdzViUzF0UVdzYUlrRkVjM0k1WmxOMU5FUm1TemRxVkVsWVRYUmZWVE5yWlRWUVkwdHBXRWhRZUhjIiwiZmN2IjoiMyIsImVpIjoiVlhTdGFvamFOTkhrMnJvUGw5bS1tQWsiLCJxYyI6IkNpUm1jbVZsSUdGcElHVmtkV05oZEdsdmJpQjBiMjlzY3lCaGJIUmxjbTVoZEdsMlpYTVFBSDEtYlI0XyIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgdG9vbCBpcyB0b3RhbGx5IGZyZWU%2FIiwibGsiOiJHaDEzYUdsamFDQmhhU0IwYjI5c0lHbHpJSFJ2ZEdGc2JIa2dabkpsWlEiLCJicyI6ImMzMlBzUTZDUUJCRVk3dVY5UmwwSzRXV3hGZ1NTdTBOOVFwbjdwS1RJOXdTNDk4TGl4SWx4bnBlM3N4QUNZZkNFS01OeUVialJRZkdhNnMxNWtmVVZWY1NXMS1UUV9iZTRkVzNHTGlyZE0waFMyTzFGZklUSXl0ay1FSWhoM1ZoYkdrR3FZaUdOc19rM0VQS3NuU2pvcnNRTDhHY2dEUEVrNkp4eEwzX05rRGo0TDVzV3BHbGlkcE5zdjhzbkNDUi05UnEtYy0td2YxN1pwZ2RqdFJxekgtLVhDNmUiLCJpZCI6ImZjX1ZYU3Rhb2phTk5IazJyb1BsOW0tbUFrXzgifQ%3D%3D"
+    },
+    {
+      "question": "Which AI platform is best for education?",
+      "type": "ai_overview",
+      "page_token": "cJcyTHicHdDbboIwAIDh7GW8VArTBROzhHlAnFVa2go3CxaUQ1uK4ADv9i57qj3Nlj3Any_5v75Frsqfpz5rW93MJ5Ou68bXqrqKdMyrca4mcTMoPuGxEOeYl_PZywy8Xvhidd86b_XW8YnWdIkMLLxjWnrPyLCHeAM39CF2WCRGsNE7ts6qxEJLplDDSVsn0stDhQB3M3E2I4wJmSKFjtBKhrSMZiGhxYF6IQGiYALivyZKg7Bnq7LFVNfQzLI_S1Ogi2htX_BJ1IjsQcC8ninHjUjXBS60sIsUPemByalEBDa-QHdO9g9qgI6X9hQKlMeUGokEMlgiQjHwOdE39BDWKksYW0MjZHYdkukBb5qBS9s_L0X7zoAT91XuE_TghZBEVs_Y7JtUllZkOTB2dblXa81WW3NfZDds6hvxRxf-ubBG_z8XHxfZzvWtuv4CuxGGTA",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=cJcyTHicHdDbboIwAIDh7GW8VArTBROzhHlAnFVa2go3CxaUQ1uK4ADv9i57qj3Nlj3Any_5v75Frsqfpz5rW93MJ5Ou68bXqrqKdMyrca4mcTMoPuGxEOeYl_PZywy8Xvhidd86b_XW8YnWdIkMLLxjWnrPyLCHeAM39CF2WCRGsNE7ts6qxEJLplDDSVsn0stDhQB3M3E2I4wJmSKFjtBKhrSMZiGhxYF6IQGiYALivyZKg7Bnq7LFVNfQzLI_S1Ogi2htX_BJ1IjsQcC8ninHjUjXBS60sIsUPemByalEBDa-QHdO9g9qgI6X9hQKlMeUGokEMlgiQjHwOdE39BDWKksYW0MjZHYdkukBb5qBS9s_L0X7zoAT91XuE_TghZBEVs_Y7JtUllZkOTB2dblXa81WW3NfZDds6hvxRxf-ubBG_z8XHxfZzvWtuv4CuxGGTA",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk9XazRaazVmVFV0Tk5UQjBSM0JoWDNWQ2VYVTJWRlZLVGpKbVkzRlRkWEZUV0dOZlpqbEZabUZYTVVoNFVGTnBUMlp6WlRFM1V6aHNiM2RpYUVWU2NWZDJNV2gwUXpoYU1qUTJZVEJ5UkdGYVluQTBOM0JLT1RkUlVSSVhWbGhUZEdGdmFtRk9Ua2hyTW5KdlVHdzViUzF0UVdzYUlrRkVjM0k1WmxOMU5FUm1TemRxVkVsWVRYUmZWVE5yWlRWUVkwdHBXRWhRZUhjIiwiZmN2IjoiMyIsImVpIjoiVlhTdGFvamFOTkhrMnJvUGw5bS1tQWsiLCJxYyI6IkNpUm1jbVZsSUdGcElHVmtkV05oZEdsdmJpQjBiMjlzY3lCaGJIUmxjbTVoZEdsMlpYTVFBSDEtYlI0XyIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgcGxhdGZvcm0gaXMgYmVzdCBmb3IgZWR1Y2F0aW9uPyIsImxrIjoiR2lkM2FHbGphQ0JoYVNCd2JHRjBabTl5YlNCcGN5QmlaWE4wSUdadmNpQmxaSFZqWVhScGIyNCIsImJzIjoiYzMyUHNRNkNRQkJFWTd1VjlSbDBLNFdXeEZnU1N1ME45UXBuN3BLVEk5d1M0OThMaXhJbHhucGUzc3hBQ1lmQ0VLTU55RWJqUlFmR2E2czE1a2ZVVlZjU1cxLVRRX2JlNGRXM0dMaXJkTTBoUzJPMUZmSVRJeXRrLUVJaGgzVmhiR2tHcVlpR05zX2szRVBLc25Tam9yc1FMOEdjZ0RQRWs2Snh4TDNfTmtEajRMNXNXcEdsaWRwTnN2OHNuQ0NSLTlScS1jLS13ZjE3WnBnZGp0UnF6SC0tWEM2ZSIsImlkIjoiZmNfVlhTdGFvamFOTkhrMnJvUGw5bS1tQWtfOCJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk9XazRaazVmVFV0Tk5UQjBSM0JoWDNWQ2VYVTJWRlZLVGpKbVkzRlRkWEZUV0dOZlpqbEZabUZYTVVoNFVGTnBUMlp6WlRFM1V6aHNiM2RpYUVWU2NWZDJNV2gwUXpoYU1qUTJZVEJ5UkdGYVluQTBOM0JLT1RkUlVSSVhWbGhUZEdGdmFtRk9Ua2hyTW5KdlVHdzViUzF0UVdzYUlrRkVjM0k1WmxOMU5FUm1TemRxVkVsWVRYUmZWVE5yWlRWUVkwdHBXRWhRZUhjIiwiZmN2IjoiMyIsImVpIjoiVlhTdGFvamFOTkhrMnJvUGw5bS1tQWsiLCJxYyI6IkNpUm1jbVZsSUdGcElHVmtkV05oZEdsdmJpQjBiMjlzY3lCaGJIUmxjbTVoZEdsMlpYTVFBSDEtYlI0XyIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgcGxhdGZvcm0gaXMgYmVzdCBmb3IgZWR1Y2F0aW9uPyIsImxrIjoiR2lkM2FHbGphQ0JoYVNCd2JHRjBabTl5YlNCcGN5QmlaWE4wSUdadmNpQmxaSFZqWVhScGIyNCIsImJzIjoiYzMyUHNRNkNRQkJFWTd1VjlSbDBLNFdXeEZnU1N1ME45UXBuN3BLVEk5d1M0OThMaXhJbHhucGUzc3hBQ1lmQ0VLTU55RWJqUlFmR2E2czE1a2ZVVlZjU1cxLVRRX2JlNGRXM0dMaXJkTTBoUzJPMUZmSVRJeXRrLUVJaGgzVmhiR2tHcVlpR05zX2szRVBLc25Tam9yc1FMOEdjZ0RQRWs2Snh4TDNfTmtEajRMNXNXcEdsaWRwTnN2OHNuQ0NSLTlScS1jLS13ZjE3WnBnZGp0UnF6SC0tWEM2ZSIsImlkIjoiZmNfVlhTdGFvamFOTkhrMnJvUGw5bS1tQWtfOCJ9"
+    },
+    {
+      "question": "What are the top 5 AI tools for students?",
+      "type": "ai_overview",
+      "page_token": "ll9aDXicHdDNToMwAADg-DIet5Y5dUsWExwglXVpaYtwMaWFwVZ-JjgYN9_Fp_JpNN6_0_f1bcr69HMzFn3fduv5fBiG2aFpDiabqWZW1nPZXWs1V9KYVKrT-v7hHj7lauN8-vbz2bcJb1uxpSDk6C1kuJOOgmmkw71wO-6NQeYt9wqKoz75MOX0nNbY145G9AWR1CtwJpyFdImlXpDNqw5kJ5coy-zihbBpCD8SUMiMIUSO9pi5-pXBdhdEQmLzOAhreVQcLgjXnzGkWJiC7SpR6NqZmNXmBDR9AvVd4jV3DGgPl_CcTggTiGho2mcOqGCcjmn15yaaS2d14Vv8unNd2yl0FLkYxNHqHPPlPvS6q6pWJN2aPoigLcemJJxO6mgqDlZVwKmVWLQLGLIjpkkyOUB5RfFnElyNMSe3ubpsFrf_n5v3vOrX7Udz-AUsc4LG",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=ll9aDXicHdDNToMwAADg-DIet5Y5dUsWExwglXVpaYtwMaWFwVZ-JjgYN9_Fp_JpNN6_0_f1bcr69HMzFn3fduv5fBiG2aFpDiabqWZW1nPZXWs1V9KYVKrT-v7hHj7lauN8-vbz2bcJb1uxpSDk6C1kuJOOgmmkw71wO-6NQeYt9wqKoz75MOX0nNbY145G9AWR1CtwJpyFdImlXpDNqw5kJ5coy-zihbBpCD8SUMiMIUSO9pi5-pXBdhdEQmLzOAhreVQcLgjXnzGkWJiC7SpR6NqZmNXmBDR9AvVd4jV3DGgPl_CcTggTiGho2mcOqGCcjmn15yaaS2d14Vv8unNd2yl0FLkYxNHqHPPlPvS6q6pWJN2aPoigLcemJJxO6mgqDlZVwKmVWLQLGLIjpkkyOUB5RfFnElyNMSe3ubpsFrf_n5v3vOrX7Udz-AUsc4LG",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk9XazRaazVmVFV0Tk5UQjBSM0JoWDNWQ2VYVTJWRlZLVGpKbVkzRlRkWEZUV0dOZlpqbEZabUZYTVVoNFVGTnBUMlp6WlRFM1V6aHNiM2RpYUVWU2NWZDJNV2gwUXpoYU1qUTJZVEJ5UkdGYVluQTBOM0JLT1RkUlVSSVhWbGhUZEdGdmFtRk9Ua2hyTW5KdlVHdzViUzF0UVdzYUlrRkVjM0k1WmxOMU5FUm1TemRxVkVsWVRYUmZWVE5yWlRWUVkwdHBXRWhRZUhjIiwiZmN2IjoiMyIsImVpIjoiVlhTdGFvamFOTkhrMnJvUGw5bS1tQWsiLCJxYyI6IkNpUm1jbVZsSUdGcElHVmtkV05oZEdsdmJpQjBiMjlzY3lCaGJIUmxjbTVoZEdsMlpYTVFBSDEtYlI0XyIsInF1ZXN0aW9uIjoiV2hhdCBhcmUgdGhlIHRvcCA1IEFJIHRvb2xzIGZvciBzdHVkZW50cz8iLCJsayI6IkdodDBiM0FnTlNCaGFTQjBiMjlzY3lCbWIzSWdjM1IxWkdWdWRITSIsImJzIjoiYzMyUHNRNkNRQkJFWTd1VjlSbDBLNFdXeEZnU1N1ME45UXBuN3BLVEk5d1M0OThMaXhJbHhucGUzc3hBQ1lmQ0VLTU55RWJqUlFmR2E2czE1a2ZVVlZjU1cxLVRRX2JlNGRXM0dMaXJkTTBoUzJPMUZmSVRJeXRrLUVJaGgzVmhiR2tHcVlpR05zX2szRVBLc25Tam9yc1FMOEdjZ0RQRWs2Snh4TDNfTmtEajRMNXNXcEdsaWRwTnN2OHNuQ0NSLTlScS1jLS13ZjE3WnBnZGp0UnF6SC0tWEM2ZSIsImlkIjoiZmNfVlhTdGFvamFOTkhrMnJvUGw5bS1tQWtfOCJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk9XazRaazVmVFV0Tk5UQjBSM0JoWDNWQ2VYVTJWRlZLVGpKbVkzRlRkWEZUV0dOZlpqbEZabUZYTVVoNFVGTnBUMlp6WlRFM1V6aHNiM2RpYUVWU2NWZDJNV2gwUXpoYU1qUTJZVEJ5UkdGYVluQTBOM0JLT1RkUlVSSVhWbGhUZEdGdmFtRk9Ua2hyTW5KdlVHdzViUzF0UVdzYUlrRkVjM0k1WmxOMU5FUm1TemRxVkVsWVRYUmZWVE5yWlRWUVkwdHBXRWhRZUhjIiwiZmN2IjoiMyIsImVpIjoiVlhTdGFvamFOTkhrMnJvUGw5bS1tQWsiLCJxYyI6IkNpUm1jbVZsSUdGcElHVmtkV05oZEdsdmJpQjBiMjlzY3lCaGJIUmxjbTVoZEdsMlpYTVFBSDEtYlI0XyIsInF1ZXN0aW9uIjoiV2hhdCBhcmUgdGhlIHRvcCA1IEFJIHRvb2xzIGZvciBzdHVkZW50cz8iLCJsayI6IkdodDBiM0FnTlNCaGFTQjBiMjlzY3lCbWIzSWdjM1IxWkdWdWRITSIsImJzIjoiYzMyUHNRNkNRQkJFWTd1VjlSbDBLNFdXeEZnU1N1ME45UXBuN3BLVEk5d1M0OThMaXhJbHhucGUzc3hBQ1lmQ0VLTU55RWJqUlFmR2E2czE1a2ZVVlZjU1cxLVRRX2JlNGRXM0dMaXJkTTBoUzJPMUZmSVRJeXRrLUVJaGgzVmhiR2tHcVlpR05zX2szRVBLc25Tam9yc1FMOEdjZ0RQRWs2Snh4TDNfTmtEajRMNXNXcEdsaWRwTnN2OHNuQ0NSLTlScS1jLS13ZjE3WnBnZGp0UnF6SC0tWEM2ZSIsImlkIjoiZmNfVlhTdGFvamFOTkhrMnJvUGw5bS1tQWtfOCJ9"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "JW8ynniczVbbcqpIFP2A-Y7DSxIRxaipok51t4gcLwm5aMwL1TYdRIFWQFHf5l_mB-Z35mtOgxgh0WTOeZiarsKmm8W-9N6L5Z9_uY4__-ePv6dRtAhvRDGO45LNmO3SEmElxxdxuPWJ-MrcMCDT77arOL4wdRXqC6uVS5X4AgHd0JHefhjV5nikCtu1UhVIqJQF6ijD54cIsxkeDDrzSsDu3KZ35YG5kFpVzAkO6Yy73cxC0RT5z_xbtcUXpbBEfVODpbgPl5t5u3I36ZcqZalZuhWxxzHgvxuqYcNk_gHQeRB_pH5tKjGgA6jmLOnATmd4RI33j5GRPkL2WWtw7_M-hRv8apm7Ttziu9n5tM6-y13AwjJOYwEgTqOEwPk6m9wwslwOeX1yUm_o4shOjx138jUuxFoYdlxYtnkUJkDo6CTvjJuZFsJ4Oylig0aHwRYET-fj5ufT1UFtDgz1VAr5YahD-a1yvbHGd0TL5o1bFicBnyTRIVOS3gRh0s_osVlm2tozbZ-2ZAymT0HPYFu7S4edRcXcGCKZcJzLsEUtc2qWv6drqSLVys1qvXGZcomEb2QK82TaPk1DOrobet641CtB6UAjtC86-FAxla-RfiIx-JBBP5ZYg8fdpGDqHma083azUsKkr9V7UCxt9y45V-2w5D2646XJI45ek-b_SKP9sHNgTqM0EJ1lwDxij9Jy1M0VVgenPjPv8zY64JCFMfsALBAQ8Xzn4NDr4_eWx8BAtppwAKkdmJ0aydvgGXffv5Wkx79Q8IA4Yvdx5XJIjkA3QB_oKrfpPOm8BnYG3TvRM19t9R3jzjS8zvMZoX_z6Tsx4FckSoZx4Mu79i_QxvEHnXuKvViXn190GA77k1kXNWo1Bk7ThHmTXxMd8r_i0l6S1EySznNJ_ZpLqSTBTyQpvT9KUtK_iJ3lEtROS1L_pCQV80bgPs-lzyXpl7mEPuWSkf2e4BI7zaXFWS5lkpTjUlGS1NOS9Mal35Ek-JuSlFKL7qeiPq1m9nmdmugPo6hHXbSwBlEl6lt6_crAy6o0Bl_q1KsX3XjYci9Nx7qBlR_R1ro0-Qa7oZawVF4DSi-AfkGtFcGRw_yLiPE_nxfYjWjg8501DQXPDZhSxrI1xGRlNjUEblllAa3GFX5svO7wFBP3ue_3bScqG9txCwdq9VE2HuXnTWW01ZgzwdXWIuyRnow71FrMWHe1qfsuqRsvL9L1qHp1tUQTVh9I5tCcSBv95fU23oY-cfvybqMOeq65rC1bUu9p06-3B15v93KnXTfUNLBQcdaxtpGb24FjCzyzkCqS4AVE4T0g22BggJENCUBpk_KL8Svm1zWvERRCgk0arhW5jOtN0qzXSbVu1aqy4NnRdqHIkhD6gSL9BGEZUPU",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=JW8ynniczVbbcqpIFP2A-Y7DSxIRxaipok51t4gcLwm5aMwL1TYdRIFWQFHf5l_mB-Z35mtOgxgh0WTOeZiarsKmm8W-9N6L5Z9_uY4__-ePv6dRtAhvRDGO45LNmO3SEmElxxdxuPWJ-MrcMCDT77arOL4wdRXqC6uVS5X4AgHd0JHefhjV5nikCtu1UhVIqJQF6ijD54cIsxkeDDrzSsDu3KZ35YG5kFpVzAkO6Yy73cxC0RT5z_xbtcUXpbBEfVODpbgPl5t5u3I36ZcqZalZuhWxxzHgvxuqYcNk_gHQeRB_pH5tKjGgA6jmLOnATmd4RI33j5GRPkL2WWtw7_M-hRv8apm7Ttziu9n5tM6-y13AwjJOYwEgTqOEwPk6m9wwslwOeX1yUm_o4shOjx138jUuxFoYdlxYtnkUJkDo6CTvjJuZFsJ4Oylig0aHwRYET-fj5ufT1UFtDgz1VAr5YahD-a1yvbHGd0TL5o1bFicBnyTRIVOS3gRh0s_osVlm2tozbZ-2ZAymT0HPYFu7S4edRcXcGCKZcJzLsEUtc2qWv6drqSLVys1qvXGZcomEb2QK82TaPk1DOrobet641CtB6UAjtC86-FAxla-RfiIx-JBBP5ZYg8fdpGDqHma083azUsKkr9V7UCxt9y45V-2w5D2646XJI45ek-b_SKP9sHNgTqM0EJ1lwDxij9Jy1M0VVgenPjPv8zY64JCFMfsALBAQ8Xzn4NDr4_eWx8BAtppwAKkdmJ0aydvgGXffv5Wkx79Q8IA4Yvdx5XJIjkA3QB_oKrfpPOm8BnYG3TvRM19t9R3jzjS8zvMZoX_z6Tsx4FckSoZx4Mu79i_QxvEHnXuKvViXn190GA77k1kXNWo1Bk7ThHmTXxMd8r_i0l6S1EySznNJ_ZpLqSTBTyQpvT9KUtK_iJ3lEtROS1L_pCQV80bgPs-lzyXpl7mEPuWSkf2e4BI7zaXFWS5lkpTjUlGS1NOS9Mal35Ek-JuSlFKL7qeiPq1m9nmdmugPo6hHXbSwBlEl6lt6_crAy6o0Bl_q1KsX3XjYci9Nx7qBlR_R1ro0-Qa7oZawVF4DSi-AfkGtFcGRw_yLiPE_nxfYjWjg8501DQXPDZhSxrI1xGRlNjUEblllAa3GFX5svO7wFBP3ue_3bScqG9txCwdq9VE2HuXnTWW01ZgzwdXWIuyRnow71FrMWHe1qfsuqRsvL9L1qHp1tUQTVh9I5tCcSBv95fU23oY-cfvybqMOeq65rC1bUu9p06-3B15v93KnXTfUNLBQcdaxtpGb24FjCzyzkCqS4AVE4T0g22BggJENCUBpk_KL8Svm1zWvERRCgk0arhW5jOtN0qzXSbVu1aqy4NnRdqHIkhD6gSL9BGEZUPU"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Top 10 Best Free AI Tools for Students in 2026",
+      "link": "https://www.shakiledu.com/articles/blog/general/top-10-best-free-ai-tools-for-students",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESjgEB6zswFTCz49xUMy8Mk0Qwg6Vk0EUprjSxnA5nJrTwZzGj5aWWZHrcVxf8dhXMX_HGlVkr3-p0oU8HO5pLPAtrNRJOujD6st27rN-zmq3PMNIBscoqS0aL8I9sNAxA5F1J8uyQ0N9CaInsl_MxCHSs05isrDp4gmGP8XAo67qHo-VH80JBKQZTqALNhGz6&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQFnoECBsQAQ&uoh=1",
+      "displayed_link": "https://www.shakiledu.com \u203a articles \u203a blog \u203a general \u203a t...",
+      "favicon": "https://serpapi.com/images/i/UklGRmIBAABXRUJQVlA4IFYBAABwBwCdASogACAAPtEutFooIagoGAEAGglsAJ0yhHmfmfCCPK95LX4FUkfTVXIPSfmQ6kXYwMpIdyosMXw1iyF6dhfaAAD-_klg-gz9yz38uTe2FUCUE9U_9H_95M_iz5hffYdRm3Zf8hv9brKhLn28MBAxfdub_f5qi_Vajzn9HsdjJFSOt8j2GnsfYg1dgc3kD-C9NfdUC0djSBbIGnA11lNbf_-h0h36otvwd19ywbf4p3nTR_nUOv5inMs7yPMwKmKERD9WvMYRsxUEYf1tRL7-osDRO1hm4RSquDOmhCJacyVj9HWt-GSjc-b2Zu1tZ6JdOnNYYJhO1WZ1H_mly0ac7yNXoWo87ubh1Vepwuyu9061YMMWw7h-0KzjLM7UPuAMFTu2jtaKs5d_sto_MouAb2FY8f2Te7wGgdryc6k7x1HdhM50IMjmwwSBkn57ZxrgAAA.webp",
+      "date": "24 Mar 2026",
+      "snippet": "The top 10 free AI tools for students in 2026: NotebookLM, Google Gemini, Grammarly, QuillBot, ChatPDF, ChatGPT, Notion AI, AskCodi, Tutor AI, ...",
+      "snippet_highlighted_words": [
+        "NotebookLM"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The top 10 free AI tools for students in 2026: NotebookLM, Google Gemini, Grammarly, QuillBot, ChatPDF, ChatGPT, Notion AI, AskCodi, Tutor AI, ...",
+          "source_info_link": "https://www.shakiledu.com/articles/blog/general/top-10-best-free-ai-tools-for-students",
+          "icon": "https://serpapi.com/images/i/UklGRmIBAABXRUJQVlA4IFYBAABwBwCdASogACAAPtEutFooIagoGAEAGglsAJ0yhHmfmfCCPK95LX4FUkfTVXIPSfmQ6kXYwMpIdyosMXw1iyF6dhfaAAD-_klg-gz9yz38uTe2FUCUE9U_9H_95M_iz5hffYdRm3Zf8hv9brKhLn28MBAxfdub_f5qi_Vajzn9HsdjJFSOt8j2GnsfYg1dgc3kD-C9NfdUC0djSBbIGnA11lNbf_-h0h36otvwd19ywbf4p3nTR_nUOv5inMs7yPMwKmKERD9WvMYRsxUEYf1tRL7-osDRO1hm4RSquDOmhCJacyVj9HWt-GSjc-b2Zu1tZ6JdOnNYYJhO1WZ1H_mly0ac7yNXoWo87ubh1Vepwuyu9061YMMWw7h-0KzjLM7UPuAMFTu2jtaKs5d_sto_MouAb2FY8f2Te7wGgdryc6k7x1HdhM50IMjmwwSBkn57ZxrgAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Shakil Education Group",
+      "read_more_link": "https://www.shakiledu.com/articles/blog/general/top-10-best-free-ai-tools-for-students#:~:text=The%20top%2010%20free%20AI,smarter%2C%20faster%2C%20and%20more%20effective."
+    },
+    {
+      "position": 2,
+      "title": "10+ Free AI tools for 2026",
+      "link": "https://cloud.google.com/use-cases/free-ai-tools",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://cloud.google.com/use-cases/free-ai-tools&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQFnoECCwQAQ",
+      "displayed_link": "https://cloud.google.com \u203a use-cases \u203a free-ai-tools",
+      "favicon": "https://serpapi.com/images/i/UklGRl4BAABXRUJQVlA4IFIBAAAwCACdASocABwAPtE-tFooIigoFAEAGglsAKwvUngHCEuBwANsBdkHoAeV97HpES7tUONvL8T8zyAxQ2t3lQt_7ZjPyj-yxvyhAAD-9glzwT5PjCna-XJg9aU1YWywdqj3RWupDOP2TRcJA4GxnwjWP0-MLJnwp7WW84ypgYKKhYo-f39E-YJqUDkQiTs_tz9bPxPetW6qeerz9aD7lv4_4q_GfdCvm4A_tzu5KV2R75vmqYRckshuTWQMj3XyssVo5MH6ncvKdugGqkOrPq_IOjFOP-VUFVnS5PsMjJgrnKtLSB5aeFibdG7-IHs57HGe0cTCf5-PkdB2XD18zPz92sZcygXppGbGINGtNfP9P-r68asYTybp2icf1_4d5yAvr8-hVItUQhAl4cIROMZKefvRzVjKsNliRPZDSHRiCJ3aqUJ64LKgZIhvies3R-AAAA.webp",
+      "snippet": "We also offer free tools for common AI use cases, including translation, image and video analysis, speech-to-text, and more. Try Google AI Studio for free.",
+      "snippet_highlighted_words": [
+        "Google AI Studio"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "We also offer free tools for common AI use cases, including translation, image and video analysis, speech-to-text, and more. Try Google AI Studio for free.",
+          "source_info_link": "https://cloud.google.com/use-cases/free-ai-tools",
+          "icon": "https://serpapi.com/images/i/UklGRl4BAABXRUJQVlA4IFIBAAAwCACdASocABwAPtE-tFooIigoFAEAGglsAKwvUngHCEuBwANsBdkHoAeV97HpES7tUONvL8T8zyAxQ2t3lQt_7ZjPyj-yxvyhAAD-9glzwT5PjCna-XJg9aU1YWywdqj3RWupDOP2TRcJA4GxnwjWP0-MLJnwp7WW84ypgYKKhYo-f39E-YJqUDkQiTs_tz9bPxPetW6qeerz9aD7lv4_4q_GfdCvm4A_tzu5KV2R75vmqYRckshuTWQMj3XyssVo5MH6ncvKdugGqkOrPq_IOjFOP-VUFVnS5PsMjJgrnKtLSB5aeFibdG7-IHs57HGe0cTCf5-PkdB2XD18zPz92sZcygXppGbGINGtNfP9P-r68asYTybp2icf1_4d5yAvr8-hVItUQhAl4cIROMZKefvRzVjKsNliRPZDSHRiCJ3aqUJ64LKgZIhvies3R-AAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Google Cloud",
+      "read_more_link": "https://cloud.google.com/use-cases/free-ai-tools#:~:text=We%20also%20offer%20free%20tools,Google%20AI%20Studio%20for%20free"
+    },
+    {
+      "position": 3,
+      "title": "The 40 Best Free AI Tools in 2026: A Complete Guide",
+      "link": "https://www.datacamp.com/blog/free-ai-tools",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYwHrOzAVXMxacMPE44ykGxLhlVn6uFLK0zCihriHbBExYiUqyhxmVxFpPi80HbbzBD8GroRyXXeKkzTv2v71NWPW_mia3-85iGaB-XW-qanXKlkhneLpTBDIbBxOnCDzvzh_0g&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQFnoECCsQAQ&uoh=1",
+      "displayed_link": "https://www.datacamp.com \u203a blog \u203a free-ai-tools",
+      "favicon": "https://serpapi.com/images/i/UklGRvIAAABXRUJQVlA4IOYAAACwBQCdASocABwAPtEutFooIagoGAEAGglsALEe43A3qp-GZEbi_UKTldIWeDpQYpWV8n3JUxAA_EYY2xRCrRjrefPRtroexkoVDXPoGXG99IssDGWLVXnHrbMsBefy2q2MlrOo_-YsqRppyTn5ape0yoLu5fBk5RrkyleHxFuXinDg7h_9reT7QGVVoKZsUT3YUm6x68hV_uuYKMwZ69_8ni1dx_pn9ur2Ye7SmeLgaURb7A0BsnxctCM5PGqKtmohHXNSm8zmh2wNn-2IaNH8F3UlhNKT37wW8WhygHDFHs35tIAAAA.webp",
+      "snippet": "Discover the best free AI tools of 2026. Explore top-rated free AI video generation tools, free AI image generation tools, coding assistants, and more.",
+      "snippet_highlighted_words": [
+        "free AI video generation tools"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Discover the best free AI tools of 2026. Explore top-rated free AI video generation tools, free AI image generation tools, coding assistants, and more.",
+          "source_info_link": "https://www.datacamp.com/blog/free-ai-tools",
+          "icon": "https://serpapi.com/images/i/UklGRvIAAABXRUJQVlA4IOYAAACwBQCdASocABwAPtEutFooIagoGAEAGglsALEe43A3qp-GZEbi_UKTldIWeDpQYpWV8n3JUxAA_EYY2xRCrRjrefPRtroexkoVDXPoGXG99IssDGWLVXnHrbMsBefy2q2MlrOo_-YsqRppyTn5ape0yoLu5fBk5RrkyleHxFuXinDg7h_9reT7QGVVoKZsUT3YUm6x68hV_uuYKMwZ69_8ni1dx_pn9ur2Ye7SmeLgaURb7A0BsnxctCM5PGqKtmohHXNSm8zmh2wNn-2IaNH8F3UlhNKT37wW8WhygHDFHs35tIAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "DataCamp"
+    },
+    {
+      "position": 4,
+      "title": "50 AI Tools for Teachers, Educators and Classroom (Free ...",
+      "link": "https://ditchthattextbook.com/ai-tools/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESXwHrOzAVjmiXg150_oa5V_4ejbO-h9FHACIk1N7MeCsW5yqwk_jD25CuaFE8aFZkmZujxa_9bWVDdcihGjSLiQQvpjYHdfqR77IcBD8jcWr6DUBBX55d22kcydpyOaWZ&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQFnoECDIQAQ&uoh=1",
+      "displayed_link": "https://ditchthattextbook.com \u203a Blog",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAa0lEQVR4AWN4c9SHJMQAwrgBSRoQAFMDYYCiQUeciXg9IOpgsTgxGprmuEE1vN3vxkAcgGk47ovLAdg1ABEeX9JYQ6kJJ1zk2VFfAho-nvXBHqwkRTaURVA1ugZODmY0RUCRDyd8sSc-khAAc3fUnUfRk_sAAAAASUVORK5CYII.png",
+      "date": "30 Sept 2025",
+      "snippet": "Here are 40 AI tools for teachers and educators that can be used in the classroom, including Canva Magic, Chat GPT, MagicSchool.ai, & more.",
+      "snippet_highlighted_words": [
+        "Canva Magic"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Prezi AI",
+            "link": "https://ditchthattextbook.com/ai-tools/#t-1759347223664"
+          },
+          {
+            "title": "MagicSchool.ai",
+            "link": "https://ditchthattextbook.com/ai-tools/#t-1759347223671"
+          },
+          {
+            "title": "Brisk Teaching",
+            "link": "https://ditchthattextbook.com/ai-tools/#t-1759347223673"
+          },
+          {
+            "title": "Eduaide.ai",
+            "link": "https://ditchthattextbook.com/ai-tools/#t-1759347223682"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Here are 40 AI tools for teachers and educators that can be used in the classroom, including Canva Magic, Chat GPT, MagicSchool.ai, & more.",
+          "source_info_link": "https://ditchthattextbook.com/ai-tools/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAa0lEQVR4AWN4c9SHJMQAwrgBSRoQAFMDYYCiQUeciXg9IOpgsTgxGprmuEE1vN3vxkAcgGk47ovLAdg1ABEeX9JYQ6kJJ1zk2VFfAho-nvXBHqwkRTaURVA1ugZODmY0RUCRDyd8sSc-khAAc3fUnUfRk_sAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Ditch That Textbook"
+    },
+    {
+      "position": 5,
+      "title": "10 Best AI Tools for Education Content Creation 2026",
+      "link": "https://www.eklavvya.com/blog/ai-tools-education-content/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScQHrOzAVuh7gqrjBp_IlNvG2H8cmEhlotu102usrouGgewZoJ_wXjpXezKtknGLZRNpK3-pkLcQ9OU_juED4GRkfDppyl3m_sr2enlakJoSk4TeQSiC47T05Vqzn1AVTQjhCAtiMnud9eU-hwGsqM6Wc&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQFnoECC8QAQ&uoh=1",
+      "displayed_link": "https://www.eklavvya.com \u203a Home \u203a AI in Education",
+      "favicon": "https://serpapi.com/images/i/UklGRuYAAABXRUJQVlA4INoAAACwBgCdASogACAAPtEutFooIagoGAEAGglsAIEDEG4IkB9gOf_6KrfK-lb_aIDJxfFQCudG0K2I4jExC_5m4AD-9gfz9JIWScKFHViNhyJgkWUBGW_5cvYVLRT1__QDtzH1VpwMbfP_xp0DYVzCqk7Kjy0dHLyHE2Pkbl1k378h-sx9jm45R8JeGX6DDvrWdTZejiRq0zDtxqjM_oR3x0-mT62xTZgfLBrTCIh4iAX5InSk8Nd7UnQnub_PIOfpFYLp-ffGHcIn08NL9RT2zQnSGEUMvrg0TsAAAA.webp",
+      "snippet": "Build lessons, question papers and assessments faster with the 10 best AI content tools for educators in 2026. Free and paid options compared.",
+      "snippet_highlighted_words": [
+        "Free and paid options compared"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Build lessons, question papers and assessments faster with the 10 best AI content tools for educators in 2026. Free and paid options compared.",
+          "source_info_link": "https://www.eklavvya.com/blog/ai-tools-education-content/",
+          "icon": "https://serpapi.com/images/i/UklGRuYAAABXRUJQVlA4INoAAACwBgCdASogACAAPtEutFooIagoGAEAGglsAIEDEG4IkB9gOf_6KrfK-lb_aIDJxfFQCudG0K2I4jExC_5m4AD-9gfz9JIWScKFHViNhyJgkWUBGW_5cvYVLRT1__QDtzH1VpwMbfP_xp0DYVzCqk7Kjy0dHLyHE2Pkbl1k378h-sx9jm45R8JeGX6DDvrWdTZejiRq0zDtxqjM_oR3x0-mT62xTZgfLBrTCIh4iAX5InSk8Nd7UnQnub_PIOfpFYLp-ffGHcIn08NL9RT2zQnSGEUMvrg0TsAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Eklavvya"
+    },
+    {
+      "position": 6,
+      "title": "StudentAI: Dedicated AI Tools & Tutors for Students ...",
+      "link": "https://studentai.app/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESTgHrOzAVXLQ_Upehqv5BxQ6kt6voxqEPG__1BedsZ_Azc8QSypiHHgp6zfZ_1HEpGNXSC4s0lTtv7e5HS0pebJ_BVzNtPSIeecgj_JXfAg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQFnoECDAQAQ&uoh=1",
+      "displayed_link": "https://studentai.app",
+      "favicon": "https://serpapi.com/images/i/UklGRhQBAABXRUJQVlA4IAgBAACQBQCdASocABwAPrUurVanIacnG_DgFolsALbVcAJ0Ah4AkWgxqlgIeijdzHFvDKafpY7mAAD--cJTLcELp2jMrOJG6YBnFgeWJsTim84IguhGG-rc7_OcstxDCA8JtjroXGVQbcXez7LYo9fKgwhRbT-NkDMT2Nul4uURgQTqScDOgJ2FCzJchqDJG3GRBOQCNb-EN8EcBOw7DTk_qRht-5XT4vwqV7O6QS1fxRplqiDHz6CnfLyZxfeDfUu4ZUoCeWpwPxpE45vRftp7gtp0uRqsio4leeJSeEmhc9aJRi_ANkgcy51ZYXYhq8opPlNNkFkWb8kqfvRegdwc2W7vAc1v3A4AAAA.webp",
+      "snippet": "Write better papers, ace your exams, and get 24/7 tutoring. All powered by AI built specifically for education. Trusted by 300,000+ students worldwide",
+      "snippet_highlighted_words": [
+        "All powered by AI built specifically for education"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Write better papers, ace your exams, and get 24/7 tutoring. All powered by AI built specifically for education. Trusted by 300,000+ students worldwide",
+          "source_info_link": "https://studentai.app/",
+          "icon": "https://serpapi.com/images/i/UklGRhQBAABXRUJQVlA4IAgBAACQBQCdASocABwAPrUurVanIacnG_DgFolsALbVcAJ0Ah4AkWgxqlgIeijdzHFvDKafpY7mAAD--cJTLcELp2jMrOJG6YBnFgeWJsTim84IguhGG-rc7_OcstxDCA8JtjroXGVQbcXez7LYo9fKgwhRbT-NkDMT2Nul4uURgQTqScDOgJ2FCzJchqDJG3GRBOQCNb-EN8EcBOw7DTk_qRht-5XT4vwqV7O6QS1fxRplqiDHz6CnfLyZxfeDfUu4ZUoCeWpwPxpE45vRftp7gtp0uRqsio4leeJSeEmhc9aJRi_ANkgcy51ZYXYhq8opPlNNkFkWb8kqfvRegdwc2W7vAc1v3A4AAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "StudentAI"
+    },
+    {
+      "position": 7,
+      "title": "17 Best AI Tools for Students in 2026 (Free & Paid)",
+      "link": "https://www.bmu.edu.in/social/best-ai-tools-for-students/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScQHrOzAVxtSqz0rYXUS3jFV82Umj2unPggaWI2GC9B8_UpWTiJevaSaIj5EWrvlpWMoju5SvOriMVke7DjksC5WQEgpPrjyckRuBGzNerPeE5w0mVx-sMqDTDR5vLyAzhgIrhK_3ExdHetVAlmi2W0S4&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQFnoECDUQAQ&uoh=1",
+      "displayed_link": "https://www.bmu.edu.in \u203a Social",
+      "favicon": "https://serpapi.com/images/i/UklGRt4AAABXRUJQVlA4INIAAABwBQCdASobABwAPrkurlcnIacnG_DgFwlqAJ0BjKspttMxWxtbNzyQHrbBNAc-P4M5fU-AAP7-wj5S4fj1S4kEpTEIK1sU_ZmH4CJT8QGW7MYLvd6DeefCDDu4lLqBuuRU4CrU55iPmQgo0xtHi3xhgb9OOxRf9rW7zCbSb9GH50hBwd4rfahY9Dnpg0By5M9Ir_Bd6xQyFMGGiHBQnreT4fK1Ka4Vbl_N210a8anjHZP1h1aT-N3S1OlnKYFl7O3c1lecbCDczcH2mB8HANQAAAA.webp",
+      "date": "20 Jul 2026",
+      "snippet": "Tired of guessing which AI tools actually help? Explore 17 proven, student-tested AI tools for 2026- free tiers included.",
+      "snippet_highlighted_words": [
+        "Explore 17 proven, student-tested AI tools"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Tired of guessing which AI tools actually help? Explore 17 proven, student-tested AI tools for 2026- free tiers included.",
+          "source_info_link": "https://www.bmu.edu.in/social/best-ai-tools-for-students/",
+          "icon": "https://serpapi.com/images/i/UklGRt4AAABXRUJQVlA4INIAAABwBQCdASobABwAPrkurlcnIacnG_DgFwlqAJ0BjKspttMxWxtbNzyQHrbBNAc-P4M5fU-AAP7-wj5S4fj1S4kEpTEIK1sU_ZmH4CJT8QGW7MYLvd6DeefCDDu4lLqBuuRU4CrU55iPmQgo0xtHi3xhgb9OOxRf9rW7zCbSb9GH50hBwd4rfahY9Dnpg0By5M9Ir_Bd6xQyFMGGiHBQnreT4fK1Ka4Vbl_N210a8anjHZP1h1aT-N3S1OlnKYFl7O3c1lecbCDczcH2mB8HANQAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "BML Munjal University (BMU)"
+    },
+    {
+      "position": 8,
+      "title": "Open-Source AI Education Tools \u2014 What's Available for Free",
+      "link": "https://www.edugenius.app/blog/open-source-ai-education-tools-free",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESegHrOzAVydzotHngLl9s_B0mEDC55820uwkMOEF-LN5rrhDqrXNxE6YStuHnM2Zh-2pzkoEs2pcOU-kQCMD_9FpWkmUus13VGiaJ6z8SLe4CoEIL23ab-xQePOwg5SOsgj8FyXrt7RHo4Y0m8ky5UOkvGOlW3niRFQcE&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQFnoECDEQAQ&uoh=1",
+      "displayed_link": "https://www.edugenius.app \u203a blog \u203a open-source-ai-edu...",
+      "favicon": "https://serpapi.com/images/i/UklGRiQBAABXRUJQVlA4IBgBAAAQBgCdASocABwAPsEusFgnoaenm_DwGAlsAKwy3W6wIB0qpEUD_Jjv32MXlb7tVgdxktsPKNk7gwAA_QDJWDJhf6Y7qmuUT0Vz5wT8uDVYADjiFPmvmprPs1qquGn3-2A1FZ22d_5FPvelLn_gB4zkx-zDB8_8m-2CJ0ruZr9cmaK4JOWMOPN9j_MX18p5O8evo2Y0vuMmR2F5lDpNO0j69kzrD3uyc0xed0oT-cTTyMG2P4_5lHCqPjes3EnmLPj_gUtMNAjnzG4IOCfhWY3D8g8WXKyZSf_AOTkokSV86Us5XmSoEiRuoWqWgb1y743Q2HhCNK62VN3lNtmbtzl3dgVVVX4MBtcmyI9Cto21jpOonJKixqAA.webp",
+      "date": "15 Jan 2026",
+      "snippet": "Discover open-source and free AI education tools for teachers and schools: LLMs, content generators, adaptive platforms, and classroom ...",
+      "snippet_highlighted_words": [
+        "open-source and free AI education tools"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Category 3: Adaptive Learning...",
+            "link": "https://www.edugenius.app/blog/open-source-ai-education-tools-free#category-3-adaptive-learning-platforms"
+          },
+          {
+            "title": "The Hidden Cost of \"Free\"",
+            "link": "https://www.edugenius.app/blog/open-source-ai-education-tools-free#the-hidden-cost-of-free-"
+          },
+          {
+            "title": "Pro Tips",
+            "link": "https://www.edugenius.app/blog/open-source-ai-education-tools-free#pro-tips"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Discover open-source and free AI education tools for teachers and schools: LLMs, content generators, adaptive platforms, and classroom ...",
+          "source_info_link": "https://www.edugenius.app/blog/open-source-ai-education-tools-free",
+          "icon": "https://serpapi.com/images/i/UklGRiQBAABXRUJQVlA4IBgBAAAQBgCdASocABwAPsEusFgnoaenm_DwGAlsAKwy3W6wIB0qpEUD_Jjv32MXlb7tVgdxktsPKNk7gwAA_QDJWDJhf6Y7qmuUT0Vz5wT8uDVYADjiFPmvmprPs1qquGn3-2A1FZ22d_5FPvelLn_gB4zkx-zDB8_8m-2CJ0ruZr9cmaK4JOWMOPN9j_MX18p5O8evo2Y0vuMmR2F5lDpNO0j69kzrD3uyc0xed0oT-cTTyMG2P4_5lHCqPjes3EnmLPj_gUtMNAjnzG4IOCfhWY3D8g8WXKyZSf_AOTkokSV86Us5XmSoEiRuoWqWgb1y743Q2HhCNK62VN3lNtmbtzl3dgVVVX4MBtcmyI9Cto21jpOonJKixqAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "edugenius.app"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Free AI tools list",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Free+AI+tools+list&sa=X&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ1QJ6BAgkEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Free+AI+tools+list"
+    },
+    {
+      "block_position": 1,
+      "query": "Free AI tools for students",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Free+AI+tools+for+students&sa=X&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Free+AI+tools+for+students"
+    },
+    {
+      "block_position": 1,
+      "query": "Free AI tools online",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Free+AI+tools+online&sa=X&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Free+AI+tools+online"
+    },
+    {
+      "block_position": 1,
+      "query": "Best free AI tools for students",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Best+free+AI+tools+for+students&sa=X&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ1QJ6BAgtEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+free+AI+tools+for+students"
+    },
+    {
+      "block_position": 1,
+      "query": "Free AI tools for teachers",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Free+AI+tools+for+teachers&sa=X&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ1QJ6BAgqEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Free+AI+tools+for+teachers"
+    },
+    {
+      "block_position": 1,
+      "query": "Powerful AI tools free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Powerful+AI+tools+free&sa=X&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ1QJ6BAgoEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Powerful+AI+tools+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Best AI tools for students studying",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Best+AI+tools+for+students+studying&sa=X&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ1QJ6BAgnEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+tools+for+students+studying"
+    },
+    {
+      "block_position": 1,
+      "query": "Best free AI without limits",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Best+free+AI+without+limits&sa=X&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ1QJ6BAgmEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+free+AI+without+limits"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=VXStaojaNNHk2roPl9m-mAk&start=10&sa=N&sstk=AS6-VmJ1F8eZsz6PsST19E64InhFfGYpNThkRqQjJPMVX5AuDco-7v8-twMZ2EgXZ81KVUjZoSMkR1q5_fAs1Y1qB_H_gnQQ845MMg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ8NMDegQINxAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=VXStaojaNNHk2roPl9m-mAk&start=10&sa=N&sstk=AS6-VmJ1F8eZsz6PsST19E64InhFfGYpNThkRqQjJPMVX5AuDco-7v8-twMZ2EgXZ81KVUjZoSMkR1q5_fAs1Y1qB_H_gnQQ845MMg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ8tMDegQINxAE",
+      "3": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=VXStaojaNNHk2roPl9m-mAk&start=20&sa=N&sstk=AS6-VmJ1F8eZsz6PsST19E64InhFfGYpNThkRqQjJPMVX5AuDco-7v8-twMZ2EgXZ81KVUjZoSMkR1q5_fAs1Y1qB_H_gnQQ845MMg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ8tMDegQINxAG",
+      "4": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=VXStaojaNNHk2roPl9m-mAk&start=30&sa=N&sstk=AS6-VmJ1F8eZsz6PsST19E64InhFfGYpNThkRqQjJPMVX5AuDco-7v8-twMZ2EgXZ81KVUjZoSMkR1q5_fAs1Y1qB_H_gnQQ845MMg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ8tMDegQINxAI",
+      "5": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=VXStaojaNNHk2roPl9m-mAk&start=40&sa=N&sstk=AS6-VmJ1F8eZsz6PsST19E64InhFfGYpNThkRqQjJPMVX5AuDco-7v8-twMZ2EgXZ81KVUjZoSMkR1q5_fAs1Y1qB_H_gnQQ845MMg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ8tMDegQINxAK",
+      "6": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=VXStaojaNNHk2roPl9m-mAk&start=50&sa=N&sstk=AS6-VmJ1F8eZsz6PsST19E64InhFfGYpNThkRqQjJPMVX5AuDco-7v8-twMZ2EgXZ81KVUjZoSMkR1q5_fAs1Y1qB_H_gnQQ845MMg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ8tMDegQINxAM",
+      "7": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=VXStaojaNNHk2roPl9m-mAk&start=60&sa=N&sstk=AS6-VmJ1F8eZsz6PsST19E64InhFfGYpNThkRqQjJPMVX5AuDco-7v8-twMZ2EgXZ81KVUjZoSMkR1q5_fAs1Y1qB_H_gnQQ845MMg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ8tMDegQINxAO",
+      "8": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=VXStaojaNNHk2roPl9m-mAk&start=70&sa=N&sstk=AS6-VmJ1F8eZsz6PsST19E64InhFfGYpNThkRqQjJPMVX5AuDco-7v8-twMZ2EgXZ81KVUjZoSMkR1q5_fAs1Y1qB_H_gnQQ845MMg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ8tMDegQINxAQ",
+      "9": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=VXStaojaNNHk2roPl9m-mAk&start=80&sa=N&sstk=AS6-VmJ1F8eZsz6PsST19E64InhFfGYpNThkRqQjJPMVX5AuDco-7v8-twMZ2EgXZ81KVUjZoSMkR1q5_fAs1Y1qB_H_gnQQ845MMg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ8tMDegQINxAS",
+      "10": "https://www.google.co.in/search?q=free+AI+education+tools+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=VXStaojaNNHk2roPl9m-mAk&start=90&sa=N&sstk=AS6-VmJ1F8eZsz6PsST19E64InhFfGYpNThkRqQjJPMVX5AuDco-7v8-twMZ2EgXZ81KVUjZoSMkR1q5_fAs1Y1qB_H_gnQQ845MMg&ved=2ahUKEwjI2Iyj0_iWAxVRslYBHZesD5MQ8tMDegQINxAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=free+AI+education+tools+alternatives&start=90"
+    }
+  }
+}

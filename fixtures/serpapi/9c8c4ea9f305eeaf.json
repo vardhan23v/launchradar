@@ -1,0 +1,461 @@
+{
+  "search_metadata": {
+    "id": "6aad76cb9df9dd610e48f5b5",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/EXGYewhc_YExIy-mC71PK_mrdDw6N0HYnZ_l3WM-030/6aad76cb9df9dd610e48f5b5.json",
+    "markdown_endpoint": "https://serpapi.com/searches/EXGYewhc_YExIy-mC71PK_mrdDw6N0HYnZ_l3WM-030/6aad76cb9df9dd610e48f5b5.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/EXGYewhc_YExIy-mC71PK_mrdDw6N0HYnZ_l3WM-030/6aad76cb9df9dd610e48f5b5.json_with_pixel_position",
+    "created_at": "2026-09-18 17:37:15 UTC",
+    "processed_at": "2026-09-18 17:37:15 UTC",
+    "google_url": "https://www.google.co.in/search?q=why+is+deploying+website+on+aws+so+hard&oq=why+is+deploying+website+on+aws+so+hard&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/EXGYewhc_YExIy-mC71PK_mrdDw6N0HYnZ_l3WM-030/6aad76cb9df9dd610e48f5b5.html",
+    "total_time_taken": 6.07
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "why is deploying website on aws so hard",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "why is deploying website on aws so hard",
+    "total_results": 111,
+    "time_taken_displayed": 0.22,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "How to deploy a website using AWS?",
+      "type": "ai_overview",
+      "page_token": "fFwv53icHdBdjqIwAADg7GV81ArRjSZms4wUJVLT0h_oy4RpUX5KYRUH5G3usqea08xkTvAl38d_U9r689dY9H133y4WwzDMr217NflctfPSLrL706qFyox5y1S9Xf9eL_9c1M5_HL2Xf0cPs67jewLiBpmc6ioP4EApeipfh6IJeQw3KZ34mvsmSqe_Y0Ql0H73HjVjn7rMZQfdM6sAD2TBmo7w6gpi4E8UYlc5I3sDMsQUlpIarBMEY1Ckqg4TwVHNDujBxPKMXT7qxDt9u4fcejBu8DOveaqCYq-gl5zZZoiXIWJipFnNHV4VYSa6Wx6QkkH-yCxZaVvctD8sI9Cv8GQ8v1BDHECQJvyQMeWexKbVDcJo4pHcF0SQtsSMTKoyDRPGzwSvzwmJkLNKmCORtLKiVHbE2dy1lUc5zC7qfefOfj53r5em33a39voFDGWFKA",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=fFwv53icHdBdjqIwAADg7GV81ArRjSZms4wUJVLT0h_oy4RpUX5KYRUH5G3usqea08xkTvAl38d_U9r689dY9H133y4WwzDMr217NflctfPSLrL706qFyox5y1S9Xf9eL_9c1M5_HL2Xf0cPs67jewLiBpmc6ioP4EApeipfh6IJeQw3KZ34mvsmSqe_Y0Ql0H73HjVjn7rMZQfdM6sAD2TBmo7w6gpi4E8UYlc5I3sDMsQUlpIarBMEY1Ckqg4TwVHNDujBxPKMXT7qxDt9u4fcejBu8DOveaqCYq-gl5zZZoiXIWJipFnNHV4VYSa6Wx6QkkH-yCxZaVvctD8sI9Cv8GQ8v1BDHECQJvyQMeWexKbVDcJo4pHcF0SQtsSMTKoyDRPGzwSvzwmJkLNKmCORtLKiVHbE2dy1lUc5zC7qfefOfj53r5em33a39voFDGWFKA",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFduWjRhbmRsU0hGTVgxVmFiVkExT1VacFoyVmFXbFpGYWpOaFZVcFBSM2xUYzJRMGVYVkllbTFaV2tOV2VVcHpjVEJ4ZDJaMFJHSkNNRWQxVVRONGMwdFhRblZZUjFsYWQzSlZOalJmTkZwc2JHcFlVbGhvTVRoblFSSVhNRWhoZEdGMVIybEhOeTF2YUhaalVEYzFUR1E0VVZrYUlrRkVjM0k1WmxKUk5sQnFWbkZGTTBGQ2JXUndWWGRWWld0ck5IbFFNekZ3WWxFIiwiZmN2IjoiMyIsImVpIjoiMEhhdGF1R2lHNy1vaHZjUDc1TGQ4UVkiLCJxYyI6IkNpZDNhSGtnYVhNZ1pHVndiRzk1YVc1bklIZGxZbk5wZEdVZ2IyNGdZWGR6SUhOdklHaGhjbVFRQUgwODN4b18iLCJxdWVzdGlvbiI6IkhvdyB0byBkZXBsb3kgYSB3ZWJzaXRlIHVzaW5nIEFXUz8iLCJsayI6IkdpRm9iM2NnZEc4Z1pHVndiRzk1SUdFZ2QyVmljMmwwWlNCMWMybHVaeUJoZDNNIiwiYnMiOiJjMzJPUFF2Q01CUkZjYzNrb2tMOXV1b3UyQzJERk5IQkxpNE96cFctdG9HWVYzd3AxWC12b1pPZ3p1ZGM3bEdwV2g2NWhXZmtWRnQtSWtOTFZ6R2UwSWh4SlhhWGN4S3Zva1gxMThwYVVWczFPVEJKV0lDTGd1N1FlcTAxbXRxYkd5WHhOQnJuZ2JfZEwxenQxVHdWbk1nWDFqd2czbGlMaXNWVERuWmRCcUtaRWJnZlNtallxR0hhRlhodXlpb1VXOHJ1TG9sSDBjQjAzNS1rMzNzQiIsImlkIjoiZmNfMEhhdGF1R2lHNy1vaHZjUDc1TGQ4UVlfNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFduWjRhbmRsU0hGTVgxVmFiVkExT1VacFoyVmFXbFpGYWpOaFZVcFBSM2xUYzJRMGVYVkllbTFaV2tOV2VVcHpjVEJ4ZDJaMFJHSkNNRWQxVVRONGMwdFhRblZZUjFsYWQzSlZOalJmTkZwc2JHcFlVbGhvTVRoblFSSVhNRWhoZEdGMVIybEhOeTF2YUhaalVEYzFUR1E0VVZrYUlrRkVjM0k1WmxKUk5sQnFWbkZGTTBGQ2JXUndWWGRWWld0ck5IbFFNekZ3WWxFIiwiZmN2IjoiMyIsImVpIjoiMEhhdGF1R2lHNy1vaHZjUDc1TGQ4UVkiLCJxYyI6IkNpZDNhSGtnYVhNZ1pHVndiRzk1YVc1bklIZGxZbk5wZEdVZ2IyNGdZWGR6SUhOdklHaGhjbVFRQUgwODN4b18iLCJxdWVzdGlvbiI6IkhvdyB0byBkZXBsb3kgYSB3ZWJzaXRlIHVzaW5nIEFXUz8iLCJsayI6IkdpRm9iM2NnZEc4Z1pHVndiRzk1SUdFZ2QyVmljMmwwWlNCMWMybHVaeUJoZDNNIiwiYnMiOiJjMzJPUFF2Q01CUkZjYzNrb2tMOXV1b3UyQzJERk5IQkxpNE96cFctdG9HWVYzd3AxWC12b1pPZ3p1ZGM3bEdwV2g2NWhXZmtWRnQtSWtOTFZ6R2UwSWh4SlhhWGN4S3Zva1gxMThwYVVWczFPVEJKV0lDTGd1N1FlcTAxbXRxYkd5WHhOQnJuZ2JfZEwxenQxVHdWbk1nWDFqd2czbGlMaXNWVERuWmRCcUtaRWJnZlNtallxR0hhRlhodXlpb1VXOHJ1TG9sSDBjQjAzNS1rMzNzQiIsImlkIjoiZmNfMEhhdGF1R2lHNy1vaHZjUDc1TGQ4UVlfNSJ9"
+    },
+    {
+      "question": "Does AWS offer 99.99 uptime?",
+      "type": "ai_overview",
+      "page_token": "v7zBMHicHdDbToMwAIDh-DK7HIe66ZYsRg4FG1dCoVB6Y6DdgFEOGUQcd76LT-XTuPgEf77_-0fVXfP7wKtpGsa9ps3zvC77vlSntejXdafl460TmsiVKnLR7LdPW-PlLA7uOFt2P1shHYbEIXqU7jreYQe3lcE9tBCX55JuTAnIUbp4lBepIiexKcBM-uUmYuHCDIQ4lMfUt5Io7ReREsz1waaMv2dGlZJL1cYpx_iiAtlwm0BkZqDXucsVdZM-9-CVxGjKfbLkLob3NgwT6cc6AUUrbaon7Jhgq3CRHnncCwGyspS0mAkQN88RXKy3jJFKUjmQRUyFWZmZ8Qow_WoCCLlXI4v4-BaknOBOPPLa2J7cJAgYItRRltB3nJq7JqJ3N0VgdRafB7D6P3b4OLfTfrj25R9Mp3bk",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=v7zBMHicHdDbToMwAIDh-DK7HIe66ZYsRg4FG1dCoVB6Y6DdgFEOGUQcd76LT-XTuPgEf77_-0fVXfP7wKtpGsa9ps3zvC77vlSntejXdafl460TmsiVKnLR7LdPW-PlLA7uOFt2P1shHYbEIXqU7jreYQe3lcE9tBCX55JuTAnIUbp4lBepIiexKcBM-uUmYuHCDIQ4lMfUt5Io7ReREsz1waaMv2dGlZJL1cYpx_iiAtlwm0BkZqDXucsVdZM-9-CVxGjKfbLkLob3NgwT6cc6AUUrbaon7Jhgq3CRHnncCwGyspS0mAkQN88RXKy3jJFKUjmQRUyFWZmZ8Qow_WoCCLlXI4v4-BaknOBOPPLa2J7cJAgYItRRltB3nJq7JqJ3N0VgdRafB7D6P3b4OLfTfrj25R9Mp3bk",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFduWjRhbmRsU0hGTVgxVmFiVkExT1VacFoyVmFXbFpGYWpOaFZVcFBSM2xUYzJRMGVYVkllbTFaV2tOV2VVcHpjVEJ4ZDJaMFJHSkNNRWQxVVRONGMwdFhRblZZUjFsYWQzSlZOalJmTkZwc2JHcFlVbGhvTVRoblFSSVhNRWhoZEdGMVIybEhOeTF2YUhaalVEYzFUR1E0VVZrYUlrRkVjM0k1WmxKUk5sQnFWbkZGTTBGQ2JXUndWWGRWWld0ck5IbFFNekZ3WWxFIiwiZmN2IjoiMyIsImVpIjoiMEhhdGF1R2lHNy1vaHZjUDc1TGQ4UVkiLCJxYyI6IkNpZDNhSGtnYVhNZ1pHVndiRzk1YVc1bklIZGxZbk5wZEdVZ2IyNGdZWGR6SUhOdklHaGhjbVFRQUgwODN4b18iLCJxdWVzdGlvbiI6IkRvZXMgQVdTIG9mZmVyIDk5Ljk5IHVwdGltZT8iLCJsayI6IkdodGtiMlZ6SUdGM2N5QnZabVpsY2lBNU9TNDVPU0IxY0hScGJXVSIsImJzIjoiYzMyT1BRdkNNQlJGY2Mza29rTDl1dW91MkMyREZOSEJMaTRPenBXLXRvR1lWM3dwMVgtdm9aT2d6dWRjN2xHcFdoNjVoV2ZrVkZ0LUlrTkxWekdlMEloeEpYYVhjeEt2b2tYMTE4cGFVVnMxT1RCSldJQ0xndTdRZXEwMW10cWJHeVh4TkJybmdiX2RMMXp0MVR3Vm5NZ1gxandnM2xpTGlzVlREblpkQnFLWkViZ2ZTbWpZcUdIYUZYaHV5aW9VVzhydUxvbEgwY0IwMzUtazMzc0IiLCJpZCI6ImZjXzBIYXRhdUdpRzctb2h2Y1A3NUxkOFFZXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFduWjRhbmRsU0hGTVgxVmFiVkExT1VacFoyVmFXbFpGYWpOaFZVcFBSM2xUYzJRMGVYVkllbTFaV2tOV2VVcHpjVEJ4ZDJaMFJHSkNNRWQxVVRONGMwdFhRblZZUjFsYWQzSlZOalJmTkZwc2JHcFlVbGhvTVRoblFSSVhNRWhoZEdGMVIybEhOeTF2YUhaalVEYzFUR1E0VVZrYUlrRkVjM0k1WmxKUk5sQnFWbkZGTTBGQ2JXUndWWGRWWld0ck5IbFFNekZ3WWxFIiwiZmN2IjoiMyIsImVpIjoiMEhhdGF1R2lHNy1vaHZjUDc1TGQ4UVkiLCJxYyI6IkNpZDNhSGtnYVhNZ1pHVndiRzk1YVc1bklIZGxZbk5wZEdVZ2IyNGdZWGR6SUhOdklHaGhjbVFRQUgwODN4b18iLCJxdWVzdGlvbiI6IkRvZXMgQVdTIG9mZmVyIDk5Ljk5IHVwdGltZT8iLCJsayI6IkdodGtiMlZ6SUdGM2N5QnZabVpsY2lBNU9TNDVPU0IxY0hScGJXVSIsImJzIjoiYzMyT1BRdkNNQlJGY2Mza29rTDl1dW91MkMyREZOSEJMaTRPenBXLXRvR1lWM3dwMVgtdm9aT2d6dWRjN2xHcFdoNjVoV2ZrVkZ0LUlrTkxWekdlMEloeEpYYVhjeEt2b2tYMTE4cGFVVnMxT1RCSldJQ0xndTdRZXEwMW10cWJHeVh4TkJybmdiX2RMMXp0MVR3Vm5NZ1gxandnM2xpTGlzVlREblpkQnFLWkViZ2ZTbWpZcUdIYUZYaHV5aW9VVzhydUxvbEgwY0IwMzUtazMzc0IiLCJpZCI6ImZjXzBIYXRhdUdpRzctb2h2Y1A3NUxkOFFZXzUifQ%3D%3D"
+    },
+    {
+      "question": "Is Netflix still hosted on AWS?",
+      "type": "ai_overview",
+      "page_token": "2CEG2HicHdDbboIwAADQ7Gd8lJu6zMQsotyM4ii00L4spSAFKrDRyOVt_7Kv2tds2R-cnK9vUTb1zxPhUnb9VlGGYVgWbVuIfMnaZdkotJ8apjAqREpZvd08b7TXG9tZ_WAe2sEMYNehI1BDBDCD6wN1BE4RSsi9mBiyZ18dV9HRpMxBHnP9KbP4I60Lg1bAwpF5pjoP44h_kFgrr26tEQFkGgfShxogiejz-3omYj-h2jMSnZxhgmUEiZtVhXGOVwZxEKfW6ARVMfoux8RZo9wCKhMCM8tTg8p-C21wIg3pIhhoKDGHVEOb1IahPZseTgDPYNaBmclU5zrW9oYPx_pq28QpTyb4M19jAsNjNmHdH5nVmQC9XDIoOa59emkKI7eCkSZ2s7ixx85Y_I_t3m93ue0-2-IX9Tl6TQ",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=2CEG2HicHdDbboIwAADQ7Gd8lJu6zMQsotyM4ii00L4spSAFKrDRyOVt_7Kv2tds2R-cnK9vUTb1zxPhUnb9VlGGYVgWbVuIfMnaZdkotJ8apjAqREpZvd08b7TXG9tZ_WAe2sEMYNehI1BDBDCD6wN1BE4RSsi9mBiyZ18dV9HRpMxBHnP9KbP4I60Lg1bAwpF5pjoP44h_kFgrr26tEQFkGgfShxogiejz-3omYj-h2jMSnZxhgmUEiZtVhXGOVwZxEKfW6ARVMfoux8RZo9wCKhMCM8tTg8p-C21wIg3pIhhoKDGHVEOb1IahPZseTgDPYNaBmclU5zrW9oYPx_pq28QpTyb4M19jAsNjNmHdH5nVmQC9XDIoOa59emkKI7eCkSZ2s7ixx85Y_I_t3m93ue0-2-IX9Tl6TQ",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFduWjRhbmRsU0hGTVgxVmFiVkExT1VacFoyVmFXbFpGYWpOaFZVcFBSM2xUYzJRMGVYVkllbTFaV2tOV2VVcHpjVEJ4ZDJaMFJHSkNNRWQxVVRONGMwdFhRblZZUjFsYWQzSlZOalJmTkZwc2JHcFlVbGhvTVRoblFSSVhNRWhoZEdGMVIybEhOeTF2YUhaalVEYzFUR1E0VVZrYUlrRkVjM0k1WmxKUk5sQnFWbkZGTTBGQ2JXUndWWGRWWld0ck5IbFFNekZ3WWxFIiwiZmN2IjoiMyIsImVpIjoiMEhhdGF1R2lHNy1vaHZjUDc1TGQ4UVkiLCJxYyI6IkNpZDNhSGtnYVhNZ1pHVndiRzk1YVc1bklIZGxZbk5wZEdVZ2IyNGdZWGR6SUhOdklHaGhjbVFRQUgwODN4b18iLCJxdWVzdGlvbiI6IklzIE5ldGZsaXggc3RpbGwgaG9zdGVkIG9uIEFXUz8iLCJsayI6IkdoNXBjeUJ1WlhSbWJHbDRJSE4wYVd4c0lHaHZjM1JsWkNCdmJpQmhkM00iLCJicyI6ImMzMk9QUXZDTUJSRmNjM2tva0w5dXVvdTJDMkRGTkhCTGk0T3pwVy10b0dZVjN3cDFYLXZvWk9nenVkYzdsR3BXaDY1aFdma1ZGdC1Ja05MVnpHZTBJaHhKWGFYY3hLdm9rWDExOHBhVVZzMU9UQkpXSUNMZ3U3UWVxMDFtdHFiR3lYeE5Ccm5nYl9kTDF6dDFUd1ZuTWdYMWp3ZzNsaUxpc1ZURG5aZEJxS1pFYmdmU21qWXFHSGFGWGh1eWlvVVc4cnVMb2xIMGNCMDM1LWszM3NCIiwiaWQiOiJmY18wSGF0YXVHaUc3LW9odmNQNzVMZDhRWV81In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFduWjRhbmRsU0hGTVgxVmFiVkExT1VacFoyVmFXbFpGYWpOaFZVcFBSM2xUYzJRMGVYVkllbTFaV2tOV2VVcHpjVEJ4ZDJaMFJHSkNNRWQxVVRONGMwdFhRblZZUjFsYWQzSlZOalJmTkZwc2JHcFlVbGhvTVRoblFSSVhNRWhoZEdGMVIybEhOeTF2YUhaalVEYzFUR1E0VVZrYUlrRkVjM0k1WmxKUk5sQnFWbkZGTTBGQ2JXUndWWGRWWld0ck5IbFFNekZ3WWxFIiwiZmN2IjoiMyIsImVpIjoiMEhhdGF1R2lHNy1vaHZjUDc1TGQ4UVkiLCJxYyI6IkNpZDNhSGtnYVhNZ1pHVndiRzk1YVc1bklIZGxZbk5wZEdVZ2IyNGdZWGR6SUhOdklHaGhjbVFRQUgwODN4b18iLCJxdWVzdGlvbiI6IklzIE5ldGZsaXggc3RpbGwgaG9zdGVkIG9uIEFXUz8iLCJsayI6IkdoNXBjeUJ1WlhSbWJHbDRJSE4wYVd4c0lHaHZjM1JsWkNCdmJpQmhkM00iLCJicyI6ImMzMk9QUXZDTUJSRmNjM2tva0w5dXVvdTJDMkRGTkhCTGk0T3pwVy10b0dZVjN3cDFYLXZvWk9nenVkYzdsR3BXaDY1aFdma1ZGdC1Ja05MVnpHZTBJaHhKWGFYY3hLdm9rWDExOHBhVVZzMU9UQkpXSUNMZ3U3UWVxMDFtdHFiR3lYeE5Ccm5nYl9kTDF6dDFUd1ZuTWdYMWp3ZzNsaUxpc1ZURG5aZEJxS1pFYmdmU21qWXFHSGFGWGh1eWlvVVc4cnVMb2xIMGNCMDM1LWszM3NCIiwiaWQiOiJmY18wSGF0YXVHaUc3LW9odmNQNzVMZDhRWV81In0%3D"
+    },
+    {
+      "question": "Is AWS tough to learn?",
+      "type": "ai_overview",
+      "page_token": "4UBfFHicHdBdaoMwAABgdpk-1kaho4Uy5mz8ASNNYtS8DE1stUYNU_x72112qp1msO8I3_ePqrvm94VX46iHs2HM87x_9P1DlXvR7-vOyIe1E4bIlSpy0ZyPr0fwdheX6zDbH_1s32KtmYMPZGMsNJUtnWpKGHa5pUmZigNqgwkD32QN9BLKh4IpyglY2BYuZVNlZaIc5KItTxVhHR6itPKxh0cEdCBhtlFP4QjqoQCQimt2IC08yhV0hCJGWhTjhntlCyxqnmBh2XnMTmnhyKl0l2cI_OUGwoWnkKFNmsQJ6mIFM7-inrN3Ajfbz1JcyVhqvImxMCszA-8WipcmgpC7dWBjD61RwuOccRp7WoXUpiKRIWqWhVI54a5yi02R_Mnt3V1MF2v3P3b5vLfjWX_1jz8NlHr7",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=4UBfFHicHdBdaoMwAABgdpk-1kaho4Uy5mz8ASNNYtS8DE1stUYNU_x72112qp1msO8I3_ePqrvm94VX46iHs2HM87x_9P1DlXvR7-vOyIe1E4bIlSpy0ZyPr0fwdheX6zDbH_1s32KtmYMPZGMsNJUtnWpKGHa5pUmZigNqgwkD32QN9BLKh4IpyglY2BYuZVNlZaIc5KItTxVhHR6itPKxh0cEdCBhtlFP4QjqoQCQimt2IC08yhV0hCJGWhTjhntlCyxqnmBh2XnMTmnhyKl0l2cI_OUGwoWnkKFNmsQJ6mIFM7-inrN3Ajfbz1JcyVhqvImxMCszA-8WipcmgpC7dWBjD61RwuOccRp7WoXUpiKRIWqWhVI54a5yi02R_Mnt3V1MF2v3P3b5vLfjWX_1jz8NlHr7",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFduWjRhbmRsU0hGTVgxVmFiVkExT1VacFoyVmFXbFpGYWpOaFZVcFBSM2xUYzJRMGVYVkllbTFaV2tOV2VVcHpjVEJ4ZDJaMFJHSkNNRWQxVVRONGMwdFhRblZZUjFsYWQzSlZOalJmTkZwc2JHcFlVbGhvTVRoblFSSVhNRWhoZEdGMVIybEhOeTF2YUhaalVEYzFUR1E0VVZrYUlrRkVjM0k1WmxKUk5sQnFWbkZGTTBGQ2JXUndWWGRWWld0ck5IbFFNekZ3WWxFIiwiZmN2IjoiMyIsImVpIjoiMEhhdGF1R2lHNy1vaHZjUDc1TGQ4UVkiLCJxYyI6IkNpZDNhSGtnYVhNZ1pHVndiRzk1YVc1bklIZGxZbk5wZEdVZ2IyNGdZWGR6SUhOdklHaGhjbVFRQUgwODN4b18iLCJxdWVzdGlvbiI6IklzIEFXUyB0b3VnaCB0byBsZWFybj8iLCJsayI6IkdoVnBjeUJoZDNNZ2RHOTFaMmdnZEc4Z2JHVmhjbTQiLCJicyI6ImMzMk9QUXZDTUJSRmNjM2tva0w5dXVvdTJDMkRGTkhCTGk0T3pwVy10b0dZVjN3cDFYLXZvWk9nenVkYzdsR3BXaDY1aFdma1ZGdC1Ja05MVnpHZTBJaHhKWGFYY3hLdm9rWDExOHBhVVZzMU9UQkpXSUNMZ3U3UWVxMDFtdHFiR3lYeE5Ccm5nYl9kTDF6dDFUd1ZuTWdYMWp3ZzNsaUxpc1ZURG5aZEJxS1pFYmdmU21qWXFHSGFGWGh1eWlvVVc4cnVMb2xIMGNCMDM1LWszM3NCIiwiaWQiOiJmY18wSGF0YXVHaUc3LW9odmNQNzVMZDhRWV81In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFduWjRhbmRsU0hGTVgxVmFiVkExT1VacFoyVmFXbFpGYWpOaFZVcFBSM2xUYzJRMGVYVkllbTFaV2tOV2VVcHpjVEJ4ZDJaMFJHSkNNRWQxVVRONGMwdFhRblZZUjFsYWQzSlZOalJmTkZwc2JHcFlVbGhvTVRoblFSSVhNRWhoZEdGMVIybEhOeTF2YUhaalVEYzFUR1E0VVZrYUlrRkVjM0k1WmxKUk5sQnFWbkZGTTBGQ2JXUndWWGRWWld0ck5IbFFNekZ3WWxFIiwiZmN2IjoiMyIsImVpIjoiMEhhdGF1R2lHNy1vaHZjUDc1TGQ4UVkiLCJxYyI6IkNpZDNhSGtnYVhNZ1pHVndiRzk1YVc1bklIZGxZbk5wZEdVZ2IyNGdZWGR6SUhOdklHaGhjbVFRQUgwODN4b18iLCJxdWVzdGlvbiI6IklzIEFXUyB0b3VnaCB0byBsZWFybj8iLCJsayI6IkdoVnBjeUJoZDNNZ2RHOTFaMmdnZEc4Z2JHVmhjbTQiLCJicyI6ImMzMk9QUXZDTUJSRmNjM2tva0w5dXVvdTJDMkRGTkhCTGk0T3pwVy10b0dZVjN3cDFYLXZvWk9nenVkYzdsR3BXaDY1aFdma1ZGdC1Ja05MVnpHZTBJaHhKWGFYY3hLdm9rWDExOHBhVVZzMU9UQkpXSUNMZ3U3UWVxMDFtdHFiR3lYeE5Ccm5nYl9kTDF6dDFUd1ZuTWdYMWp3ZzNsaUxpc1ZURG5aZEJxS1pFYmdmU21qWXFHSGFGWGh1eWlvVVc4cnVMb2xIMGNCMDM1LWszM3NCIiwiaWQiOiJmY18wSGF0YXVHaUc3LW9odmNQNzVMZDhRWV81In0%3D"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "HeEQS3iczVXbcqpIFP2A-Y7hxSh4SdBUUae6WxRiPAkmRMkLhYCAAm1slINv8y_zNn80XzMNokKCyZzzMDVdpU03u_Zt7cX640_fC1d___aXG0VrcsuycRw3HIwd326YuOGFrEGS0GQX2Ccb0_3m-IIXMtutbwtxDQFZkZE8eJper4ypyLi-YIdMshPajEkEjrE9gZOMyNgOvSFfx-7OfOSv762uojGZV0GfG8Re0rA_loTVWfq3-r3dp4cGadihPoQNcxQpvq1O4II0Wlyr3XhgjYDagP9uiYoD0_0OoMtG9JX4tavUgQygWPAkAyfb4dlKO7xGSvYKORe9wUPMSWau0F9f30txn94e--Nk19WpwNIxznIBIM6yhMD7uprCUvJajnV90qmTdXnl3cPnmyLGpVxLy4lLxwHNQgcInYMUg1E3bimNU6dMB3QlDPsQqJfzpv0ZyeB6BRTxUltPvsWXzgm5e21Ib1jLoYPLsfMN3ZqsZ7pm9rAh6Tyj5x6HxdcQaa-YN_Wubff7YN78AfDEV9G6q7DmnNr52LBsS3d17lt2braa11yvzXevMi6Z5EQmUiRTorrEnj6-BIHWuG_A5pFG6AA6-ICYSM9IrigMoty0AuLCYKeAiQczZVD0m0MJ07kWJ6AM7WiR9nV4PNIZ3VNoIDgnco6aDv9HGh2WUzBGk0MiMs4NixYHq2GBugVgZVD1mXlftyKBYxXK8oNhibw0FbACx1nX3nvWgIIcMeUAEiWYd808-0jp5X1ou0Ld0S9U3sZzJYcnWKwhbYGsgDGQRerTU2WKgZPO6ilROY81ECEoQXNh4GUaZor-zaevYsGvSJQu5ciXd-Nfos3zE54NbG1njSSyj9TH0W7l19FY0n1QTRMczH9OdMz_FZcOkiTmknSZS-LXXMokCX4iSdmzduJSOr8IX-QSHFZL0rhSksp1IzApculzSfppLqFPuaTk_xVcwtVcWl_kUi5JBS5RSeqfJUmslqQTl35FkuAvSlJGLfuwlfVpu3Qu69TW7LUN9V5GvEZaqD1ZOiF6rYdJvRV_qVOLILoNDMu_0j3rFrbuosS60ukFvrUt5k2I3aTmkZplr32ceKFTi-058SK7hsOaEZMawTXX2FhM4G-wwBn88-ZuNV6iQF1vlsjoDZ7c_cI0dKnZktSHXtAxkrnVBTswS6Y329l-_9CVjV6b4xQp5EeoK73iicbX-4GmteqP_rQTzNT181t7KY4gCAZe3xn0F9Js8hb5SbS-WTxK4_hNGo9IGCZ4hvToxfKeXzvf7RvvHtTnSpYXEYLdE9q3DHk1WDHBxhQo-h0HfFfA1KFjiLLxBKqB6R4DZXhD0YEMoXnbZCd0aFk9s8fzZpu3rtsdJnCiZC30OIaEG6H5D6LLTjQ",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=HeEQS3iczVXbcqpIFP2A-Y7hxSh4SdBUUae6WxRiPAkmRMkLhYCAAm1slINv8y_zNn80XzMNokKCyZzzMDVdpU03u_Zt7cX640_fC1d___aXG0VrcsuycRw3HIwd326YuOGFrEGS0GQX2Ccb0_3m-IIXMtutbwtxDQFZkZE8eJper4ypyLi-YIdMshPajEkEjrE9gZOMyNgOvSFfx-7OfOSv762uojGZV0GfG8Re0rA_loTVWfq3-r3dp4cGadihPoQNcxQpvq1O4II0Wlyr3XhgjYDagP9uiYoD0_0OoMtG9JX4tavUgQygWPAkAyfb4dlKO7xGSvYKORe9wUPMSWau0F9f30txn94e--Nk19WpwNIxznIBIM6yhMD7uprCUvJajnV90qmTdXnl3cPnmyLGpVxLy4lLxwHNQgcInYMUg1E3bimNU6dMB3QlDPsQqJfzpv0ZyeB6BRTxUltPvsWXzgm5e21Ib1jLoYPLsfMN3ZqsZ7pm9rAh6Tyj5x6HxdcQaa-YN_Wubff7YN78AfDEV9G6q7DmnNr52LBsS3d17lt2braa11yvzXevMi6Z5EQmUiRTorrEnj6-BIHWuG_A5pFG6AA6-ICYSM9IrigMoty0AuLCYKeAiQczZVD0m0MJ07kWJ6AM7WiR9nV4PNIZ3VNoIDgnco6aDv9HGh2WUzBGk0MiMs4NixYHq2GBugVgZVD1mXlftyKBYxXK8oNhibw0FbACx1nX3nvWgIIcMeUAEiWYd808-0jp5X1ou0Ld0S9U3sZzJYcnWKwhbYGsgDGQRerTU2WKgZPO6ilROY81ECEoQXNh4GUaZor-zaevYsGvSJQu5ciXd-Nfos3zE54NbG1njSSyj9TH0W7l19FY0n1QTRMczH9OdMz_FZcOkiTmknSZS-LXXMokCX4iSdmzduJSOr8IX-QSHFZL0rhSksp1IzApculzSfppLqFPuaTk_xVcwtVcWl_kUi5JBS5RSeqfJUmslqQTl35FkuAvSlJGLfuwlfVpu3Qu69TW7LUN9V5GvEZaqD1ZOiF6rYdJvRV_qVOLILoNDMu_0j3rFrbuosS60ukFvrUt5k2I3aTmkZplr32ceKFTi-058SK7hsOaEZMawTXX2FhM4G-wwBn88-ZuNV6iQF1vlsjoDZ7c_cI0dKnZktSHXtAxkrnVBTswS6Y329l-_9CVjV6b4xQp5EeoK73iicbX-4GmteqP_rQTzNT181t7KY4gCAZe3xn0F9Js8hb5SbS-WTxK4_hNGo9IGCZ4hvToxfKeXzvf7RvvHtTnSpYXEYLdE9q3DHk1WDHBxhQo-h0HfFfA1KFjiLLxBKqB6R4DZXhD0YEMoXnbZCd0aFk9s8fzZpu3rtsdJnCiZC30OIaEG6H5D6LLTjQ"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "AWS feels overwhelming. Where did you start, and what ...",
+      "link": "https://www.reddit.com/r/aws/comments/1iukrz6/aws_feels_overwhelming_where_did_you_start_and/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlQEB6zswFT4hd1UQqnvxCizchiJg_an3tS6ulVELZfW4KCD17cSviRMGsvJyz7MuS3Vy0-hfjYPElambi76bZJfuJ4dWg7FNIKhJCpFF6Y16p0v9p04ygcOqx1BEke43uwL0sLwImxuKWZ7UX7aJ2kMy3AfJvVLFjkrQH96L8HuB-z9Tmdu7hKUaQbRqsS4H25oEKe2DWA&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24QFnoECC0QAQ&uoh=1",
+      "displayed_link": "120+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "I\u2019m trying to learn AWS, but man\u2026 there\u2019s just SO much. EC2, S3, Lambda, IAM, networking\u2014it feels endless. If you\u2019ve been through this, how ...",
+      "sitelinks": {
+        "list": [
+          {
+            "title": "Just wrapped up my first real-world AWS ...",
+            "link": "https://www.reddit.com/r/webdev/comments/1k4irb0/just_wrapped_up_my_first_realworld_aws_deployment/",
+            "answer_count": 34,
+            "date": "21 Apr 2025"
+          },
+          {
+            "title": "Is it just me or is aws is a nightmare for beginners?",
+            "link": "https://www.reddit.com/r/aws/comments/aa7v1p/is_it_just_me_or_is_aws_is_a_nightmare_for/",
+            "answer_count": 192,
+            "date": "28 Dec 2018"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Start with VPC, EC2, and EBS. Use CloudFormation or Terraform. This will feel a lot like on-premise. Try to figure out how to log in to the EC2 ...",
+          "source_info_link": "https://www.reddit.com/r/aws/comments/1iukrz6/aws_feels_overwhelming_where_did_you_start_and/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/aws"
+    },
+    {
+      "position": 2,
+      "title": "Why is AWS Complicated for Devs? Understanding Major ...",
+      "link": "https://www.digitalocean.com/resources/articles/aws-complicated",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdwHrOzAVlJucKhgC9M_HAzi3yx54r3EOH3CPCHhrpfBXrVhH_U7u8qYdZP00RxF5QY2deD6EJYxh86wj_3emn9lAz9HLggSTR_y3GQ1eDsJRiIHyacntLXchXfBxoHXK6ae4aLaWyQdAkiqk4jAJxGf7QPAJsK-K&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24QFnoECCQQAQ&uoh=1",
+      "displayed_link": "https://www.digitalocean.com \u203a resources \u203a articles \u203a a...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAANlBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAR2LVAAAAEnRSTlMAN4rC7P9ddBLaJ56mStJq4RhSGav3AAAAuElEQVR4AW2TBxLEIAgAsYBptv8_9hqeBMNOTVapI0ycDxExBu9ghSIKSaltR0U8xDl8QNrZdsPBfqbkZwKOPD7DyLNdI--vzkeFWf5EcYv9VxNAwZEdeMnOSI0ewq9OWCgcLvKZBc_1qnImlSvS2NIOa1N0f3kvpTRgOuoy6Z4ljCFAbJEWWefkEbGKFIdkyB7Y_fJf55WIKF3neV5Vlt1vXV3wBScObCnOlK3DJJVSvMhIYKKfwxteUQkwS_4wpwAAAABJRU5ErkJggg.png",
+      "date": "26 Jan 2026",
+      "snippet": "Learn how a maze of services and complex pricing makes AWS complicated for users aiming to deploy cohesive and cost-effective cloud ...",
+      "snippet_highlighted_words": [
+        "Learn how a maze of services and complex pricing makes AWS complicated"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Learn how a maze of services and complex pricing makes AWS complicated for users aiming to deploy cohesive and cost-effective cloud ...",
+          "source_info_link": "https://www.digitalocean.com/resources/articles/aws-complicated",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAANlBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAR2LVAAAAEnRSTlMAN4rC7P9ddBLaJ56mStJq4RhSGav3AAAAuElEQVR4AW2TBxLEIAgAsYBptv8_9hqeBMNOTVapI0ycDxExBu9ghSIKSaltR0U8xDl8QNrZdsPBfqbkZwKOPD7DyLNdI--vzkeFWf5EcYv9VxNAwZEdeMnOSI0ewq9OWCgcLvKZBc_1qnImlSvS2NIOa1N0f3kvpTRgOuoy6Z4ljCFAbJEWWefkEbGKFIdkyB7Y_fJf55WIKF3neV5Vlt1vXV3wBScObCnOlK3DJJVSvMhIYKKfwxteUQkwS_4wpwAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "DigitalOcean"
+    },
+    {
+      "position": 3,
+      "title": "AWS is inappropriate for small teams because its ...",
+      "link": "https://news.ycombinator.com/item?id=11884507",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESZQHrOzAV-p_HddTuya3Rnmn5ImaaxMO9zfNtXDpMsGrdyXTY1hhn-NtCy7fVM4HXFL4Ym-s5I6DesJSV5zb0MhOl24Pbm7e-uDandi2pa8hT80EpyYUaokiq6AsUygRGAQcBVLAk&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24QFnoECCIQAQ&uoh=1",
+      "displayed_link": "https://news.ycombinator.com \u203a item",
+      "favicon": "https://serpapi.com/images/i/UklGRp4AAABXRUJQVlA4IJIAAAAwBACdASocABwAPtEutFooIagoGAEAGglsAJ0yhHA2zPloAStqqGVV0EAA04CuIsnfYeCobjYkc_JffMYes8MOzwz__Fmqpc0gS-45H_xuwaf0t9uHFI2gOmx3GwVBxqsBciZ7PAysvOA70f_Lfn5BNEXamfoB_8hIqjA3za5TzLSUkCyD8S4sNJbPo3XFEMgAAA.webp",
+      "date": "11 Jun 2016",
+      "snippet": "The AWS web interfaces are inscrutable, clunky, and slow. A lot of the trial and error you want to do to figure out how things work in AWS is ...",
+      "snippet_highlighted_words": [
+        "The AWS web interfaces are inscrutable, clunky, and slow"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The AWS web interfaces are inscrutable, clunky, and slow. A lot of the trial and error you want to do to figure out how things work in AWS is ...",
+          "source_info_link": "https://news.ycombinator.com/item?id=11884507",
+          "icon": "https://serpapi.com/images/i/UklGRp4AAABXRUJQVlA4IJIAAAAwBACdASocABwAPtEutFooIagoGAEAGglsAJ0yhHA2zPloAStqqGVV0EAA04CuIsnfYeCobjYkc_JffMYes8MOzwz__Fmqpc0gS-45H_xuwaf0t9uHFI2gOmx3GwVBxqsBciZ7PAysvOA70f_Lfn5BNEXamfoB_8hIqjA3za5TzLSUkCyD8S4sNJbPo3XFEMgAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Hacker News",
+      "read_more_link": "https://news.ycombinator.com/item?id=11884507#:~:text=The%20AWS%20web%20interfaces%20are,to%20do%20in%20that%20interface."
+    },
+    {
+      "position": 4,
+      "title": "Build Free Websites and Webapps",
+      "link": "https://aws.amazon.com/free/webapps/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESXAHrOzAVy_JNQCyhFOi6Y_aGj9Cu7pYTB3myIpqbPRfDUdxZtc2j8tswn94Tdg85CcmfEORkpcC13gbwGoQqk5JK2rx_DsT3AiLASOuoJRS1MFrKz9PN9gFUBhfn&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24QFnoECB4QAQ&uoh=1",
+      "displayed_link": "https://aws.amazon.com \u203a free \u203a webapps",
+      "favicon": "https://serpapi.com/images/i/UklGRugAAABXRUJQVlA4INwAAAAQBgCdASocABwAPtE-tFooIigoFAEAGglnAASZrzWMzHyr6Ie-V_oAHZre0RDxnNWESWhFPFinsgAA_uvLLjnB61DfwquR6bDznEX76BwbDsq33n-ADYXFCHbpv8ePq3zGHFi4Ep1sQz7y9NnxgCqAPMQyI02gJ71in6T24HDbhFtnb-IhRLgv_HP-_oxuqplX9O3CyxXgPQp_X8mRPLA396eYAh7eFs_Ex9R751UEATXhMv-O_b_Yt7Bni1RNqmiTbk0AD5df3r-_lxHJCWDuArZMd57hNm5MEAAA.webp",
+      "snippet": "Build Free Websites and Web Apps on AWS. Free offers and services you need to build, deploy, host, and manage websites and web apps in the cloud.",
+      "snippet_highlighted_words": [
+        "Free offers and services you need to build, deploy, host, and manage websites"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Build Free Websites and Web Apps on AWS. Free offers and services you need to build, deploy, host, and manage websites and web apps in the cloud.",
+          "source_info_link": "https://aws.amazon.com/free/webapps/",
+          "icon": "https://serpapi.com/images/i/UklGRugAAABXRUJQVlA4INwAAAAQBgCdASocABwAPtE-tFooIigoFAEAGglnAASZrzWMzHyr6Ie-V_oAHZre0RDxnNWESWhFPFinsgAA_uvLLjnB61DfwquR6bDznEX76BwbDsq33n-ADYXFCHbpv8ePq3zGHFi4Ep1sQz7y9NnxgCqAPMQyI02gJ71in6T24HDbhFtnb-IhRLgv_HP-_oxuqplX9O3CyxXgPQp_X8mRPLA396eYAh7eFs_Ex9R751UEATXhMv-O_b_Yt7Bni1RNqmiTbk0AD5df3r-_lxHJCWDuArZMd57hNm5MEAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Amazon Web Services (AWS)",
+      "read_more_link": "https://aws.amazon.com/free/webapps/#:~:text=Build%20Free%20Websites%20and%20Web,web%20apps%20in%20the%20cloud"
+    },
+    {
+      "position": 5,
+      "title": "Web Hosting Options on AWS - Picking the Right Option for YOU",
+      "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU",
+      "displayed_link": "67.1K+ views \u00b7 5 years ago",
+      "thumbnail": "https://serpapi.com/searches/6aad76cb9df9dd610e48f5b5/images/_MYr-JXFst7g3Gz1M8cbYX9TkIdLN89EJAiBXwrc0fg.jpeg",
+      "favicon": "https://serpapi.com/images/i/UklGRpwAAABXRUJQVlA4IJAAAAAQAwCdASoQABAAAsBMJbACdEyAZIBvHZEVF_xH8jFr8RAA_vdfqk7B4h7c7SA9EXLm1jvCcvS12TTPc4SgLiYbbdnDtj5mFYsy9rYK8egN-m_wy1bF7_lqaJwe1kOFY9IH8jmlO7DbAWe9V_-WsvvcWurSf-Cp-rbcVf_uF_E7k7jxw1wX2r_PvJ3PjrggAAA.webp",
+      "snippet": "... website or webapp on AWS. In this video, I tell you about 5 website hosting options on AWS. I discuss what they are and when they're ...",
+      "duration": "14:40",
+      "key_moments": [
+        {
+          "time": "01:08",
+          "title": "Static Hosting with S3",
+          "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU&t=68"
+        },
+        {
+          "time": "02:28",
+          "title": "Common Services",
+          "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU&t=148"
+        },
+        {
+          "time": "04:09",
+          "title": "WordPress on Lightsail",
+          "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU&t=249"
+        },
+        {
+          "time": "05:20",
+          "title": "CloudFront",
+          "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU&t=320"
+        },
+        {
+          "time": "07:13",
+          "title": "Amplify Features",
+          "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU&t=433"
+        },
+        {
+          "time": "07:51",
+          "title": "Amplify - Hidden Costs",
+          "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU&t=471"
+        },
+        {
+          "time": "09:35",
+          "title": "Elastic Beanstalk",
+          "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU&t=575"
+        },
+        {
+          "time": "11:09",
+          "title": "EC2 - The bread and butter of AWS",
+          "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU&t=669"
+        },
+        {
+          "time": "12:35",
+          "title": "ECS Run Modes",
+          "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU&t=755"
+        },
+        {
+          "time": "14:24",
+          "title": "Conclusion",
+          "link": "https://www.youtube.com/watch?v=8eGRJCYSUsU&t=864"
+        }
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "... website or webapp on AWS. In this video, I tell you about 5 website hosting options on AWS. I discuss what they are and when they're ...",
+          "icon": "https://serpapi.com/images/i/UklGRpwAAABXRUJQVlA4IJAAAAAQAwCdASoQABAAAsBMJbACdEyAZIBvHZEVF_xH8jFr8RAA_vdfqk7B4h7c7SA9EXLm1jvCcvS12TTPc4SgLiYbbdnDtj5mFYsy9rYK8egN-m_wy1bF7_lqaJwe1kOFY9IH8jmlO7DbAWe9V_-WsvvcWurSf-Cp-rbcVf_uF_E7k7jxw1wX2r_PvJ3PjrggAAA.webp"
+        }
+      },
+      "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQiYjNL9I6WJrMh0AY4OxfS1kfDcY1FbNzfjw",
+      "source": "YouTube \u00b7 Be A Better Dev"
+    },
+    {
+      "position": 6,
+      "title": "Why is Amazon Web Services so much more difficult to use ...",
+      "link": "https://www.quora.com/Why-is-Amazon-Web-Services-so-much-more-difficult-to-use-than-other-cloud-providers-for-example-Microsoft-Azure",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESvgEB6zswFbg1cE2Umi7njWaGOnZ8YTltMeXZe-S25O2d_y3vCMs0FGGzctf-mFCFHYEQoi8cRSEMYN-8y33nBCFA-nLmx-wq4xtSN1FXgqVsnPNgBlSQ18LxhSGxnnFYZY792Nq2GB6FB1SZHNMq_NmRm-HbMmyZrU6NVReuzc7afQL6Qr7DAmoVjMoTj68UmCenZxuo2nitdeJxRY6qaiVOoVnB4N4hXFvrN7c71GPcILJmmwCWBc-4NQX3N00M&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24QFnoECCkQAQ&uoh=1",
+      "displayed_link": "30+ answers \u00b7 6 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp",
+      "snippet": "Why is Amazon Web Services so much more difficult to use than other cloud providers, for example, Microsoft Azure?",
+      "sitelinks": {
+        "list": [
+          {
+            "title": "Is it logical to host personal web site at AWS or what ...",
+            "link": "https://www.quora.com/Is-it-logical-to-host-personal-web-site-at-AWS-or-what-are-other-options",
+            "answer_count": 33,
+            "date": "26 May 2013"
+          },
+          {
+            "title": "Is it worth learning AWS for deploying my back-end ...",
+            "link": "https://www.quora.com/Is-it-worth-learning-AWS-for-deploying-my-back-end-projects-or-are-there-other-simpler-options-for-beginners",
+            "answer_count": 32,
+            "date": "19 May 2025"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "The short answer is consistency. One great fact about both Microsoft and Amazon is they are both consistent. The products and services you ...",
+          "source_info_link": "https://www.quora.com/Why-is-Amazon-Web-Services-so-much-more-difficult-to-use-than-other-cloud-providers-for-example-Microsoft-Azure",
+          "icon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Quora"
+    },
+    {
+      "position": 7,
+      "title": "Key considerations when using AWS for web hosting",
+      "link": "https://docs.aws.amazon.com/whitepapers/latest/web-application-hosting-best-practices/key-considerations-when-using-aws-for-web-hosting.html",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESxQEB6zswFV-YdZ5yDf0QyY3DNHWWWfV5HGlcs8n2DE3zpXrTbdTUmgYr283HZ6Bn4ICJinrX1zxZUO1_l1ZJ7JO0bTNJ7kzPDr0vc2M_63pDMk1y2KBLsbI_4m-O0nxIumo2RwLfk_Pdndt6cAuCg3U-chM5UanoF_Gq_ZpuTMfv8d0e-e9YDR0C2twRhDc0GpMZKKyo4Ji2SlkeANyr5X5PpznRyCa8siKNKzMwqDQe4H-aOXOQKCGqNCX4TxLmn2pbFNxCgA&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24QFnoECFEQAQ&uoh=1",
+      "displayed_link": "https://docs.aws.amazon.com \u203a ... \u203a AWS Whitepaper",
+      "favicon": "https://serpapi.com/images/i/UklGRlYBAABXRUJQVlA4IEoBAABQCACdASogACAAPtEutFooIagoGAEAGglsAJ0yhHp_jv4wXp9qANntgOe68-jfAN5hfN5wQvN81wC1P-1h7MEPcLPQ2qzmYWz_0gAA_v6uTcgpXUXbTqKDiEnhb-gJlTyDhc-qJlAV6OmTLEAfIuCx_hkVfwoP7l2nE0Z6ZeKdPekJf6arhiy7lbzFiLupI484wq-NkGgZELbRqqGGMNUF-rAMllR-1UJdPdsr5-ZrHYb0jFNzGcZ8efY1DG0sOQafz4Igo2ijczGMCtLSoA-qOk9DmFTd4lQlgOasGYB_wTY9_g2O-dklOi73SmhwcWlPckDg9miuzKFMKgAVXtNaaTcEm3uHXIHltclUd9Du7VS05gL0dNZf9Gw7Ebn9sO6Tc9nZ2IWVZVHPCQUlR8nhY5GKamQHIeDcIhlvqyEUPjGu_i9AfXsgAAA.webp",
+      "snippet": "You cannot deploy physical network appliances in AWS. For example, firewalls, routers, and load balancers for your AWS applications can no longer reside on ...",
+      "snippet_highlighted_words": [
+        "You cannot deploy physical network appliances in AWS"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "You cannot deploy physical network appliances in AWS. For example, firewalls, routers, and load balancers for your AWS applications can no longer reside on ...",
+          "source_info_link": "https://docs.aws.amazon.com/whitepapers/latest/web-application-hosting-best-practices/key-considerations-when-using-aws-for-web-hosting.html",
+          "icon": "https://serpapi.com/images/i/UklGRlYBAABXRUJQVlA4IEoBAABQCACdASogACAAPtEutFooIagoGAEAGglsAJ0yhHp_jv4wXp9qANntgOe68-jfAN5hfN5wQvN81wC1P-1h7MEPcLPQ2qzmYWz_0gAA_v6uTcgpXUXbTqKDiEnhb-gJlTyDhc-qJlAV6OmTLEAfIuCx_hkVfwoP7l2nE0Z6ZeKdPekJf6arhiy7lbzFiLupI484wq-NkGgZELbRqqGGMNUF-rAMllR-1UJdPdsr5-ZrHYb0jFNzGcZ8efY1DG0sOQafz4Igo2ijczGMCtLSoA-qOk9DmFTd4lQlgOasGYB_wTY9_g2O-dklOi73SmhwcWlPckDg9miuzKFMKgAVXtNaaTcEm3uHXIHltclUd9Du7VS05gL0dNZf9Gw7Ebn9sO6Tc9nZ2IWVZVHPCQUlR8nhY5GKamQHIeDcIhlvqyEUPjGu_i9AfXsgAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Amazon AWS Documentation",
+      "read_more_link": "https://docs.aws.amazon.com/whitepapers/latest/web-application-hosting-best-practices/key-considerations-when-using-aws-for-web-hosting.html#:~:text=You%20cannot%20deploy%20physical%20network,be%20replaced%20with%20software%20solutions."
+    },
+    {
+      "position": 8,
+      "title": "AWS is too expensive for the majority of web projects",
+      "link": "https://ottofeller.com/blog/aws-is-too-expensive-for-the-majority-of-web-projects",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESiQEB6zswFYp93eDxcbBDOPkeySJZ88lfMYAZL6wpy05I-HkAB1MzUBbRJL9HSM67rW6xAFWwIx1U89vpFFaVOcQCUDXXiZ29XvWkN2UfyzWJ8jrCHbbIIgK-vPmEYTr9pORvJ2MMY24a2_Us_3Yvk_l_F8EvNlxgCjoVKjUgtmRIbwzWgzcA3rE3vQ&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24QFnoECEwQAQ&uoh=1",
+      "displayed_link": "https://ottofeller.com \u203a blog \u203a aws-is-too-expensive-for-...",
+      "favicon": "https://serpapi.com/images/i/UklGRswAAABXRUJQVlA4IMAAAABwBQCdASocABwAPtEwtFooIigoGAEAGglpAAQ-bxZfKXogDMqyP6JY1E-LZaSVsKJ-n2AAAP71ZWOXg3euISbo9q1-he9_U8MMNdSFaMSo3NG_H9f81Nkn1IOLm8fvnvS8Y-lzwJTJJPEd_mv-oTn_QJm7b7zKf0VAqZ7kbu4GMHvW4W9uEMwMRf57P12Y_Z9pjYU-LdXXm09XqqEp_OK8XbxLq3rkhDbmqJAnWG-Zoj9YK6k7hZw-HpAD4pgAAAA.webp",
+      "date": "13 Aug 2020",
+      "snippet": "Maintaining AWS cloud is hard. This is the main reason why developers of the web apps and websites should avoid using AWS. A comprehensive cloud ...",
+      "snippet_highlighted_words": [
+        "AWS",
+        "hard",
+        "websites",
+        "AWS"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Maintaining AWS cloud is hard. This is the main reason why developers of the web apps and websites should avoid using AWS. A comprehensive cloud ...",
+          "source_info_link": "https://ottofeller.com/blog/aws-is-too-expensive-for-the-majority-of-web-projects",
+          "icon": "https://serpapi.com/images/i/UklGRswAAABXRUJQVlA4IMAAAABwBQCdASocABwAPtEwtFooIigoGAEAGglpAAQ-bxZfKXogDMqyP6JY1E-LZaSVsKJ-n2AAAP71ZWOXg3euISbo9q1-he9_U8MMNdSFaMSo3NG_H9f81Nkn1IOLm8fvnvS8Y-lzwJTJJPEd_mv-oTn_QJm7b7zKf0VAqZ7kbu4GMHvW4W9uEMwMRf57P12Y_Z9pjYU-LdXXm09XqqEp_OK8XbxLq3rkhDbmqJAnWG-Zoj9YK6k7hZw-HpAD4pgAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Ottofeller",
+      "read_more_link": "https://ottofeller.com/blog/aws-is-too-expensive-for-the-majority-of-web-projects#:~:text=Maintaining%20AWS%20cloud%20is%20hard,cloud%20infrastructure%20can't%20be%20simple."
+    },
+    {
+      "position": 9,
+      "title": "Deploy Your First Website on AWS in Under 30 Minutes.",
+      "link": "https://www.jeeviacademy.com/deploy-your-first-website-on-aws-in-under-30-minutes/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESigEB6zswFed3Goi95g01X88aP-cu4yDT2TfFIiHabqAC22khsDUkyYWNhKRZDinGUH9JoJUKx_VYLobyvpSvEc4BouShu9X24t2UjQzuN4qYUYS4yu75tuTgm9RsBk3q1W0MqwDKyljOcdgi2JAglhnJT5mgE5f5k0xwsM_qobgtzdXRDrIDFhqtXgY&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24QFnoECEsQAQ&uoh=1",
+      "displayed_link": "https://www.jeeviacademy.com \u203a Blogs \u203a AWS",
+      "favicon": "https://serpapi.com/images/i/UklGRigBAABXRUJQVlA4IBwBAADwBgCdASocABwAPtEwtFooIigoGAEAGglsAJ0vbaQflFMaeigREgvwqW_PKfez_mvI89wNRAJHXXDXcBdfSv4AAP72B3vp6H5ot7lgzwfFe5vRvCyavIsO3cgcrAdxxeFmh62DaEYwL-Jr79uaFzjI-uyrGqWlMyUafwQ-X1B0lp9EjasvX1xVL6gggNp77clJqkilsbSozBT2cT2IRr5NC88bqMMZyWZwAn50ar_k5ZvXBsnYlRxCP_JGtQxxJpDdJVRNulgvc9TI7c-evlKiKFu5acy4PPOZ8ro8hYaA4pX0xpPmPYilr7UNv-eM4JxtCXk4yjLJYcf2VhJF87-hPCA-rb6MM6o5eVGAPECf2Dx_mfW3im_3GJgAAA.webp",
+      "date": "27 Jul 2025",
+      "snippet": "Ensure all file permissions are set properly HTML files should generally be publicly readable. If you encounter issues, review AWS documentation ...",
+      "snippet_highlighted_words": [
+        "AWS"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Ensure all file permissions are set properly HTML files should generally be publicly readable. If you encounter issues, review AWS documentation ...",
+          "source_info_link": "https://www.jeeviacademy.com/deploy-your-first-website-on-aws-in-under-30-minutes/",
+          "icon": "https://serpapi.com/images/i/UklGRigBAABXRUJQVlA4IBwBAADwBgCdASocABwAPtEwtFooIigoGAEAGglsAJ0vbaQflFMaeigREgvwqW_PKfez_mvI89wNRAJHXXDXcBdfSv4AAP72B3vp6H5ot7lgzwfFe5vRvCyavIsO3cgcrAdxxeFmh62DaEYwL-Jr79uaFzjI-uyrGqWlMyUafwQ-X1B0lp9EjasvX1xVL6gggNp77clJqkilsbSozBT2cT2IRr5NC88bqMMZyWZwAn50ar_k5ZvXBsnYlRxCP_JGtQxxJpDdJVRNulgvc9TI7c-evlKiKFu5acy4PPOZ8ro8hYaA4pX0xpPmPYilr7UNv-eM4JxtCXk4yjLJYcf2VhJF87-hPCA-rb6MM6o5eVGAPECf2Dx_mfW3im_3GJgAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Jeevi Academy",
+      "read_more_link": "https://www.jeeviacademy.com/deploy-your-first-website-on-aws-in-under-30-minutes/#:~:text=Ensure%20all%20file%20permissions%20are,check%20permissions%20and%20folder%20structures."
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Why is deploying website on aws so hard reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Why+is+deploying+website+on+aws+so+hard+reddit&sa=X&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q1QJ6BAhDEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Why+is+deploying+website+on+aws+so+hard+reddit"
+    },
+    {
+      "block_position": 1,
+      "query": "Why is deploying website on aws so hard github",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Why+is+deploying+website+on+aws+so+hard+github&sa=X&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Why+is+deploying+website+on+aws+so+hard+github"
+    },
+    {
+      "block_position": 1,
+      "query": "Is AWS hard to learn reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Is+AWS+hard+to+learn+reddit&sa=X&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q1QJ6BAhKEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Is+AWS+hard+to+learn+reddit"
+    },
+    {
+      "block_position": 1,
+      "query": "I hate AWS",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=I+hate+AWS&sa=X&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q1QJ6BAhHEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=I+hate+AWS"
+    },
+    {
+      "block_position": 1,
+      "query": "Why is aws so complicated",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Why+is+aws+so+complicated&sa=X&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Why+is+aws+so+complicated"
+    },
+    {
+      "block_position": 1,
+      "query": "I hate aws reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=I+hate+aws+reddit&sa=X&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q1QJ6BAhJEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=I+hate+aws+reddit"
+    },
+    {
+      "block_position": 1,
+      "query": "AWS Certification",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=AWS+Certification&sa=X&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q1QJ6BAhIEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AWS+Certification"
+    },
+    {
+      "block_position": 1,
+      "query": "Aws review reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Aws+review+reddit&sa=X&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q1QJ6BAhFEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Aws+review+reddit"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=why+is+deploying+website+on+aws+so+hard&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=0HatauGiG7-ohvcP75Ld8QY&start=10&sa=N&sstk=AS6-VmKkt0YGbVK7o_rwIbDs9Aya4OQsK8TXZPe_de-Ap55hiRTqWrxmZn2SMfIoPTqX4QiSLlD9hDQfcDkTfCYE61WzGjIhnIUcRw&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q8NMDegQIPRAQ",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=why+is+deploying+website+on+aws+so+hard&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=0HatauGiG7-ohvcP75Ld8QY&start=10&sa=N&sstk=AS6-VmKkt0YGbVK7o_rwIbDs9Aya4OQsK8TXZPe_de-Ap55hiRTqWrxmZn2SMfIoPTqX4QiSLlD9hDQfcDkTfCYE61WzGjIhnIUcRw&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q8tMDegQIPRAE",
+      "3": "https://www.google.co.in/search?q=why+is+deploying+website+on+aws+so+hard&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=0HatauGiG7-ohvcP75Ld8QY&start=20&sa=N&sstk=AS6-VmKkt0YGbVK7o_rwIbDs9Aya4OQsK8TXZPe_de-Ap55hiRTqWrxmZn2SMfIoPTqX4QiSLlD9hDQfcDkTfCYE61WzGjIhnIUcRw&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q8tMDegQIPRAG",
+      "4": "https://www.google.co.in/search?q=why+is+deploying+website+on+aws+so+hard&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=0HatauGiG7-ohvcP75Ld8QY&start=30&sa=N&sstk=AS6-VmKkt0YGbVK7o_rwIbDs9Aya4OQsK8TXZPe_de-Ap55hiRTqWrxmZn2SMfIoPTqX4QiSLlD9hDQfcDkTfCYE61WzGjIhnIUcRw&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q8tMDegQIPRAI",
+      "5": "https://www.google.co.in/search?q=why+is+deploying+website+on+aws+so+hard&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=0HatauGiG7-ohvcP75Ld8QY&start=40&sa=N&sstk=AS6-VmKkt0YGbVK7o_rwIbDs9Aya4OQsK8TXZPe_de-Ap55hiRTqWrxmZn2SMfIoPTqX4QiSLlD9hDQfcDkTfCYE61WzGjIhnIUcRw&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q8tMDegQIPRAK",
+      "6": "https://www.google.co.in/search?q=why+is+deploying+website+on+aws+so+hard&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=0HatauGiG7-ohvcP75Ld8QY&start=50&sa=N&sstk=AS6-VmKkt0YGbVK7o_rwIbDs9Aya4OQsK8TXZPe_de-Ap55hiRTqWrxmZn2SMfIoPTqX4QiSLlD9hDQfcDkTfCYE61WzGjIhnIUcRw&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q8tMDegQIPRAM",
+      "7": "https://www.google.co.in/search?q=why+is+deploying+website+on+aws+so+hard&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=0HatauGiG7-ohvcP75Ld8QY&start=60&sa=N&sstk=AS6-VmKkt0YGbVK7o_rwIbDs9Aya4OQsK8TXZPe_de-Ap55hiRTqWrxmZn2SMfIoPTqX4QiSLlD9hDQfcDkTfCYE61WzGjIhnIUcRw&ved=2ahUKEwjhytjR1fiWAxU_lOEIHW9JN24Q8tMDegQIPRAO"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=why+is+deploying+website+on+aws+so+hard&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=why+is+deploying+website+on+aws+so+hard&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=why+is+deploying+website+on+aws+so+hard&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=why+is+deploying+website+on+aws+so+hard&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=why+is+deploying+website+on+aws+so+hard&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=why+is+deploying+website+on+aws+so+hard&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=why+is+deploying+website+on+aws+so+hard&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=why+is+deploying+website+on+aws+so+hard&start=60"
+    }
+  }
+}

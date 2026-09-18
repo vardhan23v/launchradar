@@ -1,0 +1,17 @@
+.git
+node_modules
+.next
+backend/.venv
+**/__pycache__
+**/.pytest_cache
+data
+.env
+.env.*
+!.env.example
+.oxcode
+.oxcode-memory
+oxcode.hooks.json
+fixtures/serpapi
+backend/tests
+*.tsbuildinfo
+.DS_Store

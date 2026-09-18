@@ -7,14 +7,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "api": "backend/.venv/bin/python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000",
+    "test": "backend/.venv/bin/python -m pytest -q backend",
+    "start:prod": "sh scripts/start.sh",
+    "deploy:check": "python3 scripts/antideploy.py check",
+    "deploy:secrets": "python3 scripts/antideploy.py secrets",
+    "deploy": "python3 scripts/antideploy.py deploy",
+    "deploy:status": "python3 scripts/antideploy.py status",
+    "deploy:logs": "python3 scripts/antideploy.py logs"
   },
   "dependencies": {
     "next": "16.3.5",
     "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "zod": "^4.6.5"
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -24,7 +30,6 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "vitest": "^4.1.11"
+    "typescript": "^5"
   }
 }

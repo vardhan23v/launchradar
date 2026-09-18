@@ -1,0 +1,350 @@
+{
+  "search_metadata": {
+    "id": "6aad72fcb8b4a54326f159cc",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/5ML01jp6ufvb-kAcNaFUnPughmcowWTvYxRWW8pphwo/6aad72fcb8b4a54326f159cc.json",
+    "markdown_endpoint": "https://serpapi.com/searches/5ML01jp6ufvb-kAcNaFUnPughmcowWTvYxRWW8pphwo/6aad72fcb8b4a54326f159cc.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/5ML01jp6ufvb-kAcNaFUnPughmcowWTvYxRWW8pphwo/6aad72fcb8b4a54326f159cc.json_with_pixel_position",
+    "created_at": "2026-09-18 17:21:00 UTC",
+    "processed_at": "2026-09-18 17:21:00 UTC",
+    "google_url": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&oq=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/5ML01jp6ufvb-kAcNaFUnPughmcowWTvYxRWW8pphwo/6aad72fcb8b4a54326f159cc.html",
+    "total_time_taken": 12.19
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Reddit discussion on AI plagiarism detection tools for students",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Reddit discussion on AI plagiarism detection tools for students",
+    "total_results": 112,
+    "time_taken_displayed": 0.21,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "ai_overview": {
+    "page_token": "HuBEFniczVbdcqJIFH6BfY3lxgTxL2qqqKluRGWMxiYSYm4oBGxRoB0aRb3bd9mn2qfZBv_AaDIzF1t7Smm6--P0-fs4_PW35waLf_64n0XRkj4Wi3Ec85gQ7Dm8RXg3KJp0G1jFKfFoaM2-rVaeI8YFCShIkZT2i15bmLrMYU90A27miU7AUbIKLce1RWsWEt_htmuxwllUFDjHFWHlOTLXkyZYb8frUBg27GDgI8Slp4jGxKTOnJmxmdOiUWSXxZ-VFpvwlHcCowN5qxchz9FUOKV8WShX-Oei6TMM-O9ERhgm43cg3QaxLflrVYkCBUA5o0kBOB3hGTXeb0so3ZLwTW1wf6aawhH7t4xdN26x1UN8WjefZUfA3DRObQEgTq2EwP3am4yggy9Hvz6J1Amdl0P0yHklm-OcrTnBcW7aZlYYQJLOh2QPY2pmOTNOkbIwaHQJbEGg3babxaengNoCIPmaC1lB8mv1lLmncYetFG3MClcoTkI2lIquNbPSm5Am9SyNmgLp3tsdLayMwoeqPntqv81AczlSSqr94OKiNWE4j5i2YxszQ_iWzkvlUk1oVuqNu5RLFj2RiWbJtNVm1NGHr74_5p94WDrSSNonHXzImMzmknLFMfhygH5McQeeV5OEyXsYamf1HlIJk7qWVZBPbW-YxLVznLIa3bHUZBHnU5Pi_0ijveAMWFL3hijkAMwi9qhOhrqZxCrg2mvm0m_UBUcv0PwDMEdAZgpYgGOtjy81jwGSsJxwQJK78BA1K6uDedy7fAqxVfaGgkfEGbu3K-NDEgIFgT5QZKbT1RQXp8rlvaFJMRzOassXjLtR8ArzR5d-5tV3ReBXJEoEHflyUf452uj95YO6mWxG9XjQlp7fps-jjaK32gsCrtOE-JNfazrW_4pL-5YkH1rSbS7JX3MpbUnwk5aU3o9PXErqVyI3uQQ711tS_2pLyvstATXLpc9b0i9zSfqUS-hwvcIlcp1Ly5tcwvEll_ItSb7ekk5c-p2WBH-zJaXUcvZDvj-t5vhmn-qMzGDTeFB0hIYvZt3G4fu7v72vLfo79GWfmvrRo2_a3p3h2o-w_D3a2ncGWyCPjs39EFXHtt2oYLvUWlHqkqDAfkApLD0Tu2boUr9gO5FjRclWRNh3amFKwgKNVrYTRJTzvZCIglnFJWe9woGntqPGcheuHzRqoHm9Vp1vR7Y_WQ53nepQx5Wy_hp4xstGaVWGwrs6mcNquNB2ZPus4aXszOXmk-MRfTGeDN621ZG_0GrjYDx-J7jrv9mGF-xAPw6h2q-_EXUYxM1BYN1_n1vBersLespi8GJ0tKeubqWWUdFr3YO5a4cWZiuhJbK6qGIwQEDHrECltHCBZhI2xgB1HljeIEct03DoWqwKZr1pNet1q1K3a5Uq5-NouxSbAkeDUCxxa8dmvs-0nhy75WDit4S1q4PNa2Pea8DutE37Qh_VqhgxZCSWfgrK8-6_aQB9nQ",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=HuBEFniczVbdcqJIFH6BfY3lxgTxL2qqqKluRGWMxiYSYm4oBGxRoB0aRb3bd9mn2qfZBv_AaDIzF1t7Smm6--P0-fs4_PW35waLf_64n0XRkj4Wi3Ec85gQ7Dm8RXg3KJp0G1jFKfFoaM2-rVaeI8YFCShIkZT2i15bmLrMYU90A27miU7AUbIKLce1RWsWEt_htmuxwllUFDjHFWHlOTLXkyZYb8frUBg27GDgI8Slp4jGxKTOnJmxmdOiUWSXxZ-VFpvwlHcCowN5qxchz9FUOKV8WShX-Oei6TMM-O9ERhgm43cg3QaxLflrVYkCBUA5o0kBOB3hGTXeb0so3ZLwTW1wf6aawhH7t4xdN26x1UN8WjefZUfA3DRObQEgTq2EwP3am4yggy9Hvz6J1Amdl0P0yHklm-OcrTnBcW7aZlYYQJLOh2QPY2pmOTNOkbIwaHQJbEGg3babxaengNoCIPmaC1lB8mv1lLmncYetFG3MClcoTkI2lIquNbPSm5Am9SyNmgLp3tsdLayMwoeqPntqv81AczlSSqr94OKiNWE4j5i2YxszQ_iWzkvlUk1oVuqNu5RLFj2RiWbJtNVm1NGHr74_5p94WDrSSNonHXzImMzmknLFMfhygH5McQeeV5OEyXsYamf1HlIJk7qWVZBPbW-YxLVznLIa3bHUZBHnU5Pi_0ijveAMWFL3hijkAMwi9qhOhrqZxCrg2mvm0m_UBUcv0PwDMEdAZgpYgGOtjy81jwGSsJxwQJK78BA1K6uDedy7fAqxVfaGgkfEGbu3K-NDEgIFgT5QZKbT1RQXp8rlvaFJMRzOassXjLtR8ArzR5d-5tV3ReBXJEoEHflyUf452uj95YO6mWxG9XjQlp7fps-jjaK32gsCrtOE-JNfazrW_4pL-5YkH1rSbS7JX3MpbUnwk5aU3o9PXErqVyI3uQQ711tS_2pLyvstATXLpc9b0i9zSfqUS-hwvcIlcp1Ly5tcwvEll_ItSb7ekk5c-p2WBH-zJaXUcvZDvj-t5vhmn-qMzGDTeFB0hIYvZt3G4fu7v72vLfo79GWfmvrRo2_a3p3h2o-w_D3a2ncGWyCPjs39EFXHtt2oYLvUWlHqkqDAfkApLD0Tu2boUr9gO5FjRclWRNh3amFKwgKNVrYTRJTzvZCIglnFJWe9woGntqPGcheuHzRqoHm9Vp1vR7Y_WQ53nepQx5Wy_hp4xstGaVWGwrs6mcNquNB2ZPus4aXszOXmk-MRfTGeDN621ZG_0GrjYDx-J7jrv9mGF-xAPw6h2q-_EXUYxM1BYN1_n1vBersLespi8GJ0tKeubqWWUdFr3YO5a4cWZiuhJbK6qGIwQEDHrECltHCBZhI2xgB1HljeIEct03DoWqwKZr1pNet1q1K3a5Uq5-NouxSbAkeDUCxxa8dmvs-0nhy75WDit4S1q4PNa2Pea8DutE37Qh_VqhgxZCSWfgrK8-6_aQB9nQ"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Which AI detectors are used by professors and which is ...",
+      "link": "https://www.reddit.com/r/University/comments/1hc66o9/which_ai_detectors_are_used_by_professors_and/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmwEB6zswFZEYt7dwehXo0JqoD7BNOQMhBxtToSZ7yEc_sV_axCeg9POpCuxZ1CuA0ERRgu0VDlso3eCN_zlYCVd3TOzkI_z4G3pKb5RhZHZVHDPTuQbL3RWxGsENzqkZSLZTR2Ls9AetqNomuDEAlqRpcAAZscjdZe1lVpSTOuOkb5RKoLLB2v1rpIfo7cqK7WecyUM2GVwHdqgsLQ&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQFnoECBwQAQ&uoh=1",
+      "displayed_link": "20+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "I recently encountered a situation in which the professor told me my academic paper was almost fully AI-generated. Partly, yes.",
+      "snippet_highlighted_words": [
+        "AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "I recently encountered a situation in which the professor told me my academic paper was almost fully AI-generated. Partly, yes.",
+          "source_info_link": "https://www.reddit.com/r/University/comments/1hc66o9/which_ai_detectors_are_used_by_professors_and/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/University",
+      "read_more_link": "https://www.reddit.com/r/University/comments/1hc66o9/which_ai_detectors_are_used_by_professors_and/#:~:text=I%20recently%20encountered%20a%20situation,almost%20fully%20AI%2Dgenerated.%20Partly%2C%20yes."
+    },
+    {
+      "position": 2,
+      "title": "Best plagiarism checker for both OG plagiarism and AI ...",
+      "link": "https://www.reddit.com/r/Professors/comments/1gc63ww/best_plagiarism_checker_for_both_og_plagiarism/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESnAEB6zswFXnOhGKG0PQTM3YBPM3MDPsDeItzOexmE2jm70OrQEc9EQ4H60AQbiC5XRPiJAN-SWa2uRiTQ8Sf8RAmvy7VY_CeGPUUoNFO55z-nBajByq2er0BLJNgjhdy07J2QdszHUX95NWp0DYRyhdKDvWmn4gxtwb88YQr0Md59bYuNs8DXj_gPgW9aEPoOq7sjHFVKuS0P8mFI_M&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQFnoECBsQAQ&uoh=1",
+      "displayed_link": "50+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "I know that AI detectors are not great (I received an 80% AI score on a paper I authored 8 years ago...), but I'm also struggling to find a ...",
+      "snippet_highlighted_words": [
+        "AI detectors are not great"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "I know that AI detectors are not great (I received an 80% AI score on a paper I authored 8 years ago...), but I'm also struggling to find a ...",
+          "source_info_link": "https://www.reddit.com/r/Professors/comments/1gc63ww/best_plagiarism_checker_for_both_og_plagiarism/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/Professors",
+      "read_more_link": "https://www.reddit.com/r/Professors/comments/1gc63ww/best_plagiarism_checker_for_both_og_plagiarism/#:~:text=I%20know%20that%20AI%20detectors,identifying%20text%20from%20scholarly%20articles."
+    },
+    {
+      "position": 3,
+      "title": "Students are deliberately writing worse to avoid AI ...",
+      "link": "https://www.reddit.com/r/Professors/comments/1rjl5u0/students_are_deliberately_writing_worse_to_avoid/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESngEB6zswFVSOb9l3RH2dpraRaR7F2fuAMuvJp03Io11xnFFzF-JdYAv1dQkGZChopbQ-rQBzy04KGW5Tw_J_E7JYjR_Q8TIzH-D2x5GWdYw_3g33s_1KJX0Zgpj-0u8XhjbUG00PuPOI6Mv8l7HPdiiaNbcidr0vxSyODnGf86lF2rpnHM9FIsiLAJOEMvP7W3pgaowbTygxESXD_eRrAQ&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQFnoECDwQAQ&uoh=1",
+      "displayed_link": "200+ comments \u00b7 6 months ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "One tool flagged nearly 98% of TOEFL essays. OpenAI built their own detector, it correctly caught just 26% of AI text while false flagging 9% of ...",
+      "snippet_highlighted_words": [
+        "detector",
+        "AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "One tool flagged nearly 98% of TOEFL essays. OpenAI built their own detector, it correctly caught just 26% of AI text while false flagging 9% of ...",
+          "source_info_link": "https://www.reddit.com/r/Professors/comments/1rjl5u0/students_are_deliberately_writing_worse_to_avoid/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/Professors",
+      "read_more_link": "https://www.reddit.com/r/Professors/comments/1rjl5u0/students_are_deliberately_writing_worse_to_avoid/#:~:text=One%20tool%20flagged%20nearly%2098%25,they%20shut%20it%20down%20themselves."
+    },
+    {
+      "position": 4,
+      "title": "Your thoughts on the usage of AI detection (e.g., Turnitin)?",
+      "link": "https://www.reddit.com/r/Professors/comments/18pbjku/your_thoughts_on_the_usage_of_ai_detection_eg/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmwEB6zswFSvmNXkF5BKWOXXIeg75HcobWmEMX44dBuI16Gjq-OcWvLsDowJGihYG9M7G_iaAXhgmzti8uR6DJNsHjnkFqB7A10RghY6_lPiHLdZHf6H57JBZxET6GCCI8SkkUeaPA8xiACTOkl_mYbsNqyM_pqGHhMMfNpMa3dp7xdeQShkyLzC_wg9Ufh9EzsrsTslga8iQo2PecQ&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQFnoECDoQAQ&uoh=1",
+      "displayed_link": "120+ comments \u00b7 2 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "I am curious to know about everyone's thoughts on AI detection tools being used in academia. Turnitin especially seems to give false positives and cause ...",
+      "about_this_result": {
+        "source": {
+          "description": "The inaccuracies with AI detection tools are definitely causing problems for both students and educators. Spirited-Jury1996. \u2022. 2y ago.",
+          "source_info_link": "https://www.reddit.com/r/Professors/comments/18pbjku/your_thoughts_on_the_usage_of_ai_detection_eg/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/Professors"
+    },
+    {
+      "position": 5,
+      "title": "The plagiarism checker is flagging 27% AI, but I didn't use it.",
+      "link": "https://www.reddit.com/r/Universitaly/comments/1nnto6n/lantiplagio_mi_segna_27_di_ia_ma_io_non_lho/?tl=en",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESoQEB6zswFYJI60vojKYqFl4QjhdGASymH77F8-5bGMbIJ6ZIxmLhLy-pZq6nwNbltiCRzlyXU264B_zhHMFWuE8ypQqk1QaWiBmCj2XPQvf5euCNcHyHTofpsG9PngLd4NYm9Hv8J0LCf1P5x67Otp-q-FyE1FQoif4qGeSjlOiXgius1ndEr4KmNF7whMN2k2TEwewqpqHDebk2nniK2TbpBw&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQFnoECD0QAQ&uoh=1",
+      "displayed_link": "40+ comments \u00b7 12 months ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Before sending the first chapters to the professor, I ran a plagiarism check with Compilatio and it's showing 22% suspected AI plagiarism.",
+      "snippet_highlighted_words": [
+        "plagiarism check",
+        "AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Before sending the first chapters to the professor, I ran a plagiarism check with Compilatio and it's showing 22% suspected AI plagiarism.",
+          "source_info_link": "https://www.reddit.com/r/Universitaly/comments/1nnto6n/lantiplagio_mi_segna_27_di_ia_ma_io_non_lho/?tl=en",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/Universitaly",
+      "read_more_link": "https://www.reddit.com/r/Universitaly/comments/1nnto6n/lantiplagio_mi_segna_27_di_ia_ma_io_non_lho/?tl=en#:~:text=Before%20sending%20the%20first%20chapters,showing%2022%25%20suspected%20AI%20plagiarism."
+    },
+    {
+      "position": 6,
+      "title": "Software to detect AI Plagiarism : r/Teachers",
+      "link": "https://www.reddit.com/r/Teachers/comments/1hp323o/software_to_detect_ai_plagiarism/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESjAEB6zswFXiUW3HlF_rASF-5uYSgeplIpwUktilLZCE2ZsgbFJmSdlbdu1lbOBoJfNSv-1godNdVBZgzPPDXIaTaPascWtuF7DCZZnF2JjOD50JPXl5Ah_5Xm9i6MGlnkpoWgCXyW1773j5I65rIqLsk77Hak8_l9u64AfOM-bqdEWHdN8MlhiJG9y4-hg&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQFnoECDsQAQ&uoh=1",
+      "displayed_link": "60+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Draftback is the best anti-AI tool I've found. (Though often I've had success simply talking to students when I suspect AI use.).",
+      "snippet_highlighted_words": [
+        "Draftback is the best anti-AI tool I've found"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Draftback is the best anti-AI tool I've found. (Though often I've had success simply talking to students when I suspect AI use.).",
+          "source_info_link": "https://www.reddit.com/r/Teachers/comments/1hp323o/software_to_detect_ai_plagiarism/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/Teachers",
+      "read_more_link": "https://www.reddit.com/r/Teachers/comments/1hp323o/software_to_detect_ai_plagiarism/#:~:text=Draftback%20is%20the%20best%20anti%2DAI,when%20I%20suspect%20AI%20use.)"
+    },
+    {
+      "position": 7,
+      "title": "How to avoid being accused of using AI in College/University.",
+      "link": "https://www.reddit.com/r/college/comments/10waibw/how_to_avoid_being_accused_of_using_ai_in/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlAEB6zswFYpqddC3OTuEfxJM65Y9_Ec4nIOvOV2sQa6iCNKfzU6BY2d6x486RRsxgaKdqu_YlRf33sVHIejGtxI7nXp3WNYVEGCOIBt8Jz-uesCXWhBQj0Zk_akLQLdVdSIvK2aMgKSmm_ySpHQ4UUexX5_IrowWKn2GKn-i6O5wGTY5i-tUrJNG2mxgXPUFtQC_Wx3X&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQFnoECEUQAQ&uoh=1",
+      "displayed_link": "150+ comments \u00b7 3 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "The advent of ChatGPT has taken the academic landscape by storm. While professors and TAs have been using Turnitin and Safeassign to identify plagiarism, ...",
+      "about_this_result": {
+        "source": {
+          "description": "Be transparent: If you do use AI tools, be upfront about it and let your professor know. They may have specific guidelines for their use in the ...",
+          "source_info_link": "https://www.reddit.com/r/college/comments/10waibw/how_to_avoid_being_accused_of_using_ai_in/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/college"
+    },
+    {
+      "position": 8,
+      "title": "AI checkers : r/Professors",
+      "link": "https://www.reddit.com/r/Professors/comments/1ha8k26/ai_checkers/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESeQHrOzAVIw9-86eF7tujserzdilu3Gun5H3UmN7_a6U2tI9C3SDKAZ-dG1ecJpdL7HjujD82kqyvXpvJNWVLQW4-wbI5Y5BForWdmuHtUhwczcuLgfqdZK6uCsrJWl2p5W75vVsO2G4fpdipWEaM01XQG4w9QIOi_pQ&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQFnoECD4QAQ&uoh=1",
+      "displayed_link": "40+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "My university uses Turnitin as a plagiarism / AI checker. I generally trust their plagiarism outcomes, in part because I can double check them.",
+      "snippet_highlighted_words": [
+        "My university uses Turnitin as a plagiarism / AI checker"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "My university uses Turnitin as a plagiarism / AI checker. I generally trust their plagiarism outcomes, in part because I can double check them.",
+          "source_info_link": "https://www.reddit.com/r/Professors/comments/1ha8k26/ai_checkers/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/Professors",
+      "read_more_link": "https://www.reddit.com/r/Professors/comments/1ha8k26/ai_checkers/#:~:text=My%20university%20uses%20Turnitin%20as,I%20can%20double%20check%20them."
+    },
+    {
+      "position": 9,
+      "title": "Can plagiarism be detected if you use AI notion option of \" ...",
+      "link": "https://www.reddit.com/r/Notion/comments/111aa1d/can_plagiarism_be_detected_if_you_use_ai_notion/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmQEB6zswFcjmJpS_azfgrjHozlya8tDLAmJL2u9IgntNrjJiEPN6QqWHean-k_1Pcj0qH1CZ80n1GBuPgfrX_-FdmBW8utbRCrULjKqAzlF9rCeZ5JmOI3LOdVqlqnQQrRG3-dN2pjAxlADEcXXwtQTCb8fhNsQggsyOYfnbcyxSQYhv7rzQGBMml8uElCAOVmOflFjiSO_me7o&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQFnoECEMQAQ&uoh=1",
+      "displayed_link": "40+ comments \u00b7 3 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Hi, I am wondering, Can AI detectors such as turnitin or whatever is out there detect plagrism if you use the option of \"improve writing\" in notion ...",
+      "about_this_result": {
+        "source": {
+          "description": "No it cannot be detected. Because the AI used to generate it is closed source and not available to the makers of turnitin, and it is being ...",
+          "source_info_link": "https://www.reddit.com/r/Notion/comments/111aa1d/can_plagiarism_be_detected_if_you_use_ai_notion/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/Notion"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Reddit discussion on ai plagiarism detection tools for students free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&q=Reddit+discussion+on+ai+plagiarism+detection+tools+for+students+free&sa=X&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+ai+plagiarism+detection+tools+for+students+free"
+    },
+    {
+      "block_position": 1,
+      "query": "AI plagiarism Checker used by universities",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&q=AI+plagiarism+Checker+used+by+universities&sa=X&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+plagiarism+Checker+used+by+universities"
+    },
+    {
+      "block_position": 1,
+      "query": "Proofademic AI plagiarism checker",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&q=Proofademic+AI+plagiarism+checker&sa=X&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Proofademic+AI+plagiarism+checker"
+    },
+    {
+      "block_position": 1,
+      "query": "What AI detector do universities use for personal statements",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&q=What+AI+detector+do+universities+use+for+personal+statements&sa=X&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=What+AI+detector+do+universities+use+for+personal+statements"
+    },
+    {
+      "block_position": 1,
+      "query": "AI plagiarism checker JustDone",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&q=AI+plagiarism+checker+JustDone&sa=X&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ1QJ6BAhBEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+plagiarism+checker+JustDone"
+    },
+    {
+      "block_position": 1,
+      "query": "Turnitin's AI writing detection tool",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&q=Turnitin%27s+AI+writing+detection+tool&sa=X&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Turnitin%27s+AI+writing+detection+tool"
+    },
+    {
+      "block_position": 1,
+      "query": "Turnitin AI detector alternative reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&q=Turnitin+AI+detector+alternative+reddit&sa=X&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Turnitin+AI+detector+alternative+reddit"
+    },
+    {
+      "block_position": 1,
+      "query": "Turnitin AI detection Reddit free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&q=Turnitin+AI+detection+Reddit+free&sa=X&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Turnitin+AI+detection+Reddit+free"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&ei=B3Otavb9AvyYvr0P8dnNmQQ&start=10&sa=N&sstk=AS6-VmJz-3FQ3EGMwcGfO8dfviJLYUSCsCI0fLRBYo1_XJyX8o0fmzOltDw2aKAjvciDem1COtBdMZT3zG-e-0vHgTPtP2VqZ-kGvA&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ8NMDegQIMhAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&ei=B3Otavb9AvyYvr0P8dnNmQQ&start=10&sa=N&sstk=AS6-VmJz-3FQ3EGMwcGfO8dfviJLYUSCsCI0fLRBYo1_XJyX8o0fmzOltDw2aKAjvciDem1COtBdMZT3zG-e-0vHgTPtP2VqZ-kGvA&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ8tMDegQIMhAE",
+      "3": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&ei=B3Otavb9AvyYvr0P8dnNmQQ&start=20&sa=N&sstk=AS6-VmJz-3FQ3EGMwcGfO8dfviJLYUSCsCI0fLRBYo1_XJyX8o0fmzOltDw2aKAjvciDem1COtBdMZT3zG-e-0vHgTPtP2VqZ-kGvA&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ8tMDegQIMhAG",
+      "4": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&ei=B3Otavb9AvyYvr0P8dnNmQQ&start=30&sa=N&sstk=AS6-VmJz-3FQ3EGMwcGfO8dfviJLYUSCsCI0fLRBYo1_XJyX8o0fmzOltDw2aKAjvciDem1COtBdMZT3zG-e-0vHgTPtP2VqZ-kGvA&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ8tMDegQIMhAI",
+      "5": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&ei=B3Otavb9AvyYvr0P8dnNmQQ&start=40&sa=N&sstk=AS6-VmJz-3FQ3EGMwcGfO8dfviJLYUSCsCI0fLRBYo1_XJyX8o0fmzOltDw2aKAjvciDem1COtBdMZT3zG-e-0vHgTPtP2VqZ-kGvA&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ8tMDegQIMhAK",
+      "6": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&ei=B3Otavb9AvyYvr0P8dnNmQQ&start=50&sa=N&sstk=AS6-VmJz-3FQ3EGMwcGfO8dfviJLYUSCsCI0fLRBYo1_XJyX8o0fmzOltDw2aKAjvciDem1COtBdMZT3zG-e-0vHgTPtP2VqZ-kGvA&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ8tMDegQIMhAM",
+      "7": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&ei=B3Otavb9AvyYvr0P8dnNmQQ&start=60&sa=N&sstk=AS6-VmJz-3FQ3EGMwcGfO8dfviJLYUSCsCI0fLRBYo1_XJyX8o0fmzOltDw2aKAjvciDem1COtBdMZT3zG-e-0vHgTPtP2VqZ-kGvA&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ8tMDegQIMhAO",
+      "8": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&ei=B3Otavb9AvyYvr0P8dnNmQQ&start=70&sa=N&sstk=AS6-VmJz-3FQ3EGMwcGfO8dfviJLYUSCsCI0fLRBYo1_XJyX8o0fmzOltDw2aKAjvciDem1COtBdMZT3zG-e-0vHgTPtP2VqZ-kGvA&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ8tMDegQIMhAQ",
+      "9": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&ei=B3Otavb9AvyYvr0P8dnNmQQ&start=80&sa=N&sstk=AS6-VmJz-3FQ3EGMwcGfO8dfviJLYUSCsCI0fLRBYo1_XJyX8o0fmzOltDw2aKAjvciDem1COtBdMZT3zG-e-0vHgTPtP2VqZ-kGvA&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ8tMDegQIMhAS",
+      "10": "https://www.google.co.in/search?q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnuExmC5jVLwPpk7N07Camkk2nZ6pw:1789752071057&ei=B3Otavb9AvyYvr0P8dnNmQQ&start=90&sa=N&sstk=AS6-VmJz-3FQ3EGMwcGfO8dfviJLYUSCsCI0fLRBYo1_XJyX8o0fmzOltDw2aKAjvciDem1COtBdMZT3zG-e-0vHgTPtP2VqZ-kGvA&ved=2ahUKEwi2nbmD0viWAxV8jK8BHfFsM0MQ8tMDegQIMhAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Reddit+discussion+on+AI+plagiarism+detection+tools+for+students&start=90"
+    }
+  }
+}

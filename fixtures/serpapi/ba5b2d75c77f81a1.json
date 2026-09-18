@@ -1,0 +1,540 @@
+{
+  "search_metadata": {
+    "id": "6aad76d2d17a80c703e1b67d",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/4kvBvRO_jC1w59CTimz1JT0_e0bzxKmVrDYzSsVcHe0/6aad76d2d17a80c703e1b67d.json",
+    "markdown_endpoint": "https://serpapi.com/searches/4kvBvRO_jC1w59CTimz1JT0_e0bzxKmVrDYzSsVcHe0/6aad76d2d17a80c703e1b67d.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/4kvBvRO_jC1w59CTimz1JT0_e0bzxKmVrDYzSsVcHe0/6aad76d2d17a80c703e1b67d.json_with_pixel_position",
+    "created_at": "2026-09-18 17:37:22 UTC",
+    "processed_at": "2026-09-18 17:37:22 UTC",
+    "google_url": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&oq=deploy+website+on+vercel+free+alternative&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/4kvBvRO_jC1w59CTimz1JT0_e0bzxKmVrDYzSsVcHe0/6aad76d2d17a80c703e1b67d.html",
+    "total_time_taken": 16.97
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "deploy website on vercel free alternative",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "deploy website on vercel free alternative",
+    "total_results": 111,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "YouTube",
+      "link": "https://www.youtube.com/watch?v=ic0L6-JqJxY",
+      "thumbnail": "https://serpapi.com/searches/6aad76d2d17a80c703e1b67d/images/XEBTExVkG1amyFygfTeyeOriOZOFOcMTd1eMTLsYpNs.jpeg",
+      "channel": "DevOps Toolbox",
+      "duration": "16:38",
+      "platform": "YouTube",
+      "date": "18 Jul 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQeqBw6bo7y_oKGCUgjNfEVnO_lHdD8aShbCA"
+    },
+    {
+      "position": 2,
+      "title": "Deploying your Own Vercel in MINUTES (open-source ...",
+      "link": "https://www.youtube.com/watch?v=pjrEaRSSQck",
+      "thumbnail": "https://serpapi.com/searches/6aad76d2d17a80c703e1b67d/images/9SBMDo0gb8ovvSbS1GQMpbQYVoBQLr_ejagzoYXOcms.jpeg",
+      "channel": "Better Stack",
+      "duration": "7:27",
+      "platform": "YouTube",
+      "date": "15 Jun 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcSbcfRDkqHdfRp78rcm1BnqxYG0qa6EmgLVuQ",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Intro",
+          "link": "https://www.youtube.com/watch?v=pjrEaRSSQck&t=0"
+        },
+        {
+          "time": "00:22",
+          "title": "Deployment",
+          "link": "https://www.youtube.com/watch?v=pjrEaRSSQck&t=22"
+        },
+        {
+          "time": "00:40",
+          "title": "Configure Dashboard",
+          "link": "https://www.youtube.com/watch?v=pjrEaRSSQck&t=40"
+        },
+        {
+          "time": "01:08",
+          "title": "Connect GitHub",
+          "link": "https://www.youtube.com/watch?v=pjrEaRSSQck&t=68"
+        },
+        {
+          "time": "01:31",
+          "title": "Deploy a Site",
+          "link": "https://www.youtube.com/watch?v=pjrEaRSSQck&t=91"
+        },
+        {
+          "time": "03:11",
+          "title": "Dashboard Tour",
+          "link": "https://www.youtube.com/watch?v=pjrEaRSSQck&t=191"
+        },
+        {
+          "time": "03:43",
+          "title": "Deploy from Commits",
+          "link": "https://www.youtube.com/watch?v=pjrEaRSSQck&t=223"
+        },
+        {
+          "time": "04:34",
+          "title": "Preview Deployments",
+          "link": "https://www.youtube.com/watch?v=pjrEaRSSQck&t=274"
+        },
+        {
+          "time": "05:42",
+          "title": "Auth, DB, Storage...",
+          "link": "https://www.youtube.com/watch?v=pjrEaRSSQck&t=342"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "I Replaced Vercel with Dokploy",
+      "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo",
+      "thumbnail": "https://serpapi.com/searches/6aad76d2d17a80c703e1b67d/images/VeZUxI_0GZt6hSp19i8n1N_fiWny6JJE1uCcjruEkyQ.jpeg",
+      "channel": "Better Stack",
+      "duration": "4:15",
+      "platform": "YouTube",
+      "date": "28 Mar 2026",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQMr_SGZYxJSv41zgZPT9TUkQcKsseSvG_2Rg",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Stop Paying Cloud Bills (Vercel, Railway, Heroku Cost Problem)",
+          "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo&t=0"
+        },
+        {
+          "time": "00:29",
+          "title": "What is Dokploy? Self-Hosted PaaS Explained",
+          "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo&t=29"
+        },
+        {
+          "time": "00:44",
+          "title": "Features Overview (Git Deploy, Databases, Backups, Monitoring)",
+          "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo&t=44"
+        },
+        {
+          "time": "01:16",
+          "title": "Live Demo: Deploy a Next.js App in Under 30 Seconds",
+          "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo&t=76"
+        },
+        {
+          "time": "01:25",
+          "title": "GitHub Integration + Auto HTTPS + One-Click Deploy",
+          "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo&t=85"
+        },
+        {
+          "time": "02:00",
+          "title": "Dokploy vs Vercel, Railway, and Cloud PaaS",
+          "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo&t=120"
+        },
+        {
+          "time": "02:34",
+          "title": "Fast Deploys, Clean UI, and Docker Swarm Scaling",
+          "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo&t=154"
+        },
+        {
+          "time": "03:00",
+          "title": "Downsides: Limitations, Bugs, and Ecosystem",
+          "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo&t=180"
+        },
+        {
+          "time": "03:17",
+          "title": "Is Dokploy Worth It? Honest Verdict for Developers",
+          "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo&t=197"
+        },
+        {
+          "time": "03:40",
+          "title": "Final Thoughts: $5 VPS vs Cloud PaaS in 2026",
+          "link": "https://www.youtube.com/watch?v=v6fn0KMCtEo&t=220"
+        }
+      ]
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Is there a free alternative to Vercel?",
+      "type": "ai_overview",
+      "page_token": "J6fQ3nicHdDdbpswGIBh7WZ6mPDTdUqkqJJXG4qCmT8MBp9MLg4hwYCz0vBztnvZVe1qVu0GXj16f_8xl779--XejKN932-30zRtzsNwNqdNNWwu_Va9L321rZQxb6pq90_fntznujrgD4y-314Ry6zNX8DhIYylT6aE7JxUuAv12ahy2_CCjEnYALj6zkPsaKIZvYLhffMYhxFTePBU_7qI1niCUHEUBOWrvMkCzcqbWx24THSu89lhmQPRKQdHeo05YcveRJTynh6h3d0UR6FupyXJrB8X0ZSusi5X3SmjW2WaS7miNW1zxDtYZRdhCHaRCs5fy0xLHeC54lSmASnYNR7jLke4KR0REKcsoE4_bVIMs-QNUz4t4o5CcIkQhHRJhMxigpI0tEuOdx9auNdjAb3utUdd8iM2MAO28FBX94P_8P_m4WfdjXv7azj_Ayvig3M",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=J6fQ3nicHdDdbpswGIBh7WZ6mPDTdUqkqJJXG4qCmT8MBp9MLg4hwYCz0vBztnvZVe1qVu0GXj16f_8xl779--XejKN932-30zRtzsNwNqdNNWwu_Va9L321rZQxb6pq90_fntznujrgD4y-314Ry6zNX8DhIYylT6aE7JxUuAv12ahy2_CCjEnYALj6zkPsaKIZvYLhffMYhxFTePBU_7qI1niCUHEUBOWrvMkCzcqbWx24THSu89lhmQPRKQdHeo05YcveRJTynh6h3d0UR6FupyXJrB8X0ZSusi5X3SmjW2WaS7miNW1zxDtYZRdhCHaRCs5fy0xLHeC54lSmASnYNR7jLke4KR0REKcsoE4_bVIMs-QNUz4t4o5CcIkQhHRJhMxigpI0tEuOdx9auNdjAb3utUdd8iM2MAO28FBX94P_8P_m4WfdjXv7azj_Ayvig3M",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJTbWxVTkhSTU9VWmFSVEIzWjBSVmEzTndXVll4UzIxb1V5MHpOMEp6ZEUxTWNrbFhTRkJNVUc5amFEQXpNbFZxU0ZWS1IyOHlkVTlwUzBOM2NGRmhiV3hsTnpWck4xVnlZM1pYUkZSdloxVXdUSFZEYmpOQ2EzbFdXakpyVTBOT1VSSVdORmhoZEdGMFgwcEpkbVZxTVdVNFVHdHpWekpqVVJvaVFVUnpjamxtVW5oSFVtRnFiRGQ0YVdsQmNEZzBSV1pmZFRGR1dYaE9aMWhHUVEiLCJmY3YiOiIzIiwiZWkiOiI0WGF0YXRfSkl2ZWoxZThQa3NXMmNRIiwicWMiOiJDaWxrWlhCc2Iza2dkMlZpYzJsMFpTQnZiaUIyWlhKalpXd2dabkpsWlNCaGJIUmxjbTVoZEdsMlpSQUFmWVVtSHo4IiwicXVlc3Rpb24iOiJJcyB0aGVyZSBhIGZyZWUgYWx0ZXJuYXRpdmUgdG8gVmVyY2VsPyIsImxrIjoiR2lWcGN5QjBhR1Z5WlNCaElHWnlaV1VnWVd4MFpYSnVZWFJwZG1VZ2RHOGdkbVZ5WTJWcyIsImJzIjoiYzMyUHNRckNRQXlHY2Mza0pIS0RCS1FWcEZOZm9JT0xYU291ZHI3V2xCNGNyVnpEbGI2OXg5V3JEdW9Va3ZfalN3SlhpUE1CdVNWREtMRXg1SXBtTXAxa1pRbTV4eHVabW5TV0hrU2tfcFBXazFEQThTUTd6UEZPRDkxUERoNnBHaFJfMkxEcGpWZGtLWXJkaXd0VXlJTHZBbkhwdDliZnJXOVhKUGJqUWlyODRZVXpKR1dyNmhiZFB4V3gtMkhKa25DZzZ3dGlyWm9wUzdkaU01LUNkc0J1bm5wNnZYb0MiLCJpZCI6ImZjXzRYYXRhdF9KSXZlajFlOFBrc1cyY1FfNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJTbWxVTkhSTU9VWmFSVEIzWjBSVmEzTndXVll4UzIxb1V5MHpOMEp6ZEUxTWNrbFhTRkJNVUc5amFEQXpNbFZxU0ZWS1IyOHlkVTlwUzBOM2NGRmhiV3hsTnpWck4xVnlZM1pYUkZSdloxVXdUSFZEYmpOQ2EzbFdXakpyVTBOT1VSSVdORmhoZEdGMFgwcEpkbVZxTVdVNFVHdHpWekpqVVJvaVFVUnpjamxtVW5oSFVtRnFiRGQ0YVdsQmNEZzBSV1pmZFRGR1dYaE9aMWhHUVEiLCJmY3YiOiIzIiwiZWkiOiI0WGF0YXRfSkl2ZWoxZThQa3NXMmNRIiwicWMiOiJDaWxrWlhCc2Iza2dkMlZpYzJsMFpTQnZiaUIyWlhKalpXd2dabkpsWlNCaGJIUmxjbTVoZEdsMlpSQUFmWVVtSHo4IiwicXVlc3Rpb24iOiJJcyB0aGVyZSBhIGZyZWUgYWx0ZXJuYXRpdmUgdG8gVmVyY2VsPyIsImxrIjoiR2lWcGN5QjBhR1Z5WlNCaElHWnlaV1VnWVd4MFpYSnVZWFJwZG1VZ2RHOGdkbVZ5WTJWcyIsImJzIjoiYzMyUHNRckNRQXlHY2Mza0pIS0RCS1FWcEZOZm9JT0xYU291ZHI3V2xCNGNyVnpEbGI2OXg5V3JEdW9Va3ZfalN3SlhpUE1CdVNWREtMRXg1SXBtTXAxa1pRbTV4eHVabW5TV0hrU2tfcFBXazFEQThTUTd6UEZPRDkxUERoNnBHaFJfMkxEcGpWZGtLWXJkaXd0VXlJTHZBbkhwdDliZnJXOVhKUGJqUWlyODRZVXpKR1dyNmhiZFB4V3gtMkhKa25DZzZ3dGlyWm9wUzdkaU01LUNkc0J1bm5wNnZYb0MiLCJpZCI6ImZjXzRYYXRhdF9KSXZlajFlOFBrc1cyY1FfNSJ9"
+    },
+    {
+      "question": "Can I deploy a website to Vercel for free?",
+      "type": "ai_overview",
+      "page_token": "eAW3HnicHdBdbuIwFEBhzWZ4hMQBRkVCVd3EAVQbcBwn3JfKsQmG_E6TKSFvs5dZVVcz1Wzg6NP587e81sXXj0_b9223ms3u9_v00jSX8jzVzfRaz1T3qPVMq7LMlC5Wy59L9znX6-B3gF9_bfExblvpc0eEEPLSkiywN7ppRiVwSmM4ZEkwqph0Gdl9KA-sIdt5tMGOLPSCjfDgjsxjAr1Bes6QrZkEZio-nEvAEu0qhtxOETnXN-OK78ZevHiU8AVHT04iZGckHTJEcHwjA_OAJml7EFIyRUh-HM3BpDhJUf9GfQPRrXCiGnxTSwLFAhk0HHhYPFTFIEJPb-cabwWyp287DuzJSULinFKeR0WJIGkGEPaoPJbSivHwusN8wx77BAQV4IvKLpRv5tQl49GT-1jYAQhzmbAxRwZPcv259ib_b67f86pftR_N5R_4aoC8",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=eAW3HnicHdBdbuIwFEBhzWZ4hMQBRkVCVd3EAVQbcBwn3JfKsQmG_E6TKSFvs5dZVVcz1Wzg6NP587e81sXXj0_b9223ms3u9_v00jSX8jzVzfRaz1T3qPVMq7LMlC5Wy59L9znX6-B3gF9_bfExblvpc0eEEPLSkiywN7ppRiVwSmM4ZEkwqph0Gdl9KA-sIdt5tMGOLPSCjfDgjsxjAr1Bes6QrZkEZio-nEvAEu0qhtxOETnXN-OK78ZevHiU8AVHT04iZGckHTJEcHwjA_OAJml7EFIyRUh-HM3BpDhJUf9GfQPRrXCiGnxTSwLFAhk0HHhYPFTFIEJPb-cabwWyp287DuzJSULinFKeR0WJIGkGEPaoPJbSivHwusN8wx77BAQV4IvKLpRv5tQl49GT-1jYAQhzmbAxRwZPcv259ib_b67f86pftR_N5R_4aoC8",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJTbWxVTkhSTU9VWmFSVEIzWjBSVmEzTndXVll4UzIxb1V5MHpOMEp6ZEUxTWNrbFhTRkJNVUc5amFEQXpNbFZxU0ZWS1IyOHlkVTlwUzBOM2NGRmhiV3hsTnpWck4xVnlZM1pYUkZSdloxVXdUSFZEYmpOQ2EzbFdXakpyVTBOT1VSSVdORmhoZEdGMFgwcEpkbVZxTVdVNFVHdHpWekpqVVJvaVFVUnpjamxtVW5oSFVtRnFiRGQ0YVdsQmNEZzBSV1pmZFRGR1dYaE9aMWhHUVEiLCJmY3YiOiIzIiwiZWkiOiI0WGF0YXRfSkl2ZWoxZThQa3NXMmNRIiwicWMiOiJDaWxrWlhCc2Iza2dkMlZpYzJsMFpTQnZiaUIyWlhKalpXd2dabkpsWlNCaGJIUmxjbTVoZEdsMlpSQUFmWVVtSHo4IiwicXVlc3Rpb24iOiJDYW4gSSBkZXBsb3kgYSB3ZWJzaXRlIHRvIFZlcmNlbCBmb3IgZnJlZT8iLCJsayI6IkdoNWtaWEJzYjNrZ2QyVmljMmwwWlNCbWIzSWdabkpsWlNCMlpYSmpaV3ciLCJicyI6ImMzMlBzUXJDUUF5R2NjM2tKSEtEQktRVnBGTmZvSU9MWFNvdWRyN1dsQjRjclZ6RGxiNjl4OVdyRHVvVWt2X2pTd0pYaVBNQnVTVkRLTEV4NUlwbU1wMWtaUW01eHh1Wm1uU1dIa1NrX3BQV2sxREE4U1E3elBGT0Q5MVBEaDZwR2hSXzJMRHBqVmRrS1lyZGl3dFV5SUx2QW5IcHQ5YmZyVzlYSlBialFpcjg0WVV6SkdXcjZoYmRQeFd4LTJISmtuQ2c2d3RpclpvcFM3ZGlNNS1DZHNCdW5ucDZ2WG9DIiwiaWQiOiJmY180WGF0YXRfSkl2ZWoxZThQa3NXMmNRXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJTbWxVTkhSTU9VWmFSVEIzWjBSVmEzTndXVll4UzIxb1V5MHpOMEp6ZEUxTWNrbFhTRkJNVUc5amFEQXpNbFZxU0ZWS1IyOHlkVTlwUzBOM2NGRmhiV3hsTnpWck4xVnlZM1pYUkZSdloxVXdUSFZEYmpOQ2EzbFdXakpyVTBOT1VSSVdORmhoZEdGMFgwcEpkbVZxTVdVNFVHdHpWekpqVVJvaVFVUnpjamxtVW5oSFVtRnFiRGQ0YVdsQmNEZzBSV1pmZFRGR1dYaE9aMWhHUVEiLCJmY3YiOiIzIiwiZWkiOiI0WGF0YXRfSkl2ZWoxZThQa3NXMmNRIiwicWMiOiJDaWxrWlhCc2Iza2dkMlZpYzJsMFpTQnZiaUIyWlhKalpXd2dabkpsWlNCaGJIUmxjbTVoZEdsMlpSQUFmWVVtSHo4IiwicXVlc3Rpb24iOiJDYW4gSSBkZXBsb3kgYSB3ZWJzaXRlIHRvIFZlcmNlbCBmb3IgZnJlZT8iLCJsayI6IkdoNWtaWEJzYjNrZ2QyVmljMmwwWlNCbWIzSWdabkpsWlNCMlpYSmpaV3ciLCJicyI6ImMzMlBzUXJDUUF5R2NjM2tKSEtEQktRVnBGTmZvSU9MWFNvdWRyN1dsQjRjclZ6RGxiNjl4OVdyRHVvVWt2X2pTd0pYaVBNQnVTVkRLTEV4NUlwbU1wMWtaUW01eHh1Wm1uU1dIa1NrX3BQV2sxREE4U1E3elBGT0Q5MVBEaDZwR2hSXzJMRHBqVmRrS1lyZGl3dFV5SUx2QW5IcHQ5YmZyVzlYSlBialFpcjg0WVV6SkdXcjZoYmRQeFd4LTJISmtuQ2c2d3RpclpvcFM3ZGlNNS1DZHNCdW5ucDZ2WG9DIiwiaWQiOiJmY180WGF0YXRfSkl2ZWoxZThQa3NXMmNRXzUifQ%3D%3D"
+    },
+    {
+      "question": "Where can I deploy a website for free?",
+      "type": "ai_overview",
+      "page_token": "58YXtnicHdBRboIwAADQ7DJ-KohzmYlZVoUqkyKltNKfBQoIUkqdKOjf7rJT7TRL9o7wvn9kperfp1vZdfqymEz6vh8f2_Yo87Fox5WaJJe7EhORSJkmol7MX-bmWyGW9tUGq_MWBJHWdI2NkPFVvjJ1RlAnIEdU0UA02BYbzbx6-DiYjkweCFDpFhwOe-yUILL0ybd178FymjO8wsrrMgq-Qgc5O-oZtDKnPuRb7tB5WFMSmlgzR7e76HkfNH1PIrz1LF3E6n3IVdxzgq48ohGFr0kC3VqcHMgaVGXQVflBRn40s7DlXhhEOlU4JAQUrDI3hOAibuiQPkoumuEcTAdgl7HBoGPEB1yEtZxy1g6clEFioYPXIAwrF-ANuvuMh_66tNL6OPOU5FRlQW7jOLQyIB7uQ0i3Z02nRoW4La3R_-bys2i6hf5qj3-kbISE",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=58YXtnicHdBRboIwAADQ7DJ-KohzmYlZVoUqkyKltNKfBQoIUkqdKOjf7rJT7TRL9o7wvn9kperfp1vZdfqymEz6vh8f2_Yo87Fox5WaJJe7EhORSJkmol7MX-bmWyGW9tUGq_MWBJHWdI2NkPFVvjJ1RlAnIEdU0UA02BYbzbx6-DiYjkweCFDpFhwOe-yUILL0ybd178FymjO8wsrrMgq-Qgc5O-oZtDKnPuRb7tB5WFMSmlgzR7e76HkfNH1PIrz1LF3E6n3IVdxzgq48ohGFr0kC3VqcHMgaVGXQVflBRn40s7DlXhhEOlU4JAQUrDI3hOAibuiQPkoumuEcTAdgl7HBoGPEB1yEtZxy1g6clEFioYPXIAwrF-ANuvuMh_66tNL6OPOU5FRlQW7jOLQyIB7uQ0i3Z02nRoW4La3R_-bys2i6hf5qj3-kbISE",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJTbWxVTkhSTU9VWmFSVEIzWjBSVmEzTndXVll4UzIxb1V5MHpOMEp6ZEUxTWNrbFhTRkJNVUc5amFEQXpNbFZxU0ZWS1IyOHlkVTlwUzBOM2NGRmhiV3hsTnpWck4xVnlZM1pYUkZSdloxVXdUSFZEYmpOQ2EzbFdXakpyVTBOT1VSSVdORmhoZEdGMFgwcEpkbVZxTVdVNFVHdHpWekpqVVJvaVFVUnpjamxtVW5oSFVtRnFiRGQ0YVdsQmNEZzBSV1pmZFRGR1dYaE9aMWhHUVEiLCJmY3YiOiIzIiwiZWkiOiI0WGF0YXRfSkl2ZWoxZThQa3NXMmNRIiwicWMiOiJDaWxrWlhCc2Iza2dkMlZpYzJsMFpTQnZiaUIyWlhKalpXd2dabkpsWlNCaGJIUmxjbTVoZEdsMlpSQUFmWVVtSHo4IiwicXVlc3Rpb24iOiJXaGVyZSBjYW4gSSBkZXBsb3kgYSB3ZWJzaXRlIGZvciBmcmVlPyIsImxrIjoiR2lOM2FHVnlaU0JqWVc0Z2FTQmtaWEJzYjNrZ2QyVmljMmwwWlNCbWIzSWdabkpsWlEiLCJicyI6ImMzMlBzUXJDUUF5R2NjM2tKSEtEQktRVnBGTmZvSU9MWFNvdWRyN1dsQjRjclZ6RGxiNjl4OVdyRHVvVWt2X2pTd0pYaVBNQnVTVkRLTEV4NUlwbU1wMWtaUW01eHh1Wm1uU1dIa1NrX3BQV2sxREE4U1E3elBGT0Q5MVBEaDZwR2hSXzJMRHBqVmRrS1lyZGl3dFV5SUx2QW5IcHQ5YmZyVzlYSlBialFpcjg0WVV6SkdXcjZoYmRQeFd4LTJISmtuQ2c2d3RpclpvcFM3ZGlNNS1DZHNCdW5ucDZ2WG9DIiwiaWQiOiJmY180WGF0YXRfSkl2ZWoxZThQa3NXMmNRXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJTbWxVTkhSTU9VWmFSVEIzWjBSVmEzTndXVll4UzIxb1V5MHpOMEp6ZEUxTWNrbFhTRkJNVUc5amFEQXpNbFZxU0ZWS1IyOHlkVTlwUzBOM2NGRmhiV3hsTnpWck4xVnlZM1pYUkZSdloxVXdUSFZEYmpOQ2EzbFdXakpyVTBOT1VSSVdORmhoZEdGMFgwcEpkbVZxTVdVNFVHdHpWekpqVVJvaVFVUnpjamxtVW5oSFVtRnFiRGQ0YVdsQmNEZzBSV1pmZFRGR1dYaE9aMWhHUVEiLCJmY3YiOiIzIiwiZWkiOiI0WGF0YXRfSkl2ZWoxZThQa3NXMmNRIiwicWMiOiJDaWxrWlhCc2Iza2dkMlZpYzJsMFpTQnZiaUIyWlhKalpXd2dabkpsWlNCaGJIUmxjbTVoZEdsMlpSQUFmWVVtSHo4IiwicXVlc3Rpb24iOiJXaGVyZSBjYW4gSSBkZXBsb3kgYSB3ZWJzaXRlIGZvciBmcmVlPyIsImxrIjoiR2lOM2FHVnlaU0JqWVc0Z2FTQmtaWEJzYjNrZ2QyVmljMmwwWlNCbWIzSWdabkpsWlEiLCJicyI6ImMzMlBzUXJDUUF5R2NjM2tKSEtEQktRVnBGTmZvSU9MWFNvdWRyN1dsQjRjclZ6RGxiNjl4OVdyRHVvVWt2X2pTd0pYaVBNQnVTVkRLTEV4NUlwbU1wMWtaUW01eHh1Wm1uU1dIa1NrX3BQV2sxREE4U1E3elBGT0Q5MVBEaDZwR2hSXzJMRHBqVmRrS1lyZGl3dFV5SUx2QW5IcHQ5YmZyVzlYSlBialFpcjg0WVV6SkdXcjZoYmRQeFd4LTJISmtuQ2c2d3RpclpvcFM3ZGlNNS1DZHNCdW5ucDZ2WG9DIiwiaWQiOiJmY180WGF0YXRfSkl2ZWoxZThQa3NXMmNRXzUifQ%3D%3D"
+    },
+    {
+      "question": "Which is better for free, Vercel or Netlify?",
+      "type": "ai_overview",
+      "page_token": "bMsZO3icHdDbTsIwAADQ-DM8wtgCKgkxVnaRpJvreln7YrbuUmh3kU0YvPkvfpVfo_EPTs7Xtzm0-ufurMaxHzaLxeVymdddV5tyLrv5oV1kw7WVC5kZk2dSb9b36-VTJbfupwtePl5BTPqe7pCVpL2FHLOSu-cVMmINU_MGbYMiTCG_KVcQSsIjgOUR2JSJQ96SG6TemaXhJ_S5nR0LUwb7KzfQzm1BsTVBQaYx1MrGLmpzSm5Eq6TAACTu44A9z-UsBEULb7GeuGQiQnQPiB4Z9swp94AbpfVEGtFTqkgSUJU1fMmxuUCjUEmQhzUlxU5URYMa6ogI-wX58_l5gFpXcYv5nsVTVCXa2IJ1k8AqzpwwhU2I_MMeoCC8RkwQZIlBOrETm4eRaaoKyztSexrKJmwS3V1L36BZJc9bZ_a_uX2vmnHTn7r6F69OhJI",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=bMsZO3icHdDbTsIwAADQ-DM8wtgCKgkxVnaRpJvreln7YrbuUmh3kU0YvPkvfpVfo_EPTs7Xtzm0-ufurMaxHzaLxeVymdddV5tyLrv5oV1kw7WVC5kZk2dSb9b36-VTJbfupwtePl5BTPqe7pCVpL2FHLOSu-cVMmINU_MGbYMiTCG_KVcQSsIjgOUR2JSJQ96SG6TemaXhJ_S5nR0LUwb7KzfQzm1BsTVBQaYx1MrGLmpzSm5Eq6TAACTu44A9z-UsBEULb7GeuGQiQnQPiB4Z9swp94AbpfVEGtFTqkgSUJU1fMmxuUCjUEmQhzUlxU5URYMa6ogI-wX58_l5gFpXcYv5nsVTVCXa2IJ1k8AqzpwwhU2I_MMeoCC8RkwQZIlBOrETm4eRaaoKyztSexrKJmwS3V1L36BZJc9bZ_a_uX2vmnHTn7r6F69OhJI",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJTbWxVTkhSTU9VWmFSVEIzWjBSVmEzTndXVll4UzIxb1V5MHpOMEp6ZEUxTWNrbFhTRkJNVUc5amFEQXpNbFZxU0ZWS1IyOHlkVTlwUzBOM2NGRmhiV3hsTnpWck4xVnlZM1pYUkZSdloxVXdUSFZEYmpOQ2EzbFdXakpyVTBOT1VSSVdORmhoZEdGMFgwcEpkbVZxTVdVNFVHdHpWekpqVVJvaVFVUnpjamxtVW5oSFVtRnFiRGQ0YVdsQmNEZzBSV1pmZFRGR1dYaE9aMWhHUVEiLCJmY3YiOiIzIiwiZWkiOiI0WGF0YXRfSkl2ZWoxZThQa3NXMmNRIiwicWMiOiJDaWxrWlhCc2Iza2dkMlZpYzJsMFpTQnZiaUIyWlhKalpXd2dabkpsWlNCaGJIUmxjbTVoZEdsMlpSQUFmWVVtSHo4IiwicXVlc3Rpb24iOiJXaGljaCBpcyBiZXR0ZXIgZm9yIGZyZWUsIFZlcmNlbCBvciBOZXRsaWZ5PyIsImxrIjoiR2haMlpYSmpaV3dnZG5NZ2JtVjBiR2xtZVNCbWNtVmwiLCJicyI6ImMzMlBzUXJDUUF5R2NjM2tKSEtEQktRVnBGTmZvSU9MWFNvdWRyN1dsQjRjclZ6RGxiNjl4OVdyRHVvVWt2X2pTd0pYaVBNQnVTVkRLTEV4NUlwbU1wMWtaUW01eHh1Wm1uU1dIa1NrX3BQV2sxREE4U1E3elBGT0Q5MVBEaDZwR2hSXzJMRHBqVmRrS1lyZGl3dFV5SUx2QW5IcHQ5YmZyVzlYSlBialFpcjg0WVV6SkdXcjZoYmRQeFd4LTJISmtuQ2c2d3RpclpvcFM3ZGlNNS1DZHNCdW5ucDZ2WG9DIiwiaWQiOiJmY180WGF0YXRfSkl2ZWoxZThQa3NXMmNRXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJTbWxVTkhSTU9VWmFSVEIzWjBSVmEzTndXVll4UzIxb1V5MHpOMEp6ZEUxTWNrbFhTRkJNVUc5amFEQXpNbFZxU0ZWS1IyOHlkVTlwUzBOM2NGRmhiV3hsTnpWck4xVnlZM1pYUkZSdloxVXdUSFZEYmpOQ2EzbFdXakpyVTBOT1VSSVdORmhoZEdGMFgwcEpkbVZxTVdVNFVHdHpWekpqVVJvaVFVUnpjamxtVW5oSFVtRnFiRGQ0YVdsQmNEZzBSV1pmZFRGR1dYaE9aMWhHUVEiLCJmY3YiOiIzIiwiZWkiOiI0WGF0YXRfSkl2ZWoxZThQa3NXMmNRIiwicWMiOiJDaWxrWlhCc2Iza2dkMlZpYzJsMFpTQnZiaUIyWlhKalpXd2dabkpsWlNCaGJIUmxjbTVoZEdsMlpSQUFmWVVtSHo4IiwicXVlc3Rpb24iOiJXaGljaCBpcyBiZXR0ZXIgZm9yIGZyZWUsIFZlcmNlbCBvciBOZXRsaWZ5PyIsImxrIjoiR2haMlpYSmpaV3dnZG5NZ2JtVjBiR2xtZVNCbWNtVmwiLCJicyI6ImMzMlBzUXJDUUF5R2NjM2tKSEtEQktRVnBGTmZvSU9MWFNvdWRyN1dsQjRjclZ6RGxiNjl4OVdyRHVvVWt2X2pTd0pYaVBNQnVTVkRLTEV4NUlwbU1wMWtaUW01eHh1Wm1uU1dIa1NrX3BQV2sxREE4U1E3elBGT0Q5MVBEaDZwR2hSXzJMRHBqVmRrS1lyZGl3dFV5SUx2QW5IcHQ5YmZyVzlYSlBialFpcjg0WVV6SkdXcjZoYmRQeFd4LTJISmtuQ2c2d3RpclpvcFM3ZGlNNS1DZHNCdW5ucDZ2WG9DIiwiaWQiOiJmY180WGF0YXRfSkl2ZWoxZThQa3NXMmNRXzUifQ%3D%3D"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "vpOFHniczVZbcuI4FF3ArGP8QwY_gACpcnVJwoBDSCOeTX5cxhaywWBiGRz4673MVmYTvZoWxhA7Mcl0f0yNqmRZ0uW-jw_f__bc9fLHH_84Ybhhd6IYRVGR-j71SNHyi-5aNNl-bYlz32OB5XxxPJWsBeZvA4u4tmo5gb8iwnbrETUqIKBjHenNwaSyNCeaQD3VXQv7nVoSLKZKAnHV8jczNEPjXt-RhUxqvSWbKBYWYiOqMTMZWXAvXhZMNET-WP5ZavBNkRXJ2mjBotUJsUdGfThnRUVSSsWvorniMuC_Gxqm8LjeA3RdiF9pn6s6KtAB1FKadEDjFb5KTU_XCMdXiF7VBk82-7E45rNhHNpRg5-e80Pj43xXYGYbxb4AEMVeQuB-Hk1q4CSWc1wfZOoinR1J9vzXk3SNM75mBo0y2yb3wgAIvRpJG-NqnIwbl0xZFNTaPmxAMLruN89PRweVJcDatbRedGvj8qVyD9MWPxFtyhtXEmcBX2TRtRwrfgnYsZ_RsC752tMaTZ_8qmXUCGk0wEx-AX7fG6FNDYvWjMt5vmkT23AM6Uu8lxW5ItVL1dpNjCWLXcDE0mDajxxGJr3xajUtPhShfIYROhUdvKuYxvdIzwkMokQ0p8Spxj4WLCkpbqb1JqWEx77W-iBb2k7vmNfWect79MBLk5Z4tXps_vcwOg2aEkb9kyO6nwimJU5SrRR0U4XVQd5n5m3cuA3OUeDFO8EMeLkrYAnOiZm-1TwFGFHtiAGktWGSNSutg0fcefsrzE_5FwqeJc4OnozAdAzHFOgYdIGucZ3uSOc1oInoyYie2GpqbxB3peF1Hs8E_ZtPX86An4HoOPAZL2_aPwOb2bLkm7eAfa1XqoPDYmqOsN4Yh84iivJh4q9mv0Y61v8KSydK0hJKuo4l7XMsxZQEP6Ck-H16wdKxf5F_FUuwlU9J3VxKysaNQD-NpY8p6ZexhD7EEk6eOVjy87G0uYqlhJJSWMpSkpZPSRcs_Q4lwd-kpBha5LRk-Wm7oFd5qq3AUZM2msEAVBXFnJV799X-WKO02Yw-5an5KrxbmbZ3Y7j2HVTuw719Y_AD_47YwrNqk43n7wsRmTE3JAV_XdgR_t_TK8wDQgqmF5JgbYbujggrL_BVyazo3tPjoS1VmsMRZfOuggdryIaoNByG7dqLDQeLbmMm17pjV7qtP-8lbPZ0SvYDhcLFs7Flsls_GHBW0jRvB5Wu0nLYIxg_LILNuLypvHyb_3UgsENdogCltuwMw6A5XzxEujG5xVZ3uwEmi8rjEushfWb2DnrsGFM1pt_uHNyrlfmJaTOiysIqsFTeCGUKHjGYUN6RKO5UPn0-Iz5veaGgwCzTIGynliWzWrfq1apVqtqVUllY0XC_UcuywNaBKv8EIBNXCA",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=vpOFHniczVZbcuI4FF3ArGP8QwY_gACpcnVJwoBDSCOeTX5cxhaywWBiGRz4673MVmYTvZoWxhA7Mcl0f0yNqmRZ0uW-jw_f__bc9fLHH_84Ybhhd6IYRVGR-j71SNHyi-5aNNl-bYlz32OB5XxxPJWsBeZvA4u4tmo5gb8iwnbrETUqIKBjHenNwaSyNCeaQD3VXQv7nVoSLKZKAnHV8jczNEPjXt-RhUxqvSWbKBYWYiOqMTMZWXAvXhZMNET-WP5ZavBNkRXJ2mjBotUJsUdGfThnRUVSSsWvorniMuC_Gxqm8LjeA3RdiF9pn6s6KtAB1FKadEDjFb5KTU_XCMdXiF7VBk82-7E45rNhHNpRg5-e80Pj43xXYGYbxb4AEMVeQuB-Hk1q4CSWc1wfZOoinR1J9vzXk3SNM75mBo0y2yb3wgAIvRpJG-NqnIwbl0xZFNTaPmxAMLruN89PRweVJcDatbRedGvj8qVyD9MWPxFtyhtXEmcBX2TRtRwrfgnYsZ_RsC752tMaTZ_8qmXUCGk0wEx-AX7fG6FNDYvWjMt5vmkT23AM6Uu8lxW5ItVL1dpNjCWLXcDE0mDajxxGJr3xajUtPhShfIYROhUdvKuYxvdIzwkMokQ0p8Spxj4WLCkpbqb1JqWEx77W-iBb2k7vmNfWect79MBLk5Z4tXps_vcwOg2aEkb9kyO6nwimJU5SrRR0U4XVQd5n5m3cuA3OUeDFO8EMeLkrYAnOiZm-1TwFGFHtiAGktWGSNSutg0fcefsrzE_5FwqeJc4OnozAdAzHFOgYdIGucZ3uSOc1oInoyYie2GpqbxB3peF1Hs8E_ZtPX86An4HoOPAZL2_aPwOb2bLkm7eAfa1XqoPDYmqOsN4Yh84iivJh4q9mv0Y61v8KSydK0hJKuo4l7XMsxZQEP6Ck-H16wdKxf5F_FUuwlU9J3VxKysaNQD-NpY8p6ZexhD7EEk6eOVjy87G0uYqlhJJSWMpSkpZPSRcs_Q4lwd-kpBha5LRk-Wm7oFd5qq3AUZM2msEAVBXFnJV799X-WKO02Yw-5an5KrxbmbZ3Y7j2HVTuw719Y_AD_47YwrNqk43n7wsRmTE3JAV_XdgR_t_TK8wDQgqmF5JgbYbujggrL_BVyazo3tPjoS1VmsMRZfOuggdryIaoNByG7dqLDQeLbmMm17pjV7qtP-8lbPZ0SvYDhcLFs7Flsls_GHBW0jRvB5Wu0nLYIxg_LILNuLypvHyb_3UgsENdogCltuwMw6A5XzxEujG5xVZ3uwEmi8rjEushfWb2DnrsGFM1pt_uHNyrlfmJaTOiysIqsFTeCGUKHjGYUN6RKO5UPn0-Iz5veaGgwCzTIGynliWzWrfq1apVqtqVUllY0XC_UcuywNaBKv8EIBNXCA"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "10 Vercel Alternatives for Deploying Apps in 2026",
+      "link": "https://www.digitalocean.com/resources/articles/vercel-alternatives",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESewHrOzAVBFFM94K__ikY5HfQsjbsVfDohhyNJPAJKikMHGL7VvwPUtelAjjMppyf0jQLnvVH6NEmtVtsItX1EzS3wLoGsgY6nvuL1owBGdSi2gpqyrcuEuv389j73tGynPGXDTMEkbmWBaONG01wp0_yoL72rO9zXcn26A&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4QFnoECCIQAQ&uoh=1",
+      "displayed_link": "https://www.digitalocean.com \u203a resources \u203a articles \u203a ve...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAANlBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAR2LVAAAAEnRSTlMAN4rC7P9ddBLaJ56mStJq4RhSGav3AAAAuElEQVR4AW2TBxLEIAgAsYBptv8_9hqeBMNOTVapI0ycDxExBu9ghSIKSaltR0U8xDl8QNrZdsPBfqbkZwKOPD7DyLNdI--vzkeFWf5EcYv9VxNAwZEdeMnOSI0ewq9OWCgcLvKZBc_1qnImlSvS2NIOa1N0f3kvpTRgOuoy6Z4ljCFAbJEWWefkEbGKFIdkyB7Y_fJf55WIKF3neV5Vlt1vXV3wBScObCnOlK3DJJVSvMhIYKKfwxteUQkwS_4wpwAAAABJRU5ErkJggg.png",
+      "date": "13 Jan 2026",
+      "snippet": "Dokploy is another self-hosting Vercel alternative that provides centralized management and deployment. It offers native Docker Compose support ...",
+      "snippet_highlighted_words": [
+        "Dokploy"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Benefits of Vercel alternatives",
+            "link": "https://www.digitalocean.com/resources/articles/vercel-alternatives#benefits-of-vercel-alternatives"
+          },
+          {
+            "title": "How to choose a Vercel...",
+            "link": "https://www.digitalocean.com/resources/articles/vercel-alternatives#how-to-choose-a-vercel-alternative"
+          },
+          {
+            "title": "Top Vercel alternatives",
+            "link": "https://www.digitalocean.com/resources/articles/vercel-alternatives#top-vercel-alternatives"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Dokploy is another self-hosting Vercel alternative that provides centralized management and deployment. It offers native Docker Compose support ...",
+          "source_info_link": "https://www.digitalocean.com/resources/articles/vercel-alternatives",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAANlBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAR2LVAAAAEnRSTlMAN4rC7P9ddBLaJ56mStJq4RhSGav3AAAAuElEQVR4AW2TBxLEIAgAsYBptv8_9hqeBMNOTVapI0ycDxExBu9ghSIKSaltR0U8xDl8QNrZdsPBfqbkZwKOPD7DyLNdI--vzkeFWf5EcYv9VxNAwZEdeMnOSI0ewq9OWCgcLvKZBc_1qnImlSvS2NIOa1N0f3kvpTRgOuoy6Z4ljCFAbJEWWefkEbGKFIdkyB7Y_fJf55WIKF3neV5Vlt1vXV3wBScObCnOlK3DJJVSvMhIYKKfwxteUQkwS_4wpwAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "DigitalOcean",
+      "read_more_link": "https://www.digitalocean.com/resources/articles/vercel-alternatives#:~:text=Dokploy%20is%20another%20self%2Dhosting%20Vercel,management%2C%20along%20with%20multi%2Dserver%20deployment."
+    },
+    {
+      "position": 2,
+      "title": "Best Vercel Alternatives 2026: Full-Stack, K8s & BYOC",
+      "link": "https://www.bunnyshell.com/comparisons/vercel-alternatives/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScwHrOzAV14HqPX84av0dMjjZZq9Co4t15boP3QP9fYik1GxhIO2Q_cevLKZGCGC5IwiCrouDoxcUf9aAxeO-3YOIVf86V21hZ8HRGGSjSu6d9K_KosIyXisDSnvLDkN8qerB2AnVYROFqqa_I0XB92v4hIQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4QFnoECCAQAQ&uoh=1",
+      "displayed_link": "https://www.bunnyshell.com \u203a Comparisons",
+      "favicon": "https://serpapi.com/images/i/UklGRkABAABXRUJQVlA4IDQBAAAwBgCdASocABwAPrUurVanIacnG_DgFolsALb3Ub-xEyKAFaZrYTpGHc6XIWKtREjCqr4BlGgYHwAAAP74sH0SutW3F6q33TIDDII_9TDv2mX9OPVtvgry7N2V6PpfZX-IH34jtDllD3_ohPQWH-lUOn0XgNOx84M0qj_JNv_7rd2Qrd9-hx5MmM7dizH941KR8KQF0yAWpqe4X-RPV26H3eJtvJXmnp84cDoJllW9e-ez8pR2pGAFfgu2Q7QbNWS0QgtSdkgysbn82IpuPYtdJhUZ37nsvXeo5vpO1yBHyLl6fAH2gxdS2MuO567iIvr-s4Ch3xxyOQ3xjDNWy7wF7J7zlTbqqzWuyLvTSRv1UGypydue0_qcjhn_lqp6v4h_TlODNnm10OmfrALCrobZm1EAAA.webp",
+      "snippet": "The best Vercel alternatives in 2026 are Bunnyshell, Render, Railway, Fly.io, and Coolify \u2014 all supporting Docker containers, backend services, and Kubernetes ...",
+      "snippet_highlighted_words": [
+        "Bunnyshell, Render, Railway, Fly.io, and Coolify"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The best Vercel alternatives in 2026 are Bunnyshell, Render, Railway, Fly.io, and Coolify \u2014 all supporting Docker containers, backend services, and Kubernetes ...",
+          "source_info_link": "https://www.bunnyshell.com/comparisons/vercel-alternatives/",
+          "icon": "https://serpapi.com/images/i/UklGRkABAABXRUJQVlA4IDQBAAAwBgCdASocABwAPrUurVanIacnG_DgFolsALb3Ub-xEyKAFaZrYTpGHc6XIWKtREjCqr4BlGgYHwAAAP74sH0SutW3F6q33TIDDII_9TDv2mX9OPVtvgry7N2V6PpfZX-IH34jtDllD3_ohPQWH-lUOn0XgNOx84M0qj_JNv_7rd2Qrd9-hx5MmM7dizH941KR8KQF0yAWpqe4X-RPV26H3eJtvJXmnp84cDoJllW9e-ez8pR2pGAFfgu2Q7QbNWS0QgtSdkgysbn82IpuPYtdJhUZ37nsvXeo5vpO1yBHyLl6fAH2gxdS2MuO567iIvr-s4Ch3xxyOQ3xjDNWy7wF7J7zlTbqqzWuyLvTSRv1UGypydue0_qcjhn_lqp6v4h_TlODNnm10OmfrALCrobZm1EAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Bunnyshell",
+      "read_more_link": "https://www.bunnyshell.com/comparisons/vercel-alternatives/#:~:text=The%20best%20Vercel%20alternatives%20in,Kubernetes%20infrastructure%20that%20Vercel%20doesn't."
+    },
+    {
+      "position": 3,
+      "title": "Best Vercel alternatives in 2026 | Blog",
+      "link": "https://northflank.com/blog/best-vercel-alternatives-for-scalable-deployments",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEShQEB6zswFbNu2lrwSUA3KvZ6sZuUbEsKFTBMToDf7m6rhzTY4WkVQ8wLWR2z6a4zyIkjC1_tGqwDheW_tYiF75J1f4WocGr8mCs7b4uAvArm-KRlWndhYyNKT75dcfwv4XkC9XrFuWEtv2b-Tc8fsq6kgCZXgkVLbd_cO25JK_9MDkxI-YH-&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4QFnoECDsQAQ&uoh=1",
+      "displayed_link": "https://northflank.com \u203a blog \u203a best-vercel-alternatives-...",
+      "favicon": "https://serpapi.com/images/i/UklGRkABAABXRUJQVlA4IDQBAACQBgCdASocABwAPtE-tFooIigoFAEAGglsALb3AiQNoBvEG8YkROF_sEElR-xDxciaaXBS2fpUJ5TZCxTgAP72At7BiQaHo3fmODFrxc1p9UuBmfeTskayzTyM8ZfgkIgRMVoWh5q2mMK3DWg4gggQq_2coJHwSOQCBSCFAfvdsySt3WtwXuG34pdet1T3BS9vda0yR-gqAJemN49w4w-wHBXFCbxY-U1K7BmLRbRcXl6OawFKEqsTsnKgmDj7To8qt-mn6_8mloveRpyFLtY4bZpBQ9-qrp7YwzyIPRuzQAM2RenX8ofwXP841IX8bomBjupHkSsByPaEdXiPlI9N3ODXilH9GymMdX91-mZd42_6bKVfGNADXbVeKonzBnaIhYgduA1xo3ifB_5lPlvC8AAAAA.webp",
+      "date": "4 May 2026",
+      "snippet": "What is the best free alternative to Vercel? Netlify, Cloudflare Pages, and Render all provide free tiers for static site hosting. Northflank ...",
+      "snippet_highlighted_words": [
+        "Netlify, Cloudflare Pages, and Render"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "What is the best free alternative to Vercel? Netlify, Cloudflare Pages, and Render all provide free tiers for static site hosting. Northflank ...",
+          "source_info_link": "https://northflank.com/blog/best-vercel-alternatives-for-scalable-deployments",
+          "icon": "https://serpapi.com/images/i/UklGRkABAABXRUJQVlA4IDQBAACQBgCdASocABwAPtE-tFooIigoFAEAGglsALb3AiQNoBvEG8YkROF_sEElR-xDxciaaXBS2fpUJ5TZCxTgAP72At7BiQaHo3fmODFrxc1p9UuBmfeTskayzTyM8ZfgkIgRMVoWh5q2mMK3DWg4gggQq_2coJHwSOQCBSCFAfvdsySt3WtwXuG34pdet1T3BS9vda0yR-gqAJemN49w4w-wHBXFCbxY-U1K7BmLRbRcXl6OawFKEqsTsnKgmDj7To8qt-mn6_8mloveRpyFLtY4bZpBQ9-qrp7YwzyIPRuzQAM2RenX8ofwXP841IX8bomBjupHkSsByPaEdXiPlI9N3ODXilH9GymMdX91-mZd42_6bKVfGNADXbVeKonzBnaIhYgduA1xo3ifB_5lPlvC8AAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Northflank"
+    },
+    {
+      "position": 4,
+      "title": "Vercel alternatives? : r/nextjs",
+      "link": "https://www.reddit.com/r/nextjs/comments/1atzu1t/vercel_alternatives/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESfQHrOzAVsh0-pwPDcVb0XszsHI0Qb39L5Rv0LcMo8jbEmSe3ZM4MqIYFqg38S3fA18GrcmPHaaaADbJYDi2PS7AZ2nSj-xrlfToIiD5vfL4c0aIY5txq29GDJNj8XiK6ZNBH7H9i5eob-rItiEltAKcKNgNCLYsV5Xvfvl5m&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4QFnoECEUQAQ&uoh=1",
+      "displayed_link": "90+ comments \u00b7 2 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Vercel has a free (yet simple) deployment protection out of the box. VPS is a substitute. Firebase is at least another managed solution. If you ...",
+      "snippet_highlighted_words": [
+        "Vercel has a free (yet simple) deployment protection"
+      ],
+      "sitelinks": {
+        "list": [
+          {
+            "title": "Best alternatives to Vercel? : r/webdev",
+            "link": "https://www.reddit.com/r/webdev/comments/1ntv6d2/best_alternatives_to_vercel/",
+            "answer_count": 122,
+            "date": "29 Sept 2025"
+          },
+          {
+            "title": "Best Vercel alternative? : r/nextjs",
+            "link": "https://www.reddit.com/r/nextjs/comments/1dvjjn6/best_vercel_alternative/",
+            "answer_count": 103,
+            "date": "4 Jul 2024"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Vercel has a free (yet simple) deployment protection out of the box. VPS is a substitute. Firebase is at least another managed solution. If you ...",
+          "source_info_link": "https://www.reddit.com/r/nextjs/comments/1atzu1t/vercel_alternatives/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/nextjs"
+    },
+    {
+      "position": 5,
+      "title": "5 best Vercel alternatives in 2026: Cost, edge performance, ...",
+      "link": "https://catalyst.zoho.com/blog/5-best-vercel-alternatives-in-2026-cost-edge-performance-and-lock-in-compared.html",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESqQEB6zswFX1tLa-2X7S8gAmT7uqGVTHgWQjR8d6Qz16ll8r_KUVhwvYD-2EzrPEwf7dF0X9L0NCUlvELXcT7vhbTITQYB5daWfeBWPqHKJ48xex_GxO3AI2195HGZbMdP9rHyhU7Q-YAfzme21gzCMESOzxxo-V4D-HdywQNQKvv98D99MFImgD7KUWlGGJVxeP5fsokKGfPM5-yRGd9NCnNEzeDYRpuLLuL&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4QFnoECDwQAQ&uoh=1",
+      "displayed_link": "https://catalyst.zoho.com \u203a blog \u203a 5-best-vercel-alternati...",
+      "favicon": "https://serpapi.com/images/i/UklGRjoBAABXRUJQVlA4IC4BAADwBgCdASocABwAPtEutFooIagoGAEAGglsALcBQKkBtmv0AnB5GgdG_narIBTS1UYd1SCQGcKWu8kLiFFQDpQAAP7-wssDQ7Tt435_eEXrk07YrClIUAFzbVrQSV1ioQMNpGVoH2s7gkEFeR4C31Q6dNsSqPnGW2y-OUTNg4_s5w9e9I90mcukP3_1qX_F2HDPkkgsA1x5cXk11nGur14vaxQvw3XsgWfm_3Wns018ZA3MvPrsaQf92ViaA3hqDvDb_DRn3bU0v6877HWveLEPaeSCIVmCV25qd334Kw2EHemsTbKL-XsyuhDjadg9pUak5z0zc3Cg8Jp379_GbNJF53N2dxgl3BXXXLWB-nLyes8oygui9VGMpfy99lMnzjtkUsuD8YS9PtjdGAAAAA.webp",
+      "date": "5 Jun 2026",
+      "snippet": "This analysis compares five production-grade deployment platforms that can serve as alternatives to Vercel across the criteria that matter ...",
+      "snippet_highlighted_words": [
+        "five production-grade deployment platforms"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "This analysis compares five production-grade deployment platforms that can serve as alternatives to Vercel across the criteria that matter ...",
+          "source_info_link": "https://catalyst.zoho.com/blog/5-best-vercel-alternatives-in-2026-cost-edge-performance-and-lock-in-compared.html",
+          "icon": "https://serpapi.com/images/i/UklGRjoBAABXRUJQVlA4IC4BAADwBgCdASocABwAPtEutFooIagoGAEAGglsALcBQKkBtmv0AnB5GgdG_narIBTS1UYd1SCQGcKWu8kLiFFQDpQAAP7-wssDQ7Tt435_eEXrk07YrClIUAFzbVrQSV1ioQMNpGVoH2s7gkEFeR4C31Q6dNsSqPnGW2y-OUTNg4_s5w9e9I90mcukP3_1qX_F2HDPkkgsA1x5cXk11nGur14vaxQvw3XsgWfm_3Wns018ZA3MvPrsaQf92ViaA3hqDvDb_DRn3bU0v6877HWveLEPaeSCIVmCV25qd334Kw2EHemsTbKL-XsyuhDjadg9pUak5z0zc3Cg8Jp379_GbNJF53N2dxgl3BXXXLWB-nLyes8oygui9VGMpfy99lMnzjtkUsuD8YS9PtjdGAAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Catalyst by Zoho"
+    },
+    {
+      "position": 6,
+      "title": "Dokploy/dokploy: Open Source Alternative to Vercel, Netlify ...",
+      "link": "https://github.com/dokploy/dokploy",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESWgHrOzAV3wKbPic935UoTbqcZ8gOTBEYBhBEFLvK-0VgndBMy9vWPNMQ6BXQuAecRncq8jD4OChEmDFAZdEY5ShhyoLAziNOc7nF-2DBxuHqt_cw20dqsil4wQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4QFnoECDoQAQ&uoh=1",
+      "displayed_link": "https://github.com \u203a dokploy \u203a dokploy",
+      "favicon": "https://serpapi.com/images/i/UklGRloBAABXRUJQVlA4IE4BAABQBwCdASogACAAPtE-tFooIigoFAEAGglpABOY66msBQAhm_jie7on_u43Y8wznTq3o6RYivaXQwLqgtFvGxqSxD0AAP79L-I2CJh157_guzOImTEj4KETbf3LoXG53uwsqC7TNrPYvnj0JCbHaYHsiJ0dZxjZp00AIDh71pmydvV9rbfX7pBwD6xKTC28fi7cmmnaetDkFUKtNDh1oyUvgEJ5B0Jos2E3N5Wf9ywcn5v3_j66N4LrWwMgFUK8OJeK59_R9U8Iq0vdjaoGaiwCdWiWFqTkHXGL7cy9_twJalsMPdZeuuD4BKfDlkDiZPTQbYNs-KpL44LixNJqixiQZYn6Pg05yAzQrotV5msFHgGjybbpLCJP2Jxb24id-1ooSLAITw21MsGq7M_mh1A1SG77Y3rdqY4h760MO7-2OyFmK97IagzfP7hUwAAA.webp",
+      "snippet": "Dokploy is a free, self-hostable Platform as a Service (PaaS) that simplifies the deployment and management of applications and databases.",
+      "snippet_highlighted_words": [
+        "Dokploy"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS) that simplifies the deployment and management of applications and databases.",
+          "source_info_link": "https://github.com/dokploy/dokploy",
+          "icon": "https://serpapi.com/images/i/UklGRloBAABXRUJQVlA4IE4BAABQBwCdASogACAAPtE-tFooIigoFAEAGglpABOY66msBQAhm_jie7on_u43Y8wznTq3o6RYivaXQwLqgtFvGxqSxD0AAP79L-I2CJh157_guzOImTEj4KETbf3LoXG53uwsqC7TNrPYvnj0JCbHaYHsiJ0dZxjZp00AIDh71pmydvV9rbfX7pBwD6xKTC28fi7cmmnaetDkFUKtNDh1oyUvgEJ5B0Jos2E3N5Wf9ywcn5v3_j66N4LrWwMgFUK8OJeK59_R9U8Iq0vdjaoGaiwCdWiWFqTkHXGL7cy9_twJalsMPdZeuuD4BKfDlkDiZPTQbYNs-KpL44LixNJqixiQZYn6Pg05yAzQrotV5msFHgGjybbpLCJP2Jxb24id-1ooSLAITw21MsGq7M_mh1A1SG77Y3rdqY4h760MO7-2OyFmK97IagzfP7hUwAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "GitHub"
+    },
+    {
+      "position": 7,
+      "title": "Vercel Alternatives Open Source: Coolify, Dokku, Kamal",
+      "link": "https://getautonoma.com/blog/open-source-alternatives-vercel",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdAHrOzAVSG9J3-rg2As8KP0b1ikG_gpQ-rZq_wodXmRaQ3w-7G651xFWF3UCW2TMUD8GKjeB-Ld-nPYEbgipOAdzWJMv9owuteVw0Z6XAchH9RrZJhGEkWBFU68cwufP2lI_0K1lznKsHvXm015dXGPLbVmc&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4QFnoECEMQAQ&uoh=1",
+      "displayed_link": "https://getautonoma.com \u203a Blog",
+      "favicon": "https://serpapi.com/images/i/UklGRuwAAABXRUJQVlA4IOAAAACQBQCdASocABwAPtEutFooIagoGAEAGglAAQIHEC3dvtasgprcTCvSvToPjJYKAPylhWOHAAD-_ko1rVjsv7iO3SZqjH-ghP_oaWu8jP_4ul_U93vIlo0rIgxPbLP6f__Hps3IRz_qUHeHbfe4x9v_5V81wgr_2VYsM9f0D9LQXhzZxRLwPXBcQ-kgear5ybNJBIs0hkNFiLrU3UT876HrDZn-3OpPfxvMfvUSYnEA9cEivsGoLrgLVD_5hsoXFfrF8D8UyZRKdwnWkFCpf1k_9vUi63NwN-3JSTKJ34mAAA.webp",
+      "snippet": "Open-source Vercel alternatives compared: Coolify, Dokku, Kamal, and CapRover scored on setup, preview environments, testing, and community maturity.",
+      "snippet_highlighted_words": [
+        "Vercel alternatives"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Quick verdict: which open...",
+            "link": "https://getautonoma.com/blog/open-source-alternatives-vercel#heading-0-quick-verdict-which-open-source-vercel-alternative-should-you-choose-"
+          },
+          {
+            "title": "Why teams look for Vercel...",
+            "link": "https://getautonoma.com/blog/open-source-alternatives-vercel#heading-2-why-teams-look-for-vercel-alternatives"
+          },
+          {
+            "title": "The Self-Hosted PaaS...",
+            "link": "https://getautonoma.com/blog/open-source-alternatives-vercel#heading-3-the-self-hosted-paas-decision-matrix"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Open-source Vercel alternatives compared: Coolify, Dokku, Kamal, and CapRover scored on setup, preview environments, testing, and community maturity.",
+          "source_info_link": "https://getautonoma.com/blog/open-source-alternatives-vercel",
+          "icon": "https://serpapi.com/images/i/UklGRuwAAABXRUJQVlA4IOAAAACQBQCdASocABwAPtEutFooIagoGAEAGglAAQIHEC3dvtasgprcTCvSvToPjJYKAPylhWOHAAD-_ko1rVjsv7iO3SZqjH-ghP_oaWu8jP_4ul_U93vIlo0rIgxPbLP6f__Hps3IRz_qUHeHbfe4x9v_5V81wgr_2VYsM9f0D9LQXhzZxRLwPXBcQ-kgear5ybNJBIs0hkNFiLrU3UT876HrDZn-3OpPfxvMfvUSYnEA9cEivsGoLrgLVD_5hsoXFfrF8D8UyZRKdwnWkFCpf1k_9vUi63NwN-3JSTKJ34mAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Autonoma AI"
+    }
+  ],
+  "discussions_and_forums": [
+    {
+      "title": "Best alternatives to Vercel?",
+      "link": "https://www.reddit.com/r/webdev/comments/1ntv6d2/best_alternatives_to_vercel/",
+      "date": "11 months ago",
+      "extensions": [
+        "r/webdev",
+        "120+ comments"
+      ],
+      "source": "Reddit",
+      "answers": [
+        {
+          "link": "https://www.reddit.com/r/webdev/comments/1ntv6d2/best_alternatives_to_vercel/ngwzvx2/",
+          "extensions": [
+            "Top answer",
+            "167 votes",
+            "11 months ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/webdev/comments/1ntv6d2/best_alternatives_to_vercel/ngx8avt/",
+          "extensions": [
+            "107 votes",
+            "11 months ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/webdev/comments/1ntv6d2/best_alternatives_to_vercel/ngwkd0o/",
+          "extensions": [
+            "87 votes",
+            "11 months ago"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "What are alternatives to Vercel for hosting websites?",
+      "link": "https://www.facebook.com/groups/developerkaki/posts/2616553952023835/",
+      "date": "11 months ago",
+      "extensions": [
+        "Developer Kaki",
+        "60+ comments"
+      ],
+      "source": "Facebook",
+      "answers": [
+        {
+          "link": "https://www.facebook.com/groups/developerkaki/posts/2616553952023835/",
+          "extensions": [
+            "Top answer",
+            "66 votes",
+            "11 months ago"
+          ]
+        },
+        {
+          "link": "https://www.facebook.com/groups/developerkaki/posts/2616553952023835/",
+          "extensions": [
+            "20 votes",
+            "11 months ago"
+          ]
+        },
+        {
+          "link": "https://www.facebook.com/groups/developerkaki/posts/2616553952023835/",
+          "extensions": [
+            "19 votes",
+            "11 months ago"
+          ]
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvZmUm-qHYmJMG4xJaOv2O3MuTZ5w:1789753057572&ei=4Xatat_JIvej1e8PksW2cQ&start=10&sa=N&sstk=AS6-VmJv02dfWSNeJX8pix-UdxfV-RMeeb0k5BywT_1NcGCtRlhaR-IFhey5snQagQeH8HIjh8VnHw6ckM96TI56-_bEVSkB1nLXWQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4Q8NMDegQINhAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvZmUm-qHYmJMG4xJaOv2O3MuTZ5w:1789753057572&ei=4Xatat_JIvej1e8PksW2cQ&start=10&sa=N&sstk=AS6-VmJv02dfWSNeJX8pix-UdxfV-RMeeb0k5BywT_1NcGCtRlhaR-IFhey5snQagQeH8HIjh8VnHw6ckM96TI56-_bEVSkB1nLXWQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4Q8tMDegQINhAE",
+      "3": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvZmUm-qHYmJMG4xJaOv2O3MuTZ5w:1789753057572&ei=4Xatat_JIvej1e8PksW2cQ&start=20&sa=N&sstk=AS6-VmJv02dfWSNeJX8pix-UdxfV-RMeeb0k5BywT_1NcGCtRlhaR-IFhey5snQagQeH8HIjh8VnHw6ckM96TI56-_bEVSkB1nLXWQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4Q8tMDegQINhAG",
+      "4": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvZmUm-qHYmJMG4xJaOv2O3MuTZ5w:1789753057572&ei=4Xatat_JIvej1e8PksW2cQ&start=30&sa=N&sstk=AS6-VmJv02dfWSNeJX8pix-UdxfV-RMeeb0k5BywT_1NcGCtRlhaR-IFhey5snQagQeH8HIjh8VnHw6ckM96TI56-_bEVSkB1nLXWQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4Q8tMDegQINhAI",
+      "5": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvZmUm-qHYmJMG4xJaOv2O3MuTZ5w:1789753057572&ei=4Xatat_JIvej1e8PksW2cQ&start=40&sa=N&sstk=AS6-VmJv02dfWSNeJX8pix-UdxfV-RMeeb0k5BywT_1NcGCtRlhaR-IFhey5snQagQeH8HIjh8VnHw6ckM96TI56-_bEVSkB1nLXWQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4Q8tMDegQINhAK",
+      "6": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvZmUm-qHYmJMG4xJaOv2O3MuTZ5w:1789753057572&ei=4Xatat_JIvej1e8PksW2cQ&start=50&sa=N&sstk=AS6-VmJv02dfWSNeJX8pix-UdxfV-RMeeb0k5BywT_1NcGCtRlhaR-IFhey5snQagQeH8HIjh8VnHw6ckM96TI56-_bEVSkB1nLXWQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4Q8tMDegQINhAM",
+      "7": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvZmUm-qHYmJMG4xJaOv2O3MuTZ5w:1789753057572&ei=4Xatat_JIvej1e8PksW2cQ&start=60&sa=N&sstk=AS6-VmJv02dfWSNeJX8pix-UdxfV-RMeeb0k5BywT_1NcGCtRlhaR-IFhey5snQagQeH8HIjh8VnHw6ckM96TI56-_bEVSkB1nLXWQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4Q8tMDegQINhAO",
+      "8": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvZmUm-qHYmJMG4xJaOv2O3MuTZ5w:1789753057572&ei=4Xatat_JIvej1e8PksW2cQ&start=70&sa=N&sstk=AS6-VmJv02dfWSNeJX8pix-UdxfV-RMeeb0k5BywT_1NcGCtRlhaR-IFhey5snQagQeH8HIjh8VnHw6ckM96TI56-_bEVSkB1nLXWQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4Q8tMDegQINhAQ",
+      "9": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvZmUm-qHYmJMG4xJaOv2O3MuTZ5w:1789753057572&ei=4Xatat_JIvej1e8PksW2cQ&start=80&sa=N&sstk=AS6-VmJv02dfWSNeJX8pix-UdxfV-RMeeb0k5BywT_1NcGCtRlhaR-IFhey5snQagQeH8HIjh8VnHw6ckM96TI56-_bEVSkB1nLXWQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4Q8tMDegQINhAS",
+      "10": "https://www.google.co.in/search?q=deploy+website+on+vercel+free+alternative&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnvZmUm-qHYmJMG4xJaOv2O3MuTZ5w:1789753057572&ei=4Xatat_JIvej1e8PksW2cQ&start=90&sa=N&sstk=AS6-VmJv02dfWSNeJX8pix-UdxfV-RMeeb0k5BywT_1NcGCtRlhaR-IFhey5snQagQeH8HIjh8VnHw6ckM96TI56-_bEVSkB1nLXWQ&ved=2ahUKEwifvu3Z1fiWAxX3UfUHHZKiLQ4Q8tMDegQINhAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+free+alternative&start=90"
+    }
+  }
+}

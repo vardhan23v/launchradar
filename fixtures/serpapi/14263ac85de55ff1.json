@@ -1,0 +1,288 @@
+{
+  "search_metadata": {
+    "id": "6aad730fc75443eb99e3826e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/yiI7920ES0A5F95JnUH3X175pZSha6kWKPPpHTY_DeQ/6aad730fc75443eb99e3826e.json",
+    "markdown_endpoint": "https://serpapi.com/searches/yiI7920ES0A5F95JnUH3X175pZSha6kWKPPpHTY_DeQ/6aad730fc75443eb99e3826e.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/yiI7920ES0A5F95JnUH3X175pZSha6kWKPPpHTY_DeQ/6aad730fc75443eb99e3826e.json_with_pixel_position",
+    "created_at": "2026-09-18 17:21:19 UTC",
+    "processed_at": "2026-09-18 17:21:19 UTC",
+    "google_url": "https://www.google.co.in/search?q=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&oq=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/yiI7920ES0A5F95JnUH3X175pZSha6kWKPPpHTY_DeQ/6aad730fc75443eb99e3826e.html",
+    "total_time_taken": 0.54
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Alternative to expensive AI writing services for students on a tight budget",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Alternative to expensive AI writing services for students on a tight budget",
+    "total_results": 33,
+    "time_taken_displayed": 0.39,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "ai_overview": {
+    "page_token": "slbA0XiczVXbcqpIFP2A-Y7hxcT7NVXUqe4GlahJ2sQYfaEQsEERDM1FfJt_mR-a1_maaRAVEk3mnIep2VXa7GbXvi_WH39apr3--7e_DM_b0rtSKQzDInEcYulF1Smadkmhka2Wlo5FXdX4YVi8bnPE4k2b831L58MCAhKWkNR9njbWylTkooCvcSrly5xu8kLt0VO2-_aoJQ-37fpTrbnUqphyiVdeXihUX7GwuxUtySX2t_69JjClSIu6LfdgUR142NInY7ikxWq5Wis-lpQNswH_nYiYwPi8B-i6EXslfu8qdiABKGY8SYAkJzxbzQ6vEU5eIXLVGzzEHCfmmP0Eed8PBXZ77A9Jri-nAnNqmOQCQJhkCYH5fTUZwWktx7q-6NTJOi9p95zzTXbGuVxzQsKc2mVZyAChc5BsMObGyKVx6pRKQLvvQAGCyfW8WX8GEmisARavtfXkW3ytnyY3nPXYTUkjbHHLpYXLjkrJVA01eXBpvM_opVN2xLmNZnOnpcptXRcEsKjsgDO2JmjbxiV1wewsR9F0TTbk8o9Er1QrjXKn1mrfJFhS6QlMNAumaGJQffr0utnMisMirBxhhA5DB58mJjIdSRcKgyg1vTDizGLHAxMPZrib9ZuOEsZ7LY5BfrSDZdzX3lFlO7pno8lanKPGy_8ZRgchGWMGoyQRyUkNsxYHq14GupnBSuDSZ-Zj3bgPjlXg1SfDHHgRq3cNjrs---h5BjAiYowBJPZh2jU17wN9antcHvtCpU0STwkegsBsDXELJAxGQBKZT3MibUjsHIunRKU0VleEIDeazMJnt0JiYabo33z6Lgj8DkSx4CNePqx_Fjb9xrMrV8nOeVVQLbD3ijt_k9fQmCANX4aJs1n8HOmo_yssHShJTCnpOpbE77GUUBL8gpKS5zMlxfuLnKtYgr3LlDS6SEn5uhEYZ7H0NSX9NJbQl1jC6f8FLDmXsbS9iqWUkjJYYpQknCkph6UzJZ2w9CuUBH-RkhJo6Ycjz0_-ilznqWAyelpSBY_nD3vx3eoQed9VHlu00_-ep5Yb726jaNaNbGp3sHrvRdqNzC6cO13j3nlgebprK54Z6AXPKei7rW7TWAFSIXRNz7RJgepuYKo6LSwdt0A9X9NtjxYcu6AUPJMYXmHha0T3uI3lOnxZab1rC1IfLLq7RmuybBrtaq3_YEAk3KpCddd5WWykJ8OfDZujN1nqavaj9BA0ffFNNqfO4Fb1hxHVOoGlzP13fzRd9V8ib7QXVlY0X26fguh2L710K5Y0els31y_BYn3bIu7Cfmyqs0ibRsPodt0WXp9Vf7SbTyoVjB-CJDPKDxUahob2St0Zt3FVnu1I3Qb3GEwJW1aULDGYKA47Q4B7TTZDyFFVkXUa8HVWWEfttFpqraU1anVuQ7xoy3fKHLVdvvIPBIZfZw",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=slbA0XiczVXbcqpIFP2A-Y7hxcT7NVXUqe4GlahJ2sQYfaEQsEERDM1FfJt_mR-a1_maaRAVEk3mnIep2VXa7GbXvi_WH39apr3--7e_DM_b0rtSKQzDInEcYulF1Smadkmhka2Wlo5FXdX4YVi8bnPE4k2b831L58MCAhKWkNR9njbWylTkooCvcSrly5xu8kLt0VO2-_aoJQ-37fpTrbnUqphyiVdeXihUX7GwuxUtySX2t_69JjClSIu6LfdgUR142NInY7ikxWq5Wis-lpQNswH_nYiYwPi8B-i6EXslfu8qdiABKGY8SYAkJzxbzQ6vEU5eIXLVGzzEHCfmmP0Eed8PBXZ77A9Jri-nAnNqmOQCQJhkCYH5fTUZwWktx7q-6NTJOi9p95zzTXbGuVxzQsKc2mVZyAChc5BsMObGyKVx6pRKQLvvQAGCyfW8WX8GEmisARavtfXkW3ytnyY3nPXYTUkjbHHLpYXLjkrJVA01eXBpvM_opVN2xLmNZnOnpcptXRcEsKjsgDO2JmjbxiV1wewsR9F0TTbk8o9Er1QrjXKn1mrfJFhS6QlMNAumaGJQffr0utnMisMirBxhhA5DB58mJjIdSRcKgyg1vTDizGLHAxMPZrib9ZuOEsZ7LY5BfrSDZdzX3lFlO7pno8lanKPGy_8ZRgchGWMGoyQRyUkNsxYHq14GupnBSuDSZ-Zj3bgPjlXg1SfDHHgRq3cNjrs---h5BjAiYowBJPZh2jU17wN9antcHvtCpU0STwkegsBsDXELJAxGQBKZT3MibUjsHIunRKU0VleEIDeazMJnt0JiYabo33z6Lgj8DkSx4CNePqx_Fjb9xrMrV8nOeVVQLbD3ijt_k9fQmCANX4aJs1n8HOmo_yssHShJTCnpOpbE77GUUBL8gpKS5zMlxfuLnKtYgr3LlDS6SEn5uhEYZ7H0NSX9NJbQl1jC6f8FLDmXsbS9iqWUkjJYYpQknCkph6UzJZ2w9CuUBH-RkhJo6Ycjz0_-ilznqWAyelpSBY_nD3vx3eoQed9VHlu00_-ep5Yb726jaNaNbGp3sHrvRdqNzC6cO13j3nlgebprK54Z6AXPKei7rW7TWAFSIXRNz7RJgepuYKo6LSwdt0A9X9NtjxYcu6AUPJMYXmHha0T3uI3lOnxZab1rC1IfLLq7RmuybBrtaq3_YEAk3KpCddd5WWykJ8OfDZujN1nqavaj9BA0ffFNNqfO4Fb1hxHVOoGlzP13fzRd9V8ib7QXVlY0X26fguh2L710K5Y0els31y_BYn3bIu7Cfmyqs0ibRsPodt0WXp9Vf7SbTyoVjB-CJDPKDxUahob2St0Zt3FVnu1I3Qb3GEwJW1aULDGYKA47Q4B7TTZDyFFVkXUa8HVWWEfttFpqraU1anVuQ7xoy3fKHLVdvvIPBIZfZw"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Chest Stretches for Tight or Sore Muscles - Ask Doctor Jo",
+      "link": "https://www.youtube.com/watch?v=NePr1XKRTLU",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYwHrOzAVG9wF3-Opb6grt-P76kqdMSycJniYAwrVXbPK-z7A5vY1cBw3cHa0yay2RFiuWzrci6jGtR5JCNMYyedBfu8OLk0hcWEztYuzMQMgumfQAz_b_TlDzLGsueV-oHNtpw&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQFnoECBkQAQ&uoh=1",
+      "displayed_link": "https://www.youtube.com \u203a watch",
+      "favicon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp",
+      "date": "28 Dec 2012",
+      "snippet": "Chest Stretches for Tight or Sore Muscles: http://www.AskDoctorJo.com Doctor Jo shows you three simple chest stretches to get your muscles ...",
+      "snippet_highlighted_words": [
+        "Tight"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Chest Stretches for Tight or Sore Muscles: http://www.AskDoctorJo.com Doctor Jo shows you three simple chest stretches to get your muscles ...",
+          "source_info_link": "https://www.youtube.com/watch?v=NePr1XKRTLU",
+          "icon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "YouTube"
+    },
+    {
+      "position": 2,
+      "title": "Anand Gupta - Founder & CEO - Aamor Inox Limited",
+      "link": "https://in.linkedin.com/in/anandgupt",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESXAHrOzAVQqaAQPqIcjqjywRsArek9YKmOtQe2f6ysVN42x--UKpXsxgAtUJCjH_67AYjaa6REZNC5ApCx-1CbdC1cBp10Krz9FoU54SxvEljhlOX0FsmnLCAzd6M&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQFnoECBMQAQ&uoh=1",
+      "displayed_link": "https://in.linkedin.com \u203a anandgupt",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR4AWP4____gOLB44D6nTcsGIo33QHi_zTGd0B2YTiAPpYjHIHNAf_piQk6wGPW8f_rLz8HYRCbXg5AWI4GQGJ0cwDY12gAJDbcHUA4CkZAIqQUK7Ts_m_SfxBMs5RupswBaACr-P47b_5zlG_5DyzZ_r_-8hNF7vuvP__nn3r0X6JhJ-0ccPrR-_-H7735jw9cf_n5v0D1Nuo5gBxQve06zR0AjoL7b7_-__zjN4bc-ScfaOeA33___k9Yfg4mDw7u_Xdeo6uhnQP6D93FMNxlxjF0ZbRzgMXEQ9iyI90cALIMJoccDXRzAK6CZog6YNQBow6gIx54Bwx4x2RAu2bAysoEZu9o7xgAQrvkxt3WZi0AAAAASUVORK5CYII.png",
+      "snippet": "I strongly believe that age, adversity, and life experiences are the greatest teachers. My journey in the stainless-steel industry began in 2001, ...",
+      "about_this_result": {
+        "source": {
+          "description": "I strongly believe that age, adversity, and life experiences are the greatest teachers. My journey in the stainless-steel industry began in 2001, ...",
+          "source_info_link": "https://in.linkedin.com/in/anandgupt",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR4AWP4____gOLB44D6nTcsGIo33QHi_zTGd0B2YTiAPpYjHIHNAf_piQk6wGPW8f_rLz8HYRCbXg5AWI4GQGJ0cwDY12gAJDbcHUA4CkZAIqQUK7Ts_m_SfxBMs5RupswBaACr-P47b_5zlG_5DyzZ_r_-8hNF7vuvP__nn3r0X6JhJ-0ccPrR-_-H7735jw9cf_n5v0D1Nuo5gBxQve06zR0AjoL7b7_-__zjN4bc-ScfaOeA33___k9Yfg4mDw7u_Xdeo6uhnQP6D93FMNxlxjF0ZbRzgMXEQ9iyI90cALIMJoccDXRzAK6CZog6YNQBow6gIx54Bwx4x2RAu2bAysoEZu9o7xgAQrvkxt3WZi0AAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "LinkedIn India",
+      "read_more_link": "https://in.linkedin.com/in/anandgupt#:~:text=I%20strongly%20believe%20that%20age%2C,of%20our%20family's%20steel%20business."
+    },
+    {
+      "position": 3,
+      "title": "TIGHT Definition & Meaning",
+      "link": "https://www.dictionary.com/browse/tight",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESXwHrOzAVRKRTOyY4wB87dDl5nkCQIwo4kGSnL10amfqM5oVUkUvWRoGEvHiDlcO0CWKx1UqfvK6eB6A09s3ZDJy-2_b_rd1iieE5Xfan5oD9QxMF5QLgcB9j6x9A__Qa&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQFnoECBQQAQ&uoh=1",
+      "displayed_link": "https://www.dictionary.com \u203a browse \u203a tight",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAMAAABIzV_hAAAAJFBMVEVHcEwASdcASdcASdcASdcASdcASdcASdcASdcASdcAStgASdcp3ijFAAAAC3RSTlMA3-4tXazGkkcUBzda68AAAACASURBVCiRvdJJDsAgCAVQBovT_e9bG6uCDS77V-pLEAeoLdSDiBJDgZH6ibBLtV6LCDejMikAhyjaVkFKz7iwqTnGyHZnVhOydKkJbv0eiH0KP9KhDb_5w5HZJX29luyFGsoeSf8AWXZqb_6mJE0Yx3_qiZO-eao6BJCIPGq4L9w3GhMdVVBt8QAAAABJRU5ErkJggg.png",
+      "snippet": "TIGHT definition: firmly or closely fixed in place; not easily moved; secure. See examples of tight used in a sentence.",
+      "snippet_highlighted_words": [
+        "firmly or closely fixed in place; not easily moved; secure"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "TIGHT definition: firmly or closely fixed in place; not easily moved; secure. See examples of tight used in a sentence.",
+          "source_info_link": "https://www.dictionary.com/browse/tight",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAMAAABIzV_hAAAAJFBMVEVHcEwASdcASdcASdcASdcASdcASdcASdcASdcASdcAStgASdcp3ijFAAAAC3RSTlMA3-4tXazGkkcUBzda68AAAACASURBVCiRvdJJDsAgCAVQBovT_e9bG6uCDS77V-pLEAeoLdSDiBJDgZH6ibBLtV6LCDejMikAhyjaVkFKz7iwqTnGyHZnVhOydKkJbv0eiH0KP9KhDb_5w5HZJX29luyFGsoeSf8AWXZqb_6mJE0Yx3_qiZO-eao6BJCIPGq4L9w3GhMdVVBt8QAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Dictionary.com"
+    },
+    {
+      "position": 4,
+      "title": "Timothy Low - Making things work through people and ...",
+      "link": "https://sg.linkedin.com/in/timothylowzw",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESXwHrOzAVvTu_587mZTwnEUISpWwnzwxozMvjpEvFcurNUHtCT17hPs5Aw4F3vKwQFOl2yAfR29uqM7JNOqIYIqVP9AuN-9rKsOTHfq3JdviNrq3StRPICFCMyk-fyRvI&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQFnoECBUQAQ&uoh=1",
+      "displayed_link": "https://sg.linkedin.com \u203a timothylowzw",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR4AWP4____gOLB44D6nTcsGIo33QHi_zTGd0B2YTiAPpYjHIHNAf_piQk6wGPW8f_rLz8HYRCbXg5AWI4GQGJ0cwDY12gAJDbcHUA4CkZAIqQUK7Ts_m_SfxBMs5RupswBaACr-P47b_5zlG_5DyzZ_r_-8hNF7vuvP__nn3r0X6JhJ-0ccPrR-_-H7735jw9cf_n5v0D1Nuo5gBxQve06zR0AjoL7b7_-__zjN4bc-ScfaOeA33___k9Yfg4mDw7u_Xdeo6uhnQP6D93FMNxlxjF0ZbRzgMXEQ9iyI90cALIMJoccDXRzAK6CZog6YNQBow6gIx54Bwx4x2RAu2bAysoEZu9o7xgAQrvkxt3WZi0AAAAASUVORK5CYII.png",
+      "snippet": "I've spent my career making things work - organisations, teams, funding models, learning journeys. I now do that at the Community Foundation of Singapore, ...",
+      "about_this_result": {
+        "source": {
+          "description": "I've spent my career making things work - organisations, teams, funding models, learning journeys. I now do that at the Community Foundation of Singapore, ...",
+          "source_info_link": "https://sg.linkedin.com/in/timothylowzw",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR4AWP4____gOLB44D6nTcsGIo33QHi_zTGd0B2YTiAPpYjHIHNAf_piQk6wGPW8f_rLz8HYRCbXg5AWI4GQGJ0cwDY12gAJDbcHUA4CkZAIqQUK7Ts_m_SfxBMs5RupswBaACr-P47b_5zlG_5DyzZ_r_-8hNF7vuvP__nn3r0X6JhJ-0ccPrR-_-H7735jw9cf_n5v0D1Nuo5gBxQve06zR0AjoL7b7_-__zjN4bc-ScfaOeA33___k9Yfg4mDw7u_Xdeo6uhnQP6D93FMNxlxjF0ZbRzgMXEQ9iyI90cALIMJoccDXRzAK6CZog6YNQBow6gIx54Bwx4x2RAu2bAysoEZu9o7xgAQrvkxt3WZi0AAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "LinkedIn Singapore",
+      "read_more_link": "https://sg.linkedin.com/in/timothylowzw#:~:text=I've%20spent%20my%20career%20making,the%20Community%20Foundation%20of%20Singapore%2C"
+    },
+    {
+      "position": 5,
+      "title": "How To Do a Small Engine Oil Change",
+      "link": "https://www.briggsandstratton.com/en-us/support/videos/how-to-do-a-small-engine-oil-change",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESkgEB6zswFYN4-GADzGk6nbhZMogtJGDsiRf3mnkNKKguafwoOAR2FXYzH_Q8WYT5rlM1TP6L86awQIqOn6oP7QPLRBti6tcU3gI0P5qxDqhk33_1_u8SHaNzUYfFfw8v6lelvtoc8xabACrGdhp3TbMV2nRlYL6XsR4vQkYlRKYdeHuyHv12Qq8BtQblN33jegjZRQ&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQFnoECBgQAQ&uoh=1",
+      "displayed_link": "https://www.briggsandstratton.com \u203a support \u203a videos",
+      "favicon": "https://serpapi.com/images/i/UklGRqYAAABXRUJQVlA4IJoAAABQBACdASocABwAPtEutFooIagoGAEAGglAAAudaC6wFb4TCRSrWtlVxAgAAP72AWNMN-xj9jDg5kLn9HyyBsGLMJcYp--14B4v-GWZ7bv9bYhmxhwDA86LBddiAh8Om1JkeIhX76bQjIPF4owzL__u_jAz9cVoSprA3jky-aTWrnCU94onPlQWlD2bBId7d5u9qyKDyi4QAAAA.webp",
+      "date": "13 Jan 2026",
+      "snippet": "It's best to change your engine oil at the beginning or end of a cutting season, and can be completed in just a few short minutes in the comfort ...",
+      "about_this_result": {
+        "source": {
+          "description": "It's best to change your engine oil at the beginning or end of a cutting season, and can be completed in just a few short minutes in the comfort ...",
+          "source_info_link": "https://www.briggsandstratton.com/en-us/support/videos/how-to-do-a-small-engine-oil-change",
+          "icon": "https://serpapi.com/images/i/UklGRqYAAABXRUJQVlA4IJoAAABQBACdASocABwAPtEutFooIagoGAEAGglAAAudaC6wFb4TCRSrWtlVxAgAAP72AWNMN-xj9jDg5kLn9HyyBsGLMJcYp--14B4v-GWZ7bv9bYhmxhwDA86LBddiAh8Om1JkeIhX76bQjIPF4owzL__u_jAz9cVoSprA3jky-aTWrnCU94onPlQWlD2bBId7d5u9qyKDyi4QAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Briggs & Stratton",
+      "read_more_link": "https://www.briggsandstratton.com/en-us/support/videos/how-to-do-a-small-engine-oil-change#:~:text=It's%20best%20to%20change%20your,of%20your%20garage%20or%20driveway."
+    },
+    {
+      "position": 6,
+      "title": "Tight Neck & Traps? Stop Stretching\u2014Do THIS Instead!",
+      "link": "https://www.youtube.com/watch?v=1j3r5K7Kp-4&vl=en",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESaQHrOzAVKnZ8bcB8pIi9q2VrdBMk2XYMziNd0EqorrtWNOyOhN-pybI8xThb7o0dfq5jXTNNvyPxRAg2qrtL1UeO4FcH4B5N6PfMurx1UJHiEQvlhn4_6XCHWBeqAUacQ4nku55MbWCYgg&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQFnoECBIQAQ&uoh=1",
+      "displayed_link": "https://www.youtube.com \u203a watch",
+      "favicon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp",
+      "date": "26 Apr 2026",
+      "snippet": "Tight neck and upper traps that never seem to loosen up? Your neck feels tight\u2026 but stretching isn't fixing it. Here's why\u2014and what to do ...",
+      "snippet_highlighted_words": [
+        "Tight",
+        "tight"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Tight neck and upper traps that never seem to loosen up? Your neck feels tight\u2026 but stretching isn't fixing it. Here's why\u2014and what to do ...",
+          "source_info_link": "https://www.youtube.com/watch?v=1j3r5K7Kp-4&vl=en",
+          "icon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "YouTube"
+    },
+    {
+      "position": 7,
+      "title": "Adductors: 3 moves to help tight inner thighs! If your groin ...",
+      "link": "https://www.instagram.com/reel/DPT7ym1kUkf/?hl=en",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESaQHrOzAVJ839Dg93pxW7Rsqj-l6s7Sn4LXHFXlrQeZjtHqQp13g5RR7_X6-83JegoX8cpzaSwH4Zv0kQvO7dFyu5eqMxULwhJON6Sjydu6NGffLZFGuhhwJtBrPgqgp_410a13Jcl1n0FQ&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQFnoECBYQAQ&uoh=1",
+      "displayed_link": "https://www.instagram.com \u203a reel",
+      "favicon": "https://serpapi.com/images/i/UklGRrQBAABXRUJQVlA4IKgBAABwCACdASocABwAPrUurVanIacnG_DgFolsAJ0yhHp_qvDn8INhnGwwG2i5ADWgPQA6TAiNSWpNpaKsXIF39bGj3Qd8pbRqOqkClBeAAP5tEoJlJoIDKX9SM7Zcd-n9JzxjUyFwXhzwPaTeFm2SeuMf1qLVq3t4wI3Sjh-TwPMqC3IvNj-0iGrCQSLYH_-G79_n_WM3XsPcVuoDF5Qv72r9Pf808tOK5Udv-Td9HMGptvnvxKOoa_2nDyZ2ppkSa2bNDL-K8pl3NhKk0sDV6BtpvNMgPb8dFSIrV0bFXaXgk5e0X-zIfxi-75avphrtEjwdvibNuQxApMkfs-CMi8mkD-o9_Rjb7y57vXTZx0h5MRX7n1JX-MenGUk5E4XC7vzHzXwfTDhRIb4bBfoSZiSNQ4UQGB7jAg92d64S_P_CCBANUoR3tplweT0RfxTAFGtV0vGjuwbJ25X1m04VXMMJ8Q3QzEsyD8w7jnAm5jqpKUZtVe-82LngE828BL78VksB9boYA1KjkUFty8pEW9876P84D7-A_J3doJbl9U3F-cBP_D9uzAAA.webp",
+      "date": "2 Oct 2025",
+      "snippet": "If your groin muscles feel cranky, achy, or restricted, chances are they're holding on to more tension than they should. Try this 3-move ...",
+      "about_this_result": {
+        "source": {
+          "description": "If your groin muscles feel cranky, achy, or restricted, chances are they're holding on to more tension than they should. Try this 3-move ...",
+          "source_info_link": "https://www.instagram.com/reel/DPT7ym1kUkf/?hl=en",
+          "icon": "https://serpapi.com/images/i/UklGRrQBAABXRUJQVlA4IKgBAABwCACdASocABwAPrUurVanIacnG_DgFolsAJ0yhHp_qvDn8INhnGwwG2i5ADWgPQA6TAiNSWpNpaKsXIF39bGj3Qd8pbRqOqkClBeAAP5tEoJlJoIDKX9SM7Zcd-n9JzxjUyFwXhzwPaTeFm2SeuMf1qLVq3t4wI3Sjh-TwPMqC3IvNj-0iGrCQSLYH_-G79_n_WM3XsPcVuoDF5Qv72r9Pf808tOK5Udv-Td9HMGptvnvxKOoa_2nDyZ2ppkSa2bNDL-K8pl3NhKk0sDV6BtpvNMgPb8dFSIrV0bFXaXgk5e0X-zIfxi-75avphrtEjwdvibNuQxApMkfs-CMi8mkD-o9_Rjb7y57vXTZx0h5MRX7n1JX-MenGUk5E4XC7vzHzXwfTDhRIb4bBfoSZiSNQ4UQGB7jAg92d64S_P_CCBANUoR3tplweT0RfxTAFGtV0vGjuwbJ25X1m04VXMMJ8Q3QzEsyD8w7jnAm5jqpKUZtVe-82LngE828BL78VksB9boYA1KjkUFty8pEW9876P84D7-A_J3doJbl9U3F-cBP_D9uzAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Instagram",
+      "read_more_link": "https://www.instagram.com/reel/DPT7ym1kUkf/?hl=en#:~:text=If%20your%20groin%20muscles%20feel,and%20less%20strain%20over%20time!"
+    },
+    {
+      "position": 8,
+      "title": "TIGHT Definition & Meaning",
+      "link": "https://www.merriam-webster.com/dictionary/tight",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESaAHrOzAVoGKaLuH7zDckkehFsPVJe8rqmfRj3W4crXelCyc8kLYJAQJCzfK3XrO1qKq6kjx95vtczHQJ61cW31URRUpT3JJYJJumbBv6Jc5DG1IA0_0p6a1JRZm2cBqFlgWLOLwmAFlB&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQFnoECBAQAQ&uoh=1",
+      "displayed_link": "https://www.merriam-webster.com \u203a dictionary \u203a tight",
+      "favicon": "https://serpapi.com/images/i/UklGRqIBAABXRUJQVlA4IJYBAAAQCQCdASocABwAPtEutFooIagoGAEAGglsAJ0zWJQOABtq5o18m4-QIsDlBv7Tyg_Qv-y4Kv7ADk-SGRPHNZlHLzQvzm2McIPTc02tD9MeoeAA_vYH80Lbn5LwGH1VrLA94qIXT6eUAT9oxRXDwttXTOzNtKwZ74kDKelWwh9bXLQRCZ_qVtaBwH7tKQ3VjwzPjmMwIoP4ADmWRbFSH8lnkIDyl64_fyVSbt6nD5AW62rV_obiGqZ1DE11P7fC9Ua_rJgapTM1Vzz2yxsPW6ObfpM4uwZzGs7uqbMLTgXYL3_nLbuSf8M_Fw_Ss6UzNh5TG_3Fyz_8jMdB3bncOq4a00UrT53lv8X0cdvqOpV77NTPx_-DfFvuY0uS2PexfK-rvF_0yjONCAzFk3P0crF2tDxf62VlxR4twnF1Lm_cRiYIE7EeOnt2GTpvZ-bw5BxvsffUAO5bfj_n_7Prif_4q7I7n_g5MSxY7L0r6689Jf15LibVe1x7VABcO_EHJzJGlAlgW3gI4AEt8COJdPnyb92SQAAA.webp",
+      "date": "10 Sept 2026",
+      "snippet": "The meaning of TIGHT is having elements close together. How to use tight in a sentence.",
+      "snippet_highlighted_words": [
+        "having elements close together"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The meaning of TIGHT is having elements close together. How to use tight in a sentence.",
+          "source_info_link": "https://www.merriam-webster.com/dictionary/tight",
+          "icon": "https://serpapi.com/images/i/UklGRqIBAABXRUJQVlA4IJYBAAAQCQCdASocABwAPtEutFooIagoGAEAGglsAJ0zWJQOABtq5o18m4-QIsDlBv7Tyg_Qv-y4Kv7ADk-SGRPHNZlHLzQvzm2McIPTc02tD9MeoeAA_vYH80Lbn5LwGH1VrLA94qIXT6eUAT9oxRXDwttXTOzNtKwZ74kDKelWwh9bXLQRCZ_qVtaBwH7tKQ3VjwzPjmMwIoP4ADmWRbFSH8lnkIDyl64_fyVSbt6nD5AW62rV_obiGqZ1DE11P7fC9Ua_rJgapTM1Vzz2yxsPW6ObfpM4uwZzGs7uqbMLTgXYL3_nLbuSf8M_Fw_Ss6UzNh5TG_3Fyz_8jMdB3bncOq4a00UrT53lv8X0cdvqOpV77NTPx_-DfFvuY0uS2PexfK-rvF_0yjONCAzFk3P0crF2tDxf62VlxR4twnF1Lm_cRiYIE7EeOnt2GTpvZ-bw5BxvsffUAO5bfj_n_7Prif_4q7I7n_g5MSxY7L0r6689Jf15LibVe1x7VABcO_EHJzJGlAlgW3gI4AEt8COJdPnyb92SQAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Merriam-Webster"
+    },
+    {
+      "position": 9,
+      "title": "The official trailer for HOLD TIGHT. The entire series will be ...",
+      "link": "https://www.facebook.com/harlancobenbooks/videos/the-official-trailer-for-hold-tight-the-entire-series-will-be-streaming-april-22/2739473469531382/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESzAEB6zswFSL8Rnn6ZL6KnAdiBWs_Bta2O4W2e9roFGIWEjuBSmiwh33LZxRDj8hHg04dIxHfiVB_NXJ7DhnaIfE_6kfmFLt4OKXZwi9fD-kDgH3BSzTuT1xvAjXCJ3e83n4QyfXOrd2KysiorsqYTgBYFN-sMBUxWnNKKHWjIrm8YEUTVJqqTKw4cZ_gmp6Brx444BM96XV_EPJeUbVOTpn7DMeKKUD-RFPpeO_M6FsSWNeMbCglST4npXVeraFVO2HT-50PqPg47f7g2Zw&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQFnoECBEQAQ&uoh=1",
+      "displayed_link": "https://www.facebook.com \u203a ... \u203a Harlan Coben \u203a Videos",
+      "favicon": "https://serpapi.com/images/i/UklGRqoBAABXRUJQVlA4IJ4BAABwCQCdASocABwAPtEutFooIagoGAEAGglsAJ0yhHA3lfFBO1wAOUA_QD3LbivzzOpj3kDygCma-Rh7ANX--unhjJOlma5yFBwxABGtbBmfGruNiAAA_vYOb16QPF2AohybdBK44SXhExiRjqi-kNM3hHu_Yw7AJrL-7rM8d_rijdiRy0j-ZeW7w6RIRuMqgm_RO4f6lRIhYknlxf6mMoXAQaj6_tRkMRwBV5EdP_uMw4kqy2ZhqPi3PG5PpxthXgQWj6H4uUXexYHFqh3xYBX5dL6Dsx0kaiR__FvN_6m7_QiD5ix90ybowZPZ4EJjzU2ag7SQJ4wrf_2kwO1hPlzmly6sn4r0HSBDYT_CBJqgzjphFkqJAiVh_RCXqM9h1YZk1Q4HA5xuHo3rNsBGkg4DVoQb6lPRqlYEs1YLGkTSOA-pXnCCv-FX4cz9i_E71o22GBeX206C3AI8KMZxPikjU93MZF-5b_bVPypp2kWlnV7cYdOVJ_T0iqe1D8CmirqI-Ktb5K_S123btql4LlRpp_0gELOp_50DZ4WlAAA.webp",
+      "date": "3 Apr 2022",
+      "snippet": "The official trailer for HOLD TIGHT. The entire series will be streaming April 22. Only on Netflix. Put it on your watchlist now.",
+      "snippet_highlighted_words": [
+        "TIGHT"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The official trailer for HOLD TIGHT. The entire series will be streaming April 22. Only on Netflix. Put it on your watchlist now.",
+          "source_info_link": "https://www.facebook.com/harlancobenbooks/videos/the-official-trailer-for-hold-tight-the-entire-series-will-be-streaming-april-22/2739473469531382/",
+          "icon": "https://serpapi.com/images/i/UklGRqoBAABXRUJQVlA4IJ4BAABwCQCdASocABwAPtEutFooIagoGAEAGglsAJ0yhHA3lfFBO1wAOUA_QD3LbivzzOpj3kDygCma-Rh7ANX--unhjJOlma5yFBwxABGtbBmfGruNiAAA_vYOb16QPF2AohybdBK44SXhExiRjqi-kNM3hHu_Yw7AJrL-7rM8d_rijdiRy0j-ZeW7w6RIRuMqgm_RO4f6lRIhYknlxf6mMoXAQaj6_tRkMRwBV5EdP_uMw4kqy2ZhqPi3PG5PpxthXgQWj6H4uUXexYHFqh3xYBX5dL6Dsx0kaiR__FvN_6m7_QiD5ix90ybowZPZ4EJjzU2ag7SQJ4wrf_2kwO1hPlzmly6sn4r0HSBDYT_CBJqgzjphFkqJAiVh_RCXqM9h1YZk1Q4HA5xuHo3rNsBGkg4DVoQb6lPRqlYEs1YLGkTSOA-pXnCCv-FX4cz9i_E71o22GBeX206C3AI8KMZxPikjU93MZF-5b_bVPypp2kWlnV7cYdOVJ_T0iqe1D8CmirqI-Ktb5K_S123btql4LlRpp_0gELOp_50DZ4WlAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Facebook"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnv6Qsns7cWnDNcXy33u2ZLm09XXuA:1789752079875&ei=D3Otapz8M7_Lp84P36fd2Qs&start=10&sa=N&sstk=AS6-VmKldY07BEcK9787OZLz7ZyAoY_4MzXkCRLoyskcN2i5bs06QmzhTfGmgPyl_iqtIZleAW_giDHnaHU6OpSnAZfs13HRodJLig&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQ8NMDegQIPhAK",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnv6Qsns7cWnDNcXy33u2ZLm09XXuA:1789752079875&ei=D3Otapz8M7_Lp84P36fd2Qs&start=10&sa=N&sstk=AS6-VmKldY07BEcK9787OZLz7ZyAoY_4MzXkCRLoyskcN2i5bs06QmzhTfGmgPyl_iqtIZleAW_giDHnaHU6OpSnAZfs13HRodJLig&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQ8tMDegQIPhAE",
+      "3": "https://www.google.co.in/search?q=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnv6Qsns7cWnDNcXy33u2ZLm09XXuA:1789752079875&ei=D3Otapz8M7_Lp84P36fd2Qs&start=20&sa=N&sstk=AS6-VmKldY07BEcK9787OZLz7ZyAoY_4MzXkCRLoyskcN2i5bs06QmzhTfGmgPyl_iqtIZleAW_giDHnaHU6OpSnAZfs13HRodJLig&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQ8tMDegQIPhAG",
+      "4": "https://www.google.co.in/search?q=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQnv6Qsns7cWnDNcXy33u2ZLm09XXuA:1789752079875&ei=D3Otapz8M7_Lp84P36fd2Qs&start=30&sa=N&sstk=AS6-VmKldY07BEcK9787OZLz7ZyAoY_4MzXkCRLoyskcN2i5bs06QmzhTfGmgPyl_iqtIZleAW_giDHnaHU6OpSnAZfs13HRodJLig&ved=2ahUKEwjcv9KH0viWAxW_5ckDHd9TN7sQ8tMDegQIPhAI"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Alternative+to+expensive+AI+writing+services+for+students+on+a+tight+budget&start=30"
+    }
+  }
+}

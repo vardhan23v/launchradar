@@ -1,0 +1,116 @@
+{
+  "search_metadata": {
+    "id": "6aad76c8d0a88f764cd228fc",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/8zZru5uHjkXPQvcG1NJ2hZAXK8Dsmq-bPXgI0JtS7Yg/6aad76c8d0a88f764cd228fc.json",
+    "markdown_endpoint": "https://serpapi.com/searches/8zZru5uHjkXPQvcG1NJ2hZAXK8Dsmq-bPXgI0JtS7Yg/6aad76c8d0a88f764cd228fc.md",
+    "created_at": "2026-09-18 17:37:12 UTC",
+    "processed_at": "2026-09-18 17:37:12 UTC",
+    "google_autocomplete_url": "https://www.google.com/complete/search?q=deploying+website&gl=in&hl=en&client=chrome&dpr=1",
+    "raw_html_file": "https://serpapi.com/searches/8zZru5uHjkXPQvcG1NJ2hZAXK8Dsmq-bPXgI0JtS7Yg/6aad76c8d0a88f764cd228fc.html",
+    "prettify_html_file": "https://serpapi.com/searches/8zZru5uHjkXPQvcG1NJ2hZAXK8Dsmq-bPXgI0JtS7Yg/6aad76c8d0a88f764cd228fc.prettify",
+    "total_time_taken": 0.31
+  },
+  "search_parameters": {
+    "engine": "google_autocomplete",
+    "q": "deploying website",
+    "gl": "in",
+    "hl": "en"
+  },
+  "search_information": {
+    "autocomplete_results_state": "Showing completion results."
+  },
+  "suggestions": [
+    {
+      "value": "deploying websites",
+      "relevance": 1251,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploying+websites"
+    },
+    {
+      "value": "deploying website for free",
+      "relevance": 1250,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploying+website+for+free"
+    },
+    {
+      "value": "deploying website meaning",
+      "relevance": 602,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploying+website+meaning"
+    },
+    {
+      "value": "deploying website on github",
+      "relevance": 601,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploying+website+on+github"
+    },
+    {
+      "value": "deploying website on vercel",
+      "relevance": 600,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploying+website+on+vercel"
+    },
+    {
+      "value": "deploying website on aws",
+      "relevance": 559,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploying+website+on+aws"
+    },
+    {
+      "value": "deploy website for free vercel",
+      "relevance": 558,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploy+website+for+free+vercel"
+    },
+    {
+      "value": "deploy website on netlify",
+      "relevance": 557,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploy+website+on+netlify"
+    },
+    {
+      "value": "deploy website on cloudflare",
+      "relevance": 556,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploy+website+on+cloudflare"
+    },
+    {
+      "value": "deployment website army",
+      "relevance": 555,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deployment+website+army"
+    },
+    {
+      "value": "deploy website for free github",
+      "relevance": 554,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploy+website+for+free+github"
+    },
+    {
+      "value": "deploy website using github",
+      "relevance": 553,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploy+website+using+github"
+    },
+    {
+      "value": "deploy website to github pages",
+      "relevance": 552,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploy+website+to+github+pages"
+    },
+    {
+      "value": "deploy website online",
+      "relevance": 551,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploy+website+online"
+    },
+    {
+      "value": "deploy website for free netlify",
+      "relevance": 550,
+      "type": "QUERY",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_autocomplete&gl=in&hl=en&q=deploy+website+for+free+netlify"
+    }
+  ],
+  "verbatim_relevance": 1300
+}

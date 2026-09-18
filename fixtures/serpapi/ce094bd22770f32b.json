@@ -1,0 +1,530 @@
+{
+  "search_metadata": {
+    "id": "6aad741d3ee4c26014fc5dbd",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/d-xb_ckyw1q9v-kEQwQnt9t5-cSsfGa0e8G_UrCxge8/6aad741d3ee4c26014fc5dbd.json",
+    "markdown_endpoint": "https://serpapi.com/searches/d-xb_ckyw1q9v-kEQwQnt9t5-cSsfGa0e8G_UrCxge8/6aad741d3ee4c26014fc5dbd.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/d-xb_ckyw1q9v-kEQwQnt9t5-cSsfGa0e8G_UrCxge8/6aad741d3ee4c26014fc5dbd.json_with_pixel_position",
+    "created_at": "2026-09-18 17:25:49 UTC",
+    "processed_at": "2026-09-18 17:25:49 UTC",
+    "google_url": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&oq=best+AI+study+tool+alternatives&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/d-xb_ckyw1q9v-kEQwQnt9t5-cSsfGa0e8G_UrCxge8/6aad741d3ee4c26014fc5dbd.html",
+    "total_time_taken": 5.24
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "best AI study tool alternatives",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "best AI study tool alternatives",
+    "total_results": 109,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "6 Best FREE AI Tools for Students in 2026 (Study Smarter)",
+      "link": "https://www.youtube.com/watch?v=Sg1CcPNqKE4",
+      "thumbnail": "https://serpapi.com/searches/6aad741d3ee4c26014fc5dbd/images/FPc-AnzEd3C4EG81m8PzUKg2mOc3vPrCxpXmAKO5M_I.jpeg",
+      "channel": "Parker Prompts",
+      "duration": "8:29",
+      "platform": "YouTube",
+      "date": "3 weeks ago",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQ3r7K8rqOcPp3KFuoumpcd7t9Gql1zi4RaXw"
+    },
+    {
+      "position": 2,
+      "title": "The 8 Best AI-Powered Studying Apps in 2026 - Free & Powerful",
+      "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w",
+      "thumbnail": "https://serpapi.com/searches/6aad741d3ee4c26014fc5dbd/images/O3NWzsUDX9wOhasnHBO_H7-iQhsf0jFOpqSPNwqfs0I.jpeg",
+      "channel": "Dr Amina Yonis",
+      "duration": "10:44",
+      "platform": "YouTube",
+      "date": "9 Aug 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcRUil3PdZX2etZfohGJp23EymeviXNH7ARlCg",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Introduction",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=0"
+        },
+        {
+          "time": "00:53",
+          "title": "NotebookLM",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=53"
+        },
+        {
+          "time": "02:03",
+          "title": "Anara",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=123"
+        },
+        {
+          "time": "03:00",
+          "title": "ChatGPT",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=180"
+        },
+        {
+          "time": "04:14",
+          "title": "Traverse.link",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=254"
+        },
+        {
+          "time": "05:05",
+          "title": "Canva",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=305"
+        },
+        {
+          "time": "06:00",
+          "title": "Jenni ai",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=360"
+        },
+        {
+          "time": "06:47",
+          "title": "Claude",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=407"
+        },
+        {
+          "time": "08:48",
+          "title": "Gauthmath",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=528"
+        },
+        {
+          "time": "09:39",
+          "title": "Question ai",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=579"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "Top 5 Free AI Study Tools That Actually Save Time",
+      "link": "https://www.youtube.com/watch?v=IlCckdHoLg8",
+      "thumbnail": "https://serpapi.com/searches/6aad741d3ee4c26014fc5dbd/images/OFVtJJ_8MIDnmoR38C1HIzJuCisVem0uNFrvZ6wVQOA.jpeg",
+      "channel": "Pick5 Pro",
+      "duration": "15:30",
+      "platform": "YouTube",
+      "date": "3 May 2026"
+    },
+    {
+      "position": 4,
+      "title": "Become a TOP student: 5 websites & apps to study SMARTER ...",
+      "link": "https://www.youtube.com/watch?v=dMuTPgcdv_E",
+      "thumbnail": "https://serpapi.com/searches/6aad741d3ee4c26014fc5dbd/images/Mth3mdRe05DWQ8oQlVLEw2GTyBf064MUwooS2d1W95I.jpeg",
+      "channel": "jspark",
+      "duration": "9:17",
+      "platform": "YouTube",
+      "date": "21 Dec 2025",
+      "snippet": "Boost your grades with 5 AI tools & websites: Brilliant, ChatGPT, Medley AI, Anki, and Notion. Study smarter, not harder!",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTfbO9pDaJZKeCCbyV2j9X4ye0HmmNrTYZ3VQ"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Which AI tool is best for study and learning?",
+      "type": "ai_overview",
+      "page_token": "ReeUKXicHdBdboIwAADg7DI-avFvzsQsqaMdxtZRKQgvC7Qq0FK6yeTnbXfZqXaaJfuO8H3_6MKo34cubxp7W08mbduOr3V91eexqMeFmaS33oiJSLXOUqHWy8el83wRG_fLg9sPD_rc2vCFgeP02vjOauGXuS-1LA4ntCXVU5_iuDsWoCdAdHJISjKVe2ogyQZKUs4qiudAgrhlqoNkqk02yDZwdEQcGxxQvTi7KOUqdyXO55myccQbj_Buz0O0jAf0RmcQc6wHATQ8AbuLK3Y4bp17ABZMoh2g2jJqkvKoEhY6cJugHQ-jupOGoTRCWE4XWmAWEw0x0ayX0c05GwTdXO4yTUF8CoPAdWcRnveievJTZU8SS0ZhXficDaLUFTfJK1GtIxA0kiMvKsNGhqv-rLzZIaKAqXzJ_dFF3Dez0f_n5v1SNWv7WV__ACkWg84",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=ReeUKXicHdBdboIwAADg7DI-avFvzsQsqaMdxtZRKQgvC7Qq0FK6yeTnbXfZqXaaJfuO8H3_6MKo34cubxp7W08mbduOr3V91eexqMeFmaS33oiJSLXOUqHWy8el83wRG_fLg9sPD_rc2vCFgeP02vjOauGXuS-1LA4ntCXVU5_iuDsWoCdAdHJISjKVe2ogyQZKUs4qiudAgrhlqoNkqk02yDZwdEQcGxxQvTi7KOUqdyXO55myccQbj_Buz0O0jAf0RmcQc6wHATQ8AbuLK3Y4bp17ABZMoh2g2jJqkvKoEhY6cJugHQ-jupOGoTRCWE4XWmAWEw0x0ayX0c05GwTdXO4yTUF8CoPAdWcRnveievJTZU8SS0ZhXficDaLUFTfJK1GtIxA0kiMvKsNGhqv-rLzZIaKAqXzJ_dFF3Dez0f_n5v1SNWv7WV__ACkWg84",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk1VeGxZbk4xVjNWRWRXMVlhRU5TWmxRNE4xaGlTRE5RTW5Gd1NXaHBNVGQxTkRoRFNUVnpORlUxYm1WQmFFOXZPRk5WVEhKWWJVWlViV3BFTjNaMk5HZE9XRkpyTlc5U1dWTXRaMmszV2xkdE5tMXpUSEZuU25kQ1p4SVhTVzVUZEdGMVUweEJOMWh1TW5KdlVHcEtWM1JuVVRRYUlrRkVjM0k1WmxSR2RrTjVkRkI1ZG1GVE5GcDNiak5pVTNWaWVUQnFXVmMyWm5jIiwiZmN2IjoiMyIsImVpIjoiSW5TdGF1U0xBN1huMnJvUGpKV3RnUTQiLCJxYyI6IkNoOWlaWE4wSUdGcElITjBkV1I1SUhSdmIyd2dZV3gwWlhKdVlYUnBkbVZ6RUFCOUlvc0tQdyIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgdG9vbCBpcyBiZXN0IGZvciBzdHVkeSBhbmQgbGVhcm5pbmc/IiwibGsiOiJHaXgzYUdsamFDQmhhU0IwYjI5c0lHbHpJR0psYzNRZ1ptOXlJSE4wZFdSNUlHRnVaQ0JzWldGeWJtbHVadyIsImJzIjoiYzQyT01RdkNNQkNGY2IzSlFSU0R5ZzJPV2pDamcwRWN4RVVjaEk2U3RyRUpsQ1Nra2VLX042bXQ2T1o2N192ZVBiakJPcFVxbDdnX29UZW1RbFZqSm1xUGQtT3c5b19paVZ3WFdBbnV0Tklsb3dsWk5hM0ExVDhDN0dDWlN1NGo1cVhvVUNkRWZQakdZd3VqWXpJS2paLVNvTFlZTUppM2ZzQkRoUk8yNG5rTUQtRjR2RndaWFpCWkU0Rmdfd0I1T0piV3d6WVd4TUhkZ3JOSmNOTXZ0WmJSS1prMFBhRE5kelljdkFBIiwiaWQiOiJmY19JblN0YXVTTEE3WG4ycm9QakpXdGdRNF81In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk1VeGxZbk4xVjNWRWRXMVlhRU5TWmxRNE4xaGlTRE5RTW5Gd1NXaHBNVGQxTkRoRFNUVnpORlUxYm1WQmFFOXZPRk5WVEhKWWJVWlViV3BFTjNaMk5HZE9XRkpyTlc5U1dWTXRaMmszV2xkdE5tMXpUSEZuU25kQ1p4SVhTVzVUZEdGMVUweEJOMWh1TW5KdlVHcEtWM1JuVVRRYUlrRkVjM0k1WmxSR2RrTjVkRkI1ZG1GVE5GcDNiak5pVTNWaWVUQnFXVmMyWm5jIiwiZmN2IjoiMyIsImVpIjoiSW5TdGF1U0xBN1huMnJvUGpKV3RnUTQiLCJxYyI6IkNoOWlaWE4wSUdGcElITjBkV1I1SUhSdmIyd2dZV3gwWlhKdVlYUnBkbVZ6RUFCOUlvc0tQdyIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgdG9vbCBpcyBiZXN0IGZvciBzdHVkeSBhbmQgbGVhcm5pbmc%2FIiwibGsiOiJHaXgzYUdsamFDQmhhU0IwYjI5c0lHbHpJR0psYzNRZ1ptOXlJSE4wZFdSNUlHRnVaQ0JzWldGeWJtbHVadyIsImJzIjoiYzQyT01RdkNNQkNGY2IzSlFSU0R5ZzJPV2pDamcwRWN4RVVjaEk2U3RyRUpsQ1Nra2VLX042bXQ2T1o2N192ZVBiakJPcFVxbDdnX29UZW1RbFZqSm1xUGQtT3c5b19paVZ3WFdBbnV0Tklsb3dsWk5hM0ExVDhDN0dDWlN1NGo1cVhvVUNkRWZQakdZd3VqWXpJS2paLVNvTFlZTUppM2ZzQkRoUk8yNG5rTUQtRjR2RndaWFpCWkU0Rmdfd0I1T0piV3d6WVd4TUhkZ3JOSmNOTXZ0WmJSS1prMFBhRE5kelljdkFBIiwiaWQiOiJmY19JblN0YXVTTEE3WG4ycm9QakpXdGdRNF81In0%3D"
+    },
+    {
+      "question": "What is the best free AI study tool?",
+      "type": "ai_overview",
+      "page_token": "F9_ULXicHdBRboIwAADQ7DL7VLDMbSZmWYUy3EBbSqH9WaCgKAWqooh_u8tOtdNs2QXex_v6Vrum-rm7ll2nT7PxuO_70bZtt6oYyXa0a8bpaWjkWKZKZamsZtPHqfmykXPn7MHFwYM40prZxAjZchkCrwuVcHykUViVEwzgJZpontwgoPtgCAxir5A_BFHpZ45vkZoPEuRnNkEbYYs1VWJJ3_S7NAKXM3L8M_ugumLfhq6vlJvV5VoOJvtgr0aRiF2WIM3jkymqjmcNMyR9vSXAA4LCCzFhXzSw4ZGoOSBtbJNDyrZXxsTCV7nHI6WLCllxLUwco2mxMPvkxlbMRhaddMAp82WmAoMnjFLHAbFrDbJ-xmmlk9zNSQDbHY7ITe5VHdVWHzbEypqSFnvSJWZ1jdTTA0UcSFR-4PiZYXy_kZc5uP__nH9u6m6mj-32F8Fqg5Q",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=F9_ULXicHdBRboIwAADQ7DL7VLDMbSZmWYUy3EBbSqH9WaCgKAWqooh_u8tOtdNs2QXex_v6Vrum-rm7ll2nT7PxuO_70bZtt6oYyXa0a8bpaWjkWKZKZamsZtPHqfmykXPn7MHFwYM40prZxAjZchkCrwuVcHykUViVEwzgJZpontwgoPtgCAxir5A_BFHpZ45vkZoPEuRnNkEbYYs1VWJJ3_S7NAKXM3L8M_ugumLfhq6vlJvV5VoOJvtgr0aRiF2WIM3jkymqjmcNMyR9vSXAA4LCCzFhXzSw4ZGoOSBtbJNDyrZXxsTCV7nHI6WLCllxLUwco2mxMPvkxlbMRhaddMAp82WmAoMnjFLHAbFrDbJ-xmmlk9zNSQDbHY7ITe5VHdVWHzbEypqSFnvSJWZ1jdTTA0UcSFR-4PiZYXy_kZc5uP__nH9u6m6mj-32F8Fqg5Q",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk1VeGxZbk4xVjNWRWRXMVlhRU5TWmxRNE4xaGlTRE5RTW5Gd1NXaHBNVGQxTkRoRFNUVnpORlUxYm1WQmFFOXZPRk5WVEhKWWJVWlViV3BFTjNaMk5HZE9XRkpyTlc5U1dWTXRaMmszV2xkdE5tMXpUSEZuU25kQ1p4SVhTVzVUZEdGMVUweEJOMWh1TW5KdlVHcEtWM1JuVVRRYUlrRkVjM0k1WmxSR2RrTjVkRkI1ZG1GVE5GcDNiak5pVTNWaWVUQnFXVmMyWm5jIiwiZmN2IjoiMyIsImVpIjoiSW5TdGF1U0xBN1huMnJvUGpKV3RnUTQiLCJxYyI6IkNoOWlaWE4wSUdGcElITjBkV1I1SUhSdmIyd2dZV3gwWlhKdVlYUnBkbVZ6RUFCOUlvc0tQdyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBmcmVlIEFJIHN0dWR5IHRvb2w/IiwibGsiOiJHaFJoYVNCbWIzSWdjM1IxWkhscGJtY2dabkpsWlEiLCJicyI6ImM0Mk9NUXZDTUJDRmNiM0pRUlNEeWcyT1dqQ2pnMEVjeEVVY2hJNlN0ckVKbENTa2tlS19ONm10Nk9aNjdfdmVQYmpCT3BVcWw3Z19vVGVtUWxWakptcVBkLU93OW9faWlWd1hXQW51dE5JbG93bFpOYTNBMVQ4QzdHQ1pTdTRqNXFYb1VDZEVmUGpHWXd1all6SUtqWi1Tb0xZWU1KaTNmc0JEaFJPMjRua01ELUY0dkZ3WlhaQlpFNEZnX3dCNU9KYld3ellXeE1IZGdyTkpjTk12dFpiUktaazBQYUROZHpZY3ZBQSIsImlkIjoiZmNfSW5TdGF1U0xBN1huMnJvUGpKV3RnUTRfNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk1VeGxZbk4xVjNWRWRXMVlhRU5TWmxRNE4xaGlTRE5RTW5Gd1NXaHBNVGQxTkRoRFNUVnpORlUxYm1WQmFFOXZPRk5WVEhKWWJVWlViV3BFTjNaMk5HZE9XRkpyTlc5U1dWTXRaMmszV2xkdE5tMXpUSEZuU25kQ1p4SVhTVzVUZEdGMVUweEJOMWh1TW5KdlVHcEtWM1JuVVRRYUlrRkVjM0k1WmxSR2RrTjVkRkI1ZG1GVE5GcDNiak5pVTNWaWVUQnFXVmMyWm5jIiwiZmN2IjoiMyIsImVpIjoiSW5TdGF1U0xBN1huMnJvUGpKV3RnUTQiLCJxYyI6IkNoOWlaWE4wSUdGcElITjBkV1I1SUhSdmIyd2dZV3gwWlhKdVlYUnBkbVZ6RUFCOUlvc0tQdyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBmcmVlIEFJIHN0dWR5IHRvb2w%2FIiwibGsiOiJHaFJoYVNCbWIzSWdjM1IxWkhscGJtY2dabkpsWlEiLCJicyI6ImM0Mk9NUXZDTUJDRmNiM0pRUlNEeWcyT1dqQ2pnMEVjeEVVY2hJNlN0ckVKbENTa2tlS19ONm10Nk9aNjdfdmVQYmpCT3BVcWw3Z19vVGVtUWxWakptcVBkLU93OW9faWlWd1hXQW51dE5JbG93bFpOYTNBMVQ4QzdHQ1pTdTRqNXFYb1VDZEVmUGpHWXd1all6SUtqWi1Tb0xZWU1KaTNmc0JEaFJPMjRua01ELUY0dkZ3WlhaQlpFNEZnX3dCNU9KYld3ellXeE1IZGdyTkpjTk12dFpiUktaazBQYUROZHpZY3ZBQSIsImlkIjoiZmNfSW5TdGF1U0xBN1huMnJvUGpKV3RnUTRfNSJ9"
+    },
+    {
+      "question": "What AI is replacing ChatGPT?",
+      "type": "ai_overview",
+      "page_token": "EtdTE3icHdDdboIwGIDh7GY8VP7mholZgta_jW4t9EM4WdqighToFAU8273sqnY1Mzt-k-fg_f5ReVX8PnRZ0-jzZDRq23Z4qOuD2g1lPcyrET_3lRxJrpTgspiMn8bmy15O0WXtzb7WHmFaw5waAQMeM33ebTcn3_bm1IZTvM1UGlH2xtYmZp2TllkMc88SkdMCPPeCOT2JUuJbWSkqSCTSNgfS8Eq1UmUeRyoXhYv8yO8Cy22DI84ThOHeZthOSz_qkmRRG-Tuk7IbC2R6SUFsrOgjrTSPK01Cg5h-iG_cAiYtCEKrGYvI_WCRid8A6PtqcRFH2PPF4lUa-sKLZsNZU6Es3QiFjXgLYYiQHS2dXpYu4YXepsuUYq_OCaM3eVQlLN0co64PkO7SUF0p0PMOEUfcsA5XXkiUq5J2sJfXqT34_zn93JfNRJ_qwx-uvoUU",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=EtdTE3icHdDdboIwGIDh7GY8VP7mholZgta_jW4t9EM4WdqighToFAU8273sqnY1Mzt-k-fg_f5ReVX8PnRZ0-jzZDRq23Z4qOuD2g1lPcyrET_3lRxJrpTgspiMn8bmy15O0WXtzb7WHmFaw5waAQMeM33ebTcn3_bm1IZTvM1UGlH2xtYmZp2TllkMc88SkdMCPPeCOT2JUuJbWSkqSCTSNgfS8Eq1UmUeRyoXhYv8yO8Cy22DI84ThOHeZthOSz_qkmRRG-Tuk7IbC2R6SUFsrOgjrTSPK01Cg5h-iG_cAiYtCEKrGYvI_WCRid8A6PtqcRFH2PPF4lUa-sKLZsNZU6Es3QiFjXgLYYiQHS2dXpYu4YXepsuUYq_OCaM3eVQlLN0co64PkO7SUF0p0PMOEUfcsA5XXkiUq5J2sJfXqT34_zn93JfNRJ_qwx-uvoUU",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk1VeGxZbk4xVjNWRWRXMVlhRU5TWmxRNE4xaGlTRE5RTW5Gd1NXaHBNVGQxTkRoRFNUVnpORlUxYm1WQmFFOXZPRk5WVEhKWWJVWlViV3BFTjNaMk5HZE9XRkpyTlc5U1dWTXRaMmszV2xkdE5tMXpUSEZuU25kQ1p4SVhTVzVUZEdGMVUweEJOMWh1TW5KdlVHcEtWM1JuVVRRYUlrRkVjM0k1WmxSR2RrTjVkRkI1ZG1GVE5GcDNiak5pVTNWaWVUQnFXVmMyWm5jIiwiZmN2IjoiMyIsImVpIjoiSW5TdGF1U0xBN1huMnJvUGpKV3RnUTQiLCJxYyI6IkNoOWlaWE4wSUdGcElITjBkV1I1SUhSdmIyd2dZV3gwWlhKdVlYUnBkbVZ6RUFCOUlvc0tQdyIsInF1ZXN0aW9uIjoiV2hhdCBBSSBpcyByZXBsYWNpbmcgQ2hhdEdQVD8iLCJsayI6IkdoeDNhR0YwSUdGcElHbHpJSEpsY0d4aFkybHVaeUJqYUdGMFozQjAiLCJicyI6ImM0Mk9NUXZDTUJDRmNiM0pRUlNEeWcyT1dqQ2pnMEVjeEVVY2hJNlN0ckVKbENTa2tlS19ONm10Nk9aNjdfdmVQYmpCT3BVcWw3Z19vVGVtUWxWakptcVBkLU93OW9faWlWd1hXQW51dE5JbG93bFpOYTNBMVQ4QzdHQ1pTdTRqNXFYb1VDZEVmUGpHWXd1all6SUtqWi1Tb0xZWU1KaTNmc0JEaFJPMjRua01ELUY0dkZ3WlhaQlpFNEZnX3dCNU9KYld3ellXeE1IZGdyTkpjTk12dFpiUktaazBQYUROZHpZY3ZBQSIsImlkIjoiZmNfSW5TdGF1U0xBN1huMnJvUGpKV3RnUTRfNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk1VeGxZbk4xVjNWRWRXMVlhRU5TWmxRNE4xaGlTRE5RTW5Gd1NXaHBNVGQxTkRoRFNUVnpORlUxYm1WQmFFOXZPRk5WVEhKWWJVWlViV3BFTjNaMk5HZE9XRkpyTlc5U1dWTXRaMmszV2xkdE5tMXpUSEZuU25kQ1p4SVhTVzVUZEdGMVUweEJOMWh1TW5KdlVHcEtWM1JuVVRRYUlrRkVjM0k1WmxSR2RrTjVkRkI1ZG1GVE5GcDNiak5pVTNWaWVUQnFXVmMyWm5jIiwiZmN2IjoiMyIsImVpIjoiSW5TdGF1U0xBN1huMnJvUGpKV3RnUTQiLCJxYyI6IkNoOWlaWE4wSUdGcElITjBkV1I1SUhSdmIyd2dZV3gwWlhKdVlYUnBkbVZ6RUFCOUlvc0tQdyIsInF1ZXN0aW9uIjoiV2hhdCBBSSBpcyByZXBsYWNpbmcgQ2hhdEdQVD8iLCJsayI6IkdoeDNhR0YwSUdGcElHbHpJSEpsY0d4aFkybHVaeUJqYUdGMFozQjAiLCJicyI6ImM0Mk9NUXZDTUJDRmNiM0pRUlNEeWcyT1dqQ2pnMEVjeEVVY2hJNlN0ckVKbENTa2tlS19ONm10Nk9aNjdfdmVQYmpCT3BVcWw3Z19vVGVtUWxWakptcVBkLU93OW9faWlWd1hXQW51dE5JbG93bFpOYTNBMVQ4QzdHQ1pTdTRqNXFYb1VDZEVmUGpHWXd1all6SUtqWi1Tb0xZWU1KaTNmc0JEaFJPMjRua01ELUY0dkZ3WlhaQlpFNEZnX3dCNU9KYld3ellXeE1IZGdyTkpjTk12dFpiUktaazBQYUROZHpZY3ZBQSIsImlkIjoiZmNfSW5TdGF1U0xBN1huMnJvUGpKV3RnUTRfNSJ9"
+    },
+    {
+      "question": "Which is the No. 1 study app?",
+      "type": "ai_overview",
+      "page_token": "1mYKwHicHdBRboIwAADQ7DJ-Koi6aGKWMKBiZrWFttKfBVqxUijo2Kj-7S471U6zZO8I7_unvhj9-2RV33cfq8lkGIbxuW3P9Wks2vHFTPKPuxETkdd1kQu9Wjwv3JdSrMPP2H-9xj4iXUcD7CSGT0-NvElwfhCAWaqxnzUuyh3JCIOINLYVWmmcqhI-oCOq7SIHywjpwWaaO9TFhgYKcq8LTmD-RTf4IEN7SarsTqfqSsKIsyMemN4SqNEgtb0WwCYkcQ90Ot_lUdzvU-oUQO240Y8c2MM-pLOTUU2habBjsix0dE0oJilTmk-xh9Kop1UU8wACBuZVVnemcGmcBByHSm6LGjrZkaZpGHoMzO6iWaJcd0cJJIZ-e0EEP0RVN4TYGDqRkU42IyyeZx4FyWaLEFlaUfmYAPnGh1Epvtbe6P9z_V42_aq7tec_i-CE4Q",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=1mYKwHicHdBRboIwAADQ7DJ-Koi6aGKWMKBiZrWFttKfBVqxUijo2Kj-7S471U6zZO8I7_unvhj9-2RV33cfq8lkGIbxuW3P9Wks2vHFTPKPuxETkdd1kQu9Wjwv3JdSrMPP2H-9xj4iXUcD7CSGT0-NvElwfhCAWaqxnzUuyh3JCIOINLYVWmmcqhI-oCOq7SIHywjpwWaaO9TFhgYKcq8LTmD-RTf4IEN7SarsTqfqSsKIsyMemN4SqNEgtb0WwCYkcQ90Ot_lUdzvU-oUQO240Y8c2MM-pLOTUU2habBjsix0dE0oJilTmk-xh9Kop1UU8wACBuZVVnemcGmcBByHSm6LGjrZkaZpGHoMzO6iWaJcd0cJJIZ-e0EEP0RVN4TYGDqRkU42IyyeZx4FyWaLEFlaUfmYAPnGh1Epvtbe6P9z_V42_aq7tec_i-CE4Q",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk1VeGxZbk4xVjNWRWRXMVlhRU5TWmxRNE4xaGlTRE5RTW5Gd1NXaHBNVGQxTkRoRFNUVnpORlUxYm1WQmFFOXZPRk5WVEhKWWJVWlViV3BFTjNaMk5HZE9XRkpyTlc5U1dWTXRaMmszV2xkdE5tMXpUSEZuU25kQ1p4SVhTVzVUZEdGMVUweEJOMWh1TW5KdlVHcEtWM1JuVVRRYUlrRkVjM0k1WmxSR2RrTjVkRkI1ZG1GVE5GcDNiak5pVTNWaWVUQnFXVmMyWm5jIiwiZmN2IjoiMyIsImVpIjoiSW5TdGF1U0xBN1huMnJvUGpKV3RnUTQiLCJxYyI6IkNoOWlaWE4wSUdGcElITjBkV1I1SUhSdmIyd2dZV3gwWlhKdVlYUnBkbVZ6RUFCOUlvc0tQdyIsInF1ZXN0aW9uIjoiV2hpY2ggaXMgdGhlIE5vLiAxIHN0dWR5IGFwcD8iLCJsayI6IkdoZDNhR2xqYUNCcGN5QnVieUF4SUhOMGRXUjVJR0Z3Y0EiLCJicyI6ImM0Mk9NUXZDTUJDRmNiM0pRUlNEeWcyT1dqQ2pnMEVjeEVVY2hJNlN0ckVKbENTa2tlS19ONm10Nk9aNjdfdmVQYmpCT3BVcWw3Z19vVGVtUWxWakptcVBkLU93OW9faWlWd1hXQW51dE5JbG93bFpOYTNBMVQ4QzdHQ1pTdTRqNXFYb1VDZEVmUGpHWXd1all6SUtqWi1Tb0xZWU1KaTNmc0JEaFJPMjRua01ELUY0dkZ3WlhaQlpFNEZnX3dCNU9KYld3ellXeE1IZGdyTkpjTk12dFpiUktaazBQYUROZHpZY3ZBQSIsImlkIjoiZmNfSW5TdGF1U0xBN1huMnJvUGpKV3RnUTRfNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSk1VeGxZbk4xVjNWRWRXMVlhRU5TWmxRNE4xaGlTRE5RTW5Gd1NXaHBNVGQxTkRoRFNUVnpORlUxYm1WQmFFOXZPRk5WVEhKWWJVWlViV3BFTjNaMk5HZE9XRkpyTlc5U1dWTXRaMmszV2xkdE5tMXpUSEZuU25kQ1p4SVhTVzVUZEdGMVUweEJOMWh1TW5KdlVHcEtWM1JuVVRRYUlrRkVjM0k1WmxSR2RrTjVkRkI1ZG1GVE5GcDNiak5pVTNWaWVUQnFXVmMyWm5jIiwiZmN2IjoiMyIsImVpIjoiSW5TdGF1U0xBN1huMnJvUGpKV3RnUTQiLCJxYyI6IkNoOWlaWE4wSUdGcElITjBkV1I1SUhSdmIyd2dZV3gwWlhKdVlYUnBkbVZ6RUFCOUlvc0tQdyIsInF1ZXN0aW9uIjoiV2hpY2ggaXMgdGhlIE5vLiAxIHN0dWR5IGFwcD8iLCJsayI6IkdoZDNhR2xqYUNCcGN5QnVieUF4SUhOMGRXUjVJR0Z3Y0EiLCJicyI6ImM0Mk9NUXZDTUJDRmNiM0pRUlNEeWcyT1dqQ2pnMEVjeEVVY2hJNlN0ckVKbENTa2tlS19ONm10Nk9aNjdfdmVQYmpCT3BVcWw3Z19vVGVtUWxWakptcVBkLU93OW9faWlWd1hXQW51dE5JbG93bFpOYTNBMVQ4QzdHQ1pTdTRqNXFYb1VDZEVmUGpHWXd1all6SUtqWi1Tb0xZWU1KaTNmc0JEaFJPMjRua01ELUY0dkZ3WlhaQlpFNEZnX3dCNU9KYld3ellXeE1IZGdyTkpjTk12dFpiUktaazBQYUROZHpZY3ZBQSIsImlkIjoiZmNfSW5TdGF1U0xBN1huMnJvUGpKV3RnUTRfNSJ9"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "FixaFniczVXdcqJIFH6AfY7lxozgX4ypoqa6EZREE9Go4xWFgA0KtNIgwbt9l92X2qfZBlEhwbgzF1t7qtqmm-P5__j--NOxvc3fv_1lBcGWPLJsFEVVhDFyzKqOq7bHaiT2dHaFHeLr1vcwdEw-qghAVmRBlibz1kabi4zl8KbHIIe3PSbe8w1GJzzHmDYve5NACycD0P7h1X08Wj_NA6Q0mdQqry41Yq6p2_c1YVWW_mx-b3TpoUqqpqf2YDUawt37RqqPlsNqnat1qq-s5lId8N-JqCCY7E9AuK5EX4m3TSUGZADFnCUZoHSHF63F8bWgpK8EdNUaPPocp-oKXV310I-69DarT_fqf6kLWDhGaSwARGmUENi3s8mJkuVyyuuLSp21i5JVD19u8j0uxFoQFBWOEo1CBYJwcZJ3Rs1YhTDOldIReOhj2IVgej1uWp9nGbQ2QBHLUsiLIs6a584NFj16wxqIDi7HLn261Vhbt_T0wSfJPAtvHQ739q6KPLPb1IA19QcKjtGzOetv6-q7wupLqudgzTAN1VK57-m5Vq-1uE6j_XCXYkknZzCRPJjiqUXM-WjmuovqoAprJxgJx6aDTx0T6VmQSxKDQqZa0mJ4uU0alrVUkfJ2s1bCZK7FMSi29nmU1LV3OtIZPdDW5DUuXpPh_wyjo6CcMoVRGoiMM8W8xlGrl4NurrEyKPvMfMxb6YNTFsr6k2IBgALNdwNOhVl8tLwAioDEBAOC2IdZ1fSiDeFT2ZP06BcqK9Ilk-MTzOeQlEBWwBDIIrVpT2XaA5TM6jlQOfMliR8Qd2XgZepmLvybT1-JwFsgSkQ54eXD-Bdgs9s3wtXrVDIWeLZ8e1m2JkZ7td2roxCUwwS7y58jHf1_haUjJYkZJV3HkngbSyklwS8oKX2-UFIyvwK-iiXYK6ekYSklFfMWwDiPpa8p6aexJHyJJSX7LcESLsfS9iqWMkrKYalISWI5JZ2x9CuUBH-RklJomcetyE_hGl3lKTFatXdBuPGe3KFwGE3Q0G9Zfasx2CNwk6dWbvDoaoZzp9rGI6w_BbFxp9IL_GgazI5fmiSoALlCgtCIKwHGTkVzAtP3tMDem4RxHR_znHZ_OByeJPzaNubhQ9wZ-1P5W-8hUmNlahv1uvtD9DaRFcrbF2nlqdEAK2br28yaDjf3O4IHs7n8PBbRodNypiIcqvVtczUKO9p6Hq_id8ypotpfq_v7jiRpw4G5BV1jHM9fdx2NRA1pGXFvNomb_VfFH-hrz3-YGFYaGeFn_anPuf64zwHG9XWe9r2JwIsC5ogOoJAOJl2Yroiue9oXyBBdU02y55uc1u7onXZbb7SNVqPJuCiIt3yzxhDP52v_ANG6Tpw",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=FixaFniczVXdcqJIFH6AfY7lxozgX4ypoqa6EZREE9Go4xWFgA0KtNIgwbt9l92X2qfZBlEhwbgzF1t7qtqmm-P5__j--NOxvc3fv_1lBcGWPLJsFEVVhDFyzKqOq7bHaiT2dHaFHeLr1vcwdEw-qghAVmRBlibz1kabi4zl8KbHIIe3PSbe8w1GJzzHmDYve5NACycD0P7h1X08Wj_NA6Q0mdQqry41Yq6p2_c1YVWW_mx-b3TpoUqqpqf2YDUawt37RqqPlsNqnat1qq-s5lId8N-JqCCY7E9AuK5EX4m3TSUGZADFnCUZoHSHF63F8bWgpK8EdNUaPPocp-oKXV310I-69DarT_fqf6kLWDhGaSwARGmUENi3s8mJkuVyyuuLSp21i5JVD19u8j0uxFoQFBWOEo1CBYJwcZJ3Rs1YhTDOldIReOhj2IVgej1uWp9nGbQ2QBHLUsiLIs6a584NFj16wxqIDi7HLn261Vhbt_T0wSfJPAtvHQ739q6KPLPb1IA19QcKjtGzOetv6-q7wupLqudgzTAN1VK57-m5Vq-1uE6j_XCXYkknZzCRPJjiqUXM-WjmuovqoAprJxgJx6aDTx0T6VmQSxKDQqZa0mJ4uU0alrVUkfJ2s1bCZK7FMSi29nmU1LV3OtIZPdDW5DUuXpPh_wyjo6CcMoVRGoiMM8W8xlGrl4NurrEyKPvMfMxb6YNTFsr6k2IBgALNdwNOhVl8tLwAioDEBAOC2IdZ1fSiDeFT2ZP06BcqK9Ilk-MTzOeQlEBWwBDIIrVpT2XaA5TM6jlQOfMliR8Qd2XgZepmLvybT1-JwFsgSkQ54eXD-Bdgs9s3wtXrVDIWeLZ8e1m2JkZ7td2roxCUwwS7y58jHf1_haUjJYkZJV3HkngbSyklwS8oKX2-UFIyvwK-iiXYK6ekYSklFfMWwDiPpa8p6aexJHyJJSX7LcESLsfS9iqWMkrKYalISWI5JZ2x9CuUBH-RklJomcetyE_hGl3lKTFatXdBuPGe3KFwGE3Q0G9Zfasx2CNwk6dWbvDoaoZzp9rGI6w_BbFxp9IL_GgazI5fmiSoALlCgtCIKwHGTkVzAtP3tMDem4RxHR_znHZ_OByeJPzaNubhQ9wZ-1P5W-8hUmNlahv1uvtD9DaRFcrbF2nlqdEAK2br28yaDjf3O4IHs7n8PBbRodNypiIcqvVtczUKO9p6Hq_id8ypotpfq_v7jiRpw4G5BV1jHM9fdx2NRA1pGXFvNomb_VfFH-hrz3-YGFYaGeFn_anPuf64zwHG9XWe9r2JwIsC5ogOoJAOJl2Yroiue9oXyBBdU02y55uc1u7onXZbb7SNVqPJuCiIt3yzxhDP52v_ANG6Tpw"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Best AI Study Tools in 2026: 8 AI Study Apps Compared",
+      "link": "https://laxuai.com/blog/best-ai-study-tools-2026",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESaAHrOzAVR-FO976iXO9Elb4dBOnedgdMm1-PUxVc58W840rB-ZO4hBZcWKghKq0BoXxC37nUbuCnaJDvs0SS6LZVnznLqjlQqhI5Dd4S6ubieLhSKM29QdhJLItFXi06zpHKCgdgETM1&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQFnoECCIQAQ&uoh=1",
+      "displayed_link": "https://laxuai.com \u203a Blog",
+      "favicon": "https://serpapi.com/images/i/UklGRiIBAABXRUJQVlA4IBYBAACwBQCdASocABwAPtEutFooIagoGAEAGglsAKwyhHXg-9shkwAX3HWY31cntGmZy8s-uzSi5AAA_uNS2YRmhRKK1pMKh6YekNyt3JTWGWzt7jX-SK0prFZEfctUjywVo0sbqUihtBdQmN8E6hBAszvN-egHBgZr_IbeF-z_a360j8LBbnd1XjevYkwrAZwtm5I5d_vXR9XF5EHuLj-bDQqMj8OYfuGZZvc5mEnaehnQKsl-qdgBSzLjbG4Zk2wtPzQVlptWHegv5MlfQk84xmIIyc_aceZJIdHHln1jb5H_zPDm3oGfffgGzaFsxmyPh9srLohIbo_mvDA94n8sLkjWRFdQTGnK0XfHf_tlsPCy48a8sKAAAA.webp",
+      "date": "5 Sept 2026",
+      "snippet": "1. Laxu AI \u2014 Best all-in-one AI study tool. Anki's scheduler is the most rigorous here and the only one that is fully documented: FSRS ...",
+      "snippet_highlighted_words": [
+        "Laxu AI"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "The results: 8 AI study tools...",
+            "link": "https://laxuai.com/blog/best-ai-study-tools-2026#the-results-8-ai-study-tools-ranked"
+          },
+          {
+            "title": "How to choose the right AI...",
+            "link": "https://laxuai.com/blog/best-ai-study-tools-2026#how-to-choose-the-right-ai-study-tool"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "1. Laxu AI \u2014 Best all-in-one AI study tool. Anki's scheduler is the most rigorous here and the only one that is fully documented: FSRS ...",
+          "source_info_link": "https://laxuai.com/blog/best-ai-study-tools-2026",
+          "icon": "https://serpapi.com/images/i/UklGRiIBAABXRUJQVlA4IBYBAACwBQCdASocABwAPtEutFooIagoGAEAGglsAKwyhHXg-9shkwAX3HWY31cntGmZy8s-uzSi5AAA_uNS2YRmhRKK1pMKh6YekNyt3JTWGWzt7jX-SK0prFZEfctUjywVo0sbqUihtBdQmN8E6hBAszvN-egHBgZr_IbeF-z_a360j8LBbnd1XjevYkwrAZwtm5I5d_vXR9XF5EHuLj-bDQqMj8OYfuGZZvc5mEnaehnQKsl-qdgBSzLjbG4Zk2wtPzQVlptWHegv5MlfQk84xmIIyc_aceZJIdHHln1jb5H_zPDm3oGfffgGzaFsxmyPh9srLohIbo_mvDA94n8sLkjWRFdQTGnK0XfHf_tlsPCy48a8sKAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Laxu AI"
+    },
+    {
+      "position": 2,
+      "title": "7 Best AI Study Tools for Students in 2026",
+      "link": "https://www.remnote.com/blog/best-ai-study-tools",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESaAHrOzAVKLMP1VKuzwT_RhO-MpScT6yAXJoZ31mzmV-eHQI8kPIjPQOUH4DmP6OLzsiojJ6C6O9dU8Gj_1_s-sy3tfBwVE3ulIef0z4__BnxTnGD8E0UULtor82enaq5xqWaORCSs2m6&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQFnoECCQQAQ&uoh=1",
+      "displayed_link": "https://www.remnote.com \u203a Blog",
+      "favicon": "https://serpapi.com/images/i/UklGRlABAABXRUJQVlA4IEQBAACwBwCdASocABwAPtE-tFooIigoFAEAGglsALEUGcCAuwDeTVUvgk9YwmAfoAH3_2tLS545YfDzpiEYUEgyxvoRfFhFUiAAAPa_wRNVFW_XdU2w96d6QxiEV7NuI7lhtOocdh5Rer-4Gew_a62ku429JDEDfF6XfBp2A96fUAnU1kfot6vjQnMuAtj_KXkm2346F0ExcRqb8Kzwx_tsbYVA5eo97kk1PbSj9-Lq5ALfZYO-vrM11QKRHZTtwxeuX3D1v_y-oTXh6BGpNOSrRfEIpqfgmLHcbzJISMzdE4BGq59ff97HHB6s9cpc3LctC7_gBipKpWmxibWTP-b6lvuRMH4sqlipmu3akNBPh_lpxlh9kwUbkRJ2BmfeUtmA6nbSu379c5Otxvxb5QdnYX70S40hbyN-fuHQYDykZIUe8h-qAAA.webp",
+      "date": "8 May 2026",
+      "snippet": "7 best AI study tools for students (Free) \u00b7 1. RemNote (Best for creating and studying with flashcards) \u00b7 2. NotebookLM (Best for deep research).",
+      "snippet_highlighted_words": [
+        "1. RemNote"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "7 best AI study tools for students (Free) \u00b7 1. RemNote (Best for creating and studying with flashcards) \u00b7 2. NotebookLM (Best for deep research).",
+          "source_info_link": "https://www.remnote.com/blog/best-ai-study-tools",
+          "icon": "https://serpapi.com/images/i/UklGRlABAABXRUJQVlA4IEQBAACwBwCdASocABwAPtE-tFooIigoFAEAGglsALEUGcCAuwDeTVUvgk9YwmAfoAH3_2tLS545YfDzpiEYUEgyxvoRfFhFUiAAAPa_wRNVFW_XdU2w96d6QxiEV7NuI7lhtOocdh5Rer-4Gew_a62ku429JDEDfF6XfBp2A96fUAnU1kfot6vjQnMuAtj_KXkm2346F0ExcRqb8Kzwx_tsbYVA5eo97kk1PbSj9-Lq5ALfZYO-vrM11QKRHZTtwxeuX3D1v_y-oTXh6BGpNOSrRfEIpqfgmLHcbzJISMzdE4BGq59ff97HHB6s9cpc3LctC7_gBipKpWmxibWTP-b6lvuRMH4sqlipmu3akNBPh_lpxlh9kwUbkRJ2BmfeUtmA6nbSu379c5Otxvxb5QdnYX70S40hbyN-fuHQYDykZIUe8h-qAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "RemNote",
+      "read_more_link": "https://www.remnote.com/blog/best-ai-study-tools#:~:text=7%20best%20AI%20study%20tools,for%20students%20(Free)&text=1.%20RemNote%20(Best%20for%20creating,and%20studying%20with%20flashcards)&text=2.%20NotebookLM%20(Best%20for%20deep,research)"
+    },
+    {
+      "position": 3,
+      "title": "Mindgrasp | The #1 AI Study Tool for Students",
+      "link": "https://www.mindgrasp.ai/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESUQHrOzAVVly7btMGEn-fKY4WAUfMKg07hWRUeHhAFXOOAms5oF-JkVnluvKKI8BfUdx6M9SBub2ERm3lfmOKUk3DrGkYUi8jo65HjTWZbcB7KA&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQFnoECCEQAQ&uoh=1",
+      "displayed_link": "https://www.mindgrasp.ai",
+      "favicon": "https://serpapi.com/images/i/UklGRowBAABXRUJQVlA4IIABAADwBwCdASogACAAPtEutFooIagoGAEAGglsAJ0yhHmOgrwFXq3gBgAVoI5RIbrTMvH78eRqM7X8sad_0AtvjQit8ZSH_5L0eaAA_v7DldxFAnw2bBBNOWMppTkn0tVowAMXOfAgikXdtZva2SXauO7AFX37j7QfktDzqY_HYdhFfKSRRfZZa0o1xW5dI5xYFmn3wFvOlipb-jH_1sCAO_ftIGv1tONzlnZeOSNrr7gW6vO1TMM4jggv-j7kNAKTgNj5YK6IhOz7KhyVh1hsmMqmCsShMeRuSDCqapPS_hUZpaYGiiHwu2DhYNPdB07xJmTnh_7d2AMA6Z1kIvwtDwJiRYyrFlZuWcBxIIwpDd7XCng-y1rs8RKqVDElr3LVzvAq7havIt1N6b7WckWUe9X1co6luEHAsqPiVxD_eKM1KzqUJjoKx2hUgFTAxt5KqZpbOzsuyNMV7QWlvxDegJb2aN6-gezIn0a_zz9p1ZH_dfIBsmHArzEp1TVKcFegAAA.webp",
+      "snippet": "The #1 AI study tool for students. Turn lectures into notes, flashcards, and quizzes in seconds. flashcards, quizzes, summary, and AI tutor included.",
+      "snippet_highlighted_words": [
+        "The #1 AI study tool for students"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The #1 AI study tool for students. Turn lectures into notes, flashcards, and quizzes in seconds. flashcards, quizzes, summary, and AI tutor included.",
+          "source_info_link": "https://www.mindgrasp.ai/",
+          "icon": "https://serpapi.com/images/i/UklGRowBAABXRUJQVlA4IIABAADwBwCdASogACAAPtEutFooIagoGAEAGglsAJ0yhHmOgrwFXq3gBgAVoI5RIbrTMvH78eRqM7X8sad_0AtvjQit8ZSH_5L0eaAA_v7DldxFAnw2bBBNOWMppTkn0tVowAMXOfAgikXdtZva2SXauO7AFX37j7QfktDzqY_HYdhFfKSRRfZZa0o1xW5dI5xYFmn3wFvOlipb-jH_1sCAO_ftIGv1tONzlnZeOSNrr7gW6vO1TMM4jggv-j7kNAKTgNj5YK6IhOz7KhyVh1hsmMqmCsShMeRuSDCqapPS_hUZpaYGiiHwu2DhYNPdB07xJmTnh_7d2AMA6Z1kIvwtDwJiRYyrFlZuWcBxIIwpDd7XCng-y1rs8RKqVDElr3LVzvAq7havIt1N6b7WckWUe9X1co6luEHAsqPiVxD_eKM1KzqUJjoKx2hUgFTAxt5KqZpbOzsuyNMV7QWlvxDegJb2aN6-gezIn0a_zz9p1ZH_dfIBsmHArzEp1TVKcFegAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Mindgrasp AI"
+    },
+    {
+      "position": 4,
+      "title": "What AI so you use for studying? : r/studytips",
+      "link": "https://www.reddit.com/r/studytips/comments/1bp3vah/what_ai_so_you_use_for_studying/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESjAEB6zswFSl8wEj3VpqHW4vPdUB2nRsL72iiz55fg_BshcJPcjPg2WsSpx-l6-FOY8noCDf12kn_ndTbW8wdKoo6CrZgXmTpbNM4U2FdADDPxvBJSnselcxYPfIlptScwKOCxL588CQeSRcivkcjD409pojRb0nZX0L-MRB5bGXUQ0CPTxhbC-wF_QlLgQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQFnoECCoQAQ&uoh=1",
+      "displayed_link": "370+ comments \u00b7 2 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Just curious if some of you use some kind of artificial intelligence for studying and what kind of ingenious ways you implement. I read there's some sort ...",
+      "sitelinks": {
+        "list": [
+          {
+            "title": "Better AI for study and research? : r/ChatGPT - Reddit",
+            "link": "https://www.reddit.com/r/ChatGPT/comments/1dp16mq/better_ai_for_study_and_research/",
+            "answer_count": 21,
+            "date": "26 Jun 2024"
+          },
+          {
+            "title": "What are some study tools/apps you use that doesn't ...",
+            "link": "https://www.reddit.com/r/studying/comments/1kb8bap/what_are_some_study_toolsapps_you_use_that_doesnt/",
+            "answer_count": 13,
+            "date": "30 Apr 2025"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "I use Mistral-Nemo as an alternative to ChatGPT. the ones that help most are TeachBetter.ai, Notion AI, and Anki.",
+          "source_info_link": "https://www.reddit.com/r/studytips/comments/1bp3vah/what_ai_so_you_use_for_studying/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/studytips"
+    },
+    {
+      "position": 5,
+      "title": "Top 10 Best Free AI Tools for Students in 2026",
+      "link": "https://www.shakiledu.com/articles/blog/general/top-10-best-free-ai-tools-for-students",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESjgEB6zswFTjDOg6ugCXLSdhu_9LtthgLKncoCOH2YD6Kk1yAzL9URaeF0O3wG4lSJhT8uOne_sWTf_61Sh-itPZc8HPdsNd8tOLQUSoadxNGRfTOpBiFph6Y8vsK-pr97J4msbgicN0nafWBV_9noYMBPDVnwDaV1ps48HJWbPj_Wa1gkOHJC41f3eABYJXv&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQFnoECEkQAQ&uoh=1",
+      "displayed_link": "https://www.shakiledu.com \u203a articles \u203a blog \u203a general \u203a t...",
+      "favicon": "https://serpapi.com/images/i/UklGRmIBAABXRUJQVlA4IFYBAABwBwCdASogACAAPtEutFooIagoGAEAGglsAJ0yhHmfmfCCPK95LX4FUkfTVXIPSfmQ6kXYwMpIdyosMXw1iyF6dhfaAAD-_klg-gz9yz38uTe2FUCUE9U_9H_95M_iz5hffYdRm3Zf8hv9brKhLn28MBAxfdub_f5qi_Vajzn9HsdjJFSOt8j2GnsfYg1dgc3kD-C9NfdUC0djSBbIGnA11lNbf_-h0h36otvwd19ywbf4p3nTR_nUOv5inMs7yPMwKmKERD9WvMYRsxUEYf1tRL7-osDRO1hm4RSquDOmhCJacyVj9HWt-GSjc-b2Zu1tZ6JdOnNYYJhO1WZ1H_mly0ac7yNXoWo87ubh1Vepwuyu9061YMMWw7h-0KzjLM7UPuAMFTu2jtaKs5d_sto_MouAb2FY8f2Te7wGgdryc6k7x1HdhM50IMjmwwSBkn57ZxrgAAA.webp",
+      "date": "24 Mar 2026",
+      "snippet": "The top 10 free AI tools for students in 2026: NotebookLM, Google Gemini, Grammarly, QuillBot, ChatPDF, ChatGPT, Notion AI, AskCodi, Tutor AI, ...",
+      "snippet_highlighted_words": [
+        "NotebookLM"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The top 10 free AI tools for students in 2026: NotebookLM, Google Gemini, Grammarly, QuillBot, ChatPDF, ChatGPT, Notion AI, AskCodi, Tutor AI, ...",
+          "source_info_link": "https://www.shakiledu.com/articles/blog/general/top-10-best-free-ai-tools-for-students",
+          "icon": "https://serpapi.com/images/i/UklGRmIBAABXRUJQVlA4IFYBAABwBwCdASogACAAPtEutFooIagoGAEAGglsAJ0yhHmfmfCCPK95LX4FUkfTVXIPSfmQ6kXYwMpIdyosMXw1iyF6dhfaAAD-_klg-gz9yz38uTe2FUCUE9U_9H_95M_iz5hffYdRm3Zf8hv9brKhLn28MBAxfdub_f5qi_Vajzn9HsdjJFSOt8j2GnsfYg1dgc3kD-C9NfdUC0djSBbIGnA11lNbf_-h0h36otvwd19ywbf4p3nTR_nUOv5inMs7yPMwKmKERD9WvMYRsxUEYf1tRL7-osDRO1hm4RSquDOmhCJacyVj9HWt-GSjc-b2Zu1tZ6JdOnNYYJhO1WZ1H_mly0ac7yNXoWo87ubh1Vepwuyu9061YMMWw7h-0KzjLM7UPuAMFTu2jtaKs5d_sto_MouAb2FY8f2Te7wGgdryc6k7x1HdhM50IMjmwwSBkn57ZxrgAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Shakil Education Group",
+      "read_more_link": "https://www.shakiledu.com/articles/blog/general/top-10-best-free-ai-tools-for-students#:~:text=The%20top%2010%20free%20AI,smarter%2C%20faster%2C%20and%20more%20effective."
+    },
+    {
+      "position": 6,
+      "title": "5 Best AI Tools for Students in 2026",
+      "link": "https://boterview.com/a/ai-tool-studying",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYAHrOzAVA9cEvOhE0Da7Kp7hQZLKNgb2pl3jzJEeLk4IS-KWdWGZYLYje36SmZYKeg4Z40Xu-DpmqnhblZrvpWByvnbHRaQ2mEmE-CxVyYk2VdJoEa9pNZP5LPrGLzMgIg&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQFnoECEoQAQ&uoh=1",
+      "displayed_link": "https://boterview.com \u203a ai-tool-studying",
+      "favicon": "https://serpapi.com/images/i/UklGRo4BAABXRUJQVlA4IIIBAACwBwCdASocABwAPtEutFooIagoGAEAGglsAJ0y3sDxDO7Jd5rrltICgBDPvGXfpl0htMNNKf-yGTU6XnDcgdhtqPbG6x4AAP7-w58OMXRdwTpHOP7_-wF900FDkTsODMkUzdEiefDUZj3Xm2z1PpyUbiu-NteoBlYPLaWtcaK66btm6Hwpb45KoKN-Y_9yQ-__nAYBKx-n2td3PN52DjufL8zTzZFBaW32s5OvuT9Yq8YPiRvIgWTyq1Sbgt9nG1mBEJIwu09zNOZaT229iOokxcuz801zan61TO7okktMnrZ-j4SMjEzapxsHel8EP4dLV1Vw4B99q6pW5I7dRpM5KAwY0uszfU-kiLGteWX5jJ5VJfhymzj8DrWTZuOgAFntXDWn-eoEII5xvfE5MUnevvHhhj1XVu4o_aCif-zGkIaTvpuQAgehD8UIIcPbKCB3Hu7QxP4paaKktgqLCymRGzo0OnLq_0MbpVhuZpnyvXih2TGJXQGcnE_AgPaQ94AAAA.webp",
+      "date": "9 Sept 2026",
+      "snippet": "1. Boterview: The Best AI for Active Learning \u00b7 2. Perplexity AI: The Best AI Tool for Academic Research \u00b7 3. NotebookLM: The Best AI Notetaking ...",
+      "snippet_highlighted_words": [
+        "Boterview: The Best AI for Active Learning"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "1. Boterview: The Best AI for Active Learning \u00b7 2. Perplexity AI: The Best AI Tool for Academic Research \u00b7 3. NotebookLM: The Best AI Notetaking ...",
+          "source_info_link": "https://boterview.com/a/ai-tool-studying",
+          "icon": "https://serpapi.com/images/i/UklGRo4BAABXRUJQVlA4IIIBAACwBwCdASocABwAPtEutFooIagoGAEAGglsAJ0y3sDxDO7Jd5rrltICgBDPvGXfpl0htMNNKf-yGTU6XnDcgdhtqPbG6x4AAP7-w58OMXRdwTpHOP7_-wF900FDkTsODMkUzdEiefDUZj3Xm2z1PpyUbiu-NteoBlYPLaWtcaK66btm6Hwpb45KoKN-Y_9yQ-__nAYBKx-n2td3PN52DjufL8zTzZFBaW32s5OvuT9Yq8YPiRvIgWTyq1Sbgt9nG1mBEJIwu09zNOZaT229iOokxcuz801zan61TO7okktMnrZ-j4SMjEzapxsHel8EP4dLV1Vw4B99q6pW5I7dRpM5KAwY0uszfU-kiLGteWX5jJ5VJfhymzj8DrWTZuOgAFntXDWn-eoEII5xvfE5MUnevvHhhj1XVu4o_aCif-zGkIaTvpuQAgehD8UIIcPbKCB3Hu7QxP4paaKktgqLCymRGzo0OnLq_0MbpVhuZpnyvXih2TGJXQGcnE_AgPaQ94AAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Boterview AI",
+      "read_more_link": "https://boterview.com/a/ai-tool-studying#:~:text=1.%20Boterview%3A%20The%20Best%20AI,for%20Active%20Learning&text=2.%20Perplexity%20AI%3A%20The%20Best,AI%20Tool%20for%20Academic%20Research&text=3.%20NotebookLM%3A%20The%20Best%20AI,Notetaking%20App"
+    },
+    {
+      "position": 7,
+      "title": "Best AI Tools for Studying in 2026 (Tested by Students)",
+      "link": "https://notesxp.app/blog/best-ai-tools-for-studying-2026/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScQHrOzAV8EbTta-4USQPpcNoLkSM7LhI-LTkwprR1gAmnNR182JK22bbrENDCIyoUJMu5gYiWm2TWcY_g5pvAy6VyGwH1XKy6LSj2V9yIYfVUJME1pd7RguLxMc9w2NdnBbhXnDi5uUfFlZmRpTinm0u&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQFnoECFMQAQ&uoh=1",
+      "displayed_link": "https://notesxp.app \u203a blog \u203a best-ai-tools-for-studying-2...",
+      "favicon": "https://serpapi.com/images/i/UklGRoYBAABXRUJQVlA4IHoBAACQBwCdASocABwAPtEutFooIagoGAEAGglsAJ0yhHj3rvD0w52ggQDny_YxK8D3GoQ6Y8D3KxzGx8kIPe4_zMHt_KsW0QAA_m9zUghW9KrVLnYkvaLEaROLtk_1MjIXP_2__crVodXkORiKQj02ggTQe5xTWL-DCsyuMEg4YH6ez1z51gR1uY2Af_gdOo3gAWF2zXIvHqoek7vNBtPBN0-RKmQ_8pzeH_jkbiLE0KJauZ4jgfTHcv0VSK0HL75be18eXvb_QtIGt_NzmXDDvUSWOMBT1PurQfEU6fCJD1wgfvMl_U8hWLNXs2j0mzfN-93Qr_V0p6Z_ixBZ4KtxGsiX114oH833h-2xVGINdQ9KV5XabF1kdgSyM5pmcbb_ghClHFgGUY_Pr5Lu75ScDiqDEchKvWC2EjJN-umbTTB3M11pL2KU6CNAKUJL3u2e-v744UmkueSNFeteYwTLxf7X39aD-D1bChfZRz0_57h3-750HD-rtC0xwAA.webp",
+      "date": "11 May 2026",
+      "snippet": "We tested the top AI study apps like Thea, NotesXP, NotebookLM and more so you don't have to. Here's what actually works for students in ...",
+      "snippet_highlighted_words": [
+        "Thea, NotesXP, NotebookLM"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "We tested the top AI study apps like Thea, NotesXP, NotebookLM and more so you don't have to. Here's what actually works for students in ...",
+          "source_info_link": "https://notesxp.app/blog/best-ai-tools-for-studying-2026/",
+          "icon": "https://serpapi.com/images/i/UklGRoYBAABXRUJQVlA4IHoBAACQBwCdASocABwAPtEutFooIagoGAEAGglsAJ0yhHj3rvD0w52ggQDny_YxK8D3GoQ6Y8D3KxzGx8kIPe4_zMHt_KsW0QAA_m9zUghW9KrVLnYkvaLEaROLtk_1MjIXP_2__crVodXkORiKQj02ggTQe5xTWL-DCsyuMEg4YH6ez1z51gR1uY2Af_gdOo3gAWF2zXIvHqoek7vNBtPBN0-RKmQ_8pzeH_jkbiLE0KJauZ4jgfTHcv0VSK0HL75be18eXvb_QtIGt_NzmXDDvUSWOMBT1PurQfEU6fCJD1wgfvMl_U8hWLNXs2j0mzfN-93Qr_V0p6Z_ixBZ4KtxGsiX114oH833h-2xVGINdQ9KV5XabF1kdgSyM5pmcbb_ghClHFgGUY_Pr5Lu75ScDiqDEchKvWC2EjJN-umbTTB3M11pL2KU6CNAKUJL3u2e-v744UmkueSNFeteYwTLxf7X39aD-D1bChfZRz0_57h3-750HD-rtC0xwAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "NotesXP"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Best ai study tool alternatives reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Best+ai+study+tool+alternatives+reddit&sa=X&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ1QJ6BAhBEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+ai+study+tool+alternatives+reddit"
+    },
+    {
+      "block_position": 1,
+      "query": "Best ai study tool alternatives free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Best+ai+study+tool+alternatives+free&sa=X&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ1QJ6BAhCEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+ai+study+tool+alternatives+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Best AI tools for students studying",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Best+AI+tools+for+students+studying&sa=X&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ1QJ6BAhIEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+tools+for+students+studying"
+    },
+    {
+      "block_position": 1,
+      "query": "Which AI is best for study free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Which+AI+is+best+for+study+free&sa=X&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ1QJ6BAhHEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Which+AI+is+best+for+study+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Best AI for study notes",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Best+AI+for+study+notes&sa=X&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+for+study+notes"
+    },
+    {
+      "block_position": 1,
+      "query": "Mindgrasp AI",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Mindgrasp+AI&sa=X&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ1QJ6BAhFEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Mindgrasp+AI"
+    },
+    {
+      "block_position": 1,
+      "query": "Free study AI tools",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Free+study+AI+tools&sa=X&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Free+study+AI+tools"
+    },
+    {
+      "block_position": 1,
+      "query": "Free AI study tools for students",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Free+AI+study+tools+for+students&sa=X&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ1QJ6BAhDEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Free+AI+study+tools+for+students"
+    }
+  ],
+  "discussions_and_forums": [
+    {
+      "title": "What are some study tools/apps you use that doesn't use AI?",
+      "link": "https://www.reddit.com/r/studying/comments/1kb8bap/what_are_some_study_toolsapps_you_use_that_doesnt/",
+      "date": "1 year ago",
+      "extensions": [
+        "r/studying",
+        "10+ comments"
+      ],
+      "source": "Reddit",
+      "answers": [
+        {
+          "link": "https://www.reddit.com/r/studying/comments/1kb8bap/what_are_some_study_toolsapps_you_use_that_doesnt/mpsga4h/",
+          "extensions": [
+            "Top answer",
+            "a year ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/studying/comments/1kb8bap/what_are_some_study_toolsapps_you_use_that_doesnt/mpsmlki/",
+          "extensions": [
+            "a year ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/studying/comments/1kb8bap/what_are_some_study_toolsapps_you_use_that_doesnt/oczu9s9/",
+          "extensions": [
+            "5 months ago"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "What is the best AI tool to study with apart from chatgpt?",
+      "link": "https://www.quora.com/What-is-the-best-AI-tool-to-study-with-apart-from-chatgpt",
+      "date": "1 year ago",
+      "extensions": [
+        "40+ answers"
+      ],
+      "source": "Quora",
+      "answers": [
+        {
+          "link": "https://www.quora.com/What-is-the-best-AI-tool-to-study-with-apart-from-chatgpt?top_ans=1477743865240617",
+          "extensions": [
+            "Top answer",
+            "15 votes",
+            "a year ago"
+          ]
+        },
+        {
+          "link": "https://www.quora.com/What-is-the-best-AI-tool-to-study-with-apart-from-chatgpt?top_ans=1477743912427803",
+          "extensions": [
+            "7 votes",
+            "2 months ago"
+          ]
+        },
+        {
+          "link": "https://www.quora.com/What-is-the-best-AI-tool-to-study-with-apart-from-chatgpt?top_ans=1477743912281648",
+          "extensions": [
+            "3 votes",
+            "2 months ago"
+          ]
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=InStauSLA7Xn2roPjJWtgQ4&start=10&sa=N&sstk=AS6-VmKwS1a_rMTk2aZQKRakPpqFErA9GcCRqXBOjyAQA2lozPA8unEQ0VKhg1__AhhbZI22X8NxeMAlU4M7cs-8bgA3E-LxIK3TvQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ8NMDegQIOhAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=InStauSLA7Xn2roPjJWtgQ4&start=10&sa=N&sstk=AS6-VmKwS1a_rMTk2aZQKRakPpqFErA9GcCRqXBOjyAQA2lozPA8unEQ0VKhg1__AhhbZI22X8NxeMAlU4M7cs-8bgA3E-LxIK3TvQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ8tMDegQIOhAE",
+      "3": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=InStauSLA7Xn2roPjJWtgQ4&start=20&sa=N&sstk=AS6-VmKwS1a_rMTk2aZQKRakPpqFErA9GcCRqXBOjyAQA2lozPA8unEQ0VKhg1__AhhbZI22X8NxeMAlU4M7cs-8bgA3E-LxIK3TvQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ8tMDegQIOhAG",
+      "4": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=InStauSLA7Xn2roPjJWtgQ4&start=30&sa=N&sstk=AS6-VmKwS1a_rMTk2aZQKRakPpqFErA9GcCRqXBOjyAQA2lozPA8unEQ0VKhg1__AhhbZI22X8NxeMAlU4M7cs-8bgA3E-LxIK3TvQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ8tMDegQIOhAI",
+      "5": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=InStauSLA7Xn2roPjJWtgQ4&start=40&sa=N&sstk=AS6-VmKwS1a_rMTk2aZQKRakPpqFErA9GcCRqXBOjyAQA2lozPA8unEQ0VKhg1__AhhbZI22X8NxeMAlU4M7cs-8bgA3E-LxIK3TvQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ8tMDegQIOhAK",
+      "6": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=InStauSLA7Xn2roPjJWtgQ4&start=50&sa=N&sstk=AS6-VmKwS1a_rMTk2aZQKRakPpqFErA9GcCRqXBOjyAQA2lozPA8unEQ0VKhg1__AhhbZI22X8NxeMAlU4M7cs-8bgA3E-LxIK3TvQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ8tMDegQIOhAM",
+      "7": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=InStauSLA7Xn2roPjJWtgQ4&start=60&sa=N&sstk=AS6-VmKwS1a_rMTk2aZQKRakPpqFErA9GcCRqXBOjyAQA2lozPA8unEQ0VKhg1__AhhbZI22X8NxeMAlU4M7cs-8bgA3E-LxIK3TvQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ8tMDegQIOhAO",
+      "8": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=InStauSLA7Xn2roPjJWtgQ4&start=70&sa=N&sstk=AS6-VmKwS1a_rMTk2aZQKRakPpqFErA9GcCRqXBOjyAQA2lozPA8unEQ0VKhg1__AhhbZI22X8NxeMAlU4M7cs-8bgA3E-LxIK3TvQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ8tMDegQIOhAQ",
+      "9": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=InStauSLA7Xn2roPjJWtgQ4&start=80&sa=N&sstk=AS6-VmKwS1a_rMTk2aZQKRakPpqFErA9GcCRqXBOjyAQA2lozPA8unEQ0VKhg1__AhhbZI22X8NxeMAlU4M7cs-8bgA3E-LxIK3TvQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ8tMDegQIOhAS",
+      "10": "https://www.google.co.in/search?q=best+AI+study+tool+alternatives&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=InStauSLA7Xn2roPjJWtgQ4&start=90&sa=N&sstk=AS6-VmKwS1a_rMTk2aZQKRakPpqFErA9GcCRqXBOjyAQA2lozPA8unEQ0VKhg1__AhhbZI22X8NxeMAlU4M7cs-8bgA3E-LxIK3TvQ&ved=2ahUKEwjkpLKK0_iWAxW1s1YBHYxKK-AQ8tMDegQIOhAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+alternatives&start=90"
+    }
+  }
+}

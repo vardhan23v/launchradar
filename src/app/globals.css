@@ -1,38 +1,161 @@
 @import "tailwindcss";
 
+/* LaunchRadar reads like a typeset research report: paper, ink, hairline rules,
+   and one signal colour used only where something is a finding or an action. */
 :root {
-  --background: #fafaf9;
-  --foreground: #18181b;
-  --accent: #4f46e5;
-  --accent-soft: #eef2ff;
-  --border: #e4e4e7;
-  --muted: #71717a;
+  --background: #fbfaf7;
+  --surface: #fbfaf7;
+  --surface-2: #f1efe9;
+  --ink: #151513;
+  --muted: #6b6a64;
+  --line: #d9d6cc;
+  --rule: #151513;
+  --accent: #c2410c;
+  --accent-soft: #f7e6dc;
+  --on-accent: #ffffff;
+  --ok: #2f6b3a;
+  --warn: #8a5a00;
+  --danger: #a3261c;
+  --mark: #fbe3a3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121210;
+    --surface: #121210;
+    --surface-2: #1c1c19;
+    --ink: #ecebe6;
+    --muted: #97958c;
+    --line: #2e2d29;
+    --rule: #ecebe6;
+    --accent: #f08a4b;
+    --accent-soft: #33200f;
+    --on-accent: #1a0d04;
+    --ok: #7fbf8a;
+    --warn: #d9a441;
+    --danger: #ee7c70;
+    --mark: #5a4410;
+  }
+  html {
+    color-scheme: dark;
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-foreground: var(--ink);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-border: var(--line);
+  --color-line: var(--line);
+  --color-rule: var(--rule);
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
-  --color-border: var(--border);
-  --color-muted: var(--muted);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-html {
-  color-scheme: light;
+  --color-on-accent: var(--on-accent);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-mark: var(--mark);
+  --font-sans: var(--font-ui);
+  --font-serif: var(--font-text);
+  --font-mono: var(--font-data);
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-size: 14px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.55;
+  font-feature-settings: "ss01", "cv11";
 }
 
-code {
-  font-family: var(--font-mono), monospace;
-  font-size: 0.85em;
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+mark {
+  background: var(--mark);
+  color: inherit;
+  padding: 0 1px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+a,
+button {
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+/* small caps label used for section kickers and table heads */
+.kicker {
+  font-family: var(--font-ui), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* motion is functional only: reveal new content, show a bar filling, move the drawer */
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes fill {
+  from {
+    transform: scaleX(0);
+  }
+}
+@keyframes drawer {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+}
+@keyframes sweep {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+.appear {
+  animation: appear 0.25s ease-out both;
+}
+.fill {
+  transform-origin: left;
+  animation: fill 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.drawer {
+  animation: drawer 0.22s ease-out both;
+}
+.radar-sweep {
+  transform-origin: 50% 50%;
+  animation: sweep 2.4s linear infinite;
+}
+.blink {
+  animation: blink 1.4s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .appear,
+  .fill,
+  .drawer,
+  .radar-sweep,
+  .blink {
+    animation: none;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -40,8 +163,7 @@ code {
   height: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #d4d4d8;
-  border-radius: 8px;
+  background: var(--line);
 }
 ::-webkit-scrollbar-track {
   background: transparent;

@@ -1,0 +1,409 @@
+{
+  "search_metadata": {
+    "id": "6aad748ba39c28cffdb33ac3",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/_TynGK_2cA_qTB77L7ugHh-j03SJrRISwnOjQxPTcsY/6aad748ba39c28cffdb33ac3.json",
+    "markdown_endpoint": "https://serpapi.com/searches/_TynGK_2cA_qTB77L7ugHh-j03SJrRISwnOjQxPTcsY/6aad748ba39c28cffdb33ac3.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/_TynGK_2cA_qTB77L7ugHh-j03SJrRISwnOjQxPTcsY/6aad748ba39c28cffdb33ac3.json_with_pixel_position",
+    "created_at": "2026-09-18 17:27:39 UTC",
+    "processed_at": "2026-09-18 17:27:39 UTC",
+    "google_url": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&oq=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/_TynGK_2cA_qTB77L7ugHh-j03SJrRISwnOjQxPTcsY/6aad748ba39c28cffdb33ac3.html",
+    "total_time_taken": 0.73
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "AI writing tool with built\u2011in plagiarism compliance",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "AI writing tool with built\u2011in plagiarism compliance",
+    "total_results": 6380000,
+    "time_taken_displayed": 0.29,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Is there an AI tool that can detect plagiarism?",
+      "type": "ai_overview",
+      "page_token": "MTEO1XicHdDBboIwGADg7GU8Kkxx0cQsMihoFEbbv916WaAoaAt0wkbgtnfZU-1ptuz4Xb-vb32p1c-dKLvOtOvZrO_7adE0hT5NZTO91LO0HWo5k6nWWSrVevmwtB_PcuO3vfvU9G4CxjAPWzRENxayllaaJHofC3CesXLegZdNCnnPiQ0izA8RREGucJgoDBkzjgy3o-QoJKq7saBrj1flCI9Z5CWiQtkL7OsPVgvNgO35xUaUugP18l1WoUbUZXKqjCd1eRDaJMAdoBYasRKIBDb7M8uu2CSjGDGsVM67kFxdOEAxYh8Iujc7mOMyvwpI1OqV3ncJYduBzvUxBYSCy97FYTTEXJCIy5HXAtLRtzPmxjGoRcqdNlfCyvxFd5xrPDnLz8188j-2eTtX3drcmuIXXOR6ow",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=MTEO1XicHdDBboIwGADg7GU8Kkxx0cQsMihoFEbbv916WaAoaAt0wkbgtnfZU-1ptuz4Xb-vb32p1c-dKLvOtOvZrO_7adE0hT5NZTO91LO0HWo5k6nWWSrVevmwtB_PcuO3vfvU9G4CxjAPWzRENxayllaaJHofC3CesXLegZdNCnnPiQ0izA8RREGucJgoDBkzjgy3o-QoJKq7saBrj1flCI9Z5CWiQtkL7OsPVgvNgO35xUaUugP18l1WoUbUZXKqjCd1eRDaJMAdoBYasRKIBDb7M8uu2CSjGDGsVM67kFxdOEAxYh8Iujc7mOMyvwpI1OqV3ncJYduBzvUxBYSCy97FYTTEXJCIy5HXAtLRtzPmxjGoRcqdNlfCyvxFd5xrPDnLz8188j-2eTtX3drcmuIXXOR6ow",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS09WaGxZVFZxTVMxMFIydHNaM0kwVEVaV1dFZEVkM0ZKTFdWM2NGaEdYM2gzVnpadWJuQjBlakZLZEVwTGFXNVpaR3R1YzNwVFkwTmhOVFZZVTNkcGQyVXpXa1oxVVRoeGEzUjNNMDFsUzFoWGFXeDBaM2Q1ZVhCYVVSSVhha2hUZEdGMk5sUkNUMWhQYTFCSlVESlBlVXhwUVVVYUlrRkVjM0k1WmxOaGFWbzFWWEZtYjFWTllqRmFlSHB6UVZOWGFGVnZPVFpzVTNjIiwiZmN2IjoiMyIsImVpIjoiakhTdGF2NlRCT1hPa1BJUDJPeUxpQUUiLCJxYyI6IkNqTmhhU0IzY21sMGFXNW5JSFJ2YjJ3Z2QybDBhQ0JpZFdsc2RDQnBiaUJ3YkdGbmFXRnlhWE50SUdOdmJYQnNhV0Z1WTJVUUFIMldReXNfIiwicXVlc3Rpb24iOiJJcyB0aGVyZSBhbiBBSSB0b29sIHRoYXQgY2FuIGRldGVjdCBwbGFnaWFyaXNtPyIsImxrIjoiR2hGaGFTQm1iM0lnY0d4aFoybGhjbWx6YlEiLCJicyI6ImMyMk9RUXVDUUJCRzZicW5RcVRhMDV5N0JCSjBsQkFLNzBYblRVY2QyRndaeF9yNzdacUVoNjd2TWZNLWRWYjd2QWRwa0JGTUM2Y2N4RG5yZ1JFb1BDaFJzQkRvcktuSk1QWFBOSW4weWhCVWptZFVIZFhXX3ltWnJIMlF3TzJTZ2VrNmRpOHMwMFRyRGMza1VCY19xVEsxdXpkVU5DSDlaaEpxNi04RWZfSEFYc1pRRU1oOW1zUTZHdUUwWU9McU1OYXZBN2ZoQVZTTUNHR2ZJVjlmNjFqLW1lWGlBdyIsImlkIjoiZmNfakhTdGF2NlRCT1hPa1BJUDJPeUxpQUVfMSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS09WaGxZVFZxTVMxMFIydHNaM0kwVEVaV1dFZEVkM0ZKTFdWM2NGaEdYM2gzVnpadWJuQjBlakZLZEVwTGFXNVpaR3R1YzNwVFkwTmhOVFZZVTNkcGQyVXpXa1oxVVRoeGEzUjNNMDFsUzFoWGFXeDBaM2Q1ZVhCYVVSSVhha2hUZEdGMk5sUkNUMWhQYTFCSlVESlBlVXhwUVVVYUlrRkVjM0k1WmxOaGFWbzFWWEZtYjFWTllqRmFlSHB6UVZOWGFGVnZPVFpzVTNjIiwiZmN2IjoiMyIsImVpIjoiakhTdGF2NlRCT1hPa1BJUDJPeUxpQUUiLCJxYyI6IkNqTmhhU0IzY21sMGFXNW5JSFJ2YjJ3Z2QybDBhQ0JpZFdsc2RDQnBiaUJ3YkdGbmFXRnlhWE50SUdOdmJYQnNhV0Z1WTJVUUFIMldReXNfIiwicXVlc3Rpb24iOiJJcyB0aGVyZSBhbiBBSSB0b29sIHRoYXQgY2FuIGRldGVjdCBwbGFnaWFyaXNtPyIsImxrIjoiR2hGaGFTQm1iM0lnY0d4aFoybGhjbWx6YlEiLCJicyI6ImMyMk9RUXVDUUJCRzZicW5RcVRhMDV5N0JCSjBsQkFLNzBYblRVY2QyRndaeF9yNzdacUVoNjd2TWZNLWRWYjd2QWRwa0JGTUM2Y2N4RG5yZ1JFb1BDaFJzQkRvcktuSk1QWFBOSW4weWhCVWptZFVIZFhXX3ltWnJIMlF3TzJTZ2VrNmRpOHMwMFRyRGMza1VCY19xVEsxdXpkVU5DSDlaaEpxNi04RWZfSEFYc1pRRU1oOW1zUTZHdUUwWU9McU1OYXZBN2ZoQVZTTUNHR2ZJVjlmNjFqLW1lWGlBdyIsImlkIjoiZmNfakhTdGF2NlRCT1hPa1BJUDJPeUxpQUVfMSJ9"
+    },
+    {
+      "question": "Is drillbit UGC approved?",
+      "type": "ai_overview",
+      "page_token": "H7exv3icHdBdboIwAADg7DI-Kj_KpolZhlCwzjJaWrAvS20RkSJkEBHfdpedaqdZsu8I3_ePLq_V7xM_933brWazYRimRdMUOp_KZlpeZ6Ibr3ImhdZHIauV8-yYrye59rvB3TSDG9O2ZR42Eg_WxOhHmfKOPaBFE3ontS5xwB_IYF3kL2gasAEDHlIKLpndPPC1tWSqd9y_H0j9YohM-fLCYR7uLVEriPxlgIDaKQ8MYjTNFMQWqpRxBOAjrhbbPHQ1Cxaaax4lfpuwBEexhpoEyhEmdKiHwndiXrB_3hCqGDKK-UFXoyhNjKlBgNVuqY3P6sJpXC0PidXHhL2Nia33ggIQlNDFIRqjlJM8A1hmYE5pT0SNUMwU5AHGxF_ecHXfywTak5O8re3J_9j681T3q_arKf4A1tB3_g",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=H7exv3icHdBdboIwAADg7DI-Kj_KpolZhlCwzjJaWrAvS20RkSJkEBHfdpedaqdZsu8I3_ePLq_V7xM_933brWazYRimRdMUOp_KZlpeZ6Ibr3ImhdZHIauV8-yYrye59rvB3TSDG9O2ZR42Eg_WxOhHmfKOPaBFE3ontS5xwB_IYF3kL2gasAEDHlIKLpndPPC1tWSqd9y_H0j9YohM-fLCYR7uLVEriPxlgIDaKQ8MYjTNFMQWqpRxBOAjrhbbPHQ1Cxaaax4lfpuwBEexhpoEyhEmdKiHwndiXrB_3hCqGDKK-UFXoyhNjKlBgNVuqY3P6sJpXC0PidXHhL2Nia33ggIQlNDFIRqjlJM8A1hmYE5pT0SNUMwU5AHGxF_ecHXfywTak5O8re3J_9j681T3q_arKf4A1tB3_g",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS09WaGxZVFZxTVMxMFIydHNaM0kwVEVaV1dFZEVkM0ZKTFdWM2NGaEdYM2gzVnpadWJuQjBlakZLZEVwTGFXNVpaR3R1YzNwVFkwTmhOVFZZVTNkcGQyVXpXa1oxVVRoeGEzUjNNMDFsUzFoWGFXeDBaM2Q1ZVhCYVVSSVhha2hUZEdGMk5sUkNUMWhQYTFCSlVESlBlVXhwUVVVYUlrRkVjM0k1WmxOaGFWbzFWWEZtYjFWTllqRmFlSHB6UVZOWGFGVnZPVFpzVTNjIiwiZmN2IjoiMyIsImVpIjoiakhTdGF2NlRCT1hPa1BJUDJPeUxpQUUiLCJxYyI6IkNqTmhhU0IzY21sMGFXNW5JSFJ2YjJ3Z2QybDBhQ0JpZFdsc2RDQnBiaUJ3YkdGbmFXRnlhWE50SUdOdmJYQnNhV0Z1WTJVUUFIMldReXNfIiwicXVlc3Rpb24iOiJJcyBkcmlsbGJpdCBVR0MgYXBwcm92ZWQ/IiwibGsiOiJHaGhwY3lCa2NtbHNiR0pwZENCMVoyTWdZWEJ3Y205MlpXUSIsImJzIjoiYzIyT1FRdUNRQkJHNmJxblFxVGEwNXk3QkJKMGxCQUs3MFhuVFVjZDJGd1p4X3I3N1pxRWg2N3ZNZk0tZFZiN3ZBZHBrQkZNQzZjY3hEbnJnUkVvUENoUnNCRG9yS25KTVBYUE5JbjB5aEJVam1kVUhkWFdfeW1ackgyUXdPMlNnZWs2ZGk4czAwVHJEYzNrVUJjX3FUSzF1emRVTkNIOVpoSnE2LThFZl9IQVhzWlFFTWg5bXNRNkd1RTBZT0xxTU5hdkE3ZmhBVlNNQ0dHZklWOWY2MWotbWVYaUF3IiwiaWQiOiJmY19qSFN0YXY2VEJPWE9rUElQMk95TGlBRV8xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS09WaGxZVFZxTVMxMFIydHNaM0kwVEVaV1dFZEVkM0ZKTFdWM2NGaEdYM2gzVnpadWJuQjBlakZLZEVwTGFXNVpaR3R1YzNwVFkwTmhOVFZZVTNkcGQyVXpXa1oxVVRoeGEzUjNNMDFsUzFoWGFXeDBaM2Q1ZVhCYVVSSVhha2hUZEdGMk5sUkNUMWhQYTFCSlVESlBlVXhwUVVVYUlrRkVjM0k1WmxOaGFWbzFWWEZtYjFWTllqRmFlSHB6UVZOWGFGVnZPVFpzVTNjIiwiZmN2IjoiMyIsImVpIjoiakhTdGF2NlRCT1hPa1BJUDJPeUxpQUUiLCJxYyI6IkNqTmhhU0IzY21sMGFXNW5JSFJ2YjJ3Z2QybDBhQ0JpZFdsc2RDQnBiaUJ3YkdGbmFXRnlhWE50SUdOdmJYQnNhV0Z1WTJVUUFIMldReXNfIiwicXVlc3Rpb24iOiJJcyBkcmlsbGJpdCBVR0MgYXBwcm92ZWQ%2FIiwibGsiOiJHaGhwY3lCa2NtbHNiR0pwZENCMVoyTWdZWEJ3Y205MlpXUSIsImJzIjoiYzIyT1FRdUNRQkJHNmJxblFxVGEwNXk3QkJKMGxCQUs3MFhuVFVjZDJGd1p4X3I3N1pxRWg2N3ZNZk0tZFZiN3ZBZHBrQkZNQzZjY3hEbnJnUkVvUENoUnNCRG9yS25KTVBYUE5JbjB5aEJVam1kVUhkWFdfeW1ackgyUXdPMlNnZWs2ZGk4czAwVHJEYzNrVUJjX3FUSzF1emRVTkNIOVpoSnE2LThFZl9IQVhzWlFFTWg5bXNRNkd1RTBZT0xxTU5hdkE3ZmhBVlNNQ0dHZklWOWY2MWotbWVYaUF3IiwiaWQiOiJmY19qSFN0YXY2VEJPWE9rUElQMk95TGlBRV8xIn0%3D"
+    },
+    {
+      "question": "Which AI writing tool is best for writers?",
+      "type": "ai_overview",
+      "page_token": "ktHHeHicHdBLTuMwAABQcRmWrd3SolaqRjLYIQEb7NhO6s0otdOkifOBBNJ2N3eZU81pQHOBt3h__vpTW_-7OZfj2A_b-XyaplnRdYXPZ7abndp5NlxaO7eZ94fM1tv1_Rr-Otod_gzRw3uIuOp7_ShALM0ySTWNdb16keLTYOKt36CkQl38yNa5RioLyMQBX7wqcnL4XCmwGnJCgLtSEDebO96wIfaGUcl6U4mYLsDlUJmvPBgr8xRecky4q2FIW_Zs2zJiackp4FBfDeYget4DtxepadlTxHVbBlSGZ9WI9sdGDKK7DEQD9QYy7GKltUxSJy0spoxE8OCROizGROniIpOyxaV7jwkD-3S_0Dh6S_DmQ2HPab1ZycAjIboTV-JqK9-oxo2KmGtcFUv6AIfMuzdX-UFKDwTwlUxg4Kbbo_3aLW__f-5-H5tx2390xTcE1IL7",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=ktHHeHicHdBLTuMwAABQcRmWrd3SolaqRjLYIQEb7NhO6s0otdOkifOBBNJ2N3eZU81pQHOBt3h__vpTW_-7OZfj2A_b-XyaplnRdYXPZ7abndp5NlxaO7eZ94fM1tv1_Rr-Otod_gzRw3uIuOp7_ShALM0ySTWNdb16keLTYOKt36CkQl38yNa5RioLyMQBX7wqcnL4XCmwGnJCgLtSEDebO96wIfaGUcl6U4mYLsDlUJmvPBgr8xRecky4q2FIW_Zs2zJiackp4FBfDeYget4DtxepadlTxHVbBlSGZ9WI9sdGDKK7DEQD9QYy7GKltUxSJy0spoxE8OCROizGROniIpOyxaV7jwkD-3S_0Dh6S_DmQ2HPab1ZycAjIboTV-JqK9-oxo2KmGtcFUv6AIfMuzdX-UFKDwTwlUxg4Kbbo_3aLW__f-5-H5tx2390xTcE1IL7",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS09WaGxZVFZxTVMxMFIydHNaM0kwVEVaV1dFZEVkM0ZKTFdWM2NGaEdYM2gzVnpadWJuQjBlakZLZEVwTGFXNVpaR3R1YzNwVFkwTmhOVFZZVTNkcGQyVXpXa1oxVVRoeGEzUjNNMDFsUzFoWGFXeDBaM2Q1ZVhCYVVSSVhha2hUZEdGMk5sUkNUMWhQYTFCSlVESlBlVXhwUVVVYUlrRkVjM0k1WmxOaGFWbzFWWEZtYjFWTllqRmFlSHB6UVZOWGFGVnZPVFpzVTNjIiwiZmN2IjoiMyIsImVpIjoiakhTdGF2NlRCT1hPa1BJUDJPeUxpQUUiLCJxYyI6IkNqTmhhU0IzY21sMGFXNW5JSFJ2YjJ3Z2QybDBhQ0JpZFdsc2RDQnBiaUJ3YkdGbmFXRnlhWE50SUdOdmJYQnNhV0Z1WTJVUUFIMldReXNfIiwicXVlc3Rpb24iOiJXaGljaCBBSSB3cml0aW5nIHRvb2wgaXMgYmVzdCBmb3Igd3JpdGVycz8iLCJsayI6IkdoTmlaWE4wSUdGcElHWnZjaUIzY21sMFpYSnoiLCJicyI6ImMyMk9RUXVDUUJCRzZicW5RcVRhMDV5N0JCSjBsQkFLNzBYblRVY2QyRndaeF9yNzdacUVoNjd2TWZNLWRWYjd2QWRwa0JGTUM2Y2N4RG5yZ1JFb1BDaFJzQkRvcktuSk1QWFBOSW4weWhCVWptZFVIZFhXX3ltWnJIMlF3TzJTZ2VrNmRpOHMwMFRyRGMza1VCY19xVEsxdXpkVU5DSDlaaEpxNi04RWZfSEFYc1pRRU1oOW1zUTZHdUUwWU9McU1OYXZBN2ZoQVZTTUNHR2ZJVjlmNjFqLW1lWGlBdyIsImlkIjoiZmNfakhTdGF2NlRCT1hPa1BJUDJPeUxpQUVfMSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS09WaGxZVFZxTVMxMFIydHNaM0kwVEVaV1dFZEVkM0ZKTFdWM2NGaEdYM2gzVnpadWJuQjBlakZLZEVwTGFXNVpaR3R1YzNwVFkwTmhOVFZZVTNkcGQyVXpXa1oxVVRoeGEzUjNNMDFsUzFoWGFXeDBaM2Q1ZVhCYVVSSVhha2hUZEdGMk5sUkNUMWhQYTFCSlVESlBlVXhwUVVVYUlrRkVjM0k1WmxOaGFWbzFWWEZtYjFWTllqRmFlSHB6UVZOWGFGVnZPVFpzVTNjIiwiZmN2IjoiMyIsImVpIjoiakhTdGF2NlRCT1hPa1BJUDJPeUxpQUUiLCJxYyI6IkNqTmhhU0IzY21sMGFXNW5JSFJ2YjJ3Z2QybDBhQ0JpZFdsc2RDQnBiaUJ3YkdGbmFXRnlhWE50SUdOdmJYQnNhV0Z1WTJVUUFIMldReXNfIiwicXVlc3Rpb24iOiJXaGljaCBBSSB3cml0aW5nIHRvb2wgaXMgYmVzdCBmb3Igd3JpdGVycz8iLCJsayI6IkdoTmlaWE4wSUdGcElHWnZjaUIzY21sMFpYSnoiLCJicyI6ImMyMk9RUXVDUUJCRzZicW5RcVRhMDV5N0JCSjBsQkFLNzBYblRVY2QyRndaeF9yNzdacUVoNjd2TWZNLWRWYjd2QWRwa0JGTUM2Y2N4RG5yZ1JFb1BDaFJzQkRvcktuSk1QWFBOSW4weWhCVWptZFVIZFhXX3ltWnJIMlF3TzJTZ2VrNmRpOHMwMFRyRGMza1VCY19xVEsxdXpkVU5DSDlaaEpxNi04RWZfSEFYc1pRRU1oOW1zUTZHdUUwWU9McU1OYXZBN2ZoQVZTTUNHR2ZJVjlmNjFqLW1lWGlBdyIsImlkIjoiZmNfakhTdGF2NlRCT1hPa1BJUDJPeUxpQUVfMSJ9"
+    },
+    {
+      "question": "Is Turnitin free or paid?",
+      "type": "ai_overview",
+      "page_token": "BQ7I93icHdBLToNAGADgeJku28JITZs0RiwDrQVkHv-0bAwdnmUoEyEi7LyLp_I0Glff_vv6VtWt_rmLy77X3WaxGIZhXrRtobK5bOfVbZF0400uZKLUJZH1ZvWwMh5zuXW6wX5uBzviWsOOLJkXCN-NG5_hnHp6OqF4CiZuhQ6UJ0Rs6ZYnn1svoSBV4qQ0UNBT06JJPRjA18oHqLN6jUKu0dnQU4YxgHkeOStRcA3u6S5moVssU0E-oYGOGPE-29mKU6PzFR-pUCI18eoIWmeNdv4kKe8nivYWeP4IE16yBl65SQauyEfEW4pNveeIlOk15lG9PjOzjyg8jQwpP-EYu9XBJl4whiImgh2umSuNM4MywUpQIcdIKRo1cLzUKdBG27NcfmzR7H9s-5Y3_Ua_t8UvKeJ54g",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=BQ7I93icHdBLToNAGADgeJku28JITZs0RiwDrQVkHv-0bAwdnmUoEyEi7LyLp_I0Glff_vv6VtWt_rmLy77X3WaxGIZhXrRtobK5bOfVbZF0400uZKLUJZH1ZvWwMh5zuXW6wX5uBzviWsOOLJkXCN-NG5_hnHp6OqF4CiZuhQ6UJ0Rs6ZYnn1svoSBV4qQ0UNBT06JJPRjA18oHqLN6jUKu0dnQU4YxgHkeOStRcA3u6S5moVssU0E-oYGOGPE-29mKU6PzFR-pUCI18eoIWmeNdv4kKe8nivYWeP4IE16yBl65SQauyEfEW4pNveeIlOk15lG9PjOzjyg8jQwpP-EYu9XBJl4whiImgh2umSuNM4MywUpQIcdIKRo1cLzUKdBG27NcfmzR7H9s-5Y3_Ua_t8UvKeJ54g",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS09WaGxZVFZxTVMxMFIydHNaM0kwVEVaV1dFZEVkM0ZKTFdWM2NGaEdYM2gzVnpadWJuQjBlakZLZEVwTGFXNVpaR3R1YzNwVFkwTmhOVFZZVTNkcGQyVXpXa1oxVVRoeGEzUjNNMDFsUzFoWGFXeDBaM2Q1ZVhCYVVSSVhha2hUZEdGMk5sUkNUMWhQYTFCSlVESlBlVXhwUVVVYUlrRkVjM0k1WmxOaGFWbzFWWEZtYjFWTllqRmFlSHB6UVZOWGFGVnZPVFpzVTNjIiwiZmN2IjoiMyIsImVpIjoiakhTdGF2NlRCT1hPa1BJUDJPeUxpQUUiLCJxYyI6IkNqTmhhU0IzY21sMGFXNW5JSFJ2YjJ3Z2QybDBhQ0JpZFdsc2RDQnBiaUJ3YkdGbmFXRnlhWE50SUdOdmJYQnNhV0Z1WTJVUUFIMldReXNfIiwicXVlc3Rpb24iOiJJcyBUdXJuaXRpbiBmcmVlIG9yIHBhaWQ/IiwibGsiOiJHaFYwZFhKdWFYUnBiaUJtY21WbElHOXlJSEJoYVdRIiwiYnMiOiJjMjJPUVF1Q1FCQkc2YnFuUXFUYTA1eTdCQkowbEJBSzcwWG5UVWNkMkZ3Wnhfcjc3WnFFaDY3dk1mTS1kVmI3dkFkcGtCRk1DNmNjeERucmdSRW9QQ2hSc0JEb3JLbkpNUFhQTkluMHloQlVqbWRVSGRYV195bVpySDJRd08yU2dlazZkaThzMDBUckRjM2tVQmNfcVRLMXV6ZFVOQ0g5WmhKcTYtOEVmX0hBWHNaUUVNaDltc1E2R3VFMFlPTHFNTmF2QTdmaEFWU01DR0dmSVY5ZjYxai1tZVhpQXciLCJpZCI6ImZjX2pIU3RhdjZUQk9YT2tQSVAyT3lMaUFFXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS09WaGxZVFZxTVMxMFIydHNaM0kwVEVaV1dFZEVkM0ZKTFdWM2NGaEdYM2gzVnpadWJuQjBlakZLZEVwTGFXNVpaR3R1YzNwVFkwTmhOVFZZVTNkcGQyVXpXa1oxVVRoeGEzUjNNMDFsUzFoWGFXeDBaM2Q1ZVhCYVVSSVhha2hUZEdGMk5sUkNUMWhQYTFCSlVESlBlVXhwUVVVYUlrRkVjM0k1WmxOaGFWbzFWWEZtYjFWTllqRmFlSHB6UVZOWGFGVnZPVFpzVTNjIiwiZmN2IjoiMyIsImVpIjoiakhTdGF2NlRCT1hPa1BJUDJPeUxpQUUiLCJxYyI6IkNqTmhhU0IzY21sMGFXNW5JSFJ2YjJ3Z2QybDBhQ0JpZFdsc2RDQnBiaUJ3YkdGbmFXRnlhWE50SUdOdmJYQnNhV0Z1WTJVUUFIMldReXNfIiwicXVlc3Rpb24iOiJJcyBUdXJuaXRpbiBmcmVlIG9yIHBhaWQ%2FIiwibGsiOiJHaFYwZFhKdWFYUnBiaUJtY21WbElHOXlJSEJoYVdRIiwiYnMiOiJjMjJPUVF1Q1FCQkc2YnFuUXFUYTA1eTdCQkowbEJBSzcwWG5UVWNkMkZ3Wnhfcjc3WnFFaDY3dk1mTS1kVmI3dkFkcGtCRk1DNmNjeERucmdSRW9QQ2hSc0JEb3JLbkpNUFhQTkluMHloQlVqbWRVSGRYV195bVpySDJRd08yU2dlazZkaThzMDBUckRjM2tVQmNfcVRLMXV6ZFVOQ0g5WmhKcTYtOEVmX0hBWHNaUUVNaDltc1E2R3VFMFlPTHFNTmF2QTdmaEFWU01DR0dmSVY5ZjYxai1tZVhpQXciLCJpZCI6ImZjX2pIU3RhdjZUQk9YT2tQSVAyT3lMaUFFXzEifQ%3D%3D"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "jHfymHiczVXdcqpIEH6AfY5wY6L4L6miTs0gMWNERCXG3FAIOID8KGCIudt32Rfa232aHcAfSNSccy62dqpgfrqnp6e7v_n-_MuxvNU_f_xtRtE6vK9U4jguY9_HjlHW_LLlVdRw52mVpe-EgWb-CP1toBmWzmpm4LsGtd06BhuXOIAkxKGHyay5Umc8ZTqs4VHYYS2P2r2xdUoLWZoyLNZ-nETqW2sKxRdxNUKjmrgbWICn0lNYZaGGhk3ceLfDilIhv9VNvUsm5bBseEoPluviUHZr4d3Hki7X6CpTFiuqS3TAf9eQCbiknwD-shIRoe9NJXYQgHxmMLMOcDbAxyUBwKSDCEhJJ12yBgHm9g6mhgCCyjDqADA8qjQuO4xzk252PLcP64or-PN9g4fB076_Ggt4ZRmftgo52cXIc58qQSYmOkBAwDx3GAfgKfLJDRHoZeMmgI0R4B454F91XQbwA4EV-i46GAXxw2HSi0lGcEXHpHDpyiIgXbViaaaWDoIwqWduytB-r9FwOn4QTKPpc2zz88hpPk1pXlqOOlJFWxA9x1d1Q1dMhf6Rzqu1apNm6u3ObYolLTyCKcyDyRyNxHFv2tdcujwow-oBRtwxVVzRf57MuXNZJAHkzm1IZafCTsK-TxpWcyrouJtIBeuTHdlI4ppLfLdGajivcRpDcBZGaZNOTgC4TygvZ11BI2lmWhSHCsvdWfx6wzOFzcN4b1Dgi1L8KUQIkrKRjo4KRSnxFnJPRE52PUkCeM7QHxcDnZyAi7vIR2KBDnc6FHw24_PHWBhkuLAn5NcHfj_JMUxUs5cJWHtNGWTLeee-3Dw9BIGQ_5mn70zjfuaJwQe8fCr_AmyWrqj2jFadnnvSZNvlB3Y32NoL5QPh8zDx3cWvkY72v8JSRkloT0mXsYS-x1KaeHiFktIqEI5YSotSvowlM8XSF0oaHVVOlPQ5JDzOYekRXaWkX8cSuoYlePx_xRIJ4zksrS5hKXW5iCWzIxUoKYelEyUdsfQ7lMT9JiWl0DKyrshPWxtf5KnHcb_f5ybjZ7Pdx9XZtNEzmnNE46gTxd_y1NKN7l1Vd24VS7-HtX60028VsuDfGzq1YQEqxYEVWR4uRb7vlGIrMkuLreVEN3ztpkPfMFXLK60dFVtqYIVuiYB57ViqpxmU6wQ-S6ttyR4-65NgK2D_xa1O2xMd804kOO5kbur-0JqqHnDv2ruGhjYtn-k9bF4d0VsKc2Qr8t3GUadMVWjx7tjSOwu85QWs-UwrWsLnYRCoo4_tO2PLuy5f11b16kCcrbex-GLOmLB-9_o4fn2XB42WKs_Rpmu_-e34rpd6FrK1sbFpGa44mGDKDTSWZL6BwVACMww0wM2BRN5EWSUo42Ig9VpA4iEVaqpihG9sg1yM0Zh2W6u39Wa9Qbk42q1ZhqZCL2Cr_wKfnVkT",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=jHfymHiczVXdcqpIEH6AfY5wY6L4L6miTs0gMWNERCXG3FAIOID8KGCIudt32Rfa232aHcAfSNSccy62dqpgfrqnp6e7v_n-_MuxvNU_f_xtRtE6vK9U4jguY9_HjlHW_LLlVdRw52mVpe-EgWb-CP1toBmWzmpm4LsGtd06BhuXOIAkxKGHyay5Umc8ZTqs4VHYYS2P2r2xdUoLWZoyLNZ-nETqW2sKxRdxNUKjmrgbWICn0lNYZaGGhk3ceLfDilIhv9VNvUsm5bBseEoPluviUHZr4d3Hki7X6CpTFiuqS3TAf9eQCbiknwD-shIRoe9NJXYQgHxmMLMOcDbAxyUBwKSDCEhJJ12yBgHm9g6mhgCCyjDqADA8qjQuO4xzk252PLcP64or-PN9g4fB076_Ggt4ZRmftgo52cXIc58qQSYmOkBAwDx3GAfgKfLJDRHoZeMmgI0R4B454F91XQbwA4EV-i46GAXxw2HSi0lGcEXHpHDpyiIgXbViaaaWDoIwqWduytB-r9FwOn4QTKPpc2zz88hpPk1pXlqOOlJFWxA9x1d1Q1dMhf6Rzqu1apNm6u3ObYolLTyCKcyDyRyNxHFv2tdcujwow-oBRtwxVVzRf57MuXNZJAHkzm1IZafCTsK-TxpWcyrouJtIBeuTHdlI4ppLfLdGajivcRpDcBZGaZNOTgC4TygvZ11BI2lmWhSHCsvdWfx6wzOFzcN4b1Dgi1L8KUQIkrKRjo4KRSnxFnJPRE52PUkCeM7QHxcDnZyAi7vIR2KBDnc6FHw24_PHWBhkuLAn5NcHfj_JMUxUs5cJWHtNGWTLeee-3Dw9BIGQ_5mn70zjfuaJwQe8fCr_AmyWrqj2jFadnnvSZNvlB3Y32NoL5QPh8zDx3cWvkY72v8JSRkloT0mXsYS-x1KaeHiFktIqEI5YSotSvowlM8XSF0oaHVVOlPQ5JDzOYekRXaWkX8cSuoYlePx_xRIJ4zksrS5hKXW5iCWzIxUoKYelEyUdsfQ7lMT9JiWl0DKyrshPWxtf5KnHcb_f5ybjZ7Pdx9XZtNEzmnNE46gTxd_y1NKN7l1Vd24VS7-HtX60028VsuDfGzq1YQEqxYEVWR4uRb7vlGIrMkuLreVEN3ztpkPfMFXLK60dFVtqYIVuiYB57ViqpxmU6wQ-S6ttyR4-65NgK2D_xa1O2xMd804kOO5kbur-0JqqHnDv2ruGhjYtn-k9bF4d0VsKc2Qr8t3GUadMVWjx7tjSOwu85QWs-UwrWsLnYRCoo4_tO2PLuy5f11b16kCcrbex-GLOmLB-9_o4fn2XB42WKs_Rpmu_-e34rpd6FrK1sbFpGa44mGDKDTSWZL6BwVACMww0wM2BRN5EWSUo42Ig9VpA4iEVaqpihG9sg1yM0Zh2W6u39Wa9Qbk42q1ZhqZCL2Cr_wKfnVkT"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Academic integrity | Ensure originality of student work",
+      "link": "https://www.turnitin.com/solutions/academic-integrity",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbQHrOzAVH_CKQ0fr3GNrOeUQ8Y8G6nB2ikunYv0t1-WSwngbrpL7emooAPjRNPziJFhYtFjzNShi2w9rja-8l1AVIqFKRertTgNYxXbbozwvF7rx7A2EtJbLZ_FBFrKoRg-DCtbps9ovlSMqcfk&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQFnoECB4QAQ&uoh=1",
+      "displayed_link": "https://www.turnitin.com \u203a solutions \u203a academic-integrity",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAM1BMVEVHcEwAlf8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv_6kOPTAAAAEXRSTlMACs__5axXX7qckiUTfYY48HTe04IAAACJSURBVHgBndBFAoUwDEXR0Je67n-z3zUEvRPkQI32NBn8xP9osYIGxvlnLswxfu7TGsZzqA-bFBSpmF8VDfHKr2HW58wPJBULgATWkYFSEehWk-iBTgFNxYFIBDgNO_DY7E1CYAxxKO0zxK0ojra87sKtJqYctBzzClqsYEdd0bSqbiCt8NRJdAXmRwTazLmJDgAAAABJRU5ErkJggg.png",
+      "snippet": "Turnitin's AI writing detector identifies how much of a student's submission is authentic, human-written content vs likely AI-written content",
+      "snippet_highlighted_words": [
+        "Turnitin's AI writing detector"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Turnitin's AI writing detector identifies how much of a student's submission is authentic, human-written content vs likely AI-written content",
+          "source_info_link": "https://www.turnitin.com/solutions/academic-integrity",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAM1BMVEVHcEwAlf8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv8Alv_6kOPTAAAAEXRSTlMACs__5axXX7qckiUTfYY48HTe04IAAACJSURBVHgBndBFAoUwDEXR0Je67n-z3zUEvRPkQI32NBn8xP9osYIGxvlnLswxfu7TGsZzqA-bFBSpmF8VDfHKr2HW58wPJBULgATWkYFSEehWk-iBTgFNxYFIBDgNO_DY7E1CYAxxKO0zxK0ojra87sKtJqYctBzzClqsYEdd0bSqbiCt8NRJdAXmRwTazLmJDgAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Turnitin"
+    },
+    {
+      "position": 2,
+      "title": "Plagiarism Checker",
+      "link": "https://www.grammarly.com/plagiarism-checker",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESZAHrOzAVcGUQLQyuIq9JS6jlJOAJCArTMHcjfibKYlCW7tWqPTtJE_cuHvAgcRik_Q8a7mGYHk-kAqCQg9Jtc1gGwAUWQyrtN5B4sFYYB-kRTWYZdHDNU2U8qmHgH6-lZVMGbUo&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQFnoECDMQAQ&uoh=1",
+      "displayed_link": "https://www.grammarly.com \u203a plagiarism-checker",
+      "favicon": "https://serpapi.com/images/i/UklGRmgBAABXRUJQVlA4IFwBAADQBgCdASogACAAPrUurVanIacnG_DgFolsAL9IhYlQJUD3RLn_UJtGTCv4_iWunjVntWRL7UD5MB6VsgfMAUAA_vi6aS7QHEoWqI4-QbaTsAyuet1jzoe0DnOr-u3d2EPMxMa60l4OHy-h4E0ufbd6scvGR53NV0MlPWifHl-ix7XT_GnkFgA2R6S6Hx1oDWmpIpGGNLbepXCrNzgfffUdNVxWw7M7NsrCdI_Dvnhpcp3Fs79DP6K4thrn5oDc9qouEecBe48Dv3mvn9jQD1SD5WzhoE4EBu-TiyElozBzcH3FbS5V8J3pWsWZAY0AlWkH-7UhWZIjEne_RqtDdKTYvvsx5DzB4raO9BXkKvVObVrXvZYX86ALW_AnWI9YaaVVTpGEvPzrj-cuTaczBBvYhUK8EwUYjvcXOJGvyNMbXP3ah3fGA9dPBpV7V2DEp8yQUSH9sLUGUvhAAAA.webp",
+      "snippet": "Instant plagiarism check for essays and documents. Detect plagiarism, fix grammar errors, and improve your vocabulary in seconds.",
+      "snippet_highlighted_words": [
+        "Instant plagiarism check for essays and documents"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.6,
+            "reviews": 176200
+          },
+          "extensions": [
+            "4.6(1,76,200)",
+            "Free",
+            "Business/Productivity"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Instant plagiarism check for essays and documents. Detect plagiarism, fix grammar errors, and improve your vocabulary in seconds.",
+          "source_info_link": "https://www.grammarly.com/plagiarism-checker",
+          "icon": "https://serpapi.com/images/i/UklGRmgBAABXRUJQVlA4IFwBAADQBgCdASogACAAPrUurVanIacnG_DgFolsAL9IhYlQJUD3RLn_UJtGTCv4_iWunjVntWRL7UD5MB6VsgfMAUAA_vi6aS7QHEoWqI4-QbaTsAyuet1jzoe0DnOr-u3d2EPMxMa60l4OHy-h4E0ufbd6scvGR53NV0MlPWifHl-ix7XT_GnkFgA2R6S6Hx1oDWmpIpGGNLbepXCrNzgfffUdNVxWw7M7NsrCdI_Dvnhpcp3Fs79DP6K4thrn5oDc9qouEecBe48Dv3mvn9jQD1SD5WzhoE4EBu-TiyElozBzcH3FbS5V8J3pWsWZAY0AlWkH-7UhWZIjEne_RqtDdKTYvvsx5DzB4raO9BXkKvVObVrXvZYX86ALW_AnWI9YaaVVTpGEvPzrj-cuTaczBBvYhUK8EwUYjvcXOJGvyNMbXP3ah3fGA9dPBpV7V2DEp8yQUSH9sLUGUvhAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Grammarly"
+    },
+    {
+      "position": 3,
+      "title": "DrillBit - Plagiarism Detection & AI Content Integrity Platform",
+      "link": "https://drillbitglobal.com/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESUwHrOzAVmPZv4fC14mVBv_z21d-Gq8_Hx5avJKhcDaf2F6aZ1xZGXxkq_T0GNisHwNIG1PYA3mz9n2TGM6iLDfX3DjFqWs1Uxy5Afb0OwQsbVbRg&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQFnoECB0QAQ&uoh=1",
+      "displayed_link": "https://drillbitglobal.com \u203a ... \u203a Solutions \u203a Contact Us",
+      "favicon": "https://serpapi.com/images/i/UklGRngBAABXRUJQVlA4IGwBAADwCACdASofACAAPrUurVanIacnG_DgFolsALElQX4BxCjB7QLB2ggwHiS9IDzAY5X6FfSkERYRwnGi6KbTcwLlq6EBg1XBy-QYGnwcLQ9vAAD--LMDF35fu_pbLDUFXdY2xnW-ga8AAMQ6zv_b7QvE1QfpS5zcU6Cl6JQlNhKJt9Jx6eZHRq0Enlsn-EKnTeD8w-e1ptp2c3etS7IP6nCvKWB3VY-anKLi23VGqrDtsPliSBmKWiKxp5t7ts9UKaFECxQ78qJU31OnFIB-hKINlE8Y7F12KgR12kdHVA56a497cRrsXkWCFs8hMPJvlpf0oM5jUQRnTkD5ggAAWTkRAT5nD4vMFq33k3-snwe7qI02PLu_fPQUfRrfj3AXj0aOvqHu81Bt-YZMLKStuuKf29OZ42WFlLW98DGZ-SWAYAF5mtrqNrLqODHENSw1N77cWIBNBrqtPOKyOn6jvayA-q0nbed065m00AAA.webp",
+      "snippet": "DrillBit is an AI-powered platform for plagiarism detection & content integrity. Analyze content to identify AI generated text and similarity patterns with our ...",
+      "snippet_highlighted_words": [
+        "DrillBit is an AI-powered platform for plagiarism detection"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "DrillBit is an AI-powered platform for plagiarism detection & content integrity. Analyze content to identify AI generated text and similarity patterns with our ...",
+          "source_info_link": "https://drillbitglobal.com/",
+          "icon": "https://serpapi.com/images/i/UklGRngBAABXRUJQVlA4IGwBAADwCACdASofACAAPrUurVanIacnG_DgFolsALElQX4BxCjB7QLB2ggwHiS9IDzAY5X6FfSkERYRwnGi6KbTcwLlq6EBg1XBy-QYGnwcLQ9vAAD--LMDF35fu_pbLDUFXdY2xnW-ga8AAMQ6zv_b7QvE1QfpS5zcU6Cl6JQlNhKJt9Jx6eZHRq0Enlsn-EKnTeD8w-e1ptp2c3etS7IP6nCvKWB3VY-anKLi23VGqrDtsPliSBmKWiKxp5t7ts9UKaFECxQ78qJU31OnFIB-hKINlE8Y7F12KgR12kdHVA56a497cRrsXkWCFs8hMPJvlpf0oM5jUQRnTkD5ggAAWTkRAT5nD4vMFq33k3-snwe7qI02PLu_fPQUfRrfj3AXj0aOvqHu81Bt-YZMLKStuuKf29OZ42WFlLW98DGZ-SWAYAF5mtrqNrLqODHENSw1N77cWIBNBrqtPOKyOn6jvayA-q0nbed065m00AAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "DrillBit"
+    },
+    {
+      "position": 4,
+      "title": "9 Best AI Paper Writers for Research in 2026 (Free + Paid)",
+      "link": "https://paperguide.ai/blog/best-ai-paper-writing-tools/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbwHrOzAVVWolOdCoyeWcH2txdBDYGoaxbHGtlUdcWX-fQjWjQSAqDj0q5uZO0Mh3hmmJsgLFelP0VPyt4t0qlUxy6RFxHf0KigHX_GNNhHi48aFJDc8xGf2BwwewbUHhGwIUSQ6qakhxBvREEUg6aw&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQFnoECCEQAQ&uoh=1",
+      "displayed_link": "https://paperguide.ai \u203a blog \u203a best-ai-paper-writing-tools",
+      "favicon": "https://serpapi.com/images/i/UklGRgwBAABXRUJQVlA4IAABAACQBgCdASocABwAPtE-tFooIigoFAEAGglmAMjwwEwAXP_koBEb6QAlbXwIhzfomcrdn65b0QVdEY3C1GAAAP79KoywgubG0K-tcGtS2BLP9YOTT2zSKAoK3FhG2HpFHUHv__TKft5UK6QzwHEdxf85bpH8epJ9v4-twP1-1uHPYCHAKGqBrnCxsk3C7uzz1nwvX4f2vU6WgVWvHohhpacwQGAR_ecyZv_qrCWpC4_RFJidrFxcx7c1oXvsY6vNrzaqYV4IRccxpRmo3aArZACKTqKw9Vxpc96mTYWrJEpiMXzOY2jvvjg5P-Qx9rs2rE_hr_9TW-OxJjNVn4IrAAAA.webp",
+      "date": "3 Jun 2026",
+      "snippet": "AI Paper Writer additionally includes plagiarism detection, grammar checking, support for over 1,000 citation styles, and multiple academic ...",
+      "snippet_highlighted_words": [
+        "AI Paper Writer"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "AI Paper Writer additionally includes plagiarism detection, grammar checking, support for over 1,000 citation styles, and multiple academic ...",
+          "source_info_link": "https://paperguide.ai/blog/best-ai-paper-writing-tools/",
+          "icon": "https://serpapi.com/images/i/UklGRgwBAABXRUJQVlA4IAABAACQBgCdASocABwAPtE-tFooIigoFAEAGglmAMjwwEwAXP_koBEb6QAlbXwIhzfomcrdn65b0QVdEY3C1GAAAP79KoywgubG0K-tcGtS2BLP9YOTT2zSKAoK3FhG2HpFHUHv__TKft5UK6QzwHEdxf85bpH8epJ9v4-twP1-1uHPYCHAKGqBrnCxsk3C7uzz1nwvX4f2vU6WgVWvHohhpacwQGAR_ecyZv_qrCWpC4_RFJidrFxcx7c1oXvsY6vNrzaqYV4IRccxpRmo3aArZACKTqKw9Vxpc96mTYWrJEpiMXzOY2jvvjg5P-Qx9rs2rE_hr_9TW-OxJjNVn4IrAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Paperguide"
+    },
+    {
+      "position": 5,
+      "title": "Using artificial intelligence in academic writing and research",
+      "link": "https://www.sciencedirect.com/science/article/pii/S2666990024000120",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESewHrOzAV-RdQKOQ8vVgctQE2mlygZji7I-YmjwoIdOLYH2X0gg9RsiJ-6Vlb7yXgQ8Fe06gYgA8w9XjZK5HyIUUzpVUsuPzoEBSfh6tAXTS382907vaRUVx8iaxfSo_qMG6YptMLfobnfAUXp6rwe0RAXwQHaXQxVQ4tQQ&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQFnoECB8QAQ&uoh=1",
+      "displayed_link": "https://www.sciencedirect.com \u203a science \u203a article \u203a pii",
+      "favicon": "https://serpapi.com/images/i/UklGRk4BAABXRUJQVlA4IEIBAAAQCQCdASogACAAPtE-tFooIigoFAEAGglsALElQTQC6PtBBgNsB-unQgeoDeAPRA8rv9gPg6_b70VSl7HDAh2KGltr_EST6IruifoRgONCl9gA_v0tEq9NvcR-Rj2Ix8in-HtlsMNKCqDesdVlvt0VmJ8rOx31fm5xN8anZGqNUmtBpwe9Yy5AnZ3_g3UGj9-QMmmttVUbUrKwfGke7w1TXR4p6MABdn38ew6evio2YyR6O75_Z6k9Jqrun3e8o7-p-M5EG4xy-NEmA-F0NSLLvl8MrchY4o056X-2V9rEKs6IfzAaCAfv7ofdGt-zr4e8tGnllzUB-vMIWwJ6cSGZCoEXeAqcCy6KU3bymLZLNAYjRjbxeUlYprm9snWKmZeViuAudTjI3oKWfsK29UhLPJ0Jat9Z6D9K7jv3WQpwAAAA.webp",
+      "author": "by M Khalifa",
+      "snippet": "Grammarly and OpenAI's ChatGPT are pivotal, offering AI-driven grammar checks, plagiarism detection, and text generation capabilities,",
+      "snippet_highlighted_words": [
+        "Grammarly and OpenAI's ChatGPT"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Grammarly and OpenAI's ChatGPT are pivotal, offering AI-driven grammar checks, plagiarism detection, and text generation capabilities,",
+          "source_info_link": "https://www.sciencedirect.com/science/article/pii/S2666990024000120",
+          "icon": "https://serpapi.com/images/i/UklGRk4BAABXRUJQVlA4IEIBAAAQCQCdASogACAAPtE-tFooIigoFAEAGglsALElQTQC6PtBBgNsB-unQgeoDeAPRA8rv9gPg6_b70VSl7HDAh2KGltr_EST6IruifoRgONCl9gA_v0tEq9NvcR-Rj2Ix8in-HtlsMNKCqDesdVlvt0VmJ8rOx31fm5xN8anZGqNUmtBpwe9Yy5AnZ3_g3UGj9-QMmmttVUbUrKwfGke7w1TXR4p6MABdn38ew6evio2YyR6O75_Z6k9Jqrun3e8o7-p-M5EG4xy-NEmA-F0NSLLvl8MrchY4o056X-2V9rEKs6IfzAaCAfv7ofdGt-zr4e8tGnllzUB-vMIWwJ6cSGZCoEXeAqcCy6KU3bymLZLNAYjRjbxeUlYprm9snWKmZeViuAudTjI3oKWfsK29UhLPJ0Jat9Z6D9K7jv3WQpwAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "ScienceDirect.com"
+    },
+    {
+      "position": 6,
+      "title": "Can AI Tools Reliably and Effectively Detect Plagiarism ... - PMC",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12152223/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESagHrOzAV0RU4sFf5YLtqFGXABkBqzt0n_HvIefF7Zcp3CHbqnHKODg7wwTOvbaQUyPHIOx7jb_WDaMayO5w1ckxOI7Eno_3HSToHF0E9HE7vkLnU2uVxwaXu1Gmce2MRw-nP5ZlPK8ZyZ1g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQFnoECCMQAQ&uoh=1",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC12152223",
+      "favicon": "https://serpapi.com/images/i/UklGRu4AAABXRUJQVlA4IOIAAAAwBQCdASocABwAPtEutFooIagoGAEAGglAGGaxfZY6CtuBJGgyeeqV1G9D_yUtsol8oAD-_sOTEDgs8NL15VX_wv4F_6dBNd4_gi1U_kXUxqPcXsFtGjMlHL_iwWI8vAiLZ2nms29BCF5wNcn09T7UNEVTopOdvfb6mH_-a5ZDrRWvXo-9H2GTsj5x3b_VzXmclGgeq4YJB_JffNIrdNH2uGUzJ2PgPtuu-F8C185JL_0VELY6ah1IOx3-tE_Lg7whjT9VJtLQ_hW7fvNm7vEEGvHOJUWo6xVUyKM_eZfcqIAA.webp",
+      "author": "by MG Murdock",
+      "snippet": "AI-rewritten content was undetectable by plagiarism checkers, AI tools are capable of rewriting plagiarized text to evade plagiarism detection.",
+      "snippet_highlighted_words": [
+        "AI tools are capable of rewriting plagiarized text"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "AI-rewritten content was undetectable by plagiarism checkers, AI tools are capable of rewriting plagiarized text to evade plagiarism detection.",
+          "source_info_link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12152223/",
+          "icon": "https://serpapi.com/images/i/UklGRu4AAABXRUJQVlA4IOIAAAAwBQCdASocABwAPtEutFooIagoGAEAGglAGGaxfZY6CtuBJGgyeeqV1G9D_yUtsol8oAD-_sOTEDgs8NL15VX_wv4F_6dBNd4_gi1U_kXUxqPcXsFtGjMlHL_iwWI8vAiLZ2nms29BCF5wNcn09T7UNEVTopOdvfb6mH_-a5ZDrRWvXo-9H2GTsj5x3b_VzXmclGgeq4YJB_JffNIrdNH2uGUzJ2PgPtuu-F8C185JL_0VELY6ah1IOx3-tE_Lg7whjT9VJtLQ_hW7fvNm7vEEGvHOJUWo6xVUyKM_eZfcqIAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Using AI-enabled Solutions to Identify Plagiarism and ...",
+      "link": "https://www.lexology.com/library/detail.aspx?g=571ad246-eaea-4210-977c-444e34dd526e",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESiwEB6zswFeGIGcxq9eqJdn8cbSMkZPKtLHD6iJtC4sGy767aY8kJTZYbIoxTbuGa9q3q9M0WtqyO3GEe39KU8HEP2Qw40wnio8idSKWX3Cfzd2BxWYgsj6OFBpWeapdALO5GwU6WW9VrfrMEvf2rVdpF3emEzLslwisGnESGpQMNNtwBei0qaNNapve6&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQFnoECFEQAQ&uoh=1",
+      "displayed_link": "https://www.lexology.com \u203a library \u203a detail",
+      "favicon": "https://serpapi.com/images/i/UklGRpoAAABXRUJQVlA4II4AAAAQAgCdASoQABAAAsBMJaQAD48OXii_6FhgAP7tGJ8iHFnhzj5r76ur5t5EhXx3_w1__sM_npg0xn3_3QPbLjhR8e3fj-cVGmcHNrH3a2nwk8wYD0p7de1J-hEh6qtiMln-bkXqU_3Zvp32X-kdJQNHrtp180fUm21iSt69xp7NtkV8XekDYDJrnuQuCAAA.webp",
+      "date": "4 Nov 2025",
+      "snippet": "The detection tools are designed to identify content generated entirely or in part by AI, and content that may not have been adequately cited.",
+      "snippet_highlighted_words": [
+        "tools",
+        "AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The detection tools are designed to identify content generated entirely or in part by AI, and content that may not have been adequately cited.",
+          "source_info_link": "https://www.lexology.com/library/detail.aspx?g=571ad246-eaea-4210-977c-444e34dd526e",
+          "icon": "https://serpapi.com/images/i/UklGRpoAAABXRUJQVlA4II4AAAAQAgCdASoQABAAAsBMJaQAD48OXii_6FhgAP7tGJ8iHFnhzj5r76ur5t5EhXx3_w1__sM_npg0xn3_3QPbLjhR8e3fj-cVGmcHNrH3a2nwk8wYD0p7de1J-hEh6qtiMln-bkXqU_3Zvp32X-kdJQNHrtp180fUm21iSt69xp7NtkV8XekDYDJrnuQuCAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Lexology",
+      "read_more_link": "https://www.lexology.com/library/detail.aspx?g=571ad246-eaea-4210-977c-444e34dd526e#:~:text=The%20detection%20tools%20are%20designed,not%20have%20been%20adequately%20cited."
+    },
+    {
+      "position": 8,
+      "title": "Top 10 AI Plagiarism & AI-Writing Detection Tools",
+      "link": "https://www.devopsschool.com/blog/top-10-ai-plagiarism-ai-writing-detection-tools-features-pros-cons-comparison/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESqAEB6zswFXof9Q4KEtCusETSheEC_HWwbGtMd3lKtS9qvJVXeBtdP9ygq89H9ypD4YPvpn1_w-j73qNJsfj_gqF2-a7k3pBATEmXWyyrjNpy1jpZv9RX90mwD8ajMHa-CCx0PeNWdDdLsLMJw2r6jGq2zRNISFmEB6X2C84VfkQj47jPdVnTF2oftVnXGqUQgfzhkhmZoikn7plo6gWitpaXYMZ4K6gycA8&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQFnoECEsQAQ&uoh=1",
+      "displayed_link": "https://www.devopsschool.com \u203a blog \u203a top-10-ai-plagi...",
+      "favicon": "https://serpapi.com/images/i/UklGRqwBAABXRUJQVlA4IKABAABwCACdASocABwAPtEutFooIagoGAEAGglsAMikEzls1SCOA6KzOV9A-wH5QHqv9Br9VR5qKqe7HTAbKtQDUgYeTY6YPJ9uuHIfEKAAAP72C1JdBYqL30erDf7qWbCNzUWK7BYPzwhlM40uJ4RNwBb-Web9dLAo7a6xCqN1HN84_BKUGZL6VBtciNC4GQDd-A6_5p_ChzP35CvwfsRgAD2V1KaAP2_u0kCqwvi2Yt-iKZCoUKCvZqLn_5ovKXRizJx6y9C1ByZicoHQ1LXxx8qu3TSLiPfhXQ_Q8uNaEb03FjlGL6jIchGGwpXd3ukPmVQ7MM8oOgwxppV_178Hk-3vDPQGJj5PtBxlidqF5p6SPTpb1sH7n8NNCusiqRR0cxSI91qseq1gFDId7HSMAgWob281HIh_mCfJffoC2yymRysiD0dYRJmcqTzdeBUXR3k8rYzv5otpKU_WvxTkv31_Ljch3P12ZfbhI8cTnju5xcX5XW77o9jU8owtniX8kmzPdjvshBKp_-DXlASIs8_rTRqYxJatDoCk3oRXh-4AAA.webp",
+      "snippet": "Short description: Unicheck AI scans student submissions for plagiarism and AI-generated text while providing detailed similarity reports and integration with ...",
+      "snippet_highlighted_words": [
+        "Unicheck AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Short description: Unicheck AI scans student submissions for plagiarism and AI-generated text while providing detailed similarity reports and integration with ...",
+          "source_info_link": "https://www.devopsschool.com/blog/top-10-ai-plagiarism-ai-writing-detection-tools-features-pros-cons-comparison/",
+          "icon": "https://serpapi.com/images/i/UklGRqwBAABXRUJQVlA4IKABAABwCACdASocABwAPtEutFooIagoGAEAGglsAMikEzls1SCOA6KzOV9A-wH5QHqv9Br9VR5qKqe7HTAbKtQDUgYeTY6YPJ9uuHIfEKAAAP72C1JdBYqL30erDf7qWbCNzUWK7BYPzwhlM40uJ4RNwBb-Web9dLAo7a6xCqN1HN84_BKUGZL6VBtciNC4GQDd-A6_5p_ChzP35CvwfsRgAD2V1KaAP2_u0kCqwvi2Yt-iKZCoUKCvZqLn_5ovKXRizJx6y9C1ByZicoHQ1LXxx8qu3TSLiPfhXQ_Q8uNaEb03FjlGL6jIchGGwpXd3ukPmVQ7MM8oOgwxppV_178Hk-3vDPQGJj5PtBxlidqF5p6SPTpb1sH7n8NNCusiqRR0cxSI91qseq1gFDId7HSMAgWob281HIh_mCfJffoC2yymRysiD0dYRJmcqTzdeBUXR3k8rYzv5otpKU_WvxTkv31_Ljch3P12ZfbhI8cTnju5xcX5XW77o9jU8owtniX8kmzPdjvshBKp_-DXlASIs8_rTRqYxJatDoCk3oRXh-4AAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "DevOps School",
+      "read_more_link": "https://www.devopsschool.com/blog/top-10-ai-plagiarism-ai-writing-detection-tools-features-pros-cons-comparison/#:~:text=Short%20description%3A,integration%20with%20popular%20LMS%20platforms."
+    },
+    {
+      "position": 9,
+      "title": "Plagiarism & AI Checker | #1 Trusted by Students and ...",
+      "link": "https://www.compilatio.net/en",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESVQHrOzAV_dHo-JK4aoCKfnC1gu-fm8XEj-AdHgxELZwj3AL0pWBHy9L3mZ1Hju32QWGp_DUfboFtNGFYjZxWtCaUqpZSyiA7w-bmwZ6mWjlHbnbzkoM&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQFnoECE4QAQ&uoh=1",
+      "displayed_link": "https://www.compilatio.net \u203a ...",
+      "favicon": "https://serpapi.com/images/i/UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASocABwAPrkurlcnIacnG_DgFwlsAAFO9ZudcVBrHromyJbAAAD-_sIS3pfkFtP9Yf7ZjAcaNU70oiF0f8mKKur_-JYMF87ZvfAf_tXl9OPU31bOtlRuLHgWZ3CX28tvWrrq7Yw8-jJrmtDTLMUkZr-FnjYxYgmA4emDYgAA.webp",
+      "snippet": "Plagiarism and AI content detection for teachers, students, and writers. Compilatio's Plagiarism checkers and AI detectors are the most effective software ...",
+      "snippet_highlighted_words": [
+        "Plagiarism",
+        "AI",
+        "writers",
+        "Plagiarism",
+        "AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Plagiarism and AI content detection for teachers, students, and writers. Compilatio's Plagiarism checkers and AI detectors are the most effective software ...",
+          "source_info_link": "https://www.compilatio.net/en",
+          "icon": "https://serpapi.com/images/i/UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASocABwAPrkurlcnIacnG_DgFwlsAAFO9ZudcVBrHromyJbAAAD-_sIS3pfkFtP9Yf7ZjAcaNU70oiF0f8mKKur_-JYMF87ZvfAf_tXl9OPU31bOtlRuLHgWZ3CX28tvWrrq7Yw8-jJrmtDTLMUkZr-FnjYxYgmA4emDYgAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Compilatio"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Best ai writing tool with built in plagiarism compliance",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&q=Best+ai+writing+tool+with+built+in+plagiarism+compliance&sa=X&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ1QJ6BAhFEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+ai+writing+tool+with+built+in+plagiarism+compliance"
+    },
+    {
+      "block_position": 1,
+      "query": "Ai writing tool with built in plagiarism compliance free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&q=Ai+writing+tool+with+built+in+plagiarism+compliance+free&sa=X&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ1QJ6BAhKEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Ai+writing+tool+with+built+in+plagiarism+compliance+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Plagiarism checker",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&q=Plagiarism+checker&sa=X&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ1QJ6BAhJEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Plagiarism+checker"
+    },
+    {
+      "block_position": 1,
+      "query": "DrillBit plagiarism",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&q=DrillBit+plagiarism&sa=X&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ1QJ6BAhIEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=DrillBit+plagiarism"
+    },
+    {
+      "block_position": 1,
+      "query": "Turnitin",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&q=Turnitin&sa=X&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ1QJ6BAhHEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Turnitin"
+    },
+    {
+      "block_position": 1,
+      "query": "Free AI for research paper writing",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&q=Free+AI+for+research+paper+writing&sa=X&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Free+AI+for+research+paper+writing"
+    },
+    {
+      "block_position": 1,
+      "query": "DrillBit Plagiarism Price",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&q=DrillBit+Plagiarism+Price&sa=X&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ1QJ6BAhDEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=DrillBit+Plagiarism+Price"
+    },
+    {
+      "block_position": 1,
+      "query": "Best AI tools for research paper writing free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&q=Best+AI+tools+for+research+paper+writing+free&sa=X&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+tools+for+research+paper+writing+free"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&ei=jHStav6TBOXOkPIP2OyLiAE&start=10&sa=N&sstk=AS6-VmJP-35EWJQ9Smtwt-hacHJ_6j548ewxt-IWT1wGxSiXRULGoLRK2LWgYsd0_8NdynR5LSYJgwLeSogSWm3uxYAOio0BzPkF2g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ8NMDegQIPRAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&ei=jHStav6TBOXOkPIP2OyLiAE&start=10&sa=N&sstk=AS6-VmJP-35EWJQ9Smtwt-hacHJ_6j548ewxt-IWT1wGxSiXRULGoLRK2LWgYsd0_8NdynR5LSYJgwLeSogSWm3uxYAOio0BzPkF2g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ8tMDegQIPRAE",
+      "3": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&ei=jHStav6TBOXOkPIP2OyLiAE&start=20&sa=N&sstk=AS6-VmJP-35EWJQ9Smtwt-hacHJ_6j548ewxt-IWT1wGxSiXRULGoLRK2LWgYsd0_8NdynR5LSYJgwLeSogSWm3uxYAOio0BzPkF2g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ8tMDegQIPRAG",
+      "4": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&ei=jHStav6TBOXOkPIP2OyLiAE&start=30&sa=N&sstk=AS6-VmJP-35EWJQ9Smtwt-hacHJ_6j548ewxt-IWT1wGxSiXRULGoLRK2LWgYsd0_8NdynR5LSYJgwLeSogSWm3uxYAOio0BzPkF2g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ8tMDegQIPRAI",
+      "5": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&ei=jHStav6TBOXOkPIP2OyLiAE&start=40&sa=N&sstk=AS6-VmJP-35EWJQ9Smtwt-hacHJ_6j548ewxt-IWT1wGxSiXRULGoLRK2LWgYsd0_8NdynR5LSYJgwLeSogSWm3uxYAOio0BzPkF2g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ8tMDegQIPRAK",
+      "6": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&ei=jHStav6TBOXOkPIP2OyLiAE&start=50&sa=N&sstk=AS6-VmJP-35EWJQ9Smtwt-hacHJ_6j548ewxt-IWT1wGxSiXRULGoLRK2LWgYsd0_8NdynR5LSYJgwLeSogSWm3uxYAOio0BzPkF2g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ8tMDegQIPRAM",
+      "7": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&ei=jHStav6TBOXOkPIP2OyLiAE&start=60&sa=N&sstk=AS6-VmJP-35EWJQ9Smtwt-hacHJ_6j548ewxt-IWT1wGxSiXRULGoLRK2LWgYsd0_8NdynR5LSYJgwLeSogSWm3uxYAOio0BzPkF2g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ8tMDegQIPRAO",
+      "8": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&ei=jHStav6TBOXOkPIP2OyLiAE&start=70&sa=N&sstk=AS6-VmJP-35EWJQ9Smtwt-hacHJ_6j548ewxt-IWT1wGxSiXRULGoLRK2LWgYsd0_8NdynR5LSYJgwLeSogSWm3uxYAOio0BzPkF2g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ8tMDegQIPRAQ",
+      "9": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&ei=jHStav6TBOXOkPIP2OyLiAE&start=80&sa=N&sstk=AS6-VmJP-35EWJQ9Smtwt-hacHJ_6j548ewxt-IWT1wGxSiXRULGoLRK2LWgYsd0_8NdynR5LSYJgwLeSogSWm3uxYAOio0BzPkF2g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ8tMDegQIPRAS",
+      "10": "https://www.google.co.in/search?q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQns3LvC0ZIuSVXcD0xaWSKoakCNVzA:1789752460076&ei=jHStav6TBOXOkPIP2OyLiAE&start=90&sa=N&sstk=AS6-VmJP-35EWJQ9Smtwt-hacHJ_6j548ewxt-IWT1wGxSiXRULGoLRK2LWgYsd0_8NdynR5LSYJgwLeSogSWm3uxYAOio0BzPkF2g&ved=2ahUKEwj-ifm80_iWAxVlJ0QIHVj2AhEQ8tMDegQIPRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+writing+tool+with+built%E2%80%91in+plagiarism+compliance&start=90"
+    }
+  }
+}

@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Instrument_Sans, Newsreader } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// Newsreader sets findings and prose like a printed report; Instrument Sans is the
+// interface voice; mono is reserved for figures, ids and the research log.
+const text = Newsreader({ variable: "--font-text", subsets: ["latin"], style: ["normal", "italic"] });
+const ui = Instrument_Sans({ variable: "--font-ui", subsets: ["latin"] });
+const data = Geist_Mono({ variable: "--font-data", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LaunchRadar — evidence-backed product opportunities",
-  description:
-    "Turns a market question into evidence-backed product opportunities. SerpApi is the only source of facts.",
+  title: "LaunchRadar",
+  description: "Market research where every claim links to the search result it came from.",
 };
 
 export default function RootLayout({
@@ -24,11 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${text.variable} ${ui.variable} ${data.variable} h-full antialiased`}>
+      <body className="flex min-h-full flex-col font-sans">{children}</body>
     </html>
   );
 }

@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // scratch files written by other tooling, not part of the app
+    ".oxcode/**",
+    ".oxcode-memory/**",
   ]),
 ]);
 

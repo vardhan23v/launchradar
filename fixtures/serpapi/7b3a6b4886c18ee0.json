@@ -1,0 +1,656 @@
+{
+  "search_metadata": {
+    "id": "6aad72fce6590ee4fc3c1744",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/tsHolbl-Po3ArqatCykunCR9XRIVYS8Y0vrxNfgGZHE/6aad72fce6590ee4fc3c1744.json",
+    "markdown_endpoint": "https://serpapi.com/searches/tsHolbl-Po3ArqatCykunCR9XRIVYS8Y0vrxNfgGZHE/6aad72fce6590ee4fc3c1744.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/tsHolbl-Po3ArqatCykunCR9XRIVYS8Y0vrxNfgGZHE/6aad72fce6590ee4fc3c1744.json_with_pixel_position",
+    "created_at": "2026-09-18 17:21:00 UTC",
+    "processed_at": "2026-09-18 17:21:00 UTC",
+    "google_url": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&oq=AI+essay+writer+not+generating+citations+for+college+assignments&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/tsHolbl-Po3ArqatCykunCR9XRIVYS8Y0vrxNfgGZHE/6aad72fce6590ee4fc3c1744.html",
+    "total_time_taken": 18.01
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "AI essay writer not generating citations for college assignments",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "AI essay writer not generating citations for college assignments",
+    "total_results": 150,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "4 Best Free AI Essay Writer with Citations | Undetectable ...",
+      "link": "https://www.youtube.com/watch?v=cqXVD2dV9R4",
+      "thumbnail": "https://serpapi.com/searches/6aad72fce6590ee4fc3c1744/images/grMV0apA4vvAH3let5XGGLEIDncAJBQvyFmzvufZ5hM.jpeg",
+      "channel": "Insights4UToday",
+      "duration": "10:00",
+      "platform": "YouTube",
+      "date": "5 Jul 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcRalbfC25HeyNO1zrfAiwZbbPK7H_bxGWInzQ",
+      "key_moments": [
+        {
+          "time": "00:55",
+          "title": "Rightless",
+          "link": "https://www.youtube.com/watch?v=cqXVD2dV9R4&t=55"
+        },
+        {
+          "time": "03:53",
+          "title": "Aether",
+          "link": "https://www.youtube.com/watch?v=cqXVD2dV9R4&t=233"
+        },
+        {
+          "time": "06:01",
+          "title": "Table of Contents",
+          "link": "https://www.youtube.com/watch?v=cqXVD2dV9R4&t=361"
+        },
+        {
+          "time": "08:09",
+          "title": "Samuel Ai",
+          "link": "https://www.youtube.com/watch?v=cqXVD2dV9R4&t=489"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "title": "How to Generate Undetectable AI Essays and Papers with HIX ...",
+      "link": "https://www.youtube.com/watch?v=FbgSsGcmmCE",
+      "thumbnail": "https://serpapi.com/searches/6aad72fce6590ee4fc3c1744/images/jpdOUK5hBcrgKgf9ZnQ2WVAdSNmUTT36sbh3deEXdJg.jpeg",
+      "channel": "Nicolai Nielsen",
+      "duration": "13:18",
+      "platform": "YouTube",
+      "date": "14 Jun 2024",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTHSZMXDpDLQPUO95jKD8Xs7VWf_9mYhlJmUw",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Introduction",
+          "link": "https://www.youtube.com/watch?v=FbgSsGcmmCE&t=0"
+        },
+        {
+          "time": "00:29",
+          "title": "EssayGPT",
+          "link": "https://www.youtube.com/watch?v=FbgSsGcmmCE&t=29"
+        },
+        {
+          "time": "01:09",
+          "title": "Generator tool for Essays",
+          "link": "https://www.youtube.com/watch?v=FbgSsGcmmCE&t=69"
+        },
+        {
+          "time": "03:33",
+          "title": "AI Detectors",
+          "link": "https://www.youtube.com/watch?v=FbgSsGcmmCE&t=213"
+        },
+        {
+          "time": "05:27",
+          "title": "Writer tool for Research Papers",
+          "link": "https://www.youtube.com/watch?v=FbgSsGcmmCE&t=327"
+        },
+        {
+          "time": "07:31",
+          "title": "ScholarChat for Citations",
+          "link": "https://www.youtube.com/watch?v=FbgSsGcmmCE&t=451"
+        },
+        {
+          "time": "09:33",
+          "title": "Humanize text",
+          "link": "https://www.youtube.com/watch?v=FbgSsGcmmCE&t=573"
+        },
+        {
+          "time": "10:10",
+          "title": "Research tool for Citations",
+          "link": "https://www.youtube.com/watch?v=FbgSsGcmmCE&t=610"
+        },
+        {
+          "time": "11:10",
+          "title": "Tool Overview",
+          "link": "https://www.youtube.com/watch?v=FbgSsGcmmCE&t=670"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "How to write essay with AI | Undetectable A+ Essays With ...",
+      "link": "https://www.youtube.com/watch?v=WL7vzNRw_S0",
+      "thumbnail": "https://serpapi.com/searches/6aad72fce6590ee4fc3c1744/images/m-J6VT4OuHInqj_Yk9bfNU9n0WG_lFxG2LF15t93O6s.jpeg",
+      "channel": "Insights4UToday",
+      "duration": "8:53",
+      "platform": "YouTube",
+      "date": "4 Aug 2025",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Introduction",
+          "link": "https://www.youtube.com/watch?v=WL7vzNRw_S0&t=0"
+        },
+        {
+          "time": "00:47",
+          "title": "Free Turn!tin Checks for Members",
+          "link": "https://www.youtube.com/watch?v=WL7vzNRw_S0&t=47"
+        },
+        {
+          "time": "01:15",
+          "title": "Step 1",
+          "link": "https://www.youtube.com/watch?v=WL7vzNRw_S0&t=75"
+        },
+        {
+          "time": "02:19",
+          "title": "Step 2",
+          "link": "https://www.youtube.com/watch?v=WL7vzNRw_S0&t=139"
+        },
+        {
+          "time": "03:42",
+          "title": "Steo 3",
+          "link": "https://www.youtube.com/watch?v=WL7vzNRw_S0&t=222"
+        },
+        {
+          "time": "04:37",
+          "title": "Step 4",
+          "link": "https://www.youtube.com/watch?v=WL7vzNRw_S0&t=277"
+        },
+        {
+          "time": "06:00",
+          "title": "Step 5",
+          "link": "https://www.youtube.com/watch?v=WL7vzNRw_S0&t=360"
+        },
+        {
+          "time": "07:51",
+          "title": "Step 6",
+          "link": "https://www.youtube.com/watch?v=WL7vzNRw_S0&t=471"
+        },
+        {
+          "time": "08:29",
+          "title": "Conclusion",
+          "link": "https://www.youtube.com/watch?v=WL7vzNRw_S0&t=509"
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "title": "How To ALWAYS Write First Class Essays (With AI & Without ...",
+      "link": "https://www.youtube.com/watch?v=uqO8963k6PA",
+      "thumbnail": "https://serpapi.com/searches/6aad72fce6590ee4fc3c1744/images/akNjN7uz58vDKpazoXsgEUkZdjzCKCfU9gI8p1y9U4w.jpeg",
+      "channel": "Dr Amina Yonis",
+      "duration": "11:10",
+      "platform": "YouTube",
+      "date": "23 May 2024",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Introduction",
+          "link": "https://www.youtube.com/watch?v=uqO8963k6PA&t=0"
+        },
+        {
+          "time": "00:19",
+          "title": "Plan and outline",
+          "link": "https://www.youtube.com/watch?v=uqO8963k6PA&t=19"
+        },
+        {
+          "time": "02:11",
+          "title": "Realistic goals",
+          "link": "https://www.youtube.com/watch?v=uqO8963k6PA&t=131"
+        },
+        {
+          "time": "03:12",
+          "title": "Organise research papers",
+          "link": "https://www.youtube.com/watch?v=uqO8963k6PA&t=192"
+        },
+        {
+          "time": "09:25",
+          "title": "Write efficiently",
+          "link": "https://www.youtube.com/watch?v=uqO8963k6PA&t=565"
+        }
+      ]
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Do colleges check if your essay is AI generated?",
+      "type": "ai_overview",
+      "page_token": "GoicH3icHZBdrppAGEDTzdxHZaSxwcQ0QX4MvWCZP5CXZvgGHGUYplcU5a176BK6qq6mpg8n5_Ek59cffTbd30-_1Tja62a5nKZpcRqGk24WMCzOZimuTwNLEFrXArrN-ssafW1hG97B332AnzNreYAd4upvJFI_8eybvExaFvCxQlFcX7Ir3vs2dQDlVJHioiLusJUodJFG8goFQ1U43mBW68pwQk1CslghGtuHNDLiZeVk2jsUJnXZCvW1Mz1pWT0g0m21r2Zw5cSDyLwac93LzyKuntDJXROqG-1GJnq1SgtvV_do905QwpHMSGgJY9kj07bn2ib1JV_JWc2cKoHLZM0C__jy0JSqfH9xZN79EOO9KNWNGeaESgap4znHElPe2TOO0yf0Xp4GkjY0wQd_OOcMz3DRPeP2OxTa5yjRrMuSJsAT6bibRcPj9UuLAmM5vbVw37pv_19vf7T9uLEfw-kfgbOPcg",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=GoicH3icHZBdrppAGEDTzdxHZaSxwcQ0QX4MvWCZP5CXZvgGHGUYplcU5a176BK6qq6mpg8n5_Ek59cffTbd30-_1Tja62a5nKZpcRqGk24WMCzOZimuTwNLEFrXArrN-ssafW1hG97B332AnzNreYAd4upvJFI_8eybvExaFvCxQlFcX7Ir3vs2dQDlVJHioiLusJUodJFG8goFQ1U43mBW68pwQk1CslghGtuHNDLiZeVk2jsUJnXZCvW1Mz1pWT0g0m21r2Zw5cSDyLwac93LzyKuntDJXROqG-1GJnq1SgtvV_do905QwpHMSGgJY9kj07bn2ib1JV_JWc2cKoHLZM0C__jy0JSqfH9xZN79EOO9KNWNGeaESgap4znHElPe2TOO0yf0Xp4GkjY0wQd_OOcMz3DRPeP2OxTa5yjRrMuSJsAT6bibRcPj9UuLAmM5vbVw37pv_19vf7T9uLEfw-kfgbOPcg",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1RUbExTMlYyVVZwclkyZHVhM1JzWlV0d04wODRSMHBDU0hGWFRsRXhXRGx2VlZwRk5tSjRNME5PZDJoRk56ZEplbnBhUWtWVmFTMTFaa1ZZZG5KbVMyaGtibnAzYUVsSlMzVTJOMGhWT0RGNVkzbHlUMWRwUjFCd1VSSVhRek5QZEdGMFUxWktZa1JqTW5KdlVEQTNVM2t5VVRnYUlrRkVjM0k1WmxKTVJtWkljemh3ZVhkblVubzVZMWgxVlZabVYxRmxUV05uVWxFIiwiZmN2IjoiMyIsImVpIjoiQzNPdGF0U1ZKYkRjMnJvUDA3U3kyUTgiLCJxYyI6ImN3M0dzUW1BUUF3RlVHc2JiNFNfaWE0U2poZ0Nad0pKUUN5YzBnMmNSRl8xNW8wVW5Fa1h6dERpZ0hsQjJEaW8xQVJkNjQ5Yll2ZEE5ekZZR0pTcFlnZGJaWnZ1OTFuV0R3IiwicXVlc3Rpb24iOiJEbyBjb2xsZWdlcyBjaGVjayBpZiB5b3VyIGVzc2F5IGlzIEFJIGdlbmVyYXRlZD8iLCJsayI6IkdpOWtieUJqYjJ4c1pXZGxjeUJqYUdWamF5QnBaaUI1YjNWeUlHVnpjMkY1SUdseklHRnBJR2RsYm1WeVlYUmxaQSIsImJzIjoiYzRXT01RLUNNQkNGNDNxVGN3ZTl3ZWlvNEE4Z1JCZEdKLWRhRHJoUWFkS1dFUDY5UlNScUpIRzc1TDczdlFjRWg3TkJaYlNta2h5cWlsU05YR0J2V292a25PeVJIYVlabHRTUWxaN3lKSTdFUHYtZmtmek93QVYybVVQMmFPcnc5UVpiUjRNMVhIZFpFeXIyMHJOcFhCSnZ4WVpmNkFRRzFROElESEZxYVNoRnFiWHBLUF8yZHBZOVRTdkhXY0YtRkpHY1Q0MGxjeWs0d2ZwYXNhb0djOWgySS1leE1QWnpOWXBWOTBTQ1poWlpMaDQiLCJpZCI6ImZjX0MzT3RhdFNWSmJEYzJyb1AwN1N5MlE4XzkifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1RUbExTMlYyVVZwclkyZHVhM1JzWlV0d04wODRSMHBDU0hGWFRsRXhXRGx2VlZwRk5tSjRNME5PZDJoRk56ZEplbnBhUWtWVmFTMTFaa1ZZZG5KbVMyaGtibnAzYUVsSlMzVTJOMGhWT0RGNVkzbHlUMWRwUjFCd1VSSVhRek5QZEdGMFUxWktZa1JqTW5KdlVEQTNVM2t5VVRnYUlrRkVjM0k1WmxKTVJtWkljemh3ZVhkblVubzVZMWgxVlZabVYxRmxUV05uVWxFIiwiZmN2IjoiMyIsImVpIjoiQzNPdGF0U1ZKYkRjMnJvUDA3U3kyUTgiLCJxYyI6ImN3M0dzUW1BUUF3RlVHc2JiNFNfaWE0U2poZ0Nad0pKUUN5YzBnMmNSRl8xNW8wVW5Fa1h6dERpZ0hsQjJEaW8xQVJkNjQ5Yll2ZEE5ekZZR0pTcFlnZGJaWnZ1OTFuV0R3IiwicXVlc3Rpb24iOiJEbyBjb2xsZWdlcyBjaGVjayBpZiB5b3VyIGVzc2F5IGlzIEFJIGdlbmVyYXRlZD8iLCJsayI6IkdpOWtieUJqYjJ4c1pXZGxjeUJqYUdWamF5QnBaaUI1YjNWeUlHVnpjMkY1SUdseklHRnBJR2RsYm1WeVlYUmxaQSIsImJzIjoiYzRXT01RLUNNQkNGNDNxVGN3ZTl3ZWlvNEE4Z1JCZEdKLWRhRHJoUWFkS1dFUDY5UlNScUpIRzc1TDczdlFjRWg3TkJaYlNta2h5cWlsU05YR0J2V292a25PeVJIYVlabHRTUWxaN3lKSTdFUHYtZmtmek93QVYybVVQMmFPcnc5UVpiUjRNMVhIZFpFeXIyMHJOcFhCSnZ4WVpmNkFRRzFROElESEZxYVNoRnFiWHBLUF8yZHBZOVRTdkhXY0YtRkpHY1Q0MGxjeWs0d2ZwYXNhb0djOWgySS1leE1QWnpOWXBWOTBTQ1poWlpMaDQiLCJpZCI6ImZjX0MzT3RhdFNWSmJEYzJyb1AwN1N5MlE4XzkifQ%3D%3D"
+    },
+    {
+      "question": "Is it okay to use AI to make citations?",
+      "type": "ai_overview",
+      "page_token": "3KWtf3icHZDbboIwAECzn_FRAZ0LJmYZIkUiGGpbKy8LtNUiBariuLztX_ZV-5qZvZ2nk5Pz_aPyqvh96WTT6PtiMmnbdnyu67MSY1aP82qS3vuKTViqVJayYjF_m5vvJ7ZcPzbO6rpxYqw1caGxV7KHJayEG6TpEFyQUjsBJKIDqQ-VdyXrVwyVs0Vu9BViL9pbEYBG24R0M_C9eYuo4zDXCXnhUeI_nd7HEFOZI9NeZaCRrNQKGseWA0IEnrUEJC0m_MFBcBNEBdRKBmzaZWrogfkRQIhfE2U_oH80M1LMCAmmzE_kXkU9wRoJkhw51VtRwDixtI9deU0O3QFiOU8ufLqW3A0N2zhSiEihcwjCnpV2HLocCRTAnVPnMYYDu6gSW1ErlO0yLEN0KBo6sO7JMLM6AGlgoWcZjkcn9rWcjv5_Lj9PZbPQt_r8B8mWhhM",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=3KWtf3icHZDbboIwAECzn_FRAZ0LJmYZIkUiGGpbKy8LtNUiBariuLztX_ZV-5qZvZ2nk5Pz_aPyqvh96WTT6PtiMmnbdnyu67MSY1aP82qS3vuKTViqVJayYjF_m5vvJ7ZcPzbO6rpxYqw1caGxV7KHJayEG6TpEFyQUjsBJKIDqQ-VdyXrVwyVs0Vu9BViL9pbEYBG24R0M_C9eYuo4zDXCXnhUeI_nd7HEFOZI9NeZaCRrNQKGseWA0IEnrUEJC0m_MFBcBNEBdRKBmzaZWrogfkRQIhfE2U_oH80M1LMCAmmzE_kXkU9wRoJkhw51VtRwDixtI9deU0O3QFiOU8ufLqW3A0N2zhSiEihcwjCnpV2HLocCRTAnVPnMYYDu6gSW1ErlO0yLEN0KBo6sO7JMLM6AGlgoWcZjkcn9rWcjv5_Lj9PZbPQt_r8B8mWhhM",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1RUbExTMlYyVVZwclkyZHVhM1JzWlV0d04wODRSMHBDU0hGWFRsRXhXRGx2VlZwRk5tSjRNME5PZDJoRk56ZEplbnBhUWtWVmFTMTFaa1ZZZG5KbVMyaGtibnAzYUVsSlMzVTJOMGhWT0RGNVkzbHlUMWRwUjFCd1VSSVhRek5QZEdGMFUxWktZa1JqTW5KdlVEQTNVM2t5VVRnYUlrRkVjM0k1WmxKTVJtWkljemh3ZVhkblVubzVZMWgxVlZabVYxRmxUV05uVWxFIiwiZmN2IjoiMyIsImVpIjoiQzNPdGF0U1ZKYkRjMnJvUDA3U3kyUTgiLCJxYyI6ImN3M0dzUW1BUUF3RlVHc2JiNFNfaWE0U2poZ0Nad0pKUUN5YzBnMmNSRl8xNW8wVW5Fa1h6dERpZ0hsQjJEaW8xQVJkNjQ5Yll2ZEE5ekZZR0pTcFlnZGJaWnZ1OTFuV0R3IiwicXVlc3Rpb24iOiJJcyBpdCBva2F5IHRvIHVzZSBBSSB0byBtYWtlIGNpdGF0aW9ucz8iLCJsayI6ImM1TlN5U3hXeUN4UnlNOVdLTWxYS0MxT1ZVak1CTEZ5RTdOVEZaSXpTeEpMTXZQemlnRSIsImJzIjoiYzRXT01RLUNNQkNGNDNxVGN3ZTl3ZWlvNEE4Z1JCZEdKLWRhRHJoUWFkS1dFUDY5UlNScUpIRzc1TDczdlFjRWg3TkJaYlNta2h5cWlsU05YR0J2V292a25PeVJIYVlabHRTUWxaN3lKSTdFUHYtZmtmek93QVYybVVQMmFPcnc5UVpiUjRNMVhIZFpFeXIyMHJOcFhCSnZ4WVpmNkFRRzFROElESEZxYVNoRnFiWHBLUF8yZHBZOVRTdkhXY0YtRkpHY1Q0MGxjeWs0d2ZwYXNhb0djOWgySS1leE1QWnpOWXBWOTBTQ1poWlpMaDQiLCJpZCI6ImZjX0MzT3RhdFNWSmJEYzJyb1AwN1N5MlE4XzkifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1RUbExTMlYyVVZwclkyZHVhM1JzWlV0d04wODRSMHBDU0hGWFRsRXhXRGx2VlZwRk5tSjRNME5PZDJoRk56ZEplbnBhUWtWVmFTMTFaa1ZZZG5KbVMyaGtibnAzYUVsSlMzVTJOMGhWT0RGNVkzbHlUMWRwUjFCd1VSSVhRek5QZEdGMFUxWktZa1JqTW5KdlVEQTNVM2t5VVRnYUlrRkVjM0k1WmxKTVJtWkljemh3ZVhkblVubzVZMWgxVlZabVYxRmxUV05uVWxFIiwiZmN2IjoiMyIsImVpIjoiQzNPdGF0U1ZKYkRjMnJvUDA3U3kyUTgiLCJxYyI6ImN3M0dzUW1BUUF3RlVHc2JiNFNfaWE0U2poZ0Nad0pKUUN5YzBnMmNSRl8xNW8wVW5Fa1h6dERpZ0hsQjJEaW8xQVJkNjQ5Yll2ZEE5ekZZR0pTcFlnZGJaWnZ1OTFuV0R3IiwicXVlc3Rpb24iOiJJcyBpdCBva2F5IHRvIHVzZSBBSSB0byBtYWtlIGNpdGF0aW9ucz8iLCJsayI6ImM1TlN5U3hXeUN4UnlNOVdLTWxYS0MxT1ZVak1CTEZ5RTdOVEZaSXpTeEpMTXZQemlnRSIsImJzIjoiYzRXT01RLUNNQkNGNDNxVGN3ZTl3ZWlvNEE4Z1JCZEdKLWRhRHJoUWFkS1dFUDY5UlNScUpIRzc1TDczdlFjRWg3TkJaYlNta2h5cWlsU05YR0J2V292a25PeVJIYVlabHRTUWxaN3lKSTdFUHYtZmtmek93QVYybVVQMmFPcnc5UVpiUjRNMVhIZFpFeXIyMHJOcFhCSnZ4WVpmNkFRRzFROElESEZxYVNoRnFiWHBLUF8yZHBZOVRTdkhXY0YtRkpHY1Q0MGxjeWs0d2ZwYXNhb0djOWgySS1leE1QWnpOWXBWOTBTQ1poWlpMaDQiLCJpZCI6ImZjX0MzT3RhdFNWSmJEYzJyb1AwN1N5MlE4XzkifQ%3D%3D"
+    },
+    {
+      "question": "Are you allowed to use AI to write college essays?",
+      "type": "ai_overview",
+      "page_token": "CR5vPHicHdBbctowGEDh6WbyCFINtDDDZKr4EhwkKln6hfPSsWUDtuVLMBPbvHUPWUJX1dU00xWcb87vP7Zoqr9fPi63W9dv5vNhGGbntj3bfGbaWdHMk35qzNwk1qaJqTarbyv8eDJb792Qp6shXHUduAJF0pa0wAspGQEt-CHgE1UDYgj6rPwxRigrKQga2fMyKtkqdcnXDJNdBLsxt-2QN7BKA7CZSyeKQpc7HRYF7umdaSnVjUriJHo3RjVDmbI9kxebS7B7lfm8Wv7cA78rGzvgmympOqEDv8j1sj7odZA9YefV-46lwn4ONkzd8HhEaKQNRHG9GJQOk_w5bF5ruhAYQHjtqDW22rcvEvt7_dzJg4aYBfj42Rfe5VOJ1ig-CglVV4iATqZec-pmMpehOJC24ErcTWlrVau70iNJK-ulDkNxCde0Ziqq4E06ZGEa31X84WTet87D_9fbX6f6tumu7fkfSX-MOw",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=CR5vPHicHdBbctowGEDh6WbyCFINtDDDZKr4EhwkKln6hfPSsWUDtuVLMBPbvHUPWUJX1dU00xWcb87vP7Zoqr9fPi63W9dv5vNhGGbntj3bfGbaWdHMk35qzNwk1qaJqTarbyv8eDJb792Qp6shXHUduAJF0pa0wAspGQEt-CHgE1UDYgj6rPwxRigrKQga2fMyKtkqdcnXDJNdBLsxt-2QN7BKA7CZSyeKQpc7HRYF7umdaSnVjUriJHo3RjVDmbI9kxebS7B7lfm8Wv7cA78rGzvgmympOqEDv8j1sj7odZA9YefV-46lwn4ONkzd8HhEaKQNRHG9GJQOk_w5bF5ruhAYQHjtqDW22rcvEvt7_dzJg4aYBfj42Rfe5VOJ1ig-CglVV4iATqZec-pmMpehOJC24ErcTWlrVau70iNJK-ulDkNxCde0Ziqq4E06ZGEa31X84WTet87D_9fbX6f6tumu7fkfSX-MOw",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1RUbExTMlYyVVZwclkyZHVhM1JzWlV0d04wODRSMHBDU0hGWFRsRXhXRGx2VlZwRk5tSjRNME5PZDJoRk56ZEplbnBhUWtWVmFTMTFaa1ZZZG5KbVMyaGtibnAzYUVsSlMzVTJOMGhWT0RGNVkzbHlUMWRwUjFCd1VSSVhRek5QZEdGMFUxWktZa1JqTW5KdlVEQTNVM2t5VVRnYUlrRkVjM0k1WmxKTVJtWkljemh3ZVhkblVubzVZMWgxVlZabVYxRmxUV05uVWxFIiwiZmN2IjoiMyIsImVpIjoiQzNPdGF0U1ZKYkRjMnJvUDA3U3kyUTgiLCJxYyI6ImN3M0dzUW1BUUF3RlVHc2JiNFNfaWE0U2poZ0Nad0pKUUN5YzBnMmNSRl8xNW8wVW5Fa1h6dERpZ0hsQjJEaW8xQVJkNjQ5Yll2ZEE5ekZZR0pTcFlnZGJaWnZ1OTFuV0R3IiwicXVlc3Rpb24iOiJBcmUgeW91IGFsbG93ZWQgdG8gdXNlIEFJIHRvIHdyaXRlIGNvbGxlZ2UgZXNzYXlzPyIsImxrIjoiYzVNeVRDeEtWYWpNTDFWSXpNbkpMMDlOVVNqSlZ5Z3RUbFZJekFTeHlvc3lTMUlWa3ZOemNsTFRVeFZTaTRzVEs0c0IiLCJicyI6ImM0V09NUS1DTUJDRjQzcVRjd2U5d2VpbzRBOGdSQmRHSi1kYURyaFFhZEtXRVA2OVJTUnFKSEc3NUw3M3ZRY0VoN05CWmJTbWtoeXFpbFNOWEdCdldvdmtuT3lSSGFZWmx0U1FsWjd5Skk3RVB2LWZrZnpPd0FWMm1VUDJhT3J3OVFaYlI0TTFYSGRaRXlyMjByTnBYQkp2eFlaZjZBUUcxUThJREhGcWFTaEZxYlhwS1BfMmRwWTlUU3ZIV2NGLUZKR2NUNDBsY3lrNHdmcGFzYW9HYzloMkktZXhNUFp6TllwVjkwU0NaaFpaTGg0IiwiaWQiOiJmY19DM090YXRTVkpiRGMycm9QMDdTeTJROF85In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1RUbExTMlYyVVZwclkyZHVhM1JzWlV0d04wODRSMHBDU0hGWFRsRXhXRGx2VlZwRk5tSjRNME5PZDJoRk56ZEplbnBhUWtWVmFTMTFaa1ZZZG5KbVMyaGtibnAzYUVsSlMzVTJOMGhWT0RGNVkzbHlUMWRwUjFCd1VSSVhRek5QZEdGMFUxWktZa1JqTW5KdlVEQTNVM2t5VVRnYUlrRkVjM0k1WmxKTVJtWkljemh3ZVhkblVubzVZMWgxVlZabVYxRmxUV05uVWxFIiwiZmN2IjoiMyIsImVpIjoiQzNPdGF0U1ZKYkRjMnJvUDA3U3kyUTgiLCJxYyI6ImN3M0dzUW1BUUF3RlVHc2JiNFNfaWE0U2poZ0Nad0pKUUN5YzBnMmNSRl8xNW8wVW5Fa1h6dERpZ0hsQjJEaW8xQVJkNjQ5Yll2ZEE5ekZZR0pTcFlnZGJaWnZ1OTFuV0R3IiwicXVlc3Rpb24iOiJBcmUgeW91IGFsbG93ZWQgdG8gdXNlIEFJIHRvIHdyaXRlIGNvbGxlZ2UgZXNzYXlzPyIsImxrIjoiYzVNeVRDeEtWYWpNTDFWSXpNbkpMMDlOVVNqSlZ5Z3RUbFZJekFTeHlvc3lTMUlWa3ZOemNsTFRVeFZTaTRzVEs0c0IiLCJicyI6ImM0V09NUS1DTUJDRjQzcVRjd2U5d2VpbzRBOGdSQmRHSi1kYURyaFFhZEtXRVA2OVJTUnFKSEc3NUw3M3ZRY0VoN05CWmJTbWtoeXFpbFNOWEdCdldvdmtuT3lSSGFZWmx0U1FsWjd5Skk3RVB2LWZrZnpPd0FWMm1VUDJhT3J3OVFaYlI0TTFYSGRaRXlyMjByTnBYQkp2eFlaZjZBUUcxUThJREhGcWFTaEZxYlhwS1BfMmRwWTlUU3ZIV2NGLUZKR2NUNDBsY3lrNHdmcGFzYW9HYzloMkktZXhNUFp6TllwVjkwU0NaaFpaTGg0IiwiaWQiOiJmY19DM090YXRTVkpiRGMycm9QMDdTeTJROF85In0%3D"
+    },
+    {
+      "question": "Which AI is best for citations?",
+      "type": "ai_overview",
+      "page_token": "54Z0PXicHdDbboIwAIDh7GW8VA6ZiyZmWS2nZuBsaancLNCiQMthygZ6t3fZU-1pZnb_57v4v3901arfh6kchv6yXizGcZyfuu6ki7no5lW7yC7XVixEpnWeCbVePi3N56PYOJ8B2H4EYE_7nkFsEA382D_ZtMVn0iKUKOanXC8PXL5hG-nC07ZsplJAEEjeTcxRZuShM7nJKnXMmNZ6mSWrhjp9VCh3G3rBtXBdHarIjegACcTbnMv-UEv_QM1LkZQTtx5rCTUPTRREBqYhZxlTPRasz3axsgR1biTGU1YDQqHWmANNvFTtkqHKPcRyL7WEWTJSIyvykZW3Lr13pGhd7JQShsbKOHAc380Ke-FVNKt9CGVcxAjvQFftKb6JWjcMgimyokAYg3pNyiZ18DmHzA8V48QGdeq-WOk4O4qvjT37_7l5PzbDuj93pz93M4Pq",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=54Z0PXicHdDbboIwAIDh7GW8VA6ZiyZmWS2nZuBsaancLNCiQMthygZ6t3fZU-1pZnb_57v4v3901arfh6kchv6yXizGcZyfuu6ki7no5lW7yC7XVixEpnWeCbVePi3N56PYOJ8B2H4EYE_7nkFsEA382D_ZtMVn0iKUKOanXC8PXL5hG-nC07ZsplJAEEjeTcxRZuShM7nJKnXMmNZ6mSWrhjp9VCh3G3rBtXBdHarIjegACcTbnMv-UEv_QM1LkZQTtx5rCTUPTRREBqYhZxlTPRasz3axsgR1biTGU1YDQqHWmANNvFTtkqHKPcRyL7WEWTJSIyvykZW3Lr13pGhd7JQShsbKOHAc380Ke-FVNKt9CGVcxAjvQFftKb6JWjcMgimyokAYg3pNyiZ18DmHzA8V48QGdeq-WOk4O4qvjT37_7l5PzbDuj93pz93M4Pq",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1RUbExTMlYyVVZwclkyZHVhM1JzWlV0d04wODRSMHBDU0hGWFRsRXhXRGx2VlZwRk5tSjRNME5PZDJoRk56ZEplbnBhUWtWVmFTMTFaa1ZZZG5KbVMyaGtibnAzYUVsSlMzVTJOMGhWT0RGNVkzbHlUMWRwUjFCd1VSSVhRek5QZEdGMFUxWktZa1JqTW5KdlVEQTNVM2t5VVRnYUlrRkVjM0k1WmxKTVJtWkljemh3ZVhkblVubzVZMWgxVlZabVYxRmxUV05uVWxFIiwiZmN2IjoiMyIsImVpIjoiQzNPdGF0U1ZKYkRjMnJvUDA3U3kyUTgiLCJxYyI6ImN3M0dzUW1BUUF3RlVHc2JiNFNfaWE0U2poZ0Nad0pKUUN5YzBnMmNSRl8xNW8wVW5Fa1h6dERpZ0hsQjJEaW8xQVJkNjQ5Yll2ZEE5ekZZR0pTcFlnZGJaWnZ1OTFuV0R3IiwicXVlc3Rpb24iOiJXaGljaCBBSSBpcyBiZXN0IGZvciBjaXRhdGlvbnM/IiwibGsiOiJHaDUzYUdsamFDQmhhU0JwY3lCaVpYTjBJR1p2Y2lCamFYUmhkR2x2Ym5NIiwiYnMiOiJjNFdPTVEtQ01CQ0Y0M3FUY3dlOXdlaW80QThnUkJkR0otZGFEcmhRYWRLV0VQNjlSU1JxSkhHNzVMNzN2UWNFaDdOQlpiU21raHlxaWxTTlhHQnZXb3Zrbk95UkhhWVpsdFNRbFo3eUpJN0VQdi1ma2Z6T3dBVjJtVVAyYU9ydzlRWmJSNE0xWEhkWkV5cjIwck5wWEJKdnhZWmY2QVFHMVE4SURIRnFhU2hGcWJYcEtQXzJkcFk5VFN2SFdjRi1GSkdjVDQwbGN5azR3ZnBhc2FvR2M5aDJJLWV4TVBaek5ZcFY5MFNDWmhaWkxoNCIsImlkIjoiZmNfQzNPdGF0U1ZKYkRjMnJvUDA3U3kyUThfOSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1RUbExTMlYyVVZwclkyZHVhM1JzWlV0d04wODRSMHBDU0hGWFRsRXhXRGx2VlZwRk5tSjRNME5PZDJoRk56ZEplbnBhUWtWVmFTMTFaa1ZZZG5KbVMyaGtibnAzYUVsSlMzVTJOMGhWT0RGNVkzbHlUMWRwUjFCd1VSSVhRek5QZEdGMFUxWktZa1JqTW5KdlVEQTNVM2t5VVRnYUlrRkVjM0k1WmxKTVJtWkljemh3ZVhkblVubzVZMWgxVlZabVYxRmxUV05uVWxFIiwiZmN2IjoiMyIsImVpIjoiQzNPdGF0U1ZKYkRjMnJvUDA3U3kyUTgiLCJxYyI6ImN3M0dzUW1BUUF3RlVHc2JiNFNfaWE0U2poZ0Nad0pKUUN5YzBnMmNSRl8xNW8wVW5Fa1h6dERpZ0hsQjJEaW8xQVJkNjQ5Yll2ZEE5ekZZR0pTcFlnZGJaWnZ1OTFuV0R3IiwicXVlc3Rpb24iOiJXaGljaCBBSSBpcyBiZXN0IGZvciBjaXRhdGlvbnM%2FIiwibGsiOiJHaDUzYUdsamFDQmhhU0JwY3lCaVpYTjBJR1p2Y2lCamFYUmhkR2x2Ym5NIiwiYnMiOiJjNFdPTVEtQ01CQ0Y0M3FUY3dlOXdlaW80QThnUkJkR0otZGFEcmhRYWRLV0VQNjlSU1JxSkhHNzVMNzN2UWNFaDdOQlpiU21raHlxaWxTTlhHQnZXb3Zrbk95UkhhWVpsdFNRbFo3eUpJN0VQdi1ma2Z6T3dBVjJtVVAyYU9ydzlRWmJSNE0xWEhkWkV5cjIwck5wWEJKdnhZWmY2QVFHMVE4SURIRnFhU2hGcWJYcEtQXzJkcFk5VFN2SFdjRi1GSkdjVDQwbGN5azR3ZnBhc2FvR2M5aDJJLWV4TVBaek5ZcFY5MFNDWmhaWkxoNCIsImlkIjoiZmNfQzNPdGF0U1ZKYkRjMnJvUDA3U3kyUThfOSJ9"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "9loYsXiczVbdcqJIFH6AfY7hxkTxL2qqqKluRCSJUZKoY24obDoNCrShUcS7fZd9pr3Yp5kGMUKiyc5cbO2pkqab4_n_-PjzL9fxl__88bcdhit2XalEUVQmlBIXlxEtO37FZLGPKi_UZQGyv6_XLpaikgw0XZO13uO0uTSnikBcyfEF25WwLzC6DhB2LAnZAfWwEG-kuoCYJArYkeT6MDTDx8nNvItqAR2Jrce4preF1ItkzE2GFzyM7YJVjAq_LL_Vu3xTZmXsGyosRwP4ul32aqP5oFwTq53ysGJ6XAf8d6LoBCbrDZDPK_FHytemEgMagErOkgZIusKj1mz_WNbTRzI5aw3ufT6k6jr_dY1dP-ry06w-3bP_5S5gYRulsQAQpVFC4HydTU70LJdDXp9U6k27KFn16PEk3-NCrAUhUWHb41EYQJaPTvLOuBm7EMZbpRAB7T6FXQjG5-Pm9bnVQHMJdOVUCnnRlUnjrXN3M5WfVCzCB1eszAO-VCsOslF6E7BknuWnjkjVjWcQH3cbJrDHwZ1OY3KLJ_1VzdjqFTTnei41LWwZtiF-T_fVWrUpduqt9kWKJcTewMTyYIrHNsPT0cTzZuW7MqweYCTvmw4-dEzhe1k7kRiUM9UTLYbH06RhWUv1Xt5u1kqYzLXyAIqtvR0ldVUPWz6jO96avMbRazL8H2G0F5JT5jBKA9FoppjX2GupOejmGquBU6-Z93nrfXDIQl98UCwAUOb5LsGhMLP3lmdAl4mSYEBW-jCrGirakD-UPUmPv6GyIh0z2d_BfA5JCTQdDICmcJvOWOM9IJnq3omW-eop7xB3ZuA1ns9U_jevvhMCvwJRIvoBL-_GPw-bnqWxkdldua-Xs914db-1G03cctSqYoPTMKHe_NdIB_2vsLSnJCWjpPNYUr7GUkpJ8BNKSu-PlJTMr0zPYgmqpylpcJKSinnL4CGPpc8p6ZexJH-KJT27nsASPY2l1VksZZSUw1KRkpTTlPSGpd-hJPiblJRCC--XIj-tF-QsT_XQvTZe7NR-rwHt9lYl4-Fo7ccv06s6-JKnXrzw2jMt98JwrGtYuwlj68LgB_QaW8KrBLQSZsyMS1HghDgo-TQsEezjwAwdn5SQw78nHeqz0gsNSoi6Lia4ZDLmEN_DfsgEzw2oJJrNH-1eY_caM_HZ2cQ3YWe3GK438urH1AmC0auDLfGe9l02ejIf585m2BZrQ1uBtctgGTMZLNdG93bUnw42T7VF-3bY6ka7wcN8ay_FKzbRuroN3UtLU3T6pG4Jm3TQoB-g7R256V0Zvhc-roxnbyCuO1fPw8GL6G61aRoZk8h2EUXruK3GM8ELkMQHo0HAvQ6mBCIgp5MLxiblawR09Yo3DgoMmQZmG6khmq0O6rRaqN6ymvWG4JEwXkkdUWB-IFV_Ag4LYQ8",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=9loYsXiczVbdcqJIFH6AfY7hxkTxL2qqqKluRCSJUZKoY24obDoNCrShUcS7fZd9pr3Yp5kGMUKiyc5cbO2pkqab4_n_-PjzL9fxl__88bcdhit2XalEUVQmlBIXlxEtO37FZLGPKi_UZQGyv6_XLpaikgw0XZO13uO0uTSnikBcyfEF25WwLzC6DhB2LAnZAfWwEG-kuoCYJArYkeT6MDTDx8nNvItqAR2Jrce4preF1ItkzE2GFzyM7YJVjAq_LL_Vu3xTZmXsGyosRwP4ul32aqP5oFwTq53ysGJ6XAf8d6LoBCbrDZDPK_FHytemEgMagErOkgZIusKj1mz_WNbTRzI5aw3ufT6k6jr_dY1dP-ry06w-3bP_5S5gYRulsQAQpVFC4HydTU70LJdDXp9U6k27KFn16PEk3-NCrAUhUWHb41EYQJaPTvLOuBm7EMZbpRAB7T6FXQjG5-Pm9bnVQHMJdOVUCnnRlUnjrXN3M5WfVCzCB1eszAO-VCsOslF6E7BknuWnjkjVjWcQH3cbJrDHwZ1OY3KLJ_1VzdjqFTTnei41LWwZtiF-T_fVWrUpduqt9kWKJcTewMTyYIrHNsPT0cTzZuW7MqweYCTvmw4-dEzhe1k7kRiUM9UTLYbH06RhWUv1Xt5u1kqYzLXyAIqtvR0ldVUPWz6jO96avMbRazL8H2G0F5JT5jBKA9FoppjX2GupOejmGquBU6-Z93nrfXDIQl98UCwAUOb5LsGhMLP3lmdAl4mSYEBW-jCrGirakD-UPUmPv6GyIh0z2d_BfA5JCTQdDICmcJvOWOM9IJnq3omW-eop7xB3ZuA1ns9U_jevvhMCvwJRIvoBL-_GPw-bnqWxkdldua-Xs914db-1G03cctSqYoPTMKHe_NdIB_2vsLSnJCWjpPNYUr7GUkpJ8BNKSu-PlJTMr0zPYgmqpylpcJKSinnL4CGPpc8p6ZexJH-KJT27nsASPY2l1VksZZSUw1KRkpTTlPSGpd-hJPiblJRCC--XIj-tF-QsT_XQvTZe7NR-rwHt9lYl4-Fo7ccv06s6-JKnXrzw2jMt98JwrGtYuwlj68LgB_QaW8KrBLQSZsyMS1HghDgo-TQsEezjwAwdn5SQw78nHeqz0gsNSoi6Lia4ZDLmEN_DfsgEzw2oJJrNH-1eY_caM_HZ2cQ3YWe3GK438urH1AmC0auDLfGe9l02ejIf585m2BZrQ1uBtctgGTMZLNdG93bUnw42T7VF-3bY6ka7wcN8ay_FKzbRuroN3UtLU3T6pG4Jm3TQoB-g7R256V0Zvhc-roxnbyCuO1fPw8GL6G61aRoZk8h2EUXruK3GM8ELkMQHo0HAvQ6mBCIgp5MLxiblawR09Yo3DgoMmQZmG6khmq0O6rRaqN6ymvWG4JEwXkkdUWB-IFV_Ag4LYQ8"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Free AI Essay Writer - No Sign-Up, With Citations",
+      "link": "https://www.myessaywriter.ai/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESVQHrOzAV7AvF5SF1AsP1dO-1fAZGAr2Jk600wlbYr1zTulrD8rUJyaLHeiw4ea-LkT1EPzd53aT9bFCsAe-8IIYdurlfGtV2NhP7-Fzjft-8FzPrrEY&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQFnoECCAQAQ&uoh=1",
+      "displayed_link": "https://www.myessaywriter.ai",
+      "favicon": "https://serpapi.com/images/i/UklGRkYBAABXRUJQVlA4IDoBAACQBgCdASocABwAPtEutFooIagoGAEAGglsAL5hoAxS1q0rI94UFET25n99azl7PZh2qCQpPToKG1cuT9QAAP7-wqCydgDeo2LF0jlOC_Kwiwvtuf-TRGwob2cP1sX7zQ1Mptnk64LSUUnEH9x69abuMmV3pSazijBntkyIFBdO18a-Pek-PAoz_W6O2pFJPCv_lbb-n_H_3-v1mHef7xaqJgyvgDskGRmP5s_pO_X09vNntP6fLh2T8w9SZCKy_gkz6qfqZhYD9wWsDKdHaH4li_RKv8o4Pp6VtVq_LuVOUxZ0p0-Alyi07EI9nJPgVCViXfHI5qIaQlE6MgAdnoLsbP3H-xIeD0tkLy8qn8BTolO_O3CcJdR0OznqtJcNsXEnX4vPw-H7dThAVM9mJMFGgxXc2Z4CroAAAA.webp",
+      "snippet": "Free AI essay writer and generator - no sign-up, no credit card. Create plagiarism-free, fully cited essays in APA, MLA, Chicago and Harvard in 30 seconds.",
+      "snippet_highlighted_words": [
+        "Free AI essay writer and generator"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Free AI essay writer and generator - no sign-up, no credit card. Create plagiarism-free, fully cited essays in APA, MLA, Chicago and Harvard in 30 seconds.",
+          "source_info_link": "https://www.myessaywriter.ai/",
+          "icon": "https://serpapi.com/images/i/UklGRkYBAABXRUJQVlA4IDoBAACQBgCdASocABwAPtEutFooIagoGAEAGglsAL5hoAxS1q0rI94UFET25n99azl7PZh2qCQpPToKG1cuT9QAAP7-wqCydgDeo2LF0jlOC_Kwiwvtuf-TRGwob2cP1sX7zQ1Mptnk64LSUUnEH9x69abuMmV3pSazijBntkyIFBdO18a-Pek-PAoz_W6O2pFJPCv_lbb-n_H_3-v1mHef7xaqJgyvgDskGRmP5s_pO_X09vNntP6fLh2T8w9SZCKy_gkz6qfqZhYD9wWsDKdHaH4li_RKv8o4Pp6VtVq_LuVOUxZ0p0-Alyi07EI9nJPgVCViXfHI5qIaQlE6MgAdnoLsbP3H-xIeD0tkLy8qn8BTolO_O3CcJdR0OznqtJcNsXEnX4vPw-H7dThAVM9mJMFGgxXc2Z4CroAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "MyEssayWriter.ai"
+    },
+    {
+      "position": 2,
+      "title": "How can I write assignments with AI help without triggering ...",
+      "link": "https://www.reddit.com/r/WritingWithAI/comments/1oflwj0/how_can_i_write_assignments_with_ai_help_without/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESoQEB6zswFaC_dNJSSujip3XZAyDQVVGUerUS0n9uGOGulJetlltdU-6ns4vnlDlRiMiDokQ_C1y87_lBqkmd2CyxKSpTNCbJRDD97-REBQzuAfWkL0OkQus9wwt52gQUfm223vMPsEbBZcf8usk2cUh8dYnZwHKgtz-F6YtuVK86c8zHe4s4w-zxXT6EFF_zW8-Se_EjkOV9tmWyMCDYgEFKMQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQFnoECEwQAQ&uoh=1",
+      "displayed_link": "10+ comments \u00b7 10 months ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Hey everyone, I\u2019ve been experimenting with AI tools to help me brainstorm and organize my university assignments, but I\u2019m worried about plagiarism ...",
+      "sitelinks": {
+        "list": [
+          {
+            "title": "Received a zero because my essay was flagged as AI ...",
+            "link": "https://www.reddit.com/r/CollegeRant/comments/1e8xme7/received_a_zero_because_my_essay_was_flagged_as/",
+            "answer_count": 282,
+            "date": "21 Jul 2024"
+          },
+          {
+            "title": "falsely accused of ai written essay, what should i do ...",
+            "link": "https://www.reddit.com/r/college/comments/12j0073/falsely_accused_of_ai_written_essay_what_should_i/",
+            "answer_count": 239,
+            "date": "11 Apr 2023"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "The one I work for (QuillBot) focuses on helpful tools like grammar checking, plagiarism checking, citation generation, and humanizing, degrade ...",
+          "source_info_link": "https://www.reddit.com/r/WritingWithAI/comments/1oflwj0/how_can_i_write_assignments_with_ai_help_without/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/WritingWithAI"
+    },
+    {
+      "position": 3,
+      "title": "AI Essay Writer with Citations | AI Essay Generator",
+      "link": "https://writeless.ai/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESTQHrOzAVoTpwTzMQSonPcqNbmNX_qhx697_KIjg-t7Aj4VTrKb156fHLixtGef9ma6icsVCPYuP5GG3D1k8HrTyl2t_FqZgdc6TXow2M&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQFnoECCwQAQ&uoh=1",
+      "displayed_link": "https://writeless.ai",
+      "favicon": "https://serpapi.com/images/i/UklGRq4AAABXRUJQVlA4IKIAAADwBACdASocABwAPrUurVanIacnG_DgFolqAMq7eAbGh6AUo_wfnuHygxyN8w5wCSAA_vixmMhkOl961B-tycSb6bslempVz7Zk56J5K-q3PTh9ZZ8R_zrp9fvKbIev1q6r8tNpZBbBPInFNYyfITO8XClWEhRf0l8aFERWLdnz3ZBaqP0mD2n8meUlAV4cfXtIDvNwtPgOhCkUNzFZ4kowAAA.webp",
+      "snippet": "Writeless AI generates essays for you in seconds. It finds real citations, writes like you, and is completely undetectable. Start writing for free!",
+      "snippet_highlighted_words": [
+        "Writeless AI generates essays for you in seconds"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Writeless AI generates essays for you in seconds. It finds real citations, writes like you, and is completely undetectable. Start writing for free!",
+          "source_info_link": "https://writeless.ai/",
+          "icon": "https://serpapi.com/images/i/UklGRq4AAABXRUJQVlA4IKIAAADwBACdASocABwAPrUurVanIacnG_DgFolqAMq7eAbGh6AUo_wfnuHygxyN8w5wCSAA_vixmMhkOl961B-tycSb6bslempVz7Zk56J5K-q3PTh9ZZ8R_zrp9fvKbIev1q6r8tNpZBbBPInFNYyfITO8XClWEhRf0l8aFERWLdnz3ZBaqP0mD2n8meUlAV4cfXtIDvNwtPgOhCkUNzFZ4kowAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "writeless.ai"
+    },
+    {
+      "position": 4,
+      "title": "AI text generators (not chatGPT) on essays, citations and ...",
+      "link": "https://reflect.ucl.ac.uk/mcarena/2023/03/10/aiessay/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbQHrOzAVOyFOhJhkugFP8WH9ZtO2ztWR-ZrOf8i6yWmc2vKkg6WqXnoU2v8SYI0ZErxoWT1z6z-nRxgYOD3GWaDhZjnP8_B1wuwdQbP0wXBZYbhr4YsU25165rDHhVbtYHUHNInyy2fiJ_zf0pY&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQFnoECDAQAQ&uoh=1",
+      "displayed_link": "https://reflect.ucl.ac.uk \u203a mcarena \u203a 2023/03/10 \u203a aiessay",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAJFBMVEUCAQAAAAA-JgySWR3AdCYiFQZQMRB5SRjpjC__mTP_njSsaCK7ao7bAAAAlUlEQVR4AWPAAIJoYPAIKAq7BKa4C4Z0NguqOAMFxBtFVilWrRaatWpWY9YSoED0drCAxCwzr-VggZTdYAGtJYLSgWAB1lCwQNVioIFgAUFBkMDsqtWoAoujZghGGkAF2Fd2z1wksrJl1nKtmTOXM6SlJXXOmrkprXPmTKeqmTMXM6xatWrmzJlgYtZKIGaYiQaGsAAAQiy5k5p5uM8AAAAASUVORK5CYII.png",
+      "date": "10 Mar 2023",
+      "snippet": "No, you should not get into trouble when using ChatSonic to write an essay. Our content is completely original and plagiarism-free so it should ...",
+      "snippet_highlighted_words": [
+        "No",
+        "not",
+        "essay"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "No, you should not get into trouble when using ChatSonic to write an essay. Our content is completely original and plagiarism-free so it should ...",
+          "source_info_link": "https://reflect.ucl.ac.uk/mcarena/2023/03/10/aiessay/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAJFBMVEUCAQAAAAA-JgySWR3AdCYiFQZQMRB5SRjpjC__mTP_njSsaCK7ao7bAAAAlUlEQVR4AWPAAIJoYPAIKAq7BKa4C4Z0NguqOAMFxBtFVilWrRaatWpWY9YSoED0drCAxCwzr-VggZTdYAGtJYLSgWAB1lCwQNVioIFgAUFBkMDsqtWoAoujZghGGkAF2Fd2z1wksrJl1nKtmTOXM6SlJXXOmrkprXPmTKeqmTMXM6xatWrmzJlgYtZKIGaYiQaGsAAAQiy5k5p5uM8AAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "UCL Reflect"
+    },
+    {
+      "position": 5,
+      "title": "Free AI Essay Writer for Students",
+      "link": "https://collegeessay.org/ai-writer",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESWgHrOzAVnmldWq3VdfCL_30EsI6nmJnlGJdKeYeXYZ9QCPey0yfTWZqkhxZ5YzX38oV9q-n-XK22fGm-meVbKauPut50TZaGZ2Bcc7gPyfYmdf20CBeMt02eWw&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQFnoECCgQAQ&uoh=1",
+      "displayed_link": "https://collegeessay.org \u203a ai-writer",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAIVBMVEVHcEwxer0xer0xer0xer0xer0xer0xer0xer0xer0xer2lf4nrAAAACnRSTlMA9OjdvFKfGIE1jn33GQAAAH9JREFUOI3tkF0OwCAIg0Gx4u5_4MF-XMbUE6xPpPnSNhDSUkJ5W-sHIsCFiKpuUg-VCAiduo8IJPeAog5ATAGwfOlRPNhA1J4uBRAS2Nz3mLjhcQwoJgSg9ebJBg9Gygq_0uhRelbX2QbLqO43voD2AexZ_Tujipl-4AKEl8o71zMg2VppfrYAAAAASUVORK5CYII.png",
+      "snippet": "Free AI essay writer that generates plagiarism-free essays with real citations in APA, MLA & Chicago format. No sign-up needed. Try our AI essay generator ...",
+      "snippet_highlighted_words": [
+        "Free AI essay writer that generates plagiarism-free essays"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.9,
+            "reviews": 9003
+          },
+          "extensions": [
+            "4.9(9,003)"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Free AI essay writer that generates plagiarism-free essays with real citations in APA, MLA & Chicago format. No sign-up needed. Try our AI essay generator ...",
+          "source_info_link": "https://collegeessay.org/ai-writer",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAIVBMVEVHcEwxer0xer0xer0xer0xer0xer0xer0xer0xer0xer2lf4nrAAAACnRSTlMA9OjdvFKfGIE1jn33GQAAAH9JREFUOI3tkF0OwCAIg0Gx4u5_4MF-XMbUE6xPpPnSNhDSUkJ5W-sHIsCFiKpuUg-VCAiduo8IJPeAog5ATAGwfOlRPNhA1J4uBRAS2Nz3mLjhcQwoJgSg9ebJBg9Gygq_0uhRelbX2QbLqO43voD2AexZ_Tujipl-4AKEl8o71zMg2VppfrYAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "CollegeEssay.org"
+    },
+    {
+      "position": 6,
+      "title": "10 Best AI Tools for Writing Essays for College Students",
+      "link": "https://verla.io/blog/best-ai-tools-for-writing-essays",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbgHrOzAVjHcxgoDCaB3tosrB9qE5vNA-yia6bhxB61Iop1jYb8zzRlJTHwRKIJTZ4tAe0H-NAyCCjyampp38ivIcVBHCWZ94bv0NsKmHYkPG7Ywf348o6nkgGfYSD238emso3DBnNJsCxyIu2wlQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQFnoECCkQAQ&uoh=1",
+      "displayed_link": "https://verla.io \u203a Blog",
+      "favicon": "https://serpapi.com/images/i/UklGRnwBAABXRUJQVlA4IHABAACwBwCdASogACAAPtE-tFooIigoFAEAGglpAAnhkEp3zPqH5zXpH_c-rB1kEb00TdRS7DlvTUmWVucWTPZEptMVhWN5fEPAAP7or8QQlTb83sMv-sS8bYxjf5TYIvPi1ZYecn2NjYU1dc0y4X-wd_0K0_58rH34-_Wk_esQvlO607-2bsix8TUyBmxzXLOdhH_R70f25-mfv-4lY37q_fx_4-2mGifV09AvRY5p0BSa-9nA98eOme5g8Jkpkh91Pj7Wn1q-7JNvw_2tSmdR8TTO2QgagJ7v3JTLG8WpO4Ha4S2Q5JqsCHLQtPlnQ5bO4kz0FaAsbeCl6H188Zdp-gihi9NWd2Ohtx_HZTRaSZvsCb8DwB1YRvTuf_wx36cvWcAQRqAMfOtD6PmTLvc95TQ28VfV3Qj3GxumF5D14I2JOjweuqjtTNUs1KUJnxlsraET8iCucT9TLvAlDprFNN34tSIFwfAU7IJ9MO5Kf6AAAA.webp",
+      "date": "3 Sept 2026",
+      "snippet": "Discover the best AI for writing essays. Compare 10 top AI essay tools for writing, citations, AI detection, humanization, and academic ...",
+      "snippet_highlighted_words": [
+        "AI essay tools"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Discover the best AI for writing essays. Compare 10 top AI essay tools for writing, citations, AI detection, humanization, and academic ...",
+          "source_info_link": "https://verla.io/blog/best-ai-tools-for-writing-essays",
+          "icon": "https://serpapi.com/images/i/UklGRnwBAABXRUJQVlA4IHABAACwBwCdASogACAAPtE-tFooIigoFAEAGglpAAnhkEp3zPqH5zXpH_c-rB1kEb00TdRS7DlvTUmWVucWTPZEptMVhWN5fEPAAP7or8QQlTb83sMv-sS8bYxjf5TYIvPi1ZYecn2NjYU1dc0y4X-wd_0K0_58rH34-_Wk_esQvlO607-2bsix8TUyBmxzXLOdhH_R70f25-mfv-4lY37q_fx_4-2mGifV09AvRY5p0BSa-9nA98eOme5g8Jkpkh91Pj7Wn1q-7JNvw_2tSmdR8TTO2QgagJ7v3JTLG8WpO4Ha4S2Q5JqsCHLQtPlnQ5bO4kz0FaAsbeCl6H188Zdp-gihi9NWd2Ohtx_HZTRaSZvsCb8DwB1YRvTuf_wx36cvWcAQRqAMfOtD6PmTLvc95TQ28VfV3Qj3GxumF5D14I2JOjweuqjtTNUs1KUJnxlsraET8iCucT9TLvAlDprFNN34tSIFwfAU7IJ9MO5Kf6AAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "verla.io"
+    },
+    {
+      "position": 7,
+      "title": "AI Essay Generator \u2013 Humanized, Detection-Proof Essays",
+      "link": "https://notegpt.io/ai-essay-writer",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESWgHrOzAV6ZBGoSU__LcOZGQVlFYduNBoTUdyM6EcBjbB0f0UvHy7FcoX-1Lk6Hnm70LeDaM4mlhxE9bxy0R6BkmBL4fwobpR0gioTldJEXD9uGWhG3VZ9qC5sg&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQFnoECCsQAQ&uoh=1",
+      "displayed_link": "https://notegpt.io \u203a ai-essay-writer",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAJFBMVEVHcEw4hfQ7hvNIi-1AiPGApdFml-FSj-hVj-U0hPakvrwug_pA_2pbAAAAC3RSTlMA3bl1lx0wWEP1C436cuEAAAEJSURBVCiRbVJZgsUgCJPNjfvfdyBql9fho62NhAQo5Rm1dyv_RiNH6Ac32xDgNyZ9_WYVUXKaD4xqIqOZaMBm7Dc1oRxfzHHrymVqidW7aPDKVuk9U8xfURfx-i8MvnDaZSQKXnGwVlRlcLZ8EdQ4ywK5tC4QBZpeygzPusBtOVEojHb6yTx9ydPIB0DK9qhu8VJpp1qx48IOuO7GjZpOXPSoi1DcZQaYwiYc1G27jwXGocPgaprq5AvcRuN7ql9dqKsmNKysGJQZGoeGtW3b5KflAz7bHos-VsQ7I5HPsJXlwIzxkR5j8Ja7E01q0OWNyyOyLNFJb_KzmndZtu9i9zXo70qfmO_jH6-7EKYkRBqnAAAAAElFTkSuQmCC.png",
+      "snippet": "Does AI Essay Generator include citations and references? Absolutely. AI Essay Generator can create essays with properly formatted citations and references.",
+      "snippet_highlighted_words": [
+        "AI Essay Generator can create essays with properly formatted citations and references"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.9,
+            "reviews": 33471688
+          },
+          "extensions": [
+            "4.9(3,34,71,688)",
+            "Free",
+            "Internet Browser"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Does AI Essay Generator include citations and references? Absolutely. AI Essay Generator can create essays with properly formatted citations and references.",
+          "source_info_link": "https://notegpt.io/ai-essay-writer",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAJFBMVEVHcEw4hfQ7hvNIi-1AiPGApdFml-FSj-hVj-U0hPakvrwug_pA_2pbAAAAC3RSTlMA3bl1lx0wWEP1C436cuEAAAEJSURBVCiRbVJZgsUgCJPNjfvfdyBql9fho62NhAQo5Rm1dyv_RiNH6Ac32xDgNyZ9_WYVUXKaD4xqIqOZaMBm7Dc1oRxfzHHrymVqidW7aPDKVuk9U8xfURfx-i8MvnDaZSQKXnGwVlRlcLZ8EdQ4ywK5tC4QBZpeygzPusBtOVEojHb6yTx9ydPIB0DK9qhu8VJpp1qx48IOuO7GjZpOXPSoi1DcZQaYwiYc1G27jwXGocPgaprq5AvcRuN7ql9dqKsmNKysGJQZGoeGtW3b5KflAz7bHos-VsQ7I5HPsJXlwIzxkR5j8Ja7E01q0OWNyyOyLNFJb_KzmndZtu9i9zXo70qfmO_jH6-7EKYkRBqnAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "NoteGPT",
+      "read_more_link": "https://notegpt.io/ai-essay-writer#:~:text=Does%20AI%20Essay%20Generator%20include,citations%20and%20references%3F"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "AI essay writer with citations free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=AI+essay+writer+with+citations+free&sa=X&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ1QJ6BAgmEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+with+citations+free"
+    },
+    {
+      "block_position": 1,
+      "query": "AI essay writer free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=AI+essay+writer+free&sa=X&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Free essay writer for students",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Free+essay+writer+for+students&sa=X&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Free+essay+writer+for+students"
+    },
+    {
+      "block_position": 1,
+      "query": "Undetectable AI essay writer free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Undetectable+AI+essay+writer+free&sa=X&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Undetectable+AI+essay+writer+free"
+    },
+    {
+      "block_position": 1,
+      "query": "ChatGPT essay writer free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=ChatGPT+essay+writer+free&sa=X&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=ChatGPT+essay+writer+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Human essay writer free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Human+essay+writer+free&sa=X&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Human+essay+writer+free"
+    },
+    {
+      "block_position": 1,
+      "query": "AI essay writer free no sign-up",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=AI+essay+writer+free+no+sign-up&sa=X&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ1QJ6BAgtEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+free+no+sign-up"
+    },
+    {
+      "block_position": 1,
+      "query": "AI essay writer no detection",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=AI+essay+writer+no+detection&sa=X&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ1QJ6BAgqEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+no+detection"
+    }
+  ],
+  "discussions_and_forums": [
+    {
+      "title": "It says my essay is AI Generated when its not?",
+      "link": "https://www.reddit.com/r/ApplyingToCollege/comments/1hvn58u/it_says_my_essay_is_ai_generated_when_its_not/",
+      "date": "1 year ago",
+      "extensions": [
+        "r/ApplyingToCollege",
+        "40+ comments"
+      ],
+      "source": "Reddit",
+      "answers": [
+        {
+          "link": "https://www.reddit.com/r/ApplyingToCollege/comments/1hvn58u/it_says_my_essay_is_ai_generated_when_its_not/m5uflu1/",
+          "extensions": [
+            "Top answer",
+            "23 votes",
+            "a year ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/ApplyingToCollege/comments/1hvn58u/it_says_my_essay_is_ai_generated_when_its_not/m5ugffo/",
+          "extensions": [
+            "15 votes",
+            "a year ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/ApplyingToCollege/comments/1hvn58u/it_says_my_essay_is_ai_generated_when_its_not/m5uiv33/",
+          "extensions": [
+            "11 votes",
+            "a year ago"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I have a college assignment that keeps getting flagged as AI even though ...",
+      "link": "https://www.quora.com/I-have-a-college-assignment-that-keeps-getting-flagged-as-AI-even-though-I-didn-t-use-AI-to-write-it-What-do-I-do",
+      "date": "2 years ago",
+      "extensions": [
+        "50+ answers"
+      ],
+      "source": "Quora",
+      "answers": [
+        {
+          "link": "https://www.quora.com/I-have-a-college-assignment-that-keeps-getting-flagged-as-AI-even-though-I-didn-t-use-AI-to-write-it-What-do-I-do?top_ans=1477743651102498",
+          "extensions": [
+            "Top answer",
+            "32 votes",
+            "3 years ago"
+          ]
+        },
+        {
+          "link": "https://www.quora.com/I-have-a-college-assignment-that-keeps-getting-flagged-as-AI-even-though-I-didn-t-use-AI-to-write-it-What-do-I-do?top_ans=1477743753396037",
+          "extensions": [
+            "26 votes",
+            "2 years ago"
+          ]
+        },
+        {
+          "link": "https://www.quora.com/I-have-a-college-assignment-that-keeps-getting-flagged-as-AI-even-though-I-didn-t-use-AI-to-write-it-What-do-I-do?top_ans=1477743857320124",
+          "extensions": [
+            "21 votes",
+            "a year ago"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Can college students use AI essay writing tools like PerfectEssayWriter. ...",
+      "link": "https://www.quora.com/Can-college-students-use-AI-essay-writing-tools-like-PerfectEssayWriter-ai-to-help-with-their-assignments-without-getting-into-academic-trouble",
+      "date": "1 year ago",
+      "extensions": [
+        "30+ answers"
+      ],
+      "source": "Quora",
+      "answers": [
+        {
+          "link": "https://www.quora.com/Can-college-students-use-AI-essay-writing-tools-like-PerfectEssayWriter-ai-to-help-with-their-assignments-without-getting-into-academic-trouble?top_ans=1477743869609857",
+          "extensions": [
+            "Top answer",
+            "2 votes",
+            "a year ago"
+          ]
+        },
+        {
+          "link": "https://www.quora.com/Can-college-students-use-AI-essay-writing-tools-like-PerfectEssayWriter-ai-to-help-with-their-assignments-without-getting-into-academic-trouble?top_ans=1477743869538296",
+          "extensions": [
+            "a year ago"
+          ]
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=C3OtatSVJbDc2roP07Sy2Q8&start=10&sa=N&sstk=AS6-VmIfWMcjxkGZQmVIhhejrpCZWgeTI3bHmUqVeoXUxjHCFw4hzktuAwnq6yfbqsNb4OQQd1XMLvx_CUZrOGHKo09CYo0pcT7iaQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ8NMDegQIRhAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=C3OtatSVJbDc2roP07Sy2Q8&start=10&sa=N&sstk=AS6-VmIfWMcjxkGZQmVIhhejrpCZWgeTI3bHmUqVeoXUxjHCFw4hzktuAwnq6yfbqsNb4OQQd1XMLvx_CUZrOGHKo09CYo0pcT7iaQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ8tMDegQIRhAE",
+      "3": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=C3OtatSVJbDc2roP07Sy2Q8&start=20&sa=N&sstk=AS6-VmIfWMcjxkGZQmVIhhejrpCZWgeTI3bHmUqVeoXUxjHCFw4hzktuAwnq6yfbqsNb4OQQd1XMLvx_CUZrOGHKo09CYo0pcT7iaQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ8tMDegQIRhAG",
+      "4": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=C3OtatSVJbDc2roP07Sy2Q8&start=30&sa=N&sstk=AS6-VmIfWMcjxkGZQmVIhhejrpCZWgeTI3bHmUqVeoXUxjHCFw4hzktuAwnq6yfbqsNb4OQQd1XMLvx_CUZrOGHKo09CYo0pcT7iaQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ8tMDegQIRhAI",
+      "5": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=C3OtatSVJbDc2roP07Sy2Q8&start=40&sa=N&sstk=AS6-VmIfWMcjxkGZQmVIhhejrpCZWgeTI3bHmUqVeoXUxjHCFw4hzktuAwnq6yfbqsNb4OQQd1XMLvx_CUZrOGHKo09CYo0pcT7iaQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ8tMDegQIRhAK",
+      "6": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=C3OtatSVJbDc2roP07Sy2Q8&start=50&sa=N&sstk=AS6-VmIfWMcjxkGZQmVIhhejrpCZWgeTI3bHmUqVeoXUxjHCFw4hzktuAwnq6yfbqsNb4OQQd1XMLvx_CUZrOGHKo09CYo0pcT7iaQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ8tMDegQIRhAM",
+      "7": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=C3OtatSVJbDc2roP07Sy2Q8&start=60&sa=N&sstk=AS6-VmIfWMcjxkGZQmVIhhejrpCZWgeTI3bHmUqVeoXUxjHCFw4hzktuAwnq6yfbqsNb4OQQd1XMLvx_CUZrOGHKo09CYo0pcT7iaQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ8tMDegQIRhAO",
+      "8": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=C3OtatSVJbDc2roP07Sy2Q8&start=70&sa=N&sstk=AS6-VmIfWMcjxkGZQmVIhhejrpCZWgeTI3bHmUqVeoXUxjHCFw4hzktuAwnq6yfbqsNb4OQQd1XMLvx_CUZrOGHKo09CYo0pcT7iaQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ8tMDegQIRhAQ",
+      "9": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=C3OtatSVJbDc2roP07Sy2Q8&start=80&sa=N&sstk=AS6-VmIfWMcjxkGZQmVIhhejrpCZWgeTI3bHmUqVeoXUxjHCFw4hzktuAwnq6yfbqsNb4OQQd1XMLvx_CUZrOGHKo09CYo0pcT7iaQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ8tMDegQIRhAS",
+      "10": "https://www.google.co.in/search?q=AI+essay+writer+not+generating+citations+for+college+assignments&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=C3OtatSVJbDc2roP07Sy2Q8&start=90&sa=N&sstk=AS6-VmIfWMcjxkGZQmVIhhejrpCZWgeTI3bHmUqVeoXUxjHCFw4hzktuAwnq6yfbqsNb4OQQd1XMLvx_CUZrOGHKo09CYo0pcT7iaQ&ved=2ahUKEwiUx8-F0viWAxUwrlYBHVOaLPsQ8tMDegQIRhAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+essay+writer+not+generating+citations+for+college+assignments&start=90"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "search_metadata": {
+    "id": "6aad72f79b762d31542c4a6f",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/8nyjtZ5KVKCTD9C5A_eI8RPwcXtah-H0VJJCXXC2Yrg/6aad72f79b762d31542c4a6f.json",
+    "markdown_endpoint": "https://serpapi.com/searches/8nyjtZ5KVKCTD9C5A_eI8RPwcXtah-H0VJJCXXC2Yrg/6aad72f79b762d31542c4a6f.md",
+    "created_at": "2026-09-18 17:20:55 UTC",
+    "processed_at": "2026-09-18 17:20:55 UTC",
+    "google_autocomplete_url": "https://www.google.com/complete/search?q=AI+tools+for+college+students+in+India&gl=in&hl=en&client=chrome&dpr=1",
+    "raw_html_file": "https://serpapi.com/searches/8nyjtZ5KVKCTD9C5A_eI8RPwcXtah-H0VJJCXXC2Yrg/6aad72f79b762d31542c4a6f.html",
+    "prettify_html_file": "https://serpapi.com/searches/8nyjtZ5KVKCTD9C5A_eI8RPwcXtah-H0VJJCXXC2Yrg/6aad72f79b762d31542c4a6f.prettify",
+    "total_time_taken": 0.64
+  },
+  "search_parameters": {
+    "engine": "google_autocomplete",
+    "q": "AI tools for college students in India",
+    "gl": "in",
+    "hl": "en"
+  },
+  "search_information": {
+    "autocomplete_results_state": "No results."
+  },
+  "suggestions": [],
+  "verbatim_relevance": 1300
+}

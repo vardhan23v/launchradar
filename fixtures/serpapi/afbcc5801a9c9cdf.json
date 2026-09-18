@@ -1,0 +1,393 @@
+{
+  "search_metadata": {
+    "id": "6aad76e3f5d5acb6c03cb3de",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/Hv3m0wVyY8VEnlhMBPQELPClqh1YSgoVPTQnOZmvuBk/6aad76e3f5d5acb6c03cb3de.json",
+    "markdown_endpoint": "https://serpapi.com/searches/Hv3m0wVyY8VEnlhMBPQELPClqh1YSgoVPTQnOZmvuBk/6aad76e3f5d5acb6c03cb3de.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/Hv3m0wVyY8VEnlhMBPQELPClqh1YSgoVPTQnOZmvuBk/6aad76e3f5d5acb6c03cb3de.json_with_pixel_position",
+    "created_at": "2026-09-18 17:37:39 UTC",
+    "processed_at": "2026-09-18 17:37:39 UTC",
+    "google_url": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&oq=deploy+website+for+startups+on+github+actions&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/Hv3m0wVyY8VEnlhMBPQELPClqh1YSgoVPTQnOZmvuBk/6aad76e3f5d5acb6c03cb3de.html",
+    "total_time_taken": 0.49
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "deploy website for startups on github actions",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "deploy website for startups on github actions",
+    "total_results": 111,
+    "time_taken_displayed": 0.3,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "ai_overview": {
+    "page_token": "Cx9XQHiczVXbcqJIGH6AfY7lxkQ04ClV1FR3i0g0B1RiyA2FDQIKtENjiLnbd9mnmUeYp9kGDwGjyc5cbO1fBU03P__54_vr78CPlj__-OElyYpe83yaplWXEDdwqphU_Yi36CbC_JwENMbeNzeQ_IhbrwNHSisIqJqK1N542lhaU5mjZB1jx7cl7MUkdDgvkJyI27xIAoepVOMcXxIFK7ES1Hy4bcqrtviwbk8FF4hc7kUyZxZ1FiyM1wXlTZ7dln8KXbap0qoTmQqs4kGiBY4-gnNavapdCdV73gqZDvjvRNZcmK03AJ1XYq_kr01lBlQA5YIlFbj5Ct-1jO1rpOWvkHvWGtz6HOXqGru65ls_7bLTXX26Z79lLmBpm-axAJDmUULgf51NQbRdLvu8PqnUQbssu-qR95Nij0uxlsRNS9sei8IECL07KTpjZrxSGIdKYRe0-wR2IdDPx83qM1BBYwk0-VQKRdHkR_HQuaGhsBPedtng1vhZzJY672MP5w8xzeYZTTo10r-0FT0WJnFTnHrD3pMHOquJWh_ZTd_l8YzpBcSyHdv0zNq3fF-_qjdqHaHVvsixhOkBTLQIpo3uUWf68BiGRnVYhfU9jNC26eBDx2S2R-qJxOB4p_qxxUphsLOG7Vqq9Yp2d62E2VzLI1Bu7eAhq6uy37IZfWOtKWq8e82G_yOMtuIWlNFoG4hKdopFja2WUoBuobEqOPWbOc5b64N9Ftrig2IJgCwUsAT7whjHlg2gIVfOMIDkPtxVDRdtsIwHx19p7JT9oeBeYx_g1gks5pCVQNXALVBlZtPXVcXNjGvyNtBsGHa-evIR4s4MvMrcTNG_-fWdEPgViDLR9ng5Gv8SbHqtyHbCAN-PJ-El0l-EEGjj4dQQWulpmJBw9mukg_9XWNpSkryjpPNYkr_GUk5J8BNKyp-NA5ay-UXkLJagcpqSbk9SUjlvBEZFLH1OSb-MJfQplrTd_QSWyGksrc5iyU2PsVSmJPk0JR2w9DuUBH-TknJoOdulzE_rhXuWp5TFm-n2yFifCP5LNJ6oC-rNPFH-Hj6nX_LUPEyuQ8sOLkzfvoZXN8nGvjDZAbl2bO67ZDurgGwqqTOjfuJU5iSu0MSKk_WKVkhUcf3EW88qFk58ElEuDGIi1azm_L5P9Xjy3Ipen1-6LbexGmpP4lsIbmRFHs7wbWMMk2aymfWGE11_mk1CdSgaej2NUSM0b-SpZy_r4WYKLzf9vvK6uotQx19bA6ff0P3mcugrxnSzvsXP88sVMWIUw1nzap0-4sBBz8L8TlTuXgP02LN1OQrj9p2SR0Ylw7SFR2QMnp40juVIHanOhTGW2DSITbenganLxhLl48ouwq6UXU3WLchRbJkOfZHEmtXq4E6rhYWW3RBELnSTzUpqczSKpfo_RUhZ5A",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=Cx9XQHiczVXbcqJIGH6AfY7lxkQ04ClV1FR3i0g0B1RiyA2FDQIKtENjiLnbd9mnmUeYp9kGDwGjyc5cbO1fBU03P__54_vr78CPlj__-OElyYpe83yaplWXEDdwqphU_Yi36CbC_JwENMbeNzeQ_IhbrwNHSisIqJqK1N542lhaU5mjZB1jx7cl7MUkdDgvkJyI27xIAoepVOMcXxIFK7ES1Hy4bcqrtviwbk8FF4hc7kUyZxZ1FiyM1wXlTZ7dln8KXbap0qoTmQqs4kGiBY4-gnNavapdCdV73gqZDvjvRNZcmK03AJ1XYq_kr01lBlQA5YIlFbj5Ct-1jO1rpOWvkHvWGtz6HOXqGru65ls_7bLTXX26Z79lLmBpm-axAJDmUULgf51NQbRdLvu8PqnUQbssu-qR95Nij0uxlsRNS9sei8IECL07KTpjZrxSGIdKYRe0-wR2IdDPx83qM1BBYwk0-VQKRdHkR_HQuaGhsBPedtng1vhZzJY672MP5w8xzeYZTTo10r-0FT0WJnFTnHrD3pMHOquJWh_ZTd_l8YzpBcSyHdv0zNq3fF-_qjdqHaHVvsixhOkBTLQIpo3uUWf68BiGRnVYhfU9jNC26eBDx2S2R-qJxOB4p_qxxUphsLOG7Vqq9Yp2d62E2VzLI1Bu7eAhq6uy37IZfWOtKWq8e82G_yOMtuIWlNFoG4hKdopFja2WUoBuobEqOPWbOc5b64N9Ftrig2IJgCwUsAT7whjHlg2gIVfOMIDkPtxVDRdtsIwHx19p7JT9oeBeYx_g1gks5pCVQNXALVBlZtPXVcXNjGvyNtBsGHa-evIR4s4MvMrcTNG_-fWdEPgViDLR9ng5Gv8SbHqtyHbCAN-PJ-El0l-EEGjj4dQQWulpmJBw9mukg_9XWNpSkryjpPNYkr_GUk5J8BNKyp-NA5ay-UXkLJagcpqSbk9SUjlvBEZFLH1OSb-MJfQplrTd_QSWyGksrc5iyU2PsVSmJPk0JR2w9DuUBH-TknJoOdulzE_rhXuWp5TFm-n2yFifCP5LNJ6oC-rNPFH-Hj6nX_LUPEyuQ8sOLkzfvoZXN8nGvjDZAbl2bO67ZDurgGwqqTOjfuJU5iSu0MSKk_WKVkhUcf3EW88qFk58ElEuDGIi1azm_L5P9Xjy3Ipen1-6LbexGmpP4lsIbmRFHs7wbWMMk2aymfWGE11_mk1CdSgaej2NUSM0b-SpZy_r4WYKLzf9vvK6uotQx19bA6ff0P3mcugrxnSzvsXP88sVMWIUw1nzap0-4sBBz8L8TlTuXgP02LN1OQrj9p2SR0Ylw7SFR2QMnp40juVIHanOhTGW2DSITbenganLxhLl48ouwq6UXU3WLchRbJkOfZHEmtXq4E6rhYWW3RBELnSTzUpqczSKpfo_RUhZ5A"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "GitHub Actions",
+      "link": "https://github.com/features/actions",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESWwHrOzAV6CWRPX3sw8XZgvV_PmJl8HWLjB-fuL4SUqZwAVv6swqRPVMW7-0vcwmikm7GvPi_qjlnWePGsphy-GAY4sBDK-LUcvAr3ikh9AT7JfdqTMpf4IFgbM0&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQFnoECBoQAQ&uoh=1",
+      "displayed_link": "https://github.com \u203a features \u203a actions",
+      "favicon": "https://serpapi.com/images/i/UklGRloBAABXRUJQVlA4IE4BAABQBwCdASogACAAPtE-tFooIigoFAEAGglpABOY66msBQAhm_jie7on_u43Y8wznTq3o6RYivaXQwLqgtFvGxqSxD0AAP79L-I2CJh157_guzOImTEj4KETbf3LoXG53uwsqC7TNrPYvnj0JCbHaYHsiJ0dZxjZp00AIDh71pmydvV9rbfX7pBwD6xKTC28fi7cmmnaetDkFUKtNDh1oyUvgEJ5B0Jos2E3N5Wf9ywcn5v3_j66N4LrWwMgFUK8OJeK59_R9U8Iq0vdjaoGaiwCdWiWFqTkHXGL7cy9_twJalsMPdZeuuD4BKfDlkDiZPTQbYNs-KpL44LixNJqixiQZYn6Pg05yAzQrotV5msFHgGjybbpLCJP2Jxb24id-1ooSLAITw21MsGq7M_mh1A1SG77Y3rdqY4h760MO7-2OyFmK97IagzfP7hUwAAA.webp",
+      "snippet": "GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code ...",
+      "snippet_highlighted_words": [
+        "all"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code ...",
+          "source_info_link": "https://github.com/features/actions",
+          "icon": "https://serpapi.com/images/i/UklGRloBAABXRUJQVlA4IE4BAABQBwCdASogACAAPtE-tFooIigoFAEAGglpABOY66msBQAhm_jie7on_u43Y8wznTq3o6RYivaXQwLqgtFvGxqSxD0AAP79L-I2CJh157_guzOImTEj4KETbf3LoXG53uwsqC7TNrPYvnj0JCbHaYHsiJ0dZxjZp00AIDh71pmydvV9rbfX7pBwD6xKTC28fi7cmmnaetDkFUKtNDh1oyUvgEJ5B0Jos2E3N5Wf9ywcn5v3_j66N4LrWwMgFUK8OJeK59_R9U8Iq0vdjaoGaiwCdWiWFqTkHXGL7cy9_twJalsMPdZeuuD4BKfDlkDiZPTQbYNs-KpL44LixNJqixiQZYn6Pg05yAzQrotV5msFHgGjybbpLCJP2Jxb24id-1ooSLAITw21MsGq7M_mh1A1SG77Y3rdqY4h760MO7-2OyFmK97IagzfP7hUwAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "GitHub",
+      "read_more_link": "https://github.com/features/actions#:~:text=Hosted%20runners"
+    },
+    {
+      "position": 2,
+      "title": "Deploy by Using GitHub Actions - Azure App Service",
+      "link": "https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESgQEB6zswFRqNNzQXRyYdiNdIOyKol09jgaVZvoL-hmPkkLXqbxkU_i9fw-ys40hwGj0sZ481vC_Ld6mDzguHZ7rbC3dVHL98HzAlEV_ZNUsh_8HOOvBAR4YTq-BEnKffW9Fks0NEJwCuS2kqF5MfYoy0WxsJ8bzJt5CyYyo3NLdlkCQ&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQFnoECCAQAQ&uoh=1",
+      "displayed_link": "https://learn.microsoft.com \u203a en-us \u203a deploy-github-actions",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABnRSTlMAAAAAAABupgeRAAAAWklEQVR4AWP4FKBEJPrip8wABrV7GOp3EYtGhgWjFoxaMGrBqAXf_OSIRD995CEWVO9hqN1FLBoOYNlnotF3iI7_O4lHQOVL3hONPo9agB2NWjBqwagFoxYAAB2zMZ7bQW2tAAAAAElFTkSuQmCC.png",
+      "date": "28 Nov 2025",
+      "snippet": "Learn how to deploy your code to Azure App Service from a CI/CD pipeline by using GitHub Actions. Customize the build tasks and run complex ...",
+      "snippet_highlighted_words": [
+        "Learn how to deploy your code to Azure App Service"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Learn how to deploy your code to Azure App Service from a CI/CD pipeline by using GitHub Actions. Customize the build tasks and run complex ...",
+          "source_info_link": "https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABnRSTlMAAAAAAABupgeRAAAAWklEQVR4AWP4FKBEJPrip8wABrV7GOp3EYtGhgWjFoxaMGrBqAXf_OSIRD995CEWVO9hqN1FLBoOYNlnotF3iI7_O4lHQOVL3hONPo9agB2NWjBqwagFoxYAAB2zMZ7bQW2tAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Microsoft Learn"
+    },
+    {
+      "position": 3,
+      "title": "Static site deployments made easy with Github Actions and ...",
+      "link": "https://www.youtube.com/watch?v=OQJAX-Ce1YY",
+      "displayed_link": "7.5K+ views \u00b7 1 year ago",
+      "thumbnail": "https://serpapi.com/searches/6aad76e3f5d5acb6c03cb3de/images/_66v5lnajJWXHUyhWn3hMHuqp9Z6T2z7cmSh2X1E8hg.jpeg",
+      "favicon": "https://serpapi.com/images/i/UklGRpwAAABXRUJQVlA4IJAAAAAQAwCdASoQABAAAsBMJbACdEyAZIBvHZEVF_xH8jFr8RAA_vdfqk7B4h7c7SA9EXLm1jvCcvS12TTPc4SgLiYbbdnDtj5mFYsy9rYK8egN-m_wy1bF7_lqaJwe1kOFY9IH8jmlO7DbAWe9V_-WsvvcWurSf-Cp-rbcVf_uF_E7k7jxw1wX2r_PvJ3PjrggAAA.webp",
+      "snippet": "In today's video we'll examine deploying a static website built using the 11ty.dev framework (eleventy) and deployed onto a DigitalOcean ...",
+      "duration": "16:11",
+      "about_this_result": {
+        "source": {
+          "description": "In today's video we'll examine deploying a static website built using the 11ty.dev framework (eleventy) and deployed onto a DigitalOcean ...",
+          "icon": "https://serpapi.com/images/i/UklGRpwAAABXRUJQVlA4IJAAAAAQAwCdASoQABAAAsBMJbACdEyAZIBvHZEVF_xH8jFr8RAA_vdfqk7B4h7c7SA9EXLm1jvCcvS12TTPc4SgLiYbbdnDtj5mFYsy9rYK8egN-m_wy1bF7_lqaJwe1kOFY9IH8jmlO7DbAWe9V_-WsvvcWurSf-Cp-rbcVf_uF_E7k7jxw1wX2r_PvJ3PjrggAAA.webp"
+        }
+      },
+      "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTALKiOkIe_6_GBkUNm-kF1TRSITKPVSCN71g",
+      "source": "YouTube \u00b7 Tailscale"
+    },
+    {
+      "position": 4,
+      "title": "Deploying your website automatically",
+      "link": "https://docs.github.com/en/get-started/start-your-journey/deploying-your-website-automatically",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlgEB6zswFRocyT3nduDCd2QTmnXbbc9lBSf7xRq7BfJz5bEWbXDULJx6FxItEFi9YK7zYbxmHCD-bRqOFOtdiQC7Env6TYacWrDqN8O9mDjQGYu_kuKi3z8Jdc7jox2rBFHBUlp7g27ONJ4ASscfYT0AY1uphOlBITghSzhTs2Q7Rw07m24Km-tnw06L2XKdyUpQpSM7gm8&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQFnoECB0QAQ&uoh=1",
+      "displayed_link": "https://docs.github.com \u203a get-started \u203a start-your-journey",
+      "favicon": "https://serpapi.com/images/i/UklGRlABAABXRUJQVlA4IEQBAACQBgCdASocABwAPtEwtFooIigoGAEAGglsAL9YisjQqAPddl38RLdex0HuVF5PpRUATdhFqUMWC0P__MsAAP7-lU3NaFZ76bOaPQYzoJ98G9U8bM3dKxSLqWwG1DKmLk4GUAtz7RzzrmvTI6MipeuJPsfBRwLegDDnUvcc1Da2Le2G86SinAVf6an_R9J39Q-bu3Z2S_147ycCgqpF3MikLRFv9qLaUAXhAja-cSY_alOQjPZe0kZRYmFc0A8YAsFD0UAZdZTPSgWqaWcbhl0MlO1Eh1XM21CtO642xaYfZyNHd2p9RY1NGao5j46TIy-vui8I2ihiLld1w8wgJiK3fUSlfDw_UP3RavxrqIIHa3ZnQWO-xaDIIteaV7vZVqs5r0uaDYULEfpoImcSICLERZ2NRcUEmp2x9Rfwc-lsUmFaAAA.webp",
+      "snippet": "Automate your code deployment with GitHub Actions and GitHub Pages to publish updates to a live site with every push to the main branch.",
+      "snippet_highlighted_words": [
+        "Automate your code deployment with GitHub Actions"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Automate your code deployment with GitHub Actions and GitHub Pages to publish updates to a live site with every push to the main branch.",
+          "source_info_link": "https://docs.github.com/en/get-started/start-your-journey/deploying-your-website-automatically",
+          "icon": "https://serpapi.com/images/i/UklGRlABAABXRUJQVlA4IEQBAACQBgCdASocABwAPtEwtFooIigoGAEAGglsAL9YisjQqAPddl38RLdex0HuVF5PpRUATdhFqUMWC0P__MsAAP7-lU3NaFZ76bOaPQYzoJ98G9U8bM3dKxSLqWwG1DKmLk4GUAtz7RzzrmvTI6MipeuJPsfBRwLegDDnUvcc1Da2Le2G86SinAVf6an_R9J39Q-bu3Z2S_147ycCgqpF3MikLRFv9qLaUAXhAja-cSY_alOQjPZe0kZRYmFc0A8YAsFD0UAZdZTPSgWqaWcbhl0MlO1Eh1XM21CtO642xaYfZyNHd2p9RY1NGao5j46TIy-vui8I2ihiLld1w8wgJiK3fUSlfDw_UP3RavxrqIIHa3ZnQWO-xaDIIteaV7vZVqs5r0uaDYULEfpoImcSICLERZ2NRcUEmp2x9Rfwc-lsUmFaAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "GitHub Docs"
+    },
+    {
+      "position": 5,
+      "title": "Deploying a static site using Github Action on Github Pages",
+      "link": "https://dev.to/ashif8984/deploying-a-static-site-using-github-action-on-github-pages-5a9a",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESkQEB6zswFTa5nTh2RRSz3FbD2Hr1HtRupjADSNmk8hGvgrnxRVZFOCnMi-9fUcHBpDZf5inXYp2iq0NujH8UKS1XORYRVgpu0nwEQEZ5FAJWk2VwGxGXKbJG7nLThB_cvMpVb4VoQLtnPEtnl6t7PKE6gDlhJobTmSUHH2_fD_UzFvftHH8d4K_apUIm4KLVuA2J&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQFnoECB8QAQ&uoh=1",
+      "displayed_link": "https://dev.to \u203a ashif8984 \u203a deploying-a-static-site-using...",
+      "favicon": "https://serpapi.com/images/i/UklGRgoBAABXRUJQVlA4IP4AAADwBQCdASocABsAPtEwtFooIigoGAEAGglpAAzpr1V4AGPX53voBKe9oQ94VKeSyNSKu0g93iiGAAD-_ioAaY6KcSsasLSGKa-X_xMf6mZ72YS_2W_shom1dO9oMnnmBX-e-2ygZqf6__-MO_7tBEW_7X78xVvFuVifMbEzsH-Z4uVf1IsFkCUUuIahYXVhst6FXkA-FnTZ-D4wpFt2zTNpP4WhICoxCm9mAG-3-W3Rv12bQh0dwh3aPdAjVKb2qmZOVHVEL_nor5_u-T0k2nS2hQ7jZh8r-TlKuMz-mJ_bHju8_6HZoGyOI21CT6Fne__oAW43bb2sd3yPo-AAAA.webp",
+      "date": "8 Dec 2024",
+      "snippet": "In this article, we will look into how we can easily create and deploy our website(static)/webpage in Github and quickly automate it through ...",
+      "snippet_highlighted_words": [
+        "easily create and deploy our website(static)/webpage in Github"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "In this article, we will look into how we can easily create and deploy our website(static)/webpage in Github and quickly automate it through ...",
+          "source_info_link": "https://dev.to/ashif8984/deploying-a-static-site-using-github-action-on-github-pages-5a9a",
+          "icon": "https://serpapi.com/images/i/UklGRgoBAABXRUJQVlA4IP4AAADwBQCdASocABsAPtEwtFooIigoGAEAGglpAAzpr1V4AGPX53voBKe9oQ94VKeSyNSKu0g93iiGAAD-_ioAaY6KcSsasLSGKa-X_xMf6mZ72YS_2W_shom1dO9oMnnmBX-e-2ygZqf6__-MO_7tBEW_7X78xVvFuVifMbEzsH-Z4uVf1IsFkCUUuIahYXVhst6FXkA-FnTZ-D4wpFt2zTNpP4WhICoxCm9mAG-3-W3Rv12bQh0dwh3aPdAjVKb2qmZOVHVEL_nor5_u-T0k2nS2hQ7jZh8r-TlKuMz-mJ_bHju8_6HZoGyOI21CT6Fne__oAW43bb2sd3yPo-AAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "DEV Community",
+      "read_more_link": "https://dev.to/ashif8984/deploying-a-static-site-using-github-action-on-github-pages-5a9a#:~:text=In%20this%20article%2C%20we%20will,native%20Github%20actions%20(CICD%20server)."
+    },
+    {
+      "position": 6,
+      "title": "Deploy to GitHub Pages \u00b7 Actions \u00b7 GitHub Marketplace",
+      "link": "https://github.com/marketplace/actions/deploy-to-github-pages",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdQHrOzAVcc3LJ6-EuxxJ4ou9af77fOEHi68Ls2BQ4xbYFbfCnr341AJ9_Jy37jlDKq5lAqmvk9n-WGQCYq-l6JsistQexEEilcxmEFlE4ooS5uo1sZwyNd4tdIYD_0ULEQ6gBhlRC-BjIqToO5tPmaezsV441Q&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQFnoECB4QAQ&uoh=1",
+      "displayed_link": "https://github.com \u203a marketplace \u203a deploy-to-github-pages",
+      "favicon": "https://serpapi.com/images/i/UklGRloBAABXRUJQVlA4IE4BAABQBwCdASogACAAPtE-tFooIigoFAEAGglpABOY66msBQAhm_jie7on_u43Y8wznTq3o6RYivaXQwLqgtFvGxqSxD0AAP79L-I2CJh157_guzOImTEj4KETbf3LoXG53uwsqC7TNrPYvnj0JCbHaYHsiJ0dZxjZp00AIDh71pmydvV9rbfX7pBwD6xKTC28fi7cmmnaetDkFUKtNDh1oyUvgEJ5B0Jos2E3N5Wf9ywcn5v3_j66N4LrWwMgFUK8OJeK59_R9U8Iq0vdjaoGaiwCdWiWFqTkHXGL7cy9_twJalsMPdZeuuD4BKfDlkDiZPTQbYNs-KpL44LixNJqixiQZYn6Pg05yAzQrotV5msFHgGjybbpLCJP2Jxb24id-1ooSLAITw21MsGq7M_mh1A1SG77Y3rdqY4h760MO7-2OyFmK97IagzfP7hUwAAA.webp",
+      "snippet": "Automatically deploy your project to GitHub Pages with GitHub Actions. This action can be configured to push your production-ready code into any branch ...",
+      "snippet_highlighted_words": [
+        "Automatically deploy your project to GitHub Pages with GitHub Actions"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Automatically deploy your project to GitHub Pages with GitHub Actions. This action can be configured to push your production-ready code into any branch ...",
+          "source_info_link": "https://github.com/marketplace/actions/deploy-to-github-pages",
+          "icon": "https://serpapi.com/images/i/UklGRloBAABXRUJQVlA4IE4BAABQBwCdASogACAAPtE-tFooIigoFAEAGglpABOY66msBQAhm_jie7on_u43Y8wznTq3o6RYivaXQwLqgtFvGxqSxD0AAP79L-I2CJh157_guzOImTEj4KETbf3LoXG53uwsqC7TNrPYvnj0JCbHaYHsiJ0dZxjZp00AIDh71pmydvV9rbfX7pBwD6xKTC28fi7cmmnaetDkFUKtNDh1oyUvgEJ5B0Jos2E3N5Wf9ywcn5v3_j66N4LrWwMgFUK8OJeK59_R9U8Iq0vdjaoGaiwCdWiWFqTkHXGL7cy9_twJalsMPdZeuuD4BKfDlkDiZPTQbYNs-KpL44LixNJqixiQZYn6Pg05yAzQrotV5msFHgGjybbpLCJP2Jxb24id-1ooSLAITw21MsGq7M_mh1A1SG77Y3rdqY4h760MO7-2OyFmK97IagzfP7hUwAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "GitHub",
+      "read_more_link": "https://github.com/marketplace/actions/deploy-to-github-pages#:~:text=Automatically%20deploy%20your%20project%20to,like%2C%20including%20gh%2Dpages%20and%20docs."
+    },
+    {
+      "position": 7,
+      "title": "How to Deploy using GitHub Actions",
+      "link": "https://docs.digitalocean.com/products/app-platform/how-to/deploy-from-github-actions/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESjgEB6zswFaXwPoDhBzqOMz1gmXFqw0Qj5a6IZB84MkTCu2Xc81GnamU3VqNkMAI846aEuJpG9iEdFhNnNJfGZJIJgirbT3mJbecRSLBun-UG6HiUXyvVsj2EHl9fEH5LlGL4_Rg3rGf8the00QeCzQ9erUWvOITa-c3CRc7gT4KfS3ZPyA2smC7W7QY2q7zE&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQFnoECEAQAQ&uoh=1",
+      "displayed_link": "https://docs.digitalocean.com \u203a products \u203a app-platform",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAANlBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAR2LVAAAAEnRSTlMAN4rC7P9ddBLaJ56mStJq4RhSGav3AAAAuElEQVR4AW2TBxLEIAgAsYBptv8_9hqeBMNOTVapI0ycDxExBu9ghSIKSaltR0U8xDl8QNrZdsPBfqbkZwKOPD7DyLNdI--vzkeFWf5EcYv9VxNAwZEdeMnOSI0ewq9OWCgcLvKZBc_1qnImlSvS2NIOa1N0f3kvpTRgOuoy6Z4ljCFAbJEWWefkEbGKFIdkyB7Y_fJf55WIKF3neV5Vlt1vXV3wBScObCnOlK3DJJVSvMhIYKKfwxteUQkwS_4wpwAAAABJRU5ErkJggg.png",
+      "snippet": "Deploy applications directly from your GitHub repository using GitHub Actions. deploys applications from Git repositories or container images.",
+      "snippet_highlighted_words": [
+        "Deploy applications directly from your GitHub repository using GitHub Actions"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Deploy applications directly from your GitHub repository using GitHub Actions. deploys applications from Git repositories or container images.",
+          "source_info_link": "https://docs.digitalocean.com/products/app-platform/how-to/deploy-from-github-actions/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAANlBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAR2LVAAAAEnRSTlMAN4rC7P9ddBLaJ56mStJq4RhSGav3AAAAuElEQVR4AW2TBxLEIAgAsYBptv8_9hqeBMNOTVapI0ycDxExBu9ghSIKSaltR0U8xDl8QNrZdsPBfqbkZwKOPD7DyLNdI--vzkeFWf5EcYv9VxNAwZEdeMnOSI0ewq9OWCgcLvKZBc_1qnImlSvS2NIOa1N0f3kvpTRgOuoy6Z4ljCFAbJEWWefkEbGKFIdkyB7Y_fJf55WIKF3neV5Vlt1vXV3wBScObCnOlK3DJJVSvMhIYKKfwxteUQkwS_4wpwAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "DigitalOcean Docs"
+    },
+    {
+      "position": 8,
+      "title": "Deploying Static Web App to Static Website Hosting using ...",
+      "link": "https://siriphonnot.medium.com/deploying-static-web-app-to-static-website-hosting-using-github-actions-130e644e8a3b",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESqwEB6zswFZem-EHIRUGSqmzKzOya__f9C-wEI-C6bhMRJ3maRztm2U2zurw70xpw7nHz0GjUTHeDE5rrtk6eaGwCmimE_FAXmqDv5iGgoBkyXtT3YdeTmNmoXIKGuQ5C_V9KIqqcyZtGz-gq46apsoIIvm5ggRiJqYbQTeOCaoPc1HU-RLh2_vlAVajUbiFT0bbK8i0L08nQ0ur_CQUEDkjRTpZMLhA1A5BvBeA&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQFnoECEMQAQ&uoh=1",
+      "displayed_link": "1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRk4BAABXRUJQVlA4IEIBAABQBwCdASocABwAPtEytFooIigoGAEAGglpAAznf1Vcxech6G_5Hqq9U30AP1mGqvqdUgmnZ4poKzlLrvAx4-Mst8AAAP7CCyYY03O28r5JLioHtbFiVFHnCJyb2nNCBNRW56SV-XlrfT7Q3tRrlur0xQidpwCAO83snjRUs4X8b4Vd29vh5FZY0ANnK5gA7UA4K8ogU94vGfbJKfPsedJPrrnbqSsGt4cVKmMg9gk3bc-IvDOh_3W7s9bYtT-jv2vzP7YBkzzvo38BMP0T5w-2nGchsxdZJ7p07VcBr7iyjWnewYq1_h32TqlV751Dr3L7qdpfQi7DjV3S_YvIb08XwjDmGVhfc871zz-7kEket3qOqhOkfPVdCTnyCcO29XitwYDfKoDwpCklX7VO65n-8y2Pa_-Mz7rzPAFFzF7oAAAA.webp",
+      "snippet": "To deploy your static web app to static website hosting using GitHub Actions, you need to create a GitHub Actions workflow that automates ...",
+      "snippet_highlighted_words": [
+        "create a GitHub Actions workflow"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "To deploy your static web app to static website hosting using GitHub Actions, you need to create a GitHub Actions workflow that automates ...",
+          "source_info_link": "https://siriphonnot.medium.com/deploying-static-web-app-to-static-website-hosting-using-github-actions-130e644e8a3b",
+          "icon": "https://serpapi.com/images/i/UklGRk4BAABXRUJQVlA4IEIBAABQBwCdASocABwAPtEytFooIigoGAEAGglpAAznf1Vcxech6G_5Hqq9U30AP1mGqvqdUgmnZ4poKzlLrvAx4-Mst8AAAP7CCyYY03O28r5JLioHtbFiVFHnCJyb2nNCBNRW56SV-XlrfT7Q3tRrlur0xQidpwCAO83snjRUs4X8b4Vd29vh5FZY0ANnK5gA7UA4K8ogU94vGfbJKfPsedJPrrnbqSsGt4cVKmMg9gk3bc-IvDOh_3W7s9bYtT-jv2vzP7YBkzzvo38BMP0T5w-2nGchsxdZJ7p07VcBr7iyjWnewYq1_h32TqlV751Dr3L7qdpfQi7DjV3S_YvIb08XwjDmGVhfc871zz-7kEket3qOqhOkfPVdCTnyCcO29XitwYDfKoDwpCklX7VO65n-8y2Pa_-Mz7rzPAFFzF7oAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Medium \u00b7 NottDev",
+      "read_more_link": "https://siriphonnot.medium.com/deploying-static-web-app-to-static-website-hosting-using-github-actions-130e644e8a3b#:~:text=To%20deploy%20your%20static%20web,that%20automates%20the%20deployment%20process."
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Deploy website for startups on github actions example",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Deploy+website+for+startups+on+github+actions+example&sa=X&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Deploy+website+for+startups+on+github+actions+example"
+    },
+    {
+      "block_position": 1,
+      "query": "GitHub Actions Marketplace",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=GitHub+Actions+Marketplace&sa=X&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ1QJ6BAg_EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=GitHub+Actions+Marketplace"
+    },
+    {
+      "block_position": 1,
+      "query": "GitHub Actions tutorial",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=GitHub+Actions+tutorial&sa=X&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ1QJ6BAg-EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=GitHub+Actions+tutorial"
+    },
+    {
+      "block_position": 1,
+      "query": "GitHub Actions download",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=GitHub+Actions+download&sa=X&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ1QJ6BAg9EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=GitHub+Actions+download"
+    },
+    {
+      "block_position": 1,
+      "query": "Is GitHub Actions free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Is+GitHub+Actions+free&sa=X&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ1QJ6BAg8EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Is+GitHub+Actions+free"
+    },
+    {
+      "block_position": 1,
+      "query": "GitHub Actions runs-on",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=GitHub+Actions+runs-on&sa=X&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=GitHub+Actions+runs-on"
+    },
+    {
+      "block_position": 1,
+      "query": "GitHub deploy website",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=GitHub+deploy+website&sa=X&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=GitHub+deploy+website"
+    },
+    {
+      "block_position": 1,
+      "query": "GitHub Actions plugins",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=GitHub+Actions+plugins&sa=X&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=GitHub+Actions+plugins"
+    }
+  ],
+  "discussions_and_forums": [
+    {
+      "title": "What's the minimal Github Action for hosting a static site?",
+      "link": "https://www.reddit.com/r/webdev/comments/1emwoz7/whats_the_minimal_github_action_for_hosting_a/",
+      "date": "2 years ago",
+      "extensions": [
+        "r/webdev",
+        "10+ comments"
+      ],
+      "source": "Reddit",
+      "answers": [
+        {
+          "link": "https://www.reddit.com/r/webdev/comments/1emwoz7/whats_the_minimal_github_action_for_hosting_a/lh23nsg/",
+          "extensions": [
+            "Top answer",
+            "11 votes",
+            "2 years ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/webdev/comments/1emwoz7/whats_the_minimal_github_action_for_hosting_a/lh2f0lv/",
+          "extensions": [
+            "4 votes",
+            "2 years ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/webdev/comments/1emwoz7/whats_the_minimal_github_action_for_hosting_a/lh35s5m/",
+          "extensions": [
+            "2 votes",
+            "2 years ago"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "What is the best way to connect Github Actions to your own server ...",
+      "link": "https://www.reddit.com/r/selfhosted/comments/1c5ic50/what_is_the_best_way_to_connect_github_actions_to/",
+      "date": "2 years ago",
+      "extensions": [
+        "r/selfhosted",
+        "40+ comments"
+      ],
+      "source": "Reddit",
+      "answers": [
+        {
+          "link": "https://www.reddit.com/r/selfhosted/comments/1c5ic50/what_is_the_best_way_to_connect_github_actions_to/kzugv6p/",
+          "extensions": [
+            "Top answer",
+            "60 votes",
+            "2 years ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/selfhosted/comments/1c5ic50/what_is_the_best_way_to_connect_github_actions_to/kzuakdx/",
+          "extensions": [
+            "58 votes",
+            "2 years ago"
+          ]
+        },
+        {
+          "link": "https://www.reddit.com/r/selfhosted/comments/1c5ic50/what_is_the_best_way_to_connect_github_actions_to/kzufjul/",
+          "extensions": [
+            "8 votes",
+            "2 years ago"
+          ]
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=43atatC6PM6Ep84Pu8W3gA4&start=10&sa=N&sstk=AS6-VmKHu081-w7DjUUADr6lzxL_SqDy8lf2n6a98c7gQ-kUus03IEAtjnrrD6MkC0B5YAyo0pF8lYb9JdthRPczkChnw8cD_Bn5og&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ8NMDegQIMxAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=43atatC6PM6Ep84Pu8W3gA4&start=10&sa=N&sstk=AS6-VmKHu081-w7DjUUADr6lzxL_SqDy8lf2n6a98c7gQ-kUus03IEAtjnrrD6MkC0B5YAyo0pF8lYb9JdthRPczkChnw8cD_Bn5og&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ8tMDegQIMxAE",
+      "3": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=43atatC6PM6Ep84Pu8W3gA4&start=20&sa=N&sstk=AS6-VmKHu081-w7DjUUADr6lzxL_SqDy8lf2n6a98c7gQ-kUus03IEAtjnrrD6MkC0B5YAyo0pF8lYb9JdthRPczkChnw8cD_Bn5og&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ8tMDegQIMxAG",
+      "4": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=43atatC6PM6Ep84Pu8W3gA4&start=30&sa=N&sstk=AS6-VmKHu081-w7DjUUADr6lzxL_SqDy8lf2n6a98c7gQ-kUus03IEAtjnrrD6MkC0B5YAyo0pF8lYb9JdthRPczkChnw8cD_Bn5og&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ8tMDegQIMxAI",
+      "5": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=43atatC6PM6Ep84Pu8W3gA4&start=40&sa=N&sstk=AS6-VmKHu081-w7DjUUADr6lzxL_SqDy8lf2n6a98c7gQ-kUus03IEAtjnrrD6MkC0B5YAyo0pF8lYb9JdthRPczkChnw8cD_Bn5og&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ8tMDegQIMxAK",
+      "6": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=43atatC6PM6Ep84Pu8W3gA4&start=50&sa=N&sstk=AS6-VmKHu081-w7DjUUADr6lzxL_SqDy8lf2n6a98c7gQ-kUus03IEAtjnrrD6MkC0B5YAyo0pF8lYb9JdthRPczkChnw8cD_Bn5og&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ8tMDegQIMxAM",
+      "7": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=43atatC6PM6Ep84Pu8W3gA4&start=60&sa=N&sstk=AS6-VmKHu081-w7DjUUADr6lzxL_SqDy8lf2n6a98c7gQ-kUus03IEAtjnrrD6MkC0B5YAyo0pF8lYb9JdthRPczkChnw8cD_Bn5og&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ8tMDegQIMxAO",
+      "8": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=43atatC6PM6Ep84Pu8W3gA4&start=70&sa=N&sstk=AS6-VmKHu081-w7DjUUADr6lzxL_SqDy8lf2n6a98c7gQ-kUus03IEAtjnrrD6MkC0B5YAyo0pF8lYb9JdthRPczkChnw8cD_Bn5og&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ8tMDegQIMxAQ",
+      "9": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=43atatC6PM6Ep84Pu8W3gA4&start=80&sa=N&sstk=AS6-VmKHu081-w7DjUUADr6lzxL_SqDy8lf2n6a98c7gQ-kUus03IEAtjnrrD6MkC0B5YAyo0pF8lYb9JdthRPczkChnw8cD_Bn5og&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ8tMDegQIMxAS",
+      "10": "https://www.google.co.in/search?q=deploy+website+for+startups+on+github+actions&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=43atatC6PM6Ep84Pu8W3gA4&start=90&sa=N&sstk=AS6-VmKHu081-w7DjUUADr6lzxL_SqDy8lf2n6a98c7gQ-kUus03IEAtjnrrD6MkC0B5YAyo0pF8lYb9JdthRPczkChnw8cD_Bn5og&ved=2ahUKEwiQuIHb1fiWAxVOwskDHbviDeAQ8tMDegQIMxAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+for+startups+on+github+actions&start=90"
+    }
+  }
+}

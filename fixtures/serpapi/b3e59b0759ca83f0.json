@@ -1,0 +1,448 @@
+{
+  "search_metadata": {
+    "id": "6aad775312eb14236476d26e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/bKphag1UATbLWWL8sTmYy3vxb1-vz81n8TpfJeaN3io/6aad775312eb14236476d26e.json",
+    "markdown_endpoint": "https://serpapi.com/searches/bKphag1UATbLWWL8sTmYy3vxb1-vz81n8TpfJeaN3io/6aad775312eb14236476d26e.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/bKphag1UATbLWWL8sTmYy3vxb1-vz81n8TpfJeaN3io/6aad775312eb14236476d26e.json_with_pixel_position",
+    "created_at": "2026-09-18 17:39:31 UTC",
+    "processed_at": "2026-09-18 17:39:31 UTC",
+    "google_url": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&oq=deployment+failure+fix+alternatives&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/bKphag1UATbLWWL8sTmYy3vxb1-vz81n8TpfJeaN3io/6aad775312eb14236476d26e.html",
+    "total_time_taken": 1.08
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "deployment failure fix alternatives",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "deployment failure fix alternatives",
+    "total_results": 116000000,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "Deployment Failure & Fixes Under 10 Min Interview Q&A ...",
+      "link": "https://www.youtube.com/watch?v=sba8PYFTy1g",
+      "thumbnail": "https://serpapi.com/searches/6aad775312eb14236476d26e/images/X52Fpqv7bfyUaSp-5lJSm7ODesEaehpjSTaoEgHewyk.jpeg",
+      "channel": "TechWorld with Sahana",
+      "duration": "9:03",
+      "platform": "YouTube",
+      "date": "9 May 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQht99pcqzpia78tTbt6lXi37Z0lnD6iIs7uw",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Intro",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=0"
+        },
+        {
+          "time": "00:21",
+          "title": "Que11: A deployment fails due to insufficient permissions or access rights. How would you troubleshoot and rectify this deployment failure related to permissions?",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=21"
+        },
+        {
+          "time": "01:01",
+          "title": "Que12: The deployment process shows errors related to secrets or sensitive configuration data. How would you handle this deployment failure and ensure secure handling of secrets?",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=61"
+        },
+        {
+          "time": "01:44",
+          "title": "Que13: The deployment fails due to network connectivity issues between application components. How would you diagnose and resolve this deployment failure related to network connectivity?",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=104"
+        },
+        {
+          "time": "02:25",
+          "title": "Que14: The deployment process fails due to insufficient disk space or storage capacity. How would you address this deployment failure caused by disk space constraints?",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=145"
+        },
+        {
+          "time": "03:22",
+          "title": "Que15: The deployment fails due to compatibility issues between application components and external dependencies. How would you handle this deployment failure caused by compatibility issues?",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=202"
+        },
+        {
+          "time": "04:09",
+          "title": "Que16: The deployment process encounters errors related to DNS resolution or domain name configuration. How would you troubleshoot and resolve this deployment failure associated with DNS issues?",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=249"
+        },
+        {
+          "time": "05:17",
+          "title": "Que17: The deployment fails due to conflicts or inconsistencies in the environment variables or configuration settings. How would you address this deployment failure related to configuration inconsistencies?",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=317"
+        },
+        {
+          "time": "06:00",
+          "title": "Que18: The deployment process fails due to timeouts or connectivity issues with external services or APIs. How would you troubleshoot and rectify this deployment failure related to external dependencies?",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=360"
+        },
+        {
+          "time": "06:55",
+          "title": "Que19: The deployment fails due to a misconfigured or invalid SSL certificate for HTTPS communication. How would you handle this deployment failure associated with SSL certificate issues?",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=415"
+        },
+        {
+          "time": "07:55",
+          "title": "Que20: After deploying a microservices app, auth-service and user-profile-service both crash due to unexpected port conflicts. How would you troubleshoot and resolve this issue?",
+          "link": "https://www.youtube.com/watch?v=sba8PYFTy1g&t=475"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "title": "Self-service remediation - empowering developers to fix ...",
+      "link": "https://www.youtube.com/shorts/V454DQtB9wE",
+      "thumbnail": "https://serpapi.com/searches/6aad775312eb14236476d26e/images/H396GA3B3iOj73ne9KTKoJ3wpGhSkEpDXT1MZ0WCawo.jpeg",
+      "channel": "Octopus Deploy",
+      "duration": "1:58",
+      "platform": "YouTube",
+      "date": "28 Nov 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTyFMsSHBmZj48WgTCPN69zc7YqXkK67lCung"
+    },
+    {
+      "position": 3,
+      "title": "Why 90% of developers struggle with deployments (and how ...",
+      "link": "https://www.youtube.com/shorts/rYrWRJgULwU",
+      "thumbnail": "https://serpapi.com/searches/6aad775312eb14236476d26e/images/5oxzrSiKE-SGimY82YbhFA2E9KpOjBifMZMjFJJ-9FA.jpeg",
+      "channel": "TechWorld with Nana",
+      "duration": "2:33",
+      "platform": "YouTube",
+      "date": "20 Jul 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcSy57c7DVKXE6QKxDjoWg3t6X2rsgs0E6lG_g"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "How do you handle failed deployments?",
+      "type": "ai_overview",
+      "page_token": "bVom9nicHdBLcoIwGADg6WVcaoiOLc44nSIvrWBJyK-y6UCiBgkPBUXY9S49VU_TThffBb6vb5UW2c_TQzZNVc9Go7Zth6eyPKnDkJfDtBjFdVfwEY-VSmKezabPU-31yOfWbWksLksjYFUFJkG0EE6yhTGMfURxPQm3ZRvg6gIUNZRpLHFqtO9FmWjGlWPdCDX7Aqn24eGo8c9GL3LicaQItbSV6BmKehUTVvdCM9xtpt9o1qR71Kx9e1VFfdQKiIwotGkAcupZjw1lojy4qzXkD0KKAB9MuIc7GwIg6cbNMM31RWhx7CtQ3JTWwdHOYSa7P9hzfMSZfE_yZg_KbxOQxJICPAxov3vrEiaPzPU6nutBjHVGXUV8o0wDRnp-VjmYSm4zYib5pA-wfSFZFQnnpVsDa0nIO2LKTdQOjvw-Hw_-P-efx7yZVdfy9AstQYTp",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=bVom9nicHdBLcoIwGADg6WVcaoiOLc44nSIvrWBJyK-y6UCiBgkPBUXY9S49VU_TThffBb6vb5UW2c_TQzZNVc9Go7Zth6eyPKnDkJfDtBjFdVfwEY-VSmKezabPU-31yOfWbWksLksjYFUFJkG0EE6yhTGMfURxPQm3ZRvg6gIUNZRpLHFqtO9FmWjGlWPdCDX7Aqn24eGo8c9GL3LicaQItbSV6BmKehUTVvdCM9xtpt9o1qR71Kx9e1VFfdQKiIwotGkAcupZjw1lojy4qzXkD0KKAB9MuIc7GwIg6cbNMM31RWhx7CtQ3JTWwdHOYSa7P9hzfMSZfE_yZg_KbxOQxJICPAxov3vrEiaPzPU6nutBjHVGXUV8o0wDRnp-VjmYSm4zYib5pA-wfSFZFQnnpVsDa0nIO2LKTdQOjvw-Hw_-P-efx7yZVdfy9AstQYTp",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1VuUkdVbEl3YUV0SlNFTlBORXRoWXpOU2VFbGFWbHAyVUhKNk1HWldSMjAyZWxOa2NIUnVWRkZUUWpRNVJVTmliV3czTFhORk1FbzVaMlowY1U5a2NXRnpSRkpEUzNjMU0ycENiVkU1UW5abWFHeDRTazFDV0dwQlVSSVhWVE5sZEdGd01tMUlYMUJ6TW5KdlVHdHZWRWg1VVRRYUlrRkVjM0k1WmxNME5WUmxjRGxWUWt0bmRqQXRSakJzVVUxeFh5MXNjMms0TjFFIiwiZmN2IjoiMyIsImVpIjoiVTNldGFwMm1IX1BzMnJvUGtvVEh5UTQiLCJxYyI6IkNpTmtaWEJzYjNsdFpXNTBJR1poYVd4MWNtVWdabWw0SUdGc2RHVnlibUYwYVhabGN4QUFmZW1CR1Q4IiwicXVlc3Rpb24iOiJIb3cgZG8geW91IGhhbmRsZSBmYWlsZWQgZGVwbG95bWVudHM/IiwibGsiOiJHaVJvYjNjZ1pHOGdlVzkxSUdoaGJtUnNaU0JtWVdsc1pXUWdaR1Z3Ykc5NWJXVnVkSE0iLCJicyI6ImM0M092US1DTUJBRjhMamU1RnlEbnAtSmF4Tm40cVl1anN5VkhyWko0VWg3aFBEZml4c1RPcnpwX2ZMeTRBbkhHX2RvR1FmdTBKbkdCc0xLLUVBV0xiV0JoNW9hU2JrLXFZUDdBOElEem9VemdpWVNpaHZETFY0bUFwTkVJX1QyTkk1bWFqWFR3eFhXMzNQQ0dNbDJKVTJaLUpweXZWR1pteE53aDEzaGZPbEd3Z0Y5d2hjbHdZcmpST1o2cjdiOUw3VmNmQUEiLCJpZCI6ImZjX1UzZXRhcDJtSF9QczJyb1Brb1RIeVE0XzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1VuUkdVbEl3YUV0SlNFTlBORXRoWXpOU2VFbGFWbHAyVUhKNk1HWldSMjAyZWxOa2NIUnVWRkZUUWpRNVJVTmliV3czTFhORk1FbzVaMlowY1U5a2NXRnpSRkpEUzNjMU0ycENiVkU1UW5abWFHeDRTazFDV0dwQlVSSVhWVE5sZEdGd01tMUlYMUJ6TW5KdlVHdHZWRWg1VVRRYUlrRkVjM0k1WmxNME5WUmxjRGxWUWt0bmRqQXRSakJzVVUxeFh5MXNjMms0TjFFIiwiZmN2IjoiMyIsImVpIjoiVTNldGFwMm1IX1BzMnJvUGtvVEh5UTQiLCJxYyI6IkNpTmtaWEJzYjNsdFpXNTBJR1poYVd4MWNtVWdabWw0SUdGc2RHVnlibUYwYVhabGN4QUFmZW1CR1Q4IiwicXVlc3Rpb24iOiJIb3cgZG8geW91IGhhbmRsZSBmYWlsZWQgZGVwbG95bWVudHM%2FIiwibGsiOiJHaVJvYjNjZ1pHOGdlVzkxSUdoaGJtUnNaU0JtWVdsc1pXUWdaR1Z3Ykc5NWJXVnVkSE0iLCJicyI6ImM0M092US1DTUJBRjhMamU1RnlEbnAtSmF4Tm40cVl1anN5VkhyWko0VWg3aFBEZml4c1RPcnpwX2ZMeTRBbkhHX2RvR1FmdTBKbkdCc0xLLUVBV0xiV0JoNW9hU2JrLXFZUDdBOElEem9VemdpWVNpaHZETFY0bUFwTkVJX1QyTkk1bWFqWFR3eFhXMzNQQ0dNbDJKVTJaLUpweXZWR1pteE53aDEzaGZPbEd3Z0Y5d2hjbHdZcmpST1o2cjdiOUw3VmNmQUEiLCJpZCI6ImZjX1UzZXRhcDJtSF9QczJyb1Brb1RIeVE0XzUifQ%3D%3D"
+    },
+    {
+      "question": "What are the top 5 deployment strategies?",
+      "type": "ai_overview",
+      "page_token": "kZl0vnicHdBRToMwGADgeBkfNwoysyWLEUfZUDpp-5fBi4GyAaMUdHMM3ryLp_I0Ro_wfV_fqtL1z821PJ-702I67ft-UrRtofYT2U4qPU1Pg5ZTmSqVpbJezO5n6OEgl-7nxnl63zghdJ1YUYNZEjHuk4SXL_tGNWDlKEfYB5Oc2EjLTCsXIt_f49iOorwC0-aJ1aKQP44cOsrWVBGzq2OhHPAEBFoJFqEt81AFhv0eKjxLRjCyHd4JD8fEtSG0nIGb6lVquiNe0UsTn9NVcty69ipBuA7cLomOghHu4MzDF2jKioCdMChLImid6vw5aOw-NHBANFmLqEBbTo-552u3zEVgCiPePQ4ZlAdYB4Ns5mFqzoGtFSVOW4VAR3n8szpcNvGQNdcqHx0z0K6xdcVGKnplqrCyen6X9LcHeVlat_-fy7dDc150H23xC7GlgpU",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=kZl0vnicHdBRToMwGADgeBkfNwoysyWLEUfZUDpp-5fBi4GyAaMUdHMM3ryLp_I0Ro_wfV_fqtL1z821PJ-702I67ft-UrRtofYT2U4qPU1Pg5ZTmSqVpbJezO5n6OEgl-7nxnl63zghdJ1YUYNZEjHuk4SXL_tGNWDlKEfYB5Oc2EjLTCsXIt_f49iOorwC0-aJ1aKQP44cOsrWVBGzq2OhHPAEBFoJFqEt81AFhv0eKjxLRjCyHd4JD8fEtSG0nIGb6lVquiNe0UsTn9NVcty69ipBuA7cLomOghHu4MzDF2jKioCdMChLImid6vw5aOw-NHBANFmLqEBbTo-552u3zEVgCiPePQ4ZlAdYB4Ns5mFqzoGtFSVOW4VAR3n8szpcNvGQNdcqHx0z0K6xdcVGKnplqrCyen6X9LcHeVlat_-fy7dDc150H23xC7GlgpU",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1VuUkdVbEl3YUV0SlNFTlBORXRoWXpOU2VFbGFWbHAyVUhKNk1HWldSMjAyZWxOa2NIUnVWRkZUUWpRNVJVTmliV3czTFhORk1FbzVaMlowY1U5a2NXRnpSRkpEUzNjMU0ycENiVkU1UW5abWFHeDRTazFDV0dwQlVSSVhWVE5sZEdGd01tMUlYMUJ6TW5KdlVHdHZWRWg1VVRRYUlrRkVjM0k1WmxNME5WUmxjRGxWUWt0bmRqQXRSakJzVVUxeFh5MXNjMms0TjFFIiwiZmN2IjoiMyIsImVpIjoiVTNldGFwMm1IX1BzMnJvUGtvVEh5UTQiLCJxYyI6IkNpTmtaWEJzYjNsdFpXNTBJR1poYVd4MWNtVWdabWw0SUdGc2RHVnlibUYwYVhabGN4QUFmZW1CR1Q4IiwicXVlc3Rpb24iOiJXaGF0IGFyZSB0aGUgdG9wIDUgZGVwbG95bWVudCBzdHJhdGVnaWVzPyIsImxrIjoiR2h0MGIzQWdOU0JrWlhCc2IzbHRaVzUwSUhOMGNtRjBaV2RwWlhNIiwiYnMiOiJjNDNPdlEtQ01CQUY4TGplNUZ5RG5wLUpheE5uNHFZdWpzeVZIclpKNFVoN2hQRGZpeHNUT3J6cF9mTHk0QW5IR19kb0dRZnUwSm5HQnNMSy1FQVdMYldCaDVvYVNiay1xWVA3QThJRHpvVXpnaVlTaWh2RExWNG1BcE5FSV9UMk5JNW1halhUd3hYVzMzUENHTWwySlUyWi1KcHl2VkdabXhOd2gxM2hmT2xHd2dGOXdoY2x3WXJqUk9aNnI3YjlMN1ZjZkFBIiwiaWQiOiJmY19VM2V0YXAybUhfUHMycm9Qa29USHlRNF81In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1VuUkdVbEl3YUV0SlNFTlBORXRoWXpOU2VFbGFWbHAyVUhKNk1HWldSMjAyZWxOa2NIUnVWRkZUUWpRNVJVTmliV3czTFhORk1FbzVaMlowY1U5a2NXRnpSRkpEUzNjMU0ycENiVkU1UW5abWFHeDRTazFDV0dwQlVSSVhWVE5sZEdGd01tMUlYMUJ6TW5KdlVHdHZWRWg1VVRRYUlrRkVjM0k1WmxNME5WUmxjRGxWUWt0bmRqQXRSakJzVVUxeFh5MXNjMms0TjFFIiwiZmN2IjoiMyIsImVpIjoiVTNldGFwMm1IX1BzMnJvUGtvVEh5UTQiLCJxYyI6IkNpTmtaWEJzYjNsdFpXNTBJR1poYVd4MWNtVWdabWw0SUdGc2RHVnlibUYwYVhabGN4QUFmZW1CR1Q4IiwicXVlc3Rpb24iOiJXaGF0IGFyZSB0aGUgdG9wIDUgZGVwbG95bWVudCBzdHJhdGVnaWVzPyIsImxrIjoiR2h0MGIzQWdOU0JrWlhCc2IzbHRaVzUwSUhOMGNtRjBaV2RwWlhNIiwiYnMiOiJjNDNPdlEtQ01CQUY4TGplNUZ5RG5wLUpheE5uNHFZdWpzeVZIclpKNFVoN2hQRGZpeHNUT3J6cF9mTHk0QW5IR19kb0dRZnUwSm5HQnNMSy1FQVdMYldCaDVvYVNiay1xWVA3QThJRHpvVXpnaVlTaWh2RExWNG1BcE5FSV9UMk5JNW1halhUd3hYVzMzUENHTWwySlUyWi1KcHl2VkdabXhOd2gxM2hmT2xHd2dGOXdoY2x3WXJqUk9aNnI3YjlMN1ZjZkFBIiwiaWQiOiJmY19VM2V0YXAybUhfUHMycm9Qa29USHlRNF81In0%3D"
+    },
+    {
+      "question": "How to reduce deployment time?",
+      "type": "ai_overview",
+      "page_token": "EbiAunicHdBLcoIwGADg6WVcKuCjozNOp6miMBKanyQgmw4EFSWEqFgeu96lp-pp2ukFvsX39S3Pqvh5avO61vfFaNQ0zfBUVSd5GIpqeFaj5N4pMRKJlGkiisXseWa-HMVy_XDQ29VBhGnNV2AEkR35tlY8Qu_QmV7C9saOIiulCEjoQmbd28CSipa2729AJaEMcIEDGua3pAQnY4DicD4V1rTfM25n0pUwZj0p5zQ-m5NghbxEZprauBdRrg8cbUUvp5gDgmJqBGGrYqOlVLnXg9J1xrHrFbFBovgBW9tIuX0RK3BYkTeEn0xYuYRfSIclmwir7ekafG7wfSwljiVW6zzjnsWNffTapSw_sq3XiXJOEmvOgq0EjKozYdCLiyyZyR_pph4z608b56ZgTuOvoUx7vNsxTXeMv8fN4Cg-l-PB_-fy41jWC32rTr8ZA4Qw",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=EbiAunicHdBLcoIwGADg6WVcKuCjozNOp6miMBKanyQgmw4EFSWEqFgeu96lp-pp2ukFvsX39S3Pqvh5avO61vfFaNQ0zfBUVSd5GIpqeFaj5N4pMRKJlGkiisXseWa-HMVy_XDQ29VBhGnNV2AEkR35tlY8Qu_QmV7C9saOIiulCEjoQmbd28CSipa2729AJaEMcIEDGua3pAQnY4DicD4V1rTfM25n0pUwZj0p5zQ-m5NghbxEZprauBdRrg8cbUUvp5gDgmJqBGGrYqOlVLnXg9J1xrHrFbFBovgBW9tIuX0RK3BYkTeEn0xYuYRfSIclmwir7ekafG7wfSwljiVW6zzjnsWNffTapSw_sq3XiXJOEmvOgq0EjKozYdCLiyyZyR_pph4z608b56ZgTuOvoUx7vNsxTXeMv8fN4Cg-l-PB_-fy41jWC32rTr8ZA4Qw",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1VuUkdVbEl3YUV0SlNFTlBORXRoWXpOU2VFbGFWbHAyVUhKNk1HWldSMjAyZWxOa2NIUnVWRkZUUWpRNVJVTmliV3czTFhORk1FbzVaMlowY1U5a2NXRnpSRkpEUzNjMU0ycENiVkU1UW5abWFHeDRTazFDV0dwQlVSSVhWVE5sZEdGd01tMUlYMUJ6TW5KdlVHdHZWRWg1VVRRYUlrRkVjM0k1WmxNME5WUmxjRGxWUWt0bmRqQXRSakJzVVUxeFh5MXNjMms0TjFFIiwiZmN2IjoiMyIsImVpIjoiVTNldGFwMm1IX1BzMnJvUGtvVEh5UTQiLCJxYyI6IkNpTmtaWEJzYjNsdFpXNTBJR1poYVd4MWNtVWdabWw0SUdGc2RHVnlibUYwYVhabGN4QUFmZW1CR1Q4IiwicXVlc3Rpb24iOiJIb3cgdG8gcmVkdWNlIGRlcGxveW1lbnQgdGltZT8iLCJsayI6IkdoMW9iM2NnZEc4Z2NtVmtkV05sSUdSbGNHeHZlVzFsYm5RZ2RHbHRaUSIsImJzIjoiYzQzT3ZRLUNNQkFGOExqZTVGeURucC1KYXhObjRxWXVqc3lWSHJaSjRVaDdoUERmaXhzVE9yenBfZkx5NEFuSEdfZG9HUWZ1MEpuR0JzTEstRUFXTGJXQmg1b2FTYmstcVlQN0E4SUR6b1V6Z2lZU2lodkRMVjRtQXBORUlfVDJOSTVtYWpYVHd4WFczM1BDR01sMkpVMlotSnB5dlZHWm14TndoMTNoZk9sR3dnRjl3aGNsd1lyalJPWjZyN2I5TDdWY2ZBQSIsImlkIjoiZmNfVTNldGFwMm1IX1BzMnJvUGtvVEh5UTRfNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1VuUkdVbEl3YUV0SlNFTlBORXRoWXpOU2VFbGFWbHAyVUhKNk1HWldSMjAyZWxOa2NIUnVWRkZUUWpRNVJVTmliV3czTFhORk1FbzVaMlowY1U5a2NXRnpSRkpEUzNjMU0ycENiVkU1UW5abWFHeDRTazFDV0dwQlVSSVhWVE5sZEdGd01tMUlYMUJ6TW5KdlVHdHZWRWg1VVRRYUlrRkVjM0k1WmxNME5WUmxjRGxWUWt0bmRqQXRSakJzVVUxeFh5MXNjMms0TjFFIiwiZmN2IjoiMyIsImVpIjoiVTNldGFwMm1IX1BzMnJvUGtvVEh5UTQiLCJxYyI6IkNpTmtaWEJzYjNsdFpXNTBJR1poYVd4MWNtVWdabWw0SUdGc2RHVnlibUYwYVhabGN4QUFmZW1CR1Q4IiwicXVlc3Rpb24iOiJIb3cgdG8gcmVkdWNlIGRlcGxveW1lbnQgdGltZT8iLCJsayI6IkdoMW9iM2NnZEc4Z2NtVmtkV05sSUdSbGNHeHZlVzFsYm5RZ2RHbHRaUSIsImJzIjoiYzQzT3ZRLUNNQkFGOExqZTVGeURucC1KYXhObjRxWXVqc3lWSHJaSjRVaDdoUERmaXhzVE9yenBfZkx5NEFuSEdfZG9HUWZ1MEpuR0JzTEstRUFXTGJXQmg1b2FTYmstcVlQN0E4SUR6b1V6Z2lZU2lodkRMVjRtQXBORUlfVDJOSTVtYWpYVHd4WFczM1BDR01sMkpVMlotSnB5dlZHWm14TndoMTNoZk9sR3dnRjl3aGNsd1lyalJPWjZyN2I5TDdWY2ZBQSIsImlkIjoiZmNfVTNldGFwMm1IX1BzMnJvUGtvVEh5UTRfNSJ9"
+    },
+    {
+      "question": "Which tool is best for deployment?",
+      "type": "ai_overview",
+      "page_token": "PRYWQXicHZDdTsIwGEDjy3AJXRGMJMRYLIzpCvu2drIbU1pgP92PMNnPne_iU_k0Em_PxcnJ-f4xSZH93rVxXVeX2WjUNM3wVJYncxiqcpgUI3npCjVS0pi9VNls-jC1no5qTr_WZPG5Jh6vKvECyLcokrnj-AuEQt5uDzQKIDVn10AtEysIDcE7XmJBYb0TLIOQoc0KtpFd2UIQCbiWkrevYVaP2XgZ7HudeInV-GFEAE3aG884csdqyQpN209lYnh7B08HcIUONSDiRqfOVeOJOaROIznzg54Ayyc4oBOiXwQWRpOQsuTWew-9c5YF66POCkEIpkQMKiW9Sw32elbQWAsXC7R7f-72PD5y2-1U_uhJ_Mh92wAjZeJx6FVqco6ZHd1MbkG6_apabla8D5dAeAFUYIMYcha6GRzVdT4e_P-cfxzzelady9Mf9K2D7g",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=PRYWQXicHZDdTsIwGEDjy3AJXRGMJMRYLIzpCvu2drIbU1pgP92PMNnPne_iU_k0Em_PxcnJ-f4xSZH93rVxXVeX2WjUNM3wVJYncxiqcpgUI3npCjVS0pi9VNls-jC1no5qTr_WZPG5Jh6vKvECyLcokrnj-AuEQt5uDzQKIDVn10AtEysIDcE7XmJBYb0TLIOQoc0KtpFd2UIQCbiWkrevYVaP2XgZ7HudeInV-GFEAE3aG884csdqyQpN209lYnh7B08HcIUONSDiRqfOVeOJOaROIznzg54Ayyc4oBOiXwQWRpOQsuTWew-9c5YF66POCkEIpkQMKiW9Sw32elbQWAsXC7R7f-72PD5y2-1U_uhJ_Mh92wAjZeJx6FVqco6ZHd1MbkG6_apabla8D5dAeAFUYIMYcha6GRzVdT4e_P-cfxzzelady9Mf9K2D7g",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1VuUkdVbEl3YUV0SlNFTlBORXRoWXpOU2VFbGFWbHAyVUhKNk1HWldSMjAyZWxOa2NIUnVWRkZUUWpRNVJVTmliV3czTFhORk1FbzVaMlowY1U5a2NXRnpSRkpEUzNjMU0ycENiVkU1UW5abWFHeDRTazFDV0dwQlVSSVhWVE5sZEdGd01tMUlYMUJ6TW5KdlVHdHZWRWg1VVRRYUlrRkVjM0k1WmxNME5WUmxjRGxWUWt0bmRqQXRSakJzVVUxeFh5MXNjMms0TjFFIiwiZmN2IjoiMyIsImVpIjoiVTNldGFwMm1IX1BzMnJvUGtvVEh5UTQiLCJxYyI6IkNpTmtaWEJzYjNsdFpXNTBJR1poYVd4MWNtVWdabWw0SUdGc2RHVnlibUYwYVhabGN4QUFmZW1CR1Q4IiwicXVlc3Rpb24iOiJXaGljaCB0b29sIGlzIGJlc3QgZm9yIGRlcGxveW1lbnQ/IiwibGsiOiJHaUYzYUdsamFDQjBiMjlzSUdseklHSmxjM1FnWm05eUlHUmxjR3h2ZVcxbGJuUSIsImJzIjoiYzQzT3ZRLUNNQkFGOExqZTVGeURucC1KYXhObjRxWXVqc3lWSHJaSjRVaDdoUERmaXhzVE9yenBfZkx5NEFuSEdfZG9HUWZ1MEpuR0JzTEstRUFXTGJXQmg1b2FTYmstcVlQN0E4SUR6b1V6Z2lZU2lodkRMVjRtQXBORUlfVDJOSTVtYWpYVHd4WFczM1BDR01sMkpVMlotSnB5dlZHWm14TndoMTNoZk9sR3dnRjl3aGNsd1lyalJPWjZyN2I5TDdWY2ZBQSIsImlkIjoiZmNfVTNldGFwMm1IX1BzMnJvUGtvVEh5UTRfNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1VuUkdVbEl3YUV0SlNFTlBORXRoWXpOU2VFbGFWbHAyVUhKNk1HWldSMjAyZWxOa2NIUnVWRkZUUWpRNVJVTmliV3czTFhORk1FbzVaMlowY1U5a2NXRnpSRkpEUzNjMU0ycENiVkU1UW5abWFHeDRTazFDV0dwQlVSSVhWVE5sZEdGd01tMUlYMUJ6TW5KdlVHdHZWRWg1VVRRYUlrRkVjM0k1WmxNME5WUmxjRGxWUWt0bmRqQXRSakJzVVUxeFh5MXNjMms0TjFFIiwiZmN2IjoiMyIsImVpIjoiVTNldGFwMm1IX1BzMnJvUGtvVEh5UTQiLCJxYyI6IkNpTmtaWEJzYjNsdFpXNTBJR1poYVd4MWNtVWdabWw0SUdGc2RHVnlibUYwYVhabGN4QUFmZW1CR1Q4IiwicXVlc3Rpb24iOiJXaGljaCB0b29sIGlzIGJlc3QgZm9yIGRlcGxveW1lbnQ%2FIiwibGsiOiJHaUYzYUdsamFDQjBiMjlzSUdseklHSmxjM1FnWm05eUlHUmxjR3h2ZVcxbGJuUSIsImJzIjoiYzQzT3ZRLUNNQkFGOExqZTVGeURucC1KYXhObjRxWXVqc3lWSHJaSjRVaDdoUERmaXhzVE9yenBfZkx5NEFuSEdfZG9HUWZ1MEpuR0JzTEstRUFXTGJXQmg1b2FTYmstcVlQN0E4SUR6b1V6Z2lZU2lodkRMVjRtQXBORUlfVDJOSTVtYWpYVHd4WFczM1BDR01sMkpVMlotSnB5dlZHWm14TndoMTNoZk9sR3dnRjl3aGNsd1lyalJPWjZyN2I5TDdWY2ZBQSIsImlkIjoiZmNfVTNldGFwMm1IX1BzMnJvUGtvVEh5UTRfNSJ9"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "cn4aWXiczVXbcqpIFP2A-Y7hJTmCojGmijrV3aKiMbGNxmNeKOQeLq00Sszb_Ms8zDfN10yDqGA0mXMepmZXQdPNZt8X648_fTf0_v7tLyeOl_SO55MkqdiE2L5Z0UnFDXmNbkOdt4hPI935vl77ppRcIaBgBSmdp1nD02YyZ_uSG3KOL5kht91IIqdTSeBMV5qKZqwta0FPHdFaREYemfS2uM5lViV1oVHzlbl9e6W8yrOb97vYZpsKrZih2oUVfRBj35yOoUUrNaEmVh55LWA64L8TGdswXfsAXVZir-SvTaUGFADlgiUF2NkKj1rz3WuEs1fIvmgN7nyOM3XMrrb63kva7DSvT_vit8wFLG2TLBYAkixKCNyvsykIznPZ5_VJpQ7aZcmrR44nxR6XYi2JnZS2HRaFChA6Oik6Y2acUhiHSuk2uO0R2IZgejluVp-BAhoewPK5FIqC5ef6oXP38y474Q2bDa7ALyK2VHlXd_TsIaLpPKNJSyC9b0Z3GomT6KY-c-47PxzQWk6U6ti4cW1eXzA9n2iGaaiOKnzP9tVatSG0xObtdYYlnR7ARItg2k4das5Gz0Ewr9xXYHUPI7RrOvjQMZntkXImMYhy1TMthsfTtGF5S3GnaDdvJUznWh6DcmsHo7Su3f2Wzeg7a01R4-g1Hf6PMNqJXVBmMMoCUUiuWNTYaXXlw3lxXBRw7jdzmjfugX0W-PWDYgmAiOXrgX1h5qeW5wAjW04xgOQezKumH20orDLu4PSrND32h8qLJB8C3DmBxRzSEigYDIEiM5vuVGE9sNNZ3QWaDkPuqyOfIO7CwCvMzQz9m1_fGYFfgSgVvMfLyfgXYdNdCveu-jJStYepIouAAvRa7TTQYF3H52FCgsXPkY7-v8LSjpLknJIuY0n-GksZJcFPKCl7PlJSOr-IXMQS3GHpAyUNz1JSOW8ExkUsfU5JP40l9CmWcH4_gyVyHkvLi1iyk1MslSlJPk9JByz9CiXBX6SkDFrmbinz0_rVvshTHegP74fDWt166dUEUhU2Qn-hB7VGawC-5CkriO8CzfCvVde4g7V-vDWuVXZA7kyDW0mGufTJNjDD-MrSXH8dmVeW-3al-bEZhVrsbkzKBX5EJEGrT4f2KHIbkTjyE9yakmazuYjCbzqcdI1Hv62suh7xu3NzMtG2jv9shd7TbBUlDTx5GonJDyL2LOfRi5ag64yE7Qt9Mt7opv04jFf98GFFfW8skr41fxF775C2Y2X1Pn9ZW31tDWf9zaihmIgo680G615zaj3X7CwwKvVv_SUS5wMfC1wQ6RJrfd0GDxjMbDaDKJtNdhF2Jey6Ya2BHNU11aQbqS5ozZbeajZ1sWk0xDoX2PF2KbUEjoaRVP0Hbr1N6A",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=cn4aWXiczVXbcqpIFP2A-Y7hJTmCojGmijrV3aKiMbGNxmNeKOQeLq00Sszb_Ms8zDfN10yDqGA0mXMepmZXQdPNZt8X648_fTf0_v7tLyeOl_SO55MkqdiE2L5Z0UnFDXmNbkOdt4hPI935vl77ppRcIaBgBSmdp1nD02YyZ_uSG3KOL5kht91IIqdTSeBMV5qKZqwta0FPHdFaREYemfS2uM5lViV1oVHzlbl9e6W8yrOb97vYZpsKrZih2oUVfRBj35yOoUUrNaEmVh55LWA64L8TGdswXfsAXVZir-SvTaUGFADlgiUF2NkKj1rz3WuEs1fIvmgN7nyOM3XMrrb63kva7DSvT_vit8wFLG2TLBYAkixKCNyvsykIznPZ5_VJpQ7aZcmrR44nxR6XYi2JnZS2HRaFChA6Oik6Y2acUhiHSuk2uO0R2IZgejluVp-BAhoewPK5FIqC5ef6oXP38y474Q2bDa7ALyK2VHlXd_TsIaLpPKNJSyC9b0Z3GomT6KY-c-47PxzQWk6U6ti4cW1eXzA9n2iGaaiOKnzP9tVatSG0xObtdYYlnR7ARItg2k4das5Gz0Ewr9xXYHUPI7RrOvjQMZntkXImMYhy1TMthsfTtGF5S3GnaDdvJUznWh6DcmsHo7Su3f2Wzeg7a01R4-g1Hf6PMNqJXVBmMMoCUUiuWNTYaXXlw3lxXBRw7jdzmjfugX0W-PWDYgmAiOXrgX1h5qeW5wAjW04xgOQezKumH20orDLu4PSrND32h8qLJB8C3DmBxRzSEigYDIEiM5vuVGE9sNNZ3QWaDkPuqyOfIO7CwCvMzQz9m1_fGYFfgSgVvMfLyfgXYdNdCveu-jJStYepIouAAvRa7TTQYF3H52FCgsXPkY7-v8LSjpLknJIuY0n-GksZJcFPKCl7PlJSOr-IXMQS3GHpAyUNz1JSOW8ExkUsfU5JP40l9CmWcH4_gyVyHkvLi1iyk1MslSlJPk9JByz9CiXBX6SkDFrmbinz0_rVvshTHegP74fDWt166dUEUhU2Qn-hB7VGawC-5CkriO8CzfCvVde4g7V-vDWuVXZA7kyDW0mGufTJNjDD-MrSXH8dmVeW-3al-bEZhVrsbkzKBX5EJEGrT4f2KHIbkTjyE9yakmazuYjCbzqcdI1Hv62suh7xu3NzMtG2jv9shd7TbBUlDTx5GonJDyL2LOfRi5ag64yE7Qt9Mt7opv04jFf98GFFfW8skr41fxF775C2Y2X1Pn9ZW31tDWf9zaihmIgo680G615zaj3X7CwwKvVv_SUS5wMfC1wQ6RJrfd0GDxjMbDaDKJtNdhF2Jey6Ya2BHNU11aQbqS5ozZbeajZ1sWk0xDoX2PF2KbUEjoaRVP0Hbr1N6A"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "How do you handle deployment failures, fail back or ...",
+      "link": "https://www.reddit.com/r/devops/comments/15zqc3f/how_do_you_handle_deployment_failures_fail_back/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmQEB6zswFSuMrN1HPjI7eEYaj6urKSm90IifR30C8ciiquwfuaVuhSEniM1_mbjqx8kxAIIm6WAheLQUZCLjJ1C0R47pggTPYPd4BlVJ56fqx9KPyMqG2mdfsYOBLFk_bfB3sBox3kNNiUw11TLSS3azwoLY8wY26zecVFvx4Ry5IoE8SmwDWvCO9do2ajJM7GPZzYlfrVuFHNg&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQFnoECCkQAQ&uoh=1",
+      "displayed_link": "20+ comments \u00b7 3 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "It sounds like you have two options there - fail back or amend the infra-as-code pipeline so that deployments are always successful. I'd ...",
+      "snippet_highlighted_words": [
+        "fail back or amend the infra-as-code pipeline"
+      ],
+      "sitelinks": {
+        "list": [
+          {
+            "title": "When a deploy fails, what are actually the most ...",
+            "link": "https://www.reddit.com/r/devops/comments/16ioalh/when_a_deploy_fails_what_are_actually_the_most/",
+            "answer_count": 85,
+            "date": "14 Sept 2023"
+          },
+          {
+            "title": "How to best deal with app deployment failures : r ...",
+            "link": "https://www.reddit.com/r/Intune/comments/1le4c15/how_to_best_deal_with_app_deployment_failures/",
+            "answer_count": 31,
+            "date": "18 Jun 2025"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "It sounds like you have two options there - fail back or amend the infra-as-code pipeline so that deployments are always successful. I'd ...",
+          "source_info_link": "https://www.reddit.com/r/devops/comments/15zqc3f/how_do_you_handle_deployment_failures_fail_back/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/devops",
+      "read_more_link": "https://www.reddit.com/r/devops/comments/15zqc3f/how_do_you_handle_deployment_failures_fail_back/#:~:text=It%20sounds%20like%20you%20have,time%20in%20the%20long%20run!"
+    },
+    {
+      "position": 2,
+      "title": "Reasons Why Software Deployments Fail and its Fixes",
+      "link": "https://kuberns.com/blogs/why-do-software-deployments-fail/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScwHrOzAVLnM7pi1Dx3-1eJX5WZyoT0kzWwc9VAxfmjVvnEmocl-rNp3Td0nWotERd2WjX6WczJVcc94Qcq-LG0ThKBo1d62gYfsze9sw7P6JkWY4pdPo2qF-noCBaLjltLhrrw0qJR2julQb0qrvZIvq79Q&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQFnoECCsQAQ&uoh=1",
+      "displayed_link": "https://kuberns.com \u203a Blog",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAPFBMVEVHcEwAYf4AYP0AWPsAYf4AYf0AYP0AYf0AYf4AXf0AXPwAX_0AYP0AYv4AYP0Aav8AY_4AZf4AZf8AZv8T0-DLAAAAE3RSTlMASYpzE6EEWLA5_7Xnwf90_9s7Z1lobwAAALBJREFUeAGN0I0KwyAMBOCLU_tvu_X933VJDqxABjsEDj48QfwdSa_8y4qgpim22W-9qIGlhRrZvK7U2ALtFiitrsyGR7tB3Har1GFTILRjXC5mrTXVZqbVVMxEaKbZjVoMk57GqJVe_ZvPiuXy7LbD-gZSBZAT8KGhCFWNs5hOU7PjulRpW8Wjm5vrPBhV7fYIuj1ab2a8Nyy79fcC7RZobNQcG5UWRsqZCi1KDinOF7rMC0Bgl4ztAAAAAElFTkSuQmCC.png",
+      "date": "14 May 2026",
+      "snippet": "Reduce deployment failure rate by adding a staging environment, automating environment configuration, running health checks before routing ...",
+      "snippet_highlighted_words": [
+        "adding a staging environment"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Reduce deployment failure rate by adding a staging environment, automating environment configuration, running health checks before routing ...",
+          "source_info_link": "https://kuberns.com/blogs/why-do-software-deployments-fail/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAPFBMVEVHcEwAYf4AYP0AWPsAYf4AYf0AYP0AYf0AYf4AXf0AXPwAX_0AYP0AYv4AYP0Aav8AY_4AZf4AZf8AZv8T0-DLAAAAE3RSTlMASYpzE6EEWLA5_7Xnwf90_9s7Z1lobwAAALBJREFUeAGN0I0KwyAMBOCLU_tvu_X933VJDqxABjsEDj48QfwdSa_8y4qgpim22W-9qIGlhRrZvK7U2ALtFiitrsyGR7tB3Har1GFTILRjXC5mrTXVZqbVVMxEaKbZjVoMk57GqJVe_ZvPiuXy7LbD-gZSBZAT8KGhCFWNs5hOU7PjulRpW8Wjm5vrPBhV7fYIuj1ab2a8Nyy79fcC7RZobNQcG5UWRsqZCi1KDinOF7rMC0Bgl4ztAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Kuberns",
+      "read_more_link": "https://kuberns.com/blogs/why-do-software-deployments-fail/#:~:text=Reduce%20deployment%20failure%20rate%20by,and%20implementing%20automated%20rollback%20triggers."
+    },
+    {
+      "position": 3,
+      "title": "How to Troubleshoot Deployment Failures in 10 Steps",
+      "link": "https://www.linkedin.com/posts/ghoshsahana_important-steps-to-troubleshoot-deployment-activity-7372531333480361984-NJwn",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESrwEB6zswFQ5kVuwOYfEoktG1g8GEQhqrO8NDPYrM7cclfwkwtgc1cP9-Uu_dqHcjeYIi9u9_m0H-RUINv-u_ZOsNdKMjEK3NACTVPXWsOMqPdzF_6bo_1LECCCzQRcx8Lf4G2mhz6eK8HYGAKaM7yf4J8XavdKgyfv5NXuPb70hv8UMYRJmvLdSe9Rh_hkHvefJLsaC7eGVzsEbtLdsDZLizDeCQeXmAq-N2p2sDa6S6&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQFnoECCcQAQ&uoh=1",
+      "displayed_link": "10+ reactions \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsAAAABXRUJQVlA4ILQAAABQAwCdASoQABAAAsBMJbACdLoBLf4oANRJj6d2SZLhF7_ohAD-4n1FofdRna1o8FCt-OiJvVc8lzO8Rt17R6yr0CRJL0FBwsd8OIDxQ356R55Xei0KcLjbfh5C05X1nTKIh8X8ekP3RBUogy_jZ3kCUPbBWjzINpJUmDhbtDZS1e3a8_aUBwnkYz0mnTj4n4__aq6btWmAus7Zjw7JLZ_kNfUgtaLPXB6k1U8MVzX5_C1AAAA.webp",
+      "snippet": "1. Review Deployment Logs \u2026 2. Verify Configuration Files Confirm environment. Here's the fast, low-lift fix that aligns them all. 2. Uncover ...",
+      "snippet_highlighted_words": [
+        "1. Review Deployment Logs"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "1. Review Deployment Logs \u2026 2. Verify Configuration Files Confirm environment. Here's the fast, low-lift fix that aligns them all. 2. Uncover ...",
+          "source_info_link": "https://www.linkedin.com/posts/ghoshsahana_important-steps-to-troubleshoot-deployment-activity-7372531333480361984-NJwn",
+          "icon": "https://serpapi.com/images/i/UklGRsAAAABXRUJQVlA4ILQAAABQAwCdASoQABAAAsBMJbACdLoBLf4oANRJj6d2SZLhF7_ohAD-4n1FofdRna1o8FCt-OiJvVc8lzO8Rt17R6yr0CRJL0FBwsd8OIDxQ356R55Xei0KcLjbfh5C05X1nTKIh8X8ekP3RBUogy_jZ3kCUPbBWjzINpJUmDhbtDZS1e3a8_aUBwnkYz0mnTj4n4__aq6btWmAus7Zjw7JLZ_kNfUgtaLPXB6k1U8MVzX5_C1AAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "LinkedIn \u00b7 Sahana Ghosh"
+    },
+    {
+      "position": 4,
+      "title": "Debug and resolve Salesforce deployment errors with ...",
+      "link": "https://gearset.com/blog/trouble-understanding-salesforce-deployment-packages/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEShgEB6zswFW8OwcOCXZqxhJ5OCFCuiBqOM8Y9E4XEvU7rYU4cullwuDZavYJzJeaIqvI6EzYfCQpcAlAkh9sSkhBm3L24p7NpL-4QqxvxIGG-LxGEX3iDQupNaH2hI7owVdOKt-GY1g5wdi-SutEgwp5w2LkHz8MhnJir7jkW8KKi17LBqKpWOw&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQFnoECEwQAQ&uoh=1",
+      "displayed_link": "https://gearset.com \u203a blog \u203a trouble-understanding-sales...",
+      "favicon": "https://serpapi.com/images/i/UklGRgoBAABXRUJQVlA4IP4AAABwBgCdASocABwAPrUurVanIacnG_DgFolsAK5VjUgDgAPRVK8D2isJDHEH3rfcF0pGiMrG4y5Ojg4AIAAA_viuF3bQsUjoG8bEPdV_IG9lHMJQFZnv5d8X-3J39ho8Ued5oT_RZayh7dhlEwb9c6DF8h20hOIaTOZuMq6N9yIDqB5I2B9fGw68-e1QmiVAchwXGnO6ySARX5omez5eufprdEBfEqo3CTskdCrwPOPDnjUBuWzQOckFRiWwFTl058y7gxm95D-6ZAXUMfW2qdGa-Vfr8i_GbDwGY9_wXbL8XXRKBzbLYg_bOFQMB4Dx1iJ7_T9jX_n37_MzNoAAAA.webp",
+      "date": "24 Jan 2024",
+      "snippet": "Break down into small batches \u2014 If you're still facing a number of errors, it may help to break your deployment down into smaller batches. You ...",
+      "snippet_highlighted_words": [
+        "Break down into small batches"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.7,
+            "reviews": 305
+          },
+          "extensions": [
+            "4.7(305)"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Break down into small batches \u2014 If you're still facing a number of errors, it may help to break your deployment down into smaller batches. You ...",
+          "source_info_link": "https://gearset.com/blog/trouble-understanding-salesforce-deployment-packages/",
+          "icon": "https://serpapi.com/images/i/UklGRgoBAABXRUJQVlA4IP4AAABwBgCdASocABwAPrUurVanIacnG_DgFolsAK5VjUgDgAPRVK8D2isJDHEH3rfcF0pGiMrG4y5Ojg4AIAAA_viuF3bQsUjoG8bEPdV_IG9lHMJQFZnv5d8X-3J39ho8Ued5oT_RZayh7dhlEwb9c6DF8h20hOIaTOZuMq6N9yIDqB5I2B9fGw68-e1QmiVAchwXGnO6ySARX5omez5eufprdEBfEqo3CTskdCrwPOPDnjUBuWzQOckFRiWwFTl058y7gxm95D-6ZAXUMfW2qdGa-Vfr8i_GbDwGY9_wXbL8XXRKBzbLYg_bOFQMB4Dx1iJ7_T9jX_n37_MzNoAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Gearset",
+      "read_more_link": "https://gearset.com/blog/trouble-understanding-salesforce-deployment-packages/#:~:text=Break%20down%20into%20small%20batches,down%20into%20smaller%20batches.%20You"
+    },
+    {
+      "position": 5,
+      "title": "\"Deployment failed, try again later\" \u00b7 community ...",
+      "link": "https://github.com/orgs/community/discussions/200823",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbAHrOzAVbUyVRvFWwuSlQqEpUTlTkoKfm1LNp0sdqW-mDhN0VfGD7CNLlF9YjiJ_o-8xjKtfezqBAwgdv717W-My7G7NWRqbULlv45uPddg20mpYUYloACiyKpaN3af989Cxs3wuSQ4O4_fPZQ&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQFnoECEkQAQ&uoh=1",
+      "displayed_link": "https://github.com \u203a orgs \u203a community \u203a discussions",
+      "favicon": "https://serpapi.com/images/i/UklGRloBAABXRUJQVlA4IE4BAABQBwCdASogACAAPtE-tFooIigoFAEAGglpABOY66msBQAhm_jie7on_u43Y8wznTq3o6RYivaXQwLqgtFvGxqSxD0AAP79L-I2CJh157_guzOImTEj4KETbf3LoXG53uwsqC7TNrPYvnj0JCbHaYHsiJ0dZxjZp00AIDh71pmydvV9rbfX7pBwD6xKTC28fi7cmmnaetDkFUKtNDh1oyUvgEJ5B0Jos2E3N5Wf9ywcn5v3_j66N4LrWwMgFUK8OJeK59_R9U8Iq0vdjaoGaiwCdWiWFqTkHXGL7cy9_twJalsMPdZeuuD4BKfDlkDiZPTQbYNs-KpL44LixNJqixiQZYn6Pg05yAzQrotV5msFHgGjybbpLCJP2Jxb24id-1ooSLAITw21MsGq7M_mh1A1SG77Y3rdqY4h760MO7-2OyFmK97IagzfP7hUwAAA.webp",
+      "date": "3 Jul 2026",
+      "snippet": "\ud83c\udff7\ufe0f Discussion Type Bug \ud83d\udcac Feature/Topic Area ARC (Actions Runner Controller) Discussion Details Title: GitHub Pages deployment ...",
+      "about_this_result": {
+        "source": {
+          "description": "As an alternative: if you need your site online immediately, you could temporarily deploy it to Vercel or Netlify while investigating the GitHub ...",
+          "source_info_link": "https://github.com/orgs/community/discussions/200823",
+          "icon": "https://serpapi.com/images/i/UklGRloBAABXRUJQVlA4IE4BAABQBwCdASogACAAPtE-tFooIigoFAEAGglpABOY66msBQAhm_jie7on_u43Y8wznTq3o6RYivaXQwLqgtFvGxqSxD0AAP79L-I2CJh157_guzOImTEj4KETbf3LoXG53uwsqC7TNrPYvnj0JCbHaYHsiJ0dZxjZp00AIDh71pmydvV9rbfX7pBwD6xKTC28fi7cmmnaetDkFUKtNDh1oyUvgEJ5B0Jos2E3N5Wf9ywcn5v3_j66N4LrWwMgFUK8OJeK59_R9U8Iq0vdjaoGaiwCdWiWFqTkHXGL7cy9_twJalsMPdZeuuD4BKfDlkDiZPTQbYNs-KpL44LixNJqixiQZYn6Pg05yAzQrotV5msFHgGjybbpLCJP2Jxb24id-1ooSLAITw21MsGq7M_mh1A1SG77Y3rdqY4h760MO7-2OyFmK97IagzfP7hUwAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "GitHub"
+    },
+    {
+      "position": 6,
+      "title": "Troubleshoot common Azure deployment errors",
+      "link": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/common-deployment-errors",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESnwEB6zswFQnAGozmYv66Yirabf1iKnmJ0_brt8n4TYjBqPZAi4ypfqdZn42qeLD5N_IoDfvQz4Nd5TALZnOBSsF0ROoe2mPslgmv4pG8chWG9LElLRki7YilGbPVKIAogfPfrTQj8RBartsd85kohnqK9fNOLigllNdj3i14YRBk5cAWJliX2ThUs_IfLxSWUjjWCVsy8oSgLOqdn9PT-qA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQFnoECEgQAQ&uoh=1",
+      "displayed_link": "https://learn.microsoft.com \u203a ... \u203a Troubleshooting",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABnRSTlMAAAAAAABupgeRAAAAWklEQVR4AWP4FKBEJPrip8wABrV7GOp3EYtGhgWjFoxaMGrBqAXf_OSIRD995CEWVO9hqN1FLBoOYNlnotF3iI7_O4lHQOVL3hONPo9agB2NWjBqwagFoxYAAB2zMZ7bQW2tAAAAAElFTkSuQmCC.png",
+      "date": "28 Apr 2025",
+      "snippet": "This article describes how to troubleshoot common Azure deployment errors, and provides information about solutions. Azure resources can be ...",
+      "snippet_highlighted_words": [
+        "how to troubleshoot common Azure deployment errors"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "This article describes how to troubleshoot common Azure deployment errors, and provides information about solutions. Azure resources can be ...",
+          "source_info_link": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/common-deployment-errors",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABnRSTlMAAAAAAABupgeRAAAAWklEQVR4AWP4FKBEJPrip8wABrV7GOp3EYtGhgWjFoxaMGrBqAXf_OSIRD995CEWVO9hqN1FLBoOYNlnotF3iI7_O4lHQOVL3hONPo9agB2NWjBqwagFoxYAAB2zMZ7bQW2tAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Microsoft Learn",
+      "read_more_link": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/common-deployment-errors#:~:text=This%20article%20describes%20how%20to,Resource%20Manager%20templates%20(ARM%20templates)."
+    },
+    {
+      "position": 7,
+      "title": "Option to retry Deployment after failure - Gearset - UserVoice",
+      "link": "https://gearset.uservoice.com/forums/283474-help-us-improve-gearset/suggestions/42832329-option-to-retry-deployment-after-failure",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESugEB6zswFbUs_kMAY2rK_HRH_sfbICFZqUL1cYAmz88f1LVcG1RSuFXA3UPQLUou-0pF7sQ5MyBBo67vxmkfHAo7CRVVrqpFtNjkGbOdRdRmB94REihFTA9LNasyfVola4fcbU61zcBZecAbZONL79psE-2TawNgyXyJViAKxNJUAF6B-_juCi0y8IFR9dVnO2F618T0txAgGBb-BDIWwfseX7zO3ssOqGtzxrHKUEOhxA8vlU-L6LpRiX4&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQFnoECEQQAQ&uoh=1",
+      "displayed_link": "https://gearset.uservoice.com \u203a forums \u203a suggestions \u203a 4...",
+      "favicon": "https://serpapi.com/images/i/UklGRoQBAABXRUJQVlA4IHgBAACwCACdASogACAAPtEwtFooIigoGAEAGglsAJ0y0Hg_NbgQYDKAPZP1Dn9QPY56Vf_uVp02eB0vg7g9NxfseyTP89oYMfDCKe4OnVZ3n2AA_vYSuCidq8xdHFP2Ft4rz0tgpDUPKeFeuqv2LATm_PXFF1pc1tyjPiQONQ1idcTzEpkIQzMJDKriPzhenyqPmp-eCdnUN0ttTLT9QBZoHEI_mtd8lPEcfL45EvBn2OTXBY9z-7GqGZxusLbHb2-scP_HHraK2sz37xCD5gB-T9yB0RqDUrvc9PGaEjlFfTX7ZhhcM9-n_RY5E-9Cz_rg9wt-7KdtOPmr_Qyn-pPNtBzcoMtnSaS6ckGxrAEBPULylkM-k2OxPfzd6sOjk4xQLX5_KNiBsZ-vrGwZHYwBr3HftPzhjY6EMlvY0Bhk2TO08PC5_Z2eDCIMFu72exWSrM5fJ8i6g1FrOeeLbCZVzpG2WUyQ2kKb6SaDEu9CsELnQSCqoNUjlkAA.webp",
+      "date": "4 Mar 2021",
+      "snippet": "Currently, if your deployment fails you have two options: Click \"back to results\"; Click \"new comparison\". Going with option 1 means it ...",
+      "snippet_highlighted_words": [
+        "deployment fails",
+        "options"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Currently, if your deployment fails you have two options: Click \"back to results\"; Click \"new comparison\". Going with option 1 means it ...",
+          "source_info_link": "https://gearset.uservoice.com/forums/283474-help-us-improve-gearset/suggestions/42832329-option-to-retry-deployment-after-failure",
+          "icon": "https://serpapi.com/images/i/UklGRoQBAABXRUJQVlA4IHgBAACwCACdASogACAAPtEwtFooIigoGAEAGglsAJ0y0Hg_NbgQYDKAPZP1Dn9QPY56Vf_uVp02eB0vg7g9NxfseyTP89oYMfDCKe4OnVZ3n2AA_vYSuCidq8xdHFP2Ft4rz0tgpDUPKeFeuqv2LATm_PXFF1pc1tyjPiQONQ1idcTzEpkIQzMJDKriPzhenyqPmp-eCdnUN0ttTLT9QBZoHEI_mtd8lPEcfL45EvBn2OTXBY9z-7GqGZxusLbHb2-scP_HHraK2sz37xCD5gB-T9yB0RqDUrvc9PGaEjlFfTX7ZhhcM9-n_RY5E-9Cz_rg9wt-7KdtOPmr_Qyn-pPNtBzcoMtnSaS6ckGxrAEBPULylkM-k2OxPfzd6sOjk4xQLX5_KNiBsZ-vrGwZHYwBr3HftPzhjY6EMlvY0Bhk2TO08PC5_Z2eDCIMFu72exWSrM5fJ8i6g1FrOeeLbCZVzpG2WUyQ2kKb6SaDEu9CsELnQSCqoNUjlkAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "UserVoice",
+      "read_more_link": "https://gearset.uservoice.com/forums/283474-help-us-improve-gearset/suggestions/42832329-option-to-retry-deployment-after-failure#:~:text=Currently%2C%20if%20your%20deployment%20fails,with%20option%201%20means%20it"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Deployment failure fix alternatives reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Deployment+failure+fix+alternatives+reddit&sa=X&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ1QJ6BAhBEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Deployment+failure+fix+alternatives+reddit"
+    },
+    {
+      "block_position": 1,
+      "query": "Blue-green deployment",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Blue-green+deployment&sa=X&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ1QJ6BAhCEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Blue-green+deployment"
+    }
+  ],
+  "discussions_and_forums": [
+    {
+      "title": "How to fix deployment failed problem? - Microsoft Q&A",
+      "link": "https://learn.microsoft.com/en-us/answers/questions/1336827/how-to-fix-deployment-failed-problem",
+      "date": "3 years ago",
+      "source": "Microsoft Learn",
+      "answers": [
+        {
+          "link": "https://learn.microsoft.com/en-us/answers/questions/1336827/how-to-fix-deployment-failed-problem"
+        }
+      ]
+    },
+    {
+      "title": "Deployment failed error please help most likely locked by external ...",
+      "link": "https://forums.nexusmods.com/topic/6558881-deployment-failed-error-please-help-most-likely-locked-by-external-applications-fix-please/",
+      "date": "8 years ago",
+      "source": "Nexus Mods Forums",
+      "answers": [
+        {
+          "link": "https://forums.nexusmods.com/topic/6558881-deployment-failed-error-please-help-most-likely-locked-by-external-applications-fix-please/"
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=U3etap2mH_Ps2roPkoTHyQ4&start=10&sa=N&sstk=AS6-VmKtGbbUwcE0EpUVoVc2h_4i7PeWN0E3xsbx-bK3ux-8hxU-MZYhm6Ci-w6mE_mue-cdvEEgAFXEzVW_LsiwaJg9VJ7UuLx-RA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ8NMDegQINxAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=U3etap2mH_Ps2roPkoTHyQ4&start=10&sa=N&sstk=AS6-VmKtGbbUwcE0EpUVoVc2h_4i7PeWN0E3xsbx-bK3ux-8hxU-MZYhm6Ci-w6mE_mue-cdvEEgAFXEzVW_LsiwaJg9VJ7UuLx-RA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ8tMDegQINxAE",
+      "3": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=U3etap2mH_Ps2roPkoTHyQ4&start=20&sa=N&sstk=AS6-VmKtGbbUwcE0EpUVoVc2h_4i7PeWN0E3xsbx-bK3ux-8hxU-MZYhm6Ci-w6mE_mue-cdvEEgAFXEzVW_LsiwaJg9VJ7UuLx-RA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ8tMDegQINxAG",
+      "4": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=U3etap2mH_Ps2roPkoTHyQ4&start=30&sa=N&sstk=AS6-VmKtGbbUwcE0EpUVoVc2h_4i7PeWN0E3xsbx-bK3ux-8hxU-MZYhm6Ci-w6mE_mue-cdvEEgAFXEzVW_LsiwaJg9VJ7UuLx-RA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ8tMDegQINxAI",
+      "5": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=U3etap2mH_Ps2roPkoTHyQ4&start=40&sa=N&sstk=AS6-VmKtGbbUwcE0EpUVoVc2h_4i7PeWN0E3xsbx-bK3ux-8hxU-MZYhm6Ci-w6mE_mue-cdvEEgAFXEzVW_LsiwaJg9VJ7UuLx-RA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ8tMDegQINxAK",
+      "6": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=U3etap2mH_Ps2roPkoTHyQ4&start=50&sa=N&sstk=AS6-VmKtGbbUwcE0EpUVoVc2h_4i7PeWN0E3xsbx-bK3ux-8hxU-MZYhm6Ci-w6mE_mue-cdvEEgAFXEzVW_LsiwaJg9VJ7UuLx-RA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ8tMDegQINxAM",
+      "7": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=U3etap2mH_Ps2roPkoTHyQ4&start=60&sa=N&sstk=AS6-VmKtGbbUwcE0EpUVoVc2h_4i7PeWN0E3xsbx-bK3ux-8hxU-MZYhm6Ci-w6mE_mue-cdvEEgAFXEzVW_LsiwaJg9VJ7UuLx-RA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ8tMDegQINxAO",
+      "8": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=U3etap2mH_Ps2roPkoTHyQ4&start=70&sa=N&sstk=AS6-VmKtGbbUwcE0EpUVoVc2h_4i7PeWN0E3xsbx-bK3ux-8hxU-MZYhm6Ci-w6mE_mue-cdvEEgAFXEzVW_LsiwaJg9VJ7UuLx-RA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ8tMDegQINxAQ",
+      "9": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=U3etap2mH_Ps2roPkoTHyQ4&start=80&sa=N&sstk=AS6-VmKtGbbUwcE0EpUVoVc2h_4i7PeWN0E3xsbx-bK3ux-8hxU-MZYhm6Ci-w6mE_mue-cdvEEgAFXEzVW_LsiwaJg9VJ7UuLx-RA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ8tMDegQINxAS",
+      "10": "https://www.google.co.in/search?q=deployment+failure+fix+alternatives&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=U3etap2mH_Ps2roPkoTHyQ4&start=90&sa=N&sstk=AS6-VmKtGbbUwcE0EpUVoVc2h_4i7PeWN0E3xsbx-bK3ux-8hxU-MZYhm6Ci-w6mE_mue-cdvEEgAFXEzVW_LsiwaJg9VJ7UuLx-RA&ved=2ahUKEwjdm5iQ1viWAxVztlYBHRLCMekQ8tMDegQINxAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deployment+failure+fix+alternatives&start=90"
+    }
+  }
+}

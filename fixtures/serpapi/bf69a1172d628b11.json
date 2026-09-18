@@ -1,0 +1,113 @@
+{
+  "search_metadata": {
+    "id": "6aad7419b8b4a53a735a8fbb",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/z-1HMLxXuEp3e2LhakU24wjiFXRhVzpYqNm0YOzicTA/6aad7419b8b4a53a735a8fbb.json",
+    "markdown_endpoint": "https://serpapi.com/searches/z-1HMLxXuEp3e2LhakU24wjiFXRhVzpYqNm0YOzicTA/6aad7419b8b4a53a735a8fbb.md",
+    "created_at": "2026-09-18 17:25:45 UTC",
+    "processed_at": "2026-09-18 17:25:45 UTC",
+    "google_trends_url": "https://trends.google.com/trends/embed/explore/RELATED_QUERIES?hl=en&tz=420&req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22best+ai+study+tool%22%2C%22geo%22%3A%22IN%22%2C%22time%22%3A%22today+12-m%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%7D",
+    "raw_html_file": "https://serpapi.com/searches/z-1HMLxXuEp3e2LhakU24wjiFXRhVzpYqNm0YOzicTA/6aad7419b8b4a53a735a8fbb.html",
+    "prettify_html_file": "https://serpapi.com/searches/z-1HMLxXuEp3e2LhakU24wjiFXRhVzpYqNm0YOzicTA/6aad7419b8b4a53a735a8fbb.prettify",
+    "total_time_taken": 1.53
+  },
+  "search_parameters": {
+    "engine": "google_trends",
+    "q": "best ai study tool",
+    "hl": "en",
+    "geo": "IN",
+    "date": "today 12-m",
+    "tz": "420",
+    "data_type": "RELATED_QUERIES"
+  },
+  "related_queries": {
+    "rising": [
+      {
+        "query": "notebooklm",
+        "value": "Breakout",
+        "extracted_value": 288050,
+        "link": "https://trends.google.com/trends/explore?q=notebooklm&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=notebooklm&tz=420"
+      },
+      {
+        "query": "google notebooklm",
+        "value": "Breakout",
+        "extracted_value": 99450,
+        "link": "https://trends.google.com/trends/explore?q=google+notebooklm&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=google+notebooklm&tz=420"
+      },
+      {
+        "query": "deepseek",
+        "value": "Breakout",
+        "extracted_value": 80800,
+        "link": "https://trends.google.com/trends/explore?q=deepseek&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=deepseek&tz=420"
+      },
+      {
+        "query": "claude ai",
+        "value": "+80%",
+        "extracted_value": 80,
+        "link": "https://trends.google.com/trends/explore?q=claude+ai&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=claude+ai&tz=420"
+      },
+      {
+        "query": "claude",
+        "value": "+50%",
+        "extracted_value": 50,
+        "link": "https://trends.google.com/trends/explore?q=claude&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=claude&tz=420"
+      }
+    ],
+    "top": [
+      {
+        "query": "claude ai",
+        "value": "100",
+        "extracted_value": 100,
+        "link": "https://trends.google.com/trends/explore?q=claude+ai&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=claude+ai&tz=420"
+      },
+      {
+        "query": "claude",
+        "value": "81",
+        "extracted_value": 81,
+        "link": "https://trends.google.com/trends/explore?q=claude&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=claude&tz=420"
+      },
+      {
+        "query": "perplexity",
+        "value": "58",
+        "extracted_value": 58,
+        "link": "https://trends.google.com/trends/explore?q=perplexity&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=perplexity&tz=420"
+      },
+      {
+        "query": "notebooklm",
+        "value": "56",
+        "extracted_value": 56,
+        "link": "https://trends.google.com/trends/explore?q=notebooklm&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=notebooklm&tz=420"
+      },
+      {
+        "query": "google notebooklm",
+        "value": "19",
+        "extracted_value": 19,
+        "link": "https://trends.google.com/trends/explore?q=google+notebooklm&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=google+notebooklm&tz=420"
+      },
+      {
+        "query": "deepseek",
+        "value": "16",
+        "extracted_value": 16,
+        "link": "https://trends.google.com/trends/explore?q=deepseek&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=deepseek&tz=420"
+      },
+      {
+        "query": "notebook lm",
+        "value": "10",
+        "extracted_value": 10,
+        "link": "https://trends.google.com/trends/explore?q=notebook+lm&date=today+12-m&geo=IN",
+        "serpapi_link": "https://serpapi.com/search.json?data_type=RELATED_QUERIES&date=today+12-m&engine=google_trends&geo=IN&hl=en&q=notebook+lm&tz=420"
+      }
+    ]
+  }
+}

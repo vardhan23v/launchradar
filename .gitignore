@@ -42,3 +42,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# other tooling (may contain deployment ids and notes)
+.oxcode/
+.oxcode-memory/
+oxcode.hooks.json
+
+# python backend
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/

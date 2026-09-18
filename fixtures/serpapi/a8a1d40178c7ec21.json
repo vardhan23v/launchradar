@@ -1,0 +1,362 @@
+{
+  "search_metadata": {
+    "id": "6aad76ece3e1766269326dc4",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/-8k0vB0zFAQ-sZy3wLbtn3VAqyvUcF9WH62BRCwvjdM/6aad76ece3e1766269326dc4.json",
+    "markdown_endpoint": "https://serpapi.com/searches/-8k0vB0zFAQ-sZy3wLbtn3VAqyvUcF9WH62BRCwvjdM/6aad76ece3e1766269326dc4.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/-8k0vB0zFAQ-sZy3wLbtn3VAqyvUcF9WH62BRCwvjdM/6aad76ece3e1766269326dc4.json_with_pixel_position",
+    "created_at": "2026-09-18 17:37:48 UTC",
+    "processed_at": "2026-09-18 17:37:48 UTC",
+    "google_url": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&oq=deploy+website+on+vercel+vs+netlify+reddit&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/-8k0vB0zFAQ-sZy3wLbtn3VAqyvUcF9WH62BRCwvjdM/6aad76ece3e1766269326dc4.html",
+    "total_time_taken": 19.34
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "deploy website on vercel vs netlify reddit",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "deploy website on vercel vs netlify reddit",
+    "total_results": 112,
+    "time_taken_displayed": 0.18,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Is Netlify better than Vercel?",
+      "type": "ai_overview",
+      "page_token": "Wv02VXicHdBdbpswAABg7TJ5TPhZMhEpmurGDiGFzjY24JfJsUMIGMNWWgJvvUtP1dNU6neE7_3D3Gzz-eNeDUP_sl2txnFcXrvuai5L1S1vdiVfJqtWShpzlqrZbn5t3N-l2sHXI3j8dwSY9T3fE4e62hQ2QYJFE7OcshmkAgXRBd5D7BTTc0hC6tz_sLaXmQU9ZsyXhwHzGk0xNOyCdHSGAWBuZZ8zfcusOMWcU8qrLIWDkE5Q49Q4KguggOgxma9u7oL0wqrTudYOztFRM1KKdi3jyS116w6FK8YnFkE6k1yxYiat2dMGzSSNXoUlPg9NnszGlx72zk6EsyaQ-qDW2Fv7sNJl7CGnyNGGMi41f5hUG-A4FE-JFxBx726YkVnVpmWmPxKTNGoPTqqtPJKCUSL8E1tTyFoDOoNOjItSve38xffn7m_ZDtv-f3f9Atiqg5M",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=Wv02VXicHdBdbpswAABg7TJ5TPhZMhEpmurGDiGFzjY24JfJsUMIGMNWWgJvvUtP1dNU6neE7_3D3Gzz-eNeDUP_sl2txnFcXrvuai5L1S1vdiVfJqtWShpzlqrZbn5t3N-l2sHXI3j8dwSY9T3fE4e62hQ2QYJFE7OcshmkAgXRBd5D7BTTc0hC6tz_sLaXmQU9ZsyXhwHzGk0xNOyCdHSGAWBuZZ8zfcusOMWcU8qrLIWDkE5Q49Q4KguggOgxma9u7oL0wqrTudYOztFRM1KKdi3jyS116w6FK8YnFkE6k1yxYiat2dMGzSSNXoUlPg9NnszGlx72zk6EsyaQ-qDW2Fv7sNJl7CGnyNGGMi41f5hUG-A4FE-JFxBx726YkVnVpmWmPxKTNGoPTqqtPJKCUSL8E1tTyFoDOoNOjItSve38xffn7m_ZDtv-f3f9Atiqg5M",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1dWaDNTazVRYmtaVFFWbHZjVFV5T0V4cVdtUlhRVGxqUjNoUFpqQkxhVlp6VUZGT0xUTjBVVlZmYjFKYU4zSjRNblkwTnpoeFpUTnJZbk4yV1VKUk5rczNSRWhxVkhCVlMzUXlSVXBYTkRBMFVDMVFlRUZZVDA1elVSSVhYek5oZEdGeGVrbEZXblZRTW5KdlVEQjJTemR2VVdjYUlrRkVjM0k1WmxGVFgyVnpNVGRzYjJSVFJWTTFVRWh2T0VJeVJHWkdaM2hEV0VFIiwiZmN2IjoiMyIsImVpIjoiXzNhdGFxeklFWnVQMnJvUDB2SzdvUWciLCJxYyI6IkNpcGtaWEJzYjNrZ2QyVmljMmwwWlNCdmJpQjJaWEpqWld3Z2RuTWdibVYwYkdsbWVTQnlaV1JrYVhRUUFIM0tCUlFfIiwicXVlc3Rpb24iOiJJcyBOZXRsaWZ5IGJldHRlciB0aGFuIFZlcmNlbD8iLCJsayI6IkdoMXBjeUJ1WlhSc2FXWjVJR0psZEhSbGNpQjBhR0Z1SUhabGNtTmxiQSIsImJzIjoiYzMyUHNRckNRQkFGc2QzS0xucWdMaHI5Z0lCMUNOaUlvSjE5WWphNWhYQUhkMnNrZi05cFJDMUM2amNNOHlDRDVkSGptYVRocXNPQ1JNaWg2TnpnbGR5Tm1qUlpxUVY3TkFORS15YmdCSnVnNkhHc3JTMnhzZzRmVkhnV1FtMjlzS25USkZicjRHbkhNZGpEN0dEcFYzVDM5QzJacTZoOGJlWnYtelJjWUJzYVJKTWp6RTBuT3JnRzMteFV6S05nTDV4T25nIiwiaWQiOiJmY19fM2F0YXF6SUVadVAycm9QMHZLN29RZ180In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1dWaDNTazVRYmtaVFFWbHZjVFV5T0V4cVdtUlhRVGxqUjNoUFpqQkxhVlp6VUZGT0xUTjBVVlZmYjFKYU4zSjRNblkwTnpoeFpUTnJZbk4yV1VKUk5rczNSRWhxVkhCVlMzUXlSVXBYTkRBMFVDMVFlRUZZVDA1elVSSVhYek5oZEdGeGVrbEZXblZRTW5KdlVEQjJTemR2VVdjYUlrRkVjM0k1WmxGVFgyVnpNVGRzYjJSVFJWTTFVRWh2T0VJeVJHWkdaM2hEV0VFIiwiZmN2IjoiMyIsImVpIjoiXzNhdGFxeklFWnVQMnJvUDB2SzdvUWciLCJxYyI6IkNpcGtaWEJzYjNrZ2QyVmljMmwwWlNCdmJpQjJaWEpqWld3Z2RuTWdibVYwYkdsbWVTQnlaV1JrYVhRUUFIM0tCUlFfIiwicXVlc3Rpb24iOiJJcyBOZXRsaWZ5IGJldHRlciB0aGFuIFZlcmNlbD8iLCJsayI6IkdoMXBjeUJ1WlhSc2FXWjVJR0psZEhSbGNpQjBhR0Z1SUhabGNtTmxiQSIsImJzIjoiYzMyUHNRckNRQkFGc2QzS0xucWdMaHI5Z0lCMUNOaUlvSjE5WWphNWhYQUhkMnNrZi05cFJDMUM2amNNOHlDRDVkSGptYVRocXNPQ1JNaWg2TnpnbGR5Tm1qUlpxUVY3TkFORS15YmdCSnVnNkhHc3JTMnhzZzRmVkhnV1FtMjlzS25USkZicjRHbkhNZGpEN0dEcFYzVDM5QzJacTZoOGJlWnYtelJjWUJzYVJKTWp6RTBuT3JnRzMteFV6S05nTDV4T25nIiwiaWQiOiJmY19fM2F0YXF6SUVadVAycm9QMHZLN29RZ180In0%3D"
+    },
+    {
+      "question": "Is Vercel good for website hosting?",
+      "type": "ai_overview",
+      "page_token": "LUFFtnicHdBdbpswAABg7TJ9TMAUpkaKqrHgFVRo8B_EL5WxQxwwxmtIaXjrXXqqnWbTLvA9fJ9f5mz7P98-9DS5y2a9nud5dRrHkzmu5Lg627W43KxcS2FMI2S_ib5H_mMrt8k1jX_-TuOSOsd2yCPJCHKLmKjcr7JH_KWGU-E5cKA0wB2_kEC_CJDt8RAWqDdxbs2b9Ios97PzsVNIDBo_V6FhiR8dGNxzCxNp0ROm_rVYYE0NygSTwbEy95RoxsEkKNQhYoqoHZwZdX0O0lnsYk56BvGCDsck08JyV4Mwwv987Ln3BvCw6XSKO8VwpQLa-wkjamh61JIlw3kNFwVgnGjV5gB6hxpGmDKh2I-bHB7K_Ik_F-AB8Y_xXFK0yM4M1NdXtsRj2aG9BMxHlo1q8DVh6a0hPKmgs2q-a-X7Nrj7_7l9bYdp497G01_LuIQE",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=LUFFtnicHdBdbpswAABg7TJ9TMAUpkaKqrHgFVRo8B_EL5WxQxwwxmtIaXjrXXqqnWbTLvA9fJ9f5mz7P98-9DS5y2a9nud5dRrHkzmu5Lg627W43KxcS2FMI2S_ib5H_mMrt8k1jX_-TuOSOsd2yCPJCHKLmKjcr7JH_KWGU-E5cKA0wB2_kEC_CJDt8RAWqDdxbs2b9Ios97PzsVNIDBo_V6FhiR8dGNxzCxNp0ROm_rVYYE0NygSTwbEy95RoxsEkKNQhYoqoHZwZdX0O0lnsYk56BvGCDsck08JyV4Mwwv987Ln3BvCw6XSKO8VwpQLa-wkjamh61JIlw3kNFwVgnGjV5gB6hxpGmDKh2I-bHB7K_Ik_F-AB8Y_xXFK0yM4M1NdXtsRj2aG9BMxHlo1q8DVh6a0hPKmgs2q-a-X7Nrj7_7l9bYdp497G01_LuIQE",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1dWaDNTazVRYmtaVFFWbHZjVFV5T0V4cVdtUlhRVGxqUjNoUFpqQkxhVlp6VUZGT0xUTjBVVlZmYjFKYU4zSjRNblkwTnpoeFpUTnJZbk4yV1VKUk5rczNSRWhxVkhCVlMzUXlSVXBYTkRBMFVDMVFlRUZZVDA1elVSSVhYek5oZEdGeGVrbEZXblZRTW5KdlVEQjJTemR2VVdjYUlrRkVjM0k1WmxGVFgyVnpNVGRzYjJSVFJWTTFVRWh2T0VJeVJHWkdaM2hEV0VFIiwiZmN2IjoiMyIsImVpIjoiXzNhdGFxeklFWnVQMnJvUDB2SzdvUWciLCJxYyI6IkNpcGtaWEJzYjNrZ2QyVmljMmwwWlNCdmJpQjJaWEpqWld3Z2RuTWdibVYwYkdsbWVTQnlaV1JrYVhRUUFIM0tCUlFfIiwicXVlc3Rpb24iOiJJcyBWZXJjZWwgZ29vZCBmb3Igd2Vic2l0ZSBob3N0aW5nPyIsImxrIjoiR2lKcGN5QjJaWEpqWld3Z1oyOXZaQ0JtYjNJZ2QyVmljMmwwWlNCb2IzTjBhVzVuIiwiYnMiOiJjMzJQc1FyQ1FCQUZzZDNLTG5xZ0xocjlnSUIxQ05pSW9KMTlZamE1aFhBSGQyc2tmLTlwUkMxQzZqY004eUNENWRIam1hVGhxc09DUk1paDZOemdsZHlObWpSWnFRVjdOQU5FLXliZ0JKdWc2SEdzclMyeHNnNGZWSGdXUW0yOXNLblRKRmJyNEduSE1kakQ3R0RwVjNUMzlDMlpxNmg4YmVadi16UmNZQnNhUkpNanpFMG5PcmdHMy14VXpLTmdMNXhPbmciLCJpZCI6ImZjX18zYXRhcXpJRVp1UDJyb1Awdks3b1FnXzQifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1dWaDNTazVRYmtaVFFWbHZjVFV5T0V4cVdtUlhRVGxqUjNoUFpqQkxhVlp6VUZGT0xUTjBVVlZmYjFKYU4zSjRNblkwTnpoeFpUTnJZbk4yV1VKUk5rczNSRWhxVkhCVlMzUXlSVXBYTkRBMFVDMVFlRUZZVDA1elVSSVhYek5oZEdGeGVrbEZXblZRTW5KdlVEQjJTemR2VVdjYUlrRkVjM0k1WmxGVFgyVnpNVGRzYjJSVFJWTTFVRWh2T0VJeVJHWkdaM2hEV0VFIiwiZmN2IjoiMyIsImVpIjoiXzNhdGFxeklFWnVQMnJvUDB2SzdvUWciLCJxYyI6IkNpcGtaWEJzYjNrZ2QyVmljMmwwWlNCdmJpQjJaWEpqWld3Z2RuTWdibVYwYkdsbWVTQnlaV1JrYVhRUUFIM0tCUlFfIiwicXVlc3Rpb24iOiJJcyBWZXJjZWwgZ29vZCBmb3Igd2Vic2l0ZSBob3N0aW5nPyIsImxrIjoiR2lKcGN5QjJaWEpqWld3Z1oyOXZaQ0JtYjNJZ2QyVmljMmwwWlNCb2IzTjBhVzVuIiwiYnMiOiJjMzJQc1FyQ1FCQUZzZDNLTG5xZ0xocjlnSUIxQ05pSW9KMTlZamE1aFhBSGQyc2tmLTlwUkMxQzZqY004eUNENWRIam1hVGhxc09DUk1paDZOemdsZHlObWpSWnFRVjdOQU5FLXliZ0JKdWc2SEdzclMyeHNnNGZWSGdXUW0yOXNLblRKRmJyNEduSE1kakQ3R0RwVjNUMzlDMlpxNmg4YmVadi16UmNZQnNhUkpNanpFMG5PcmdHMy14VXpLTmdMNXhPbmciLCJpZCI6ImZjX18zYXRhcXpJRVp1UDJyb1Awdks3b1FnXzQifQ%3D%3D"
+    },
+    {
+      "question": "Does Netlify use Vercel?",
+      "type": "ai_overview",
+      "page_token": "FSpEOXicHdBdboIwAADg7DI-KrXTGROzDKGwRnCUQqUvC7TIX4FOiKhvu8tOtdMs2XeE7_tHVV3z-8TLcdTDdrGYpmle9H2h8rno51W3SId7JxYiVSpLRbNdv6zB61ns7GEy9_1kBpHWsUWMsF05suWHgGHGTtFdKkLylkBfSSOI_Zravn1E3EoUV1ntHzwoXQqJ5aHykkIzEJY8JErvc8tsvBjrFOouYQUkFAEOyiSzuMNd7WVAVfyBbpGxulKVLJkrnylDEXXiK0Xal4p_hAwD2sYwt0mVLeWeLDcgYKv33C6n0PVvosGTZ_QhAptHciKlOGlMYg0iC98z8DbJZoAZQJ1TYZO4_v3IeEgdqYKlf0tacD5a6CvvkM4qY8xrXIu4jKTC5uwsrjs4-x_bfZ7bcasvffEH1CF5Dg",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=FSpEOXicHdBdboIwAADg7DI-KrXTGROzDKGwRnCUQqUvC7TIX4FOiKhvu8tOtdMs2XeE7_tHVV3z-8TLcdTDdrGYpmle9H2h8rno51W3SId7JxYiVSpLRbNdv6zB61ns7GEy9_1kBpHWsUWMsF05suWHgGHGTtFdKkLylkBfSSOI_Zravn1E3EoUV1ntHzwoXQqJ5aHykkIzEJY8JErvc8tsvBjrFOouYQUkFAEOyiSzuMNd7WVAVfyBbpGxulKVLJkrnylDEXXiK0Xal4p_hAwD2sYwt0mVLeWeLDcgYKv33C6n0PVvosGTZ_QhAptHciKlOGlMYg0iC98z8DbJZoAZQJ1TYZO4_v3IeEgdqYKlf0tacD5a6CvvkM4qY8xrXIu4jKTC5uwsrjs4-x_bfZ7bcasvffEH1CF5Dg",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1dWaDNTazVRYmtaVFFWbHZjVFV5T0V4cVdtUlhRVGxqUjNoUFpqQkxhVlp6VUZGT0xUTjBVVlZmYjFKYU4zSjRNblkwTnpoeFpUTnJZbk4yV1VKUk5rczNSRWhxVkhCVlMzUXlSVXBYTkRBMFVDMVFlRUZZVDA1elVSSVhYek5oZEdGeGVrbEZXblZRTW5KdlVEQjJTemR2VVdjYUlrRkVjM0k1WmxGVFgyVnpNVGRzYjJSVFJWTTFVRWh2T0VJeVJHWkdaM2hEV0VFIiwiZmN2IjoiMyIsImVpIjoiXzNhdGFxeklFWnVQMnJvUDB2SzdvUWciLCJxYyI6IkNpcGtaWEJzYjNrZ2QyVmljMmwwWlNCdmJpQjJaWEpqWld3Z2RuTWdibVYwYkdsbWVTQnlaV1JrYVhRUUFIM0tCUlFfIiwicXVlc3Rpb24iOiJEb2VzIE5ldGxpZnkgdXNlIFZlcmNlbD8iLCJsayI6IkdoZGtiMlZ6SUc1bGRHeHBabmtnZFhObElIWmxjbU5sYkEiLCJicyI6ImMzMlBzUXJDUUJBRnNkM0tMbnFnTGhyOWdJQjFDTmlJb0oxOVlqYTVoWEFIZDJza2YtOXBSQzFDNmpjTTh5Q0Q1ZEhqbWFUaHFzT0NSTWloNk56Z2xkeU5talJacVFWN05BTkUteWJnQkp1ZzZIR3NyUzJ4c2c0ZlZIZ1dRbTI5c0tuVEpGYnI0R25ITWRqRDdHRHBWM1QzOUMyWnE2aDhiZVp2LXpSY1lCc2FSSk1qekUwbk9yZ0czLXhVektOZ0w1eE9uZyIsImlkIjoiZmNfXzNhdGFxeklFWnVQMnJvUDB2SzdvUWdfNCJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1dWaDNTazVRYmtaVFFWbHZjVFV5T0V4cVdtUlhRVGxqUjNoUFpqQkxhVlp6VUZGT0xUTjBVVlZmYjFKYU4zSjRNblkwTnpoeFpUTnJZbk4yV1VKUk5rczNSRWhxVkhCVlMzUXlSVXBYTkRBMFVDMVFlRUZZVDA1elVSSVhYek5oZEdGeGVrbEZXblZRTW5KdlVEQjJTemR2VVdjYUlrRkVjM0k1WmxGVFgyVnpNVGRzYjJSVFJWTTFVRWh2T0VJeVJHWkdaM2hEV0VFIiwiZmN2IjoiMyIsImVpIjoiXzNhdGFxeklFWnVQMnJvUDB2SzdvUWciLCJxYyI6IkNpcGtaWEJzYjNrZ2QyVmljMmwwWlNCdmJpQjJaWEpqWld3Z2RuTWdibVYwYkdsbWVTQnlaV1JrYVhRUUFIM0tCUlFfIiwicXVlc3Rpb24iOiJEb2VzIE5ldGxpZnkgdXNlIFZlcmNlbD8iLCJsayI6IkdoZGtiMlZ6SUc1bGRHeHBabmtnZFhObElIWmxjbU5sYkEiLCJicyI6ImMzMlBzUXJDUUJBRnNkM0tMbnFnTGhyOWdJQjFDTmlJb0oxOVlqYTVoWEFIZDJza2YtOXBSQzFDNmpjTTh5Q0Q1ZEhqbWFUaHFzT0NSTWloNk56Z2xkeU5talJacVFWN05BTkUteWJnQkp1ZzZIR3NyUzJ4c2c0ZlZIZ1dRbTI5c0tuVEpGYnI0R25ITWRqRDdHRHBWM1QzOUMyWnE2aDhiZVp2LXpSY1lCc2FSSk1qekUwbk9yZ0czLXhVektOZ0w1eE9uZyIsImlkIjoiZmNfXzNhdGFxeklFWnVQMnJvUDB2SzdvUWdfNCJ9"
+    },
+    {
+      "question": "Is there anything better than Vercel?",
+      "type": "ai_overview",
+      "page_token": "Si-s83icHdBdToMwAADgeJk9bu1wOJYsZjgYEsuk0AJ9MVDY-GkLEZTBm3fxVJ5G4wG-l-_rW1Sq-blj5TB0_W61GsdxeW3bqyiWvF1WapX2k-IrngqRpbzZ6Q86fLzwvdWP5lM7mj7pOnrEIKDCQrZIuOOqqME0c8qqUAQg1aw5uDUZcF9pZKReTVEMRRxJHHC5QZE1TOfYq0noJkS5-p8TObDmQIo4AbYbhKxPQ0_6imvIonEmu5poeCJgO3kSh2dbOCEYAIKGjhRNQnI_-YpZqWRNMHOQi_KlcMo2qcUHg4bGGgbY0Q4S4Qc23M5JjEsedy6mHSRHd8rgYcybXsugrU6Va2LHm84RI0SZ6xSUJ2Z1G0TzZ2QZt2A-AHzqYeEgjUgbLy78c68t_sf2bxc57Lr39voLtJx5MA",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=Si-s83icHdBdToMwAADgeJk9bu1wOJYsZjgYEsuk0AJ9MVDY-GkLEZTBm3fxVJ5G4wG-l-_rW1Sq-blj5TB0_W61GsdxeW3bqyiWvF1WapX2k-IrngqRpbzZ6Q86fLzwvdWP5lM7mj7pOnrEIKDCQrZIuOOqqME0c8qqUAQg1aw5uDUZcF9pZKReTVEMRRxJHHC5QZE1TOfYq0noJkS5-p8TObDmQIo4AbYbhKxPQ0_6imvIonEmu5poeCJgO3kSh2dbOCEYAIKGjhRNQnI_-YpZqWRNMHOQi_KlcMo2qcUHg4bGGgbY0Q4S4Qc23M5JjEsedy6mHSRHd8rgYcybXsugrU6Va2LHm84RI0SZ6xSUJ2Z1G0TzZ2QZt2A-AHzqYeEgjUgbLy78c68t_sf2bxc57Lr39voLtJx5MA",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1dWaDNTazVRYmtaVFFWbHZjVFV5T0V4cVdtUlhRVGxqUjNoUFpqQkxhVlp6VUZGT0xUTjBVVlZmYjFKYU4zSjRNblkwTnpoeFpUTnJZbk4yV1VKUk5rczNSRWhxVkhCVlMzUXlSVXBYTkRBMFVDMVFlRUZZVDA1elVSSVhYek5oZEdGeGVrbEZXblZRTW5KdlVEQjJTemR2VVdjYUlrRkVjM0k1WmxGVFgyVnpNVGRzYjJSVFJWTTFVRWh2T0VJeVJHWkdaM2hEV0VFIiwiZmN2IjoiMyIsImVpIjoiXzNhdGFxeklFWnVQMnJvUDB2SzdvUWciLCJxYyI6IkNpcGtaWEJzYjNrZ2QyVmljMmwwWlNCdmJpQjJaWEpqWld3Z2RuTWdibVYwYkdsbWVTQnlaV1JrYVhRUUFIM0tCUlFfIiwicXVlc3Rpb24iOiJJcyB0aGVyZSBhbnl0aGluZyBiZXR0ZXIgdGhhbiBWZXJjZWw/IiwibGsiOiJHaVJwY3lCMGFHVnlaU0JoYm5sMGFHbHVaeUJpWlhSMFpYSWdkR2hoYmlCMlpYSmpaV3ciLCJicyI6ImMzMlBzUXJDUUJBRnNkM0tMbnFnTGhyOWdJQjFDTmlJb0oxOVlqYTVoWEFIZDJza2YtOXBSQzFDNmpjTTh5Q0Q1ZEhqbWFUaHFzT0NSTWloNk56Z2xkeU5talJacVFWN05BTkUteWJnQkp1ZzZIR3NyUzJ4c2c0ZlZIZ1dRbTI5c0tuVEpGYnI0R25ITWRqRDdHRHBWM1QzOUMyWnE2aDhiZVp2LXpSY1lCc2FSSk1qekUwbk9yZ0czLXhVektOZ0w1eE9uZyIsImlkIjoiZmNfXzNhdGFxeklFWnVQMnJvUDB2SzdvUWdfNCJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1dWaDNTazVRYmtaVFFWbHZjVFV5T0V4cVdtUlhRVGxqUjNoUFpqQkxhVlp6VUZGT0xUTjBVVlZmYjFKYU4zSjRNblkwTnpoeFpUTnJZbk4yV1VKUk5rczNSRWhxVkhCVlMzUXlSVXBYTkRBMFVDMVFlRUZZVDA1elVSSVhYek5oZEdGeGVrbEZXblZRTW5KdlVEQjJTemR2VVdjYUlrRkVjM0k1WmxGVFgyVnpNVGRzYjJSVFJWTTFVRWh2T0VJeVJHWkdaM2hEV0VFIiwiZmN2IjoiMyIsImVpIjoiXzNhdGFxeklFWnVQMnJvUDB2SzdvUWciLCJxYyI6IkNpcGtaWEJzYjNrZ2QyVmljMmwwWlNCdmJpQjJaWEpqWld3Z2RuTWdibVYwYkdsbWVTQnlaV1JrYVhRUUFIM0tCUlFfIiwicXVlc3Rpb24iOiJJcyB0aGVyZSBhbnl0aGluZyBiZXR0ZXIgdGhhbiBWZXJjZWw%2FIiwibGsiOiJHaVJwY3lCMGFHVnlaU0JoYm5sMGFHbHVaeUJpWlhSMFpYSWdkR2hoYmlCMlpYSmpaV3ciLCJicyI6ImMzMlBzUXJDUUJBRnNkM0tMbnFnTGhyOWdJQjFDTmlJb0oxOVlqYTVoWEFIZDJza2YtOXBSQzFDNmpjTTh5Q0Q1ZEhqbWFUaHFzT0NSTWloNk56Z2xkeU5talJacVFWN05BTkUteWJnQkp1ZzZIR3NyUzJ4c2c0ZlZIZ1dRbTI5c0tuVEpGYnI0R25ITWRqRDdHRHBWM1QzOUMyWnE2aDhiZVp2LXpSY1lCc2FSSk1qekUwbk9yZ0czLXhVektOZ0w1eE9uZyIsImlkIjoiZmNfXzNhdGFxeklFWnVQMnJvUDB2SzdvUWdfNCJ9"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "89F8B3iczVZbcqpIGF7ArGN4MREU8ZIq6lTTtkiiiZgY5bxQCC2g3A6tor7NXmYfs49ZzTSIBhNM5pyHqfmrmqbh979_fP7xp-cGq79_-8tZryNyx7JJklTtMLQ9XDXDqhuwBtkHJrsIPRKbzjfHE3HAkHATm9i1RNOJQx8zm42HxaQCgaIqUOk9T4WVMUWM7YluwOy3Is-YROQY7Io6b6yNHwcFfd-M6nE44rYPrVC1mcyLqM8Ngpc0jN2SsDpLL6vf-S49VEkVB7osVc2HterhyVhakGqdq_PVJ9bwqQ747wSptpTu9wBeV6Kv0NemUgMKkFDBkgLsbJfetLTja6hmr6B91Zp09DnO1FW6uvqhn3Tp07w-3au_pS6ki2OSxQJAkkUpAffrbAqi5rmc8vqkUmftS8mrF749Kfb4ItYLsZOLY49GoQMI35wUnVEzzkUY50qZNmj3Q6krgcn1uGl9HhQgrICKylIoiopeG-fODTSZPmEtmw4ux85jutVY13TM7CYm6TzDlw4X9m8teRLzL3GzMXUGvZkDOtGLUhtbTddmzTnV80LDwpbu6Ny37Fyr1wSuw7faNxmWTHIGEymCaT9xCJ6OXn1fqw6qUu0EI3hsOvjQMUTPUClJTIK5akmLC4OdNixvqdor2s1bKaVzjcbgsrUPi7Su8ulIZ_RAW1PUePOaDv9HGB3FLijD8TEQJcwVixpHLbkA3UJjFVD2mXmft9oHpyzU5QfFCwDSUMAKnAqjvbesARXaKMUARH0pr5pZtGFnk_3OPzVHv1B5kdA5wKMTqZhDWgJFBUOgIGrTnSi0B3Y6q-dAldxXD71D3JWBV6ibKfw3n74Skb4CUSrqCS_vxr8IG9n-Pho2lo6Bxng3dYwXD8Z6oMl2xKvlMAn9-c-Rjvm_wtKRklBOSdexhL7GUkZJ0ieUlN1rZyyl8wvDq1iS5HJKGpZS0mXeEIyLWPqckn4aS_BTLKn5tQRLYTmWoqtYyimpgKVLSkLllHTG0q9QkvSLlJRBCx-3S37aLO2rPIXgE7c07medqD_c1mQndnebcbgQcCSoX_LUwl_f-Ybl3eiudSfV79d760anD8I7bDE_RAtHXrivJHhO3DWuhEFli-mfT6-yJZUArz13sa_E2LLcNeN7cShyRlOAMw0IwJo1uqgD-dFAbfH3UW-30b3m_FGD-m7le-rhEeziJELuYQnmvZU5tDZaf9GqcQkhB639ZM3q9mhVix7bt7eDJpl6yVAX0DMii6d6d2WsgtfbXjxtbQzneTF23YfIao4kfeI-LfCz0J3JygDLG8ND8_48i4yIQksf783bw3bZZvzYFOkINGzwqIKpTWcRZjNKV0hXQleTtkhiiGnomGzFBme0Oman1TL5liXwDca31_tIbDMkiMXaP0ypVsA",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=89F8B3iczVZbcqpIGF7ArGN4MREU8ZIq6lTTtkiiiZgY5bxQCC2g3A6tor7NXmYfs49ZzTSIBhNM5pyHqfmrmqbh979_fP7xp-cGq79_-8tZryNyx7JJklTtMLQ9XDXDqhuwBtkHJrsIPRKbzjfHE3HAkHATm9i1RNOJQx8zm42HxaQCgaIqUOk9T4WVMUWM7YluwOy3Is-YROQY7Io6b6yNHwcFfd-M6nE44rYPrVC1mcyLqM8Ngpc0jN2SsDpLL6vf-S49VEkVB7osVc2HterhyVhakGqdq_PVJ9bwqQ747wSptpTu9wBeV6Kv0NemUgMKkFDBkgLsbJfetLTja6hmr6B91Zp09DnO1FW6uvqhn3Tp07w-3au_pS6ki2OSxQJAkkUpAffrbAqi5rmc8vqkUmftS8mrF749Kfb4ItYLsZOLY49GoQMI35wUnVEzzkUY50qZNmj3Q6krgcn1uGl9HhQgrICKylIoiopeG-fODTSZPmEtmw4ux85jutVY13TM7CYm6TzDlw4X9m8teRLzL3GzMXUGvZkDOtGLUhtbTddmzTnV80LDwpbu6Ny37Fyr1wSuw7faNxmWTHIGEymCaT9xCJ6OXn1fqw6qUu0EI3hsOvjQMUTPUClJTIK5akmLC4OdNixvqdor2s1bKaVzjcbgsrUPi7Su8ulIZ_RAW1PUePOaDv9HGB3FLijD8TEQJcwVixpHLbkA3UJjFVD2mXmft9oHpyzU5QfFCwDSUMAKnAqjvbesARXaKMUARH0pr5pZtGFnk_3OPzVHv1B5kdA5wKMTqZhDWgJFBUOgIGrTnSi0B3Y6q-dAldxXD71D3JWBV6ibKfw3n74Skb4CUSrqCS_vxr8IG9n-Pho2lo6Bxng3dYwXD8Z6oMl2xKvlMAn9-c-Rjvm_wtKRklBOSdexhL7GUkZJ0ieUlN1rZyyl8wvDq1iS5HJKGpZS0mXeEIyLWPqckn4aS_BTLKn5tQRLYTmWoqtYyimpgKVLSkLllHTG0q9QkvSLlJRBCx-3S37aLO2rPIXgE7c07medqD_c1mQndnebcbgQcCSoX_LUwl_f-Ybl3eiudSfV79d760anD8I7bDE_RAtHXrivJHhO3DWuhEFli-mfT6-yJZUArz13sa_E2LLcNeN7cShyRlOAMw0IwJo1uqgD-dFAbfH3UW-30b3m_FGD-m7le-rhEeziJELuYQnmvZU5tDZaf9GqcQkhB639ZM3q9mhVix7bt7eDJpl6yVAX0DMii6d6d2WsgtfbXjxtbQzneTF23YfIao4kfeI-LfCz0J3JygDLG8ND8_48i4yIQksf783bw3bZZvzYFOkINGzwqIKpTWcRZjNKV0hXQleTtkhiiGnomGzFBme0Oman1TL5liXwDca31_tIbDMkiMXaP0ypVsA"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Vercel Vs Netlify, which is more cost-effective? : r/nextjs",
+      "link": "https://www.reddit.com/r/nextjs/comments/z9iomc/vercel_vs_netlify_which_is_more_costeffective/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlgEB6zswFfNm4Rb5jwA5D8SKVP-b0JUmXK1_Kuky1ZdzUmqF1mlD3D4DnZphuXRbGKABFlrXH-mO0q9vGSEMOrCN14uh6NXk-mavS-D3_tHV88vUkakIV5hR9C0_n0YWNajHZObXNL0wcuuCW_oBtccrRtq3G0oUhhw4dN8Wr7neKGz6ugqmsT2s4Q2P2wMzOL8VFxaXbS4&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQFnoECBwQAQ&uoh=1",
+      "displayed_link": "60+ comments \u00b7 3 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Hi Next Js community, We are looking to migrate our website to next js but are confused about which one to choose as we're tight on budget. Could you ...",
+      "about_this_result": {
+        "source": {
+          "description": "Netlify gives free 100 GB bandwidth with 300 minutes build time and can easily handle 50-70k page views (SSG), but i heard that pro plan in ...",
+          "source_info_link": "https://www.reddit.com/r/nextjs/comments/z9iomc/vercel_vs_netlify_which_is_more_costeffective/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/nextjs"
+    },
+    {
+      "position": 2,
+      "title": "Netlify or Vercel? : r/HTML",
+      "link": "https://www.reddit.com/r/HTML/comments/1t2sn93/netlify_or_vercel/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESeQHrOzAVSvK8iYL0aMawCOeF4I03c-u4vL9Cr5qup05afoXAaGZ_mhW-Tj5BMrPAs0dhLzcVBjcvMKmAfJ7LVB7rF5c2mzkzzWHg3WIXM8mjVq7HIsL66QVBaOCZVmfse2GuJRDQcz2ugFS0e_zlnRhryxu3G0dkiXA&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQFnoECCAQAQ&uoh=1",
+      "displayed_link": "10+ comments \u00b7 4 months ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "i am creating a portfolio and idk where to deploy it, which one is better?",
+      "about_this_result": {
+        "source": {
+          "description": "Netlify has historically been more focused on hosting static websites than Vercel. Vercel has tailored a lot of its services around Next.js ...",
+          "source_info_link": "https://www.reddit.com/r/HTML/comments/1t2sn93/netlify_or_vercel/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/HTML"
+    },
+    {
+      "position": 3,
+      "title": "Netlify vs Vercel for agency? : r/webdev",
+      "link": "https://www.reddit.com/r/webdev/comments/1uy6bct/netlify_vs_vercel_for_agency/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEShgEB6zswFWqaIKVqKVXRkTYvxiZRCgucvqM1Nmujubmma_RLzoD4eEpIf4w4j8OKcXfJuIj7xMosqSwhA7GxLqIF3OQNhiNFlaERFrOkE92dy96BSaZHSiQEJC5rWfDwo07_28C02VpRSaVFN2FWAueQjAkjA1aU5ctPADX3EWbFgw1aJg3VUQ&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQFnoECB4QAQ&uoh=1",
+      "displayed_link": "20+ comments \u00b7 2 months ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Netlify has great preview deployments and team collaboration features, while Vercel tends to have the smoother deployment experience and ...",
+      "snippet_highlighted_words": [
+        "Netlify has great preview deployments"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Netlify has great preview deployments and team collaboration features, while Vercel tends to have the smoother deployment experience and ...",
+          "source_info_link": "https://www.reddit.com/r/webdev/comments/1uy6bct/netlify_vs_vercel_for_agency/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/webdev",
+      "read_more_link": "https://www.reddit.com/r/webdev/comments/1uy6bct/netlify_vs_vercel_for_agency/#:~:text=Netlify%20has%20great%20preview%20deployments,experience%20and%20stronger%20CDN%2Fedge%20offering."
+    },
+    {
+      "position": 4,
+      "title": "Nexjs performing better in Netlify compared to Vercel! : r/nextjs",
+      "link": "https://www.reddit.com/r/nextjs/comments/1l9qejk/nexjs_performing_better_in_netlify_compared_to/",
+      "displayed_link": "7 comments \u00b7 1 year ago",
+      "thumbnail": "https://serpapi.com/searches/6aad76ece3e1766269326dc4/images/tciu4ZFD3B69QYM7ExULYRIkorT4_GWFexU1XqUmqAY.jpeg",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Netlify loading page faster than vercel. Netlify take around 700ms initial page load time and 400-500ms to load paginated data. On the other ...",
+      "about_this_result": {
+        "source": {
+          "description": "Netlify loading page faster than vercel. Netlify take around 700ms initial page load time and 400-500ms to load paginated data. On the other ...",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        }
+      },
+      "source": "Reddit \u00b7 r/nextjs"
+    },
+    {
+      "position": 5,
+      "title": "Cloudflare, Vercel, or Netlify \u2013 which one actually holds up ...",
+      "link": "https://www.reddit.com/r/webdev/comments/1ihswi9/cloudflare_vercel_or_netlify_which_one_actually/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmQEB6zswFfx1vwrj7HuBvtSy58tbfiHx66dpPlGbesth84Jgki-p8JLCcb-LYnttOXTw02BbefPbijoRf7I721U7ZDh0dOrKs23Tj1_ZzAJyonqaw1La2Lkw8HCePb75Km9_qPhbumyc75u5gMLDIYeW28tCclmsP06OwSvj_ANuTHhs2fYei0JktvPmeq1cmJoQMDy48QW2tXU&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQFnoECBkQAQ&uoh=1",
+      "displayed_link": "50+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "So we are dropping a project soon and need a solid hosting platform. Cloudflare is fast but...yeah, Vercel is smooth but has cold start issues, and Netlify\u2026 ...",
+      "about_this_result": {
+        "source": {
+          "description": "So we are dropping a project soon and need a solid hosting platform. Cloudflare is fast but...yeah, Vercel is smooth but has cold start ...",
+          "source_info_link": "https://www.reddit.com/r/webdev/comments/1ihswi9/cloudflare_vercel_or_netlify_which_one_actually/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/webdev"
+    },
+    {
+      "position": 6,
+      "title": "I measured Vercel vs Netlify vs Cloudflare cold start timings ...",
+      "link": "https://www.reddit.com/r/nextjs/comments/1r1zlhj/i_measured_vercel_vs_netlify_vs_cloudflare_cold/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmQEB6zswFc5bd47wDXDMcTKRixh_rKbHtZwJ-Y4K1jUsXwD_-v-m8d-uxeIUKI6reV36Eqg19zun29hbFztaPJPOB_U8o7NLIllXL0qEZi_aN2xOgD0GiFElDPC1kfb7lt-ZzUcGXGbhXYiqtxSCbI0ItDdozfJKA1qivf2UzRCt3EuXqCTyF6hqc-giS5efpLE_ij7x_09ue84&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQFnoECBYQAQ&uoh=1",
+      "displayed_link": "40+ comments \u00b7 7 months ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Alright, some findings first: Cloudflare is the fastest overall with minimal cold start impact. Netlify is the slowest overall.",
+      "snippet_highlighted_words": [
+        "Cloudflare is the fastest overall"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Alright, some findings first: Cloudflare is the fastest overall with minimal cold start impact. Netlify is the slowest overall.",
+          "source_info_link": "https://www.reddit.com/r/nextjs/comments/1r1zlhj/i_measured_vercel_vs_netlify_vs_cloudflare_cold/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/nextjs",
+      "read_more_link": "https://www.reddit.com/r/nextjs/comments/1r1zlhj/i_measured_vercel_vs_netlify_vs_cloudflare_cold/#:~:text=Alright%2C%20some%20findings%20first%3A,Netlify%20is%20the%20slowest%20overall."
+    },
+    {
+      "position": 7,
+      "title": "Self-hosting vs Vercel and Netlify: what you actually take on",
+      "link": "https://bejamas.com/stack/hosting/self-hosting-vs-vercel-and-netlify",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESfAHrOzAVgOU0OS62B9BSBOnzWuSzt5BTjKXdoYJszehAj1bldFvIv8zAs4_663SUHvYraZGhPAjaCjUJcTOJ0SI360iJPqWker3Lga82_CLx39PYS1sgAiQRbpwkWrSWgOLFNUVOBogSmHuddzoq_0ZH4POTTC0knpDlqw0&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQFnoECBUQAQ&uoh=1",
+      "displayed_link": "https://bejamas.com \u203a stack \u203a self-hosting-vs-vercel-and...",
+      "favicon": "https://serpapi.com/images/i/UklGRiIBAABXRUJQVlA4IBYBAABQBgCdASocABwAPtEwtFooIigoGAEAGglpAAzKH46LvNzs_PXsCCv_AuX825VMjjHT-C03IwhQG-fgAAD-rD8FLUb8yX3LutqWolEUnISHQIg6YYiyW0-_5YnDHr2f5OPPnKlX45jRXqhwONVl2ceoTABp568N9UG-p6buo_EXx69kpe-QhOsjwZwCf-jYRxT9D0X_MXtX7OX3xozCLIlSv-a_tKHt0a1h7-I__IEkIn8dIh2_js_NtmmJDfiBvMKsqlzRpPuCHAJof4mx-2rlGtLTpfeA3LXPXJDqedUHnxUzwPPUHMVcvTi9n6fNMjsyr7Kaitd3zhsaGUkiOZ3zi-ZZ_I5fSjQ0GoyfnbBgdE9CiAAAAA.webp",
+      "snippet": "If you're weighing the two platforms directly rather than against self-hosting, Vercel vs Netlify is the narrower comparison. The Bejamas take. We build on all ...",
+      "snippet_highlighted_words": [
+        "Vercel vs Netlify is the narrower comparison"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "If you're weighing the two platforms directly rather than against self-hosting, Vercel vs Netlify is the narrower comparison. The Bejamas take. We build on all ...",
+          "source_info_link": "https://bejamas.com/stack/hosting/self-hosting-vs-vercel-and-netlify",
+          "icon": "https://serpapi.com/images/i/UklGRiIBAABXRUJQVlA4IBYBAABQBgCdASocABwAPtEwtFooIigoGAEAGglpAAzKH46LvNzs_PXsCCv_AuX825VMjjHT-C03IwhQG-fgAAD-rD8FLUb8yX3LutqWolEUnISHQIg6YYiyW0-_5YnDHr2f5OPPnKlX45jRXqhwONVl2ceoTABp568N9UG-p6buo_EXx69kpe-QhOsjwZwCf-jYRxT9D0X_MXtX7OX3xozCLIlSv-a_tKHt0a1h7-I__IEkIn8dIh2_js_NtmmJDfiBvMKsqlzRpPuCHAJof4mx-2rlGtLTpfeA3LXPXJDqedUHnxUzwPPUHMVcvTi9n6fNMjsyr7Kaitd3zhsaGUkiOZ3zi-ZZ_I5fSjQ0GoyfnbBgdE9CiAAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Bejamas",
+      "read_more_link": "https://bejamas.com/stack/hosting/self-hosting-vs-vercel-and-netlify#:~:text=If%20you're%20weighing%20the%20two,don't%20have%20a%20house%20answer."
+    },
+    {
+      "position": 8,
+      "title": "Netlify vs Vercel vs CLoudflare : r/astrojs",
+      "link": "https://www.reddit.com/r/astrojs/comments/1eazpt0/netlify_vs_vercel_vs_cloudflare/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESigEB6zswFc_EGvQhOiwqgYsYIIL25paN3iDR_r5JbaNS1NGTmuGw_Lo2CPgeJPA2ZzdXqAkPKFBC4NCsWtD03yI7HAXe6sxun_sRaRGbcpocw1ncRj16OokFKUOsf92qgwP0WCwmmAueu9VyBmccBtZ8UHjv3uTjzpvaK_rTgNJ9FtJ_HStp8Gjy51U&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQFnoECBcQAQ&uoh=1",
+      "displayed_link": "30+ comments \u00b7 2 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Cloudflare is a bit better at caching, Netlify is likely the cheapest depending on how much bandwidth you need, and Vercel is likely the easiest ...",
+      "snippet_highlighted_words": [
+        "Netlify is likely the cheapest depending on how much bandwidth you need"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Cloudflare is a bit better at caching, Netlify is likely the cheapest depending on how much bandwidth you need, and Vercel is likely the easiest ...",
+          "source_info_link": "https://www.reddit.com/r/astrojs/comments/1eazpt0/netlify_vs_vercel_vs_cloudflare/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/astrojs",
+      "read_more_link": "https://www.reddit.com/r/astrojs/comments/1eazpt0/netlify_vs_vercel_vs_cloudflare/#:~:text=Cloudflare%20is%20a%20bit%20better,the%20easiest%20to%20deploy%20to."
+    },
+    {
+      "position": 9,
+      "title": "Netlify and Next.js: A Great Combination for Building Scalable ...",
+      "link": "https://www.reddit.com/r/nextjs/comments/1cn6yi3/netlify_and_nextjs_a_great_combination_for/",
+      "displayed_link": "7 comments \u00b7 2 years ago",
+      "thumbnail": "https://serpapi.com/searches/6aad76ece3e1766269326dc4/images/tciu4ZFD3B69QYM7ExULYbjq-LoNuPWnz8W292gPZAo.jpeg",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "It's because Vercel doesn't open source it hosting adapter. Netlify and other is you using https://opennext.js.org/ to support server-side ...",
+      "duration": "10:00",
+      "about_this_result": {
+        "source": {
+          "description": "It's because Vercel doesn't open source it hosting adapter. Netlify and other is you using https://opennext.js.org/ to support server-side ...",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        }
+      },
+      "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTlP49L0ngKtZ95aMjD2p_Rm4OGc9hpytMsgQ",
+      "source": "Reddit \u00b7 r/nextjs"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Deploy website on vercel vs netlify reddit github",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&q=Deploy+website+on+vercel+vs+netlify+reddit+github&sa=X&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ1QJ6BAg_EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Deploy+website+on+vercel+vs+netlify+reddit+github"
+    },
+    {
+      "block_position": 1,
+      "query": "Netlify vs Vercel free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&q=Netlify+vs+Vercel+free&sa=X&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ1QJ6BAhHEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Netlify+vs+Vercel+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Netlify vs Vercel pricing",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&q=Netlify+vs+Vercel+pricing&sa=X&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Netlify+vs+Vercel+pricing"
+    },
+    {
+      "block_position": 1,
+      "query": "Vercel vs Netlify vs GitHub Pages",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&q=Vercel+vs+Netlify+vs+GitHub+Pages&sa=X&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Vercel+vs+Netlify+vs+GitHub+Pages"
+    },
+    {
+      "block_position": 1,
+      "query": "Netlify vs vercel for portfolio",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&q=Netlify+vs+vercel+for+portfolio&sa=X&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ1QJ6BAhDEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Netlify+vs+vercel+for+portfolio"
+    },
+    {
+      "block_position": 1,
+      "query": "Vercel vs netlify for react",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&q=Vercel+vs+netlify+for+react&sa=X&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ1QJ6BAhCEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Vercel+vs+netlify+for+react"
+    },
+    {
+      "block_position": 1,
+      "query": "Vercel vs Netlify vs Firebase",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&q=Vercel+vs+Netlify+vs+Firebase&sa=X&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ1QJ6BAhBEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Vercel+vs+Netlify+vs+Firebase"
+    },
+    {
+      "block_position": 1,
+      "query": "Netlify vs vercel for static website",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&q=Netlify+vs+vercel+for+static+website&sa=X&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ1QJ6BAhAEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Netlify+vs+vercel+for+static+website"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&ei=_3ataqzIEZuP2roP0vK7oQg&start=10&sa=N&sstk=AS6-VmJvg8bPTYzAyJJ_3PKHpCudhdObOgavoZYGM6SYL5jQOmwvxBoDd96ZBiCc0AFSDzVuAUk_EXNqk9D1W8SzzjMfH31yYw8tFg&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ8NMDegQIOhAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&ei=_3ataqzIEZuP2roP0vK7oQg&start=10&sa=N&sstk=AS6-VmJvg8bPTYzAyJJ_3PKHpCudhdObOgavoZYGM6SYL5jQOmwvxBoDd96ZBiCc0AFSDzVuAUk_EXNqk9D1W8SzzjMfH31yYw8tFg&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ8tMDegQIOhAE",
+      "3": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&ei=_3ataqzIEZuP2roP0vK7oQg&start=20&sa=N&sstk=AS6-VmJvg8bPTYzAyJJ_3PKHpCudhdObOgavoZYGM6SYL5jQOmwvxBoDd96ZBiCc0AFSDzVuAUk_EXNqk9D1W8SzzjMfH31yYw8tFg&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ8tMDegQIOhAG",
+      "4": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&ei=_3ataqzIEZuP2roP0vK7oQg&start=30&sa=N&sstk=AS6-VmJvg8bPTYzAyJJ_3PKHpCudhdObOgavoZYGM6SYL5jQOmwvxBoDd96ZBiCc0AFSDzVuAUk_EXNqk9D1W8SzzjMfH31yYw8tFg&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ8tMDegQIOhAI",
+      "5": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&ei=_3ataqzIEZuP2roP0vK7oQg&start=40&sa=N&sstk=AS6-VmJvg8bPTYzAyJJ_3PKHpCudhdObOgavoZYGM6SYL5jQOmwvxBoDd96ZBiCc0AFSDzVuAUk_EXNqk9D1W8SzzjMfH31yYw8tFg&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ8tMDegQIOhAK",
+      "6": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&ei=_3ataqzIEZuP2roP0vK7oQg&start=50&sa=N&sstk=AS6-VmJvg8bPTYzAyJJ_3PKHpCudhdObOgavoZYGM6SYL5jQOmwvxBoDd96ZBiCc0AFSDzVuAUk_EXNqk9D1W8SzzjMfH31yYw8tFg&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ8tMDegQIOhAM",
+      "7": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&ei=_3ataqzIEZuP2roP0vK7oQg&start=60&sa=N&sstk=AS6-VmJvg8bPTYzAyJJ_3PKHpCudhdObOgavoZYGM6SYL5jQOmwvxBoDd96ZBiCc0AFSDzVuAUk_EXNqk9D1W8SzzjMfH31yYw8tFg&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ8tMDegQIOhAO",
+      "8": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&ei=_3ataqzIEZuP2roP0vK7oQg&start=70&sa=N&sstk=AS6-VmJvg8bPTYzAyJJ_3PKHpCudhdObOgavoZYGM6SYL5jQOmwvxBoDd96ZBiCc0AFSDzVuAUk_EXNqk9D1W8SzzjMfH31yYw8tFg&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ8tMDegQIOhAQ",
+      "9": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&ei=_3ataqzIEZuP2roP0vK7oQg&start=80&sa=N&sstk=AS6-VmJvg8bPTYzAyJJ_3PKHpCudhdObOgavoZYGM6SYL5jQOmwvxBoDd96ZBiCc0AFSDzVuAUk_EXNqk9D1W8SzzjMfH31yYw8tFg&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ8tMDegQIOhAS",
+      "10": "https://www.google.co.in/search?q=deploy+website+on+vercel+vs+netlify+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntkZnW9Iokql7_e0fR481qrQFO1_g:1789753087294&ei=_3ataqzIEZuP2roP0vK7oQg&start=90&sa=N&sstk=AS6-VmJvg8bPTYzAyJJ_3PKHpCudhdObOgavoZYGM6SYL5jQOmwvxBoDd96ZBiCc0AFSDzVuAUk_EXNqk9D1W8SzzjMfH31yYw8tFg&ved=2ahUKEwjsw4Po1fiWAxWbh1YBHVL5LoQQ8tMDegQIOhAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+on+vercel+vs+netlify+reddit&start=90"
+    }
+  }
+}

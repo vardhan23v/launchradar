@@ -1,0 +1,433 @@
+{
+  "search_metadata": {
+    "id": "6aad748a4707f1f510ef4dd9",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/Wkw8IRbEquKOGnuSeoehwm-PyAA0PZ8oHc69nXPmppk/6aad748a4707f1f510ef4dd9.json",
+    "markdown_endpoint": "https://serpapi.com/searches/Wkw8IRbEquKOGnuSeoehwm-PyAA0PZ8oHc69nXPmppk/6aad748a4707f1f510ef4dd9.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/Wkw8IRbEquKOGnuSeoehwm-PyAA0PZ8oHc69nXPmppk/6aad748a4707f1f510ef4dd9.json_with_pixel_position",
+    "created_at": "2026-09-18 17:27:38 UTC",
+    "processed_at": "2026-09-18 17:27:38 UTC",
+    "google_url": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&oq=focus+mode+AI+note+taking+app&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/Wkw8IRbEquKOGnuSeoehwm-PyAA0PZ8oHc69nXPmppk/6aad748a4707f1f510ef4dd9.html",
+    "total_time_taken": 0.38
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "focus mode AI note taking app",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "focus mode AI note taking app",
+    "total_results": 150,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "I Tested 4 Popular AI Notetaker Tools So You Don't Have To",
+      "link": "https://www.youtube.com/watch?v=j3QHygWMq0c",
+      "thumbnail": "https://serpapi.com/searches/6aad748a4707f1f510ef4dd9/images/LpEGi4E38JFASa1dXS7x6HHJJ5dhNcdIcb4T-VW_vfU.jpeg",
+      "channel": "Self-Employment Sidekick",
+      "duration": "17:37",
+      "platform": "YouTube",
+      "date": "16 Sept 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcRIIXuhVuLnwqLToLeGKaC9zueG5pilBWpjFg"
+    },
+    {
+      "position": 2,
+      "title": "The Ultimate AI Note Taking App",
+      "link": "https://www.youtube.com/watch?v=wNus-_zlmTs",
+      "thumbnail": "https://serpapi.com/searches/6aad748a4707f1f510ef4dd9/images/S7H3SjEf3oXKfNw9_lUeqKq-Lrjh5gQ9eSMdkT8eFUM.jpeg",
+      "channel": "Demetri Panici",
+      "duration": "9:07",
+      "platform": "YouTube",
+      "date": "16 Aug 2024",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcT6871RC5L2SyLetLpR3w6qaFRy9OsOYboccQ",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Introduction to Voice Notes for Note-Taking",
+          "link": "https://www.youtube.com/watch?v=wNus-_zlmTs&t=0"
+        },
+        {
+          "time": "00:25",
+          "title": "Overview of Voice Notes Features and Recording",
+          "link": "https://www.youtube.com/watch?v=wNus-_zlmTs&t=25"
+        },
+        {
+          "time": "01:20",
+          "title": "Task Management Integration with Voice Notes",
+          "link": "https://www.youtube.com/watch?v=wNus-_zlmTs&t=80"
+        },
+        {
+          "time": "03:06",
+          "title": "Organizing and Categorizing Notes with AI",
+          "link": "https://www.youtube.com/watch?v=wNus-_zlmTs&t=186"
+        },
+        {
+          "time": "05:16",
+          "title": "Automating Content Creation and Final Thoughts",
+          "link": "https://www.youtube.com/watch?v=wNus-_zlmTs&t=316"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "This is An AI Recorder?! Flowtica Scribe AI Note-taking Pen",
+      "link": "https://www.youtube.com/watch?v=flY1esXBLDI",
+      "thumbnail": "https://serpapi.com/searches/6aad748a4707f1f510ef4dd9/images/5bQekdQJEVc6SrGB4hjx8dEQw6YrHBNlaWExLuZnLyA.jpeg",
+      "channel": "Chan's Tech Review",
+      "duration": "6:52",
+      "platform": "YouTube",
+      "date": "3 weeks ago",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQ1VxUB3UEOIC-lxtGlLrNCrdAljHJJEDk1ug"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Which AI app is best for taking notes?",
+      "type": "ai_overview",
+      "page_token": "avfDV3icHdBRboIwAADQ7DJ-KlVw0cQsQYpIpKZIW-jPUosKUqQqWuRvd9mpdpotO8J7X9-qvFQ_b13Rtvo-H42MMcNT05zUYSibYXkZifvrIkdSKLUXsppP36fg4ygX8LF2l9e1i4nW1IutZAk8GUS97JETw3Car_wS9ZmTEfXckjDgZ34TPbcxu79SkD-I8g2aFA0etzyz1DaCYU8YAXtKKfIVz_3GYvW9FwnFEnBzYNrfMruj0LYpa0nCZnFeObVMsbUDiMdUl1kVhhwakBDi7C_oGNHGoFpHkVcElOgagcrZedwmgPccKoMT2AqytgUM0wMJW6TcKA_8Kwv8CSxyvVfIylI-TayTJRIIknqG5fjPt8pd0TUlJnEvz6qmq07zcYGZRzmpChil-plRFW4ofW1T5MZ0tsnN4Cifi8ng_3Pxeazbub41p18xmIPg",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=avfDV3icHdBRboIwAADQ7DJ-KlVw0cQsQYpIpKZIW-jPUosKUqQqWuRvd9mpdpotO8J7X9-qvFQ_b13Rtvo-H42MMcNT05zUYSibYXkZifvrIkdSKLUXsppP36fg4ygX8LF2l9e1i4nW1IutZAk8GUS97JETw3Car_wS9ZmTEfXckjDgZ34TPbcxu79SkD-I8g2aFA0etzyz1DaCYU8YAXtKKfIVz_3GYvW9FwnFEnBzYNrfMruj0LYpa0nCZnFeObVMsbUDiMdUl1kVhhwakBDi7C_oGNHGoFpHkVcElOgagcrZedwmgPccKoMT2AqytgUM0wMJW6TcKA_8Kwv8CSxyvVfIylI-TayTJRIIknqG5fjPt8pd0TUlJnEvz6qmq07zcYGZRzmpChil-plRFW4ofW1T5MZ0tsnN4Cifi8ng_3Pxeazbub41p18xmIPg",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1JrZHVXRlpPVUhKRlVuTnBWRTR6ZGxaMWVUQlpkekJhWVhKcGNrTTJMVXMxZEVKRFMzaFFNR0ZDVkVwc2RuRnVWV0ZCY1dKdlNHcEljV2huZDA5TVdWOXpjVzFGYzJ4bWFWWlVSbTU0WTBseFkwZE1iVTlUUjFJMlp4SVhhVzVUZEdGMmVrOUlOR2t4TlU1dlVITmplVVJuUVdzYUlrRkVjM0k1WmxRNFJrbFRSblJYTjI4d1luaHpVR3A2Ym5SS1JFTmFSSFZOUmxFIiwiZmN2IjoiMyIsImVpIjoiaW5TdGF2ek9INGkxNU5vUHNjeURnQWsiLCJxYyI6IkNoMW1iMk4xY3lCdGIyUmxJR0ZwSUc1dmRHVWdkR0ZyYVc1bklHRndjQkFBZlN1Uk16OCIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgYXBwIGlzIGJlc3QgZm9yIHRha2luZyBub3Rlcz8iLCJsayI6IkdpVjNhR2xqYUNCaGFTQmhjSEFnYVhNZ1ltVnpkQ0JtYjNJZ2RHRnJhVzVuSUc1dmRHVnoiLCJicyI6ImMzMk9NUS1DTUJDRjQzcVRxMVh3Rm1WeTRRODB4TVNFMFltNTFzTmVTSURRcW5fZnR0UkJZMXp2ZmZmZUIyZllONGExd2FwR05ZN0lGaTlrSGJiRGhFNTEzTi13SHh4WldSWmk5NHlrNHI4a1ZKRFhGcDJoMEJsT0lhWXBQclVUa1N5M0l1T1o4RjBfQ0pDUUhWV1BOZDV0YkFrYmI4NFB5VElYRy0wQmpvQXYtUUxnQkVWamxNTTBFMFdUelNISlh1bkIyc3VzeFNyR255cHp1bHk4QUEiLCJpZCI6ImZjX2luU3RhdnpPSDRpMTVOb1BzY3lEZ0FrXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1JrZHVXRlpPVUhKRlVuTnBWRTR6ZGxaMWVUQlpkekJhWVhKcGNrTTJMVXMxZEVKRFMzaFFNR0ZDVkVwc2RuRnVWV0ZCY1dKdlNHcEljV2huZDA5TVdWOXpjVzFGYzJ4bWFWWlVSbTU0WTBseFkwZE1iVTlUUjFJMlp4SVhhVzVUZEdGMmVrOUlOR2t4TlU1dlVITmplVVJuUVdzYUlrRkVjM0k1WmxRNFJrbFRSblJYTjI4d1luaHpVR3A2Ym5SS1JFTmFSSFZOUmxFIiwiZmN2IjoiMyIsImVpIjoiaW5TdGF2ek9INGkxNU5vUHNjeURnQWsiLCJxYyI6IkNoMW1iMk4xY3lCdGIyUmxJR0ZwSUc1dmRHVWdkR0ZyYVc1bklHRndjQkFBZlN1Uk16OCIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgYXBwIGlzIGJlc3QgZm9yIHRha2luZyBub3Rlcz8iLCJsayI6IkdpVjNhR2xqYUNCaGFTQmhjSEFnYVhNZ1ltVnpkQ0JtYjNJZ2RHRnJhVzVuSUc1dmRHVnoiLCJicyI6ImMzMk9NUS1DTUJDRjQzcVRxMVh3Rm1WeTRRODB4TVNFMFltNTFzTmVTSURRcW5fZnR0UkJZMXp2ZmZmZUIyZllONGExd2FwR05ZN0lGaTlrSGJiRGhFNTEzTi13SHh4WldSWmk5NHlrNHI4a1ZKRFhGcDJoMEJsT0lhWXBQclVUa1N5M0l1T1o4RjBfQ0pDUUhWV1BOZDV0YkFrYmI4NFB5VElYRy0wQmpvQXYtUUxnQkVWamxNTTBFMFdUelNISlh1bkIyc3VzeFNyR255cHp1bHk4QUEiLCJpZCI6ImZjX2luU3RhdnpPSDRpMTVOb1BzY3lEZ0FrXzUifQ%3D%3D"
+    },
+    {
+      "question": "Is the AI note taker app free?",
+      "type": "ai_overview",
+      "page_token": "zTgo4HicHdBRcqIwAADQ2cv0UxMo7OqMs1NqpLASh2gSmp9OSFDEBLIrFeSvd9lT9TSd6TvC-_hvzu3l88dY9727LufzYRhmp647mWqmutm5ncvrvVVzJY0ppbosw58h_H1UK_SeRM9_kyinzrE1AXvLhOBCClhvNOh3bNpkezAC5munGj1l7ebIUdbLOLuXCIYMJaOw-I-Mg5Q0Os15jXjh0l1BsopCRHmfZpZt6Ut0pYW4sovp1PrJLz1zyyEO5DqlzMN1xfHIYhfnPDBbuliXceIrqztGYZjDmkmu78Q3lpkskOYV8EYn2CcSW_PI7DjwBnnkDrf6xcA9XfRbrg_Mgy2qtSsNBq-FCA_gBOQBwYNd5MrDAYl1JMfunFMyqcZYWqRJxp48bX5NFYKUTsLugTkT6hguoluFTCuGh6O6rfyH78_V29H2S_evO30BnIWDKA",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=zTgo4HicHdBRcqIwAADQ2cv0UxMo7OqMs1NqpLASh2gSmp9OSFDEBLIrFeSvd9lT9TSd6TvC-_hvzu3l88dY9727LufzYRhmp647mWqmutm5ncvrvVVzJY0ppbosw58h_H1UK_SeRM9_kyinzrE1AXvLhOBCClhvNOh3bNpkezAC5munGj1l7ebIUdbLOLuXCIYMJaOw-I-Mg5Q0Os15jXjh0l1BsopCRHmfZpZt6Ut0pYW4sovp1PrJLz1zyyEO5DqlzMN1xfHIYhfnPDBbuliXceIrqztGYZjDmkmu78Q3lpkskOYV8EYn2CcSW_PI7DjwBnnkDrf6xcA9XfRbrg_Mgy2qtSsNBq-FCA_gBOQBwYNd5MrDAYl1JMfunFMyqcZYWqRJxp48bX5NFYKUTsLugTkT6hguoluFTCuGh6O6rfyH78_V29H2S_evO30BnIWDKA",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1JrZHVXRlpPVUhKRlVuTnBWRTR6ZGxaMWVUQlpkekJhWVhKcGNrTTJMVXMxZEVKRFMzaFFNR0ZDVkVwc2RuRnVWV0ZCY1dKdlNHcEljV2huZDA5TVdWOXpjVzFGYzJ4bWFWWlVSbTU0WTBseFkwZE1iVTlUUjFJMlp4SVhhVzVUZEdGMmVrOUlOR2t4TlU1dlVITmplVVJuUVdzYUlrRkVjM0k1WmxRNFJrbFRSblJYTjI4d1luaHpVR3A2Ym5SS1JFTmFSSFZOUmxFIiwiZmN2IjoiMyIsImVpIjoiaW5TdGF2ek9INGkxNU5vUHNjeURnQWsiLCJxYyI6IkNoMW1iMk4xY3lCdGIyUmxJR0ZwSUc1dmRHVWdkR0ZyYVc1bklHRndjQkFBZlN1Uk16OCIsInF1ZXN0aW9uIjoiSXMgdGhlIEFJIG5vdGUgdGFrZXIgYXBwIGZyZWU/IiwibGsiOiJHaDFwY3lCMGFHVWdZV2tnYm05MFpTQjBZV3RsY2lCaGNIQWdabkpsWlEiLCJicyI6ImMzMk9NUS1DTUJDRjQzcVRxMVh3Rm1WeTRRODB4TVNFMFltNTFzTmVTSURRcW5fZnR0UkJZMXp2ZmZmZUIyZllONGExd2FwR05ZN0lGaTlrSGJiRGhFNTEzTi13SHh4WldSWmk5NHlrNHI4a1ZKRFhGcDJoMEJsT0lhWXBQclVUa1N5M0l1T1o4RjBfQ0pDUUhWV1BOZDV0YkFrYmI4NFB5VElYRy0wQmpvQXYtUUxnQkVWamxNTTBFMFdUelNISlh1bkIyc3VzeFNyR255cHp1bHk4QUEiLCJpZCI6ImZjX2luU3RhdnpPSDRpMTVOb1BzY3lEZ0FrXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1JrZHVXRlpPVUhKRlVuTnBWRTR6ZGxaMWVUQlpkekJhWVhKcGNrTTJMVXMxZEVKRFMzaFFNR0ZDVkVwc2RuRnVWV0ZCY1dKdlNHcEljV2huZDA5TVdWOXpjVzFGYzJ4bWFWWlVSbTU0WTBseFkwZE1iVTlUUjFJMlp4SVhhVzVUZEdGMmVrOUlOR2t4TlU1dlVITmplVVJuUVdzYUlrRkVjM0k1WmxRNFJrbFRSblJYTjI4d1luaHpVR3A2Ym5SS1JFTmFSSFZOUmxFIiwiZmN2IjoiMyIsImVpIjoiaW5TdGF2ek9INGkxNU5vUHNjeURnQWsiLCJxYyI6IkNoMW1iMk4xY3lCdGIyUmxJR0ZwSUc1dmRHVWdkR0ZyYVc1bklHRndjQkFBZlN1Uk16OCIsInF1ZXN0aW9uIjoiSXMgdGhlIEFJIG5vdGUgdGFrZXIgYXBwIGZyZWU%2FIiwibGsiOiJHaDFwY3lCMGFHVWdZV2tnYm05MFpTQjBZV3RsY2lCaGNIQWdabkpsWlEiLCJicyI6ImMzMk9NUS1DTUJDRjQzcVRxMVh3Rm1WeTRRODB4TVNFMFltNTFzTmVTSURRcW5fZnR0UkJZMXp2ZmZmZUIyZllONGExd2FwR05ZN0lGaTlrSGJiRGhFNTEzTi13SHh4WldSWmk5NHlrNHI4a1ZKRFhGcDJoMEJsT0lhWXBQclVUa1N5M0l1T1o4RjBfQ0pDUUhWV1BOZDV0YkFrYmI4NFB5VElYRy0wQmpvQXYtUUxnQkVWamxNTTBFMFdUelNISlh1bkIyc3VzeFNyR255cHp1bHk4QUEiLCJpZCI6ImZjX2luU3RhdnpPSDRpMTVOb1BzY3lEZ0FrXzUifQ%3D%3D"
+    },
+    {
+      "question": "Can I use AI for note taking?",
+      "type": "ai_overview",
+      "page_token": "iEWvoHicHdDbboIwAIDh7GW8VGqVZSZmSQfFoaC2UA43Sy1otbV0ysbkbu-yp9rT7PACf778n1_6aNT3XSnb1l5no1HXdcND0xx0PRTN8GhG_HozYiS41jsu1My9d8HjXsz9a4eemg5tU2uZRxwKmCscbKPxxCkcq5JUovUinPAE5yVjsjIWF4n8KHMbrhmD4oTiysOvUeCDyNe8yP1xmtvpzismwi8TodolDViaURDVirgE437FHnpqFIw9-UzMbz_Qew40imDocsNwBCMocoJopuX2DJbsRHR9ZiQF2HBlNzSXfaHCbpXHrEy3FI_1WwrJn21DPWKjhK13APUF1H7p4EtwDBFZxLd1VpIEND09IV5TAAun68tTpauFDRMF2vo8dTNPmsFevM_h4P_Y_GV_bmf20hx-ACFceHo",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=iEWvoHicHdDbboIwAIDh7GW8VGqVZSZmSQfFoaC2UA43Sy1otbV0ysbkbu-yp9rT7PACf778n1_6aNT3XSnb1l5no1HXdcND0xx0PRTN8GhG_HozYiS41jsu1My9d8HjXsz9a4eemg5tU2uZRxwKmCscbKPxxCkcq5JUovUinPAE5yVjsjIWF4n8KHMbrhmD4oTiysOvUeCDyNe8yP1xmtvpzismwi8TodolDViaURDVirgE437FHnpqFIw9-UzMbz_Qew40imDocsNwBCMocoJopuX2DJbsRHR9ZiQF2HBlNzSXfaHCbpXHrEy3FI_1WwrJn21DPWKjhK13APUF1H7p4EtwDBFZxLd1VpIEND09IV5TAAun68tTpauFDRMF2vo8dTNPmsFevM_h4P_Y_GV_bmf20hx-ACFceHo",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1JrZHVXRlpPVUhKRlVuTnBWRTR6ZGxaMWVUQlpkekJhWVhKcGNrTTJMVXMxZEVKRFMzaFFNR0ZDVkVwc2RuRnVWV0ZCY1dKdlNHcEljV2huZDA5TVdWOXpjVzFGYzJ4bWFWWlVSbTU0WTBseFkwZE1iVTlUUjFJMlp4SVhhVzVUZEdGMmVrOUlOR2t4TlU1dlVITmplVVJuUVdzYUlrRkVjM0k1WmxRNFJrbFRSblJYTjI4d1luaHpVR3A2Ym5SS1JFTmFSSFZOUmxFIiwiZmN2IjoiMyIsImVpIjoiaW5TdGF2ek9INGkxNU5vUHNjeURnQWsiLCJxYyI6IkNoMW1iMk4xY3lCdGIyUmxJR0ZwSUc1dmRHVWdkR0ZyYVc1bklHRndjQkFBZlN1Uk16OCIsInF1ZXN0aW9uIjoiQ2FuIEkgdXNlIEFJIGZvciBub3RlIHRha2luZz8iLCJsayI6IkdoeGpZVzRnYVNCMWMyVWdZV2tnWm05eUlHNXZkR1VnZEdGcmFXNW4iLCJicyI6ImMzMk9NUS1DTUJDRjQzcVRxMVh3Rm1WeTRRODB4TVNFMFltNTFzTmVTSURRcW5fZnR0UkJZMXp2ZmZmZUIyZllONGExd2FwR05ZN0lGaTlrSGJiRGhFNTEzTi13SHh4WldSWmk5NHlrNHI4a1ZKRFhGcDJoMEJsT0lhWXBQclVUa1N5M0l1T1o4RjBfQ0pDUUhWV1BOZDV0YkFrYmI4NFB5VElYRy0wQmpvQXYtUUxnQkVWamxNTTBFMFdUelNISlh1bkIyc3VzeFNyR255cHp1bHk4QUEiLCJpZCI6ImZjX2luU3RhdnpPSDRpMTVOb1BzY3lEZ0FrXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1JrZHVXRlpPVUhKRlVuTnBWRTR6ZGxaMWVUQlpkekJhWVhKcGNrTTJMVXMxZEVKRFMzaFFNR0ZDVkVwc2RuRnVWV0ZCY1dKdlNHcEljV2huZDA5TVdWOXpjVzFGYzJ4bWFWWlVSbTU0WTBseFkwZE1iVTlUUjFJMlp4SVhhVzVUZEdGMmVrOUlOR2t4TlU1dlVITmplVVJuUVdzYUlrRkVjM0k1WmxRNFJrbFRSblJYTjI4d1luaHpVR3A2Ym5SS1JFTmFSSFZOUmxFIiwiZmN2IjoiMyIsImVpIjoiaW5TdGF2ek9INGkxNU5vUHNjeURnQWsiLCJxYyI6IkNoMW1iMk4xY3lCdGIyUmxJR0ZwSUc1dmRHVWdkR0ZyYVc1bklHRndjQkFBZlN1Uk16OCIsInF1ZXN0aW9uIjoiQ2FuIEkgdXNlIEFJIGZvciBub3RlIHRha2luZz8iLCJsayI6IkdoeGpZVzRnYVNCMWMyVWdZV2tnWm05eUlHNXZkR1VnZEdGcmFXNW4iLCJicyI6ImMzMk9NUS1DTUJDRjQzcVRxMVh3Rm1WeTRRODB4TVNFMFltNTFzTmVTSURRcW5fZnR0UkJZMXp2ZmZmZUIyZllONGExd2FwR05ZN0lGaTlrSGJiRGhFNTEzTi13SHh4WldSWmk5NHlrNHI4a1ZKRFhGcDJoMEJsT0lhWXBQclVUa1N5M0l1T1o4RjBfQ0pDUUhWV1BOZDV0YkFrYmI4NFB5VElYRy0wQmpvQXYtUUxnQkVWamxNTTBFMFdUelNISlh1bkIyc3VzeFNyR255cHp1bHk4QUEiLCJpZCI6ImZjX2luU3RhdnpPSDRpMTVOb1BzY3lEZ0FrXzUifQ%3D%3D"
+    },
+    {
+      "question": "What is the best AI note-taking device?",
+      "type": "ai_overview",
+      "page_token": "CB0JVXicHdBRcqIwAADQ6WX6qQHErc44O2tJFKakBZMA-dlJAoIkSGxpQf96lz1VT9PdvcGb9_nHnM76625qhsG-refzcRxndd_XppqpfnY6z8Xb9azmShgjhdLr5Y-l8_OoNvA93D5ewm1CrWVBCshueC1BFGYmeqlI4VQ5fjygqIhb1iZtOIncYoLCq7w6mrqrgGrgSVO4HOgRdw9XljeepBGOtdMr4IeSwVvqWMLzMuMw4tizuTSJW7DIF9QSRpAXtyjAGXNx5wQ02MZPGVwcKFoc0C9QIcSJRiJ3-CHdR22qB8MRu-UeP6Zdg_96edmV-p9H6Sko9yYWARultlm8Nx5sSisNBkXOlwTUQBDokG6VKBf76a7ciqk_JTS9qdZ0VDcJhoMnshXKYHMR5_r2jFgo4SSqzCcC-otyvD-qj413__9z8_vYDWv72tff_B2CvA",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=CB0JVXicHdBRcqIwAADQ6WX6qQHErc44O2tJFKakBZMA-dlJAoIkSGxpQf96lz1VT9PdvcGb9_nHnM76625qhsG-refzcRxndd_XppqpfnY6z8Xb9azmShgjhdLr5Y-l8_OoNvA93D5ewm1CrWVBCshueC1BFGYmeqlI4VQ5fjygqIhb1iZtOIncYoLCq7w6mrqrgGrgSVO4HOgRdw9XljeepBGOtdMr4IeSwVvqWMLzMuMw4tizuTSJW7DIF9QSRpAXtyjAGXNx5wQ02MZPGVwcKFoc0C9QIcSJRiJ3-CHdR22qB8MRu-UeP6Zdg_96edmV-p9H6Sko9yYWARultlm8Nx5sSisNBkXOlwTUQBDokG6VKBf76a7ciqk_JTS9qdZ0VDcJhoMnshXKYHMR5_r2jFgo4SSqzCcC-otyvD-qj413__9z8_vYDWv72tff_B2CvA",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1JrZHVXRlpPVUhKRlVuTnBWRTR6ZGxaMWVUQlpkekJhWVhKcGNrTTJMVXMxZEVKRFMzaFFNR0ZDVkVwc2RuRnVWV0ZCY1dKdlNHcEljV2huZDA5TVdWOXpjVzFGYzJ4bWFWWlVSbTU0WTBseFkwZE1iVTlUUjFJMlp4SVhhVzVUZEdGMmVrOUlOR2t4TlU1dlVITmplVVJuUVdzYUlrRkVjM0k1WmxRNFJrbFRSblJYTjI4d1luaHpVR3A2Ym5SS1JFTmFSSFZOUmxFIiwiZmN2IjoiMyIsImVpIjoiaW5TdGF2ek9INGkxNU5vUHNjeURnQWsiLCJxYyI6IkNoMW1iMk4xY3lCdGIyUmxJR0ZwSUc1dmRHVWdkR0ZyYVc1bklHRndjQkFBZlN1Uk16OCIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBBSSBub3RlLXRha2luZyBkZXZpY2U/IiwibGsiOiJHaGxpWlhOMElHRnBJRzV2ZEdVZ2RHRnJaWElnWkdWMmFXTmwiLCJicyI6ImMzMk9NUS1DTUJDRjQzcVRxMVh3Rm1WeTRRODB4TVNFMFltNTFzTmVTSURRcW5fZnR0UkJZMXp2ZmZmZUIyZllONGExd2FwR05ZN0lGaTlrSGJiRGhFNTEzTi13SHh4WldSWmk5NHlrNHI4a1ZKRFhGcDJoMEJsT0lhWXBQclVUa1N5M0l1T1o4RjBfQ0pDUUhWV1BOZDV0YkFrYmI4NFB5VElYRy0wQmpvQXYtUUxnQkVWamxNTTBFMFdUelNISlh1bkIyc3VzeFNyR255cHp1bHk4QUEiLCJpZCI6ImZjX2luU3RhdnpPSDRpMTVOb1BzY3lEZ0FrXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1JrZHVXRlpPVUhKRlVuTnBWRTR6ZGxaMWVUQlpkekJhWVhKcGNrTTJMVXMxZEVKRFMzaFFNR0ZDVkVwc2RuRnVWV0ZCY1dKdlNHcEljV2huZDA5TVdWOXpjVzFGYzJ4bWFWWlVSbTU0WTBseFkwZE1iVTlUUjFJMlp4SVhhVzVUZEdGMmVrOUlOR2t4TlU1dlVITmplVVJuUVdzYUlrRkVjM0k1WmxRNFJrbFRSblJYTjI4d1luaHpVR3A2Ym5SS1JFTmFSSFZOUmxFIiwiZmN2IjoiMyIsImVpIjoiaW5TdGF2ek9INGkxNU5vUHNjeURnQWsiLCJxYyI6IkNoMW1iMk4xY3lCdGIyUmxJR0ZwSUc1dmRHVWdkR0ZyYVc1bklHRndjQkFBZlN1Uk16OCIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBBSSBub3RlLXRha2luZyBkZXZpY2U%2FIiwibGsiOiJHaGxpWlhOMElHRnBJRzV2ZEdVZ2RHRnJaWElnWkdWMmFXTmwiLCJicyI6ImMzMk9NUS1DTUJDRjQzcVRxMVh3Rm1WeTRRODB4TVNFMFltNTFzTmVTSURRcW5fZnR0UkJZMXp2ZmZmZUIyZllONGExd2FwR05ZN0lGaTlrSGJiRGhFNTEzTi13SHh4WldSWmk5NHlrNHI4a1ZKRFhGcDJoMEJsT0lhWXBQclVUa1N5M0l1T1o4RjBfQ0pDUUhWV1BOZDV0YkFrYmI4NFB5VElYRy0wQmpvQXYtUUxnQkVWamxNTTBFMFdUelNISlh1bkIyc3VzeFNyR255cHp1bHk4QUEiLCJpZCI6ImZjX2luU3RhdnpPSDRpMTVOb1BzY3lEZ0FrXzUifQ%3D%3D"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "uVA_k3iczVVbkqJIFF3ArGP4sUp801YE0ZGZolBWl6YWPvqHQN4KJApq69-sZWZVs5pJEBWqsJzuj4m5EZJk5vW-D-ePv1zHX_392592FAXhE8vu9_uyRYjlGmWNlB2fVcODr7EmccONZn-1Xd7wme3WNfh9CQEJS0jqjqfNlToVGMvlHZ857Pg6o4V8hTEcuh9H6u44EBtOtflKhqF26FhgxSRWeWWhhsaSuv2xDFmFpY_V7_UO3ZTDsuErPVjW-hF2DXkEzbBcq9Tq5QGrelQH_HciYAvG6zNAt5XolXDfVGxAAlDIWJKAlazwqjU_XSOcXCHrpjV48jlK1DH9dZSjuO_Q07Q-nZv_pS5gbrtPYgFgn0QJgXM_m4zgNJdzXp9U6qKdl7R65HqS7XEu1pxY-9y2S6NQAEJXJ1ln1IydC-NSKc0CX0QCOxDIt-Om9elLoLkCWChKIStYmDQunXuZ9-gJq1t0cCvsYkOXKutotpa8bMJ4ntFbu0LER70nb-pvm1Zjar90ZzZoB29SdaS3HIvVFlTPJapu6IqtVL4m-2qt2qy069yXhwRLWngBU5gF00G2Q2M6nHjevPxShtUzjNCp6eBDxwS6R1JBYhClqgUthtfTuGFpS3E3azdtJYznWhiBfGv7w7iuvfOWzuiRtiarcfUaD_9HGJ3EyihTGCWBSCRVzGqctHoZ6GYaK4Giz8z7vLEIzlng5QfFHAARzXcFzoWZv7c8BxhZQowBJIgwrZqWt4E-lD1Oj36h0iJdMzm9wWwOcQkkDL4BSaA2HVmiPbDiWb0EKqW-usI7xN0YeIm6maJ_8-krEHgPRLHgM17ejX8WNr31rr41B3JXn5PJ4u110RzrnBnslOEWFMOEeIufIx3tf4WlEyUJKSXdxpJwH0sJJcFPKCl5v1JSPL-I3MQS7BVT0rdCSsrnjcAoi6XPKemnsYQ-xRJOnwVYIsVYCm5iKaWkDJbylCQUU9IFS79CSfAXKSmBlnFa8vy0XVo3eUow1p2BbZigGxC4PsgSUIEvGdF62wd3ecr0oidP1d0HxdGfYO05OugPCj0gT4bOrHmTaNuw5BHdKAGp5JPIKEXqyvGtkhoEjOduCF9RudmgZb5KI_Fxikcq6LW5YST22_LRBF4gKQoddTLb4YYQqOPnx9Z0spo0VX35KM_HprizVc9U5ddoRvqL9bP4xnHt8YRDlWaX202a-hj3N0Flthk2vmtYbsnD6WCC0fY7wH00bq7xcDZqiFPh0KupfW3lN3643AtKIgv550P3ONKP9SVoMN5G42nXGxZ4xWBq0fFDyVgCWSV03QPca9GuQCbUVMUId3yDJtbW2hyn1Tm9WacWrOgQ8O0KE_obvvoPobFJfQ",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=uVA_k3iczVVbkqJIFF3ArGP4sUp801YE0ZGZolBWl6YWPvqHQN4KJApq69-sZWZVs5pJEBWqsJzuj4m5EZJk5vW-D-ePv1zHX_392592FAXhE8vu9_uyRYjlGmWNlB2fVcODr7EmccONZn-1Xd7wme3WNfh9CQEJS0jqjqfNlToVGMvlHZ857Pg6o4V8hTEcuh9H6u44EBtOtflKhqF26FhgxSRWeWWhhsaSuv2xDFmFpY_V7_UO3ZTDsuErPVjW-hF2DXkEzbBcq9Tq5QGrelQH_HciYAvG6zNAt5XolXDfVGxAAlDIWJKAlazwqjU_XSOcXCHrpjV48jlK1DH9dZSjuO_Q07Q-nZv_pS5gbrtPYgFgn0QJgXM_m4zgNJdzXp9U6qKdl7R65HqS7XEu1pxY-9y2S6NQAEJXJ1ln1IydC-NSKc0CX0QCOxDIt-Om9elLoLkCWChKIStYmDQunXuZ9-gJq1t0cCvsYkOXKutotpa8bMJ4ntFbu0LER70nb-pvm1Zjar90ZzZoB29SdaS3HIvVFlTPJapu6IqtVL4m-2qt2qy069yXhwRLWngBU5gF00G2Q2M6nHjevPxShtUzjNCp6eBDxwS6R1JBYhClqgUthtfTuGFpS3E3azdtJYznWhiBfGv7w7iuvfOWzuiRtiarcfUaD_9HGJ3EyihTGCWBSCRVzGqctHoZ6GYaK4Giz8z7vLEIzlng5QfFHAARzXcFzoWZv7c8BxhZQowBJIgwrZqWt4E-lD1Oj36h0iJdMzm9wWwOcQkkDL4BSaA2HVmiPbDiWb0EKqW-usI7xN0YeIm6maJ_8-krEHgPRLHgM17ejX8WNr31rr41B3JXn5PJ4u110RzrnBnslOEWFMOEeIufIx3tf4WlEyUJKSXdxpJwH0sJJcFPKCl5v1JSPL-I3MQS7BVT0rdCSsrnjcAoi6XPKemnsYQ-xRJOnwVYIsVYCm5iKaWkDJbylCQUU9IFS79CSfAXKSmBlnFa8vy0XVo3eUow1p2BbZigGxC4PsgSUIEvGdF62wd3ecr0oidP1d0HxdGfYO05OugPCj0gT4bOrHmTaNuw5BHdKAGp5JPIKEXqyvGtkhoEjOduCF9RudmgZb5KI_Fxikcq6LW5YST22_LRBF4gKQoddTLb4YYQqOPnx9Z0spo0VX35KM_HprizVc9U5ddoRvqL9bP4xnHt8YRDlWaX202a-hj3N0Flthk2vmtYbsnD6WCC0fY7wH00bq7xcDZqiFPh0KupfW3lN3643AtKIgv550P3ONKP9SVoMN5G42nXGxZ4xWBq0fFDyVgCWSV03QPca9GuQCbUVMUId3yDJtbW2hyn1Tm9WacWrOgQ8O0KE_obvvoPobFJfQ"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "AI note taker: Your AI Meeting Assistant",
+      "link": "https://www.zoom.com/en/products/ai-assistant/features/ai-note-taking/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESfgHrOzAVPdEVf-K-YjA29n9S2v5c1Z8lJZApWfGUc1XRNrl0c6dcTf0DDAA46KWr5QsjnMpomY1-rp0RHADz74MKpCV0u_hFYdr4ti2nnerDf2YvG7G_5-xJddEQseiH2uw1HhSLV2kJsWi8ABgnrMDKzxCOXqJ5u9kcdq9Pqg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQFnoECCsQAQ&uoh=1",
+      "displayed_link": "https://www.zoom.com \u203a products \u203a ai-assistant \u203a features",
+      "favicon": "https://serpapi.com/images/i/UklGRroBAABXRUJQVlA4IK4BAACwCACdASogACAAPrkurlcnIacnG_DgFwlsAJ0yhH-HoH4q3s9oIMBbgN4U3kYrwPcq8lZJ_uJBdwDUXPCxOWzQ5UBcNH848Yc_2cOJyoAA_v7DK_5o6bsDQmG4xin14EWPst1qCCdkyPj_XP7h0tOk53i4LdB_NfoRj_afwEejdvqBYtGqttgjrQOgNhnSbA5W8lBtAPnN7Yr8_-Q1IN-v8acLngP__k27Xswq89hYx5Uay5R9IYfLOZ_qF73Q-K03qDb-a2SufdIqxbriEm1Vb_4o4blq3ltIVYS_dySuCbRZ22S-TGPPnoHOXIB5UPnKIc4kJb4N1gCVsiPI_mbvo49jsMKjlKMXm7_3Pq2lc66E99myqMDci_OMVd-uL1xiTYeXmvsgUZL3eDJXKaVejy2Z88H7f4Adq62-pWjoLK7ixYR57pTklDeXOCrUVZLvsQA2A_VTbJ8lpuzdxOLma0g9Gq4MMu0hBTaAxpkkNXKkdBTlB6Mhc2cml_VYrVL9awZdLIz3Guhnf4LFKhdmrBG4XtzzKDSjnJ8SbZsbfe5Z1IbtxpCya14xmoAA.webp",
+      "snippet": "Recognizes when you're in a meeting or conversation and asks if you'd like to capture notes. Helps you stay focused on the conversation, not on taking notes.",
+      "snippet_highlighted_words": [
+        "Recognizes when you're in a meeting or conversation"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Recognizes when you're in a meeting or conversation and asks if you'd like to capture notes. Helps you stay focused on the conversation, not on taking notes.",
+          "source_info_link": "https://www.zoom.com/en/products/ai-assistant/features/ai-note-taking/",
+          "icon": "https://serpapi.com/images/i/UklGRroBAABXRUJQVlA4IK4BAACwCACdASogACAAPrkurlcnIacnG_DgFwlsAJ0yhH-HoH4q3s9oIMBbgN4U3kYrwPcq8lZJ_uJBdwDUXPCxOWzQ5UBcNH848Yc_2cOJyoAA_v7DK_5o6bsDQmG4xin14EWPst1qCCdkyPj_XP7h0tOk53i4LdB_NfoRj_afwEejdvqBYtGqttgjrQOgNhnSbA5W8lBtAPnN7Yr8_-Q1IN-v8acLngP__k27Xswq89hYx5Uay5R9IYfLOZ_qF73Q-K03qDb-a2SufdIqxbriEm1Vb_4o4blq3ltIVYS_dySuCbRZ22S-TGPPnoHOXIB5UPnKIc4kJb4N1gCVsiPI_mbvo49jsMKjlKMXm7_3Pq2lc66E99myqMDci_OMVd-uL1xiTYeXmvsgUZL3eDJXKaVejy2Z88H7f4Adq62-pWjoLK7ixYR57pTklDeXOCrUVZLvsQA2A_VTbJ8lpuzdxOLma0g9Gq4MMu0hBTaAxpkkNXKkdBTlB6Mhc2cml_VYrVL9awZdLIz3Guhnf4LFKhdmrBG4XtzzKDSjnJ8SbZsbfe5Z1IbtxpCya14xmoAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Zoom",
+      "read_more_link": "https://www.zoom.com/en/products/ai-assistant/features/ai-note-taking/#:~:text=Recognizes%20when%20you're%20in%20a,conversation%2C%20not%20on%20taking%20notes."
+    },
+    {
+      "position": 2,
+      "title": "I tested 5 Best AI Note Takers in 2026 [Free & Paid]",
+      "link": "https://www.meetjamie.ai/blog/ai-note-taker",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYwHrOzAVKhigA19UOjrSk-o9o1D_SNWOiEdAYQl7UJdhUWZNOc4H2BDynJVoz6nHzOOULiQC2lavbKSoS0RXoKepxA7LBOU1gIrYeIiTV3Wm3mhBhUYniQ7arpfd_HTXlHAwkA&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQFnoECC4QAQ&uoh=1",
+      "displayed_link": "https://www.meetjamie.ai \u203a blog \u203a ai-note-taker",
+      "favicon": "https://serpapi.com/images/i/UklGRjIBAABXRUJQVlA4ICYBAAAwBgCdASofACAAPtEutFooIagoGAEAGglsALEJgIMACX6nTapPgkmPlmYr-4YJGUaZHnZAr0xEEvLwAP7wt_Pveuftxf0mSX7nUd-fCD32b8PaUtHL2vyc5Uhl1EwMcGtHv03Ntj_7XBjPovv-oS8VfSDBn7U1ca_hUVl_7zNfd97vZehSCafX_-2KT_jn0lGiStJGgGA6UMS0Jv1qL73_9HAuhsi6ojP5TDbVE9H44n2b0j_ssmUBYkj2c86NS3K_OrXIP_zcUW-H8r6eUhGUuvDbo-32VrXycVzKIRLfSEmVolRoTVS3HZIxi-tDatC9EUoFs5sKk6sLrjXP-ejwXJUFECBGQZsAjSyEY-PFAhWC2uuQf91keQO9gcp8h1UJu7SIQAA.webp",
+      "date": "20 Aug 2026",
+      "snippet": "I analysed the top 5 best AI note-takers of 2026: Jamie, Granola, Fireflies, Otter, and Fathom. I installed all their five desktop apps and ...",
+      "snippet_highlighted_words": [
+        "Jamie"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Overall Comparison Table on...",
+            "link": "https://www.meetjamie.ai/blog/ai-note-taker#overall-comparison-table-on-the-best-ai-note-takers"
+          },
+          {
+            "title": "What are the best AI note takers?",
+            "link": "https://www.meetjamie.ai/blog/ai-note-taker#what-are-the-best-ai-note-takers"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "I analysed the top 5 best AI note-takers of 2026: Jamie, Granola, Fireflies, Otter, and Fathom. I installed all their five desktop apps and ...",
+          "source_info_link": "https://www.meetjamie.ai/blog/ai-note-taker",
+          "icon": "https://serpapi.com/images/i/UklGRjIBAABXRUJQVlA4ICYBAAAwBgCdASofACAAPtEutFooIagoGAEAGglsALEJgIMACX6nTapPgkmPlmYr-4YJGUaZHnZAr0xEEvLwAP7wt_Pveuftxf0mSX7nUd-fCD32b8PaUtHL2vyc5Uhl1EwMcGtHv03Ntj_7XBjPovv-oS8VfSDBn7U1ca_hUVl_7zNfd97vZehSCafX_-2KT_jn0lGiStJGgGA6UMS0Jv1qL73_9HAuhsi6ojP5TDbVE9H44n2b0j_ssmUBYkj2c86NS3K_OrXIP_zcUW-H8r6eUhGUuvDbo-32VrXycVzKIRLfSEmVolRoTVS3HZIxi-tDatC9EUoFs5sKk6sLrjXP-ejwXJUFECBGQZsAjSyEY-PFAhWC2uuQf91keQO9gcp8h1UJu7SIQAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Jamie",
+      "read_more_link": "https://www.meetjamie.ai/blog/ai-note-taker#:~:text=I%20analysed%20the%20top%205,their%20five%20desktop%20apps%20and"
+    },
+    {
+      "position": 3,
+      "title": "AI Note Taker | Free AI Meeting Transcription",
+      "link": "https://www.notta.ai/en",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESTwHrOzAVqtiJakGQ2F8K_gGFmtQZLGS1OYM9DhzO9tW-9w8pMstIgiyVl-6qVdsaeo8afq5rVwGH-FL7qfX1JnJDaiv8jKL5mYP8ffnYUEk&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQFnoECDQQAQ&uoh=1",
+      "displayed_link": "https://www.notta.ai \u203a ...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAPFBMVEVHcEwmcf8lcf8lcf8lcf8lcf8mcv8LaP80e_-buv_Z5v_q8v_2-v-xyv8cbv____9-qP_F2P9ilv9Ihf-fmoV0AAAAB3RSTlMAGmvS_9ASWY98UQAAAPVJREFUeAF9kgeWgzAMRCkDktvQ7n_XteUnNn0S6ldHQ9U4zXjRMq2DacJHTd-Y0xVfNZqjiKrKB9cFQIgppwI2MyjcbB4ACZspCmU_3KypwbilmCs9NbrZDbVcII5tO1IFZraLQ7Y7nuaTTtnrpTjs4mXxQF7V9XiBzSEpzerVU2rOXBksbHiC1NzL6I2dfIRSWiIPsV2PkHonYuvV-3RHT8TsQ3DIdHd-x7jhtXkVPHsM0qGVnwGHRXjudBh82j6puEWH3D2qfaMurdAWT2MOAhNRUs7puIil7xehApdAFcK2JiO-av29mj-W2rROyyuZp7GCP5_wFeB45qrZAAAAAElFTkSuQmCC.png",
+      "snippet": "Notta is an AI note taker that transcribes, summarizes, and generates action plans from your meetings, interviews, or recordings. Try it for free now!",
+      "snippet_highlighted_words": [
+        "Notta is an AI note taker"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.8,
+            "reviews": 4526
+          },
+          "extensions": [
+            "4.8(4,526)",
+            "Free",
+            "Business/Productivity"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Notta is an AI note taker that transcribes, summarizes, and generates action plans from your meetings, interviews, or recordings. Try it for free now!",
+          "source_info_link": "https://www.notta.ai/en",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAPFBMVEVHcEwmcf8lcf8lcf8lcf8lcf8mcv8LaP80e_-buv_Z5v_q8v_2-v-xyv8cbv____9-qP_F2P9ilv9Ihf-fmoV0AAAAB3RSTlMAGmvS_9ASWY98UQAAAPVJREFUeAF9kgeWgzAMRCkDktvQ7n_XteUnNn0S6ldHQ9U4zXjRMq2DacJHTd-Y0xVfNZqjiKrKB9cFQIgppwI2MyjcbB4ACZspCmU_3KypwbilmCs9NbrZDbVcII5tO1IFZraLQ7Y7nuaTTtnrpTjs4mXxQF7V9XiBzSEpzerVU2rOXBksbHiC1NzL6I2dfIRSWiIPsV2PkHonYuvV-3RHT8TsQ3DIdHd-x7jhtXkVPHsM0qGVnwGHRXjudBh82j6puEWH3D2qfaMurdAWT2MOAhNRUs7puIil7xehApdAFcK2JiO-av29mj-W2rROyyuZp7GCP5_wFeB45qrZAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Notta"
+    },
+    {
+      "position": 4,
+      "title": "AI Note Taker | Meeting Notes, Transcripts & Summaries",
+      "link": "https://krisp.ai/ai-note-taker/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESVwHrOzAVnaz92GHBUAUnNzQbQ0UNiHqGe5LUxJWJA33Fgsby9W5I1NiUittnIpQEvMR4Ee1DAXCKhnrJY6f0qnF2Dw2M7pQ5JBx_FxsmJKQJAgDQRiUASg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQFnoECEQQAQ&uoh=1",
+      "displayed_link": "https://krisp.ai \u203a ai-note-taker",
+      "favicon": "https://serpapi.com/images/i/UklGRg4BAABXRUJQVlA4IAIBAACwBQCdASocABwAPtE-tFooIigoFAEAGglAAQIHFFlgs8M4FZ7jBzbOameIbC86LSRyYV5kdAAA_vYSsK4wQvlFkqlz--fznE063r_Tda3AEFpKC20Nr4vdsOsRpIvKPOeIsEv6_pb61R4uaGFiB5m5O8PX-MjPeK3qsYDfnwoe7ekI3yU7ZDu2Z-SBOyAf-RN-2Er_tna-7esrp1MKrz2c7p0j1hXCsdeWX9UP36C2ri-A9_xNYsL07E7Id_viWcdH-_8GRDpjq10MxNWvhdCz-YTb6o93Ra71ZtMxdKMxKQNDlAKrZX60kz9E6BG86gQzr8IDtjOn3RIn4FxqT1CAAAA.webp",
+      "snippet": "Krisp AI Note Taker records, transcribes, and summarizes conversations accurately\u2014built for meetings and all your note-taking needs.",
+      "snippet_highlighted_words": [
+        "AI Note Taker",
+        "note",
+        "taking"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Krisp AI Note Taker records, transcribes, and summarizes conversations accurately\u2014built for meetings and all your note-taking needs.",
+          "source_info_link": "https://krisp.ai/ai-note-taker/",
+          "icon": "https://serpapi.com/images/i/UklGRg4BAABXRUJQVlA4IAIBAACwBQCdASocABwAPtE-tFooIigoFAEAGglAAQIHFFlgs8M4FZ7jBzbOameIbC86LSRyYV5kdAAA_vYSsK4wQvlFkqlz--fznE063r_Tda3AEFpKC20Nr4vdsOsRpIvKPOeIsEv6_pb61R4uaGFiB5m5O8PX-MjPeK3qsYDfnwoe7ekI3yU7ZDu2Z-SBOyAf-RN-2Er_tna-7esrp1MKrz2c7p0j1hXCsdeWX9UP36C2ri-A9_xNYsL07E7Id_viWcdH-_8GRDpjq10MxNWvhdCz-YTb6o93Ra71ZtMxdKMxKQNDlAKrZX60kz9E6BG86gQzr8IDtjOn3RIn4FxqT1CAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Krisp"
+    },
+    {
+      "position": 5,
+      "title": "9 Best AI Note-Taking Apps: I Tested and Ranked Them for ...",
+      "link": "https://www.lindy.ai/blog/ai-note-taking-app",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESZAHrOzAVC-wfuzV_pVr5dfrOWsGbS_zUyT0s6x-hS8QyDo8mhxt2aMRAeA-esHAJqfkxDdm24gdTsG6LY8FDKpu-URwgA9NEfkxPfa2aFng94en027xc0dNqk0dYdN8K0yImSI4&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQFnoECD0QAQ&uoh=1",
+      "displayed_link": "https://www.lindy.ai \u203a Blog \u203a AI Productivity",
+      "favicon": "https://serpapi.com/images/i/UklGRk4BAABXRUJQVlA4IEIBAABQBwCdASocABwAPtEutFooIagoGAEAGgljAJ0Hag5wGbrejPYE_UbqwDt_9mdAc8UagzXFKhH8KmJm1GT-NqOnEz-AAP7StjE_7CF2GYKOncG_76CB4AAAh9DWvbxo_IRt3qIImHHmczzPnK5ieqxWdndxqLK5i0-Ini6ZEESBfXF-lcAEkJGxldcE9_CO2BIHQxP4iAxrTzmiXJjigKx_Jg5m0Mh3Awgk70n41AdPOXuQ-8r8OBqB3y8z-_-5sZOtNXL2f-XX7t_iJLibtVPvG--YesPbfvW__nx-_fvk01Jm7U3XTU4XLVsgx6xVH6hZ-kAcOFhlCROdKIV-hUxBHpA-SUf26lVgdpie0e74PaSgMR1d_-eKzTbq6n-L4XuF5KOxjEei0Y3US1Abk46YvoFCJ3VmgTu5E6Cbw1X_w8gA.webp",
+      "date": "16 Jul 2026",
+      "snippet": "1. Lindy: Overall Best AI Note Taking App. What it does: Lindy is an AI assistant you can text to summarize meetings, pull out key decisions ...",
+      "snippet_highlighted_words": [
+        "Lindy: Overall Best AI Note Taking App"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.9,
+            "reviews": 171
+          },
+          "extensions": [
+            "4.9(171)"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "1. Lindy: Overall Best AI Note Taking App. What it does: Lindy is an AI assistant you can text to summarize meetings, pull out key decisions ...",
+          "source_info_link": "https://www.lindy.ai/blog/ai-note-taking-app",
+          "icon": "https://serpapi.com/images/i/UklGRk4BAABXRUJQVlA4IEIBAABQBwCdASocABwAPtEutFooIagoGAEAGgljAJ0Hag5wGbrejPYE_UbqwDt_9mdAc8UagzXFKhH8KmJm1GT-NqOnEz-AAP7StjE_7CF2GYKOncG_76CB4AAAh9DWvbxo_IRt3qIImHHmczzPnK5ieqxWdndxqLK5i0-Ini6ZEESBfXF-lcAEkJGxldcE9_CO2BIHQxP4iAxrTzmiXJjigKx_Jg5m0Mh3Awgk70n41AdPOXuQ-8r8OBqB3y8z-_-5sZOtNXL2f-XX7t_iJLibtVPvG--YesPbfvW__nx-_fvk01Jm7U3XTU4XLVsgx6xVH6hZ-kAcOFhlCROdKIV-hUxBHpA-SUf26lVgdpie0e74PaSgMR1d_-eKzTbq6n-L4XuF5KOxjEei0Y3US1Abk46YvoFCJ3VmgTu5E6Cbw1X_w8gA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Lindy.ai",
+      "read_more_link": "https://www.lindy.ai/blog/ai-note-taking-app#:~:text=1.%20Lindy%3A%20Overall%20Best%20AI,usually%20sits%20in%20your%20notes."
+    },
+    {
+      "position": 6,
+      "title": "Reflect Notes",
+      "link": "https://reflect.app/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESTAHrOzAVN1q3k4T79R7FzYLLqpHuE7DCr-eM2IXeZ5YcGt_uasNdbPllLR1MV_rH1egpZ772dJ5xAVo3hQZmfDdp-h4KE_1rVheawlo&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQFnoECD4QAQ&uoh=1",
+      "displayed_link": "https://reflect.app",
+      "favicon": "https://serpapi.com/images/i/UklGRvQBAABXRUJQVlA4IOgBAACwCQCdASocABwAPtE-tFooIigoFAEAGglsALENPYgG2auwDeSW_HwgWIJFX5tvzx5xPoX2BuYz9l0PPRf-aHt8PoFrPAPtvLHJ68CYNPOegN_Yi2p_gAD-9hHO_mRsKNSsNt8mz0VmP-pYENSX1uHmgWip65p0Gq24YoE6pXfymTzCgHOvpNqvk5P-uUUSb9az34-MpnBNFvU0YlIZBjxFl_9ecBtsTTivjkNJC4iq8ooRSNf3Cxvvufv0JMX0RCd-ncVNsf4sD0F_6tyWMJ6ktTT_4L63cJw9q1_MLhTn7OxJAZ3alFbRFuCulvhLEt4oXt7ci2fuL9lD6iDezzEtMd6gUfRO3Zn2-BO__JtN7QEUS38WWEQ-IgXpYlF9Fm_7mlmpIkN_Ed1DN4lijTA8OvvKVLmZuaxE8fd1dtnXwNLVi5mLZgP4zxgh5XL8hyGz3Gu3YCqJqrTTmhHejB3eg5yIT261_L0b_VQxga1Hr6nPFOL7wyZg92l4CwVwlVsqDMLItSoUcak6O5v-wKf4d-9l-Soa9Nn_mOW_tg3DIH-mXEIvmL08nQ13_eB2TSB_s_omADgLl5GXeBN7Zc1r-pZ0hIXU3Ilw8-BjPFHc5noSSUsjLjAD8tqO86-R1AC2hSfWSuAAAA.webp",
+      "snippet": "A beautifully minimalist note-taking app designed to mirror the way you think. Now with a native AI integration.",
+      "snippet_highlighted_words": [
+        "note",
+        "taking app",
+        "AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "A beautifully minimalist note-taking app designed to mirror the way you think. Now with a native AI integration.",
+          "source_info_link": "https://reflect.app/",
+          "icon": "https://serpapi.com/images/i/UklGRvQBAABXRUJQVlA4IOgBAACwCQCdASocABwAPtE-tFooIigoFAEAGglsALENPYgG2auwDeSW_HwgWIJFX5tvzx5xPoX2BuYz9l0PPRf-aHt8PoFrPAPtvLHJ68CYNPOegN_Yi2p_gAD-9hHO_mRsKNSsNt8mz0VmP-pYENSX1uHmgWip65p0Gq24YoE6pXfymTzCgHOvpNqvk5P-uUUSb9az34-MpnBNFvU0YlIZBjxFl_9ecBtsTTivjkNJC4iq8ooRSNf3Cxvvufv0JMX0RCd-ncVNsf4sD0F_6tyWMJ6ktTT_4L63cJw9q1_MLhTn7OxJAZ3alFbRFuCulvhLEt4oXt7ci2fuL9lD6iDezzEtMd6gUfRO3Zn2-BO__JtN7QEUS38WWEQ-IgXpYlF9Fm_7mlmpIkN_Ed1DN4lijTA8OvvKVLmZuaxE8fd1dtnXwNLVi5mLZgP4zxgh5XL8hyGz3Gu3YCqJqrTTmhHejB3eg5yIT261_L0b_VQxga1Hr6nPFOL7wyZg92l4CwVwlVsqDMLItSoUcak6O5v-wKf4d-9l-Soa9Nn_mOW_tg3DIH-mXEIvmL08nQ13_eB2TSB_s_omADgLl5GXeBN7Zc1r-pZ0hIXU3Ilw8-BjPFHc5noSSUsjLjAD8tqO86-R1AC2hSfWSuAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reflect Notes"
+    },
+    {
+      "position": 7,
+      "title": "Smart Noter - AI Note Taker \u2013 Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=com.codespaceapps.meetingtranscriber&hl=en_IN",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://play.google.com/store/apps/details%3Fid%3Dcom.codespaceapps.meetingtranscriber%26hl%3Den_IN&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQFnoECEoQAQ",
+      "displayed_link": "https://play.google.com \u203a store \u203a apps \u203a details \u203a id=com...",
+      "favicon": "https://serpapi.com/images/i/UklGRkABAABXRUJQVlA4IDQBAAAQCQCdASogACAAPtE-tFooIigoFAEAGglsALszNDmfmfEB73thtgOzN6APJJ6f_qAPQA8rf2MP2W9I4mYjJ8khuaW8I_yP45fxEOMKNHCNJKAA_vvXTofIAVduHb-TXX4D3dQelpbt9yrOpq96LYIcnaoaRz7UWh1LxKN2ikVNfzze6YfrH-paXZEvjZHmHxqvASu7QWwFwALL3kur9pNnpHcddaAvbCo13kZ3snMZ1bG69n-Nyp9qUX1mugDQb-f_RP6_Di07-pNxe9Ja_-mSzKIQqTntZt8Qny57cYw5z2yP2QgTpyTgRbzRYRD8X0Br4Wzh90vJxaT-98P41tufiNul_j00xlsWSfBs27mpIYAUOy6dHrbdDnJVG8ZPgssUqINxPQnEc4LXCAuo7MH9pKHgAA.webp",
+      "snippet": "Smart Noter is an AI note-taking app and audio to text transcriber, a productivity tool that helps professionals and students turn meetings, lectures, ...",
+      "snippet_highlighted_words": [
+        "Smart Noter is an AI note-taking app"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.5,
+            "reviews": 111766
+          },
+          "extensions": [
+            "4.5(1,11,766)",
+            "Free",
+            "Android",
+            "Business/Productivity"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Smart Noter is an AI note-taking app and audio to text transcriber, a productivity tool that helps professionals and students turn meetings, lectures, ...",
+          "source_info_link": "https://play.google.com/store/apps/details?id=com.codespaceapps.meetingtranscriber&hl=en_IN",
+          "icon": "https://serpapi.com/images/i/UklGRkABAABXRUJQVlA4IDQBAAAQCQCdASogACAAPtE-tFooIigoFAEAGglsALszNDmfmfEB73thtgOzN6APJJ6f_qAPQA8rf2MP2W9I4mYjJ8khuaW8I_yP45fxEOMKNHCNJKAA_vvXTofIAVduHb-TXX4D3dQelpbt9yrOpq96LYIcnaoaRz7UWh1LxKN2ikVNfzze6YfrH-paXZEvjZHmHxqvASu7QWwFwALL3kur9pNnpHcddaAvbCo13kZ3snMZ1bG69n-Nyp9qUX1mugDQb-f_RP6_Di07-pNxe9Ja_-mSzKIQqTntZt8Qny57cYw5z2yP2QgTpyTgRbzRYRD8X0Br4Wzh90vJxaT-98P41tufiNul_j00xlsWSfBs27mpIYAUOy6dHrbdDnJVG8ZPgssUqINxPQnEc4LXCAuo7MH9pKHgAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Google Play",
+      "read_more_link": "https://play.google.com/store/apps/details?id=com.codespaceapps.meetingtranscriber&hl=en_IN#:~:text=Smart%20Noter%20is%20an%20AI,lectures%2C%20and%20conversations%20into%20notes."
+    },
+    {
+      "position": 8,
+      "title": "What is the Best AI Note-Taking App for Meetings",
+      "link": "https://tactiq.io/learn/what-is-the-best-ai-note-taking-app-for-meetings",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESgAEB6zswFbYWgQ74a-V5pKSYGhkBCW6EKQ4z0wHaTUubLEHvP7UAQYLroMRJ0ob_11z9TBqgRMorgvlUtbwRyk298KFRTH4h89EphTmTq4r5rH7XJTcd1_EeWdwND7na-fB3sTevsZIk6UGcdXo2FUrXu1kU8faVL-fyW5dOw-ebXQ&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQFnoECEIQAQ&uoh=1",
+      "displayed_link": "https://tactiq.io \u203a learn \u203a what-is-the-best-ai-note-taking...",
+      "favicon": "https://serpapi.com/images/i/UklGRsYAAABXRUJQVlA4ILoAAADwBACdASocABwAPtE-tFooIigoFAEAGglAGJyCPEQwF_rKE7rmn8JRDiC1V21mwAAA_vYB2NfbXnOqJR7-vecuP16McF0stz3JHXTCFfbp6alBLoWj2F_i4fJeWiPQM0L3du4jRzJ0QJ0imUD0M3vhBSFW4_n9qGCiiWv3drQP3sdSRMpn0rKpmNwMQ7hzdXJoqP1TrOsZMKNOxzRx4j_6TG9xScVvPTrA0bmGxpYrOlmvLHNQsLkAAAA.webp",
+      "date": "4 Feb 2026",
+      "snippet": "Tactiq is one of the best AI note-taking apps for meetings because it captures meeting notes in real time without bots joining calls. It works ...",
+      "snippet_highlighted_words": [
+        "Tactiq"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Tactiq is one of the best AI note-taking apps for meetings because it captures meeting notes in real time without bots joining calls. It works ...",
+          "source_info_link": "https://tactiq.io/learn/what-is-the-best-ai-note-taking-app-for-meetings",
+          "icon": "https://serpapi.com/images/i/UklGRsYAAABXRUJQVlA4ILoAAADwBACdASocABwAPtE-tFooIigoFAEAGglAGJyCPEQwF_rKE7rmn8JRDiC1V21mwAAA_vYB2NfbXnOqJR7-vecuP16McF0stz3JHXTCFfbp6alBLoWj2F_i4fJeWiPQM0L3du4jRzJ0QJ0imUD0M3vhBSFW4_n9qGCiiWv3drQP3sdSRMpn0rKpmNwMQ7hzdXJoqP1TrOsZMKNOxzRx4j_6TG9xScVvPTrA0bmGxpYrOlmvLHNQsLkAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Tactiq",
+      "read_more_link": "https://tactiq.io/learn/what-is-the-best-ai-note-taking-app-for-meetings#:~:text=Tactiq%20is%20one%20of%20the,bots%20joining%20calls.%20It%20works"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=inStavzOH4i15NoPscyDgAk&start=10&sa=N&sstk=AS6-VmIGvz1XY2x8fZjLO6VYw0R1UvyJDGseYDSj-uhQP8qpDWvhjhWtmR21Z2s3cy6CmYOgEs-zlb47WhFFbKNWZw5m7tysGoluXg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQ8NMDegQINhAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=inStavzOH4i15NoPscyDgAk&start=10&sa=N&sstk=AS6-VmIGvz1XY2x8fZjLO6VYw0R1UvyJDGseYDSj-uhQP8qpDWvhjhWtmR21Z2s3cy6CmYOgEs-zlb47WhFFbKNWZw5m7tysGoluXg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQ8tMDegQINhAE",
+      "3": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=inStavzOH4i15NoPscyDgAk&start=20&sa=N&sstk=AS6-VmIGvz1XY2x8fZjLO6VYw0R1UvyJDGseYDSj-uhQP8qpDWvhjhWtmR21Z2s3cy6CmYOgEs-zlb47WhFFbKNWZw5m7tysGoluXg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQ8tMDegQINhAG",
+      "4": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=inStavzOH4i15NoPscyDgAk&start=30&sa=N&sstk=AS6-VmIGvz1XY2x8fZjLO6VYw0R1UvyJDGseYDSj-uhQP8qpDWvhjhWtmR21Z2s3cy6CmYOgEs-zlb47WhFFbKNWZw5m7tysGoluXg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQ8tMDegQINhAI",
+      "5": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=inStavzOH4i15NoPscyDgAk&start=40&sa=N&sstk=AS6-VmIGvz1XY2x8fZjLO6VYw0R1UvyJDGseYDSj-uhQP8qpDWvhjhWtmR21Z2s3cy6CmYOgEs-zlb47WhFFbKNWZw5m7tysGoluXg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQ8tMDegQINhAK",
+      "6": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=inStavzOH4i15NoPscyDgAk&start=50&sa=N&sstk=AS6-VmIGvz1XY2x8fZjLO6VYw0R1UvyJDGseYDSj-uhQP8qpDWvhjhWtmR21Z2s3cy6CmYOgEs-zlb47WhFFbKNWZw5m7tysGoluXg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQ8tMDegQINhAM",
+      "7": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=inStavzOH4i15NoPscyDgAk&start=60&sa=N&sstk=AS6-VmIGvz1XY2x8fZjLO6VYw0R1UvyJDGseYDSj-uhQP8qpDWvhjhWtmR21Z2s3cy6CmYOgEs-zlb47WhFFbKNWZw5m7tysGoluXg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQ8tMDegQINhAO",
+      "8": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=inStavzOH4i15NoPscyDgAk&start=70&sa=N&sstk=AS6-VmIGvz1XY2x8fZjLO6VYw0R1UvyJDGseYDSj-uhQP8qpDWvhjhWtmR21Z2s3cy6CmYOgEs-zlb47WhFFbKNWZw5m7tysGoluXg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQ8tMDegQINhAQ",
+      "9": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=inStavzOH4i15NoPscyDgAk&start=80&sa=N&sstk=AS6-VmIGvz1XY2x8fZjLO6VYw0R1UvyJDGseYDSj-uhQP8qpDWvhjhWtmR21Z2s3cy6CmYOgEs-zlb47WhFFbKNWZw5m7tysGoluXg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQ8tMDegQINhAS",
+      "10": "https://www.google.co.in/search?q=focus+mode+AI+note+taking+app&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=inStavzOH4i15NoPscyDgAk&start=90&sa=N&sstk=AS6-VmIGvz1XY2x8fZjLO6VYw0R1UvyJDGseYDSj-uhQP8qpDWvhjhWtmR21Z2s3cy6CmYOgEs-zlb47WhFFbKNWZw5m7tysGoluXg&ved=2ahUKEwj8u5q80_iWAxWIGlkFHTHmAJAQ8tMDegQINhAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=focus+mode+AI+note+taking+app&start=90"
+    }
+  }
+}

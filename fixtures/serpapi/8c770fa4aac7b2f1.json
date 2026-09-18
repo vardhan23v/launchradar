@@ -1,0 +1,27 @@
+{
+  "search_metadata": {
+    "id": "6aad7745f5d5acbb456bcbe6",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/TE20sndCUhPnHh1tDivl1JrjSS74rzBSmbLODaCjOtA/6aad7745f5d5acbb456bcbe6.json",
+    "markdown_endpoint": "https://serpapi.com/searches/TE20sndCUhPnHh1tDivl1JrjSS74rzBSmbLODaCjOtA/6aad7745f5d5acbb456bcbe6.md",
+    "created_at": "2026-09-18 17:39:17 UTC",
+    "processed_at": "2026-09-18 17:39:17 UTC",
+    "google_trends_url": "https://trends.google.com/trends/embed/explore/RELATED_QUERIES?hl=en&tz=420&req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22deployment+failure+fix%22%2C%22geo%22%3A%22IN%22%2C%22time%22%3A%22today+12-m%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%7D",
+    "raw_html_file": "https://serpapi.com/searches/TE20sndCUhPnHh1tDivl1JrjSS74rzBSmbLODaCjOtA/6aad7745f5d5acbb456bcbe6.html",
+    "prettify_html_file": "https://serpapi.com/searches/TE20sndCUhPnHh1tDivl1JrjSS74rzBSmbLODaCjOtA/6aad7745f5d5acbb456bcbe6.prettify",
+    "total_time_taken": 3.15
+  },
+  "search_parameters": {
+    "engine": "google_trends",
+    "q": "deployment failure fix",
+    "hl": "en",
+    "geo": "IN",
+    "date": "today 12-m",
+    "tz": "420",
+    "data_type": "RELATED_QUERIES"
+  },
+  "search_information": {
+    "organic_results_state": "Fully empty"
+  },
+  "error": "Google Trends hasn't returned any results for this query."
+}

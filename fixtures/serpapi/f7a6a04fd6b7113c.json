@@ -1,0 +1,372 @@
+{
+  "search_metadata": {
+    "id": "6aad72fcff596eba48c5f85c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/iG_9SO5bAOOFRo1NwbfDJqxeAJB4tXiOv1oqtv1JoX4/6aad72fcff596eba48c5f85c.json",
+    "markdown_endpoint": "https://serpapi.com/searches/iG_9SO5bAOOFRo1NwbfDJqxeAJB4tXiOv1oqtv1JoX4/6aad72fcff596eba48c5f85c.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/iG_9SO5bAOOFRo1NwbfDJqxeAJB4tXiOv1oqtv1JoX4/6aad72fcff596eba48c5f85c.json_with_pixel_position",
+    "created_at": "2026-09-18 17:21:00 UTC",
+    "processed_at": "2026-09-18 17:21:00 UTC",
+    "google_url": "https://www.google.co.in/search?q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&oq=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/iG_9SO5bAOOFRo1NwbfDJqxeAJB4tXiOv1oqtv1JoX4/6aad72fcff596eba48c5f85c.html",
+    "total_time_taken": 5.18
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Quora question: best AI note\u2011taking app for engineering students",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Quora question: best AI note\u2011taking app for engineering students",
+    "total_results": 107,
+    "time_taken_displayed": 0.22,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Which AI app is best for engineering students?",
+      "type": "ai_overview",
+      "page_token": "sFAujnicHdBRbpswGABg7TJ9TDApWRMpmkSwSVmxisF_iF8qY0gMxuA1NCx92x12hJ1qp5m07wjfrz99O5i_X37raXLX7XI5z_PiMo6XvlmocdEOS3m9D2qpZN9XUpnt-usafTurHb6pcP-uwow7BxHzcuMiGVEjDcENhwKsSCqcrLmvLdhNmnvBxxH0IO0lSAH2YOF0PE5XtmK0Md7cFM8zj5IrELqS_CmgHhpKhFHTsXMRYXQC_dFgiBpQPut6kvmapARwgbCfdX2b-T95gVFYHPUoTVLkAzGCpBNwE2RdTetOEDGELEUupJjsuYFcxcGLQM5WB_oKhRjLVY1Phhwq_hiwOLtT3_2AUn-XJXmuOW3hkLzWsRBY12GON96pZGXK8STseFd2kymOnBxqVrCxzTj7VF1vuaEjfBKUH-itAnrjWMeNQR0vQ1fhPqGx9sT8cFa33erh__Xu7WynrXsfL_8ARimMpw",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=sFAujnicHdBRbpswGABg7TJ9TDApWRMpmkSwSVmxisF_iF8qY0gMxuA1NCx92x12hJ1qp5m07wjfrz99O5i_X37raXLX7XI5z_PiMo6XvlmocdEOS3m9D2qpZN9XUpnt-usafTurHb6pcP-uwow7BxHzcuMiGVEjDcENhwKsSCqcrLmvLdhNmnvBxxH0IO0lSAH2YOF0PE5XtmK0Md7cFM8zj5IrELqS_CmgHhpKhFHTsXMRYXQC_dFgiBpQPut6kvmapARwgbCfdX2b-T95gVFYHPUoTVLkAzGCpBNwE2RdTetOEDGELEUupJjsuYFcxcGLQM5WB_oKhRjLVY1Phhwq_hiwOLtT3_2AUn-XJXmuOW3hkLzWsRBY12GON96pZGXK8STseFd2kymOnBxqVrCxzTj7VF1vuaEjfBKUH-itAnrjWMeNQR0vQ1fhPqGx9sT8cFa33erh__Xu7WynrXsfL_8ARimMpw",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSlVXaHRRVkZVT0hsUWVEQnJNRVkwUkhkclpWaEtUa2RsYUZScWMxTmFNRnBCTkZsRFVIVnlhRlpWTlRSUWFGaFhWekZUYW1ablVVeHlNa3gxWW10VFdXZEZTRVZIVkRkbE1ESldVVVo0TUhsb2FXOXNXakozYjB4clp4SVhRVWhQZEdGMFZ6RkJMV1pxTW5KdlVIRk5hV3AzVVUwYUlrRkVjM0k1WmxGaFVHTmtXazlFVWxGUmNVbE9RbEZaUVVsdmNIRk1SR3c1ZVVFIiwiZmN2IjoiMyIsImVpIjoiQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU0iLCJxYyI6ImMtT3lMeXpOTDBwVUtDeE5MUzdKek05VFNBTFNDb21aQ25uNUpha0tKWW5abVhucENva0ZCUXBwLVVVS3FYbnBtWG1wcVVVZ3NlS1MwcFRVdkpKaUFZYmFaNU9lMmdFQSIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgYXBwIGlzIGJlc3QgZm9yIGVuZ2luZWVyaW5nIHN0dWRlbnRzPyIsImxrIjoiR2kxM2FHbGphQ0JoYVNCaGNIQWdhWE1nWW1WemRDQm1iM0lnWlc1bmFXNWxaWEpwYm1jZ2MzUjFaR1Z1ZEhNIiwiYnMiOiJjNDJRc1E2Q1FCQkVZM3VWOWNWaUV6VTJnZ2tfUUN3dHJDbk5xU3UzTVRtUVc4THZ1d3NOWURUV00yOW1aNDB6YWVIcDV1RjRBbGZYUUJHdUdCa2VWUU1ZU2dxSURZVVNJcmQzREJ6ejdHQ1RyaWNjX1VXWWk4a0w3MWlON0hFd0s2Z0F1NmQ2UThVWWYzU3VyTzJ4c1Rvd0VpUUZpUmJzUnZteVpwNzJha1dnS2toY2F2ZmRESkF4WHdGek5wdmhTVFN0MEJOMEFqWjZSNTV0N2JyNzhFbnkxTGRjdkFFIiwiaWQiOiJmY19BSE90YXRXMUEtZmoycm9QcU1pandRTV81In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSlVXaHRRVkZVT0hsUWVEQnJNRVkwUkhkclpWaEtUa2RsYUZScWMxTmFNRnBCTkZsRFVIVnlhRlpWTlRSUWFGaFhWekZUYW1ablVVeHlNa3gxWW10VFdXZEZTRVZIVkRkbE1ESldVVVo0TUhsb2FXOXNXakozYjB4clp4SVhRVWhQZEdGMFZ6RkJMV1pxTW5KdlVIRk5hV3AzVVUwYUlrRkVjM0k1WmxGaFVHTmtXazlFVWxGUmNVbE9RbEZaUVVsdmNIRk1SR3c1ZVVFIiwiZmN2IjoiMyIsImVpIjoiQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU0iLCJxYyI6ImMtT3lMeXpOTDBwVUtDeE5MUzdKek05VFNBTFNDb21aQ25uNUpha0tKWW5abVhucENva0ZCUXBwLVVVS3FYbnBtWG1wcVVVZ3NlS1MwcFRVdkpKaUFZYmFaNU9lMmdFQSIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgYXBwIGlzIGJlc3QgZm9yIGVuZ2luZWVyaW5nIHN0dWRlbnRzPyIsImxrIjoiR2kxM2FHbGphQ0JoYVNCaGNIQWdhWE1nWW1WemRDQm1iM0lnWlc1bmFXNWxaWEpwYm1jZ2MzUjFaR1Z1ZEhNIiwiYnMiOiJjNDJRc1E2Q1FCQkVZM3VWOWNWaUV6VTJnZ2tfUUN3dHJDbk5xU3UzTVRtUVc4THZ1d3NOWURUV00yOW1aNDB6YWVIcDV1RjRBbGZYUUJHdUdCa2VWUU1ZU2dxSURZVVNJcmQzREJ6ejdHQ1RyaWNjX1VXWWk4a0w3MWlON0hFd0s2Z0F1NmQ2UThVWWYzU3VyTzJ4c1Rvd0VpUUZpUmJzUnZteVpwNzJha1dnS2toY2F2ZmRESkF4WHdGek5wdmhTVFN0MEJOMEFqWjZSNTV0N2JyNzhFbnkxTGRjdkFFIiwiaWQiOiJmY19BSE90YXRXMUEtZmoycm9QcU1pandRTV81In0%3D"
+    },
+    {
+      "question": "What is the best app for taking notes for engineering students?",
+      "type": "ai_overview",
+      "page_token": "a6azy3icHdBdbpswAABg9TJ9TPhJ0hIpqspqSGhNYuMf5peJmQQCxiaNNwhvvctO1dO02gk-6fv4p866_bwba2v763o-H4ZhVhlTqeNMmtlZz4vrTcu5LJT6Xch2vXpYuU8nuQF_duGPyy5EtO_ZC3YyOqojtytE0vYI0hzzZZNNz4s9EUiqJCYNDpFTF1SpK83ZhcVwLOJqLLnr0XY0KUh8yNJITskBU2FLh3GuAohjM1KdjDKC_p4LQel4hROruQa30kkobJXgceDBrXoVjQCFXy2oF2wRt3X2EjkZUy1VGAo38ZHCqdTMzxzgld2ji9tlst9G31btyijYkVhMxA0vRCcY1GWYgcD5meMcUmBFZ26yC5Ckbl_oEhNszojiSTaqo0Ra5Fn9lteHIxEHBsQgGtZLb8mgVgXOzaIc7k_y78a___-5-XXq7Lp_N9UXLo6EDg",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=a6azy3icHdBdbpswAABg9TJ9TPhJ0hIpqspqSGhNYuMf5peJmQQCxiaNNwhvvctO1dO02gk-6fv4p866_bwba2v763o-H4ZhVhlTqeNMmtlZz4vrTcu5LJT6Xch2vXpYuU8nuQF_duGPyy5EtO_ZC3YyOqojtytE0vYI0hzzZZNNz4s9EUiqJCYNDpFTF1SpK83ZhcVwLOJqLLnr0XY0KUh8yNJITskBU2FLh3GuAohjM1KdjDKC_p4LQel4hROruQa30kkobJXgceDBrXoVjQCFXy2oF2wRt3X2EjkZUy1VGAo38ZHCqdTMzxzgld2ji9tlst9G31btyijYkVhMxA0vRCcY1GWYgcD5meMcUmBFZ26yC5Ckbl_oEhNszojiSTaqo0Ra5Fn9lteHIxEHBsQgGtZLb8mgVgXOzaIc7k_y78a___-5-XXq7Lp_N9UXLo6EDg",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSlVXaHRRVkZVT0hsUWVEQnJNRVkwUkhkclpWaEtUa2RsYUZScWMxTmFNRnBCTkZsRFVIVnlhRlpWTlRSUWFGaFhWekZUYW1ablVVeHlNa3gxWW10VFdXZEZTRVZIVkRkbE1ESldVVVo0TUhsb2FXOXNXakozYjB4clp4SVhRVWhQZEdGMFZ6RkJMV1pxTW5KdlVIRk5hV3AzVVUwYUlrRkVjM0k1WmxGaFVHTmtXazlFVWxGUmNVbE9RbEZaUVVsdmNIRk1SR3c1ZVVFIiwiZmN2IjoiMyIsImVpIjoiQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU0iLCJxYyI6ImMtT3lMeXpOTDBwVUtDeE5MUzdKek05VFNBTFNDb21aQ25uNUpha0tKWW5abVhucENva0ZCUXBwLVVVS3FYbnBtWG1wcVVVZ3NlS1MwcFRVdkpKaUFZYmFaNU9lMmdFQSIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBhcHAgZm9yIHRha2luZyBub3RlcyBmb3IgZW5naW5lZXJpbmcgc3R1ZGVudHM/IiwibGsiOiJHaHBpWlhOMElHVnVaMmx1WldWeWFXNW5JRzV2ZEdWeklHRndjQSIsImJzIjoiYzQyUXNRNkNRQkJFWTN1VjljVmlFelUyZ2drX1FDd3RyQ25OcVN1M01UbVFXOEx2dXdzTllEVFdNMjltWjQwemFlSHA1dUY0QWxmWFFCR3VHQmtlVlFNWVNncUlEWVVTSXJkM0RCeno3R0NUcmljY19VV1lpOGtMNzFpTjdIRXdLNmdBdTZkNlE4VVlmM1N1ck8yeHNUb3dFaVFGaVJic1J2bXlacDcyYWtXZ0traGNhdmZkREpBeFh3RnpOcHZoU1RTdDBCTjBBalo2UjU1dDdicjc4RW55MUxkY3ZBRSIsImlkIjoiZmNfQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU1fNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSlVXaHRRVkZVT0hsUWVEQnJNRVkwUkhkclpWaEtUa2RsYUZScWMxTmFNRnBCTkZsRFVIVnlhRlpWTlRSUWFGaFhWekZUYW1ablVVeHlNa3gxWW10VFdXZEZTRVZIVkRkbE1ESldVVVo0TUhsb2FXOXNXakozYjB4clp4SVhRVWhQZEdGMFZ6RkJMV1pxTW5KdlVIRk5hV3AzVVUwYUlrRkVjM0k1WmxGaFVHTmtXazlFVWxGUmNVbE9RbEZaUVVsdmNIRk1SR3c1ZVVFIiwiZmN2IjoiMyIsImVpIjoiQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU0iLCJxYyI6ImMtT3lMeXpOTDBwVUtDeE5MUzdKek05VFNBTFNDb21aQ25uNUpha0tKWW5abVhucENva0ZCUXBwLVVVS3FYbnBtWG1wcVVVZ3NlS1MwcFRVdkpKaUFZYmFaNU9lMmdFQSIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBhcHAgZm9yIHRha2luZyBub3RlcyBmb3IgZW5naW5lZXJpbmcgc3R1ZGVudHM%2FIiwibGsiOiJHaHBpWlhOMElHVnVaMmx1WldWeWFXNW5JRzV2ZEdWeklHRndjQSIsImJzIjoiYzQyUXNRNkNRQkJFWTN1VjljVmlFelUyZ2drX1FDd3RyQ25OcVN1M01UbVFXOEx2dXdzTllEVFdNMjltWjQwemFlSHA1dUY0QWxmWFFCR3VHQmtlVlFNWVNncUlEWVVTSXJkM0RCeno3R0NUcmljY19VV1lpOGtMNzFpTjdIRXdLNmdBdTZkNlE4VVlmM1N1ck8yeHNUb3dFaVFGaVJic1J2bXlacDcyYWtXZ0traGNhdmZkREpBeFh3RnpOcHZoU1RTdDBCTjBBalo2UjU1dDdicjc4RW55MUxkY3ZBRSIsImlkIjoiZmNfQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU1fNSJ9"
+    },
+    {
+      "question": "What's the best AI for engineering questions?",
+      "type": "ai_overview",
+      "page_token": "ehoe0nicHZDfTsIwHEbjy3AJHQMNJMSk2E2iq670V7bemNECZe3-oIPB7nwXn8qncfEBvnNOvu8fdyzt793VNE39NR-N2rYdHqrq4HZDVQ2P5Sj7upVqpDLntpmy8_uHe-9xrxbkvMLL0wrHUNfiiaG1JyZgW8R8OaWEdimnrxGBGwDDqtTLGM0aboNYAgsUuZ7WIaBoXC85aKyKmVVFwJXAl2jjUho2V47kWW08E_vMMWJC_YxJz025o3sA-a6CYBqhdgyeHPNOT1JoW3CSKWF9nRiz9swmzUXKcz0WpZ5IJ2CbiCQCyXalfqfWdfBs_CzA57ewufS99RaulvIV2ia4V2q8JjOUJqzfkEYW1a3vjBV4dVZqxll1jIF1KncFdMJAUotdySi1xr0RNqG5RlroPLLU0lC-yHawV5eFP_j_c_GxL5p5_Vkd_gC84ITF",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=ehoe0nicHZDfTsIwHEbjy3AJHQMNJMSk2E2iq670V7bemNECZe3-oIPB7nwXn8qncfEBvnNOvu8fdyzt793VNE39NR-N2rYdHqrq4HZDVQ2P5Sj7upVqpDLntpmy8_uHe-9xrxbkvMLL0wrHUNfiiaG1JyZgW8R8OaWEdimnrxGBGwDDqtTLGM0aboNYAgsUuZ7WIaBoXC85aKyKmVVFwJXAl2jjUho2V47kWW08E_vMMWJC_YxJz025o3sA-a6CYBqhdgyeHPNOT1JoW3CSKWF9nRiz9swmzUXKcz0WpZ5IJ2CbiCQCyXalfqfWdfBs_CzA57ewufS99RaulvIV2ia4V2q8JjOUJqzfkEYW1a3vjBV4dVZqxll1jIF1KncFdMJAUotdySi1xr0RNqG5RlroPLLU0lC-yHawV5eFP_j_c_GxL5p5_Vkd_gC84ITF",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSlVXaHRRVkZVT0hsUWVEQnJNRVkwUkhkclpWaEtUa2RsYUZScWMxTmFNRnBCTkZsRFVIVnlhRlpWTlRSUWFGaFhWekZUYW1ablVVeHlNa3gxWW10VFdXZEZTRVZIVkRkbE1ESldVVVo0TUhsb2FXOXNXakozYjB4clp4SVhRVWhQZEdGMFZ6RkJMV1pxTW5KdlVIRk5hV3AzVVUwYUlrRkVjM0k1WmxGaFVHTmtXazlFVWxGUmNVbE9RbEZaUVVsdmNIRk1SR3c1ZVVFIiwiZmN2IjoiMyIsImVpIjoiQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU0iLCJxYyI6ImMtT3lMeXpOTDBwVUtDeE5MUzdKek05VFNBTFNDb21aQ25uNUpha0tKWW5abVhucENva0ZCUXBwLVVVS3FYbnBtWG1wcVVVZ3NlS1MwcFRVdkpKaUFZYmFaNU9lMmdFQSIsInF1ZXN0aW9uIjoiV2hhdCdzIHRoZSBiZXN0IEFJIGZvciBlbmdpbmVlcmluZyBxdWVzdGlvbnM/IiwibGsiOiJHaXgzYUdGMEozTWdkR2hsSUdKbGMzUWdZV2tnWm05eUlHVnVaMmx1WldWeWFXNW5JSEYxWlhOMGFXOXVjdyIsImJzIjoiYzQyUXNRNkNRQkJFWTN1VjljVmlFelUyZ2drX1FDd3RyQ25OcVN1M01UbVFXOEx2dXdzTllEVFdNMjltWjQwemFlSHA1dUY0QWxmWFFCR3VHQmtlVlFNWVNncUlEWVVTSXJkM0RCeno3R0NUcmljY19VV1lpOGtMNzFpTjdIRXdLNmdBdTZkNlE4VVlmM1N1ck8yeHNUb3dFaVFGaVJic1J2bXlacDcyYWtXZ0traGNhdmZkREpBeFh3RnpOcHZoU1RTdDBCTjBBalo2UjU1dDdicjc4RW55MUxkY3ZBRSIsImlkIjoiZmNfQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU1fNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSlVXaHRRVkZVT0hsUWVEQnJNRVkwUkhkclpWaEtUa2RsYUZScWMxTmFNRnBCTkZsRFVIVnlhRlpWTlRSUWFGaFhWekZUYW1ablVVeHlNa3gxWW10VFdXZEZTRVZIVkRkbE1ESldVVVo0TUhsb2FXOXNXakozYjB4clp4SVhRVWhQZEdGMFZ6RkJMV1pxTW5KdlVIRk5hV3AzVVUwYUlrRkVjM0k1WmxGaFVHTmtXazlFVWxGUmNVbE9RbEZaUVVsdmNIRk1SR3c1ZVVFIiwiZmN2IjoiMyIsImVpIjoiQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU0iLCJxYyI6ImMtT3lMeXpOTDBwVUtDeE5MUzdKek05VFNBTFNDb21aQ25uNUpha0tKWW5abVhucENva0ZCUXBwLVVVS3FYbnBtWG1wcVVVZ3NlS1MwcFRVdkpKaUFZYmFaNU9lMmdFQSIsInF1ZXN0aW9uIjoiV2hhdCdzIHRoZSBiZXN0IEFJIGZvciBlbmdpbmVlcmluZyBxdWVzdGlvbnM%2FIiwibGsiOiJHaXgzYUdGMEozTWdkR2hsSUdKbGMzUWdZV2tnWm05eUlHVnVaMmx1WldWeWFXNW5JSEYxWlhOMGFXOXVjdyIsImJzIjoiYzQyUXNRNkNRQkJFWTN1VjljVmlFelUyZ2drX1FDd3RyQ25OcVN1M01UbVFXOEx2dXdzTllEVFdNMjltWjQwemFlSHA1dUY0QWxmWFFCR3VHQmtlVlFNWVNncUlEWVVTSXJkM0RCeno3R0NUcmljY19VV1lpOGtMNzFpTjdIRXdLNmdBdTZkNlE4VVlmM1N1ck8yeHNUb3dFaVFGaVJic1J2bXlacDcyYWtXZ0traGNhdmZkREpBeFh3RnpOcHZoU1RTdDBCTjBBalo2UjU1dDdicjc4RW55MUxkY3ZBRSIsImlkIjoiZmNfQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU1fNSJ9"
+    },
+    {
+      "question": "Which is the best AI note taker app?",
+      "type": "ai_overview",
+      "page_token": "xJX7unicHdDbboIwAIDh7GW8lKMumpgl1QIywVBoKb1ZSquClMOUKXK3d9lT7Wlm9gT_n-_7R5VN9fsyFH3fXZeadr_fp6e2PanDVLTTstH49dEITXClci6q5fx1brwdxQp-bcH6cwsi3HVkg_TY9DeBKeu87i-4Abs9Rel-I23iAJQ7ZM0rMWO6owg0OHIHJarFTlI5hnhoE7fwhKUMBCs7Snx7l7KEpwPm0PCwi8rQDcxEl3eZLgBaG3HeAMTPyhLVUIYW0lMPjTkuhthjjNDTgFxlEtybWRPiwAzTrK7sPXXOzGEsTx0emIwe3N4Xo1QSzuys0o2YtDo_k7lI8OP50MBCghgu9IwiGmDYs7p9iHoRCWx0vJEoQW0ZYTSKs6qxIgWivikUu8Wjz_YUAOk-XWDHQ6oez947jiZHcVtZk3_P1cex7pfdpT39AU4fg6k",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=xJX7unicHdDbboIwAIDh7GW8lKMumpgl1QIywVBoKb1ZSquClMOUKXK3d9lT7Wlm9gT_n-_7R5VN9fsyFH3fXZeadr_fp6e2PanDVLTTstH49dEITXClci6q5fx1brwdxQp-bcH6cwsi3HVkg_TY9DeBKeu87i-4Abs9Rel-I23iAJQ7ZM0rMWO6owg0OHIHJarFTlI5hnhoE7fwhKUMBCs7Snx7l7KEpwPm0PCwi8rQDcxEl3eZLgBaG3HeAMTPyhLVUIYW0lMPjTkuhthjjNDTgFxlEtybWRPiwAzTrK7sPXXOzGEsTx0emIwe3N4Xo1QSzuys0o2YtDo_k7lI8OP50MBCghgu9IwiGmDYs7p9iHoRCWx0vJEoQW0ZYTSKs6qxIgWivikUu8Wjz_YUAOk-XWDHQ6oez947jiZHcVtZk3_P1cex7pfdpT39AU4fg6k",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSlVXaHRRVkZVT0hsUWVEQnJNRVkwUkhkclpWaEtUa2RsYUZScWMxTmFNRnBCTkZsRFVIVnlhRlpWTlRSUWFGaFhWekZUYW1ablVVeHlNa3gxWW10VFdXZEZTRVZIVkRkbE1ESldVVVo0TUhsb2FXOXNXakozYjB4clp4SVhRVWhQZEdGMFZ6RkJMV1pxTW5KdlVIRk5hV3AzVVUwYUlrRkVjM0k1WmxGaFVHTmtXazlFVWxGUmNVbE9RbEZaUVVsdmNIRk1SR3c1ZVVFIiwiZmN2IjoiMyIsImVpIjoiQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU0iLCJxYyI6ImMtT3lMeXpOTDBwVUtDeE5MUzdKek05VFNBTFNDb21aQ25uNUpha0tKWW5abVhucENva0ZCUXBwLVVVS3FYbnBtWG1wcVVVZ3NlS1MwcFRVdkpKaUFZYmFaNU9lMmdFQSIsInF1ZXN0aW9uIjoiV2hpY2ggaXMgdGhlIGJlc3QgQUkgbm90ZSB0YWtlciBhcHA/IiwibGsiOiJHaU4zYUdsamFDQnBjeUIwYUdVZ1ltVnpkQ0JoYVNCdWIzUmxJSFJoYTJWeUlHRndjQSIsImJzIjoiYzQyUXNRNkNRQkJFWTN1VjljVmlFelUyZ2drX1FDd3RyQ25OcVN1M01UbVFXOEx2dXdzTllEVFdNMjltWjQwemFlSHA1dUY0QWxmWFFCR3VHQmtlVlFNWVNncUlEWVVTSXJkM0RCeno3R0NUcmljY19VV1lpOGtMNzFpTjdIRXdLNmdBdTZkNlE4VVlmM1N1ck8yeHNUb3dFaVFGaVJic1J2bXlacDcyYWtXZ0traGNhdmZkREpBeFh3RnpOcHZoU1RTdDBCTjBBalo2UjU1dDdicjc4RW55MUxkY3ZBRSIsImlkIjoiZmNfQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU1fNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSSlVXaHRRVkZVT0hsUWVEQnJNRVkwUkhkclpWaEtUa2RsYUZScWMxTmFNRnBCTkZsRFVIVnlhRlpWTlRSUWFGaFhWekZUYW1ablVVeHlNa3gxWW10VFdXZEZTRVZIVkRkbE1ESldVVVo0TUhsb2FXOXNXakozYjB4clp4SVhRVWhQZEdGMFZ6RkJMV1pxTW5KdlVIRk5hV3AzVVUwYUlrRkVjM0k1WmxGaFVHTmtXazlFVWxGUmNVbE9RbEZaUVVsdmNIRk1SR3c1ZVVFIiwiZmN2IjoiMyIsImVpIjoiQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU0iLCJxYyI6ImMtT3lMeXpOTDBwVUtDeE5MUzdKek05VFNBTFNDb21aQ25uNUpha0tKWW5abVhucENva0ZCUXBwLVVVS3FYbnBtWG1wcVVVZ3NlS1MwcFRVdkpKaUFZYmFaNU9lMmdFQSIsInF1ZXN0aW9uIjoiV2hpY2ggaXMgdGhlIGJlc3QgQUkgbm90ZSB0YWtlciBhcHA%2FIiwibGsiOiJHaU4zYUdsamFDQnBjeUIwYUdVZ1ltVnpkQ0JoYVNCdWIzUmxJSFJoYTJWeUlHRndjQSIsImJzIjoiYzQyUXNRNkNRQkJFWTN1VjljVmlFelUyZ2drX1FDd3RyQ25OcVN1M01UbVFXOEx2dXdzTllEVFdNMjltWjQwemFlSHA1dUY0QWxmWFFCR3VHQmtlVlFNWVNncUlEWVVTSXJkM0RCeno3R0NUcmljY19VV1lpOGtMNzFpTjdIRXdLNmdBdTZkNlE4VVlmM1N1ck8yeHNUb3dFaVFGaVJic1J2bXlacDcyYWtXZ0traGNhdmZkREpBeFh3RnpOcHZoU1RTdDBCTjBBalo2UjU1dDdicjc4RW55MUxkY3ZBRSIsImlkIjoiZmNfQUhPdGF0VzFBLWZqMnJvUHFNaWp3UU1fNSJ9"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "TopxVXiczVXbcqJIGH6AfY5wY1TwEDVV1FQ3opBoYpsxlnNDIbSAAo00ino377JPtVX7LtsgRkg02ZmLrf2rpA_8_ueP7-efruOv_vrjbzuKAnpfrcZxXLEIsVxcMUjF8as63ftGdUFcGhr2N8sVHZ-zXRH73GbjYjEuSUBFqqT2XqbNlT6VOUo2oYEdUzTskHiY22_FOmdQkeewIwLlOdKjqQDKi2UtJKP10FnGaMilXkRtrlO8ZGHslrSqVdljdVPvskOFVrCv9WElHsL1btWrjebDSo0XOpXnqu4xHfDfiYwsmKwPQLquxF7JX5tKDKgAyjlLKrDSFZ61ZsfXEkpfSdZVa_Doc5yqI_bragcl7rLbrD7dq_9lLmDhGKexABCnUULgfJ1NTlCWyymvTyr1pl2UrHrkfJPvcSHWglhx4dhjUWhAks5O8s6YGbsQxlulDAu0FQK7EEyux83q86iC5gog-VIKeUHya-Otc4NZn91UTYsNLl-dh2wRqo5hG-kmpMk8S987POlvPc3ycbehA3sSDhDZW4_4VQlq2g5VjTnTc4luYlOzNf5behZqQpPv1Fvt2xRLBn0DE82DaT-xKZ6OXj1vVhlUoHCCkXRsOvjQMZmdJfVCYlDKVC-0GJ5vk4ZlLUW9vN2slTCZa3kMiq19HCV17Z-ObEYPrDV5jbPXZPg_wugoVk6ZwSgNRCWZYl7jqNXPQTfXWBVc-sy8zxsp4JQFWn5QLABQYvmuwKkws_eWZwBJlpxgQJIVmFXNKNqQPpQ9SY99obIinTM57mA-h6QEKgJDoMrMpjNRWQ-sTPXoRM189eR3iLsy8CrLZyr9m0_fBYFfgSgRdMLLu_HPw6ZnqnSkdwN3XZ4dJsHTzm40ccvpC7INLsOEePNfIx3jf4WlIyXJGSVdx5L8NZZSSoKfUFK6P1NSMr8SuYol2L9MScOLlFTMWwLjPJY-p6RfxpL0KZZQ9ryAJXIZS8FVLGWUlMNSkZLky5T0hqXfoST4m5SUQgsflyI_bZbWVZ7qGU_qZHnoK70GtNu7vjV5Hm38_WJ6Vwdf8tTCi-493XRvNce8h7WHaG_eauyC3GOTW4toQ0K9tN5gGjnEvy_N2aYE1JJPInwj127a_E1HiPSV41slPQhKCxKWsG85PsZhckejjYn9iHKeGxKR15tB8-lFdgdlsz2eR4f6mA_0w0uDakMS-P5zEExnPxrEoXegp-qH8nK38oX1-m77cGcqo0Vz0_lhUcV-aUb7-nhenylWrcW7I0V4AQFeOQNXncO5sCt3HQWtXvdjftixp-vDRO8toE12UbmxRfSZRN_HnmGscTdGaWBU9HvtrfPQIWMKOC80RDYfDQs8ITC1oAGkdIDBRCdsjQHq37H-QY4auobpVmzweqtjdFoto94ym_UG51nRPhAbAkf9UBT-ARGOYWI",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=TopxVXiczVXbcqJIGH6AfY5wY1TwEDVV1FQ3opBoYpsxlnNDIbSAAo00ino377JPtVX7LtsgRkg02ZmLrf2rpA_8_ueP7-efruOv_vrjbzuKAnpfrcZxXLEIsVxcMUjF8as63ftGdUFcGhr2N8sVHZ-zXRH73GbjYjEuSUBFqqT2XqbNlT6VOUo2oYEdUzTskHiY22_FOmdQkeewIwLlOdKjqQDKi2UtJKP10FnGaMilXkRtrlO8ZGHslrSqVdljdVPvskOFVrCv9WElHsL1btWrjebDSo0XOpXnqu4xHfDfiYwsmKwPQLquxF7JX5tKDKgAyjlLKrDSFZ61ZsfXEkpfSdZVa_Doc5yqI_bragcl7rLbrD7dq_9lLmDhGKexABCnUULgfJ1NTlCWyymvTyr1pl2UrHrkfJPvcSHWglhx4dhjUWhAks5O8s6YGbsQxlulDAu0FQK7EEyux83q86iC5gog-VIKeUHya-Otc4NZn91UTYsNLl-dh2wRqo5hG-kmpMk8S987POlvPc3ycbehA3sSDhDZW4_4VQlq2g5VjTnTc4luYlOzNf5behZqQpPv1Fvt2xRLBn0DE82DaT-xKZ6OXj1vVhlUoHCCkXRsOvjQMZmdJfVCYlDKVC-0GJ5vk4ZlLUW9vN2slTCZa3kMiq19HCV17Z-ObEYPrDV5jbPXZPg_wugoVk6ZwSgNRCWZYl7jqNXPQTfXWBVc-sy8zxsp4JQFWn5QLABQYvmuwKkws_eWZwBJlpxgQJIVmFXNKNqQPpQ9SY99obIinTM57mA-h6QEKgJDoMrMpjNRWQ-sTPXoRM189eR3iLsy8CrLZyr9m0_fBYFfgSgRdMLLu_HPw6ZnqnSkdwN3XZ4dJsHTzm40ccvpC7INLsOEePNfIx3jf4WlIyXJGSVdx5L8NZZSSoKfUFK6P1NSMr8SuYol2L9MScOLlFTMWwLjPJY-p6RfxpL0KZZQ9ryAJXIZS8FVLGWUlMNSkZLky5T0hqXfoST4m5SUQgsflyI_bZbWVZ7qGU_qZHnoK70GtNu7vjV5Hm38_WJ6Vwdf8tTCi-493XRvNce8h7WHaG_eauyC3GOTW4toQ0K9tN5gGjnEvy_N2aYE1JJPInwj127a_E1HiPSV41slPQhKCxKWsG85PsZhckejjYn9iHKeGxKR15tB8-lFdgdlsz2eR4f6mA_0w0uDakMS-P5zEExnPxrEoXegp-qH8nK38oX1-m77cGcqo0Vz0_lhUcV-aUb7-nhenylWrcW7I0V4AQFeOQNXncO5sCt3HQWtXvdjftixp-vDRO8toE12UbmxRfSZRN_HnmGscTdGaWBU9HvtrfPQIWMKOC80RDYfDQs8ITC1oAGkdIDBRCdsjQHq37H-QY4auobpVmzweqtjdFoto94ym_UG51nRPhAbAkf9UBT-ARGOYWI"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "What are the best AI tools for making study notes?",
+      "link": "https://www.quora.com/What-are-the-best-AI-tools-for-making-study-notes",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESfwHrOzAVbMJpIHUnFL-Bqpt00NOzy492tCIraBK1FdMUatkZeN3vPkk0szLXSXVagMTkw394n1e3VOr46tl7tTwOL9_-H4oWq9zS6QiZc69sDijupyJtWtgGzP_OG-DGTjfAwFcBBqpEsmMflIwfj4DveTGwLvzqsBADD0XZ8lA&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQFnoECCIQAQ&uoh=1",
+      "displayed_link": "30+ answers \u00b7 2 months ago",
+      "favicon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp",
+      "snippet": "What are the best AI tools for making study notes?",
+      "about_this_result": {
+        "source": {
+          "description": "The best AI tool for studying depends on how you learn, but ChatGPT is the most commonly used because it can explain topics, summarize notes, ...",
+          "source_info_link": "https://www.quora.com/What-are-the-best-AI-tools-for-making-study-notes",
+          "icon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Quora"
+    },
+    {
+      "position": 2,
+      "title": "Which AI is best for summarizing notes?",
+      "link": "https://www.quora.com/Which-AI-is-best-for-summarizing-notes",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdAHrOzAVkxRQ4OxCm4k7FNgVsRjug1ZmgiHwoukBpDj-h0u5zFPwYId4z0a-CdM2vYujL3k934arH6oWex_k-9927hnjtBRonCKf7cuAR3b78ubYR4wudAlssAL0Z6GiBq9zN9qdc_sVyTgibjBBNGW0v6sE&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQFnoECCMQAQ&uoh=1",
+      "displayed_link": "30+ answers \u00b7 8 months ago",
+      "favicon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp",
+      "snippet": "NotebookLM is unmatched for deep contextual research, while Claude and ChatPDF are top-tier for fast, interactive summaries of PDFs and eBooks. ...",
+      "snippet_highlighted_words": [
+        "NotebookLM"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "NotebookLM is unmatched for deep contextual research, while Claude and ChatPDF are top-tier for fast, interactive summaries of PDFs and eBooks. ...",
+          "source_info_link": "https://www.quora.com/Which-AI-is-best-for-summarizing-notes",
+          "icon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Quora"
+    },
+    {
+      "position": 3,
+      "title": "Which is the best note taking app for an engineering ...",
+      "link": "https://www.quora.com/Samsung-Galaxy-Note-Which-is-the-best-note-taking-app-for-an-engineering-student-See-comments",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESqwEB6zswFRhu1SGKP0fYC_78gCqxbPAxIyYS2YK4XFSIXMk2dqEwcIjxHAVP76J4TwJuTVLUttp2K8vHzE7HTBqlPE4YrGtUBzM2tF_vwyZIhVAVbGctMRSUIECY7BcVVNfBbXy8HV6x9RZBJV1ANRplRX_oQxyzYd-Bk6NBOl-mxZ9l0jcSjH0yVacwOysqgE3qAFZHRhTdOuAySTvdxw4ucKLaOkBEQ6igf0o&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQFnoECCkQAQ&uoh=1",
+      "displayed_link": "30+ answers \u00b7 10 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp",
+      "snippet": "Samsung Galaxy Note: Which is the best note taking app for an engineering student (See comments)?",
+      "about_this_result": {
+        "source": {
+          "description": "Good question, but it all depends on style and approaches. I'm a visual note-taker and prefer Cornell Method or Mapping, so my choice is xTiles.",
+          "source_info_link": "https://www.quora.com/Samsung-Galaxy-Note-Which-is-the-best-note-taking-app-for-an-engineering-student-See-comments",
+          "icon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Quora"
+    },
+    {
+      "position": 4,
+      "title": "What is a good note-taking software for school/university ...",
+      "link": "https://www.quora.com/What-is-a-good-note-taking-software-for-school-university-college",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESjwEB6zswFalFJGKlLxrwtl1X1zkWWhzMNggjNhYcT_9DFeHtNoQ_L-NN9PURoqeXCRb5OWMo3PatBuJx0NQLybN25UBi9GYIFmJKJFkzmVOuvYLeEMHm8Qv8ebX0i1Oa11zw7ZvUoI43Lq0IJXS01t_avMfIHLS8uvUFFh1zfV9Kbl-T6DHE1hii0lWNhJXOuA&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQFnoECB4QAQ&uoh=1",
+      "displayed_link": "30+ answers \u00b7 12 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp",
+      "snippet": "What is a good note-taking software for school/university/college?",
+      "about_this_result": {
+        "source": {
+          "description": "In my opinion Google Keep is the best app for making notes. I use it a lot and it has all the functions that you want from a note making app.",
+          "source_info_link": "https://www.quora.com/What-is-a-good-note-taking-software-for-school-university-college",
+          "icon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Quora"
+    },
+    {
+      "position": 5,
+      "title": "What is the best app for notes to write?",
+      "link": "https://www.quora.com/What-is-the-best-app-for-notes-to-write",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdQHrOzAV8gfiSvNW1xpFSAFADZ6CDSWlgEGHg_MGr90A9gU0ZFBPRwa-oamnykAwNAfKAIp8Wv4L_XyZGkPgHmQbWgfo-B2E35LZ_sADaEKPMKhHyDHEsBthNvC3t7MKyXY_kiy3HJGLPqhNphj0Vao-D9jdpQ&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQFnoECD0QAQ&uoh=1",
+      "displayed_link": "50+ answers \u00b7 2 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp",
+      "snippet": "What is the best app for notes to write?",
+      "about_this_result": {
+        "source": {
+          "description": "There are several great note-taking apps available, each with its own strengths. Popular ones include Evernote, OneNote, Notion, Google Keep, ...",
+          "source_info_link": "https://www.quora.com/What-is-the-best-app-for-notes-to-write",
+          "icon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Quora"
+    },
+    {
+      "position": 6,
+      "title": "Top 5 BEST AI Note-Taking Apps (Better than Notion?)",
+      "link": "https://www.youtube.com/watch?v=wGLd43TkCGc",
+      "displayed_link": "1.5L+ views \u00b7 1 year ago",
+      "thumbnail": "https://serpapi.com/searches/6aad72fcff596eba48c5f85c/images/AU9JeXg4YanYjwIhWVm9ODGuqqmArB8rur4jic81o84.jpeg",
+      "favicon": "https://serpapi.com/images/i/UklGRpwAAABXRUJQVlA4IJAAAAAQAwCdASoQABAAAsBMJbACdEyAZIBvHZEVF_xH8jFr8RAA_vdfqk7B4h7c7SA9EXLm1jvCcvS12TTPc4SgLiYbbdnDtj5mFYsy9rYK8egN-m_wy1bF7_lqaJwe1kOFY9IH8jmlO7DbAWe9V_-WsvvcWurSf-Cp-rbcVf_uF_E7k7jxw1wX2r_PvJ3PjrggAAA.webp",
+      "snippet": "Apple Notes, Notion, and Obsidian. Each one has innovative AI features for writers, students, creators, and entrepreneurs!",
+      "duration": "8:46",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Intro",
+          "link": "https://www.youtube.com/watch?v=wGLd43TkCGc&t=0"
+        },
+        {
+          "time": "00:29",
+          "title": "5 - Best for Voice Transcription",
+          "link": "https://www.youtube.com/watch?v=wGLd43TkCGc&t=29"
+        },
+        {
+          "time": "01:51",
+          "title": "4 - Best for ADHD (Good all-in-one Option)",
+          "link": "https://www.youtube.com/watch?v=wGLd43TkCGc&t=111"
+        },
+        {
+          "time": "03:07",
+          "title": "3 - Best for Summarizing",
+          "link": "https://www.youtube.com/watch?v=wGLd43TkCGc&t=187"
+        },
+        {
+          "time": "04:31",
+          "title": "2 - Most Powerful",
+          "link": "https://www.youtube.com/watch?v=wGLd43TkCGc&t=271"
+        },
+        {
+          "time": "05:53",
+          "title": "1 - My Personal Favorite",
+          "link": "https://www.youtube.com/watch?v=wGLd43TkCGc&t=353"
+        }
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Apple Notes, Notion, and Obsidian. Each one has innovative AI features for writers, students, creators, and entrepreneurs!",
+          "icon": "https://serpapi.com/images/i/UklGRpwAAABXRUJQVlA4IJAAAAAQAwCdASoQABAAAsBMJbACdEyAZIBvHZEVF_xH8jFr8RAA_vdfqk7B4h7c7SA9EXLm1jvCcvS12TTPc4SgLiYbbdnDtj5mFYsy9rYK8egN-m_wy1bF7_lqaJwe1kOFY9IH8jmlO7DbAWe9V_-WsvvcWurSf-Cp-rbcVf_uF_E7k7jxw1wX2r_PvJ3PjrggAAA.webp"
+        }
+      },
+      "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTpiAJ1lcQ0HC_ItOFzVLn5-Sx--d1BPD4mQA",
+      "source": "YouTube \u00b7 Joseph Chandler"
+    },
+    {
+      "position": 7,
+      "title": "Which are the best AI tools for students?",
+      "link": "https://www.quora.com/Which-are-the-best-AI-tools-for-students",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdgHrOzAVC7EYTuxMcUHpMfgDnGAMGSxQHbOoPYD2HeauT_j5xpWXaWZeGrEq0Dltg4LtHSvphqI__WW2jOZGO_mULn76gAQg03e0GLOnvMp1kjTHXwIRkdDxoHhRhHeXOwQjEUekvsAAuL8Lv8Qs3fnrKWkAv_w&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQFnoECEQQAQ&uoh=1",
+      "displayed_link": "90+ answers \u00b7 4 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp",
+      "snippet": "Which are the best AI tools for students?",
+      "about_this_result": {
+        "source": {
+          "description": "For students, tools like ChatGPT, Perplexity, Grammarly, Notion AI, and NotebookLM are probably the most useful rn. Depends whether you need ...",
+          "source_info_link": "https://www.quora.com/Which-are-the-best-AI-tools-for-students",
+          "icon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Quora"
+    },
+    {
+      "position": 8,
+      "title": "15 Best AI Note-Taking Apps for Meetings & Personal Notes",
+      "link": "https://www.notta.ai/en/blog/best-ai-note-taking-app",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbAHrOzAVZKwRcdRLSILPJ7Pato8nekR61I2zszkVFE4XFoqq_FV8wAFP5_51XG8bbJOxE4XzMv0hOgu-ywNVPVRJJSAJN2SUkl6lhIFF9uPRCMEHQ9ALq4uCOLQKlKBLvNn7TEZzZqgS2zA0jQ&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQFnoECD4QAQ&uoh=1",
+      "displayed_link": "https://www.notta.ai \u203a blog \u203a best-ai-note-taking-app",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAPFBMVEVHcEwmcf8lcf8lcf8lcf8lcf8mcv8LaP80e_-buv_Z5v_q8v_2-v-xyv8cbv____9-qP_F2P9ilv9Ihf-fmoV0AAAAB3RSTlMAGmvS_9ASWY98UQAAAPVJREFUeAF9kgeWgzAMRCkDktvQ7n_XteUnNn0S6ldHQ9U4zXjRMq2DacJHTd-Y0xVfNZqjiKrKB9cFQIgppwI2MyjcbB4ACZspCmU_3KypwbilmCs9NbrZDbVcII5tO1IFZraLQ7Y7nuaTTtnrpTjs4mXxQF7V9XiBzSEpzerVU2rOXBksbHiC1NzL6I2dfIRSWiIPsV2PkHonYuvV-3RHT8TsQ3DIdHd-x7jhtXkVPHsM0qGVnwGHRXjudBh82j6puEWH3D2qfaMurdAWT2MOAhNRUs7puIil7xehApdAFcK2JiO-av29mj-W2rROyyuZp7GCP5_wFeB45qrZAAAAAElFTkSuQmCC.png",
+      "date": "4 days ago",
+      "snippet": "ClickUp suits teams already managing projects there, while Reflect and Mem help you organize and revisit personal notes.",
+      "snippet_highlighted_words": [
+        "notes"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "ClickUp suits teams already managing projects there, while Reflect and Mem help you organize and revisit personal notes.",
+          "source_info_link": "https://www.notta.ai/en/blog/best-ai-note-taking-app",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAPFBMVEVHcEwmcf8lcf8lcf8lcf8lcf8mcv8LaP80e_-buv_Z5v_q8v_2-v-xyv8cbv____9-qP_F2P9ilv9Ihf-fmoV0AAAAB3RSTlMAGmvS_9ASWY98UQAAAPVJREFUeAF9kgeWgzAMRCkDktvQ7n_XteUnNn0S6ldHQ9U4zXjRMq2DacJHTd-Y0xVfNZqjiKrKB9cFQIgppwI2MyjcbB4ACZspCmU_3KypwbilmCs9NbrZDbVcII5tO1IFZraLQ7Y7nuaTTtnrpTjs4mXxQF7V9XiBzSEpzerVU2rOXBksbHiC1NzL6I2dfIRSWiIPsV2PkHonYuvV-3RHT8TsQ3DIdHd-x7jhtXkVPHsM0qGVnwGHRXjudBh82j6puEWH3D2qfaMurdAWT2MOAhNRUs7puIil7xehApdAFcK2JiO-av29mj-W2rROyyuZp7GCP5_wFeB45qrZAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Notta"
+    },
+    {
+      "position": 9,
+      "title": "What is the best AI tool to generate concise study notes for ...",
+      "link": "https://www.quora.com/What-is-the-best-AI-tool-to-generate-concise-study-notes-for-exam-preparation",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmwEB6zswFYwBxif1bD-E0qT-FE8TDUxt6wBVrjWkWoZ7gpNwOpIbQK1P-QnlwJKgzsVgPZ0TvkkFoenWrjoWhiWf7Q4MVCyN5Z4JPt4K3NTPpGgXnsOG3PSq6QgkhvB8Fx2IDLLIJ3SNwlY-OqwARStsipC0RMJkcwZEA12txCb0yRNzzC7jyrO9Cr5UWkU4tmRIDRz859mhclX2qw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQFnoECEIQAQ&uoh=1",
+      "displayed_link": "30+ answers \u00b7 1 month ago",
+      "favicon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp",
+      "snippet": "Top AI tools for students in development and engineering include: \u00b7 For Taking Note: Apex Note \u00b7 For Content Creation: Jasper, Copyai, ChatGPT.",
+      "snippet_highlighted_words": [
+        "Apex Note"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Top AI tools for students in development and engineering include: \u00b7 For Taking Note: Apex Note \u00b7 For Content Creation: Jasper, Copyai, ChatGPT.",
+          "source_info_link": "https://www.quora.com/What-is-the-best-AI-tool-to-generate-concise-study-notes-for-exam-preparation",
+          "icon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Quora",
+      "read_more_link": "https://www.quora.com/What-is-the-best-AI-tool-to-generate-concise-study-notes-for-exam-preparation#:~:text=Top%20AI%20tools%20for%20students,in%20development%20and%20engineering%20include%3A&text=For%20Taking%20Note%3A%20Apex%20Note&text=For%20Content%20Creation%3A%20Jasper%2C%20Copyai%2C,ChatGPT"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Samsung Notes",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Samsung+Notes&sa=X&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Samsung+Notes"
+    },
+    {
+      "block_position": 1,
+      "query": "Goodnotes",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Goodnotes&sa=X&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Goodnotes"
+    },
+    {
+      "block_position": 1,
+      "query": "Microsoft OneNote",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Microsoft+OneNote&sa=X&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Microsoft+OneNote"
+    },
+    {
+      "block_position": 1,
+      "query": "Notion",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Notion&sa=X&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Notion"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=Quora+question:+best+AI+note%E2%80%91taking+app+for+engineering+students&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=AHOtatW1A-fj2roPqMijwQM&start=10&sa=N&sstk=AS6-VmKY2Q7xnwoj9IMKeBRseMhkyjgOaEBa-T41pjJNzdT8F9B29I1zx9-UxFRdoZrvFGw5uym8h0hJBbaYKy8efjHOcREHPC8xKw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ8NMDegQILBAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=Quora+question:+best+AI+note%E2%80%91taking+app+for+engineering+students&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=AHOtatW1A-fj2roPqMijwQM&start=10&sa=N&sstk=AS6-VmKY2Q7xnwoj9IMKeBRseMhkyjgOaEBa-T41pjJNzdT8F9B29I1zx9-UxFRdoZrvFGw5uym8h0hJBbaYKy8efjHOcREHPC8xKw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ8tMDegQILBAE",
+      "3": "https://www.google.co.in/search?q=Quora+question:+best+AI+note%E2%80%91taking+app+for+engineering+students&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=AHOtatW1A-fj2roPqMijwQM&start=20&sa=N&sstk=AS6-VmKY2Q7xnwoj9IMKeBRseMhkyjgOaEBa-T41pjJNzdT8F9B29I1zx9-UxFRdoZrvFGw5uym8h0hJBbaYKy8efjHOcREHPC8xKw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ8tMDegQILBAG",
+      "4": "https://www.google.co.in/search?q=Quora+question:+best+AI+note%E2%80%91taking+app+for+engineering+students&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=AHOtatW1A-fj2roPqMijwQM&start=30&sa=N&sstk=AS6-VmKY2Q7xnwoj9IMKeBRseMhkyjgOaEBa-T41pjJNzdT8F9B29I1zx9-UxFRdoZrvFGw5uym8h0hJBbaYKy8efjHOcREHPC8xKw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ8tMDegQILBAI",
+      "5": "https://www.google.co.in/search?q=Quora+question:+best+AI+note%E2%80%91taking+app+for+engineering+students&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=AHOtatW1A-fj2roPqMijwQM&start=40&sa=N&sstk=AS6-VmKY2Q7xnwoj9IMKeBRseMhkyjgOaEBa-T41pjJNzdT8F9B29I1zx9-UxFRdoZrvFGw5uym8h0hJBbaYKy8efjHOcREHPC8xKw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ8tMDegQILBAK",
+      "6": "https://www.google.co.in/search?q=Quora+question:+best+AI+note%E2%80%91taking+app+for+engineering+students&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=AHOtatW1A-fj2roPqMijwQM&start=50&sa=N&sstk=AS6-VmKY2Q7xnwoj9IMKeBRseMhkyjgOaEBa-T41pjJNzdT8F9B29I1zx9-UxFRdoZrvFGw5uym8h0hJBbaYKy8efjHOcREHPC8xKw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ8tMDegQILBAM",
+      "7": "https://www.google.co.in/search?q=Quora+question:+best+AI+note%E2%80%91taking+app+for+engineering+students&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=AHOtatW1A-fj2roPqMijwQM&start=60&sa=N&sstk=AS6-VmKY2Q7xnwoj9IMKeBRseMhkyjgOaEBa-T41pjJNzdT8F9B29I1zx9-UxFRdoZrvFGw5uym8h0hJBbaYKy8efjHOcREHPC8xKw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ8tMDegQILBAO",
+      "8": "https://www.google.co.in/search?q=Quora+question:+best+AI+note%E2%80%91taking+app+for+engineering+students&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=AHOtatW1A-fj2roPqMijwQM&start=70&sa=N&sstk=AS6-VmKY2Q7xnwoj9IMKeBRseMhkyjgOaEBa-T41pjJNzdT8F9B29I1zx9-UxFRdoZrvFGw5uym8h0hJBbaYKy8efjHOcREHPC8xKw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ8tMDegQILBAQ",
+      "9": "https://www.google.co.in/search?q=Quora+question:+best+AI+note%E2%80%91taking+app+for+engineering+students&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=AHOtatW1A-fj2roPqMijwQM&start=80&sa=N&sstk=AS6-VmKY2Q7xnwoj9IMKeBRseMhkyjgOaEBa-T41pjJNzdT8F9B29I1zx9-UxFRdoZrvFGw5uym8h0hJBbaYKy8efjHOcREHPC8xKw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ8tMDegQILBAS",
+      "10": "https://www.google.co.in/search?q=Quora+question:+best+AI+note%E2%80%91taking+app+for+engineering+students&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=AHOtatW1A-fj2roPqMijwQM&start=90&sa=N&sstk=AS6-VmKY2Q7xnwoj9IMKeBRseMhkyjgOaEBa-T41pjJNzdT8F9B29I1zx9-UxFRdoZrvFGw5uym8h0hJBbaYKy8efjHOcREHPC8xKw&ved=2ahUKEwjVtY6A0viWAxXnsVYBHSjkKDgQ8tMDegQILBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quora+question%3A+best+AI+note%E2%80%91taking+app+for+engineering+students&start=90"
+    }
+  }
+}

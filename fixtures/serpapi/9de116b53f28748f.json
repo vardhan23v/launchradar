@@ -1,0 +1,1086 @@
+{
+  "search_metadata": {
+    "id": "6aad76e9231ffe5110561e0c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ylGxLlGzuwZo1BPPIGbplLHgGk_q4fkdBW9rELH5jf0/6aad76e9231ffe5110561e0c.json",
+    "markdown_endpoint": "https://serpapi.com/searches/ylGxLlGzuwZo1BPPIGbplLHgGk_q4fkdBW9rELH5jf0/6aad76e9231ffe5110561e0c.md",
+    "created_at": "2026-09-18 17:37:45 UTC",
+    "processed_at": "2026-09-18 17:37:45 UTC",
+    "google_news_url": "https://news.google.com/search?q=deploy+website+on+aws+pricing+changes+news&hl=en&gl=IN",
+    "raw_html_file": "https://serpapi.com/searches/ylGxLlGzuwZo1BPPIGbplLHgGk_q4fkdBW9rELH5jf0/6aad76e9231ffe5110561e0c.html",
+    "total_time_taken": 3.21
+  },
+  "search_parameters": {
+    "engine": "google_news",
+    "gl": "in",
+    "hl": "en",
+    "q": "deploy website on aws pricing changes news"
+  },
+  "news_results": [
+    {
+      "position": 1,
+      "title": "AWS DevOps Agent adds release management capabilities to assess code changes before production (preview)",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Esra Kayabali"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/aws-devops-agent-adds-release-management-capabilities-to-assess-code-changes-before-production-preview/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2026/06/11/aws-devops-agent-release-management-final.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXFkVmt5U21JdFYyZDVhVVptVFJDSEF4aVBCaWdLTWdhcGhJck9NUWM",
+      "date": "06/17/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-17T07:00:00Z"
+    },
+    {
+      "position": 2,
+      "title": "Amazon.com Announces Second Quarter Results",
+      "source": {
+        "name": "ir.aboutamazon.com",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://ir.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/",
+      "thumbnail": "https://s2.q4cdn.com/299287126/files/doc_multimedia/2026/7/1011371847/Amazon_Logo_SquidInk_SmileOrange_RGB.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNW5hRGM0V0ZsNGRTMTFUVXA2VFJEQUFoaTlCeWdLTWdNQkF3Zw",
+      "date": "07/30/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-30T07:00:00Z"
+    },
+    {
+      "position": 3,
+      "title": "AWS Billion-Dollar Software Bug Explained",
+      "source": {
+        "name": "TechRepublic",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.techrepublic.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Joseph C. Ofonagoro"
+        ]
+      },
+      "link": "https://www.techrepublic.com/article/news-aws-billing-bug-trillion-dollar-estimates-explained/",
+      "thumbnail": "https://assets.techrepublic.com/uploads/2026/07/aws-error.jpg?f=jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWZkalZPYm0xMVQwVnZXRXhoVFJERUF4aW1CU2dLTWdZQmM1S3J0UVk",
+      "date": "07/20/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-20T07:00:00Z"
+    },
+    {
+      "position": 4,
+      "title": "AWS just quietly increased EC2 Capacity Block prices \u2013 here's what you need to know",
+      "source": {
+        "name": "itpro.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.itpro.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Emma Woollacott"
+        ]
+      },
+      "link": "https://www.itpro.com/cloud/cloud-computing/aws-amazon-ec2-capacity-blocks-price-increase",
+      "thumbnail": "https://cdn.mos.cms.futurecdn.net/9aQwxiukp6GVPAL4WhkNkX.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHRiR1JUWlVOeVQxUm5NMDQzVFJDZkF4ampCU2dLTWdZQmxJcU5NUVk",
+      "date": "01/06/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-06T08:00:00Z"
+    },
+    {
+      "position": 5,
+      "title": "AWS stealthily raises GPU prices by 15 percent",
+      "source": {
+        "name": "Network World",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.networkworld.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Viktor Eriksson"
+        ]
+      },
+      "link": "https://www.networkworld.com/article/4113812/aws-stealthily-raises-gpu-prices-by-15-percent.html",
+      "thumbnail": "https://www.networkworld.com/wp-content/uploads/2026/01/4113812-0-21208000-1767794695-shutterstock_1584762601.jpg?quality=50&strip=all&w=1024",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxWVUp0TkZaWFVHWnRUbXhVVFJERUF4aW5CU2dLTWdZTms0NUhNUVk",
+      "date": "01/07/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-07T08:00:00Z"
+    },
+    {
+      "position": 6,
+      "title": "NVIDIA Kicks Off the Next Generation of AI With Rubin \u2014 Six New Chips, One Incredible AI Supercomputer",
+      "source": {
+        "name": "NVIDIA Newsroom",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://nvidianews.nvidia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Kristin Uchiyama"
+        ]
+      },
+      "link": "https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer",
+      "thumbnail": "https://iprsoftwaremedia.com/219/files/202601/nvidia-rubin-platform.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNVZZbWw2WkZkVWQyOUdUVzVpVFJDb0FSaXNBaWdCTWdPTmdBNA",
+      "date": "01/05/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-05T08:00:00Z"
+    },
+    {
+      "position": 7,
+      "title": "Amazon says hours-long outage was triggered by 'software code deployment'",
+      "source": {
+        "name": "CNBC",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.cnbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Annie Palmer"
+        ]
+      },
+      "link": "https://www.cnbc.com/2026/03/05/amazon-online-store-suffers-outage-for-some-users.html",
+      "thumbnail": "https://image.cnbcfm.com/api/v1/image/108217473-1770315533750-108217473-1761597488182-gettyimages-2223553386-AMAZON_PRIME_DAY.jpeg?v=1772750109&w=1600&h=900",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDBjWEZPUVdOWk0xcHdiazlDVFJDZkF4ampCU2dLTWdZQllvZ3JMUWM",
+      "date": "03/05/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-03-05T08:00:00Z"
+    },
+    {
+      "position": 8,
+      "title": "Introducing Claude Sonnet 5",
+      "source": {
+        "name": "Anthropic",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.anthropic.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.anthropic.com/news/claude-sonnet-5",
+      "thumbnail": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2039cc549c023bc855671308211d20d3382828a9-2880x1620.jpg&w=3840&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxiamhPV2pSeVMzRktNRVZVVFJDZkF4ampCU2dLTWdhcE5JYXRxUU0",
+      "date": "06/30/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-30T07:00:00Z"
+    },
+    {
+      "position": 9,
+      "title": "Introducing AWS Lambda Managed Instances: Serverless simplicity with EC2 flexibility | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Micah Walter"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/introducing-aws-lambda-managed-instances-serverless-simplicity-with-ec2-flexibility/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/11/21/aws_news_blog_LMI_image-1-1255x630.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTJUemgyVTBFMGRYWTFSV3BIVFJDSUF4aU9CaWdLTWdZaEZJN3NJUWM",
+      "date": "11/30/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-30T08:00:00Z"
+    },
+    {
+      "position": 10,
+      "title": "OpenAI and Amazon announce strategic partnership",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/aws/amazon-open-ai-strategic-partnership-investment",
+      "thumbnail": "https://assets.aboutamazon.com/11/6f/de747539464491c10e69b6376139/amazon-open-ai-logos-1-amazon-news-jp-022726.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5RVmhOTlZWMlgwdDFUMk5mVFJDZkF4ampCU2dLTWdhWnM1VEt1UVk",
+      "date": "02/27/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-27T08:00:00Z"
+    },
+    {
+      "position": 11,
+      "title": "Amazon orders 90-day reset after code mishaps cause millions of lost orders",
+      "source": {
+        "name": "Business Insider",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.businessinsider.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Eugene Kim"
+        ]
+      },
+      "link": "https://www.businessinsider.com/amazon-tightens-code-controls-after-outages-including-one-ai-2026-3",
+      "thumbnail": "https://i.insider.com/69b07562ccda166eed3d1d16?width=700",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXFNemRPV0dzeWFFWjRZMXBzVFJERUF4aW1CU2dLTWdZQllKQURJd28",
+      "date": "03/10/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-10T07:00:00Z"
+    },
+    {
+      "position": 12,
+      "title": "Top announcements of AWS re:Invent 2025 | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/aws/top-announcements-of-aws-reinvent-2025/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/11/30/Matt-stage-RIV2024.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXdhV1Z5VjJoRVVUUnVWQzB5VFJDSEF4aVBCaWdLTWdZRm9ZNXJ1UVk",
+      "date": "11/30/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-30T08:00:00Z"
+    },
+    {
+      "position": 13,
+      "title": "Amazon.com announces second quarter results",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report",
+      "thumbnail": "https://assets.aboutamazon.com/32/cb/18921b874429b171cd02e81f698b/untitled-july-28-2026-at-14-41-50-7-1.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXBkRzV1Wm1kTlExRmxNSFZUVFJDb0FSaXNBaWdCTWdZQklJU0hIZ2s",
+      "date": "07/16/2026, 08:10 PM, +0000 UTC",
+      "iso_date": "2026-07-16T20:10:07Z"
+    },
+    {
+      "position": 14,
+      "title": "Amazon convenes 'deep dive' internal meeting to address outages",
+      "source": {
+        "name": "CNBC",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.cnbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Annie Palmer"
+        ]
+      },
+      "link": "https://www.cnbc.com/2026/03/10/amazon-plans-deep-dive-internal-meeting-address-ai-related-outages.html",
+      "thumbnail": "https://image.cnbcfm.com/api/v1/image/108254399-17689281632026-01-20t165205z_1665434014_rc225jaz2jev_rtrmadp_0_davos-meeting.jpeg?v=1768928201&w=1600&h=900",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNHdUV3h4ZGxsM00wMUJPRWhVVFJDZkF4ampCU2dLTWdrdEFvRFBCR3g3T2dB",
+      "date": "03/10/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-10T07:00:00Z"
+    },
+    {
+      "position": 15,
+      "title": "Announcing Amazon Quick Suite: your agentic teammate for answering questions and taking action",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Esra Kayabali"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/reimagine-the-way-you-work-with-ai-agents-in-amazon-quick-suite/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/10/01/2025_quick-suite_1.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNlbkkzVDBOWWFrMWlOM0JZVFJDS0F4aUtCaWdLTWdZQlE0N0pvUWc",
+      "date": "10/09/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-09T07:00:00Z"
+    },
+    {
+      "position": 16,
+      "title": "Frontier agents, Trainium chips, and Amazon Nova: key announcements from AWS re:Invent 2025",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/aws/aws-re-invent-2025-ai-news-updates",
+      "thumbnail": "https://assets.aboutamazon.com/5c/a8/a50a32a04372a389c9c545f182c5/about-amazon-hero-aws-re-invent-tuesday.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVFZVmhTZEVwdFowdGtRbVJaVFJDZkF4ampCU2dLTWdZQmNJakNTQVE",
+      "date": "12/04/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-04T08:00:00Z"
+    },
+    {
+      "position": 17,
+      "title": "Amazon.com announces first quarter results",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q1-2026-report",
+      "thumbnail": "https://assets.aboutamazon.com/04/99/c42afb0a45d0812764a5a9ec7fc7/q1-2026-earnings-hero-amazon-news-lt-042826-1.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWFWMGRoTm5GUmNEa3pUM1F3VFJDb0FSaXNBaWdCTWdZSkVJS21IZ28",
+      "date": "04/15/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-15T07:00:00Z"
+    },
+    {
+      "position": 18,
+      "title": "AWS unveils frontier agents, a new class of AI agents that work as an extension of your software development team",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/aws/amazon-ai-frontier-agents-autonomous-kiro",
+      "thumbnail": "https://assets.aboutamazon.com/f0/c7/e0cff167432b9d05bbd70532d0de/aa-frontier-agents-riv-hero-2.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWpaR2MyYmtoVFVYcERWSGs0VFJDZkF4ampCU2dLTWdhRmlJeUZMZ1k",
+      "date": "12/02/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-02T08:00:00Z"
+    },
+    {
+      "position": 19,
+      "title": "Amazon Leo set to accelerate satellite production and launch cadence",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-plans-double-launch-rate-20-missions",
+      "thumbnail": "https://assets.aboutamazon.com/3f/0e/b8bf5e214ef6b4fe5e147c885e21/amazon-leo-space-amazon-news-nb-032326.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWpjMGQwZERCNldVSkZTMWMzVFJDZkF4ampCU2dLTWdhcE1JWnVLUVk",
+      "date": "03/23/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-23T07:00:00Z"
+    },
+    {
+      "position": 20,
+      "title": "An AI agent destroyed this coder\u2019s entire database. He\u2019s not the only one with a horror story",
+      "source": {
+        "name": "Fortune",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://fortune.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Beatrice Nolan"
+        ]
+      },
+      "link": "https://fortune.com/2026/03/18/ai-coding-risks-amazon-agents-enterprise/",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/03/GettyImages-2214834060-2-e1773832048347.jpg?format=webp&w=1440&quality=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUVkbmRvYjJWelR6SnhSV1k0VFJERUF4aW1CU2dLTWdZZE1JeXR0UVU",
+      "date": "03/18/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-18T07:00:00Z"
+    },
+    {
+      "position": 21,
+      "title": "Free data transfer out to internet when moving out of AWS | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sebastien Stormacq"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/free-data-transfer-out-to-internet-when-moving-out-of-aws/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2024/02/05/Free-DTO-Featured-Image-800x400-1.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUlYMDAzTFhsaVIzZG5ja0o0VFJDSEF4aVBCaWdLTWdhQnBKTEVPUWM",
+      "date": "03/05/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-03-05T08:00:00Z"
+    },
+    {
+      "position": 22,
+      "title": "Simplify and enhance Amazon S3 static website hosting with AWS Amplify Hosting",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/aws/simplify-and-enhance-amazon-s3-static-website-hosting-with-aws-amplify/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2024/10/25/static-website-hosting-1024x507.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXpUWEJEZFRoR04yTjBVa0V6VFJDR0F4aVRCaWdLTWdhVmdwUVVNUWc",
+      "date": "10/30/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-10-30T07:00:00Z"
+    },
+    {
+      "position": 23,
+      "title": "Launching S3 Files, making S3 buckets accessible as file systems",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sebastien Stormacq"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2026/04/07/Screenshot-2026-04-06-at-3.50.49%E2%80%AFPM.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXBjazR3Y3pad0xXMXdkbEExVFJDWEF4anhCU2dLTWdhdEpZNnRGUWs",
+      "date": "04/07/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-07T07:00:00Z"
+    },
+    {
+      "position": 24,
+      "title": "Introducing Oracle Database@AWS for simplified Oracle Exadata migrations to the AWS Cloud",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Channy Yun"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/introducing-oracle-databaseaws-for-simplified-oracle-exadata-migrations-to-the-aws-cloud/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/07/01/oracle-aws2.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUhOemhMY0ZOWVJrWnlXV3BoVFJDSEF4aVBCaWdLTWdhcFU0VFBwUWc",
+      "date": "07/08/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-07-08T07:00:00Z"
+    },
+    {
+      "position": 25,
+      "title": "New: AWS Billing Transfer for centrally managing AWS billing and costs across multiple organizations",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/aws/new-aws-billing-transfer-for-centrally-managing-aws-billing-and-costs-across-multiple-organizations/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/11/15/2025-billing-transfer-0-bills-transfer-diagram.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNVlUMXBPY1dVdE9IZFRPQzB6VFJDSkF4aU1CaWdLTWdNQlVnNA",
+      "date": "11/19/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-19T08:00:00Z"
+    },
+    {
+      "position": 26,
+      "title": "Introducing Database Savings Plans for AWS Databases | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Betty Zheng"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/introducing-database-savings-plans-for-aws-databases/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/11/27/DBSP.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXZabVZ2WjFKVGFHMUtjVVZVVFJDSEF4aVBCaWdLTWdhWkk1eHJHUW8",
+      "date": "12/02/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-02T08:00:00Z"
+    },
+    {
+      "position": 27,
+      "title": "AWS Security Hub now generally available with near real-time analytics and risk prioritization",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Esra Kayabali"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/aws-security-hub-now-generally-available-with-near-real-time-analytics-and-risk-prioritization/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/11/04/Security-hub-feat-img.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXJWbWh1VEVNeFlpMUpTV2x5VFJDSEF4aVBCaWdLTWdhcGRJeU5MUVk",
+      "date": "12/02/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-02T08:00:00Z"
+    },
+    {
+      "position": 28,
+      "title": "AWS Certificate Manager introduces exportable public SSL/TLS certificates to use anywhere",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/aws/aws-certificate-manager-introduces-exportable-public-ssl-tls-certificates-to-use-anywhere/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/06/09/Cert-Mgr-feat-img.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXdSbXgxWkZZM2VVWlpZVUZYVFJDSEF4aVBCaWdLTWdhcGhaTE9NUWM",
+      "date": "06/17/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-06-17T07:00:00Z"
+    },
+    {
+      "position": 29,
+      "title": "Introducing Amazon Nova 2 Lite, a fast, cost-effective reasoning model | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Danilo Poccia"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-nova-2-lite-a-fast-cost-effective-reasoning-model/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/12/02/nova-2-lite-bench-4.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWZUbkJRTFdsRGRUVkxiREpLVFJDNEJSaTVBeWdLTWdZQklaQUVIUWc",
+      "date": "12/02/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-02T08:00:00Z"
+    },
+    {
+      "position": 30,
+      "title": "Build production-ready applications without infrastructure complexity using Amazon ECS Express Mode",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Donnie Prakoso"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/build-production-ready-applications-without-infrastructure-complexity-using-amazon-ecs-express-mode/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/11/08/news-2025-11-ecs-express-01.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNU5VMnBxUzFoTFJsUnZkblpFVFJEOUFoaWxCaWdLTWdrQllvRHFKV2c5TEFJ",
+      "date": "11/21/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-21T08:00:00Z"
+    },
+    {
+      "position": 31,
+      "title": "AWS Marketplace announces upcoming expansion to SaaS product catalog",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/awsmarketplace/aws-marketplace-announces-upcoming-expansion-to-saas-product-catalog/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/761f22b2c1593d0bb87e0b606f990ba4974706de/2025/02/19/social-1200x627-1-1206x630.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdVM1YzTkdzMlgyUk1jbVY2VFJDUUF4ai1CU2dLTWdZQktaTEhNZ2c",
+      "date": "02/25/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-02-25T08:00:00Z"
+    },
+    {
+      "position": 32,
+      "title": "Customize models in Amazon Bedrock with your own data using fine-tuning and continued pre-training",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/aws/customize-models-in-amazon-bedrock-with-your-own-data-using-fine-tuning-and-continued-pre-training/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2023/11/28/2023-bedrock-custom-models-05.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNXJabnA2UTNoU1FsTTBNRGhQVFJDbkJCaXRCQ2dLTWdPRlFRdw",
+      "date": "11/28/2023, 08:00 AM, +0000 UTC",
+      "iso_date": "2023-11-28T08:00:00Z"
+    },
+    {
+      "position": 33,
+      "title": "Introducing Amazon Bedrock AgentCore: Securely deploy and operate AI agents at any scale (preview)",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-bedrock-agentcore-securely-deploy-and-operate-ai-agents-at-any-scale/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/07/07/AgentCore-icon3.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHpaRk5xTXpWM1YyWkNSMlpFVFJDSEF4aVBCaWdLTWdhcFZJVE9vUWc",
+      "date": "07/16/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-07-16T07:00:00Z"
+    },
+    {
+      "position": 34,
+      "title": "Amazon Bedrock AgentCore adds quality evaluations and policy controls for deploying trusted AI agents",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Danilo Poccia"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/11/25/Bedrock-Agentcore.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTFlSG81V1ZaUWNUQlRla1oxVFJDSEF4aVBCaWdLTWdZVmxKS0p0UVk",
+      "date": "12/02/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-02T08:00:00Z"
+    },
+    {
+      "position": 35,
+      "title": "Introducing Amazon Elastic VMware Service for running VMware Cloud Foundation on AWS",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Micah Walter"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-elastic-vmware-service-for-running-vmware-cloud-foundation-on-aws/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/07/07/EVS-icon.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVFSelJHYlZobFNWZEJjMWhrVFJDSEF4aVBCaWdLTWdZcFpZek5LUVk",
+      "date": "08/05/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-08-05T07:00:00Z"
+    },
+    {
+      "position": 36,
+      "title": "New \u2013 Fully Managed Blue/Green Deployments in Amazon Aurora and Amazon RDS",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Channy Yun"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/new-fully-managed-blue-green-deployments-in-amazon-aurora-and-amazon-rds/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2022/11/16/2022-rds-blue-green-deployments-1.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNXhVbWRTTkY5dVp6QjRkVlJCVFJEZ0Foam9CaWdLTWdNSlFndw",
+      "date": "11/27/2022, 08:00 AM, +0000 UTC",
+      "iso_date": "2022-11-27T08:00:00Z"
+    },
+    {
+      "position": 37,
+      "title": "Introducing Amazon CloudFront KeyValueStore: A low-latency datastore for CloudFront Functions",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Danilo Poccia"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudfront-keyvaluestore-a-low-latency-datastore-for-cloudfront-functions/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2023/12/12/cloudfront-kvs-architecture-2.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNURlSFJvWDFsUVp6UlNTVXBHVFJDSEF4aVJCaWdLTWdhWklvaFBLUWc",
+      "date": "11/21/2023, 08:00 AM, +0000 UTC",
+      "iso_date": "2023-11-21T08:00:00Z"
+    },
+    {
+      "position": 38,
+      "title": "DeepSeek-R1 models now available on AWS | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Channy Yun"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/deepseek-r1-models-now-available-on-aws/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/01/30/2025-deepseek-r1-on-aws-1-andy-keynote.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5XVkZFT1dwWlZXTmpSakJ3VFJEM0FoaXhCaWdLTWdZWkk1YU5HUWc",
+      "date": "01/30/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-01-30T08:00:00Z"
+    },
+    {
+      "position": 39,
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "source": {
+        "name": "openai.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://openai.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/3YlohIkWAmTKqtreNc2Qwt/1ba93da6a8cb574aa0b299277874dbac/Frame__3_.png?w=1600&h=900&fit=fill",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXBTazU1YkRVeGVVazBOVVl0VFJDb0FSaXNBaWdCTWdZZGhKS01NUWM",
+      "date": "07/30/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-30T07:00:00Z"
+    },
+    {
+      "position": 40,
+      "title": "Modernize Your Mainframe Applications & Deploy Them In The Cloud",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sebastien Stormacq"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/modernize-your-mainframe-applications-deploy-them-in-the-cloud/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2022/05/31/Site-Merch_AWS-Mainframe-Modernization_Blog-1.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXRSRjl3TUZGWmRIUXRia0pMVFJDQ0F4aUFCaWdLTWdhUllvN01NUVk",
+      "date": "06/08/2022, 07:00 AM, +0000 UTC",
+      "iso_date": "2022-06-08T07:00:00Z"
+    },
+    {
+      "position": 41,
+      "title": "Amazon CloudFront simplifies web application delivery and security with new user-friendly interface",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Micah Walter"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/amazon-cloudfront-simplifies-web-application-delivery-and-security-with-new-user-friendly-interface/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/05/01/CloudFront-darkbg-feat-img2.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNTJkRFF6YVZwNlQyaEpRMUZIVFJDSEF4aVBCaWdLTWdPVmhBdw",
+      "date": "06/17/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-06-17T07:00:00Z"
+    },
+    {
+      "position": 42,
+      "title": "How AWS transformed IT by making cloud computing accessible to everyone",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/aws/aws-cloud-computing-it-services",
+      "thumbnail": "https://assets.aboutamazon.com/c0/d1/2fcaee3843a291b13b818ef33b6f/untitled-01-june-2026-at-12-45-44.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHdiMDlGY25CYVIzQm5WbTVpVFJDZkF4ampCU2dLTWdZQllJekx0QVU",
+      "date": "06/01/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-01T07:00:00Z"
+    },
+    {
+      "position": 43,
+      "title": "Amazon Connect expands into a set of agentic AI solutions",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Colleen Aubrey",
+          "Konstantinos I Roumeliotis"
+        ]
+      },
+      "link": "https://www.aboutamazon.com/news/aws/amazon-connect-ai-business-set",
+      "thumbnail": "https://assets.aboutamazon.com/8d/92/548718dc419180e6138f6f2dd57c/amazon-connect-announcement.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU9Uak5yV205ek9XbGtXRlJWVFJDZkF4ampCU2dLTWdZWk00cEtHUW8",
+      "date": "04/28/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-28T07:00:00Z"
+    },
+    {
+      "position": 44,
+      "title": "New Amazon EC2 P6e-GB200 UltraServers accelerated by NVIDIA Grace Blackwell GPUs for the highest AI performance | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Channy Yun"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/new-amazon-ec2-p6e-gb200-ultraservers-powered-by-nvidia-grace-blackwell-gpus-for-the-highest-ai-performance/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/07/10/2025-ec2-P6e-GB200-UltraServers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTVla05zYzFwemRXTkVWMFZ0VFJDb0F4alRCU2dLTWdZQk1vb1NJUWc",
+      "date": "07/09/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-07-09T07:00:00Z"
+    },
+    {
+      "position": 45,
+      "title": "Introducing AWS Systems Manager Change Manager",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sebastien Stormacq"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/introducing-systems-manager-change-manager/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2020/12/13/SocialMedia_2.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXViak5pVVV0aWVWWjRUekV6VFJDSEF4aVBCaWdLTWdhWmc1S3ROUWM",
+      "date": "12/15/2020, 08:00 AM, +0000 UTC",
+      "iso_date": "2020-12-15T08:00:00Z"
+    },
+    {
+      "position": 46,
+      "title": "Best Practices for WordPress on AWS",
+      "source": {
+        "name": "IEEE Computer Society",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.computer.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.computer.org/publications/tech-news/trends/aws-cloud-options-for-wordpress",
+      "thumbnail": "https://www.computer.org/wp-content/uploads/2023/03/AWS-options-for-Wordpress.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWtTMDVDY1daUWFVcFhVR2xwVFJENkFSajZBU2dLTWdZWlk0cHFxUVU",
+      "date": "03/18/2023, 07:00 AM, +0000 UTC",
+      "iso_date": "2023-03-18T07:00:00Z"
+    },
+    {
+      "position": 47,
+      "title": "Announcing Pull Through Cache Repositories for Amazon Elastic Container Registry",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Steven V. Roberts"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/announcing-pull-through-cache-repositories-for-amazon-elastic-container-registry/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/11/23/ecr_setting_upstream_registry.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTNkekp4ZW1obGJFMDBOVTAyVFJDQ0JCalVCQ2dLTWdZRkJKSXFIZ28",
+      "date": "11/29/2021, 08:00 AM, +0000 UTC",
+      "iso_date": "2021-11-29T08:00:00Z"
+    },
+    {
+      "position": 48,
+      "title": "Introducing Amazon Route 53 Application Recovery Controller",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sebastien Stormacq"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/amazon-route-53-application-recovery-controller/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/07/27/Site-Merch_Amazon-R53-Application-Recovery-Controller_Blog.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNXNTRVo1VGpOWmR6aGxlR2R0VFJDQ0F4aUFCaWdLTWdNUll4QQ",
+      "date": "07/27/2021, 07:00 AM, +0000 UTC",
+      "iso_date": "2021-07-27T07:00:00Z"
+    },
+    {
+      "position": 49,
+      "title": "Higher usage limits for Claude and a compute deal with SpaceX",
+      "source": {
+        "name": "Anthropic",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.anthropic.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.anthropic.com/news/higher-limits-spacex",
+      "thumbnail": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd8f4f661bde0f11088d087dcda98916becad077f-1920x801.png&w=3840&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNVhhVXgzUVhobU1teEZXVzlyVFJEbEFoamFCaWdLTWdPWk14SQ",
+      "date": "05/06/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-06T07:00:00Z"
+    },
+    {
+      "position": 50,
+      "title": "AWS and NVIDIA Extend Collaboration to Advance Generative AI Innovation",
+      "source": {
+        "name": "NVIDIA Newsroom",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://nvidianews.nvidia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://nvidianews.nvidia.com/news/aws-nvidia-generative-ai-innovation",
+      "thumbnail": "https://iprsoftwaremedia.com/219/files/20242/social-aws-lockup-1200x680-WHITE.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUllakEzUmxjM1FYcGhkVWRSVFJDUUF4ai1CU2dLTWdrUm9wVDF0T2VwemdF",
+      "date": "03/18/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-03-18T07:00:00Z"
+    },
+    {
+      "position": 51,
+      "title": "AWS quietly increases prices for H200 EC2 instances by 15%",
+      "source": {
+        "name": "Data Center Dynamics",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.datacenterdynamics.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Georgia Butler"
+        ]
+      },
+      "link": "https://www.datacenterdynamics.com/en/news/aws-quietly-increases-prices-for-h200-ec2-instances-by-15/",
+      "thumbnail": "https://media.datacenterdynamics.com/media/images/h200-tensor-og.width-358.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUVkelpDWmtWRU5IcFhXVU0zVFJDaUFSaTNBaWdCTWdhbFJJelBxUWc",
+      "date": "01/06/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-06T08:00:00Z"
+    },
+    {
+      "position": 52,
+      "title": "AWS and NVIDIA Announce Strategic Collaboration to Offer New Supercomputing Infrastructure, Software and Services for Generative AI",
+      "source": {
+        "name": "NVIDIA Newsroom",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://nvidianews.nvidia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://nvidianews.nvidia.com/news/aws-nvidia-strategic-collaboration-for-generative-ai",
+      "thumbnail": "https://iprsoftwaremedia.com/219/files/202310/NVIDIA%20DGX%20Cloud%20image.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNU5Uemt4WWpFeFNIQmhVemhaVFJDZkF4ampCU2dLTWdNUmNoSQ",
+      "date": "11/28/2023, 08:00 AM, +0000 UTC",
+      "iso_date": "2023-11-28T08:00:00Z"
+    },
+    {
+      "position": 53,
+      "title": "How an agriculture company uses AWS Cloud computing to increase sustainability and feed more people",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/aws/how-cropx-uses-aws-cloud-computing-for-farming",
+      "thumbnail": "https://assets.aboutamazon.com/74/74/611a99b64fd8af6cb8a0c281605c/agricultureco-hero-2000x1126.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXpkVVF3YzNkaWJFNUtiREZNVFJDZkF4amlCU2dLTWdhbFZKTE5wUWM",
+      "date": "01/17/2023, 08:00 AM, +0000 UTC",
+      "iso_date": "2023-01-17T08:00:00Z"
+    },
+    {
+      "position": 54,
+      "title": "NVIDIA and IREN Announce Strategic Partnership to Accelerate Deployment of up to 5 Gigawatts of AI Infrastructure",
+      "source": {
+        "name": "NVIDIA Newsroom",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://nvidianews.nvidia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://nvidianews.nvidia.com/news/nvidia-and-iren-announce-strategic-partnership-to-accelerate-deployment-of-up-to-5-gigawatts-of-ai-infrastructure",
+      "thumbnail": "https://iprsoftwaremedia.com/219/files/20224/DH1L4415-HDR-20220527-r5.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW1SRmhqVG1WZk0wZDRUbFkxVFJERUF4aW1CU2dLTWdZNUlZZlMxQUk",
+      "date": "05/07/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-07T07:00:00Z"
+    },
+    {
+      "position": 55,
+      "title": "Safe Deployment of Application Configuration Settings With AWS AppConfig",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Steven V. Roberts"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/safe-deployment-of-application-configuration-settings-with-aws-appconfig/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2019/11/24/appconfig_appname.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlPVkJVWmxsWWFGVktWMjh5VFJDa0F4alpCU2dLTWdhQkZacUVsZ3M",
+      "date": "11/25/2019, 08:00 AM, +0000 UTC",
+      "iso_date": "2019-11-25T08:00:00Z"
+    },
+    {
+      "position": 56,
+      "title": "NVIDIA Ignites the Next Industrial Revolution in Knowledge Work With Open Agent Development Platform",
+      "source": {
+        "name": "NVIDIA Newsroom",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=http://nvidianews.nvidia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "http://nvidianews.nvidia.com/news/ai-agents",
+      "thumbnail": "https://iprsoftwaremedia.com/219/files/202603/nvidia-agent-toolkit.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVJlWEI2UTFwMFZ6aEZPV0ZQVFJDVEF4ajRCU2dLTWdhSlVZYU5xUVk",
+      "date": "03/16/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-16T07:00:00Z"
+    },
+    {
+      "position": 57,
+      "title": "AWS raises GPU prices 15% on a Saturday, hopes you weren't paying attention",
+      "source": {
+        "name": "The Register",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.theregister.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.theregister.com/off-prem/2026/01/05/aws-raises-gpu-prices-15-on-a-saturday/2652706",
+      "thumbnail": "https://image.theregister.com/225855.webp?width=400",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXNXVlZwV0RKRFRsRk1SMWMxVFJDM0FSaVRBaWdCTWdrTkFwak5uYWlpeFFJ",
+      "date": "01/05/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-05T08:00:00Z"
+    },
+    {
+      "position": 58,
+      "title": "New \u2013 Use CloudWatch Synthetics to Monitor Sites, API Endpoints, Web Workflows, and More",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Jeff Barr"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/new-use-cloudwatch-synthetics-to-monitor-sites-api-endpoints-web-workflows-and-more/",
+      "thumbnail": "https://media.amazonwebservices.com/blog/2020/cw_synt_map_1.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXpaa0pTYlRSelJFUmliRzR3VFJEdUFoaVBBeWdLTWdtTkU0cnJ0YWRUQlFN",
+      "date": "04/23/2020, 07:00 AM, +0000 UTC",
+      "iso_date": "2020-04-23T07:00:00Z"
+    },
+    {
+      "position": 59,
+      "title": "Message from CEO Andy Jassy: Some thoughts on Generative AI",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Andy Jassy"
+        ]
+      },
+      "link": "https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai",
+      "thumbnail": "https://assets.aboutamazon.com/dims4/default/cc6359e/2147483647/strip/true/crop/1125x1125+438+0/resize/605x605!/quality/90/?url=https%3A%2F%2Fassets.aboutamazon.com%2F52%2Fa8%2F3c8ee3984dd9a2548f89d35d787c%2Famazon-logo-hero-images-2024-4.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNUhlaTFWUm1WWE9GVnBWVFZ6VFJEaEFSamhBU2dCTWdNSmtSSQ",
+      "date": "06/17/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-06-17T07:00:00Z"
+    },
+    {
+      "position": 60,
+      "title": "New \u2013 Advanced Request Routing for AWS Application Load Balancers",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Jeff Barr"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/new-advanced-request-routing-for-aws-application-load-balancers/",
+      "thumbnail": "https://media.amazonwebservices.com/blog/2019/alb_fixed_rule_2.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1OVTlxVWtOVlRWaExYekJrVFJDZUF4amxCU2dLTWdZRklvNHdNUVk",
+      "date": "03/27/2019, 07:00 AM, +0000 UTC",
+      "iso_date": "2019-03-27T07:00:00Z"
+    },
+    {
+      "position": 61,
+      "title": "AWS announces new innovations for building AI agents at AWS Summit New York 2025",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/aws/aws-summit-agentic-ai-innovations-2025",
+      "thumbnail": "https://assets.aboutamazon.com/f6/55/db592e18418db8166d2447628e3e/swami2.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXVPR1Z2WVhaWmIyUXhMVE15VFJDZkF4ampCU2dLTWdZUlJKaXFJUWs",
+      "date": "07/16/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-07-16T07:00:00Z"
+    },
+    {
+      "position": 62,
+      "title": "Wind River\u2019s Boost Mobile win outed VMware, beat AWS and Red Hat",
+      "source": {
+        "name": "SDxCentral",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.sdxcentral.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Dan Meyer"
+        ]
+      },
+      "link": "https://www.sdxcentral.com/news/wind-rivers-boost-mobile-win-outed-vmware-beat-aws-and-red-hat/",
+      "thumbnail": "https://media.datacenterdynamics.com/media/images/virtual_network.width-880.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNWZRakkwWTNCNUxVeDFlak5RVFJDQkFSaUZBeWdCTWdPWkFoNA",
+      "date": "06/06/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-06-06T07:00:00Z"
+    },
+    {
+      "position": 63,
+      "title": "AWS and Azure cloud pricing moving in different directions, as shown by Liftr Insights data",
+      "source": {
+        "name": "PR Newswire",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.prnewswire.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.prnewswire.com/news-releases/aws-and-azure-cloud-pricing-moving-in-different-directions-as-shown-by-liftr-insights-data-301736920.html",
+      "thumbnail": "https://mma.prnewswire.com/media/1994534/Liftr_2.jpg?w=300",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU9jM0IxT1hwMFpteFJURE5aVFJDcEFSaXNBaWdLTWdhSlJZQUdKZ2c",
+      "date": "02/07/2023, 08:00 AM, +0000 UTC",
+      "iso_date": "2023-02-07T08:00:00Z"
+    },
+    {
+      "position": 64,
+      "title": "Amazon Leo mission updates: 375+ satellites now in orbit after successful Atlas V launch",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/innovation-at-amazon/project-kuiper-satellite-rocket-launch-progress-updates",
+      "thumbnail": "https://assets.aboutamazon.com/15/36/ca7703f04309b586770fa8e57f80/mission-update-hero-image.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxkM0ZDVTNJMk1VWkxTVUpXVFJDZkF4ampCU2dLTWdhZGdJU1ZVQU0",
+      "date": "06/10/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-06-10T07:00:00Z"
+    },
+    {
+      "position": 65,
+      "title": "Project Kuiper is now Amazon Leo",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Rajeev Badyal"
+        ]
+      },
+      "link": "https://www.aboutamazon.com/news/amazon-leo/project-kuiper-becomes-amazon-leo",
+      "thumbnail": "https://assets.aboutamazon.com/c9/58/84bf6b55445f9385620dcc3a45ef/hero-image-final.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUVRbFJNZWxSWVFYVnlRa3B4VFJDZkF4amlCU2dLTWdZVkk0eXJHUXM",
+      "date": "11/12/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-12T08:00:00Z"
+    },
+    {
+      "position": 66,
+      "title": "Amazon.com announces second quarter results",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Andy Jassy"
+        ]
+      },
+      "link": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2025-report",
+      "thumbnail": "https://assets.aboutamazon.com/ab/be/7910358c4a23802a9c9c809643fa/aa-aug2025-q2-report-hero-v1-2000x1125.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXBPV3hzUzJWQ2FFbHFaM1J4VFJDb0FSaXNBaWdCTWdZQkVJTGkxUUk",
+      "date": "07/17/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-07-17T07:00:00Z"
+    },
+    {
+      "position": 67,
+      "title": "New \u2013 Set Preferred Payment Currency for your AWS Account",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Jeff Barr"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/aws/new-set-preferred-payment-currency-for-your-aws-account/",
+      "thumbnail": "https://media.amazonwebservices.com/blog/2015/acct_set_payment_currency_2.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1hVnBCZVdGWGEyd3dWbVJFVFJDeUF4akRCU2dLTWdhQlFveG5IZ28",
+      "date": "02/16/2015, 08:00 AM, +0000 UTC",
+      "iso_date": "2015-02-16T08:00:00Z"
+    },
+    {
+      "position": 68,
+      "title": "Amazon\u2019s COVID-19 blog",
+      "source": {
+        "name": "About Amazon",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aboutamazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.aboutamazon.com/news/company-news/amazons-covid-19-blog-updates-on-how-were-responding-to-the-crisis",
+      "thumbnail": "https://assets.aboutamazon.com/dims4/default/e4e753b/2147483647/strip/true/crop/2000x1333+0+0/resize/1115x743!/quality/90/?url=https%3A%2F%2Fassets.aboutamazon.com%2Fce%2Fd7%2F9eebd1b7494cb10352a495d8a93b%2Fmdp-20210122-114.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDBObTVyU1daVGJXc3RTbWg2VFJDM0FSaVRBaWdCTWdZSkE1TEZoZ3M",
+      "date": "11/09/2020, 09:25 PM, +0000 UTC",
+      "iso_date": "2020-11-09T21:25:10Z"
+    },
+    {
+      "position": 69,
+      "title": "13-hour AWS outage reportedly caused by Amazon's own AI tools",
+      "source": {
+        "name": "Engadget",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.engadget.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Lawrence Bonk"
+        ]
+      },
+      "link": "https://www.engadget.com/ai/13-hour-aws-outage-reportedly-caused-by-amazons-own-ai-tools-170930190.html",
+      "thumbnail": "https://www.engadget.com/engadget/13-hour-aws-outage-reportedly-caused-by-amazons-own-ai-tools-170930190/46b77dc0-0e7c-11f1-b8bd-763cc4fbac07.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVNPV05pVDFkdE9ITkdTMFZCVFJERUF4aW1CU2dLTWdhZE1vcnJuUVE",
+      "date": "02/21/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-21T08:00:00Z"
+    }
+  ],
+  "menu_links": [
+    {
+      "title": "India",
+      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE55YXpBU0JXVnVMVWRDS0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE55YXpBU0JXVnVMVWRDS0FBUAE"
+    },
+    {
+      "title": "World",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Your local news",
+      "topic_token": "CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE"
+    },
+    {
+      "title": "Business",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Technology",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Entertainment",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Sports",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Science",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Health",
+      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE"
+    }
+  ]
+}

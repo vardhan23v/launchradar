@@ -1,0 +1,563 @@
+{
+  "search_metadata": {
+    "id": "6aad7317c29c3da9c1667e67",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/BO10Z2OU5OlYuL-mmxyWWi42tchuUzP7RPWxpt_MCrQ/6aad7317c29c3da9c1667e67.json",
+    "markdown_endpoint": "https://serpapi.com/searches/BO10Z2OU5OlYuL-mmxyWWi42tchuUzP7RPWxpt_MCrQ/6aad7317c29c3da9c1667e67.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/BO10Z2OU5OlYuL-mmxyWWi42tchuUzP7RPWxpt_MCrQ/6aad7317c29c3da9c1667e67.json_with_pixel_position",
+    "created_at": "2026-09-18 17:21:27 UTC",
+    "processed_at": "2026-09-18 17:21:27 UTC",
+    "google_url": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&oq=AI+tools+for+college+students+in+India+complaints+review&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/BO10Z2OU5OlYuL-mmxyWWi42tchuUzP7RPWxpt_MCrQ/6aad7317c29c3da9c1667e67.html",
+    "total_time_taken": 13.16
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "AI tools for college students in India complaints review",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "AI tools for college students in India complaints review",
+    "total_results": 119,
+    "time_taken_displayed": 0.22,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "Best AI Tools for Students in 2026.",
+      "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E",
+      "thumbnail": "https://serpapi.com/searches/6aad7317c29c3da9c1667e67/images/vsP3MwE7FTKWHxwXJIFI6rC_FI_tCNbxHtBaDkT8oHg.jpeg",
+      "channel": "Aishwarya Srinivasan",
+      "duration": "14:46",
+      "platform": "YouTube",
+      "date": "6 Apr 2026",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcSnzxwiJVx8CoN0n3xW1FwlUBman0p0Ruq1Nw",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Stop Leaving Value on the Table",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=0"
+        },
+        {
+          "time": "00:55",
+          "title": "Who I Am",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=55"
+        },
+        {
+          "time": "01:36",
+          "title": "Category 1: Learning Tools",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=96"
+        },
+        {
+          "time": "01:46",
+          "title": "NotebookLM (Study Without Sitting Down)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=106"
+        },
+        {
+          "time": "02:36",
+          "title": "Perplexity AI (Academic Mode)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=156"
+        },
+        {
+          "time": "03:21",
+          "title": "Claude and ChatGPT (Personal Tutor)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=201"
+        },
+        {
+          "time": "04:04",
+          "title": "Category 2: Coding Tools",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=244"
+        },
+        {
+          "time": "04:17",
+          "title": "Cursor AI (Senior Dev Next to You)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=257"
+        },
+        {
+          "time": "05:07",
+          "title": "Claude Code (Agentic Coding)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=307"
+        },
+        {
+          "time": "05:42",
+          "title": "GitHub Copilot (Free for Students)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=342"
+        },
+        {
+          "time": "06:23",
+          "title": "Category 3: Building Tools",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=383"
+        },
+        {
+          "time": "06:30",
+          "title": "Google Colab (Free GPU Access)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=390"
+        },
+        {
+          "time": "07:02",
+          "title": "Kaggle (Competitions as Portfolio)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=422"
+        },
+        {
+          "time": "07:40",
+          "title": "Hugging Face (The AI GitHub)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=460"
+        },
+        {
+          "time": "08:27",
+          "title": "Category 4: Interview Prep",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=507"
+        },
+        {
+          "time": "08:34",
+          "title": "NeetCode (Structured Problem Solving)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=514"
+        },
+        {
+          "time": "09:18",
+          "title": "Final Round AI (Mock Interviews)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=558"
+        },
+        {
+          "time": "09:55",
+          "title": "Category 5: Research Tools",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=595"
+        },
+        {
+          "time": "10:02",
+          "title": "Gemini Deep Research (Research Agent)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=602"
+        },
+        {
+          "time": "10:34",
+          "title": "SciSpace (Understand Dense Papers)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=634"
+        },
+        {
+          "time": "11:02",
+          "title": "Category 6: Productivity Tools",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=662"
+        },
+        {
+          "time": "11:05",
+          "title": "Notion (Second Brain)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=665"
+        },
+        {
+          "time": "11:41",
+          "title": "Whisper Flow (Voice Dictation)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=701"
+        },
+        {
+          "time": "12:22",
+          "title": "Excalidraw (AI Diagrams)",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=742"
+        },
+        {
+          "time": "13:53",
+          "title": "Closing and Resources",
+          "link": "https://www.youtube.com/watch?v=6GtkjIZuZ3E&t=833"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "title": "The Secret List of AI Tools Universities Don't Want You Using",
+      "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en",
+      "thumbnail": "https://serpapi.com/searches/6aad7317c29c3da9c1667e67/images/bVoQK47pC2fTUprPTOCnnmcki1P_SYVPO_mIybGsGCA.jpeg",
+      "channel": "Andy Stapleton",
+      "duration": "8:22",
+      "platform": "YouTube",
+      "date": "2 Sept 2025",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcSFpUfDifrLcsAGKep55IPYzizCm0YxfTzjYQ",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Intro",
+          "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en&t=0"
+        },
+        {
+          "time": "00:25",
+          "title": "The Presentation",
+          "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en&t=25"
+        },
+        {
+          "time": "01:46",
+          "title": "Done For You Tools",
+          "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en&t=106"
+        },
+        {
+          "time": "02:11",
+          "title": "ThesisAI",
+          "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en&t=131"
+        },
+        {
+          "time": "03:08",
+          "title": "Gatsbi AI",
+          "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en&t=188"
+        },
+        {
+          "time": "03:51",
+          "title": "Manus and Genspark AI",
+          "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en&t=231"
+        },
+        {
+          "time": "05:12",
+          "title": "Genspark AI",
+          "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en&t=312"
+        },
+        {
+          "time": "06:24",
+          "title": "Scispace",
+          "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en&t=384"
+        },
+        {
+          "time": "07:45",
+          "title": "Things to Ponder",
+          "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en&t=465"
+        },
+        {
+          "time": "07:54",
+          "title": "Outro",
+          "link": "https://www.youtube.com/watch?v=ixqf5Iz8Ekg&vl=en&t=474"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "7 Best AI Tools for Students & Researchers",
+      "link": "https://www.youtube.com/watch?v=a6Idi9un3OA",
+      "thumbnail": "https://serpapi.com/searches/6aad7317c29c3da9c1667e67/images/R_QdcOI-FhrW-kCUedxvn9J3fq5YEWj2QL8W8tPrQUI.jpeg",
+      "channel": "LIS Treasure of Knowledge",
+      "duration": "10:46",
+      "platform": "YouTube",
+      "date": "18 Jul 2026",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQFFrNW4g9JSd0eXMaV8Xows0GO-DGaZghDcw"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Which AI tool is best for college students?",
+      "type": "ai_overview",
+      "page_token": "DnWWUXicHdBdbqMwFEBhzWb6mNgQMkqkaFQSIGHGTDHYgF8qc10SYvPTCS2Ut9lLV9XVtOoGjj6d_--mbvXHj-kyDP1tu1yO47g4d93ZPC2gW9TtUt7eWliCNKaUoLfrn2v8q4Kd93Jy988nN2Z9zw8UJTi8lkHEWYZDhnuWonEmuPeLNnRINiHWwCi0qSJftRkDpAInj3JRwVXtZRtpbm3c2IhAes6K2K7kHheRLZiyohACJylb1WSG19IOU8ARI3s8iMC_JkeVFJbwqJ5WgOjvVNN9EtwGkqkjMbQSuX-T88kmmtdx41BIxWti4YIc1IOcjVWkBktM5vJ4qUq2skHT9g8X1LuosNQbVOT3doSmmuj4DZpN_Jf1Xmkbt5i6OmZ0hqtpWPPl_GqJbNAi7_2nzDxIhClJOUozfgRrembxXQWvO_vu--fusWqGbf-vO38CFRSDIA",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=DnWWUXicHdBdbqMwFEBhzWb6mNgQMkqkaFQSIGHGTDHYgF8qc10SYvPTCS2Ut9lLV9XVtOoGjj6d_--mbvXHj-kyDP1tu1yO47g4d93ZPC2gW9TtUt7eWliCNKaUoLfrn2v8q4Kd93Jy988nN2Z9zw8UJTi8lkHEWYZDhnuWonEmuPeLNnRINiHWwCi0qSJftRkDpAInj3JRwVXtZRtpbm3c2IhAes6K2K7kHheRLZiyohACJylb1WSG19IOU8ARI3s8iMC_JkeVFJbwqJ5WgOjvVNN9EtwGkqkjMbQSuX-T88kmmtdx41BIxWti4YIc1IOcjVWkBktM5vJ4qUq2skHT9g8X1LuosNQbVOT3doSmmuj4DZpN_Jf1Xmkbt5i6OmZ0hqtpWPPl_GqJbNAi7_2nzDxIhClJOUozfgRrembxXQWvO_vu--fusWqGbf-vO38CFRSDIA",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1NVSnZhbGhmTXpWNVVYaE9jRzFuV2tFMmRFWlpNVFozYVc5Q1pHSTBkVWsxUTI5cU5tZEVRa2xJYUVoWFgyNUVVa3hITTB4cFgweGhZMEpqWkhWMU1YbDJjRXh2Y2toNWQwNHhOMlEwVUZwRVpYZzRaRmxyVVhkM1VSSVhTVzVQZEdGd056ZE1ZakpFTW5KdlVEbEtSRzk1UVdNYUlrRkVjM0k1WmxKRU4zQlVkVkpZY0VsS09YVmZiSGx1ZDE5ME1uRXpZekJJTUdjIiwiZmN2IjoiMyIsImVpIjoiSW5PdGFwNzdMYjJEMnJvUDlKRG95QWMiLCJxYyI6ImMtT3lTTXhVS01uUHp5bFdTTXN2VWtqT3o4bEpUVTlWS0M0cFRVbk5LeWxXeU13RG9wVE1SS0JNYmtGT1lpWklyQ2kxTERPMVhJQ2hkb21RaGowQSIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgdG9vbCBpcyBiZXN0IGZvciBjb2xsZWdlIHN0dWRlbnRzPyIsImxrIjoiR2lwM2FHbGphQ0JoYVNCMGIyOXNJR2x6SUdKbGMzUWdabTl5SUdOdmJHeGxaMlVnYzNSMVpHVnVkSE0iLCJicyI6ImM0MlBQUXZDTUJSRmNYMlRpRk9taHpocHdackJ0UlJjX0FVVm5HSjlOWUcwZ1NaRl9QZW1xZjBRQk4zUFBmZGV1TUEya3lxWG1KN1FHYU5SV2J5U2RWaVlHbk9qTmQwSnJXdHVWRG1iOElodEhnRVg2amNPQkhGYVU2OXV5WW9LbFN1aDBlTlMxR1hSNkJBZEdfWnNKM3ptN2Y4bkEyZUlNeWtjdGprbnFSczBsRTVSVkJYeW1COFN2bWFyZ0EwOTN6QTRRaFRNX3VWVTNITFA3dl9uLUNWYjlOYVJtYzllIiwiaWQiOiJmY19Jbk90YXA3N0xiMkQycm9QOUpEb3lBY181In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1NVSnZhbGhmTXpWNVVYaE9jRzFuV2tFMmRFWlpNVFozYVc5Q1pHSTBkVWsxUTI5cU5tZEVRa2xJYUVoWFgyNUVVa3hITTB4cFgweGhZMEpqWkhWMU1YbDJjRXh2Y2toNWQwNHhOMlEwVUZwRVpYZzRaRmxyVVhkM1VSSVhTVzVQZEdGd056ZE1ZakpFTW5KdlVEbEtSRzk1UVdNYUlrRkVjM0k1WmxKRU4zQlVkVkpZY0VsS09YVmZiSGx1ZDE5ME1uRXpZekJJTUdjIiwiZmN2IjoiMyIsImVpIjoiSW5PdGFwNzdMYjJEMnJvUDlKRG95QWMiLCJxYyI6ImMtT3lTTXhVS01uUHp5bFdTTXN2VWtqT3o4bEpUVTlWS0M0cFRVbk5LeWxXeU13RG9wVE1SS0JNYmtGT1lpWklyQ2kxTERPMVhJQ2hkb21RaGowQSIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgdG9vbCBpcyBiZXN0IGZvciBjb2xsZWdlIHN0dWRlbnRzPyIsImxrIjoiR2lwM2FHbGphQ0JoYVNCMGIyOXNJR2x6SUdKbGMzUWdabTl5SUdOdmJHeGxaMlVnYzNSMVpHVnVkSE0iLCJicyI6ImM0MlBQUXZDTUJSRmNYMlRpRk9taHpocHdackJ0UlJjX0FVVm5HSjlOWUcwZ1NaRl9QZW1xZjBRQk4zUFBmZGV1TUEya3lxWG1KN1FHYU5SV2J5U2RWaVlHbk9qTmQwSnJXdHVWRG1iOElodEhnRVg2amNPQkhGYVU2OXV5WW9LbFN1aDBlTlMxR1hSNkJBZEdfWnNKM3ptN2Y4bkEyZUlNeWtjdGprbnFSczBsRTVSVkJYeW1COFN2bWFyZ0EwOTN6QTRRaFRNX3VWVTNITFA3dl9uLUNWYjlOYVJtYzllIiwiaWQiOiJmY19Jbk90YXA3N0xiMkQycm9QOUpEb3lBY181In0%3D"
+    },
+    {
+      "question": "Are AI tools beneficial or harmful for students?",
+      "type": "ai_overview",
+      "page_token": "oq-YpnicHdBdboIwAADg7DI-agvqoolZhtIJkRoqLdiXBVp_oK3UiYK87S471U6zZN8Rvu8fXV7U70t3bhp7m49GbdsOT3V90oehqIflZZTfnhcxErnWRS7UfPo6hW9HsfDvgbe8Bl5MrWUrAna9xrsEVcLYRKaN4igACcKh1KTGTC73jKdUWUPY-SaQN2U9UxSGVWRQmAN7zJeQRL2E2OUPlupSup6HKfza7CAvoA2pzwC-SCOqoBMZ3pI1CyIq7wQAl6rmytc6og5xCNPbOJNjDro7Y2hFIAcURc-dYwnteZJnxNlk3lj05yZK5ZWkk3vB6gk2Ch4Ud1gqH7GZuP5ZhoWagX327mLQlZGKn8LM4i21fuFqb9_VZUxJLypt2ApnGLR9onSdGogSJ0Qis2XuIpp8hP6-kg8aD47isXAH_5-Lz6Np5varPv0BUjqD_w",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=oq-YpnicHdBdboIwAADg7DI-agvqoolZhtIJkRoqLdiXBVp_oK3UiYK87S471U6zZN8Rvu8fXV7U70t3bhp7m49GbdsOT3V90oehqIflZZTfnhcxErnWRS7UfPo6hW9HsfDvgbe8Bl5MrWUrAna9xrsEVcLYRKaN4igACcKh1KTGTC73jKdUWUPY-SaQN2U9UxSGVWRQmAN7zJeQRL2E2OUPlupSup6HKfza7CAvoA2pzwC-SCOqoBMZ3pI1CyIq7wQAl6rmytc6og5xCNPbOJNjDro7Y2hFIAcURc-dYwnteZJnxNlk3lj05yZK5ZWkk3vB6gk2Ch4Ud1gqH7GZuP5ZhoWagX327mLQlZGKn8LM4i21fuFqb9_VZUxJLypt2ApnGLR9onSdGogSJ0Qis2XuIpp8hP6-kg8aD47isXAH_5-Lz6Np5varPv0BUjqD_w",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1NVSnZhbGhmTXpWNVVYaE9jRzFuV2tFMmRFWlpNVFozYVc5Q1pHSTBkVWsxUTI5cU5tZEVRa2xJYUVoWFgyNUVVa3hITTB4cFgweGhZMEpqWkhWMU1YbDJjRXh2Y2toNWQwNHhOMlEwVUZwRVpYZzRaRmxyVVhkM1VSSVhTVzVQZEdGd056ZE1ZakpFTW5KdlVEbEtSRzk1UVdNYUlrRkVjM0k1WmxKRU4zQlVkVkpZY0VsS09YVmZiSGx1ZDE5ME1uRXpZekJJTUdjIiwiZmN2IjoiMyIsImVpIjoiSW5PdGFwNzdMYjJEMnJvUDlKRG95QWMiLCJxYyI6ImMtT3lTTXhVS01uUHp5bFdTTXN2VWtqT3o4bEpUVTlWS0M0cFRVbk5LeWxXeU13RG9wVE1SS0JNYmtGT1lpWklyQ2kxTERPMVhJQ2hkb21RaGowQSIsInF1ZXN0aW9uIjoiQXJlIEFJIHRvb2xzIGJlbmVmaWNpYWwgb3IgaGFybWZ1bCBmb3Igc3R1ZGVudHM/IiwibGsiOiJHaTloY21VZ1lXa2dkRzl2YkhNZ1ltVnVaV1pwWTJsaGJDQnZjaUJvWVhKdFpuVnNJR1p2Y2lCemRIVmtaVzUwY3ciLCJicyI6ImM0MlBQUXZDTUJSRmNYMlRpRk9taHpocHdackJ0UlJjX0FVVm5HSjlOWUcwZ1NaRl9QZW1xZjBRQk4zUFBmZGV1TUEya3lxWG1KN1FHYU5SV2J5U2RWaVlHbk9qTmQwSnJXdHVWRG1iOElodEhnRVg2amNPQkhGYVU2OXV5WW9LbFN1aDBlTlMxR1hSNkJBZEdfWnNKM3ptN2Y4bkEyZUlNeWtjdGprbnFSczBsRTVSVkJYeW1COFN2bWFyZ0EwOTN6QTRRaFRNX3VWVTNITFA3dl9uLUNWYjlOYVJtYzllIiwiaWQiOiJmY19Jbk90YXA3N0xiMkQycm9QOUpEb3lBY181In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1NVSnZhbGhmTXpWNVVYaE9jRzFuV2tFMmRFWlpNVFozYVc5Q1pHSTBkVWsxUTI5cU5tZEVRa2xJYUVoWFgyNUVVa3hITTB4cFgweGhZMEpqWkhWMU1YbDJjRXh2Y2toNWQwNHhOMlEwVUZwRVpYZzRaRmxyVVhkM1VSSVhTVzVQZEdGd056ZE1ZakpFTW5KdlVEbEtSRzk1UVdNYUlrRkVjM0k1WmxKRU4zQlVkVkpZY0VsS09YVmZiSGx1ZDE5ME1uRXpZekJJTUdjIiwiZmN2IjoiMyIsImVpIjoiSW5PdGFwNzdMYjJEMnJvUDlKRG95QWMiLCJxYyI6ImMtT3lTTXhVS01uUHp5bFdTTXN2VWtqT3o4bEpUVTlWS0M0cFRVbk5LeWxXeU13RG9wVE1SS0JNYmtGT1lpWklyQ2kxTERPMVhJQ2hkb21RaGowQSIsInF1ZXN0aW9uIjoiQXJlIEFJIHRvb2xzIGJlbmVmaWNpYWwgb3IgaGFybWZ1bCBmb3Igc3R1ZGVudHM%2FIiwibGsiOiJHaTloY21VZ1lXa2dkRzl2YkhNZ1ltVnVaV1pwWTJsaGJDQnZjaUJvWVhKdFpuVnNJR1p2Y2lCemRIVmtaVzUwY3ciLCJicyI6ImM0MlBQUXZDTUJSRmNYMlRpRk9taHpocHdackJ0UlJjX0FVVm5HSjlOWUcwZ1NaRl9QZW1xZjBRQk4zUFBmZGV1TUEya3lxWG1KN1FHYU5SV2J5U2RWaVlHbk9qTmQwSnJXdHVWRG1iOElodEhnRVg2amNPQkhGYVU2OXV5WW9LbFN1aDBlTlMxR1hSNkJBZEdfWnNKM3ptN2Y4bkEyZUlNeWtjdGprbnFSczBsRTVSVkJYeW1COFN2bWFyZ0EwOTN6QTRRaFRNX3VWVTNITFA3dl9uLUNWYjlOYVJtYzllIiwiaWQiOiJmY19Jbk90YXA3N0xiMkQycm9QOUpEb3lBY181In0%3D"
+    },
+    {
+      "question": "What are the best AI tools for students in 2026?",
+      "type": "ai_overview",
+      "page_token": "-uMRCXicHdBbjpswFABQdTPzmWBIpkqkaDSERwYNTn1jm8fPCOwQHiagQMHhr3voErqqrqZSzxLOrz-qujd_v_0ux7Ef9uv1PM-rW9fd1HUlulV1X2fD8y7WIlMqz0Szf_3-it4KcXAnYR8fwias77kDxsUsLcLGhHtBfY3VEeLeSo1UZ4hpoGqJTuJ5icElJvYI8hwwOWIxVLgOJu4oLGs8ZdGgw4UrZm4_pQ_2mXOWoG7OEZ-w-7Eh9H3L45Lk7raV0XihvncECj8-I34BQ0YZxeHZL0NC1SnlwUSo2GaMPzIT42vbaHCCILGgjlSKr3UzM2M0qJnq0Bw0IKx5pDxhlZ00dxNtUEuY3EhX_ZSLdELPpuDtFnoHcEsZ5M3OSOJ3Cxu6ChvyFO2OnFnv5payE91VhMEiatUyVW4kLafU7Tap39vc10V0Yhb4iNDYLgTnAyEvhZgO1sv_68NX0Y77_tHd_gHbNY1H",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=-uMRCXicHdBbjpswFABQdTPzmWBIpkqkaDSERwYNTn1jm8fPCOwQHiagQMHhr3voErqqrqZSzxLOrz-qujd_v_0ux7Ef9uv1PM-rW9fd1HUlulV1X2fD8y7WIlMqz0Szf_3-it4KcXAnYR8fwias77kDxsUsLcLGhHtBfY3VEeLeSo1UZ4hpoGqJTuJ5icElJvYI8hwwOWIxVLgOJu4oLGs8ZdGgw4UrZm4_pQ_2mXOWoG7OEZ-w-7Eh9H3L45Lk7raV0XihvncECj8-I34BQ0YZxeHZL0NC1SnlwUSo2GaMPzIT42vbaHCCILGgjlSKr3UzM2M0qJnq0Bw0IKx5pDxhlZ00dxNtUEuY3EhX_ZSLdELPpuDtFnoHcEsZ5M3OSOJ3Cxu6ChvyFO2OnFnv5payE91VhMEiatUyVW4kLafU7Tap39vc10V0Yhb4iNDYLgTnAyEvhZgO1sv_68NX0Y77_tHd_gHbNY1H",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1NVSnZhbGhmTXpWNVVYaE9jRzFuV2tFMmRFWlpNVFozYVc5Q1pHSTBkVWsxUTI5cU5tZEVRa2xJYUVoWFgyNUVVa3hITTB4cFgweGhZMEpqWkhWMU1YbDJjRXh2Y2toNWQwNHhOMlEwVUZwRVpYZzRaRmxyVVhkM1VSSVhTVzVQZEdGd056ZE1ZakpFTW5KdlVEbEtSRzk1UVdNYUlrRkVjM0k1WmxKRU4zQlVkVkpZY0VsS09YVmZiSGx1ZDE5ME1uRXpZekJJTUdjIiwiZmN2IjoiMyIsImVpIjoiSW5PdGFwNzdMYjJEMnJvUDlKRG95QWMiLCJxYyI6ImMtT3lTTXhVS01uUHp5bFdTTXN2VWtqT3o4bEpUVTlWS0M0cFRVbk5LeWxXeU13RG9wVE1SS0JNYmtGT1lpWklyQ2kxTERPMVhJQ2hkb21RaGowQSIsInF1ZXN0aW9uIjoiV2hhdCBhcmUgdGhlIGJlc3QgQUkgdG9vbHMgZm9yIHN0dWRlbnRzIGluIDIwMjY/IiwibGsiOiJHaUppWlhOMElHRnBJSFJ2YjJ4eklHWnZjaUJ6ZEhWa1pXNTBjeUJwYmlBeU1ESTIiLCJicyI6ImM0MlBQUXZDTUJSRmNYMlRpRk9taHpocHdackJ0UlJjX0FVVm5HSjlOWUcwZ1NaRl9QZW1xZjBRQk4zUFBmZGV1TUEya3lxWG1KN1FHYU5SV2J5U2RWaVlHbk9qTmQwSnJXdHVWRG1iOElodEhnRVg2amNPQkhGYVU2OXV5WW9LbFN1aDBlTlMxR1hSNkJBZEdfWnNKM3ptN2Y4bkEyZUlNeWtjdGprbnFSczBsRTVSVkJYeW1COFN2bWFyZ0EwOTN6QTRRaFRNX3VWVTNITFA3dl9uLUNWYjlOYVJtYzllIiwiaWQiOiJmY19Jbk90YXA3N0xiMkQycm9QOUpEb3lBY181In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1NVSnZhbGhmTXpWNVVYaE9jRzFuV2tFMmRFWlpNVFozYVc5Q1pHSTBkVWsxUTI5cU5tZEVRa2xJYUVoWFgyNUVVa3hITTB4cFgweGhZMEpqWkhWMU1YbDJjRXh2Y2toNWQwNHhOMlEwVUZwRVpYZzRaRmxyVVhkM1VSSVhTVzVQZEdGd056ZE1ZakpFTW5KdlVEbEtSRzk1UVdNYUlrRkVjM0k1WmxKRU4zQlVkVkpZY0VsS09YVmZiSGx1ZDE5ME1uRXpZekJJTUdjIiwiZmN2IjoiMyIsImVpIjoiSW5PdGFwNzdMYjJEMnJvUDlKRG95QWMiLCJxYyI6ImMtT3lTTXhVS01uUHp5bFdTTXN2VWtqT3o4bEpUVTlWS0M0cFRVbk5LeWxXeU13RG9wVE1SS0JNYmtGT1lpWklyQ2kxTERPMVhJQ2hkb21RaGowQSIsInF1ZXN0aW9uIjoiV2hhdCBhcmUgdGhlIGJlc3QgQUkgdG9vbHMgZm9yIHN0dWRlbnRzIGluIDIwMjY%2FIiwibGsiOiJHaUppWlhOMElHRnBJSFJ2YjJ4eklHWnZjaUJ6ZEhWa1pXNTBjeUJwYmlBeU1ESTIiLCJicyI6ImM0MlBQUXZDTUJSRmNYMlRpRk9taHpocHdackJ0UlJjX0FVVm5HSjlOWUcwZ1NaRl9QZW1xZjBRQk4zUFBmZGV1TUEya3lxWG1KN1FHYU5SV2J5U2RWaVlHbk9qTmQwSnJXdHVWRG1iOElodEhnRVg2amNPQkhGYVU2OXV5WW9LbFN1aDBlTlMxR1hSNkJBZEdfWnNKM3ptN2Y4bkEyZUlNeWtjdGprbnFSczBsRTVSVkJYeW1COFN2bWFyZ0EwOTN6QTRRaFRNX3VWVTNITFA3dl9uLUNWYjlOYVJtYzllIiwiaWQiOiJmY19Jbk90YXA3N0xiMkQycm9QOUpEb3lBY181In0%3D"
+    },
+    {
+      "question": "What is the best AI study tool for students?",
+      "type": "ai_overview",
+      "page_token": "xbErRHicHdBdboIwAADg7DJ71CK6TROzDBEEBVLoD_RlgaIW2wLbUBhvu8tOtdNs2Q2-fF_fqqrlz90guq79WE2nfd9Pzk1zVscJbyZVPc0_Pms-5blSRc7l6uHxwXg-8fX26lmbN8-CuG2JHYNEPY18VC4cnUNwccJ0xrwEOxmVC1GA-Syw4cgAORQ7nyE36AKM58nOpzkd8hB0i9R0bAbEPqRgjMlyX5hBX-jlJrjEmlWGoq6YR1gNCEsDUiNlWN3gSIxkY9CjQ9JkJyKydaocE4218JlLUEJEgmahCAyvQ1S5SMYqk07HpAEi-wUckHXlbnn4MzY5BkNo4x7t_CxKrXorSr-QS5ClL2YIhiqQ8JPrJYxwuy1MZWVDU0Ecj_yiNE5JFoJFC6Xj85oNJe3MyA09lLYk0RgUbqnL_v7Eb2vz_v9z_XrS3ap9b86_rPKCpw",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=xbErRHicHdBdboIwAADg7DJ71CK6TROzDBEEBVLoD_RlgaIW2wLbUBhvu8tOtdNs2Q2-fF_fqqrlz90guq79WE2nfd9Pzk1zVscJbyZVPc0_Pms-5blSRc7l6uHxwXg-8fX26lmbN8-CuG2JHYNEPY18VC4cnUNwccJ0xrwEOxmVC1GA-Syw4cgAORQ7nyE36AKM58nOpzkd8hB0i9R0bAbEPqRgjMlyX5hBX-jlJrjEmlWGoq6YR1gNCEsDUiNlWN3gSIxkY9CjQ9JkJyKydaocE4218JlLUEJEgmahCAyvQ1S5SMYqk07HpAEi-wUckHXlbnn4MzY5BkNo4x7t_CxKrXorSr-QS5ClL2YIhiqQ8JPrJYxwuy1MZWVDU0Ecj_yiNE5JFoJFC6Xj85oNJe3MyA09lLYk0RgUbqnL_v7Eb2vz_v9z_XrS3ap9b86_rPKCpw",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1NVSnZhbGhmTXpWNVVYaE9jRzFuV2tFMmRFWlpNVFozYVc5Q1pHSTBkVWsxUTI5cU5tZEVRa2xJYUVoWFgyNUVVa3hITTB4cFgweGhZMEpqWkhWMU1YbDJjRXh2Y2toNWQwNHhOMlEwVUZwRVpYZzRaRmxyVVhkM1VSSVhTVzVQZEdGd056ZE1ZakpFTW5KdlVEbEtSRzk1UVdNYUlrRkVjM0k1WmxKRU4zQlVkVkpZY0VsS09YVmZiSGx1ZDE5ME1uRXpZekJJTUdjIiwiZmN2IjoiMyIsImVpIjoiSW5PdGFwNzdMYjJEMnJvUDlKRG95QWMiLCJxYyI6ImMtT3lTTXhVS01uUHp5bFdTTXN2VWtqT3o4bEpUVTlWS0M0cFRVbk5LeWxXeU13RG9wVE1SS0JNYmtGT1lpWklyQ2kxTERPMVhJQ2hkb21RaGowQSIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBBSSBzdHVkeSB0b29sIGZvciBzdHVkZW50cz8iLCJsayI6IkdoSmlaWE4wSUdGcElITjBkV1I1SUhSdmIydyIsImJzIjoiYzQyUFBRdkNNQlJGY1gyVGlGT21oemhwd1pyQnRSUmNfQVVWbkdKOU5ZRzBnU1pGX1BlbXFmMFFCTjNQUGZkZXVNQTJreXFYbUo3UUdhTlJXYnlTZFZpWUduT2pOZDBKcld0dVZEbWI4SWh0SGdFWDZqY09CSEZhVTY5dXlZb0tsU3VoMGVOUzFHWFI2QkFkR19ac0ozem03ZjhuQTJlSU15a2N0amtucVJzMGxFNVJWQlh5bUI4U3ZtYXJnQTA5M3pBNFFoVE1fdVZVM0hMUDd2X24tQ1ZiOU5hUm1jOWUiLCJpZCI6ImZjX0luT3RhcDc3TGIyRDJyb1A5SkRveUFjXzUifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1NVSnZhbGhmTXpWNVVYaE9jRzFuV2tFMmRFWlpNVFozYVc5Q1pHSTBkVWsxUTI5cU5tZEVRa2xJYUVoWFgyNUVVa3hITTB4cFgweGhZMEpqWkhWMU1YbDJjRXh2Y2toNWQwNHhOMlEwVUZwRVpYZzRaRmxyVVhkM1VSSVhTVzVQZEdGd056ZE1ZakpFTW5KdlVEbEtSRzk1UVdNYUlrRkVjM0k1WmxKRU4zQlVkVkpZY0VsS09YVmZiSGx1ZDE5ME1uRXpZekJJTUdjIiwiZmN2IjoiMyIsImVpIjoiSW5PdGFwNzdMYjJEMnJvUDlKRG95QWMiLCJxYyI6ImMtT3lTTXhVS01uUHp5bFdTTXN2VWtqT3o4bEpUVTlWS0M0cFRVbk5LeWxXeU13RG9wVE1SS0JNYmtGT1lpWklyQ2kxTERPMVhJQ2hkb21RaGowQSIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBBSSBzdHVkeSB0b29sIGZvciBzdHVkZW50cz8iLCJsayI6IkdoSmlaWE4wSUdGcElITjBkV1I1SUhSdmIydyIsImJzIjoiYzQyUFBRdkNNQlJGY1gyVGlGT21oemhwd1pyQnRSUmNfQVVWbkdKOU5ZRzBnU1pGX1BlbXFmMFFCTjNQUGZkZXVNQTJreXFYbUo3UUdhTlJXYnlTZFZpWUduT2pOZDBKcld0dVZEbWI4SWh0SGdFWDZqY09CSEZhVTY5dXlZb0tsU3VoMGVOUzFHWFI2QkFkR19ac0ozem03ZjhuQTJlSU15a2N0amtucVJzMGxFNVJWQlh5bUI4U3ZtYXJnQTA5M3pBNFFoVE1fdVZVM0hMUDd2X24tQ1ZiOU5hUm1jOWUiLCJpZCI6ImZjX0luT3RhcDc3TGIyRDJyb1A5SkRveUFjXzUifQ%3D%3D"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "axhdWHiczVZbcqpIGF7ArGN48Xi_xVRRp7oBlahHMRqjLxQ2bYsCLTRIzNvsZdYzC5jVTIMYMdFkznmYmr9Km-7-_e8fn3_8aVvu9u_f_loHwY7dF4tRFBUIpcTGBUQLlls02MFFxRW1mY_W38PQxmKUk4CqqZLafpzVt8ZMERgNfYQtU0RrnzpYILZoucLaFrErHPZiVUBMLAnYElV3GBi7ZrO_rMgVn45aDzI9ACQkXkR9aTC84WG8bFhRL_Kv7e9VmW8KrIBdvQMLqBdoNp6O4YoVKqVKtTAsGg7XAf-dDDQA4_UBSLeV-JXytanYgAqgkrGkApKs8Kw1P15LWnIlkZvW4NHnOFHX-EfWX7uRzE_T-sg3f8tdwIttlMQCQJRECYH1dTYZ0dJcTnl9Uqk37UtJq0fPJ9keX8R6ISS62LZ5FDqQpLOTrDNuZn0RxlulEAF3XQplCKa34-b16amgvgWaci2FrGjKU-2tc_15h58UTcIHt1Rc-nwpFy20RsmDz-J5liatEu3YKmvfbUuPq6dONGSLsPxsSS-TecOrkCJacj2bGiY29bVe-p7sy5VyvdSqNu--JVhC7A1MLAumw3TN8Gz05DjzQr8AyycYScemgw8dU_heUq8kBqVU9UqLM4MdNyxtqdbO2k1bCeO5VsbgsrW9UVzXzmnLZ_SVtwaCcyBnr_Hwf4TRUUhGmcMoCUSlqWJW46jVyUA301gVXHvNvM9b64JTFtrmg-IFACWe7xacCjN_b3kONIkoMQYkpQvTqqGzjRhe1oeyx-lpBKZlPGdyfILZHOISqBoYAFXhNq2pyntAUlWSBKymvtrKO8TdGHiV5zOT_s2r74rAr0AUi3bCy7vxz8KmO5jJec1uTmwP1iZD9YAWLm2TMF_pgeswoc7y50gH_a-wdKQkJaWk21hSvsZSQknwE0pKns-UFM-vRG9iCXauU9LgKiVd5i2BcRZLn1PST2NJ-hRLWvp9BUv0OpZ2N7FEovdYuqQk5TolvWHpVygJ_iIlJdDCx-WSn8INuclTiu07sDVZhM0V6u8ONls2vGfvgJTJTvuSp1ZOcO8Ypv1Nt8x7WHkIDuY3nR_Qe2wKngjUXED5v8_civo5RG0bE5xjQWhiN2A5y82prmkZ_MbZ2YYVn_l4b-FIcGyfiiWj-biq7N21haqN8jZkszz1guHMHigNuaVv9h2J6UtmWbOXdRjo5mQwLMv1RY0uFs-ObbZnr13HMgfWE2xjb_9CVm02gg1lVkZbfWNtmmbXvdsRedTuz3v5VvUQ9toq7ETeuBrW894C4-fxMvKqiuxsmSp7yznuN5LImDgal_P2g7HqR1PB8ZHIB6JGwA8NzAifTCmZWDA1KF8joHUavGFQYMjQMduLNZ5YC7WaTVRtmvVqTXBIcNiJrZLAXF8s_wNSil15",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=axhdWHiczVZbcqpIGF7ArGN48Xi_xVRRp7oBlahHMRqjLxQ2bYsCLTRIzNvsZdYzC5jVTIMYMdFkznmYmr9Km-7-_e8fn3_8aVvu9u_f_loHwY7dF4tRFBUIpcTGBUQLlls02MFFxRW1mY_W38PQxmKUk4CqqZLafpzVt8ZMERgNfYQtU0RrnzpYILZoucLaFrErHPZiVUBMLAnYElV3GBi7ZrO_rMgVn45aDzI9ACQkXkR9aTC84WG8bFhRL_Kv7e9VmW8KrIBdvQMLqBdoNp6O4YoVKqVKtTAsGg7XAf-dDDQA4_UBSLeV-JXytanYgAqgkrGkApKs8Kw1P15LWnIlkZvW4NHnOFHX-EfWX7uRzE_T-sg3f8tdwIttlMQCQJRECYH1dTYZ0dJcTnl9Uqk37UtJq0fPJ9keX8R6ISS62LZ5FDqQpLOTrDNuZn0RxlulEAF3XQplCKa34-b16amgvgWaci2FrGjKU-2tc_15h58UTcIHt1Rc-nwpFy20RsmDz-J5liatEu3YKmvfbUuPq6dONGSLsPxsSS-TecOrkCJacj2bGiY29bVe-p7sy5VyvdSqNu--JVhC7A1MLAumw3TN8Gz05DjzQr8AyycYScemgw8dU_heUq8kBqVU9UqLM4MdNyxtqdbO2k1bCeO5VsbgsrW9UVzXzmnLZ_SVtwaCcyBnr_Hwf4TRUUhGmcMoCUSlqWJW46jVyUA301gVXHvNvM9b64JTFtrmg-IFACWe7xacCjN_b3kONIkoMQYkpQvTqqGzjRhe1oeyx-lpBKZlPGdyfILZHOISqBoYAFXhNq2pyntAUlWSBKymvtrKO8TdGHiV5zOT_s2r74rAr0AUi3bCy7vxz8KmO5jJec1uTmwP1iZD9YAWLm2TMF_pgeswoc7y50gH_a-wdKQkJaWk21hSvsZSQknwE0pKns-UFM-vRG9iCXauU9LgKiVd5i2BcRZLn1PST2NJ-hRLWvp9BUv0OpZ2N7FEovdYuqQk5TolvWHpVygJ_iIlJdDCx-WSn8INuclTiu07sDVZhM0V6u8ONls2vGfvgJTJTvuSp1ZOcO8Ypv1Nt8x7WHkIDuY3nR_Qe2wKngjUXED5v8_civo5RG0bE5xjQWhiN2A5y82prmkZ_MbZ2YYVn_l4b-FIcGyfiiWj-biq7N21haqN8jZkszz1guHMHigNuaVv9h2J6UtmWbOXdRjo5mQwLMv1RY0uFs-ObbZnr13HMgfWE2xjb_9CVm02gg1lVkZbfWNtmmbXvdsRedTuz3v5VvUQ9toq7ETeuBrW894C4-fxMvKqiuxsmSp7yznuN5LImDgal_P2g7HqR1PB8ZHIB6JGwA8NzAifTCmZWDA1KF8joHUavGFQYMjQMduLNZ5YC7WaTVRtmvVqTXBIcNiJrZLAXF8s_wNSil15"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "(PDF) Review on Students' Preference for AI Tools in Daily ...",
+      "link": "https://www.researchgate.net/publication/384608490_Review_on_Students'_Preference_for_AI_Tools_in_Daily_Life",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESpAEB6zswFVRPLBPiMr8IYO1Tstj8IjUOQRZw6ag6Y1HBHoCgZOrZENKF4k8oR8D-YOtNmoOYriIPk8l04wCNZnPlXjpAEUocLA0BJLfJYqVNYOkPb485miW6TA-vhiAEYaxZHAxA7af1U3Y0IKgEIVILS3s72CIJ4PQjp8cTfhNJCTYbr-qytiq4QnpfbOQBxvWQsStjDsMv0xGMb9OounejXi-qHw&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQFnoECC4QAQ&uoh=1",
+      "displayed_link": "https://www.researchgate.net \u203a publication \u203a 38460849...",
+      "favicon": "https://serpapi.com/images/i/UklGRgYBAABXRUJQVlA4IPoAAADwBQCdASocABwAPtEutFooIagoGAEAGglpAAPjR9EewBukqvgOo133wUJLm6nq80Xl6ttC8s5gAAD-_p4cSWBHjd47XoD_L__ak-L9vPnHTdV3QJYy_4H--A0f8z97ifV1Nwf8nfwmIgVsFo4tSqrTj_iUC1Y0uYgnHaC4JlHZSnysNOdHzhvt1waGOlWj34iqHkpw2UYb9Nv580pvKo-wdjpXJcc7KFSgkwoo4yxsrA1pXqfmy38bGIkjL5gA7P2RhRTNgB-zDWPAw2S-q3fSs9GxrbQsWuhASW0Ozt6j_QK6Fxm86bjdDMIgagy35R0f3ekyldj2wAAA.webp",
+      "date": "18 Jan 2025",
+      "snippet": "1. Majority 84% of respondents accepted that they are using AI tools in their daily life. \u00b7 2. AI Chatbox and AI filter are most preferred AI ...",
+      "snippet_highlighted_words": [
+        "AI tools",
+        "AI",
+        "AI",
+        "AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "1. Majority 84% of respondents accepted that they are using AI tools in their daily life. \u00b7 2. AI Chatbox and AI filter are most preferred AI ...",
+          "source_info_link": "https://www.researchgate.net/publication/384608490_Review_on_Students'_Preference_for_AI_Tools_in_Daily_Life",
+          "icon": "https://serpapi.com/images/i/UklGRgYBAABXRUJQVlA4IPoAAADwBQCdASocABwAPtEutFooIagoGAEAGglpAAPjR9EewBukqvgOo133wUJLm6nq80Xl6ttC8s5gAAD-_p4cSWBHjd47XoD_L__ak-L9vPnHTdV3QJYy_4H--A0f8z97ifV1Nwf8nfwmIgVsFo4tSqrTj_iUC1Y0uYgnHaC4JlHZSnysNOdHzhvt1waGOlWj34iqHkpw2UYb9Nv580pvKo-wdjpXJcc7KFSgkwoo4yxsrA1pXqfmy38bGIkjL5gA7P2RhRTNgB-zDWPAw2S-q3fSs9GxrbQsWuhASW0Ozt6j_QK6Fxm86bjdDMIgagy35R0f3ekyldj2wAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "ResearchGate",
+      "read_more_link": "https://www.researchgate.net/publication/384608490_Review_on_Students'_Preference_for_AI_Tools_in_Daily_Life#:~:text=1.%20Majority%2084%25%20of%20respondents,tools%20in%20their%20daily%20life.&text=2.%20AI%20Chatbox%20and%20AI,by%20the%20majority%20of%20the"
+    },
+    {
+      "position": 2,
+      "title": "Best AI Tools for Students in 2026: Complete Guide",
+      "link": "https://www.taskveda.in/blog/ai-tools-for-students.html",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbwHrOzAV8gxew5kcCJV5U2IarwUM4TGvEomORLAjMAJGueFB5eYoP06qM-IuKpKYDmn-dbmvx8NYy_9EZ-X4iupbZF5uCe3gszzKHy3LYXGjJok7peD9uH40fLd3xRv0KZ4tyYMj7Y5b-9d2ZQq2Jg&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQFnoECCsQAQ&uoh=1",
+      "displayed_link": "https://www.taskveda.in \u203a Blog",
+      "favicon": "https://serpapi.com/images/i/UklGRsQBAABXRUJQVlA4ILgBAABQCACdASogACAAPrkurlcnIacnG_DgFwlAGB-YL07NLtnU7g_uddvWAoAQzbxufOf_WV9in2a9UW5jvSF9mG4XiXcg26gfAQSAbWAA_v7C3ZgmP1zyOW3P_0OyYtdqjkL_gjgyIaGq_5TmvIjJa_1AmLnfpOvdIs6DOkPnR934M9cWTrnvoH4p3RDrGa2A85VAVGF3PXP6JN1f_eQWLnxm36Xd_0q_0Fb2Y66v_Ncc7-8Z96eyFvccNNS7djoAA5kipJgRcIwlkv1LdOdlyHL-1xrmB5F_eUDfhXtw4jCZccWnumC0acUWATGmc7zBQLNgj_PEoq7viIbqkEYaqjT4-EZNZelkgr8qV2j8IbZNYL_2VA76O1U-G8xosddcbpshioWTuBPdUtjb7zJ-ux9u4yTQ-pIM1TKGG_O4hGEIL_XM3elVb0hYrxJoriV0zJWujyh2A7l_jx27IHDlfNOzIXEW99lM85R5SQKDDUtc9Pt6Opf8-xz-2Gy_zQAUhSJ1YHT56fwr_zWyQANwlVH0gn2QlwJt8crSEy-TzVSA_c67gXW1d6JtkwDBL5Ig2T0_x612RaYAAA.webp",
+      "date": "27 Aug 2026",
+      "snippet": "ChatGPT (free) is the best all-round AI tool for students in 2026. For turning your notes into study material, use NotebookLM (free).",
+      "snippet_highlighted_words": [
+        "AI tool",
+        "students"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "ChatGPT (free) is the best all-round AI tool for students in 2026. For turning your notes into study material, use NotebookLM (free).",
+          "source_info_link": "https://www.taskveda.in/blog/ai-tools-for-students.html",
+          "icon": "https://serpapi.com/images/i/UklGRsQBAABXRUJQVlA4ILgBAABQCACdASogACAAPrkurlcnIacnG_DgFwlAGB-YL07NLtnU7g_uddvWAoAQzbxufOf_WV9in2a9UW5jvSF9mG4XiXcg26gfAQSAbWAA_v7C3ZgmP1zyOW3P_0OyYtdqjkL_gjgyIaGq_5TmvIjJa_1AmLnfpOvdIs6DOkPnR934M9cWTrnvoH4p3RDrGa2A85VAVGF3PXP6JN1f_eQWLnxm36Xd_0q_0Fb2Y66v_Ncc7-8Z96eyFvccNNS7djoAA5kipJgRcIwlkv1LdOdlyHL-1xrmB5F_eUDfhXtw4jCZccWnumC0acUWATGmc7zBQLNgj_PEoq7viIbqkEYaqjT4-EZNZelkgr8qV2j8IbZNYL_2VA76O1U-G8xosddcbpshioWTuBPdUtjb7zJ-ux9u4yTQ-pIM1TKGG_O4hGEIL_XM3elVb0hYrxJoriV0zJWujyh2A7l_jx27IHDlfNOzIXEW99lM85R5SQKDDUtc9Pt6Opf8-xz-2Gy_zQAUhSJ1YHT56fwr_zWyQANwlVH0gn2QlwJt8crSEy-TzVSA_c67gXW1d6JtkwDBL5Ig2T0_x612RaYAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "TaskVeda",
+      "read_more_link": "https://www.taskveda.in/blog/ai-tools-for-students.html#:~:text=ChatGPT%20(free)%20is%20the%20best,study%20material%2C%20use%20NotebookLM%20(free)."
+    },
+    {
+      "position": 3,
+      "title": "Top 10 AI Tools Every Student Should Use in 2026",
+      "link": "https://sageuniversity.in/blogs/best-ai-tools-for-students",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScgHrOzAV-zOUjYJOslKO0tneESj-F2IwweG8OtoeYqUdI79qz092T_ubYwEGnenVUJO2uKQ9dYYQsQSKPP2JTCq0Hk9PDMn3xV3Lwbh0Oypjr7G8wl570jHTTI2PbnY8UiK1RcA0qDS0COTq9iwWr4g7lA&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQFnoECDcQAQ&uoh=1",
+      "displayed_link": "https://sageuniversity.in \u203a blogs \u203a best-ai-tools-for-students",
+      "favicon": "https://serpapi.com/images/i/UklGRtgBAABXRUJQVlA4IMwBAABQCQCdASogAB4AAsBMJbACdMoR497pxBzhvAgwG2x56T0AbxzvND6DMA7SSwMYwz5fTXSzerv0ADrTxneNhjJ86nzaxc3Iocu5FH65Dyu0m3RQAAD--Dc-iNgPRQWREfUVGpMQzWQu8NNyiAzlSUsvlP7BUmvh6RQFYuWHQvzISKE9QxV_ImRyc-alBZOPnNaQN-nsSPXcUgFRM0JLz9b2Xn1k4h7xQ6dTJSLOGdfsqmftJ9cN5_0L1Rgj3iqIFhKClCu1XOBGQhBu4tixF2w3X_VTlIL5oAbyUjqTlCte2Wz6dfjDfBavAEwGJfxViPth20dnRw14Bf8QKo_mv7ioB5hHGoEK3yORj1EYkRXd7VIl9bXOqpG_fc_QJwbIvrwxO6ROJUqrojdamvhKcg9VDzZquMfLoHBGxaLRhbsu2Wp8SbzjVEkJ7jKeP9x0Z8VjXvpXdv5zW4QTAv8iBTfBzHbDSI0CYzA0-dqALfE6s3EBsTEjrc9dkuwWsqW2TrijSmg1lRFI8pwf6FUbzFSsyeF6uFlvRVxOKR9uBgdlBurS-0Z6v0m1bvsGg_XgcNaFTAAXCbnaeCLeIQPY0848KHE8ZyHVXbSLTgAA.webp",
+      "snippet": "1. ChatGPT: The All-Purpose AI Assistant \u00b7 1) Explains complex concepts in simple terms. \u00b7 2) Helps draft essays, emails, and reports. \u00b7 3) Solves math, coding, ...",
+      "snippet_highlighted_words": [
+        "ChatGPT: The All-Purpose AI Assistant"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "1. ChatGPT: The All-Purpose AI Assistant \u00b7 1) Explains complex concepts in simple terms. \u00b7 2) Helps draft essays, emails, and reports. \u00b7 3) Solves math, coding, ...",
+          "source_info_link": "https://sageuniversity.in/blogs/best-ai-tools-for-students",
+          "icon": "https://serpapi.com/images/i/UklGRtgBAABXRUJQVlA4IMwBAABQCQCdASogAB4AAsBMJbACdMoR497pxBzhvAgwG2x56T0AbxzvND6DMA7SSwMYwz5fTXSzerv0ADrTxneNhjJ86nzaxc3Iocu5FH65Dyu0m3RQAAD--Dc-iNgPRQWREfUVGpMQzWQu8NNyiAzlSUsvlP7BUmvh6RQFYuWHQvzISKE9QxV_ImRyc-alBZOPnNaQN-nsSPXcUgFRM0JLz9b2Xn1k4h7xQ6dTJSLOGdfsqmftJ9cN5_0L1Rgj3iqIFhKClCu1XOBGQhBu4tixF2w3X_VTlIL5oAbyUjqTlCte2Wz6dfjDfBavAEwGJfxViPth20dnRw14Bf8QKo_mv7ioB5hHGoEK3yORj1EYkRXd7VIl9bXOqpG_fc_QJwbIvrwxO6ROJUqrojdamvhKcg9VDzZquMfLoHBGxaLRhbsu2Wp8SbzjVEkJ7jKeP9x0Z8VjXvpXdv5zW4QTAv8iBTfBzHbDSI0CYzA0-dqALfE6s3EBsTEjrc9dkuwWsqW2TrijSmg1lRFI8pwf6FUbzFSsyeF6uFlvRVxOKR9uBgdlBurS-0Z6v0m1bvsGg_XgcNaFTAAXCbnaeCLeIQPY0848KHE8ZyHVXbSLTgAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "SAGE University Indore",
+      "read_more_link": "https://sageuniversity.in/blogs/best-ai-tools-for-students#:~:text=1.%20ChatGPT%3A%20The%20All%2DPurpose%20AI,Assistant&text=1)%20Explains%20complex%20concepts%20in,simple%20terms.&text=2)%20Helps%20draft%20essays%2C%20emails%2C,and%20reports.&text=3)%20Solves%20math%2C%20coding%2C%20and,reasoning%20problems."
+    },
+    {
+      "position": 4,
+      "title": "17 Best AI Tools for Students in 2026 (Free & Paid)",
+      "link": "https://www.bmu.edu.in/social/best-ai-tools-for-students/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScQHrOzAV-3slcYVUjhIgK8AqAUb01izRa3c4Nej7AO7WZXefLWSFQ1vVjmb56jID0AJbDKeLL5sGdIlUeTeQbIE4R9Z_SFH4rg140ioLJW1BMdJn1a5NXx7aGQjLKRy-Ja2S73SrkX2zWBvssV19v9ru&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQFnoECDUQAQ&uoh=1",
+      "displayed_link": "https://www.bmu.edu.in \u203a Social",
+      "favicon": "https://serpapi.com/images/i/UklGRt4AAABXRUJQVlA4INIAAABwBQCdASobABwAPrkurlcnIacnG_DgFwlqAJ0BjKspttMxWxtbNzyQHrbBNAc-P4M5fU-AAP7-wj5S4fj1S4kEpTEIK1sU_ZmH4CJT8QGW7MYLvd6DeefCDDu4lLqBuuRU4CrU55iPmQgo0xtHi3xhgb9OOxRf9rW7zCbSb9GH50hBwd4rfahY9Dnpg0By5M9Ir_Bd6xQyFMGGiHBQnreT4fK1Ka4Vbl_N210a8anjHZP1h1aT-N3S1OlnKYFl7O3c1lecbCDczcH2mB8HANQAAAA.webp",
+      "date": "20 Jul 2026",
+      "snippet": "17 AI tools reviewed across 6 categories- concept clarity, research, writing, organisation, presentations and coding \u00b7 Most tools offer a usable ...",
+      "snippet_highlighted_words": [
+        "17 AI tools reviewed"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "17 AI tools reviewed across 6 categories- concept clarity, research, writing, organisation, presentations and coding \u00b7 Most tools offer a usable ...",
+          "source_info_link": "https://www.bmu.edu.in/social/best-ai-tools-for-students/",
+          "icon": "https://serpapi.com/images/i/UklGRt4AAABXRUJQVlA4INIAAABwBQCdASobABwAPrkurlcnIacnG_DgFwlqAJ0BjKspttMxWxtbNzyQHrbBNAc-P4M5fU-AAP7-wj5S4fj1S4kEpTEIK1sU_ZmH4CJT8QGW7MYLvd6DeefCDDu4lLqBuuRU4CrU55iPmQgo0xtHi3xhgb9OOxRf9rW7zCbSb9GH50hBwd4rfahY9Dnpg0By5M9Ir_Bd6xQyFMGGiHBQnreT4fK1Ka4Vbl_N210a8anjHZP1h1aT-N3S1OlnKYFl7O3c1lecbCDczcH2mB8HANQAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "BML Munjal University (BMU)",
+      "read_more_link": "https://www.bmu.edu.in/social/best-ai-tools-for-students/#:~:text=17%20AI%20tools%20reviewed%20across,writing%2C%20organisation%2C%20presentations%20and%20coding&text=Most%20tools%20offer%20a%20usable,pay%20to%20get%20real%20value"
+    },
+    {
+      "position": 5,
+      "title": "Best Free AI Tools for Students India 2026: Full Review",
+      "link": "https://lumichats.com/blog/best-free-ai-tools-for-students-india-2026",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESfQHrOzAVGwMoxE-wZfJqCP4PKckkuMGYRuVUPgAPCGBtiou_FlcDkAHSrrCcpto-R-1pbGj_SN00NffD7peQw6xs37g1412n46WtF_LxeYsDavaLI1jXZuxa8HzIUrkFn3Z6W9PPWqdcsZqogJoJ9Ot3ctngY5bJPD1BAdjr&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQFnoECDQQAQ&uoh=1",
+      "displayed_link": "https://lumichats.com \u203a Blog",
+      "favicon": "https://serpapi.com/images/i/UklGRqAAAABXRUJQVlA4IJQAAAAwBQCdASogACAAPtFAtFooIqgoFAEAGglsAHYrkwFv_gmrWhsrQol8rN3QPZSYT1bcAAD-_VFO8f5S6FCKjr4Mo4dJ_ROUZ9RMR9We_TJoGnYFsQ0MJCCBRNdhqeLwDxwo0Zq1f8myY9uLBCOvEmEmE8xbwRQFITdD-pHveW873UXFlG_zJyTyQb0qCKomQ9zqAAAA.webp",
+      "date": "25 Feb 2026",
+      "snippet": "A comprehensive comparison of free AI tools available to Indian students \u2014 what's genuinely free, what's free-with-limits, and what's worth ...",
+      "snippet_highlighted_words": [
+        "free AI tools available to Indian students"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.6,
+            "reviews": 10
+          },
+          "extensions": [
+            "4.6(10)"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "A comprehensive comparison of free AI tools available to Indian students \u2014 what's genuinely free, what's free-with-limits, and what's worth ...",
+          "source_info_link": "https://lumichats.com/blog/best-free-ai-tools-for-students-india-2026",
+          "icon": "https://serpapi.com/images/i/UklGRqAAAABXRUJQVlA4IJQAAAAwBQCdASogACAAPtFAtFooIqgoFAEAGglsAHYrkwFv_gmrWhsrQol8rN3QPZSYT1bcAAD-_VFO8f5S6FCKjr4Mo4dJ_ROUZ9RMR9We_TJoGnYFsQ0MJCCBRNdhqeLwDxwo0Zq1f8myY9uLBCOvEmEmE8xbwRQFITdD-pHveW873UXFlG_zJyTyQb0qCKomQ9zqAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "LumiChats"
+    },
+    {
+      "position": 6,
+      "title": "Which are the best AI tools for students?",
+      "link": "https://www.quora.com/Which-are-the-best-AI-tools-for-students",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdgHrOzAV7lI08t7RJAxutw2twJwYV93zh5JMhMzI_7yLc4nMdvt_tMl_JNf3gGlMrCpqQApA7vuxjJZyFE2AX6G48Rk90ninp43urSdCh7CF8TxyKIlz1Jl6fGIbhWAdlrYg5SBVd1fItPOiQSrbdcFecruuJp0&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQFnoECD8QAQ&uoh=1",
+      "displayed_link": "90+ answers \u00b7 4 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp",
+      "snippet": "Which are the best AI tools for students?",
+      "sitelinks": {
+        "list": [
+          {
+            "title": "What are the best AI tools students can use for ...",
+            "link": "https://www.quora.com/What-are-the-best-AI-tools-students-can-use-for-studying-and-assignments",
+            "answer_count": 46,
+            "date": "29 May 2026"
+          },
+          {
+            "title": "What are some of the latest AI tools that students in ...",
+            "link": "https://www.quora.com/What-are-some-of-the-latest-AI-tools-that-students-in-India-are-using",
+            "answer_count": 33,
+            "date": "22 Jun 2025"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "1. Best Overall for Lectures & Notes: Google NotebookLM (Free). This is currently the most powerful AI tool for students. \u00b7 2. Best for Academic ...",
+          "source_info_link": "https://www.quora.com/Which-are-the-best-AI-tools-for-students",
+          "icon": "https://serpapi.com/images/i/UklGRhIBAABXRUJQVlA4IAYBAABQBgCdASocABwAPtFAtFooIqgoFAEAGglsAKwvbT-f9FJVdngA428vxQCq0R4c9f62YZeYiGEtoRRDAAD-9gm4RWs70tP3biIu3O7VV8QI7DMqIqprw_f2Aoh6P3X8JbZDl7t0lZ2r6sObHH1Z7IUn40739orMTtT8A6LquGEbxI0kN0_5vH8j2m4-9vzIZ7iPm8NCoINzGw-u1pvZrAWdy6w2UivRxEpBBRxPG1gI6mTZO_XhJ5jNP3dnQY2e8_2lJT8rFkj6fqGXPywcyH8ho_i77YxvVXtwoQ8aPdayuatAHFSeE-0i7UxCTuYeJzk11WsfnFWKYNSX_T-HQ3TWKwo4rAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Quora"
+    },
+    {
+      "position": 7,
+      "title": "7 Free AI Tools for Students in India (2026) - That Actually Work",
+      "link": "https://www.techaffiliate.in/blog/7-free-ai-tools-for-indian-students-2026",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESggEB6zswFTQ09IxNT_tEYr6I8yEBu8OpNb1MyUTHB2GshRJF4YLJrW5S7xJvo1OPhVRQpnGlJU6tIrFUFbmpugjGNhW74yX_wiRcpi7wSCCj4WwJ_9byfhyBkCSpjOlAiMcsM6uXajvxmcXEj-oRfGLnO2AP3Zuip_wQLVZzGcyA6-Bq&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQFnoECDYQAQ&uoh=1",
+      "displayed_link": "https://www.techaffiliate.in \u203a blog \u203a 7-free-ai-tools-for-i...",
+      "favicon": "https://serpapi.com/images/i/UklGRo4AAABXRUJQVlA4IIIAAABQBACdASogACAAPtE-tFooIigoFAEAGgljAAPjNTkHAWJ3n_Mso0PmwkAAAP79KiH_RjA2mD-zhh3PcL5Xd_rHrA-j5Hopq1akDEGGOAC6X3xzamH381BqOMOpVnK1NNlin7oMyi8OAzj8WWff7eORHtqnfSkV3Pm5ompKtve6BAAA.webp",
+      "date": "14 Apr 2026",
+      "snippet": "Discover 7 free AI tools Indian students are using in 2026 to study smarter covering memory, notes, writing, projects & presentations.",
+      "snippet_highlighted_words": [
+        "AI tools",
+        "students"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Discover 7 free AI tools Indian students are using in 2026 to study smarter covering memory, notes, writing, projects & presentations.",
+          "source_info_link": "https://www.techaffiliate.in/blog/7-free-ai-tools-for-indian-students-2026",
+          "icon": "https://serpapi.com/images/i/UklGRo4AAABXRUJQVlA4IIIAAABQBACdASogACAAPtE-tFooIigoFAEAGgljAAPjNTkHAWJ3n_Mso0PmwkAAAP79KiH_RjA2mD-zhh3PcL5Xd_rHrA-j5Hopq1akDEGGOAC6X3xzamH381BqOMOpVnK1NNlin7oMyi8OAzj8WWff7eORHtqnfSkV3Pm5ompKtve6BAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "techaffiliate.in"
+    },
+    {
+      "position": 8,
+      "title": "7 Best AI Study Tools for Students in 2026",
+      "link": "https://www.remnote.com/blog/best-ai-study-tools",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESaAHrOzAVvRd8GaTujXbSYGm62aQm6PYMTpkX1Y3njKgma-12HJTXg_Me340ZOZnkUBsw2hipC9fYXXH_nQ4WACDEWueiftYF_858wV9nFvdHpnn1ZTMWpE-vlpuMkPtZbW-SQbOaWz_A&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQFnoECDgQAQ&uoh=1",
+      "displayed_link": "https://www.remnote.com \u203a Blog",
+      "favicon": "https://serpapi.com/images/i/UklGRlABAABXRUJQVlA4IEQBAACwBwCdASocABwAPtE-tFooIigoFAEAGglsALEUGcCAuwDeTVUvgk9YwmAfoAH3_2tLS545YfDzpiEYUEgyxvoRfFhFUiAAAPa_wRNVFW_XdU2w96d6QxiEV7NuI7lhtOocdh5Rer-4Gew_a62ku429JDEDfF6XfBp2A96fUAnU1kfot6vjQnMuAtj_KXkm2346F0ExcRqb8Kzwx_tsbYVA5eo97kk1PbSj9-Lq5ALfZYO-vrM11QKRHZTtwxeuX3D1v_y-oTXh6BGpNOSrRfEIpqfgmLHcbzJISMzdE4BGq59ff97HHB6s9cpc3LctC7_gBipKpWmxibWTP-b6lvuRMH4sqlipmu3akNBPh_lpxlh9kwUbkRJ2BmfeUtmA6nbSu379c5Otxvxb5QdnYX70S40hbyN-fuHQYDykZIUe8h-qAAA.webp",
+      "date": "8 May 2026",
+      "snippet": "7 best AI study tools for students (Free) ; Otter.ai, Lecture recording, Students who struggle to take notes during class ; Wolfram Alpha, STEM ...",
+      "snippet_highlighted_words": [
+        "Otter.ai, Lecture recording"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "7 best AI study tools for students (Free) ; Otter.ai, Lecture recording, Students who struggle to take notes during class ; Wolfram Alpha, STEM ...",
+          "source_info_link": "https://www.remnote.com/blog/best-ai-study-tools",
+          "icon": "https://serpapi.com/images/i/UklGRlABAABXRUJQVlA4IEQBAACwBwCdASocABwAPtE-tFooIigoFAEAGglsALEUGcCAuwDeTVUvgk9YwmAfoAH3_2tLS545YfDzpiEYUEgyxvoRfFhFUiAAAPa_wRNVFW_XdU2w96d6QxiEV7NuI7lhtOocdh5Rer-4Gew_a62ku429JDEDfF6XfBp2A96fUAnU1kfot6vjQnMuAtj_KXkm2346F0ExcRqb8Kzwx_tsbYVA5eo97kk1PbSj9-Lq5ALfZYO-vrM11QKRHZTtwxeuX3D1v_y-oTXh6BGpNOSrRfEIpqfgmLHcbzJISMzdE4BGq59ff97HHB6s9cpc3LctC7_gBipKpWmxibWTP-b6lvuRMH4sqlipmu3akNBPh_lpxlh9kwUbkRJ2BmfeUtmA6nbSu379c5Otxvxb5QdnYX70S40hbyN-fuHQYDykZIUe8h-qAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "RemNote",
+      "read_more_link": "https://www.remnote.com/blog/best-ai-study-tools#:~:text=7%20best%20AI%20study%20tools,for%20students%20(Free)&text=Otter.ai,to%20take%20notes%20during%20class&text=Wolfram%20Alpha,STEM%20problem%20solving"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnvGOZb33_kKwfVbxSxD2B0S_v8hJg:1789752098759&ei=InOtap77Lb2D2roP9JDoyAc&start=10&sa=N&sstk=AS6-VmIHd12GJclXgSN1hNNql11kmZWduKXX0a9B6NcvGXttA5uzkL62niluMORsZQHttpZOA-0P6e5fsxAFcYbnnVXIPieFzKfI_g&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQ8NMDegQIMRAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnvGOZb33_kKwfVbxSxD2B0S_v8hJg:1789752098759&ei=InOtap77Lb2D2roP9JDoyAc&start=10&sa=N&sstk=AS6-VmIHd12GJclXgSN1hNNql11kmZWduKXX0a9B6NcvGXttA5uzkL62niluMORsZQHttpZOA-0P6e5fsxAFcYbnnVXIPieFzKfI_g&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQ8tMDegQIMRAE",
+      "3": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnvGOZb33_kKwfVbxSxD2B0S_v8hJg:1789752098759&ei=InOtap77Lb2D2roP9JDoyAc&start=20&sa=N&sstk=AS6-VmIHd12GJclXgSN1hNNql11kmZWduKXX0a9B6NcvGXttA5uzkL62niluMORsZQHttpZOA-0P6e5fsxAFcYbnnVXIPieFzKfI_g&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQ8tMDegQIMRAG",
+      "4": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnvGOZb33_kKwfVbxSxD2B0S_v8hJg:1789752098759&ei=InOtap77Lb2D2roP9JDoyAc&start=30&sa=N&sstk=AS6-VmIHd12GJclXgSN1hNNql11kmZWduKXX0a9B6NcvGXttA5uzkL62niluMORsZQHttpZOA-0P6e5fsxAFcYbnnVXIPieFzKfI_g&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQ8tMDegQIMRAI",
+      "5": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnvGOZb33_kKwfVbxSxD2B0S_v8hJg:1789752098759&ei=InOtap77Lb2D2roP9JDoyAc&start=40&sa=N&sstk=AS6-VmIHd12GJclXgSN1hNNql11kmZWduKXX0a9B6NcvGXttA5uzkL62niluMORsZQHttpZOA-0P6e5fsxAFcYbnnVXIPieFzKfI_g&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQ8tMDegQIMRAK",
+      "6": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnvGOZb33_kKwfVbxSxD2B0S_v8hJg:1789752098759&ei=InOtap77Lb2D2roP9JDoyAc&start=50&sa=N&sstk=AS6-VmIHd12GJclXgSN1hNNql11kmZWduKXX0a9B6NcvGXttA5uzkL62niluMORsZQHttpZOA-0P6e5fsxAFcYbnnVXIPieFzKfI_g&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQ8tMDegQIMRAM",
+      "7": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnvGOZb33_kKwfVbxSxD2B0S_v8hJg:1789752098759&ei=InOtap77Lb2D2roP9JDoyAc&start=60&sa=N&sstk=AS6-VmIHd12GJclXgSN1hNNql11kmZWduKXX0a9B6NcvGXttA5uzkL62niluMORsZQHttpZOA-0P6e5fsxAFcYbnnVXIPieFzKfI_g&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQ8tMDegQIMRAO",
+      "8": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnvGOZb33_kKwfVbxSxD2B0S_v8hJg:1789752098759&ei=InOtap77Lb2D2roP9JDoyAc&start=70&sa=N&sstk=AS6-VmIHd12GJclXgSN1hNNql11kmZWduKXX0a9B6NcvGXttA5uzkL62niluMORsZQHttpZOA-0P6e5fsxAFcYbnnVXIPieFzKfI_g&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQ8tMDegQIMRAQ",
+      "9": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnvGOZb33_kKwfVbxSxD2B0S_v8hJg:1789752098759&ei=InOtap77Lb2D2roP9JDoyAc&start=80&sa=N&sstk=AS6-VmIHd12GJclXgSN1hNNql11kmZWduKXX0a9B6NcvGXttA5uzkL62niluMORsZQHttpZOA-0P6e5fsxAFcYbnnVXIPieFzKfI_g&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQ8tMDegQIMRAS",
+      "10": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+complaints+review&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnvGOZb33_kKwfVbxSxD2B0S_v8hJg:1789752098759&ei=InOtap77Lb2D2roP9JDoyAc&start=90&sa=N&sstk=AS6-VmIHd12GJclXgSN1hNNql11kmZWduKXX0a9B6NcvGXttA5uzkL62niluMORsZQHttpZOA-0P6e5fsxAFcYbnnVXIPieFzKfI_g&ved=2ahUKEwielNSQ0viWAxW9gVYBHXQIGnkQ8tMDegQIMRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+complaints+review&start=90"
+    }
+  }
+}

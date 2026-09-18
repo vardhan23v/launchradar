@@ -1,0 +1,1251 @@
+{
+  "search_metadata": {
+    "id": "6aad73091de064d2006a05eb",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/UOP4No2dj8cm989wVaoAL-DOxtKsN7UhytjTi9W7I_U/6aad73091de064d2006a05eb.json",
+    "markdown_endpoint": "https://serpapi.com/searches/UOP4No2dj8cm989wVaoAL-DOxtKsN7UhytjTi9W7I_U/6aad73091de064d2006a05eb.md",
+    "created_at": "2026-09-18 17:21:13 UTC",
+    "processed_at": "2026-09-18 17:21:13 UTC",
+    "google_news_url": "https://news.google.com/search?q=Google+News%3A+recent+regulation+on+AI+usage+in+higher+education+in+India&hl=en&gl=IN",
+    "raw_html_file": "https://serpapi.com/searches/UOP4No2dj8cm989wVaoAL-DOxtKsN7UhytjTi9W7I_U/6aad73091de064d2006a05eb.html",
+    "total_time_taken": 5.08
+  },
+  "search_parameters": {
+    "engine": "google_news",
+    "gl": "in",
+    "hl": "en",
+    "q": "Google News: recent regulation on AI usage in higher education in India"
+  },
+  "news_results": [
+    {
+      "position": 2,
+      "title": "What is AI, how do apps like ChatGPT work and why are there concerns?",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.bbc.com/news/articles/c2l799gxjjpo",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/e0b2/live/5c49c000-6c86-11f0-89ea-4d6f9851f623.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTBlRlYyTVV4NVMwY3lXUzFNVFJDb0FSaXNBaWdCTWdrQkJZcWxzaVJzSVFN",
+      "date": "09/14/2026, 04:09 PM, +0000 UTC",
+      "iso_date": "2026-09-14T16:09:56Z"
+    },
+    {
+      "position": 3,
+      "title": "Deepening our commitment to India\u2019s AI ambition",
+      "source": {
+        "name": "blog.google",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://blog.google&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://blog.google/intl/en-in/company-news/deepening-our-commitment-to-indias-ai-ambition/",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/buld-for-india-and-the-world.gif",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUlRMDUxVlhkcWRFbExjR0pPVFJDZkF4ampCU2dLTWdZQkdxamlFZ3c",
+      "date": "07/14/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-14T07:00:00Z"
+    },
+    {
+      "position": 4,
+      "title": "Indian schools struggle to move beyond AI pilots, only 13% report advanced integration",
+      "source": {
+        "name": "education.economictimes.indiatimes.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://education.economictimes.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://education.economictimes.indiatimes.com/news/school-education/indian-schools-struggle-to-move-beyond-ai-pilots-only-13-report-advanced-integration/133453863",
+      "thumbnail": "https://etimg.etb2bimg.com/thumb/msid-133453863,width-1200,height-900,resizemode-4/.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNHpVblYzTlhGaFFYSkJXbTFsVFJEZ0F4aUFCU2dLTWdrQk1JYUpuU2pRMUFB",
+      "date": "08/24/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-24T07:00:00Z"
+    },
+    {
+      "position": 5,
+      "title": "Why India\u2019s education system needs to shape how learners use AI",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Shantanu Rooj"
+        ]
+      },
+      "link": "https://www.thehindu.com/education/why-indias-education-system-needs-to-shape-how-learners-use-ai/article71297279.ece",
+      "thumbnail": "https://th-i.thgim.com/public/incoming/c6e4e4/article71300029.ece/alternates/LANDSCAPE_1200/Shantanu%20Rooj.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNWZSMkpXTlhSVVZHZFZNVGxJVFJDZkF4ampCU2dLTWdB",
+      "date": "08/10/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-10T07:00:00Z"
+    },
+    {
+      "position": 6,
+      "title": "Google announces free AI training for school teachers in Maharashtra, Assam, Punjab and other regions",
+      "source": {
+        "name": "The Indian Express",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://indianexpress.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://indianexpress.com/article/education/google-announce-free-aritificial-ai-training-module-school-teachers-maharashtra-assam-punjab-chhattisgarh-ladakh-nep-10697518/",
+      "thumbnail": "https://images.indianexpress.com/2026/05/google-ai-teacher-training.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVFNMDV2Y0dWa05WVmpWR2RoVFJDZkF4ampCU2dLTWdZQlVJeVhuQWs",
+      "date": "05/19/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-19T07:00:00Z"
+    },
+    {
+      "position": 7,
+      "title": "IIMC Launches AIME Academy to Promote AI-Based Media Education",
+      "source": {
+        "name": "Entrepreneur India",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.entrepreneurindia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.entrepreneurindia.com/blog/en/news/iimc-launches-aime-academy-to-promote-ai-based-media-education.60271",
+      "thumbnail": "https://www.entrepreneurindia.com/img/1600x940/uploads/news/fi/6a1a85e355a1d.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXFhazlHT1dGcVdHeFlUVE5aVFJDb0F4alRCU2dLTWdZQllKUkVwZ2c",
+      "date": "05/30/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-30T07:00:00Z"
+    },
+    {
+      "position": 8,
+      "title": "Artificial Intelligence | Pros, Cons, Debate, Arguments, Computer Science, & Technology",
+      "source": {
+        "name": "britannica.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.britannica.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.britannica.com/procon/artificial-intelligence-AI-debate",
+      "thumbnail": "https://cdn.britannica.com/46/226046-050-9C554901/3d-rendering-closeup-AI-robot-face-with-front-view-Location-Japan-.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWxTMmxZTVU4M09USlRjbHB4VFJDSUJCak9CQ2dLTWdZeFFJVFNPQVU",
+      "date": "07/22/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-22T07:00:00Z"
+    },
+    {
+      "position": 9,
+      "title": "AI in Education: Google Announces New Training Programme for Teachers Across India",
+      "source": {
+        "name": "NDTV",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.ndtv.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.ndtv.com/education/ai-in-education-google-announces-new-training-programme-for-teachers-across-india-11517490",
+      "thumbnail": "https://c.ndtvimg.com/2026-05/dgsvt20g_google_625x300_19_May_26.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWlZMm8wTVZGWGVYWmhkM05CVFJDZkF4ampCU2dLTWdhZFE1eU5JUWs",
+      "date": "05/19/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-19T07:00:00Z"
+    },
+    {
+      "position": 10,
+      "title": "OpenAI: Latest news and insights",
+      "source": {
+        "name": "computerworld.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.computerworld.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.computerworld.com/article/4015023/openai-latest-news-and-insights.html",
+      "thumbnail": "https://www.computerworld.com/wp-content/uploads/2026/08/4015023-0-80306200-1786615759-shutterstock_editorial_2253221991.jpg?quality=50&strip=all&w=1024",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTJZMjFXVm5KS1dXVklTR3AwVFJDZkF4ampCU2dLTWdhVm81QnBOUVk",
+      "date": "08/13/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-13T07:00:00Z"
+    },
+    {
+      "position": 11,
+      "title": "From policy to practice: supporting the future of AI in education",
+      "source": {
+        "name": "blog.google",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://blog.google&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://blog.google/products-and-platforms/products/education/ai-policy-guidance-labs/",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Policy_lab_hero.width-200.format-webp.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iKkNnNWpaSGR3WkhGT1dtczVOWEJNVFJCd0dNZ0JLQW95QnFGRWxxc2hDUQ",
+      "date": "05/15/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-15T07:00:00Z"
+    },
+    {
+      "position": 12,
+      "title": "Demystifying AI in higher education",
+      "source": {
+        "name": "The Times of India",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Onkar Singh"
+        ]
+      },
+      "link": "https://timesofindia.indiatimes.com/toi-blogs/nation-notes/demystifying-ai-in-higher-education/articleshow/133383376.cms",
+      "thumbnail": "https://static.toiimg.com/thumb/msid-133383462,width-1280,height-720,imgsize-57162,resizemode-4,overlay-toiblogs,pt-32,x_pad-1045,y_pad-670/photo.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDBOV0p5TkZCU1NqbENUVXBNVFJDZkF4ampCU2dLTWdZcEFJak5NUVk",
+      "date": "08/20/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-20T07:00:00Z"
+    },
+    {
+      "position": 13,
+      "title": "UGC formulates policy to ensure ethical AI use in higher education",
+      "source": {
+        "name": "New Age BD",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.newagebd.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.newagebd.net/post/education/297738/ugc-formulates-policy-to-ensure-ethical-ai-use-in-higher-education",
+      "thumbnail": "https://outspoken.newagebd.com/files/img/202604/d17a8a24941894abe04b65c2d5abb66d.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWpVSFJmY0RseVZUTm5TVXRwVFJDcEFSaXFBaWdCTWdZQlFKaUNvQWs",
+      "date": "04/23/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-23T07:00:00Z"
+    },
+    {
+      "position": 14,
+      "title": "How universities are preparing students for an AI-powered future",
+      "source": {
+        "name": "blog.google",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://blog.google&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Marta Mcalister"
+        ]
+      },
+      "link": "https://blog.google/products-and-platforms/products/education/higher-education-gemini-notebooklm/",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Lessons_from_leading_universities.width-200.format-webp.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iKkNnNUZjRkoxY0cxT1NtcG1iVlJuVFJCd0dNZ0JLQW95QmlWUmpyWXNCdw",
+      "date": "06/17/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-17T07:00:00Z"
+    },
+    {
+      "position": 15,
+      "title": "Revised UGC norms treat unacknowledged AI use as plagiarism in PhD Work",
+      "source": {
+        "name": "The Times of India",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Anjanaya Singh"
+        ]
+      },
+      "link": "https://timesofindia.indiatimes.com/city/lucknow/revised-ugc-norms-treat-unacknowledged-ai-use-as-plagiarism-in-phd-work/articleshow/131596752.cms",
+      "thumbnail": "https://static.toiimg.com/thumb/msid-33486062,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNXlZVWxXVlhWcWNGcENVVEZFVFJDZkF4ampCU2dLTWdNRm94QQ",
+      "date": "06/09/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-09T07:00:00Z"
+    },
+    {
+      "position": 16,
+      "title": "WATCH | Google bets on South Africa with new AI and cloud investments",
+      "source": {
+        "name": "The Witness | Your compass in the community",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://witness.co.za&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Jade le Roux"
+        ]
+      },
+      "link": "https://witness.co.za/news/2026/07/01/watch-google-bets-on-south-africa-with-new-ai-and-cloud-investments/",
+      "thumbnail": "https://images.caxton.co.za/wp-content/uploads/sites/144/2026/07/witness-google-summiy-780x470.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTZUVTVtYVVGSFVrVmhMVU5rVFJDdUF4aktCU2dLTWdrWkE0cnJFZXRyVVFF",
+      "date": "07/01/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-01T07:00:00Z"
+    },
+    {
+      "position": 17,
+      "title": "Democratising AI in India",
+      "source": {
+        "name": "PIB",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.pib.gov.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2225781&reg=3&lang=2",
+      "thumbnail": "https://static.pib.gov.in/WriteReadData/userfiles/image/Screenshot2026-02-101427323VRX.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdRa1p4U2tKS1FqSlNTREJhVFJDWEFoakpBaWdLTWdhWmdwSVJOUVk",
+      "date": "02/10/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-10T08:00:00Z"
+    },
+    {
+      "position": 18,
+      "title": "India is teaching Google how AI in education can scale",
+      "source": {
+        "name": "TechCrunch",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://techcrunch.com/2026/01/29/india-is-teaching-google-how-ai-in-education-can-scale/",
+      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/01/google-gemini-jagmeet-singh-techcrunch_09ed85.jpg?w=1024",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUJUbU5tV0doeVRITTVaVE5zVFJERUF4aW5CU2dLTWdhaFU0RE1KUWc",
+      "date": "01/29/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-29T08:00:00Z"
+    },
+    {
+      "position": 19,
+      "title": "Start the semester with one year of Gemini, on us",
+      "source": {
+        "name": "blog.google",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://blog.google&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BTS_gemini_hero_withcopy.width-200.format-webp.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iKkNnNVRUMFJqYlVGdVkyUlRUSEJvVFJCd0dNZ0JLQW95QnFVeWppLXBCdw",
+      "date": "08/19/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-19T07:00:00Z"
+    },
+    {
+      "position": 20,
+      "title": "AI\u2019s new classroom: what India, Europe, and the U.S. can teach each other",
+      "source": {
+        "name": "education.economictimes.indiatimes.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://education.economictimes.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://education.economictimes.indiatimes.com/news/higher-education/ais-new-classroom-what-india-europe-and-the-u-s-can-teach-each-other/130623803",
+      "thumbnail": "https://etimg.etb2bimg.com/thumb/msid-130623803,width-1200,height-900,resizemode-4/.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNHpXWEY0TW1vME9VVTNTa0V6VFJEZ0F4aUFCU2dLTWdzQlFJenFyS2JBY1Zuc2V3",
+      "date": "05/08/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-08T07:00:00Z"
+    },
+    {
+      "position": 21,
+      "title": "Universities turn to edtechs to embed AI into core degrees under NEP",
+      "source": {
+        "name": "The Economic Times B2B",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://b2b.economictimes.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Bhuvana Kamath"
+        ]
+      },
+      "link": "https://b2b.economictimes.indiatimes.com/news/entrepreneur/ai-embedded-in-core-university-curricula-a-new-era-for-indian-education-under-nep-2020/127677713",
+      "thumbnail": "https://etimg.etb2bimg.com/thumb/msid-127677713,width-1200,height-900,resizemode-4/.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNHRlamd5YjFCaFEwUmlVVE54VFJEZ0F4aUFCU2dLTWdzRlFZamtIbWx6RWtsUGln",
+      "date": "01/28/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-28T08:00:00Z"
+    },
+    {
+      "position": 22,
+      "title": "AI and emerging tech: How Indian universities are shaping new face of higher education",
+      "source": {
+        "name": "education.economictimes.indiatimes.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://education.economictimes.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://education.economictimes.indiatimes.com/news/higher-education/transforming-higher-education-how-indian-universities-integrate-ai-and-technology/125151413",
+      "thumbnail": "https://etimg.etb2bimg.com/thumb/msid-125151413,width-1200,height-900,resizemode-4/.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXdjRXd5YWs5SmJYaEpVak4yVFJEZ0F4aUFCU2dLTWdZQnNJN1VOQVk",
+      "date": "11/07/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-07T08:00:00Z"
+    },
+    {
+      "position": 23,
+      "title": "To adopt or to ban? Student perceptions and use of generative AI in higher education",
+      "source": {
+        "name": "Nature",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.nature.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.nature.com/articles/s41599-025-05982-7",
+      "thumbnail": "https://media.springernature.com/m685/springer-static/image/art%3A10.1057%2Fs41599-025-05982-7/MediaObjects/41599_2025_5982_Fig1_HTML.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXRiR2xHTUhsYU1tOXNTMkZ5VFJDUEF4aXRCU2dLTWdhTkU0Q3B4UU0",
+      "date": "11/07/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-07T08:00:00Z"
+    },
+    {
+      "position": 24,
+      "title": "Using AI to Protect Teaching Time and Improve Learning Quality in Indian Schools",
+      "source": {
+        "name": "orfonline.org",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.orfonline.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Arpan Tulsyan"
+        ]
+      },
+      "link": "https://www.orfonline.org/research/using-ai-to-protect-teaching-time-and-improve-learning-quality-in-indian-schools",
+      "thumbnail": "https://www.orfonline.org/public/uploads/posts/image/thumbnail/1784001135_IB-888.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNDRTVmhDVldSUlpXbDFaSFZNVFJDZ0JSaklBeWdLTWdrQlFJelRvT1d3eXdF",
+      "date": "07/13/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-13T07:00:00Z"
+    },
+    {
+      "position": 25,
+      "title": "Experts warn AI is making your brain work less",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.bbc.com/news/articles/cd6xz12j6pzo",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/b571/live/1a53ee20-dab1-11f0-b2d6-8b03c56348b7.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXBUMDlpVjI1WlRFVXdTak00VFJDTkFoamdBeWdLTWdZVlFKQXBwZ2M",
+      "date": "12/20/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-20T08:00:00Z"
+    },
+    {
+      "position": 26,
+      "title": "ChatGPT, Gemini: Why OpenAI, Google and Perplexity are offering free AI in India?",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Nikita Yadav"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/c14pr0enjr6o",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/03c9/live/f0bae610-b9f2-11f0-b7a6-fd0b59da7243.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWhOVFpDZEdnMFJHZ3RhSGwzVFJDT0FoamdBeWdLTWdhNW9vWVRPUU0",
+      "date": "11/08/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-08T08:00:00Z"
+    },
+    {
+      "position": 27,
+      "title": "Google\u2019s Gemini for education expands access across 1,000 US colleges: Integrating AI into academic and a",
+      "source": {
+        "name": "The Times of India",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://timesofindia.indiatimes.com/education/news/googles-gemini-for-education-expands-access-across-1000-us-colleges-integrating-ai-into-academic-and-administrative-workflows/articleshow/123776338.cms",
+      "thumbnail": "https://static.toiimg.com/thumb/msid-123776332,width-1280,height-720,resizemode-4/123776332.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXdNbXh2UVc1MWFGQTFkVXRWVFJDZkF4ampCU2dLTWdhaGxZenJPUVU",
+      "date": "09/09/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-09-09T07:00:00Z"
+    },
+    {
+      "position": 28,
+      "title": "Use of AI in education: Deciding on the future we want",
+      "source": {
+        "name": "UNESCO",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.unesco.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.unesco.org/en/articles/use-ai-education-deciding-future-we-want",
+      "thumbnail": "https://www.unesco.org/sites/default/files/styles/paragraph_medium_desktop/article/2024-05/use-ai-education-deciding-future-we-want.jpg.webp?itok=CBcTVv5R",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXZORVZWWkROdVFrOWhZakpyVFJDWUF4amlCQ2dLTWdZWmxJcU10UVk",
+      "date": "05/29/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-05-29T07:00:00Z"
+    },
+    {
+      "position": 29,
+      "title": "Navigating AI in education: The growing need for regulation and compliance",
+      "source": {
+        "name": "ET CIO",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://cio.economictimes.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/navigating-ai-in-education-the-growing-need-for-regulation-and-compliance/119593184",
+      "thumbnail": "https://etimg.etb2bimg.com/thumb/msid-119593184,width-1200,height-900,resizemode-4/.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNWFObFpoT1dOSmNHZE9iQzF2VFJEZ0F4aUFCU2dLTWdB",
+      "date": "03/28/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-03-28T07:00:00Z"
+    },
+    {
+      "position": 30,
+      "title": "AI and the digital divide in education",
+      "source": {
+        "name": "Frontiers",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.frontiersin.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Mary Matlakala"
+        ]
+      },
+      "link": "https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2026.1759027/full",
+      "thumbnail": "https://www.frontiersin.org/files/Articles/1759027/xml-images/fcomp-08-1759027-g001.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNWthemg2ZFZCZmFGaDNUR3RHVFJEOUFoaWxCaWdLTWd1RkVZU3VXZUxJNU9wY3VR",
+      "date": "02/04/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-04T08:00:00Z"
+    },
+    {
+      "position": 31,
+      "title": "Karnataka will establish India\u2019s first govt-driven AI university: CM",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/news/national/karnataka/karnataka-will-establish-indias-first-government-driven-ai-university-says-chief-minister-dk-shivakumar/article71220051.ece",
+      "thumbnail": "https://th-i.thgim.com/public/news/national/karnataka/fgaj0s/article71220231.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-07-14%20at%2012.36.00.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHlXR1ZWWWtOWUxWZHlPSHBYVFJDZkF4ampCU2dLTWdhTklwU0hMZ2M",
+      "date": "07/14/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-14T07:00:00Z"
+    },
+    {
+      "position": 32,
+      "title": "AI is Destroying the University and Learning Itself",
+      "source": {
+        "name": "Home \u2767 Current Affairs",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.currentaffairs.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Ronald E Purser"
+        ]
+      },
+      "link": "https://www.currentaffairs.org/news/ai-is-destroying-the-university-and-learning-itself",
+      "thumbnail": "https://www.currentaffairs.org/hubfs/Issue%2056%20Online%20Images/Issue56-Chatversity-Online-Image.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW5PRmRHVEZONFNqa3libU41VFJDNEF4aTZCU2dLTWdhcGRJcU9NUVk",
+      "date": "12/01/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-01T08:00:00Z"
+    },
+    {
+      "position": 33,
+      "title": "\u201cNo technology has me dreaming bigger than AI\u201d",
+      "source": {
+        "name": "blog.google",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://blog.google&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sundar Pichai"
+        ]
+      },
+      "link": "https://blog.google/company-news/inside-google/message-ceo/sundar-pichai-ai-impact-summit-2026/",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI-Google_2.width-200.format-webp.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iKkNnNVJOR293TVZSM2JITjFkelJzVFJCd0dNZ0JLQW95QnBXU2xBazVCdw",
+      "date": "02/19/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-19T08:00:00Z"
+    },
+    {
+      "position": 34,
+      "title": "A Tech Policy Planning Guide for India\u2014Beyond the First 100 Days",
+      "source": {
+        "name": "carnegieendowment.org",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://carnegieendowment.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://carnegieendowment.org/india/research/2024/11/tech-policy-planning-guide-india",
+      "thumbnail": "https://assets.carnegieendowment.org/_/eyJrZXkiOiJzdGF0aWMvbWVkaWEvaW1hZ2VzL2lTdG9jay0xMzk0NDAxNjQ4LmpwZyJ9",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVpjM1JyVHpSMFgwOVFSekJtVFJERUF4aW1CU2dLTWdZQk1JWUxHUVk",
+      "date": "11/13/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-11-13T08:00:00Z"
+    },
+    {
+      "position": 35,
+      "title": "Our AI Literacy Day recap: putting educators in the lead",
+      "source": {
+        "name": "blog.google",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://blog.google&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Jennie Magiera"
+        ]
+      },
+      "link": "https://blog.google/products-and-platforms/products/education/ai-literacy-tools-certifications/",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AILiteracyDay_NYCPS_Google_Hero.width-200.format-webp.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iLkNnNUhhRmgwY0hKNmNGcFBPSFYwVFJCd0dNZ0JLQW95Q1FHQWl1VTBwZGl2QVE",
+      "date": "04/01/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-01T07:00:00Z"
+    },
+    {
+      "position": 36,
+      "title": "Unemployment: India's young are more educated than ever. So why are so many jobless?",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Soutik Biswas"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/c17841zez8wo",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/6661/live/91cb0600-2291-11f1-a268-8f21a3f62cfd.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNWFhVGt3WkZjMFdGUnNNSHBGVFJDX0FoamdBeWdLTWdrUk5ZcnFxZVZyeGdJ",
+      "date": "03/19/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-19T07:00:00Z"
+    },
+    {
+      "position": 37,
+      "title": "India\u2019s Regulation of AI and Large Language Models",
+      "source": {
+        "name": "India Briefing",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.india-briefing.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Melissa Cyrill"
+        ]
+      },
+      "link": "https://www.india-briefing.com/news/india-regulation-of-ai-and-large-language-models-31680.html/",
+      "thumbnail": "https://www.india-briefing.com/news/wp-content/uploads/2024/03/Indias-Regulation-of-AI-and-Large-Language-Models.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTJWME5MVVhKaWFUUm9iR2t5VFJDZkF4ampCU2dLTWdtQlZJakpxU2gwandF",
+      "date": "03/27/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-03-27T07:00:00Z"
+    },
+    {
+      "position": 38,
+      "title": "How People Around the World View AI",
+      "source": {
+        "name": "Pew Research Center",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.pewresearch.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Jacob Poushter",
+          "Moira Fagan",
+          "Manolo Corichi"
+        ]
+      },
+      "link": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/",
+      "thumbnail": "https://www.pewresearch.org/wp-content/uploads/sites/20/2025/10/PG_25.10.15_AI_featured@4x.png?w=268&h=151&crop=1",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUtVblZOU1dsM2R6QnFWbGRRVFJDWEFSaU1BaWdLTWdZQlVvckVxZ1k",
+      "date": "10/15/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-15T07:00:00Z"
+    },
+    {
+      "position": 39,
+      "title": "Evaluating AI-powered learning assistants in engineering higher education with implications for student engagement, ethics, and policy | Scientific Reports",
+      "source": {
+        "name": "Nature",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.nature.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Ramteja Sajja",
+          "Ibrahim Demir"
+        ]
+      },
+      "link": "https://www.nature.com/articles/s41598-026-39237-5",
+      "thumbnail": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41598-026-39237-5/MediaObjects/41598_2026_39237_Fig1_HTML.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVNhRkZNUm14NFZrZHZORXN5VFJDMUFSaVdBaWdCTWdZQkVveFBrUWc",
+      "date": "02/06/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-06T08:00:00Z"
+    },
+    {
+      "position": 40,
+      "title": "Anthropic opens Bengaluru office and announces new partnerships across India",
+      "source": {
+        "name": "Anthropic",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.anthropic.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
+      "thumbnail": "https://www-cdn.anthropic.com/images/4zrzovbb/website/ffc0d7957a232518519f13c0d64896921ea215e2-1000x1000.svg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWZNbGRmVjBwMVZtZHFOVmxzVFJEaEFSamhBU2dCTWdhTllvNG5NUWM",
+      "date": "02/16/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-16T08:00:00Z"
+    },
+    {
+      "position": 41,
+      "title": "The lecturers learning to spot AI misconduct",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Ellis Maddison"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/c2kn3gn8vl9o",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/a3df/live/fe0d79a0-9ddb-11f0-9f23-2534d63ace40.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUdYMDFYY0VwMlUwUTVaVlZWVFJDTkFoamdBeWdLTWdtSlVKYU9LR2k1aUFJ",
+      "date": "10/20/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-20T07:00:00Z"
+    },
+    {
+      "position": 42,
+      "title": "Teachers can use AI to save time on marking, new guidance says",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Hazel Shearing"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/c1kvyj7dkp0o",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/544c/live/391c8370-44fd-11f0-b01b-03d6e6af3a02.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHdMVTg1UTIxclZ6bG9SSGMzVFJDTkFoamdBeWdLTWdZOUU0QXpsUW8",
+      "date": "06/10/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-06-10T07:00:00Z"
+    },
+    {
+      "position": 43,
+      "title": "Introducing study mode",
+      "source": {
+        "name": "OpenAI",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://openai.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://openai.com/index/chatgpt-study-mode/",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7MX2mPI1TJGJqIdwZpRcnY/c54d6250b7ef8cccf09724330fb3d200/Blog_StudyMode_OpenGraph.png?w=1600&h=900&fit=fill",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXVPRXhhWVZodlpFNXlWVXhCVFJDZkF4ampCU2dLTWdhbHBKU3R1UVk",
+      "date": "07/29/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-07-29T07:00:00Z"
+    },
+    {
+      "position": 44,
+      "title": "AI-powered success\u2014with more than 1,000 stories of customer transformation and innovation",
+      "source": {
+        "name": "microsoft.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.microsoft.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Alysa Taylor"
+        ]
+      },
+      "link": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/07/24/ai-powered-success-with-1000-stories-of-customer-transformation-and-innovation/",
+      "thumbnail": "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/12/Cloud_1000customerstories_Blog_250716.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDRXVjk0Unpkc1pEZFViRlk0VFJDZkF4ampCU2dLTWdhRk5veGtHZ2c",
+      "date": "07/24/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-07-24T07:00:00Z"
+    },
+    {
+      "position": 45,
+      "title": "Cyber Security in the Era of AI A Challenge for Education in India",
+      "source": {
+        "name": "Daily Excelsior",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.dailyexcelsior.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.dailyexcelsior.com/cyber-security-in-the-era-of-ai-a-challenge-for-education-in-india/",
+      "thumbnail": "https://www.dailyexcelsior.com/sortd-service/imaginary/v22-01/jpg/large/high?url=cHVibGlzaC1kYWlseWV4Y2Vsc2lvci1jb20tcHJvZC1zb3J0ZC9tZWRpYWRkMDc4YjQwLTYwZjEtMTFmMS1iZTUyLWYxMTUxODEwYWQ5Ni5naWY=",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHdlbHA2TmpneVpWZE5ZekJvVFJDTEF4aUlCaWdLTWdZQk1JaG5HZ2s",
+      "date": "04/19/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-19T07:00:00Z"
+    },
+    {
+      "position": 46,
+      "title": "RETRACTED ARTICLE: The effect of ChatGPT on students\u2019 learning performance, learning perception, and higher-order thinking: insights from a meta-analysis | Humanities and Social Sciences Communications",
+      "source": {
+        "name": "Nature",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.nature.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Wenxiang Fan",
+          "Jin Feng Wang"
+        ]
+      },
+      "link": "https://www.nature.com/articles/s41599-025-04787-y",
+      "thumbnail": "https://media.springernature.com/m685/springer-static/image/art%3A10.1057%2Fs41599-025-04787-y/MediaObjects/41599_2025_4787_Fig1_HTML.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNTZhRkZFVnpGSVZEZzJOWFZOVFJEYUF4aUdCU2dLTWdPQkVRdw",
+      "date": "05/06/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-05-06T07:00:00Z"
+    },
+    {
+      "position": 47,
+      "title": "Digital Dreams, Real Challenges: Key Factors Driving India\u2019s AI Ecosystem",
+      "source": {
+        "name": "orfonline.org",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.orfonline.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Anulekha Nandi"
+        ]
+      },
+      "link": "https://www.orfonline.org/research/digital-dreams-real-challenges-key-factors-driving-indias-ai-ecosystem",
+      "thumbnail": "https://www.orfonline.org/public/uploads/posts/image/thumbnail/663b38cebae6c.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNTVZa0paUlZVMmVsOW1WV28xVFJEQUFoalpBU2dLTWdzQkVJZ2dJYVZURnVtV3dR",
+      "date": "05/08/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-05-08T07:00:00Z"
+    },
+    {
+      "position": 48,
+      "title": "Want to study smarter? Try Google's new AI model to learn interactive lessons",
+      "source": {
+        "name": "India Today",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.indiatoday.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.indiatoday.in/education-today/news/story/google-learn-your-way-tool-uses-ai-to-turn-textbooks-into-interactive-lessons-2853735-2026-01-18",
+      "thumbnail": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202601/google-090606731-16x9.jpg?VersionId=IawqYV0E60MJBEmn9NhYFMr_zfS_69AF&size=1280:720",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxOalJDWm1wYU0wODRPRzFoVFJDZkF4ampCU2dLTWdhbE00aU5IUVU",
+      "date": "01/18/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-18T08:00:00Z"
+    },
+    {
+      "position": 49,
+      "title": "Google seeks partnerships lead to drive AI in higher education",
+      "source": {
+        "name": "EdTech Innovation Hub",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.edtechinnovationhub.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.edtechinnovationhub.com/news/google-seeks-partnerships-lead-to-drive-ai-in-higher-education",
+      "thumbnail": "https://images.squarespace-cdn.com/content/v1/65a69e0c110a6977ead9741c/914e0bee-6570-4535-bff3-19f49bca3836/ChatGPT+Image+Nov+5%2C+2025%2C+02_25_03+PM.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUtOR0pRUmpGWGJURlNPWEJMVFJERUF4aW1CU2dLTWdhUlVZNkhJZ2s",
+      "date": "11/06/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-06T08:00:00Z"
+    },
+    {
+      "position": 50,
+      "title": "Central University of Tamil Nadu leverages AI to convert faculty research work into multilingual podcasts",
+      "source": {
+        "name": "education.economictimes.indiatimes.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://education.economictimes.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://education.economictimes.indiatimes.com/news/higher-education/central-university-of-tamil-nadu-leverages-ai-to-convert-faculty-research-work-into-multilingual-podcast/121800037",
+      "thumbnail": "https://etimg.etb2bimg.com/thumb/msid-121800037,width-1200,height-900,resizemode-4/.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHlZVmsyUldOM1RGaEhkSGt4VFJEZ0F4aUFCU2dLTWdZVmNJNFNLUWc",
+      "date": "06/12/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-06-12T07:00:00Z"
+    },
+    {
+      "position": 51,
+      "title": "Artificial intelligence in biomedical research: advancing non-animal methodologies",
+      "source": {
+        "name": "Frontiers",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.frontiersin.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Amrita Parida",
+          "Jagnoor Sandhu",
+          "Shreya Hegde"
+        ]
+      },
+      "link": "https://www.frontiersin.org/journals/animal-science/articles/10.3389/fanim.2025.1687111/full",
+      "thumbnail": "https://www.frontiersin.org/files/Articles/1687111/xml-images/fanim-06-1687111-g001.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlTR1JWYUdSVGVEaHpYMlpxVFJEQUFoaS1CeWdLTWdhSmNaRFBNUVU",
+      "date": "12/08/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-08T08:00:00Z"
+    },
+    {
+      "position": 52,
+      "title": "From MBA to AI-powered leadership: India\u2019s top B-schools redesign programmes for an AI-driven economy",
+      "source": {
+        "name": "education.economictimes.indiatimes.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://education.economictimes.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://education.economictimes.indiatimes.com/news/higher-education/from-mba-to-ai-powered-leadership-indias-top-b-schools-redesign-programmes-for-an-ai-driven-economy/131774896",
+      "thumbnail": "https://etimg.etb2bimg.com/thumb/msid-131774896,width-1200,height-900,resizemode-4/.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVFSakZVVWtabGRtOXdSMkpLVFJEZ0F4aUFCU2dLTWdZOUU0d3psUW8",
+      "date": "06/17/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-17T07:00:00Z"
+    },
+    {
+      "position": 53,
+      "title": "Budget 2025 & AI in education: Preparing India for the future workforce",
+      "source": {
+        "name": "education.economictimes.indiatimes.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://education.economictimes.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://education.economictimes.indiatimes.com/news/higher-education/budget-2025-ai-in-education-preparing-india-for-the-future-workforce/117886397",
+      "thumbnail": "https://etimg.etb2bimg.com/thumb/msid-117886397,width-1200,height-900,resizemode-4/.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXRVbDk0WkhZME1rZGtRMDlxVFJEZ0F4aUFCU2dLTWdhaFJJcXVvUVU",
+      "date": "02/03/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-02-03T08:00:00Z"
+    },
+    {
+      "position": 54,
+      "title": "Bringing the best of AI to college students for free",
+      "source": {
+        "name": "blog.google",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://blog.google&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sundar Pichai"
+        ]
+      },
+      "link": "https://blog.google/products-and-platforms/products/gemini/google-ai-pro-students-learning/",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BTS_SP_Crop.width-200.format-webp.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iKkNnNUdiVWRuZVZoTFkxTXdiVTltVFJCd0dNZ0JLQW95Qm8xU2pnZ2xDQQ",
+      "date": "08/06/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-08-06T07:00:00Z"
+    },
+    {
+      "position": 55,
+      "title": "AI Governance in a Complex and Rapidly Changing Regulatory Landscape: A Global Perspective",
+      "source": {
+        "name": "Nature",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.nature.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Imad Antoine Ibrahim",
+          "Esmat Zaidan"
+        ]
+      },
+      "link": "https://www.nature.com/articles/s41599-024-03560-x",
+      "thumbnail": "https://media.springernature.com/m685/springer-static/image/art%3A10.1057%2Fs41599-024-03560-x/MediaObjects/41599_2024_3560_Fig1_HTML.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTZTMjlLUVZWcGVHeGtaMXAzVFJEakFoaXRCU2dLTWdhaFVwQ3RyUVk",
+      "date": "09/01/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-09-01T07:00:00Z"
+    },
+    {
+      "position": 56,
+      "title": "What to know about Canada's new AI strategy",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Nadine Yousif"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/c4g7gv8l0xlo",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/17c7/live/fa828660-6034-11f1-9792-c579e9d62a5f.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXNWVEpQUzJWQlpsZExZV2t6VFJDTkFoamdBeWdLTWdrcEpZU3VsYXBydFFB",
+      "date": "06/04/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-04T07:00:00Z"
+    },
+    {
+      "position": 57,
+      "title": "Health advisory: Artificial intelligence and adolescent well-being",
+      "source": {
+        "name": "American Psychological Association (APA)",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.apa.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.apa.org/topics/artificial-intelligence-machine-learning/health-advisory-ai-adolescent-well-being",
+      "thumbnail": "https://www.apa.org/images/health-advisory-ai-adolescent-well-being-hero_tcm7-338859.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNXdXV3hyWjNRNFFqSnpWRVo2VFJDeEF4akVCU2dLTWdzQk1KSWlvdWhielNsMHdR",
+      "date": "06/03/2025, 04:18 AM, +0000 UTC",
+      "iso_date": "2025-06-03T04:18:10Z"
+    },
+    {
+      "position": 58,
+      "title": "Apple launches India education hub to offer coding, automation and digital skills",
+      "source": {
+        "name": "People Matters - HR News",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.peoplematters.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Samriddhi Srivastava"
+        ]
+      },
+      "link": "https://www.peoplematters.in/news/training-development/apple-launches-india-education-hub-to-offer-coding-automation-and-digital-skills-48294",
+      "thumbnail": "https://asset.peoplematters.in/images/9cd63ef1-86f8-4ddc-aad2-2d9e73b811e2.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTJjemxJVlRGR1VUbE9SbVJJVFJDZkF4ampCU2dLTWdZRlFwb3BvUWs",
+      "date": "02/04/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-04T08:00:00Z"
+    },
+    {
+      "position": 59,
+      "title": "Back to books - Sweden's schools cutting back on digital learning",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Maddy Savage"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/cly0vk77vdko",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/f2b8/live/95806410-36a1-11f1-b2fb-538d90d10f11.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUdObEZDU0dGTFpFaEZlWEJoVFJDb0FSaXNBaWdCTWdhWkVwUUptUW8",
+      "date": "04/15/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-15T07:00:00Z"
+    },
+    {
+      "position": 60,
+      "title": "AI toys for young children need tighter rules, researchers warn",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Zoe Kleinman"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/clyg4wx6nxgo",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/fb66/live/c3116580-1e20-11f1-8c74-957f793ca681.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTNlbTVvVjBOUVVXY3dNa1JmVFJDT0FoamdBeWdLTWdhQk5JYVBtUWs",
+      "date": "03/13/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-13T07:00:00Z"
+    },
+    {
+      "position": 61,
+      "title": "Use of tech like AI and ML has the potential to transform higher education | Education",
+      "source": {
+        "name": "hindustantimes.com",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hindustantimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.hindustantimes.com/education/news/use-of-tech-like-ai-and-ml-has-the-potential-to-transform-higher-education-101668513305169.html",
+      "thumbnail": "https://images.hindustantimes.com/img/2022/11/15/1600x900/AI_and_ML_in_Higher_education_1668514399749_1668514399882_1668514399882.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU9WRmxQUkZCc1YySjNWM05oVFJDZkF4ampCU2dLTWdZQlVZYU12UVE",
+      "date": "11/15/2022, 08:00 AM, +0000 UTC",
+      "iso_date": "2022-11-15T08:00:00Z"
+    },
+    {
+      "position": 62,
+      "title": "Inside the AI Index: 12 Takeaways from the 2026 Report",
+      "source": {
+        "name": "Stanford HAI",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://hai.stanford.edu&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Shana Lynch"
+        ]
+      },
+      "link": "https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report",
+      "thumbnail": "https://hai.stanford.edu/assets/images/ai-index-2026-art-1200x637.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNW9jVXc1ZUZaNGVsOVRWR0pOVFJDakFSaTBBaWdCTWdNQm9nZw",
+      "date": "04/11/2026, 06:53 PM, +0000 UTC",
+      "iso_date": "2026-04-11T18:53:29Z"
+    },
+    {
+      "position": 63,
+      "title": "The impact of digital technology, social media, and artificial intelligence on cognitive functions: a review",
+      "source": {
+        "name": "Frontiers",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.frontiersin.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.frontiersin.org/journals/cognition/articles/10.3389/fcogn.2023.1203077/full",
+      "thumbnail": "https://d2csxpduxe849s.cloudfront.net/media/E32629C6-9347-4F84-81FEAEF7BFA342B3/3E97E346-1F07-4F8C-8AFCDE31F7815679/E04E60B2-42FF-4681-B1D9366EE60BE1B3/WebsiteWebP_XL-FCOGN_Main%20visual_Purple.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHpVamhaUzIxVFN6QklPWGQzVFJDZkF4ampCU2dLTWdhTlFvcUpOUVk",
+      "date": "11/24/2023, 08:00 AM, +0000 UTC",
+      "iso_date": "2023-11-24T08:00:00Z"
+    },
+    {
+      "position": 64,
+      "title": "Canada needs a national strategy for generative AI in higher education",
+      "source": {
+        "name": "Policy Options",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://policyoptions.irpp.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://policyoptions.irpp.org/2025/09/ai-higher-ed/",
+      "thumbnail": "https://policyoptions.irpp.org/wp-content/uploads/2025/09/Newsletter-Canada-needs-a-national-strategy-for-generative-AI-in-higher-education.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVJNRlZqWkU1QlN6bEtOVFp3VFJDc0FoallCQ2dLTWdrbEFvUk1UYU10UWdN",
+      "date": "09/19/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-09-19T07:00:00Z"
+    },
+    {
+      "position": 65,
+      "title": "India tells university to leave AI summit after presenting Chinese robot as its own, sources say",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Munsif Vengattil"
+        ]
+      },
+      "link": "https://www.reuters.com/world/china/india-tells-university-leave-ai-summit-after-presenting-chinese-robot-its-own-2026-02-18/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/LYRPFDZ4DJPPPIAS4PXLNPUBKE.jpg?auth=07b54b1aab032a6b07c284ba9b7b696b080f3e7facfb36309e85d412ca54facb&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTVla0V5UldWell6TmtNMHMwVFJERUF4aW1CU2dLTWdZQlVKQ2pJQWs",
+      "date": "02/18/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-18T08:00:00Z"
+    },
+    {
+      "position": 66,
+      "title": "The future of education utilizing artificial intelligence in Turkey",
+      "source": {
+        "name": "Nature",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.nature.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Mustafa \u0130\u00e7en"
+        ]
+      },
+      "link": "https://www.nature.com/articles/s41599-022-01284-4",
+      "thumbnail": "https://media.springernature.com/m685/springer-static/image/art%3A10.1057%2Fs41599-022-01284-4/MediaObjects/41599_2022_1284_Fig1_HTML.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNVhZMTh4UldVM1pWcFVRVzFOVFJDcEF4aXRCU2dLTWdNUkJBbw",
+      "date": "08/11/2022, 07:00 AM, +0000 UTC",
+      "iso_date": "2022-08-11T07:00:00Z"
+    },
+    {
+      "position": 67,
+      "title": "AI is complicating plagiarism. How should scientists respond?",
+      "source": {
+        "name": "Nature",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.nature.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Diana Kwon"
+        ]
+      },
+      "link": "https://www.nature.com/articles/d41586-024-02371-z",
+      "thumbnail": "https://media.nature.com/w767/magazine-assets/d41586-024-02371-z/d41586-024-02371-z_27402564.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXpObTFaVWpGTk5YSmpibFZJVFJEakF4ajdCQ2dLTWdZQlM1QkJJd2c",
+      "date": "07/30/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-07-30T07:00:00Z"
+    },
+    {
+      "position": 68,
+      "title": "Universities enrolling foreign students with poor English, BBC finds",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "fergus hewison",
+          "Paul Kenyon"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/c0mzdejg1d3o",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/3ac7/live/a4e7eec0-b153-11ef-a2ca-e99d0c9a24e3.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDFNMjB5ZDA5V1gwWlJWMmQzVFJDT0FoamdBeWdLTWdZQklKSkxsQW8",
+      "date": "12/03/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-12-03T08:00:00Z"
+    },
+    {
+      "position": 69,
+      "title": "Introducing Claude for Education",
+      "source": {
+        "name": "Anthropic",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.anthropic.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.anthropic.com/news/introducing-claude-for-education",
+      "thumbnail": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff5d0990ee33385000ff56ed82f3c5efb4e2d33da-2400x1260.png&w=3840&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5TMEpwYUhadU9UUlRRa3d0VFJDUkF4ajhCU2dLTWdZcFpZck90UVE",
+      "date": "04/02/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-04-02T07:00:00Z"
+    },
+    {
+      "position": 70,
+      "title": "How student loans work for tuition fees and living costs",
+      "source": {
+        "name": "bbc.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Hazel Shearing"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/cn5k22gk9lvo",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/e9f6/live/24906c90-51c4-11f0-b4be-8f7caf53b80c.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxXblJYWVc5Uk9WRndkVFJXVFJDT0FoamdBeWdLTWdZQlE0eFBvUWc",
+      "date": "08/11/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-11T07:00:00Z"
+    },
+    {
+      "position": 71,
+      "title": "What does the public in six countries think of generative AI in news?",
+      "source": {
+        "name": "reutersinstitute.politics.ox.ac.uk",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://reutersinstitute.politics.ox.ac.uk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Richard Fletcher",
+          "Rasmus Kleis Nielsen"
+        ]
+      },
+      "link": "https://reutersinstitute.politics.ox.ac.uk/what-does-public-six-countries-think-generative-ai-news",
+      "thumbnail": "https://reutersinstitute.politics.ox.ac.uk/sites/default/files/styles/max_1300x1300/public/2024-05/rtswlevk_.jpeg.webp?itok=PEj1hLn7",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU9Va2RuUVRWbmFrSlpkMHAyVFJDOEFSaU1BaWdCTWdhSk1JcG5vZ00",
+      "date": "05/28/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-05-28T07:00:00Z"
+    },
+    {
+      "position": 72,
+      "title": "Researchers compare AI policies and guidelines at 52 news organizations around the world",
+      "source": {
+        "name": "The Journalist's Resource",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://journalistsresource.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Clark Merrefield"
+        ]
+      },
+      "link": "https://journalistsresource.org/home/generative-ai-policies-newsrooms/",
+      "thumbnail": "https://journalistsresource.org/wp-content/uploads/2023/12/mojahid-mottakin-Dj6D287bxiQ-unsplash-860x466.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUtaRE5TTmtwV2RFNW5TbGRYVFJDWEF4andCU2dLTWdZSmtveG10UWM",
+      "date": "12/12/2023, 08:00 AM, +0000 UTC",
+      "iso_date": "2023-12-12T08:00:00Z"
+    },
+    {
+      "position": 73,
+      "title": "College Board Bans Smart Glasses During SAT",
+      "source": {
+        "name": "Inside Higher Ed",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.insidehighered.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Johanna Alonso"
+        ]
+      },
+      "link": "https://www.insidehighered.com/news/students/academics/2026/02/02/college-board-prohibits-wearing-smart-glasses-during-sat",
+      "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/max_650x650/public/2026-01/Smart_Glasses_SAT_Ban.jpg?itok=j23HX7ba",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVVjRkpJV2pZM05XVjFSR00yVFJDeEF4aUtCU2dLTWdrSmtaRG51S2FoY3dF",
+      "date": "02/02/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-02T08:00:00Z"
+    },
+    {
+      "position": 74,
+      "title": "Google Report: Nigeria leads rest of the world in AI for learning, 26% above global average",
+      "source": {
+        "name": "Techpoint Africa",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://techpoint.africa&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Asukwo Oduo"
+        ]
+      },
+      "link": "https://techpoint.africa/news/google-report-nigeria-leads-ai-learning/",
+      "thumbnail": "https://techpoint.africa/wp-content/uploads/2023/01/Google.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlVbTgwVG10eE1XVTJRMnhQVFJDZkF4ampCU2dLTWdZQlFKYXFxQWM",
+      "date": "01/21/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-21T08:00:00Z"
+    },
+    {
+      "position": 75,
+      "title": "Our universities need a broader curricular vision before any restructuring",
+      "source": {
+        "name": "The Daily Star",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thedailystar.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Kazi Ashraf Uddin"
+        ]
+      },
+      "link": "https://www.thedailystar.net/opinion/views/news/our-universities-need-broader-curricular-vision-any-restructuring-4223941",
+      "thumbnail": "https://www.thedailystar.net/sites/default/files/styles/big_1/public/2026-07/OP_1__University_disciplines_merger.jpg?h=41c613e6",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHpiMnBrT0VwUlFVVmZNa1pvVFJDZkF4ampCU2dLTWdhVkVaQklLZ2M",
+      "date": "07/15/2026, 04:04 AM, +0000 UTC",
+      "iso_date": "2026-07-15T04:04:18Z"
+    },
+    {
+      "position": 76,
+      "title": "These Schools Have Banned ChatGPT and Similar AI Tools",
+      "source": {
+        "name": "BestColleges",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.bestcolleges.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Evan Castillo"
+        ]
+      },
+      "link": "https://www.bestcolleges.com/news/schools-colleges-banned-chat-gpt-similar-ai-tools/",
+      "thumbnail": "https://res.cloudinary.com/highereducation/image/upload/c_fill,f_auto,fl_lossy,q_auto,g_center,w_1280,h_720/v1/BestColleges.com/These-Schools-and-Colleges-Have-Banned-Chat-GPT-and-Similar-AI-Tools-1.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVZlRE0xVVVwWk9YTnVUMUJGVFJDZkF4ampCU2dLTWdZTndZYkhSQVU",
+      "date": "03/27/2023, 07:00 AM, +0000 UTC",
+      "iso_date": "2023-03-27T07:00:00Z"
+    },
+    {
+      "position": 77,
+      "title": "Experts Say the \u2018New Normal\u2019 in 2025 Will Be Far More Tech-Driven, Presenting More Big Challenges",
+      "source": {
+        "name": "Pew Research Center",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.pewresearch.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Janna Quitney Anderson",
+          "Emily A Vogels",
+          "Harrison Rainie"
+        ]
+      },
+      "link": "https://www.pewresearch.org/internet/2021/02/18/experts-say-the-new-normal-in-2025-will-be-far-more-tech-driven-presenting-more-big-challenges/",
+      "thumbnail": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/02/PI_21.02.18_NewNormal_featured-1.png?w=1200&h=628&crop=1",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNWlUM2Q1Vm01a1ZrVk1VVFJYVFJDUUF4ai1CU2dLTWdrQkVZaW13cVM1cFFJ",
+      "date": "02/18/2021, 08:00 AM, +0000 UTC",
+      "iso_date": "2021-02-18T08:00:00Z"
+    },
+    {
+      "position": 78,
+      "title": "MU Faculty Council discusses software and AI usage policy changes",
+      "source": {
+        "name": "Columbia Missourian",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.columbiamissourian.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.columbiamissourian.com/news/higher_education/mu-faculty-council-discusses-software-and-ai-usage-policy-changes/article_6a6beb20-77ea-4e0f-bbf2-2d956e9b9035.html",
+      "date": "03/05/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-03-05T08:00:00Z"
+    },
+    {
+      "position": 79,
+      "title": "What can Bangladesh learn from China\u2019s rise?",
+      "source": {
+        "name": "The Daily Star",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thedailystar.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Md Abbas"
+        ]
+      },
+      "link": "https://www.thedailystar.net/opinion/views/news/what-can-bangladesh-learn-chinas-rise-3953831",
+      "thumbnail": "https://www.thedailystar.net/sites/default/files/styles/big_1/public/images/2025/08/02/urban_planning_daily_star.jpg?h=1e7905b8",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNWpTRXMyZG1rMVlYSkdkRXA2VFJDZkF4ampCU2dLTWdB",
+      "date": "08/03/2025, 05:02 AM, +0000 UTC",
+      "iso_date": "2025-08-03T05:02:53Z"
+    },
+    {
+      "position": 80,
+      "title": "Improving higher education in Bangladesh: A case for collaboration with Australia",
+      "source": {
+        "name": "The Daily Star",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thedailystar.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "M. Rafiqul Islam",
+          "Rafiqul Islam"
+        ]
+      },
+      "link": "https://www.thedailystar.net/law-our-rights/law-vision/news/improving-higher-education-bangladesh-case-collaboration-australia-2920276",
+      "thumbnail": "https://www.thedailystar.net/sites/default/files/styles/big_1/public/images/2021/12/18/improving-higher-education-in-bangladesh.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUliRWRJYUdWd1FVRkRRbmwwVFJDb0FSaXNBaWdCTWdhUk1aU3JIUWc",
+      "date": "12/17/2021, 08:00 AM, +0000 UTC",
+      "iso_date": "2021-12-17T08:00:00Z"
+    },
+    {
+      "position": 81,
+      "title": "Improving higher education in Bangladesh: A national university ranking system?",
+      "source": {
+        "name": "The Daily Star",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thedailystar.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "M. Rafiqul Islam",
+          "Rafiqul Islam"
+        ]
+      },
+      "link": "https://www.thedailystar.net/law-our-rights/news/improving-higher-education-bangladesh-national-university-ranking-system-2934681",
+      "thumbnail": "https://www.thedailystar.net/sites/default/files/styles/big_1/public/images/2022/01/08/law-opinion.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTVkVFF6Vm1vMlFUZzJNSGhzVFJDZkF4ampCU2dLTWdrQkFJUmhuS05MSlFN",
+      "date": "01/07/2022, 07:31 PM, +0000 UTC",
+      "iso_date": "2022-01-07T19:31:35Z"
+    }
+  ],
+  "menu_links": [
+    {
+      "title": "India",
+      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE55YXpBU0JXVnVMVWRDS0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE55YXpBU0JXVnVMVWRDS0FBUAE"
+    },
+    {
+      "title": "World",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Your local news",
+      "topic_token": "CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE"
+    },
+    {
+      "title": "Business",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Technology",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Entertainment",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Sports",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Science",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Health",
+      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE"
+    }
+  ]
+}

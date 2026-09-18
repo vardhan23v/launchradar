@@ -1,0 +1,291 @@
+{
+  "search_metadata": {
+    "id": "6aad74a395e0b345eb86da18",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/NCcgdjpEeJLLvbM88haIVwv2znlQa_wYcFS5sFeEQBc/6aad74a395e0b345eb86da18.json",
+    "markdown_endpoint": "https://serpapi.com/searches/NCcgdjpEeJLLvbM88haIVwv2znlQa_wYcFS5sFeEQBc/6aad74a395e0b345eb86da18.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/NCcgdjpEeJLLvbM88haIVwv2znlQa_wYcFS5sFeEQBc/6aad74a395e0b345eb86da18.json_with_pixel_position",
+    "created_at": "2026-09-18 17:28:03 UTC",
+    "processed_at": "2026-09-18 17:28:03 UTC",
+    "google_url": "https://www.google.co.in/search?q=best+AI+study+tool+for+me&oq=best+AI+study+tool+for+me&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/NCcgdjpEeJLLvbM88haIVwv2znlQa_wYcFS5sFeEQBc/6aad74a395e0b345eb86da18.html",
+    "total_time_taken": 0.88
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "best AI study tool for me",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "best AI study tool for me",
+    "total_results": 37,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "ai_overview": {
+    "page_token": "KZ05C3iczVZbcqpIGF7ArGN4MYqK11RRp7oRETXnpPGC-kIRQECBVhpDzNvsZfYwe5nVTIOXQILJnPMwNX8VNt38_PePzz_-9Nxg-_dvfzlRtCP3LBvHccXG2PasioErbsDq5BgY7Bp7JDScb7bHuwFzOHgWH5cEICNZkPsTtbnVVZEh-BAalmvyhhNi32Icj7cC5vjMc4xB-CpjufxuMIn0cLGADwKsh_jx2XgclsGSSb3w2pNOrA0N42VDWI2lP9vfuR7dVEjFCjQJVoxRhDxrpsA1qdSrda7yg9V9qgP-OxGRDZN1CITbSvSR-LWpxIAMoJixJAM7XeGb1vL0WEDpI8G-aQ2efCqpOqJXT3sdxD16eq5P7-a71AXMbeM0FgDiNEoI3K-zyQg653LJ65NKXbXzcq4efjvJ9jgXa07sOLft0yg0IAhvTrLOqBknF8a1UoYNOgMMexDMbsdN6zOSQXMLkFiUQlaQOG9cOzdeSvSENW06uFX2KaRLjXUNx0hvQpLMszDtVvGgbEqzkJuGrYbqjPsLB3R3U7mmmC3XZo0nqudh3bRMzdGq39J9rV5rVrtcu3OXYskgVzCRLJiOM4dY6uPc95eVcQXWLjASTk0HHzom0r0gFyQGJ2fVghZnBjtpmHhSQ_2s3XMrYTLXogLyrR09JnWVLls6o6-0NVmNN6_J8H-E0UnsjLKgnAKR8Vkxq3HSkjLQzTRWBkWfmfd5owG4ZIE2HxRzAKShgC24zPryveUlQIItJhgQxAE8V83I2qAZj96_hegp_ULBi8YlwJMTmM0hKYGMwAOQRWrTncm0B3Yyq9dA5bOvvvgOcTcGXqZuVOHffPoKBH4FokTQBS_vxj8LG7EPyzvwIpgdcdIwu_V4vgsP_dUy4kRUDBPsP_0c6Rj_KyydKEk8U9JtLIlfYymlJPgJJaX3yyuWkvkV8E0sQamYkh4KKSmftwCULJY-p6SfxpLwKZbQ-bcAS7gYS7ubWDpTUgZLeUoSiynpiqVfoST4i5SUQss6LXl-OmzsmzwlNVdw0Yo0r9Eb6y_KQJg9vI4fdiux1oy_5Km1H937uundaa55D-vD6GjeafQA31sms-efLBKVgFwi0cE8liKMvdIahyX699L3QsxX9cbQ0_RNW9z09mQUhB1nb0JV446IrHw1nHYXZrXjqLbSK4fE7m5c5Pc7q9ps5X538QIj7aXtl-fbZ38_D_UyByQ9mAeuwJkKwsbWUubRdnEMysPGehzLo9lw-R3tIcC4I2ktaTBBqD-Z12Plcaoq4cJstIJomkZG-L667gaznTT7gRiaD7H4GuOHBk873_BsBQHVpiMopKNJL0yvmF4t2hnIEEPXLPLMN6p6u2t0222Da5tNrsH4dnTc8d0qQ4KQr_0DaOhRig",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=KZ05C3iczVZbcqpIGF7ArGN4MYqK11RRp7oRETXnpPGC-kIRQECBVhpDzNvsZfYwe5nVTIOXQILJnPMwNX8VNt38_PePzz_-9Nxg-_dvfzlRtCP3LBvHccXG2PasioErbsDq5BgY7Bp7JDScb7bHuwFzOHgWH5cEICNZkPsTtbnVVZEh-BAalmvyhhNi32Icj7cC5vjMc4xB-CpjufxuMIn0cLGADwKsh_jx2XgclsGSSb3w2pNOrA0N42VDWI2lP9vfuR7dVEjFCjQJVoxRhDxrpsA1qdSrda7yg9V9qgP-OxGRDZN1CITbSvSR-LWpxIAMoJixJAM7XeGb1vL0WEDpI8G-aQ2efCqpOqJXT3sdxD16eq5P7-a71AXMbeM0FgDiNEoI3K-zyQg653LJ65NKXbXzcq4efjvJ9jgXa07sOLft0yg0IAhvTrLOqBknF8a1UoYNOgMMexDMbsdN6zOSQXMLkFiUQlaQOG9cOzdeSvSENW06uFX2KaRLjXUNx0hvQpLMszDtVvGgbEqzkJuGrYbqjPsLB3R3U7mmmC3XZo0nqudh3bRMzdGq39J9rV5rVrtcu3OXYskgVzCRLJiOM4dY6uPc95eVcQXWLjASTk0HHzom0r0gFyQGJ2fVghZnBjtpmHhSQ_2s3XMrYTLXogLyrR09JnWVLls6o6-0NVmNN6_J8H-E0UnsjLKgnAKR8Vkxq3HSkjLQzTRWBkWfmfd5owG4ZIE2HxRzAKShgC24zPryveUlQIItJhgQxAE8V83I2qAZj96_hegp_ULBi8YlwJMTmM0hKYGMwAOQRWrTncm0B3Yyq9dA5bOvvvgOcTcGXqZuVOHffPoKBH4FokTQBS_vxj8LG7EPyzvwIpgdcdIwu_V4vgsP_dUy4kRUDBPsP_0c6Rj_KyydKEk8U9JtLIlfYymlJPgJJaX3yyuWkvkV8E0sQamYkh4KKSmftwCULJY-p6SfxpLwKZbQ-bcAS7gYS7ubWDpTUgZLeUoSiynpiqVfoST4i5SUQss6LXl-OmzsmzwlNVdw0Yo0r9Eb6y_KQJg9vI4fdiux1oy_5Km1H937uundaa55D-vD6GjeafQA31sms-efLBKVgFwi0cE8liKMvdIahyX699L3QsxX9cbQ0_RNW9z09mQUhB1nb0JV446IrHw1nHYXZrXjqLbSK4fE7m5c5Pc7q9ps5X538QIj7aXtl-fbZ38_D_UyByQ9mAeuwJkKwsbWUubRdnEMysPGehzLo9lw-R3tIcC4I2ktaTBBqD-Z12Plcaoq4cJstIJomkZG-L667gaznTT7gRiaD7H4GuOHBk873_BsBQHVpiMopKNJL0yvmF4t2hnIEEPXLPLMN6p6u2t0222Da5tNrsH4dnTc8d0qQ4KQr_0DaOhRig"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Evident AI Index for Banks",
+      "link": "https://evidentinsights.com/ai-index/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESXQHrOzAVgjmHPC19DAO4l1m6NdwbXLmRc8fgnr25tmQzGdVu0Bpt8uzuk_gHERXDha_3cJRb6z5eoxd1gBuFvw_qZ-JzZWLbBPwsyA4GZ29hK9bn8ZVowDhqZZfH5Q&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8QFnoECA0QAQ&uoh=1",
+      "displayed_link": "https://evidentinsights.com \u203a ai-index",
+      "favicon": "https://serpapi.com/images/i/UklGRsIAAABXRUJQVlA4ILYAAABwBQCdASocABwAPtEutFooIagoGAEAGglAFYAEPDVYV2L3K__3ySdwwqlsAeqcG-0F00eAAP72ERXok6GHHMvPTWVNdG534uV9neA74hPnzr4YK4gvB-k4ehgGwOq-ofuJ__bDtPhH6sflA6oeR6LI__4xkdquazgQWvxWzkKEfTZdKDNHOh-4wksGlEQsS5wnP0D0FSqeK_zLSS-ynACuIJbh8L6Qm4vrEaU4faDLvGkPiwAAAA.webp",
+      "snippet": "Evident Insights is an intelligence platform that benchmarks and tracks AI adoption across the financial services sector. We help financial services leaders ...",
+      "snippet_highlighted_words": [
+        "Evident Insights"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Evident Insights is an intelligence platform that benchmarks and tracks AI adoption across the financial services sector. We help financial services leaders ...",
+          "source_info_link": "https://evidentinsights.com/ai-index/",
+          "icon": "https://serpapi.com/images/i/UklGRsIAAABXRUJQVlA4ILYAAABwBQCdASocABwAPtEutFooIagoGAEAGglAFYAEPDVYV2L3K__3ySdwwqlsAeqcG-0F00eAAP72ERXok6GHHMvPTWVNdG534uV9neA74hPnzr4YK4gvB-k4ehgGwOq-ofuJ__bDtPhH6sflA6oeR6LI__4xkdquazgQWvxWzkKEfTZdKDNHOh-4wksGlEQsS5wnP0D0FSqeK_zLSS-ynACuIJbh8L6Qm4vrEaU4faDLvGkPiwAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Evident Insights"
+    },
+    {
+      "position": 2,
+      "title": "Marcus on AI | Substack",
+      "link": "https://garymarcus.substack.com/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESWAHrOzAVAidR7bY5M2cMjPFYs6uVyah1y28oVTdwtf2-40WEv47EYclxacD17W-lqTOzuQeTY1B-detS_9qvTPEMVpjd_Hbr-6UCux4xlUNN7UiGfGk3L9o&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8QFnoECA8QAQ&uoh=1",
+      "displayed_link": "https://garymarcus.substack.com",
+      "favicon": "https://serpapi.com/images/i/UklGRvIAAABXRUJQVlA4IOYAAADQBgCdASocABwAPtEytFooIigoGAEAGglsAJ0y7PA3pv4k_jNehsALfbu6D2UmaALXiK4twLPfFjvcSLKKIAAA5aw5ts1-2lS9WxgsfnvMIVdL7NvQT2kmm61esO_4qv_rxU23_4Qq-aMQ7Tk3__c2XwJ_yiS44egszA8AflXSCKPM_BVl4TaufUrI9lHeCP62bvtDzhmpNMvlHVMYozHpuF5XpAPZ1yUe7Nq62znQziOtmjjScPpovKrzf9-nXI7fRDnxn9-34ZDxtb-6r3oLwCZmUR__zpcBeipgfOIkYdrzuPAAAA.webp",
+      "snippet": "\"Marcus has become one of our few indispensable public intellectuals. The more people read him, the better our actions in shaping Al will be.",
+      "about_this_result": {
+        "source": {
+          "description": "\"Marcus has become one of our few indispensable public intellectuals. The more people read him, the better our actions in shaping Al will be.",
+          "source_info_link": "https://garymarcus.substack.com/",
+          "icon": "https://serpapi.com/images/i/UklGRvIAAABXRUJQVlA4IOYAAADQBgCdASocABwAPtEytFooIigoGAEAGglsAJ0y7PA3pv4k_jNehsALfbu6D2UmaALXiK4twLPfFjvcSLKKIAAA5aw5ts1-2lS9WxgsfnvMIVdL7NvQT2kmm61esO_4qv_rxU23_4Qq-aMQ7Tk3__c2XwJ_yiS44egszA8AflXSCKPM_BVl4TaufUrI9lHeCP62bvtDzhmpNMvlHVMYozHpuF5XpAPZ1yUe7Nq62znQziOtmjjScPpovKrzf9-nXI7fRDnxn9-34ZDxtb-6r3oLwCZmUR__zpcBeipgfOIkYdrzuPAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Marcus on AI"
+    },
+    {
+      "position": 3,
+      "title": "How to Stop AI from Killing Your Critical Thinking",
+      "link": "https://www.youtube.com/watch?v=3lPnN8omdPA",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYwHrOzAVmjNwscfzDwp1wyfjd_zjZ6Zr6-_w6WwoyiXBXxFGMMxUN2QecECHUx1512Vlt9LSmARPfr5nZ2Z9mFDD5RP4xlgwWnjFVjJxxoryXgnZ69el73cIxzxvyQLvvkmY7w&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8QFnoECBQQAQ&uoh=1",
+      "displayed_link": "https://www.youtube.com \u203a watch",
+      "favicon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp",
+      "date": "28 Dec 2025",
+      "snippet": "Chatbots might help you get work done faster \u2014 but at what cost? When we outsource our reasoning to artificial intelligence, ...",
+      "snippet_highlighted_words": [
+        "Chatbots might help you get work done faster"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Chatbots might help you get work done faster \u2014 but at what cost? When we outsource our reasoning to artificial intelligence, ...",
+          "source_info_link": "https://www.youtube.com/watch?v=3lPnN8omdPA",
+          "icon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "YouTube"
+    },
+    {
+      "position": 4,
+      "title": "OpenAI | Research & Deployment",
+      "link": "https://openai.com/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESSwHrOzAVPGkzZKppoUCWMrcqnqXRIX8-Tqtyutya-CKElbFLERddwE1R1QHzZ-2NNv_BpRNiPZ73xPp-WbeUEjjvwVZNsyT_iAPpzg&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8QFnoECA4QAQ&uoh=1",
+      "displayed_link": "https://openai.com",
+      "favicon": "https://serpapi.com/images/i/UklGRiYBAABXRUJQVlA4IBoBAABQBwCdASocABwAPtFAtFooIqgoFAEAGglpAAbABWIeaL5K9gP9Uv930gHsd_syHZqyPV42sx7sMTy0CIZslnv9u8VAAP72AlvSo6Juyo9w75vxc5qB_dP39ckcZFeVmodvXMLqvVu9T_vQ_LXZlEJvbkWSB4jsL5bHQjwX--86gcHfj-jR297id4M-Ibef1ZOk_A48d_jpDdwlVakazhHMXzO0cx7t7uiTwe4_8bt3qXp90eMAntvZmX9AfGjJ-QyubP_01uAVcWwHZpKS9q1MyRWH962oj9BOrQ25zGSCoBVTBTbNnwEy_yHL5B_bNyeZPT3H7rIctlbszORn0raNTvzulMlSa5W60uu8zBIEIuf9wrQ_awAAAAA.webp",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems.",
+      "about_this_result": {
+        "source": {
+          "description": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems.",
+          "source_info_link": "https://openai.com/",
+          "icon": "https://serpapi.com/images/i/UklGRiYBAABXRUJQVlA4IBoBAABQBwCdASocABwAPtFAtFooIqgoFAEAGglpAAbABWIeaL5K9gP9Uv930gHsd_syHZqyPV42sx7sMTy0CIZslnv9u8VAAP72AlvSo6Juyo9w75vxc5qB_dP39ckcZFeVmodvXMLqvVu9T_vQ_LXZlEJvbkWSB4jsL5bHQjwX--86gcHfj-jR297id4M-Ibef1ZOk_A48d_jpDdwlVakazhHMXzO0cx7t7uiTwe4_8bt3qXp90eMAntvZmX9AfGjJ-QyubP_01uAVcWwHZpKS9q1MyRWH962oj9BOrQ25zGSCoBVTBTbNnwEy_yHL5B_bNyeZPT3H7rIctlbszORn0raNTvzulMlSa5W60uu8zBIEIuf9wrQ_awAAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "OpenAI"
+    },
+    {
+      "position": 5,
+      "title": "The choices we make about AI now are critical | Bill Gates",
+      "link": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESqAEB6zswFUqYTWmNS8UvhXM3BAhnEEMSBF2qBL_0PzdLaKNq1UPUnpvVmtIrssQ4Ck4wBo7b1KAJ94FRQAU0kZF_ZNDkFrrW_SLTiUGzXnVUDLan2icqXAgA-F_IasV4g-SvsoxIk6kaR-gti6uhZrzpAH5mq2hyL0Odmzizd7Z1l8aFYak93XukMAjjVOfta67rvdwEGZq76sOdfvXyme153kCE9YC5R1w&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8QFnoECBMQAQ&uoh=1",
+      "displayed_link": "https://www.gatesnotes.com \u203a work \u203a reader \u203a a-turbulen...",
+      "snippet": "For students, an AI tool that preserves what researchers call \u201cproductive struggle\u201d\u2014the cognitive work that builds understanding\u2014can strengthen learning. When a ...",
+      "snippet_highlighted_words": [
+        "an AI tool that preserves what researchers call \u201cproductive struggle\u201d"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "For students, an AI tool that preserves what researchers call \u201cproductive struggle\u201d\u2014the cognitive work that builds understanding\u2014can strengthen learning. When a ...",
+          "source_info_link": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Gates Notes",
+      "read_more_link": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make#:~:text=For%20students%2C%20an%20AI%20tool,offers%20both%20questions%20and%20answers."
+    },
+    {
+      "position": 6,
+      "title": "Elon Musk on AI: humans will no longer be in control in ten ...",
+      "link": "https://www.youtube.com/watch?v=1X-rr1DKSbY",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYwHrOzAVyo4M8dsWys8w2eJSBBpHuC7se3I4kM-7zMKWURQfHgLO2gvDqaeaTWwGazFs2uYx3M-Aiuw463je-VJIzQuYtVpXiS4ca2Ov96M-bCZNLFF8wcxz_tOjTCFHkp-P4A&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8QFnoECBAQAQ&uoh=1",
+      "displayed_link": "https://www.youtube.com \u203a watch",
+      "favicon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp",
+      "date": "23 Jul 2026",
+      "snippet": "The full-length interview with Elon Musk | The Economist \u00b7 AI just created a brand new virus. \u00b7 Anthropic's Chloe Lubinski explains how AI works ( ...",
+      "snippet_highlighted_words": [
+        "AI",
+        "AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The full-length interview with Elon Musk | The Economist \u00b7 AI just created a brand new virus. \u00b7 Anthropic's Chloe Lubinski explains how AI works ( ...",
+          "source_info_link": "https://www.youtube.com/watch?v=1X-rr1DKSbY",
+          "icon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "YouTube",
+      "read_more_link": "https://www.youtube.com/watch?v=1X-rr1DKSbY#:~:text=The%20full%2Dlength%20interview%20with%20Elon,Musk%20%7C%20The%20Economist&text=AI%20just%20created%20a%20brand,new%20virus.&text=Anthropic's%20Chloe%20Lubinski%20explains%20how,AI%20works%20(in%2014%20minutes)"
+    },
+    {
+      "position": 7,
+      "title": "Every AI Model Explained In 20 Minutes (Update)",
+      "link": "https://www.youtube.com/watch?v=--8pJvYNcX4",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYwHrOzAV632wzsUkMmraQjilI4caFExGpBUXqBzgXEwCRjwhBgZj2k--iMMK8oXX29W-E6xCYNlPChOHK3Hg4k4ihdQ_XguRnKL77i_S8JnV_cpY1KAPfVn6LltvsiTl_SMyDQ&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8QFnoECBYQAQ&uoh=1",
+      "displayed_link": "https://www.youtube.com \u203a watch",
+      "favicon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp",
+      "date": "10 Aug 2026",
+      "snippet": "Every AI Model Explained in 17 Minutes. Just Explained \u00b7 275K views ; Updated Essential AI Skills For 2026. Tina Huang \u00b7 189K views ; Every AI Model ...",
+      "snippet_highlighted_words": [
+        "Every AI Model Explained in 17 Minutes"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Every AI Model Explained in 17 Minutes. Just Explained \u00b7 275K views ; Updated Essential AI Skills For 2026. Tina Huang \u00b7 189K views ; Every AI Model ...",
+          "source_info_link": "https://www.youtube.com/watch?v=--8pJvYNcX4",
+          "icon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "YouTube",
+      "read_more_link": "https://www.youtube.com/watch?v=--8pJvYNcX4#:~:text=Every%20AI%20Model%20Explained%20in,Just%20Explained%E2%80%A2275K%20views&text=Just%20Explained%E2%80%A2275K%20views&text=Updated%20Essential%20AI%20Skills%20For,Tina%20Huang%E2%80%A2189K%20views&text=Tina%20Huang%E2%80%A2189K%20views&text=Every%20AI%20Model%20Explained%20in,19%20Minutes"
+    },
+    {
+      "position": 8,
+      "title": "I Made a Viral AI Love Story (500M Views)",
+      "link": "https://www.youtube.com/watch?v=QfylrxtQSSs",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYwHrOzAVwiaN1pMhq8QuBZITTtukjf5uqNObXNeUVX1lgD-WSi1cWoWtijYJjptLMMZhO6-Xmym3jLeq1FvRrntbBcRctFr3yLJhzNXAYAiWXuIJc_aSboFp18iYgNZiWihl3Q&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8QFnoECBEQAQ&uoh=1",
+      "displayed_link": "https://www.youtube.com \u203a watch",
+      "favicon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp",
+      "date": "21 Aug 2026",
+      "snippet": "I made an AI love story for my friend's wedding \u2014 it hit ~500M views across social. Here's the full workflow, and every prompt is free.",
+      "snippet_highlighted_words": [
+        "AI love story"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "I made an AI love story for my friend's wedding \u2014 it hit ~500M views across social. Here's the full workflow, and every prompt is free.",
+          "source_info_link": "https://www.youtube.com/watch?v=QfylrxtQSSs",
+          "icon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "YouTube"
+    },
+    {
+      "position": 9,
+      "title": "5 open source tools that replaced my $320/mo AI stack...",
+      "link": "https://www.youtube.com/watch?v=Y5rSSvXfL4g",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYwHrOzAVg0uh1gJGdSDjqae2yFq-AhF5I5esfhVs-_v60M31l8tKYl3bW6Cly4TFOHJ1QWGdjl46rOnYGlJWTCCDJc2RwfzKKFlnHfEwUxdmqd5KYrRuHhmPIZV6N3hVaApC5w&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8QFnoECBkQAQ&uoh=1",
+      "displayed_link": "https://www.youtube.com \u203a watch",
+      "favicon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp",
+      "date": "7 Sept 2026",
+      "snippet": "Ollama \u00b7 9router \u00b7 Headroom \u00b7 Diffy \u00b7 OpenHands.",
+      "snippet_highlighted_words": [
+        "Ollama"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Ollama \u00b7 9router \u00b7 Headroom \u00b7 Diffy \u00b7 OpenHands.",
+          "source_info_link": "https://www.youtube.com/watch?v=Y5rSSvXfL4g",
+          "icon": "https://serpapi.com/images/i/UklGRiwBAABXRUJQVlA4ICABAACwBwCdASogACAAPtE-tFooIigoFAEAGglsAJ0vsWzOpa6QD2AZirkgG8t-SqngPdVQgIhPuY7QnfGTuhkHCCafWwEspXiAAP79K1T914se1S0hw8uWbXIYlTtaQoimvqxmIYKoYD3frD6a5W6Y9qlH8OxzGr5_tN-PxaeuqGI2m4Zz-9CzP48op__f9Bm2CT4HfqeSSLbWZxBXOMfrzs-Ha9TzPINw3Ax6lVF51803KBeM7Ab3H89_36DkJOoZmQ0ljraRalZvQMceZBos_f6K8NKxvQt3-nvCl_N43J4eBXK99cT6h-2PwUv_b-ipf3AxPF_5oLX0RT6LnBPZ6MuU-pXNvWj4txo7i3_TKPDxpoad0cHTmsOVtF1Ne3TsAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "YouTube",
+      "read_more_link": "https://www.youtube.com/watch?v=Y5rSSvXfL4g#:~:text=5%20open%20source%20tools%20that&text=5%20open%20source%20tools%20that&text=5%20open%20source%20tools%20that&text=5%20open%20source%20tools%20that&text=5%20open%20source%20tools%20that"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=best+AI+study+tool+for+me&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnumrkx8GEOZ6cTMHuWh4GYjXC82qQ:1789752484084&ei=pHStarXXBMCB2roPvcPJ-AY&start=10&sa=N&sstk=AS6-VmJVjaGO3HPcC1857fWCHzo7-ogPLM9E9IO2Fwzif4liH6aO4XjqL3j7Z6Fe7eKuUnhUuSNRTT7vhidkKg6o7g-adoO63wwMpg&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8Q8NMDegQIRxAK",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=best+AI+study+tool+for+me&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnumrkx8GEOZ6cTMHuWh4GYjXC82qQ:1789752484084&ei=pHStarXXBMCB2roPvcPJ-AY&start=10&sa=N&sstk=AS6-VmJVjaGO3HPcC1857fWCHzo7-ogPLM9E9IO2Fwzif4liH6aO4XjqL3j7Z6Fe7eKuUnhUuSNRTT7vhidkKg6o7g-adoO63wwMpg&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8Q8tMDegQIRxAE",
+      "3": "https://www.google.co.in/search?q=best+AI+study+tool+for+me&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnumrkx8GEOZ6cTMHuWh4GYjXC82qQ:1789752484084&ei=pHStarXXBMCB2roPvcPJ-AY&start=20&sa=N&sstk=AS6-VmJVjaGO3HPcC1857fWCHzo7-ogPLM9E9IO2Fwzif4liH6aO4XjqL3j7Z6Fe7eKuUnhUuSNRTT7vhidkKg6o7g-adoO63wwMpg&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8Q8tMDegQIRxAG",
+      "4": "https://www.google.co.in/search?q=best+AI+study+tool+for+me&sca_esv=40a79c977c37d534&gl=in&hl=en&sxsrf=APpeQnumrkx8GEOZ6cTMHuWh4GYjXC82qQ:1789752484084&ei=pHStarXXBMCB2roPvcPJ-AY&start=30&sa=N&sstk=AS6-VmJVjaGO3HPcC1857fWCHzo7-ogPLM9E9IO2Fwzif4liH6aO4XjqL3j7Z6Fe7eKuUnhUuSNRTT7vhidkKg6o7g-adoO63wwMpg&ved=2ahUKEwi1ubLI0_iWAxXAgFYBHb1hEm8Q8tMDegQIRxAI"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+for+me&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+for+me&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+for+me&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+for+me&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+study+tool+for+me&start=30"
+    }
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "search_metadata": {
+    "id": "6aad74a58976f7910c098912",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/mTLeITNspT7Ie0a_mLSLeUFpkIDV3ASD4K8l8NElPPU/6aad74a58976f7910c098912.json",
+    "markdown_endpoint": "https://serpapi.com/searches/mTLeITNspT7Ie0a_mLSLeUFpkIDV3ASD4K8l8NElPPU/6aad74a58976f7910c098912.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/mTLeITNspT7Ie0a_mLSLeUFpkIDV3ASD4K8l8NElPPU/6aad74a58976f7910c098912.json_with_pixel_position",
+    "created_at": "2026-09-18 17:28:05 UTC",
+    "processed_at": "2026-09-18 17:28:05 UTC",
+    "google_url": "https://www.google.co.in/search?q=engineering+AI+problem+solver&oq=engineering+AI+problem+solver&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/mTLeITNspT7Ie0a_mLSLeUFpkIDV3ASD4K8l8NElPPU/6aad74a58976f7910c098912.html",
+    "total_time_taken": 1.64
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "engineering AI problem solver",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "engineering AI problem solver",
+    "total_results": 130,
+    "time_taken_displayed": 0.28,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "The Best AI Tools for Engineering Students (2026)",
+      "link": "https://www.youtube.com/watch?v=dMYLAVwi6Ng",
+      "thumbnail": "https://serpapi.com/searches/6aad74a58976f7910c098912/images/-jZhidytfKnLawWQNi-4tbvPvxYjfcRNs5xqkohcLSY.jpeg",
+      "channel": "Aleks Gornik",
+      "duration": "16:02",
+      "platform": "YouTube",
+      "date": "1 Mar 2026",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcRsfqIiaeJzNghr7_lHqKDUXBgVuMaygUHW1Q",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Intro",
+          "link": "https://www.youtube.com/watch?v=dMYLAVwi6Ng&t=0"
+        },
+        {
+          "time": "01:10",
+          "title": "Google colab",
+          "link": "https://www.youtube.com/watch?v=dMYLAVwi6Ng&t=70"
+        },
+        {
+          "time": "04:17",
+          "title": "Google Antigravity",
+          "link": "https://www.youtube.com/watch?v=dMYLAVwi6Ng&t=257"
+        },
+        {
+          "time": "08:35",
+          "title": "zoo.dev",
+          "link": "https://www.youtube.com/watch?v=dMYLAVwi6Ng&t=515"
+        },
+        {
+          "time": "10:22",
+          "title": "NotebookLLM",
+          "link": "https://www.youtube.com/watch?v=dMYLAVwi6Ng&t=622"
+        },
+        {
+          "time": "11:16",
+          "title": "NotebookLLM - Lecture prep",
+          "link": "https://www.youtube.com/watch?v=dMYLAVwi6Ng&t=676"
+        },
+        {
+          "time": "13:12",
+          "title": "NotebookLLM - Literature review",
+          "link": "https://www.youtube.com/watch?v=dMYLAVwi6Ng&t=792"
+        },
+        {
+          "time": "14:37",
+          "title": "NotebookLLM - Job search",
+          "link": "https://www.youtube.com/watch?v=dMYLAVwi6Ng&t=877"
+        },
+        {
+          "time": "15:45",
+          "title": "Outro",
+          "link": "https://www.youtube.com/watch?v=dMYLAVwi6Ng&t=945"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "title": "Creating Engineering Problems with Interactive AI Conversation",
+      "link": "https://www.youtube.com/watch?v=UWVuPAA-HhE",
+      "thumbnail": "https://serpapi.com/searches/6aad74a58976f7910c098912/images/PiBjKfOA52bHi0RwbmEuX2bq5CaYJtsqyqhyUgh7fMc.jpeg",
+      "channel": "MATLAB",
+      "duration": "10:13",
+      "platform": "YouTube",
+      "date": "7 Jan 2026"
+    },
+    {
+      "position": 3,
+      "title": "Using AI to Solve Real World Problems",
+      "link": "https://www.youtube.com/watch?v=-xiX6K0o90s",
+      "thumbnail": "https://serpapi.com/searches/6aad74a58976f7910c098912/images/dm3o5JEaeVFav-wiBGvzTqfbOTNgQ0bxBmH4WSsFCwY.jpeg",
+      "channel": "Solution Street",
+      "duration": "59:39",
+      "platform": "YouTube",
+      "date": "31 Jan 2026"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "Y8kW1HiczVbbcqJIGH6AfY7lJhlB8RBSRU11t6iMh4hGDbmhEDoNirQBlejdvsvuS-3TbINowGCyMxdb21VN083Pf_74-ONPz_WXf__2l7PZrMN7no-iqEQoJR4uWbTk-rwZ7n2Lf6FeGFjOd8eTsc9ttx6WoxsEVE1Fams8qy3NmcIRT3Z9br-TRc4KZYHDrrz2xxtz2zRbtHcQhspQsrHogjsu0SobczPEC2b2bRHyBs8uy9_FJtuUwhL2jTYsWd2N5uHJCL6EpYpQEUsPvLliMuC_G4pGYLz-AOi6EHukfK0qVqACqGQ0qYAkK3yX0o-PkZY8QuSqNni0OUrENTabxqETNdlpmp_m1XeZCZjbRokvAESJlxC4X0eTGVoayymuTzJ1ls6PNHv0_SRb45yvuUGi3LbFvDAAQu9GssaYGifnxjlTFgF3HQqbEEyu-83y01VBbQk0pSiE7NCUafVcuZ7eZie8TVjjCvw8YEuZdy3HSm6CMO5n9CgJtPPNbk8C8TGoV2dOr_XkAGn9qJZHdt0lvDVnch41bWwbjiF8T_blSrkmSGLj7jbBkhWewRRmwbSfOCGeDaerlV7qlWD5BCN0LDr4UDGF7ZFaEBhEqWhBieH7aVywtKRaK6s3LSWM-1oZgXxpu8M4r-3TlvXogZUmK_FuNW7-jzA6DpIRRqOjIypNBbMSR6l2BrqZwqqg6DNzGbfWAacotMUHwRwAmStgCU6J0S8160BDRIkxgJQOTLNmZaNZAtS9fEtj6tgXKk2ScnbwaARmY4hToGqgD1SF6XQnKqsBiXv16GjcDKmtlnKBuCsNrzIzM_RvPn0FA34FonhoJ7xctH8ONk-DWn-8llr2QjRHc1StCAPB1qsufdWKYUJX858jHet_haUjJSkpJV3HkvI1lhJKgp9QUnKvn7EU9y-iV7EE28WU1C-kpHzcCIyyWPqckn4aS-hTLGnptQBLtBhL66tYItEllvKUpBRT0hlLv0JJ8BcpKYEWPi55ftouyFWeUog-rBG94zwPxsNAEmwjRGal40uHjvYlT72sNvcr0_ZuDde-h5Ufm719a7ADeo9t7pX9XhLXxzhwfXID1Jt1QOceXt2E1NvhgFt5AZUFsxo8Uv2u4mm4v3p41N96QWPavwPjev-hbjWEvlFfzpuL2sDw2k9YH2Nf8PWDhNvefOHtD9JMNLZbXH5ttRfSAL_te0-76Xg37eyeyLPx3Idvi0OVhhLpBWgHvckYD1FDFUVdClv7SELzNzDt2rZdU34svQdWnpW6m2iJb6EsOn1Ku4dvrV6VWwWWzH6Sq0sw0ECbsAZESWOySdmM2KyzukAutEwDhzu5KpgNyZIaDUts2DWRaSCb_VqulrnQD-TyPySGSsI",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=Y8kW1HiczVbbcqJIGH6AfY7lJhlB8RBSRU11t6iMh4hGDbmhEDoNirQBlejdvsvuS-3TbINowGCyMxdb21VN083Pf_74-ONPz_WXf__2l7PZrMN7no-iqEQoJR4uWbTk-rwZ7n2Lf6FeGFjOd8eTsc9ttx6WoxsEVE1Fams8qy3NmcIRT3Z9br-TRc4KZYHDrrz2xxtz2zRbtHcQhspQsrHogjsu0SobczPEC2b2bRHyBs8uy9_FJtuUwhL2jTYsWd2N5uHJCL6EpYpQEUsPvLliMuC_G4pGYLz-AOi6EHukfK0qVqACqGQ0qYAkK3yX0o-PkZY8QuSqNni0OUrENTabxqETNdlpmp_m1XeZCZjbRokvAESJlxC4X0eTGVoayymuTzJ1ls6PNHv0_SRb45yvuUGi3LbFvDAAQu9GssaYGifnxjlTFgF3HQqbEEyu-83y01VBbQk0pSiE7NCUafVcuZ7eZie8TVjjCvw8YEuZdy3HSm6CMO5n9CgJtPPNbk8C8TGoV2dOr_XkAGn9qJZHdt0lvDVnch41bWwbjiF8T_blSrkmSGLj7jbBkhWewRRmwbSfOCGeDaerlV7qlWD5BCN0LDr4UDGF7ZFaEBhEqWhBieH7aVywtKRaK6s3LSWM-1oZgXxpu8M4r-3TlvXogZUmK_FuNW7-jzA6DpIRRqOjIypNBbMSR6l2BrqZwqqg6DNzGbfWAacotMUHwRwAmStgCU6J0S8160BDRIkxgJQOTLNmZaNZAtS9fEtj6tgXKk2ScnbwaARmY4hToGqgD1SF6XQnKqsBiXv16GjcDKmtlnKBuCsNrzIzM_RvPn0FA34FonhoJ7xctH8ONk-DWn-8llr2QjRHc1StCAPB1qsufdWKYUJX858jHet_haUjJSkpJV3HkvI1lhJKgp9QUnKvn7EU9y-iV7EE28WU1C-kpHzcCIyyWPqckn4aS-hTLGnptQBLtBhL66tYItEllvKUpBRT0hlLv0JJ8BcpKYEWPi55ftouyFWeUog-rBG94zwPxsNAEmwjRGal40uHjvYlT72sNvcr0_ZuDde-h5Ufm719a7ADeo9t7pX9XhLXxzhwfXID1Jt1QOceXt2E1NvhgFt5AZUFsxo8Uv2u4mm4v3p41N96QWPavwPjev-hbjWEvlFfzpuL2sDw2k9YH2Nf8PWDhNvefOHtD9JMNLZbXH5ttRfSAL_te0-76Xg37eyeyLPx3Idvi0OVhhLpBWgHvckYD1FDFUVdClv7SELzNzDt2rZdU34svQdWnpW6m2iJb6EsOn1Ku4dvrV6VWwWWzH6Sq0sw0ECbsAZESWOySdmM2KyzukAutEwDhzu5KpgNyZIaDUts2DWRaSCb_VqulrnQD-TyPySGSsI"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Free Engineering Math Solver",
+      "link": "https://www.mathos.ai/app/calculator/engineering-math-solver",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdAHrOzAVr3F328JdiMrKaQ44PPo_7QZ7mckrWZwQceKTtHvbcBegGf-gNqZuU4a112cVYRSdI76a9dimycn6SH9LhX2flOublzut-KteJFCR90rXPxJCaw5gLTxXR16gHm3a_8erUqMxUb5pLe7spswGN4zv&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQFnoECA8QAQ&uoh=1",
+      "displayed_link": "https://www.mathos.ai \u203a app \u203a calculator \u203a engineering-...",
+      "favicon": "https://serpapi.com/images/i/UklGRiIBAABXRUJQVlA4IBYBAAAwBwCdASocABwAPtE-tFooIigoFAEAGglsALElQQoPwDFdov-yWSvBDJPFS8lDjbaY8dclkug7MDBmaqwYsEDOOCAA_vYC9kAkZxeiOWuZJT40hXI6piKPsrH5OArJraNISUVsyszaKInZ9mN72qXmNUwe5Nf1HcEtO9dSPAk1I5Ch2CAyQwZqM1nyGscjEwcxi_2jhZ0bOtn_-vmcVnEXA5Zp2Y67yfm2FKObNHOptBGZrgXEitZLJaLcOf2TOPv5YFv8Vw8KalcPZXFLq2sDJDz_x-03Z7ri5vH-PuNE5sLDfKK4P5P04P1z_9KQwC7LB8C3zwa1l0jf3fphZ8dUorDeoIUUSx2T7-8sUr7FvZtYICu4AA.webp",
+      "snippet": "Solve engineering math problems instantly: upload images, input equations, get solutions & graphs \u2013 your all-in-one engineering math solver.",
+      "snippet_highlighted_words": [
+        "Solve engineering math problems instantly"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Solve engineering math problems instantly: upload images, input equations, get solutions & graphs \u2013 your all-in-one engineering math solver.",
+          "source_info_link": "https://www.mathos.ai/app/calculator/engineering-math-solver",
+          "icon": "https://serpapi.com/images/i/UklGRiIBAABXRUJQVlA4IBYBAAAwBwCdASocABwAPtE-tFooIigoFAEAGglsALElQQoPwDFdov-yWSvBDJPFS8lDjbaY8dclkug7MDBmaqwYsEDOOCAA_vYC9kAkZxeiOWuZJT40hXI6piKPsrH5OArJraNISUVsyszaKInZ9mN72qXmNUwe5Nf1HcEtO9dSPAk1I5Ch2CAyQwZqM1nyGscjEwcxi_2jhZ0bOtn_-vmcVnEXA5Zp2Y67yfm2FKObNHOptBGZrgXEitZLJaLcOf2TOPv5YFv8Vw8KalcPZXFLq2sDJDz_x-03Z7ri5vH-PuNE5sLDfKK4P5P04P1z_9KQwC7LB8C3zwa1l0jf3fphZ8dUorDeoIUUSx2T7-8sUr7FvZtYICu4AA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Mathos AI"
+    },
+    {
+      "position": 2,
+      "title": "Solve Engineering Problems in Seconds - With 96% ...",
+      "link": "https://www.getleo.ai/blog/solve-engineering-problems-in-seconds-with-96-accuracy",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESiQEB6zswFYWfC7MRGx94Lmpf0HhzbwffkJx24A8qY07pii-DZ9PCvqnjRfg_3nq0MMMRxIQdwNDjCBwcKZeh30_7S5woBBUKwOp3p8jQywJ0lj35f8X6u25GpEnLfF-DkXntAo9eaXfwJx8hrgQW4yVwZItHfJbMjDCI2wkO1KbfduQnHRJd5ho9dQ&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQFnoECCsQAQ&uoh=1",
+      "displayed_link": "https://www.getleo.ai \u203a blog \u203a solve-engineering-proble...",
+      "favicon": "https://serpapi.com/images/i/UklGRgoBAABXRUJQVlA4IP4AAADwBgCdASocABwAPtEwtFooIigoGAEAGglnAM2Kmr4R1mi-g_YA_VrfJf2AHZr0BCnhWz2sreF0h5iM53jBMQAAAP7wvK6MhbZjmXwKvK8JjiyHwNERzFOokAqT7n-3rjGuH6AebSfv2VDtrohJUflLVflkgbKCWP_-pG2CunBy9hMDE_eHKV4Pk462783jXMK3q6nXpz86ldjA9j93ebrFUjlt5eeXPWu1B8xtfrBVFu1Mp1pPeodqVWvaXr2qwRf99__eJlGDVJbeGRMTp0d_Ldoq9_Jtiz_Bh6LR6sVWhBysZm9DUiezXFiGjQysntcpps7tUlB89-RZDwAAAA.webp",
+      "date": "16 Aug 2025",
+      "snippet": "Discover how Leo AI helps mechanical engineers solve problems in seconds, not hours. Instantly find formulas, run calculations, and integrate ...",
+      "snippet_highlighted_words": [
+        "Leo AI helps mechanical engineers solve problems in seconds"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Discover how Leo AI helps mechanical engineers solve problems in seconds, not hours. Instantly find formulas, run calculations, and integrate ...",
+          "source_info_link": "https://www.getleo.ai/blog/solve-engineering-problems-in-seconds-with-96-accuracy",
+          "icon": "https://serpapi.com/images/i/UklGRgoBAABXRUJQVlA4IP4AAADwBgCdASocABwAPtEwtFooIigoGAEAGglnAM2Kmr4R1mi-g_YA_VrfJf2AHZr0BCnhWz2sreF0h5iM53jBMQAAAP7wvK6MhbZjmXwKvK8JjiyHwNERzFOokAqT7n-3rjGuH6AebSfv2VDtrohJUflLVflkgbKCWP_-pG2CunBy9hMDE_eHKV4Pk462783jXMK3q6nXpz86ldjA9j93ebrFUjlt5eeXPWu1B8xtfrBVFu1Mp1pPeodqVWvaXr2qwRf99__eJlGDVJbeGRMTp0d_Ldoq9_Jtiz_Bh6LR6sVWhBysZm9DUiezXFiGjQysntcpps7tUlB89-RZDwAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Leo AI",
+      "read_more_link": "https://www.getleo.ai/blog/solve-engineering-problems-in-seconds-with-96-accuracy#:~:text=Discover%20how%20Leo%20AI%20helps,%2D%20all%20with%2096%25%20accuracy."
+    },
+    {
+      "position": 3,
+      "title": "Free Mechanical Engineering Solver",
+      "link": "https://www.asksia.ai/solver/mechanical-engineering-solver",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScgHrOzAVMTxOzpLB_V_62aacQDBAWPkv97rzlgZ4vyUuWyCnkxUYl_0f6oIfqQ243mAjhYhdoNXDj9IP-q8vMgorP56NRLOGwBfSrWjn8ty3RPXfdGCPbORBc6wD0pUzjUOS6nxpQuq8FwEo55Gi8dEOrw&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQFnoECCUQAQ&uoh=1",
+      "displayed_link": "https://www.asksia.ai \u203a solver \u203a mechanical-engineering...",
+      "favicon": "https://serpapi.com/images/i/UklGRjwBAABXRUJQVlA4IDABAABwBgCdASocABwAPtE-tFooIigoFAEAGglsAMNCIA3j4iI9AAD7f_yAqeJW3JmGwzXH8s2JYUIvFzYD5fAA_ceh2nDHN0CuuXfEGkGXAL4Vb-QDBkRqVUdOlBrP5F2CEWR4unlr1cJdE3OxnBoa954C_jkgGtP0cBgKeLQc8fR_V1Dvg79fuo8gcdZ-yq-p-yfiHh9PH4ApxHmHLzdJy2tHwVoJ9sfwi6IYJCL_RWzsXvXFti5iDK9AqeR7JuV3EPVShmqzngEwcEdE1L_QlfzO50boIDH2LoKnfCmc5zsD41VOoNRzK4HXKnBbyMSGhc5CUpztgquVSnvza6EyGk2Qi3_eORaas6hF4xbH2JU7kaq7aXV0NLq7-xsoH_X3FVCZxxp92aqM_EdKnU8DIAAA.webp",
+      "snippet": "A mechanical engineering solver for statics, dynamics, mechanics of materials, thermo, and heat transfer, with full step-by-step working on AskSia.",
+      "snippet_highlighted_words": [
+        "A mechanical engineering solver"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "A mechanical engineering solver for statics, dynamics, mechanics of materials, thermo, and heat transfer, with full step-by-step working on AskSia.",
+          "source_info_link": "https://www.asksia.ai/solver/mechanical-engineering-solver",
+          "icon": "https://serpapi.com/images/i/UklGRjwBAABXRUJQVlA4IDABAABwBgCdASocABwAPtE-tFooIigoFAEAGglsAMNCIA3j4iI9AAD7f_yAqeJW3JmGwzXH8s2JYUIvFzYD5fAA_ceh2nDHN0CuuXfEGkGXAL4Vb-QDBkRqVUdOlBrP5F2CEWR4unlr1cJdE3OxnBoa954C_jkgGtP0cBgKeLQc8fR_V1Dvg79fuo8gcdZ-yq-p-yfiHh9PH4ApxHmHLzdJy2tHwVoJ9sfwi6IYJCL_RWzsXvXFti5iDK9AqeR7JuV3EPVShmqzngEwcEdE1L_QlfzO50boIDH2LoKnfCmc5zsD41VOoNRzK4HXKnBbyMSGhc5CUpztgquVSnvza6EyGk2Qi3_eORaas6hF4xbH2JU7kaq7aXV0NLq7-xsoH_X3FVCZxxp92aqM_EdKnU8DIAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "AskSia"
+    },
+    {
+      "position": 4,
+      "title": "Engineering Solutions",
+      "link": "https://beam.ai/skills/engineering-solutions",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESZAHrOzAVySzIsqIj-ojYn_LMnx85chuqTuO1JcbGzvWGDerVvIzWABQO8tl-PTmYVDVuBtv441rzxmy0nfT7-RiGyIA_4VZLUzzY3CMAa6HTL7WLwkeMU9rs4geYUeExW7S3Op0&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQFnoECCoQAQ&uoh=1",
+      "displayed_link": "https://beam.ai \u203a skills \u203a engineering-solutions",
+      "favicon": "https://serpapi.com/images/i/UklGRiYBAABXRUJQVlA4IBoBAADQBgCdASogACAAPtE-tFooIigoFAEAGglsAKwR_-MPozZ_kv7AegAjdXYo_J92XaQ27h0jhrXt4uOqGerC_oAA_k3clP_FjyRfsjaBtP13KBOA821d-SPZp_Hf7XFB1Kr3-DTolnvqEnCH_7xt86_2sv41Fz_6-5G8AGMTcEm9jgqZcVWohXH6ahKf5ns6QfOZ9MeXDlsGe_RvzDeOOlTv2R4Px395nN6b547JQ1-qD17ey28_kdyT61EckaJyNE-Co-sMgX0gk8bSFAs0EYfQRxWK7xVfBT7mDB7zLAy6-xZiKOYcm_09xQcr7WykoMU1H-_FqH6uQSPfzrbOp8EgO8SjRu7rqTdGZaPpOj-qd-_mTSKKzGN8AAA.webp",
+      "snippet": "Compare engineering approaches, assumptions, trade-offs, dependencies, and risks, with qualified review before calculations or implementation decisions.",
+      "snippet_highlighted_words": [
+        "Compare engineering approaches, assumptions, trade-offs, dependencies, and risks"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Compare engineering approaches, assumptions, trade-offs, dependencies, and risks, with qualified review before calculations or implementation decisions.",
+          "source_info_link": "https://beam.ai/skills/engineering-solutions",
+          "icon": "https://serpapi.com/images/i/UklGRiYBAABXRUJQVlA4IBoBAADQBgCdASogACAAPtE-tFooIigoFAEAGglsAKwR_-MPozZ_kv7AegAjdXYo_J92XaQ27h0jhrXt4uOqGerC_oAA_k3clP_FjyRfsjaBtP13KBOA821d-SPZp_Hf7XFB1Kr3-DTolnvqEnCH_7xt86_2sv41Fz_6-5G8AGMTcEm9jgqZcVWohXH6ahKf5ns6QfOZ9MeXDlsGe_RvzDeOOlTv2R4Px395nN6b547JQ1-qD17ey28_kdyT61EckaJyNE-Co-sMgX0gk8bSFAs0EYfQRxWK7xVfBT7mDB7zLAy6-xZiKOYcm_09xQcr7WykoMU1H-_FqH6uQSPfzrbOp8EgO8SjRu7rqTdGZaPpOj-qd-_mTSKKzGN8AAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Beam AI"
+    },
+    {
+      "position": 5,
+      "title": "Best ai chatbot for engineers : r/EngineeringStudents",
+      "link": "https://www.reddit.com/r/EngineeringStudents/comments/17v5a6g/best_ai_chatbot_for_engineers/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlAEB6zswFWCHqfkUmVqL2K8EGzyH6Bb1Y0_REDoM3R4SElfAozBEmS1Ih60lGsp--f0_TFiRFxJ8QcWg6XfKpc3g9p2uTVmz283kxIbvqNoUozlIP3F6C3bXlDCd6X9CwHWaEnKtxoUIFWMIIl6ifFKim2BB410_gj-WB00n6sXEXCXuURNRRPyo4gJ6Ds6P0IfPhNfq&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQFnoECDAQAQ&uoh=1",
+      "displayed_link": "30+ comments \u00b7 2 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "It has a use in concept explanation and clean up of writing/coding. But my God, the only AI I trust is Wolfram Alpha for math problems.",
+      "snippet_highlighted_words": [
+        "Wolfram Alpha"
+      ],
+      "sitelinks": {
+        "list": [
+          {
+            "title": "What do yall think is the best AI for solving engineering ...",
+            "link": "https://www.reddit.com/r/OpenAI/comments/1ld8d6a/what_do_yall_think_is_the_best_ai_for_solving/",
+            "answer_count": 13,
+            "date": "16 Jun 2025"
+          },
+          {
+            "title": "Best AI Chatbot for Engineering Students? - Reddit",
+            "link": "https://www.reddit.com/r/EngineeringStudents/comments/1ojayy0/best_ai_chatbot_for_engineering_students/",
+            "answer_count": 23,
+            "date": "29 Oct 2025"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "It has a use in concept explanation and clean up of writing/coding. But my God, the only AI I trust is Wolfram Alpha for math problems.",
+          "source_info_link": "https://www.reddit.com/r/EngineeringStudents/comments/17v5a6g/best_ai_chatbot_for_engineers/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/EngineeringStudents",
+      "read_more_link": "https://www.reddit.com/r/EngineeringStudents/comments/17v5a6g/best_ai_chatbot_for_engineers/#:~:text=It%20has%20a%20use%20in,Wolfram%20Alpha%20for%20math%20problems."
+    },
+    {
+      "position": 6,
+      "title": "Engineering Problem-Solving With AI",
+      "link": "https://www.stonybrook.edu/precollege-summer/courses/engineering-problem-solving.html",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESjQEB6zswFYOZ1WhrEV-3pGtsSJk5VqzmDZF6uvUmi8ZQywG4KngsqTiB9FNWgtHRK8U6ymH5Jry-x-3HS_deOzwz_MJ-njL926d-ukHRhkSW6uCQ3-cApNWv2st2gKsspzzHt0Bxn-LhwmCmDQG6mrLkiTZtYoDYVa3qI3jeOGijL_Xwk4EHhIjdPfY90RY&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQFnoECCQQAQ&uoh=1",
+      "displayed_link": "https://www.stonybrook.edu \u203a courses \u203a engineering-pr...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAOVBMVEVHcEzMOzy5GBi4FBS3DxC2DAy2Cwy4FBS7GxvDKSq1CAi1CAi0AAC2DAy3EhLZT1G2Cgq2DAy9ICE868qgAAAAE3RSTlMAE1V7nLnXZ0MirP__xYoI8ukwCGf6qAAAAQJJREFUeAFtzQmOhSAQRdHLjFSByv4X26LfiGkvZDx5Ke6MdT5E45LJC69yET2juhzS8blzonfE7IoJSaWtjIo-sRFsKkZUwxfu1N6cavmP-xrXnR35wthLbvZ4X1ht8r0eY_nA4npEiIsPE-4Xeo-MeVln7Be6gCypINgbxVmskwNTJCYjBMeNKpkuY2kFX5Dc5UFdmtGBWUj7edky8mO567YN7Gr6uW-BUdMnFu1oRrvxjPKMRi3SiJ6FM5kQTdRAE37VGaUN6bpw1V9YsGqQzK844R7pamncGXkwbqCNKftgFdgic-1Gihqq55W70etCh3dZLmya-ajJQOdXPrOVV3-WlBO_z_wCZAAAAABJRU5ErkJggg.png",
+      "snippet": "Experience hands-on challenges in mechanics, autonomous systems, and thermal-fluid science while coding in Python and MATLAB, with generative AI tools as your ...",
+      "snippet_highlighted_words": [
+        "Experience hands-on challenges in mechanics, autonomous systems, and thermal-fluid science"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Experience hands-on challenges in mechanics, autonomous systems, and thermal-fluid science while coding in Python and MATLAB, with generative AI tools as your ...",
+          "source_info_link": "https://www.stonybrook.edu/precollege-summer/courses/engineering-problem-solving.html",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAOVBMVEVHcEzMOzy5GBi4FBS3DxC2DAy2Cwy4FBS7GxvDKSq1CAi1CAi0AAC2DAy3EhLZT1G2Cgq2DAy9ICE868qgAAAAE3RSTlMAE1V7nLnXZ0MirP__xYoI8ukwCGf6qAAAAQJJREFUeAFtzQmOhSAQRdHLjFSByv4X26LfiGkvZDx5Ke6MdT5E45LJC69yET2juhzS8blzonfE7IoJSaWtjIo-sRFsKkZUwxfu1N6cavmP-xrXnR35wthLbvZ4X1ht8r0eY_nA4npEiIsPE-4Xeo-MeVln7Be6gCypINgbxVmskwNTJCYjBMeNKpkuY2kFX5Dc5UFdmtGBWUj7edky8mO567YN7Gr6uW-BUdMnFu1oRrvxjPKMRi3SiJ6FM5kQTdRAE37VGaUN6bpw1V9YsGqQzK844R7pamncGXkwbqCNKftgFdgic-1Gihqq55W70etCh3dZLmya-ajJQOdXPrOVV3-WlBO_z_wCZAAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Stony Brook University",
+      "read_more_link": "https://www.stonybrook.edu/precollege-summer/courses/engineering-problem-solving.html#:~:text=Experience%20hands%2Don%20challenges%20in%20mechanics%2C,tools%20as%20your%20virtual%20assistant."
+    },
+    {
+      "position": 7,
+      "title": "Best AI Tools for Mechanical Engineers in 2026",
+      "link": "https://www.colabsoftware.com/ai-tools-for-mechanical-engineers-guide",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESfQHrOzAVzuEhOkiXyyvqisXDokjv035ANuJMoJccZD26DSP21XKpNERm7BzSfeTWrqnpu8eUW1FwTGRjrpoj1At1EEpxmsYJdL_EuHierMlD5XY_jvmFQloPFjBOhgJpnj9ehZh3nnD8Thux7h9wobfTmi33CF6nIo3U5iu5&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQFnoECCYQAQ&uoh=1",
+      "displayed_link": "https://www.colabsoftware.com \u203a ai-tools-for-mechanic...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAOVBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADLcPMfAAAAE3RSTlMAXvXcOub_whIci54JLrF2SVTPWd-H0gAAAMlJREFUeAFt0gWygDAMRdGk8uq6_71-6dCgd5wDVOkaK23oO2MBwPkPCg5H8WUcEiS-EwDOTtQWoaKPJ0YJ10yriJ3LDZL5t3D9INIeupuwxqvUIA0_j5f-cQBoVEV1GDE3QBCWgt6qslG4Irz1HSv2E7hjBhJFmdEL184wJLojTBRK2T9wuIOmHwjfqEyw-ERZ9RfKfr1w2tAVTuwXZHNuFNahtQuykOq0ynXj-LpIxXpBuQeX1Im60LO4kekj7zCmDPbKDPZ06RcnUw-JbCAv-AAAAABJRU5ErkJggg.png",
+      "date": "27 Aug 2026",
+      "snippet": "A 2026 guide to AI tools for mechanical engineers, including engineering search, generative design, simulation, design review, and how to ...",
+      "snippet_highlighted_words": [
+        "engineering search, generative design, simulation, design review"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "A 2026 guide to AI tools for mechanical engineers, including engineering search, generative design, simulation, design review, and how to ...",
+          "source_info_link": "https://www.colabsoftware.com/ai-tools-for-mechanical-engineers-guide",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAOVBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADLcPMfAAAAE3RSTlMAXvXcOub_whIci54JLrF2SVTPWd-H0gAAAMlJREFUeAFt0gWygDAMRdGk8uq6_71-6dCgd5wDVOkaK23oO2MBwPkPCg5H8WUcEiS-EwDOTtQWoaKPJ0YJ10yriJ3LDZL5t3D9INIeupuwxqvUIA0_j5f-cQBoVEV1GDE3QBCWgt6qslG4Irz1HSv2E7hjBhJFmdEL184wJLojTBRK2T9wuIOmHwjfqEyw-ERZ9RfKfr1w2tAVTuwXZHNuFNahtQuykOq0ynXj-LpIxXpBuQeX1Im60LO4kekj7zCmDPbKDPZ06RcnUw-JbCAv-AAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "CoLab Software"
+    },
+    {
+      "position": 8,
+      "title": "Engineering Solver: Solve, Simplify, and Plot",
+      "link": "https://scispace.com/agents/engineering-solver-5ba4dtu5",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbwHrOzAVX1ObDV47rPe7wgI8QtiM0Byw09mpfrblOKOxUnA569VbD67R15615cU_QNUDRxy7GWzrPnpvJhDn7oIbTdXObfBppcbL3-eUnUcO1HN3IQTRSt4GU_iCvnscf1kRUmh3MbCD69sAzReuUA&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQFnoECC4QAQ&uoh=1",
+      "displayed_link": "https://scispace.com \u203a Agent Gallery",
+      "favicon": "https://serpapi.com/images/i/UklGRrgAAABXRUJQVlA4IKwAAACQBQCdASocABgAPtFAtFooIqgoFAEAGglsAD5AfiDF27JJB-IwOCb6cs5_K3yZGBh_8bQAAAD-_NaaBBRUkOdiLMlhHCtV6SCayZk5aJkicNisCn5Tyt2Gw9-jn_ax5dWI9qie6HtMvA1IxQHdD-yzz8OED44SeKQNz2M2C2z2PxWzSahVWRxs0uJzTbeEp_mTZZv0upuWgwB0N-eObdL5CGeJ9rP3m4R9wAAA.webp",
+      "snippet": "The Engineering Solver turns real\u2011world word problems into documented, unit\u2011aware solutions across statics/dynamics, fluids, thermodynamics, heat transfer, ...",
+      "snippet_highlighted_words": [
+        "Engineering Solver",
+        "problems"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.6,
+            "reviews": 554
+          },
+          "extensions": [
+            "4.6(554)",
+            "Free",
+            "Educational"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "The Engineering Solver turns real\u2011world word problems into documented, unit\u2011aware solutions across statics/dynamics, fluids, thermodynamics, heat transfer, ...",
+          "source_info_link": "https://scispace.com/agents/engineering-solver-5ba4dtu5",
+          "icon": "https://serpapi.com/images/i/UklGRrgAAABXRUJQVlA4IKwAAACQBQCdASocABgAPtFAtFooIqgoFAEAGglsAD5AfiDF27JJB-IwOCb6cs5_K3yZGBh_8bQAAAD-_NaaBBRUkOdiLMlhHCtV6SCayZk5aJkicNisCn5Tyt2Gw9-jn_ax5dWI9qie6HtMvA1IxQHdD-yzz8OED44SeKQNz2M2C2z2PxWzSahVWRxs0uJzTbeEp_mTZZv0upuWgwB0N-eObdL5CGeJ9rP3m4R9wAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "SciSpace",
+      "read_more_link": "https://scispace.com/agents/engineering-solver-5ba4dtu5#:~:text=The%20Engineering%20Solver%20turns%20real%E2%80%91world,statics%2Fdynamics%2C%20fluids%2C%20thermodynamics%2C%20heat%20transfer%2C"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Mechanical engineering ai problem solver",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&q=Mechanical+engineering+ai+problem+solver&sa=X&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ1QJ6BAhBEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Mechanical+engineering+ai+problem+solver"
+    },
+    {
+      "block_position": 1,
+      "query": "Engineering ai problem solver online free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&q=Engineering+ai+problem+solver+online+free&sa=X&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Engineering+ai+problem+solver+online+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Engineering ai problem solver online",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&q=Engineering+ai+problem+solver+online&sa=X&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Engineering+ai+problem+solver+online"
+    },
+    {
+      "block_position": 1,
+      "query": "Engineering ai problem solver free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&q=Engineering+ai+problem+solver+free&sa=X&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ1QJ6BAhFEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Engineering+ai+problem+solver+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Civil engineering ai problem solver",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&q=Civil+engineering+ai+problem+solver&sa=X&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ1QJ6BAhDEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Civil+engineering+ai+problem+solver"
+    },
+    {
+      "block_position": 1,
+      "query": "Free ai to solve engineering problems",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&q=Free+ai+to+solve+engineering+problems&sa=X&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ1QJ6BAhCEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Free+ai+to+solve+engineering+problems"
+    },
+    {
+      "block_position": 1,
+      "query": "Best AI for engineering problems",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&q=Best+AI+for+engineering+problems&sa=X&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ1QJ6BAhAEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+for+engineering+problems"
+    },
+    {
+      "block_position": 1,
+      "query": "Mechanical engineering AI",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&q=Mechanical+engineering+AI&sa=X&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ1QJ6BAg_EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Mechanical+engineering+AI"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=engineering+AI+problem+solver&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&ei=pnStauDaFoLz0PEP9de3iA8&start=10&sa=N&sstk=AS6-VmJ09JExE0Z5mNBYIVyN4L1shR2lMDGGRJDOLddvrry7wjIUcgQOZB8VbuEeZdLRJ3duansBpP03gxabzY9-oyLUuwVIFs_SHg&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ8NMDegQIPRAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=engineering+AI+problem+solver&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&ei=pnStauDaFoLz0PEP9de3iA8&start=10&sa=N&sstk=AS6-VmJ09JExE0Z5mNBYIVyN4L1shR2lMDGGRJDOLddvrry7wjIUcgQOZB8VbuEeZdLRJ3duansBpP03gxabzY9-oyLUuwVIFs_SHg&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ8tMDegQIPRAE",
+      "3": "https://www.google.co.in/search?q=engineering+AI+problem+solver&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&ei=pnStauDaFoLz0PEP9de3iA8&start=20&sa=N&sstk=AS6-VmJ09JExE0Z5mNBYIVyN4L1shR2lMDGGRJDOLddvrry7wjIUcgQOZB8VbuEeZdLRJ3duansBpP03gxabzY9-oyLUuwVIFs_SHg&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ8tMDegQIPRAG",
+      "4": "https://www.google.co.in/search?q=engineering+AI+problem+solver&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&ei=pnStauDaFoLz0PEP9de3iA8&start=30&sa=N&sstk=AS6-VmJ09JExE0Z5mNBYIVyN4L1shR2lMDGGRJDOLddvrry7wjIUcgQOZB8VbuEeZdLRJ3duansBpP03gxabzY9-oyLUuwVIFs_SHg&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ8tMDegQIPRAI",
+      "5": "https://www.google.co.in/search?q=engineering+AI+problem+solver&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&ei=pnStauDaFoLz0PEP9de3iA8&start=40&sa=N&sstk=AS6-VmJ09JExE0Z5mNBYIVyN4L1shR2lMDGGRJDOLddvrry7wjIUcgQOZB8VbuEeZdLRJ3duansBpP03gxabzY9-oyLUuwVIFs_SHg&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ8tMDegQIPRAK",
+      "6": "https://www.google.co.in/search?q=engineering+AI+problem+solver&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&ei=pnStauDaFoLz0PEP9de3iA8&start=50&sa=N&sstk=AS6-VmJ09JExE0Z5mNBYIVyN4L1shR2lMDGGRJDOLddvrry7wjIUcgQOZB8VbuEeZdLRJ3duansBpP03gxabzY9-oyLUuwVIFs_SHg&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ8tMDegQIPRAM",
+      "7": "https://www.google.co.in/search?q=engineering+AI+problem+solver&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&ei=pnStauDaFoLz0PEP9de3iA8&start=60&sa=N&sstk=AS6-VmJ09JExE0Z5mNBYIVyN4L1shR2lMDGGRJDOLddvrry7wjIUcgQOZB8VbuEeZdLRJ3duansBpP03gxabzY9-oyLUuwVIFs_SHg&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ8tMDegQIPRAO",
+      "8": "https://www.google.co.in/search?q=engineering+AI+problem+solver&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&ei=pnStauDaFoLz0PEP9de3iA8&start=70&sa=N&sstk=AS6-VmJ09JExE0Z5mNBYIVyN4L1shR2lMDGGRJDOLddvrry7wjIUcgQOZB8VbuEeZdLRJ3duansBpP03gxabzY9-oyLUuwVIFs_SHg&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ8tMDegQIPRAQ",
+      "9": "https://www.google.co.in/search?q=engineering+AI+problem+solver&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&ei=pnStauDaFoLz0PEP9de3iA8&start=80&sa=N&sstk=AS6-VmJ09JExE0Z5mNBYIVyN4L1shR2lMDGGRJDOLddvrry7wjIUcgQOZB8VbuEeZdLRJ3duansBpP03gxabzY9-oyLUuwVIFs_SHg&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ8tMDegQIPRAS",
+      "10": "https://www.google.co.in/search?q=engineering+AI+problem+solver&sca_esv=40a79c977c37d534&hl=en&gl=in&sxsrf=APpeQntnCZNAhpZFpp1N8FbanGKNzB3MGA:1789752486379&ei=pnStauDaFoLz0PEP9de3iA8&start=90&sa=N&sstk=AS6-VmJ09JExE0Z5mNBYIVyN4L1shR2lMDGGRJDOLddvrry7wjIUcgQOZB8VbuEeZdLRJ3duansBpP03gxabzY9-oyLUuwVIFs_SHg&ved=2ahUKEwjgxb7J0_iWAxWCOTQIHfXrDfEQ8tMDegQIPRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=engineering+AI+problem+solver&start=90"
+    }
+  }
+}

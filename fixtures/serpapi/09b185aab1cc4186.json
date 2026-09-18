@@ -1,0 +1,555 @@
+{
+  "search_metadata": {
+    "id": "6aad745d71b49224ea2088cd",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ZKCeF0J7H2z4D1arXbct7fscpVl93uGL25ZcZGYRSMc/6aad745d71b49224ea2088cd.json",
+    "markdown_endpoint": "https://serpapi.com/searches/ZKCeF0J7H2z4D1arXbct7fscpVl93uGL25ZcZGYRSMc/6aad745d71b49224ea2088cd.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/ZKCeF0J7H2z4D1arXbct7fscpVl93uGL25ZcZGYRSMc/6aad745d71b49224ea2088cd.json_with_pixel_position",
+    "created_at": "2026-09-18 17:26:53 UTC",
+    "processed_at": "2026-09-18 17:26:53 UTC",
+    "google_url": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&oq=best+AI+plagiarism+policy+app&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/ZKCeF0J7H2z4D1arXbct7fscpVl93uGL25ZcZGYRSMc/6aad745d71b49224ea2088cd.html",
+    "total_time_taken": 11.77
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "best AI plagiarism policy app",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "best AI plagiarism policy app",
+    "total_results": 140,
+    "time_taken_displayed": 0.27,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_videos": [
+    {
+      "position": 1,
+      "title": "Top 5 FREE AI Plagiarism Checkers in 2026 | Check ...",
+      "link": "https://www.youtube.com/watch?v=tKL2BfzYnAw",
+      "thumbnail": "https://serpapi.com/searches/6aad745d71b49224ea2088cd/images/SrVLRLsL3R6nbF56W-gJxcNNsyEOIMXhlDWleWrMOv0.jpeg",
+      "channel": "Educational Hub",
+      "duration": "5:11",
+      "platform": "YouTube",
+      "date": "16 Jul 2026",
+      "snippet": "Compare Duplichecker, Small SEO Tools, Plagiarism Detector, CheckPlagiarism, & SearchEngineReports.net to find the best free AI plagiarism checker.",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcT_pnJ3IYG7E8yUQbjktAHBiexNpJa5MdU-Tg"
+    },
+    {
+      "position": 2,
+      "title": "Best Free AI & Plagiarism Detector like New Turnitin in 2026 ...",
+      "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY",
+      "thumbnail": "https://serpapi.com/searches/6aad745d71b49224ea2088cd/images/CjF6P4AUuDy8gG55r2_w7YHs2dkRGKKAVuz4k-sh2-s.jpeg",
+      "channel": "Insights4UToday",
+      "duration": "12:20",
+      "platform": "YouTube",
+      "date": "9 May 2026",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcSLa27X9xsnMuIzGb8-ov42REHxhyT1yucO6g",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Intro & 94% Turnitin AI Score",
+          "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY&t=0"
+        },
+        {
+          "time": "00:38",
+          "title": "AI Detection Problems & Turnitin Access",
+          "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY&t=38"
+        },
+        {
+          "time": "01:22",
+          "title": "Introducing Quetext",
+          "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY&t=82"
+        },
+        {
+          "time": "02:02",
+          "title": "Four Text Samples Explained",
+          "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY&t=122"
+        },
+        {
+          "time": "03:34",
+          "title": "Turnitin Results Overview",
+          "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY&t=214"
+        },
+        {
+          "time": "05:07",
+          "title": "Quetext Features & AI Test",
+          "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY&t=307"
+        },
+        {
+          "time": "06:37",
+          "title": "Testing Humanised AI Text",
+          "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY&t=397"
+        },
+        {
+          "time": "08:09",
+          "title": "Testing Journal Article & Human Text",
+          "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY&t=489"
+        },
+        {
+          "time": "09:56",
+          "title": "Quetext vs Turnitin Analysis",
+          "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY&t=596"
+        },
+        {
+          "time": "11:35",
+          "title": "Extra Quetext Tools & Final Verdict",
+          "link": "https://www.youtube.com/watch?v=v-Y3bNYPsLY&t=695"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "How to check plagiarism and AI: The best free and accurate ...",
+      "link": "https://www.youtube.com/watch?v=NyZ32qN4WJ0",
+      "thumbnail": "https://serpapi.com/searches/6aad745d71b49224ea2088cd/images/UXwoMdhOECAg2mgbOL4cL-HZv8CQtaTNA2Uzw95ls3k.png",
+      "channel": "Mohamed Benhima",
+      "duration": "3:19",
+      "platform": "YouTube",
+      "date": "7 Nov 2024",
+      "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQtfptPMNd2Ke7MtOBz_WSKPps0WX3pD9XdUw"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Which AI tool is best for plagiarism?",
+      "type": "ai_overview",
+      "page_token": "89qaCnicHdDBboIwAADQ7Gc8aoXhMhOzBKUgSg21LdLLUloVpRSGDJTb_mVfta_Zsus7vq9vfTHFz9M9b9v6Np9M-r4fn6vqrI9jWY0vZiJuDyMnUmidCVnMZy-z6dtJLrzPtbv8WLsxrWu2woCs8gINrsAF7AhoOwWc-GDlFQGvOvF1uoPSUhDGmY9SGbgA2xLs_PsmJqHDB9Ygqy6PLCRJ4gxJknf7AAaZFzui4IYVmB9A9Ngy9NgzZiKT9kpzhK6ccxgN4qpIZqAvfN0yyrZHqjqkFceEAlpqgTS8ZUQxfnA1LVXDVmGvwD2UAVzuViE9FtgmgWoSQ21uefdMa9vLlYimCKQHThBVm9jyHrJ8jSODAjJwd4-rS0zxIK-6pAm1acCKiOEdonmTGuoQH-dkqtI_G6Ly2eb96CS7hT36_1y8n8p2XjfV-ReTa4Sx",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=89qaCnicHdDBboIwAADQ7Gc8aoXhMhOzBKUgSg21LdLLUloVpRSGDJTb_mVfta_Zsus7vq9vfTHFz9M9b9v6Np9M-r4fn6vqrI9jWY0vZiJuDyMnUmidCVnMZy-z6dtJLrzPtbv8WLsxrWu2woCs8gINrsAF7AhoOwWc-GDlFQGvOvF1uoPSUhDGmY9SGbgA2xLs_PsmJqHDB9Ygqy6PLCRJ4gxJknf7AAaZFzui4IYVmB9A9Ngy9NgzZiKT9kpzhK6ccxgN4qpIZqAvfN0yyrZHqjqkFceEAlpqgTS8ZUQxfnA1LVXDVmGvwD2UAVzuViE9FtgmgWoSQ21uefdMa9vLlYimCKQHThBVm9jyHrJ8jSODAjJwd4-rS0zxIK-6pAm1acCKiOEdonmTGuoQH-dkqtI_G6Ly2eb96CS7hT36_1y8n8p2XjfV-ReTa4Sx",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFRrcGtaVkZOT1VNNFQwaGZiMU5UTUZscFZXbE1aREJGVW5veVVVMVZjamxUYVhaMFdXSjJOMUZEZWxaa1FXdHBiMkZHTjBsQmF6UTBVaTF0V0hBNGFIVndaM05LVnpsWVdWODFjM0J4ZGtoTVJFcE1NSFpYVUdOdVp4SVhXak5UZEdGMlV6VkhTa05oTW5KdlVESnpSMDgyUVVrYUlrRkVjM0k1WmxGRFMyRnFjalZ1VW5VeVRESXllUzFzVUVGNFdqQkVhalk1VTNjIiwiZmN2IjoiMyIsImVpIjoiWjNTdGF2UzVHSkNhMnJvUDJzR082QUkiLCJxYyI6IkNoMWlaWE4wSUdGcElIQnNZV2RwWVhKcGMyMGdjRzlzYVdONUlHRndjQkFBZllHVkl6OCIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgdG9vbCBpcyBiZXN0IGZvciBwbGFnaWFyaXNtPyIsImxrIjoiR2lSM2FHbGphQ0JoYVNCMGIyOXNJR2x6SUdKbGMzUWdabTl5SUhCc1lXZHBZWEpwYzIwIiwiYnMiOiJjMzJQdnctQ01CQ0Y0OXJKdWY3SURhSmhRM1pEaUE0eXVSaWRLeHoyRXFDa1BlVGZ0LUtDSnJwY1h2Sy1mQzhuVGlLNGFzbzFwQm13TVJXUWd4czZodEpZYUN0MUoyWEoxVW04bHF0LUFCWDlBOFZGaEtsRllJMy1xcloxUGlxR0FobHpmcTJNcGFIY2tQdkYtcUdSOXlEZ2FIb29ER1Jnc1RZUGhHMFVCUjg2a0V2OVptakVqQzA3TWQtcnhpczZoM0R1YkVOTXpmQkNhUkdUZUNGbnVlOXA2UG03bjA2ZSIsImlkIjoiZmNfWjNTdGF2UzVHSkNhMnJvUDJzR082QUlfNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFRrcGtaVkZOT1VNNFQwaGZiMU5UTUZscFZXbE1aREJGVW5veVVVMVZjamxUYVhaMFdXSjJOMUZEZWxaa1FXdHBiMkZHTjBsQmF6UTBVaTF0V0hBNGFIVndaM05LVnpsWVdWODFjM0J4ZGtoTVJFcE1NSFpYVUdOdVp4SVhXak5UZEdGMlV6VkhTa05oTW5KdlVESnpSMDgyUVVrYUlrRkVjM0k1WmxGRFMyRnFjalZ1VW5VeVRESXllUzFzVUVGNFdqQkVhalk1VTNjIiwiZmN2IjoiMyIsImVpIjoiWjNTdGF2UzVHSkNhMnJvUDJzR082QUkiLCJxYyI6IkNoMWlaWE4wSUdGcElIQnNZV2RwWVhKcGMyMGdjRzlzYVdONUlHRndjQkFBZllHVkl6OCIsInF1ZXN0aW9uIjoiV2hpY2ggQUkgdG9vbCBpcyBiZXN0IGZvciBwbGFnaWFyaXNtPyIsImxrIjoiR2lSM2FHbGphQ0JoYVNCMGIyOXNJR2x6SUdKbGMzUWdabTl5SUhCc1lXZHBZWEpwYzIwIiwiYnMiOiJjMzJQdnctQ01CQ0Y0OXJKdWY3SURhSmhRM1pEaUE0eXVSaWRLeHoyRXFDa1BlVGZ0LUtDSnJwY1h2Sy1mQzhuVGlLNGFzbzFwQm13TVJXUWd4czZodEpZYUN0MUoyWEoxVW04bHF0LUFCWDlBOFZGaEtsRllJMy1xcloxUGlxR0FobHpmcTJNcGFIY2tQdkYtcUdSOXlEZ2FIb29ER1Jnc1RZUGhHMFVCUjg2a0V2OVptakVqQzA3TWQtcnhpczZoM0R1YkVOTXpmQkNhUkdUZUNGbnVlOXA2UG03bjA2ZSIsImlkIjoiZmNfWjNTdGF2UzVHSkNhMnJvUDJzR082QUlfNSJ9"
+    },
+    {
+      "question": "Are there apps that detect AI plagiarism?",
+      "type": "ai_overview",
+      "page_token": "hAyr8XicHdBfcqIwHADg2cv4qAQGtzjjdEoXqijZ5kcCNC87mKAoCWBNy5-33qWn6mna2Rt88318qnNTf_0aKmO622qx6Pt-fmrbkyrnop2fm0VxGxuxEIVSh0LUq-XvJbo_inXwtvUfr1ufsK5L_4BFQzYRBDVR0sRWmMuQ632C7MJydzgzPUG-BQisZEQY2PC8Z6YFDVec1QYaOZUaBqzRpsylXSo-HjYRE44KZQA7GqYJDe7sksFSZN4Ak09xCg65RBo7qhUNMRLJfUyFndZVXIbRI1dVzmszZTW4mXaJfEqvzKnOkHqYj9YUJ-hWMI4kwj-WiGB7aydhNUL-4NJc-UElixhh6yXnFDO5I3YwCu2RuMEbOnE_gfZMGEzionQadh11fJVpdWENODQYxr8UOy_pg5vV3i558iLez47ife3M_n-u_x21WXWv7ekbfTCC0Q",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=hAyr8XicHdBfcqIwHADg2cv4qAQGtzjjdEoXqijZ5kcCNC87mKAoCWBNy5-33qWn6mna2Rt88318qnNTf_0aKmO622qx6Pt-fmrbkyrnop2fm0VxGxuxEIVSh0LUq-XvJbo_inXwtvUfr1ufsK5L_4BFQzYRBDVR0sRWmMuQ632C7MJydzgzPUG-BQisZEQY2PC8Z6YFDVec1QYaOZUaBqzRpsylXSo-HjYRE44KZQA7GqYJDe7sksFSZN4Ak09xCg65RBo7qhUNMRLJfUyFndZVXIbRI1dVzmszZTW4mXaJfEqvzKnOkHqYj9YUJ-hWMI4kwj-WiGB7aydhNUL-4NJc-UElixhh6yXnFDO5I3YwCu2RuMEbOnE_gfZMGEzionQadh11fJVpdWENODQYxr8UOy_pg5vV3i558iLez47ife3M_n-u_x21WXWv7ekbfTCC0Q",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFRrcGtaVkZOT1VNNFQwaGZiMU5UTUZscFZXbE1aREJGVW5veVVVMVZjamxUYVhaMFdXSjJOMUZEZWxaa1FXdHBiMkZHTjBsQmF6UTBVaTF0V0hBNGFIVndaM05LVnpsWVdWODFjM0J4ZGtoTVJFcE1NSFpYVUdOdVp4SVhXak5UZEdGMlV6VkhTa05oTW5KdlVESnpSMDgyUVVrYUlrRkVjM0k1WmxGRFMyRnFjalZ1VW5VeVRESXllUzFzVUVGNFdqQkVhalk1VTNjIiwiZmN2IjoiMyIsImVpIjoiWjNTdGF2UzVHSkNhMnJvUDJzR082QUkiLCJxYyI6IkNoMWlaWE4wSUdGcElIQnNZV2RwWVhKcGMyMGdjRzlzYVdONUlHRndjQkFBZllHVkl6OCIsInF1ZXN0aW9uIjoiQXJlIHRoZXJlIGFwcHMgdGhhdCBkZXRlY3QgQUkgcGxhZ2lhcmlzbT8iLCJsayI6ImM1TlN6eXhXS01sSUxVcFZTQ3dvQURFVFN4UlNVa3RTazBzVUVqTVZDbklTMHpNVGl6S0xjd0UiLCJicyI6ImMzMlB2dy1DTUJDRjQ5ckp1ZjdJRGFKaFEzWkRpQTR5dVJpZEt4ejJFcUNrUGVUZnQtS0NKcnBjWHZLLWZDOG5UaUs0YXNvMXBCbXdNUldRZ3hzNmh0SllhQ3QxSjJYSjFVbThscXQtQUJYOUE4VkZoS2xGWUkzLXFyWjFQaXFHQWhsemZxMk1wYUhja1B2Ri1xR1I5eURnYUhvb0RHUmdzVFlQaEcwVUJSODZrRXY5Wm1qRWpDMDdNZC1yeGlzNmgzRHViRU5NemZCQ2FSR1RlQ0ZudWU5cDZQbTduMDZlIiwiaWQiOiJmY19aM1N0YXZTNUdKQ2Eycm9QMnNHTzZBSV81In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFRrcGtaVkZOT1VNNFQwaGZiMU5UTUZscFZXbE1aREJGVW5veVVVMVZjamxUYVhaMFdXSjJOMUZEZWxaa1FXdHBiMkZHTjBsQmF6UTBVaTF0V0hBNGFIVndaM05LVnpsWVdWODFjM0J4ZGtoTVJFcE1NSFpYVUdOdVp4SVhXak5UZEdGMlV6VkhTa05oTW5KdlVESnpSMDgyUVVrYUlrRkVjM0k1WmxGRFMyRnFjalZ1VW5VeVRESXllUzFzVUVGNFdqQkVhalk1VTNjIiwiZmN2IjoiMyIsImVpIjoiWjNTdGF2UzVHSkNhMnJvUDJzR082QUkiLCJxYyI6IkNoMWlaWE4wSUdGcElIQnNZV2RwWVhKcGMyMGdjRzlzYVdONUlHRndjQkFBZllHVkl6OCIsInF1ZXN0aW9uIjoiQXJlIHRoZXJlIGFwcHMgdGhhdCBkZXRlY3QgQUkgcGxhZ2lhcmlzbT8iLCJsayI6ImM1TlN6eXhXS01sSUxVcFZTQ3dvQURFVFN4UlNVa3RTazBzVUVqTVZDbklTMHpNVGl6S0xjd0UiLCJicyI6ImMzMlB2dy1DTUJDRjQ5ckp1ZjdJRGFKaFEzWkRpQTR5dVJpZEt4ejJFcUNrUGVUZnQtS0NKcnBjWHZLLWZDOG5UaUs0YXNvMXBCbXdNUldRZ3hzNmh0SllhQ3QxSjJYSjFVbThscXQtQUJYOUE4VkZoS2xGWUkzLXFyWjFQaXFHQWhsemZxMk1wYUhja1B2Ri1xR1I5eURnYUhvb0RHUmdzVFlQaEcwVUJSODZrRXY5Wm1qRWpDMDdNZC1yeGlzNmgzRHViRU5NemZCQ2FSR1RlQ0ZudWU5cDZQbTduMDZlIiwiaWQiOiJmY19aM1N0YXZTNUdKQ2Eycm9QMnNHTzZBSV81In0%3D"
+    },
+    {
+      "question": "How do I remove 100% plagiarism?",
+      "type": "ai_overview",
+      "page_token": "9fdiRnicHdBRcqIwAADQ2cv0UxNT3NUZp7OUoFKIJSGJ8rMTgho0BGzpgvztXXqqnqYz-47w_n3ayl2_fgym69r35XTa9_3k3DRne5zoZlK5qXq_Oz3VytpC6ety_nMOn056hT-2_vNt66e8bUVAAZMRpLjDsVxsitlgaCbobiNqjcyN4ag6Mrg-rr2bCETDMxEpR_sCeAENDiDH3mt28RHD0MWCsp1MvAJFVDliGApbNgv9IojaBLZxNurhgMJ-J_WdhFFVACjKNa1L9HsUa2NKPtBUWMh5J_UmvCXIFzk4j1J6Yyyudy2IOVy7SIEFEvhXX1TQU9aAAto8lYMSswEkzlJsSpVAAg77PCO8fEln-K7rRZo4ssnG3Ge0qVJOR32xNefhWyzLmjjySvf6kfFynvMSEElfsiziak9x3j-c9N8Vevj_ufpzqrtl-9acvwFYpYIE",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=9fdiRnicHdBRcqIwAADQ2cv0UxNT3NUZp7OUoFKIJSGJ8rMTgho0BGzpgvztXXqqnqYz-47w_n3ayl2_fgym69r35XTa9_3k3DRne5zoZlK5qXq_Oz3VytpC6ety_nMOn056hT-2_vNt66e8bUVAAZMRpLjDsVxsitlgaCbobiNqjcyN4ag6Mrg-rr2bCETDMxEpR_sCeAENDiDH3mt28RHD0MWCsp1MvAJFVDliGApbNgv9IojaBLZxNurhgMJ-J_WdhFFVACjKNa1L9HsUa2NKPtBUWMh5J_UmvCXIFzk4j1J6Yyyudy2IOVy7SIEFEvhXX1TQU9aAAto8lYMSswEkzlJsSpVAAg77PCO8fEln-K7rRZo4ssnG3Ge0qVJOR32xNefhWyzLmjjySvf6kfFynvMSEElfsiziak9x3j-c9N8Vevj_ufpzqrtl-9acvwFYpYIE",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFRrcGtaVkZOT1VNNFQwaGZiMU5UTUZscFZXbE1aREJGVW5veVVVMVZjamxUYVhaMFdXSjJOMUZEZWxaa1FXdHBiMkZHTjBsQmF6UTBVaTF0V0hBNGFIVndaM05LVnpsWVdWODFjM0J4ZGtoTVJFcE1NSFpYVUdOdVp4SVhXak5UZEdGMlV6VkhTa05oTW5KdlVESnpSMDgyUVVrYUlrRkVjM0k1WmxGRFMyRnFjalZ1VW5VeVRESXllUzFzVUVGNFdqQkVhalk1VTNjIiwiZmN2IjoiMyIsImVpIjoiWjNTdGF2UzVHSkNhMnJvUDJzR082QUkiLCJxYyI6IkNoMWlaWE4wSUdGcElIQnNZV2RwWVhKcGMyMGdjRzlzYVdONUlHRndjQkFBZllHVkl6OCIsInF1ZXN0aW9uIjoiSG93IGRvIEkgcmVtb3ZlIDEwMCUgcGxhZ2lhcmlzbT8iLCJsayI6IkdoNW9iM2NnWkc4Z2FTQnlaVzF2ZG1VZ01UQXdJSEJzWVdkcFlYSnBjMjAiLCJicyI6ImMzMlB2dy1DTUJDRjQ5ckp1ZjdJRGFKaFEzWkRpQTR5dVJpZEt4ejJFcUNrUGVUZnQtS0NKcnBjWHZLLWZDOG5UaUs0YXNvMXBCbXdNUldRZ3hzNmh0SllhQ3QxSjJYSjFVbThscXQtQUJYOUE4VkZoS2xGWUkzLXFyWjFQaXFHQWhsemZxMk1wYUhja1B2Ri1xR1I5eURnYUhvb0RHUmdzVFlQaEcwVUJSODZrRXY5Wm1qRWpDMDdNZC1yeGlzNmgzRHViRU5NemZCQ2FSR1RlQ0ZudWU5cDZQbTduMDZlIiwiaWQiOiJmY19aM1N0YXZTNUdKQ2Eycm9QMnNHTzZBSV81In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFRrcGtaVkZOT1VNNFQwaGZiMU5UTUZscFZXbE1aREJGVW5veVVVMVZjamxUYVhaMFdXSjJOMUZEZWxaa1FXdHBiMkZHTjBsQmF6UTBVaTF0V0hBNGFIVndaM05LVnpsWVdWODFjM0J4ZGtoTVJFcE1NSFpYVUdOdVp4SVhXak5UZEdGMlV6VkhTa05oTW5KdlVESnpSMDgyUVVrYUlrRkVjM0k1WmxGRFMyRnFjalZ1VW5VeVRESXllUzFzVUVGNFdqQkVhalk1VTNjIiwiZmN2IjoiMyIsImVpIjoiWjNTdGF2UzVHSkNhMnJvUDJzR082QUkiLCJxYyI6IkNoMWlaWE4wSUdGcElIQnNZV2RwWVhKcGMyMGdjRzlzYVdONUlHRndjQkFBZllHVkl6OCIsInF1ZXN0aW9uIjoiSG93IGRvIEkgcmVtb3ZlIDEwMCUgcGxhZ2lhcmlzbT8iLCJsayI6IkdoNW9iM2NnWkc4Z2FTQnlaVzF2ZG1VZ01UQXdJSEJzWVdkcFlYSnBjMjAiLCJicyI6ImMzMlB2dy1DTUJDRjQ5ckp1ZjdJRGFKaFEzWkRpQTR5dVJpZEt4ejJFcUNrUGVUZnQtS0NKcnBjWHZLLWZDOG5UaUs0YXNvMXBCbXdNUldRZ3hzNmh0SllhQ3QxSjJYSjFVbThscXQtQUJYOUE4VkZoS2xGWUkzLXFyWjFQaXFHQWhsemZxMk1wYUhja1B2Ri1xR1I5eURnYUhvb0RHUmdzVFlQaEcwVUJSODZrRXY5Wm1qRWpDMDdNZC1yeGlzNmgzRHViRU5NemZCQ2FSR1RlQ0ZudWU5cDZQbTduMDZlIiwiaWQiOiJmY19aM1N0YXZTNUdKQ2Eycm9QMnNHTzZBSV81In0%3D"
+    },
+    {
+      "question": "Can I use Turnitin for free?",
+      "type": "ai_overview",
+      "page_token": "seTzg3icHdBLcoIwAADQ6WVcKgG0rTNOR-RjU40VkiDZdCABg4RPhRZh17v0VD1NO128C7yvb5VXxc8dk13XtMvZrO_76bmuzyqd8nqaV7O4HSo-47FSScyL5eJ-AZ4yvnLa3trUvXUkTUNtXwsuHMS66A6UdolBT6ESV1yahihQFhH3XWA0CCBsXkYmrRp8LFGzI9RMQzTusDRPGgfchteQ-nmsrBa57E8BEk-OYbkfklJSDB5fjgouqHcL2Em-p968IKWjByHdYse9JRhK4aDc1x76eJT7lMCIXKRPtrAkOguQc4sZAXoatnOkngMX1CMxfCnUHvhaY0cYDglYD1wTr6hwoZdDy9-i4RAywm32wTV4YRrbcVfYuFobSQBarOQmAE0b6cyYZPxzZUz-x1ZvWdktm2t9_gUKRXmk",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=seTzg3icHdBLcoIwAADQ6WVcKgG0rTNOR-RjU40VkiDZdCABg4RPhRZh17v0VD1NO128C7yvb5VXxc8dk13XtMvZrO_76bmuzyqd8nqaV7O4HSo-47FSScyL5eJ-AZ4yvnLa3trUvXUkTUNtXwsuHMS66A6UdolBT6ESV1yahihQFhH3XWA0CCBsXkYmrRp8LFGzI9RMQzTusDRPGgfchteQ-nmsrBa57E8BEk-OYbkfklJSDB5fjgouqHcL2Em-p968IKWjByHdYse9JRhK4aDc1x76eJT7lMCIXKRPtrAkOguQc4sZAXoatnOkngMX1CMxfCnUHvhaY0cYDglYD1wTr6hwoZdDy9-i4RAywm32wTV4YRrbcVfYuFobSQBarOQmAE0b6cyYZPxzZUz-x1ZvWdktm2t9_gUKRXmk",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFRrcGtaVkZOT1VNNFQwaGZiMU5UTUZscFZXbE1aREJGVW5veVVVMVZjamxUYVhaMFdXSjJOMUZEZWxaa1FXdHBiMkZHTjBsQmF6UTBVaTF0V0hBNGFIVndaM05LVnpsWVdWODFjM0J4ZGtoTVJFcE1NSFpYVUdOdVp4SVhXak5UZEdGMlV6VkhTa05oTW5KdlVESnpSMDgyUVVrYUlrRkVjM0k1WmxGRFMyRnFjalZ1VW5VeVRESXllUzFzVUVGNFdqQkVhalk1VTNjIiwiZmN2IjoiMyIsImVpIjoiWjNTdGF2UzVHSkNhMnJvUDJzR082QUkiLCJxYyI6IkNoMWlaWE4wSUdGcElIQnNZV2RwWVhKcGMyMGdjRzlzYVdONUlHRndjQkFBZllHVkl6OCIsInF1ZXN0aW9uIjoiQ2FuIEkgdXNlIFR1cm5pdGluIGZvciBmcmVlPyIsImxrIjoiR2h0allXNGdhU0IxYzJVZ2RIVnlibWwwYVc0Z1ptOXlJR1p5WldVIiwiYnMiOiJjMzJQdnctQ01CQ0Y0OXJKdWY3SURhSmhRM1pEaUE0eXVSaWRLeHoyRXFDa1BlVGZ0LUtDSnJwY1h2Sy1mQzhuVGlLNGFzbzFwQm13TVJXUWd4czZodEpZYUN0MUoyWEoxVW04bHF0LUFCWDlBOFZGaEtsRllJMy1xcloxUGlxR0FobHpmcTJNcGFIY2tQdkYtcUdSOXlEZ2FIb29ER1Jnc1RZUGhHMFVCUjg2a0V2OVptakVqQzA3TWQtcnhpczZoM0R1YkVOTXpmQkNhUkdUZUNGbnVlOXA2UG03bjA2ZSIsImlkIjoiZmNfWjNTdGF2UzVHSkNhMnJvUDJzR082QUlfNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTFRrcGtaVkZOT1VNNFQwaGZiMU5UTUZscFZXbE1aREJGVW5veVVVMVZjamxUYVhaMFdXSjJOMUZEZWxaa1FXdHBiMkZHTjBsQmF6UTBVaTF0V0hBNGFIVndaM05LVnpsWVdWODFjM0J4ZGtoTVJFcE1NSFpYVUdOdVp4SVhXak5UZEdGMlV6VkhTa05oTW5KdlVESnpSMDgyUVVrYUlrRkVjM0k1WmxGRFMyRnFjalZ1VW5VeVRESXllUzFzVUVGNFdqQkVhalk1VTNjIiwiZmN2IjoiMyIsImVpIjoiWjNTdGF2UzVHSkNhMnJvUDJzR082QUkiLCJxYyI6IkNoMWlaWE4wSUdGcElIQnNZV2RwWVhKcGMyMGdjRzlzYVdONUlHRndjQkFBZllHVkl6OCIsInF1ZXN0aW9uIjoiQ2FuIEkgdXNlIFR1cm5pdGluIGZvciBmcmVlPyIsImxrIjoiR2h0allXNGdhU0IxYzJVZ2RIVnlibWwwYVc0Z1ptOXlJR1p5WldVIiwiYnMiOiJjMzJQdnctQ01CQ0Y0OXJKdWY3SURhSmhRM1pEaUE0eXVSaWRLeHoyRXFDa1BlVGZ0LUtDSnJwY1h2Sy1mQzhuVGlLNGFzbzFwQm13TVJXUWd4czZodEpZYUN0MUoyWEoxVW04bHF0LUFCWDlBOFZGaEtsRllJMy1xcloxUGlxR0FobHpmcTJNcGFIY2tQdkYtcUdSOXlEZ2FIb29ER1Jnc1RZUGhHMFVCUjg2a0V2OVptakVqQzA3TWQtcnhpczZoM0R1YkVOTXpmQkNhUkdUZUNGbnVlOXA2UG03bjA2ZSIsImlkIjoiZmNfWjNTdGF2UzVHSkNhMnJvUDJzR082QUlfNSJ9"
+    }
+  ],
+  "ai_overview": {
+    "page_token": "HCgPaXiczVXfcqo4HH6AfY7lpl0RlSqdYc4kMSJYrdSeWrxhEDGiQKxQqL3bZ9l9qn2aDYgKVo9zzsXOZiaEJD9-_z--P__23GD1z29_LaJoHd7zfJIkFUIp8ZyKTStuwFvhNrD5OfXCjb34RjzZDbj3d8-RkxsEVF1Famc0FlfWGHMLT3YCbhvLdc4OZYFzXHlSH0VWPBIVDVm1DR3WQuXxDqhcplU2p1boLJnZj2XImzx7rH6vt9mmElacwFRgJenDt49Vpzac9iu1qiBVHnnLZzLgPxw6gemiAXRZhl1hABpXNKUKVAAxOPqvApKt8Chl7AwhPbtC5KI2LbUJwVMmrrPZNj-7SRsc9LcvfstMwNI2yXwBIMm8hMC9Ekp56Hks-wz9IFMH6fLAu4UeT4o1LvlaGiQpbTvMCxMgdDRyYmxRcuOQKZuAVpfCNgT2Zb9ZfnoqEFdAx-dCKA4dvzQOlXswFHbCzwhr3Co_3bBF4F17YWcvmzDtZ_QsVWl30R2Ne9uBqwixRAexQuqtsfi8CLCZ8PaUyXnUmjkzc2FWv2V7oSaIVanebN1mWLLDA5jCIpi23xehMx6--L5ReahAYQ8jtCs6-FIxzPZIPRMYRLlo6YOdJDyepgXDOzG9U9SblxKmfY2fQLm0vWGaVyWDkZ716CcrTVHiaBUeivfI1j2MdoMUhNHTzhGVFjwtSiNVwUc3CoVVwbnfzGlr6919vEBffhEsAZC5AlZg3-vGqWYD6IjgFAMId2GeNbusA31Bls7UsT9U7j8-nO_eYDGGNAWqDvr97NL9rua_mM7BUTW31cEniLvQ8CqLp4YwPndzdcBrIEqHvsfLSfsXYYMjSKbm-7I6Xw5tR3qort2EYqi9O11yHibUn_4c6dj_LyxllIRzSrqMJXwdSxklQXgOSzvZ7N04YCntX0QvYklTzlNS_ywllROFwFMRSz-mpJ_GEvohlvT8eQZL9DyW1hexlFNSAUtlSjrFUk5JByz9CiXBX6SkDFrObinz0_uSXOQpZRgLjRdHAa9N6S0gYkOdNAdkqLnzkX6Vp-Z-dO9bM-_WdGf3sKZF29mtyQ7ovTPj3uSpE0Y3QL1ZexZxrY0b-jdr6rn29sZarznf21C5ajXbltSiz9pkBNznlwfJnaPqi_40Go-deJXEYSeIHeuxvjA6n3BiTOJ-LETdD6Vxp7UicWkKUq8z77ZH7KO6PZmbteVrz182B89_RLMHZ_C5ssye9uYNXudmJK1HpjF0B6I0C-7UphbTWGx1G-jNC9aBOE6Mei-KPh4zz0IZj3stZPSTWs3m_I0ts6o3CBjoYExYGVHWlmxSNhM271hVIBfalumEsdxggUm21Gza9eZMrDc4n0TbtSxVuTDYyMK_Ou5JGg",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=HCgPaXiczVXfcqo4HH6AfY7lpl0RlSqdYc4kMSJYrdSeWrxhEDGiQKxQqL3bZ9l9qn2aDYgKVo9zzsXOZiaEJD9-_z--P__23GD1z29_LaJoHd7zfJIkFUIp8ZyKTStuwFvhNrD5OfXCjb34RjzZDbj3d8-RkxsEVF1Famc0FlfWGHMLT3YCbhvLdc4OZYFzXHlSH0VWPBIVDVm1DR3WQuXxDqhcplU2p1boLJnZj2XImzx7rH6vt9mmElacwFRgJenDt49Vpzac9iu1qiBVHnnLZzLgPxw6gemiAXRZhl1hABpXNKUKVAAxOPqvApKt8Chl7AwhPbtC5KI2LbUJwVMmrrPZNj-7SRsc9LcvfstMwNI2yXwBIMm8hMC9Ekp56Hks-wz9IFMH6fLAu4UeT4o1LvlaGiQpbTvMCxMgdDRyYmxRcuOQKZuAVpfCNgT2Zb9ZfnoqEFdAx-dCKA4dvzQOlXswFHbCzwhr3Co_3bBF4F17YWcvmzDtZ_QsVWl30R2Ne9uBqwixRAexQuqtsfi8CLCZ8PaUyXnUmjkzc2FWv2V7oSaIVanebN1mWLLDA5jCIpi23xehMx6--L5ReahAYQ8jtCs6-FIxzPZIPRMYRLlo6YOdJDyepgXDOzG9U9SblxKmfY2fQLm0vWGaVyWDkZ716CcrTVHiaBUeivfI1j2MdoMUhNHTzhGVFjwtSiNVwUc3CoVVwbnfzGlr6919vEBffhEsAZC5AlZg3-vGqWYD6IjgFAMId2GeNbusA31Bls7UsT9U7j8-nO_eYDGGNAWqDvr97NL9rua_mM7BUTW31cEniLvQ8CqLp4YwPndzdcBrIEqHvsfLSfsXYYMjSKbm-7I6Xw5tR3qort2EYqi9O11yHibUn_4c6dj_LyxllIRzSrqMJXwdSxklQXgOSzvZ7N04YCntX0QvYklTzlNS_ywllROFwFMRSz-mpJ_GEvohlvT8eQZL9DyW1hexlFNSAUtlSjrFUk5JByz9CiXBX6SkDFrObinz0_uSXOQpZRgLjRdHAa9N6S0gYkOdNAdkqLnzkX6Vp-Z-dO9bM-_WdGf3sKZF29mtyQ7ovTPj3uSpE0Y3QL1ZexZxrY0b-jdr6rn29sZarznf21C5ajXbltSiz9pkBNznlwfJnaPqi_40Go-deJXEYSeIHeuxvjA6n3BiTOJ-LETdD6Vxp7UicWkKUq8z77ZH7KO6PZmbteVrz182B89_RLMHZ_C5ssye9uYNXudmJK1HpjF0B6I0C-7UphbTWGx1G-jNC9aBOE6Mei-KPh4zz0IZj3stZPSTWs3m_I0ts6o3CBjoYExYGVHWlmxSNhM271hVIBfalumEsdxggUm21Gza9eZMrDc4n0TbtSxVuTDYyMK_Ou5JGg"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Plagiarism Checker | Accurate and Fast - Quillbot AI",
+      "link": "https://quillbot.com/plagiarism-checker",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESXwHrOzAVXRV4cEsnJpiB3p5HZ34OW6uXKFRsC4KtYWcbvg-GJjmccrPDZZzI-P7IMNYnjx0zlWqWpV8GhpyZXwo1WnV2-q83VABhUB4o0Ps6PWqj-w2YVc_AuzM5LbGx&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0QFnoECCcQAQ&uoh=1",
+      "displayed_link": "https://quillbot.com \u203a plagiarism-checker",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAdVBMVEVFx0BFyEBGy0ErbSkscSpAtjwaKBkUBRQUABQbLBo-sDooYSYXHBcYHxgpZSczijAcMBtHz0JBuTwlWCQVEhVCvj4jTiEkUyIcNBwWFBYXGhcSABMVDxYWFxYZIhkgRB88qDgudysyhS85njVJ00MfPh4dNxzBUQXnAAAAr0lEQVR4Ac2RRwKDIBAAxS6siWuXYtf_PzFe7JhrMnSGjvFriGl-cZZtkgfnuJ4fOHpLKIPw9SDNd-S67tvUKcQ4SVOWIZo3Z-V5waKSFXlu4cUVfrXAebUg2Hku-rDDOZ6lBKiE4EoIBby-ySo3nDqIs0ZppN-a2PVoDr5Gym7EJsfRkhoJXhOlspy8-54eACi-JAXAw4t0K9hI57MkWSg2XINc_3Kva_6UbBh_yweLoA5_JWyuKAAAAABJRU5ErkJggg.png",
+      "snippet": "Instantly scan your documents to detect plagiarism. Get real-time and detailed analysis of your content with Quillbot's advanced plagiarism checker.",
+      "snippet_highlighted_words": [
+        "Instantly scan your documents to detect plagiarism"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.8,
+            "reviews": 12251
+          },
+          "extensions": [
+            "4.8(12,251)",
+            "Free",
+            "Utilities/Tools"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Instantly scan your documents to detect plagiarism. Get real-time and detailed analysis of your content with Quillbot's advanced plagiarism checker.",
+          "source_info_link": "https://quillbot.com/plagiarism-checker",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAdVBMVEVFx0BFyEBGy0ErbSkscSpAtjwaKBkUBRQUABQbLBo-sDooYSYXHBcYHxgpZSczijAcMBtHz0JBuTwlWCQVEhVCvj4jTiEkUyIcNBwWFBYXGhcSABMVDxYWFxYZIhkgRB88qDgudysyhS85njVJ00MfPh4dNxzBUQXnAAAAr0lEQVR4Ac2RRwKDIBAAxS6siWuXYtf_PzFe7JhrMnSGjvFriGl-cZZtkgfnuJ4fOHpLKIPw9SDNd-S67tvUKcQ4SVOWIZo3Z-V5waKSFXlu4cUVfrXAebUg2Hku-rDDOZ6lBKiE4EoIBby-ySo3nDqIs0ZppN-a2PVoDr5Gym7EJsfRkhoJXhOlspy8-54eACi-JAXAw4t0K9hI57MkWSg2XINc_3Kva_6UbBh_yweLoA5_JWyuKAAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "QuillBot"
+    },
+    {
+      "position": 2,
+      "title": "Plagiarism Checker",
+      "link": "https://www.grammarly.com/plagiarism-checker",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESZAHrOzAVl7KDtV5MCg_nQEWyUdHi4g7nDJ1_sKjq9845wrTEwdgoAH5qo_BjGfHvi1frS6GlX3LwzldWQ-TwJ5bUkVYljBgqgE028vqimT-7UgVhdu7sC7QVJk2GzdfktqtP7QQ&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0QFnoECDUQAQ&uoh=1",
+      "displayed_link": "https://www.grammarly.com \u203a plagiarism-checker",
+      "favicon": "https://serpapi.com/searches/6aad745d71b49224ea2088cd/images/WpArMw6Wu4qaA0vPRmv4Ld6J11Jh0AZXgCtahjtQS98.png",
+      "snippet": "Instant plagiarism check for essays and documents. Detect plagiarism, fix grammar errors, and improve your vocabulary in seconds.",
+      "snippet_highlighted_words": [
+        "Instant plagiarism check for essays and documents"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.6,
+            "reviews": 176200
+          },
+          "extensions": [
+            "4.6(1,76,200)",
+            "Free",
+            "Business/Productivity"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Instant plagiarism check for essays and documents. Detect plagiarism, fix grammar errors, and improve your vocabulary in seconds.",
+          "source_info_link": "https://www.grammarly.com/plagiarism-checker",
+          "icon": "https://serpapi.com/searches/6aad745d71b49224ea2088cd/images/WpArMw6Wu4qaA0vPRmv4LfAxfJYkIKyvMiSzdH7lAyyz6So7GBvevYkpzUFqnzq8.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Grammarly"
+    },
+    {
+      "position": 3,
+      "title": "Plagiarism Remover-AI Detector - Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=com.enzipe.plagerismremover&hl=en",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://play.google.com/store/apps/details%3Fid%3Dcom.enzipe.plagerismremover%26hl%3Den&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0QFnoECC4QAQ",
+      "displayed_link": "https://play.google.com \u203a store \u203a apps \u203a details",
+      "favicon": "https://serpapi.com/searches/6aad745d71b49224ea2088cd/images/WpArMw6Wu4qaA0vPRmv4LWjS_3XCwd4oUCiKGvG44EU.png",
+      "snippet": "Plagiarism Checker & Remover is an AI writing assistant that provides access to a plagiarism checker, AI Detector, humanizer, & grammar checker tool in one ...",
+      "snippet_highlighted_words": [
+        "Plagiarism Checker & Remover"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.4,
+            "reviews": 2284
+          },
+          "extensions": [
+            "4.4(2,284)",
+            "Free",
+            "Android",
+            "Utilities/Tools"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Plagiarism Checker & Remover is an AI writing assistant that provides access to a plagiarism checker, AI Detector, humanizer, & grammar checker tool in one ...",
+          "source_info_link": "https://play.google.com/store/apps/details?id=com.enzipe.plagerismremover&hl=en",
+          "icon": "https://serpapi.com/searches/6aad745d71b49224ea2088cd/images/WpArMw6Wu4qaA0vPRmv4LTvjRW9uLZ6htdrCw_ZxiZDtOCKcHEwzuZ77oUtFjZVL.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Google Play",
+      "read_more_link": "https://play.google.com/store/apps/details?id=com.enzipe.plagerismremover&hl=en#:~:text=Plagiarism%20Checker%20%26%20Remover%20is,checker%20tool%20in%20one%20place."
+    },
+    {
+      "position": 4,
+      "title": "Can anyone suggest good free AI plagiarism checking tools?",
+      "link": "https://www.researchgate.net/post/Can_anyone_suggest_good_free_AI_plagiarism_checking_tools",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESkwEB6zswFTajRQ92CY1yrULswfrOR2oybpNH4R_IFpkvHl2_SCCFF109Vu7SOuY9kHcdeNbKeSuWo9M6hI_2E2DaSMwkAb3-Fh7Mf-CLTDfGGw395dOfmMuoi8QU--Uq_VSbUNLJHHHFOjjKuw1kBekSfJVm9gjl47NLd7X2BEat_tJDAKiciL7CTHoU_Oa41wvI_LU&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0QFnoECDkQAQ&uoh=1",
+      "displayed_link": "https://www.researchgate.net \u203a post \u203a Can_anyone_sug...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAQlBMVEX________S09OlpqbJysp2eHgAAABcX19GS0vq6upVWFgzOTmvsLDf399na2sjKyu7vLx-gID19fWSlJQJFhaEhoZ-sx6vAAAAAXRSTlOZyTXzhgAAAK9JREFUeAGV0QWChDAQRFF-pKBx2_sfdcc9WCORF0-WsRhrBofR-bCIUbmKBXQyKC2NvuISC1hgdR2e2ATnwjnsjk3bxSf2uVRVlVQY1B0QhydCIQNqaaSRw9S_YVRzSybwmjXwi71aYHRGAut7F1JYyiXRgEEDSZy7SrMnjbXLVbOADSaNi8ikfBnp5JexUXIr9w16yb4xDFLnLzxJf_aJ7nKf_QWx2n_gcqxjtmInZ7MH_Q-FmGgAAAAASUVORK5CYII.png",
+      "date": "8 Jan 2026",
+      "snippet": "AI text generator systems are currently taking over plenty of the writing we see around. I would love to find out and hear about tools that are been ...",
+      "sitelinks": {
+        "list": [
+          {
+            "title": "What is the best plagiarism checker app ? | ResearchGate",
+            "link": "https://www.researchgate.net/post/What_is_the_best_plagiarism_checker_app",
+            "answer_count": 10,
+            "date": "10 Jan 2022"
+          },
+          {
+            "title": "Top 10 Best Plagiarism Checkers For AI-Generated ...",
+            "link": "https://www.researchgate.net/post/Top_10_Best_Plagiarism_Checkers_For_AI-Generated_Content",
+            "answer_count": 2,
+            "date": "28 Jun 2023"
+          }
+        ]
+      },
+      "about_this_result": {
+        "source": {
+          "description": "GPTZero Best for: Academic contexts. \u00b7 Copyleaks (AI Content Detector) Best for: High accuracy and generous limits. \u00b7 ZeroGPT Best for: Quick, no- ...",
+          "source_info_link": "https://www.researchgate.net/post/Can_anyone_suggest_good_free_AI_plagiarism_checking_tools",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAQlBMVEX________S09OlpqbJysp2eHgAAABcX19GS0vq6upVWFgzOTmvsLDf399na2sjKyu7vLx-gID19fWSlJQJFhaEhoZ-sx6vAAAAAXRSTlOZyTXzhgAAAK9JREFUeAGV0QWChDAQRFF-pKBx2_sfdcc9WCORF0-WsRhrBofR-bCIUbmKBXQyKC2NvuISC1hgdR2e2ATnwjnsjk3bxSf2uVRVlVQY1B0QhydCIQNqaaSRw9S_YVRzSybwmjXwi71aYHRGAut7F1JYyiXRgEEDSZy7SrMnjbXLVbOADSaNi8ikfBnp5JexUXIr9w16yb4xDFLnLzxJf_aJ7nKf_QWx2n_gcqxjtmInZ7MH_Q-FmGgAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "ResearchGate"
+    },
+    {
+      "position": 5,
+      "title": "Best AI Plagiarism Checkers Tested: Top 7 Compared",
+      "link": "https://www.quetext.com/blog/best-ai-plagiarism-checkers-students",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESeQHrOzAV15tZZN1rNDjUidDP9fmyQbO-M7zw9rlLe9hgFI7U2baujYhh34xu-Q-f-Flmg5O_ChPj4MQvP8w9L1ae6fmHD2fIVcH4gsCGNN4JCQqCW3dlU0NGBMq1MWq-VQ3sOgEsc7266HT7bLjr9whkM_n2ubgzeR4&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0QFnoECC0QAQ&uoh=1",
+      "displayed_link": "https://www.quetext.com \u203a blog \u203a best-ai-plagiarism-che...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAxElEQVR4Ae3WIQzCQAyFYbxEzCsQnPfBgCA5j8E7vPcSHyYu0xiCwEzN6-mp827l1SMobVZT8bnd8qfpslsdridXPz0UAZvdPW1TW6BTKozfJwrAoQpkaJQGkLHqPYEq3IH2iEODla87EJ_h_nXL8FDKmoAZSGmGRhzAh4CMNJ4TUAVkeCvl-BsuHkDnS4KnULIMmICEJssA0gT4T8B_B-IztL909HzhEAXgwNr4yjV4B4yiAGYc0P-7A52BwhMVB3iJgA_voKIYA-TE4AAAAABJRU5ErkJggg.png",
+      "date": "14 May 2026",
+      "snippet": "Originality.ai had the highest AI catch rate of the four applications we reviewed, catching both the unedited ChatGPT and edited ChatGPT drafts.",
+      "snippet_highlighted_words": [
+        "Originality.ai"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Originality.ai had the highest AI catch rate of the four applications we reviewed, catching both the unedited ChatGPT and edited ChatGPT drafts.",
+          "source_info_link": "https://www.quetext.com/blog/best-ai-plagiarism-checkers-students",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAxElEQVR4Ae3WIQzCQAyFYbxEzCsQnPfBgCA5j8E7vPcSHyYu0xiCwEzN6-mp827l1SMobVZT8bnd8qfpslsdridXPz0UAZvdPW1TW6BTKozfJwrAoQpkaJQGkLHqPYEq3IH2iEODla87EJ_h_nXL8FDKmoAZSGmGRhzAh4CMNJ4TUAVkeCvl-BsuHkDnS4KnULIMmICEJssA0gT4T8B_B-IztL909HzhEAXgwNr4yjV4B4yiAGYc0P-7A52BwhMVB3iJgA_voKIYA-TE4AAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Quetext"
+    },
+    {
+      "position": 6,
+      "title": "Plagiarism & AI Checker | #1 Trusted by Students and ...",
+      "link": "https://www.compilatio.net/en",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESVQHrOzAV6jHcs2vZAw6w5KIgnWSdq26p__Iyww0zZqXsta5QWlJZfm2q4ef7i1lEjF_ta5n0bzZrNn1GfgyqDTAOQXFTfuUNdY6_i430aewVtRVHP3w&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0QFnoECCoQAQ&uoh=1",
+      "displayed_link": "https://www.compilatio.net \u203a ...",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAJ1BMVEVHcEy7SU-xKTa4OUWuHi2vIjCuIC62Mz6wJDK0JTOzOkGzOUCuJDHufjjhAAAADXRSTlMAILE0_8n_YXlNkpLdr2LOGAAAADhJREFUeAFjGLyAUQkIDOBcZlclJbUCBNfZopMNmbssLQyZuw2VK17JgsTNCQ1FkmXsAAKDwRsQAEkXDRNhJu3MAAAAAElFTkSuQmCC.png",
+      "snippet": "Compilatio Studium is a good plagiarism checking software. made with ChatGPT. It tells you exactly where the AI content is and if it's properly cited, very ...",
+      "snippet_highlighted_words": [
+        "Compilatio Studium"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Compilatio Studium is a good plagiarism checking software. made with ChatGPT. It tells you exactly where the AI content is and if it's properly cited, very  ...",
+          "source_info_link": "https://www.compilatio.net/en",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAJ1BMVEVHcEy7SU-xKTa4OUWuHi2vIjCuIC62Mz6wJDK0JTOzOkGzOUCuJDHufjjhAAAADXRSTlMAILE0_8n_YXlNkpLdr2LOGAAAADhJREFUeAFjGLyAUQkIDOBcZlclJbUCBNfZopMNmbssLQyZuw2VK17JgsTNCQ1FkmXsAAKDwRsQAEkXDRNhJu3MAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Compilatio"
+    },
+    {
+      "position": 7,
+      "title": "Free Plagiarism Checker | Similar Software as Universities",
+      "link": "https://www.scribbr.com/plagiarism-checker/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYwHrOzAVTStbMUaNFQ2wJTTet85xkvqIlJUXmsHtWnLUxBM4l_B450bb-eGZklENWvQcA9I-skDP5cp6WTLuCGmasz2pYN_duBs8UombGVNsOSBrO_5uBiXs9grohxWZPzBOVQ&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0QFnoECCwQAQ&uoh=1",
+      "displayed_link": "https://www.scribbr.com \u203a plagiarism-checker",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAYFBMVEX_Uhb8Uhb8Uhb9Uhb9Uxb8Uhb8UBL8SQD8Tgv8YjD-p5D-sZ39fVj8RwD8TAL____-1Mn9j3D_7ef-vKv8WiH8PQD9lnr_8u79bkL8RAD-vq39h2b_5N3_-fb-yLr9moGUz31cAAAABnRSTlMG3f_vJa5svJAAAAABLklEQVR4AY2SVYLDMAxEU3crySQlbph6_1uukjJ3fgxPMIYs25g32v5lO_Ne2eZXCIj0BgJa50OkV5DBiSq3ER4hYZFkX1Z1I94g3EKIbS5524FB46Wpmc9QUdlLGiKVGJk6m8uorY-Q2E3imKlNeT-0hrqQZLa4QLCjzOXigvPZSbJgOB6mqWaF6KSoVv9k06idNQ66sklxzUzSr5mGh6Cefck8NFLwuefkiJdcWt2Gbp-3eHZrZxmHeKxdBZlKPrtVEUzN2g3QaBkZ-PYSSjkUjd4QL_fUSv0Iu9KLLPld-QgnXwG2zg9M2N6WVWEvddR9ZOja1Bi4hWDUb-gIYqmTlu6fDGLQ27HkZHJMz4_Nh0ZEHSO8_CamqG2Edx-MGX7_mrv3bJNlu-0bbbJ_cnoYKpvNqxEAAAAASUVORK5CYII.png",
+      "snippet": "Unleash the full potential of our plagiarism checker and enjoy free access to Scribbr's AI Detector and AI Proofreader with a premium plagiarism check.",
+      "snippet_highlighted_words": [
+        "Scribbr's AI Detector and AI Proofreader"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.4,
+            "reviews": 15537
+          },
+          "extensions": [
+            "4.4(15,537)"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Unleash the full potential of our plagiarism checker and enjoy free access to Scribbr's AI Detector and AI Proofreader with a premium plagiarism check.",
+          "source_info_link": "https://www.scribbr.com/plagiarism-checker/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAYFBMVEX_Uhb8Uhb8Uhb9Uhb9Uxb8Uhb8UBL8SQD8Tgv8YjD-p5D-sZ39fVj8RwD8TAL____-1Mn9j3D_7ef-vKv8WiH8PQD9lnr_8u79bkL8RAD-vq39h2b_5N3_-fb-yLr9moGUz31cAAAABnRSTlMG3f_vJa5svJAAAAABLklEQVR4AY2SVYLDMAxEU3crySQlbph6_1uukjJ3fgxPMIYs25g32v5lO_Ne2eZXCIj0BgJa50OkV5DBiSq3ER4hYZFkX1Z1I94g3EKIbS5524FB46Wpmc9QUdlLGiKVGJk6m8uorY-Q2E3imKlNeT-0hrqQZLa4QLCjzOXigvPZSbJgOB6mqWaF6KSoVv9k06idNQ66sklxzUzSr5mGh6Cefck8NFLwuefkiJdcWt2Gbp-3eHZrZxmHeKxdBZlKPrtVEUzN2g3QaBkZ-PYSSjkUjd4QL_fUSv0Iu9KLLPld-QgnXwG2zg9M2N6WVWEvddR9ZOja1Bi4hWDUb-gIYqmTlu6fDGLQ27HkZHJMz4_Nh0ZEHSO8_CamqG2Edx-MGX7_mrv3bJNlu-0bbbJ_cnoYKpvNqxEAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Scribbr",
+      "read_more_link": "https://www.scribbr.com/plagiarism-checker/#:~:text=Unleash%20the%20full%20potential%20of,with%20a%20premium%20plagiarism%20check."
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Best ai plagiarism policy app free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Best+ai+plagiarism+policy+app+free&sa=X&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+ai+plagiarism+policy+app+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Plagiarism checker",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Plagiarism+checker&sa=X&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q1QJ6BAhKEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Plagiarism+checker"
+    },
+    {
+      "block_position": 1,
+      "query": "Best ai plagiarism policy app free download",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Best+ai+plagiarism+policy+app+free+download&sa=X&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+ai+plagiarism+policy+app+free+download"
+    },
+    {
+      "block_position": 1,
+      "query": "Best ai plagiarism policy app for android",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Best+ai+plagiarism+policy+app+for+android&sa=X&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q1QJ6BAhCEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+ai+plagiarism+policy+app+for+android"
+    },
+    {
+      "block_position": 1,
+      "query": "Best ai plagiarism policy app for students",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Best+ai+plagiarism+policy+app+for+students&sa=X&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q1QJ6BAg_EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+ai+plagiarism+policy+app+for+students"
+    },
+    {
+      "block_position": 1,
+      "query": "AI plagiarism checker",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=AI+plagiarism+checker&sa=X&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+plagiarism+checker"
+    },
+    {
+      "block_position": 1,
+      "query": "Quetext",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Quetext&sa=X&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Quetext"
+    },
+    {
+      "block_position": 1,
+      "query": "Plagiarism checker free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&gl=in&hl=en&q=Plagiarism+checker+free&sa=X&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Plagiarism+checker+free"
+    }
+  ],
+  "discussions_and_forums": [
+    {
+      "title": "Top 10 Best Plagiarism Checkers For AI-Generated Content",
+      "link": "https://www.researchgate.net/post/Top_10_Best_Plagiarism_Checkers_For_AI-Generated_Content",
+      "date": "3 years ago",
+      "source": "ResearchGate",
+      "answers": [
+        {
+          "link": "https://www.researchgate.net/post/Top_10_Best_Plagiarism_Checkers_For_AI-Generated_Content"
+        }
+      ]
+    },
+    {
+      "title": "Hello all, what free website/app can be use to check for Ai/plagiarism?",
+      "link": "https://www.facebook.com/groups/910132343336391/posts/1327891591560462/",
+      "date": "1 year ago",
+      "extensions": [
+        "Nightingale College Support Gr\u2026",
+        "4 comments"
+      ],
+      "source": "Facebook",
+      "answers": [
+        {
+          "link": "https://www.facebook.com/groups/910132343336391/posts/1327891591560462/",
+          "extensions": [
+            "Top answer",
+            "a year ago"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "What is a good plagiarism checker app or site?",
+      "link": "https://www.facebook.com/groups/amazonkdpbooks/posts/1188437222196133/",
+      "date": "2 years ago",
+      "extensions": [
+        "Self Publishing Community",
+        "8 comments"
+      ],
+      "source": "Facebook",
+      "answers": [
+        {
+          "link": "https://www.facebook.com/groups/amazonkdpbooks/posts/1188437222196133/",
+          "extensions": [
+            "Top answer",
+            "8 votes",
+            "2 years ago"
+          ]
+        },
+        {
+          "link": "https://www.facebook.com/groups/amazonkdpbooks/posts/1188437222196133/",
+          "extensions": [
+            "6 votes",
+            "2 years ago"
+          ]
+        },
+        {
+          "link": "https://www.facebook.com/groups/amazonkdpbooks/posts/1188437222196133/",
+          "extensions": [
+            "3 votes",
+            "2 years ago"
+          ]
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=Z3StavS5GJCa2roP2sGO6AI&start=10&sa=N&sstk=AS6-VmLyMWTg0--za-uuCuKfJ5KkqCjgARdXAsAkizzLbZRhwL4-FYpv58RDJYfBudbJgPemXoTwlyFTKv30DtBH2Z3Fhm46dbVw_A&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q8NMDegQITBAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=Z3StavS5GJCa2roP2sGO6AI&start=10&sa=N&sstk=AS6-VmLyMWTg0--za-uuCuKfJ5KkqCjgARdXAsAkizzLbZRhwL4-FYpv58RDJYfBudbJgPemXoTwlyFTKv30DtBH2Z3Fhm46dbVw_A&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q8tMDegQITBAE",
+      "3": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=Z3StavS5GJCa2roP2sGO6AI&start=20&sa=N&sstk=AS6-VmLyMWTg0--za-uuCuKfJ5KkqCjgARdXAsAkizzLbZRhwL4-FYpv58RDJYfBudbJgPemXoTwlyFTKv30DtBH2Z3Fhm46dbVw_A&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q8tMDegQITBAG",
+      "4": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=Z3StavS5GJCa2roP2sGO6AI&start=30&sa=N&sstk=AS6-VmLyMWTg0--za-uuCuKfJ5KkqCjgARdXAsAkizzLbZRhwL4-FYpv58RDJYfBudbJgPemXoTwlyFTKv30DtBH2Z3Fhm46dbVw_A&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q8tMDegQITBAI",
+      "5": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=Z3StavS5GJCa2roP2sGO6AI&start=40&sa=N&sstk=AS6-VmLyMWTg0--za-uuCuKfJ5KkqCjgARdXAsAkizzLbZRhwL4-FYpv58RDJYfBudbJgPemXoTwlyFTKv30DtBH2Z3Fhm46dbVw_A&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q8tMDegQITBAK",
+      "6": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=Z3StavS5GJCa2roP2sGO6AI&start=50&sa=N&sstk=AS6-VmLyMWTg0--za-uuCuKfJ5KkqCjgARdXAsAkizzLbZRhwL4-FYpv58RDJYfBudbJgPemXoTwlyFTKv30DtBH2Z3Fhm46dbVw_A&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q8tMDegQITBAM",
+      "7": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=Z3StavS5GJCa2roP2sGO6AI&start=60&sa=N&sstk=AS6-VmLyMWTg0--za-uuCuKfJ5KkqCjgARdXAsAkizzLbZRhwL4-FYpv58RDJYfBudbJgPemXoTwlyFTKv30DtBH2Z3Fhm46dbVw_A&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q8tMDegQITBAO",
+      "8": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=Z3StavS5GJCa2roP2sGO6AI&start=70&sa=N&sstk=AS6-VmLyMWTg0--za-uuCuKfJ5KkqCjgARdXAsAkizzLbZRhwL4-FYpv58RDJYfBudbJgPemXoTwlyFTKv30DtBH2Z3Fhm46dbVw_A&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q8tMDegQITBAQ",
+      "9": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=Z3StavS5GJCa2roP2sGO6AI&start=80&sa=N&sstk=AS6-VmLyMWTg0--za-uuCuKfJ5KkqCjgARdXAsAkizzLbZRhwL4-FYpv58RDJYfBudbJgPemXoTwlyFTKv30DtBH2Z3Fhm46dbVw_A&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q8tMDegQITBAS",
+      "10": "https://www.google.co.in/search?q=best+AI+plagiarism+policy+app&sca_esv=40a79c977c37d534&gl=in&hl=en&ei=Z3StavS5GJCa2roP2sGO6AI&start=90&sa=N&sstk=AS6-VmLyMWTg0--za-uuCuKfJ5KkqCjgARdXAsAkizzLbZRhwL4-FYpv58RDJYfBudbJgPemXoTwlyFTKv30DtBH2Z3Fhm46dbVw_A&ved=2ahUKEwi0ibur0_iWAxUQjVYBHdqgAy0Q8tMDegQITBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=best+AI+plagiarism+policy+app&start=90"
+    }
+  }
+}

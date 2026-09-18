@@ -1,0 +1,342 @@
+{
+  "search_metadata": {
+    "id": "6aad76cb59eb37d4503b7f68",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/asbewJPTu8MdhlOyB7HmfPQ3DUmU2phRz9yeFKLg6Qo/6aad76cb59eb37d4503b7f68.json",
+    "markdown_endpoint": "https://serpapi.com/searches/asbewJPTu8MdhlOyB7HmfPQ3DUmU2phRz9yeFKLg6Qo/6aad76cb59eb37d4503b7f68.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/asbewJPTu8MdhlOyB7HmfPQ3DUmU2phRz9yeFKLg6Qo/6aad76cb59eb37d4503b7f68.json_with_pixel_position",
+    "created_at": "2026-09-18 17:37:15 UTC",
+    "processed_at": "2026-09-18 17:37:15 UTC",
+    "google_url": "https://www.google.co.in/search?q=deploy+website+problems+reddit&oq=deploy+website+problems+reddit&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/asbewJPTu8MdhlOyB7HmfPQ3DUmU2phRz9yeFKLg6Qo/6aad76cb59eb37d4503b7f68.html",
+    "total_time_taken": 10.13
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "deploy website problems reddit",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "deploy website problems reddit",
+    "total_results": 112,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "ai_overview": {
+    "page_token": "VbORLHiczVXdcqJIFH6AfY7hJomgaNRUUVPdLSpRYzBRdG4ohBZQ_kKjxNzts-w-1T7NNIgKCSY7c7G1p6ptujme_4_vz78d29v888dfVhQF5I5l4ziumL5vOrii-xXbYzWy93R25Tsk1K3vliNgjzEdwfaY7dbBQnyFgCRLSOo-KY2NpojMfifwjE4EjsG2UO1rkRZhddRS7VroPzZ3g6kLCJNaFdSlRvCaun1dE1Zl6c_mG9-hhwqpYE_twYo-iGQHTydwRSo1rsZXxqzmUh3w34komzDZ7wG6rERfiV-bSgxIAIo5SxIw0x2etRaH10hOXyHzojV48DlJ1WW6OupbP-7Q26w-nYv_pS5g4RinsQAQp1FCYH-dTU7kLJdjXp9U6qRdlKx6_vkm3-NCrAUx48KxS6NQAUJnJ3ln1IxVCONUKd0Erb4POxBML8dN6zOQQGMDZLEshbzI4qx-6txw0aM3rGHSweXYZUi3Kmvrlp4-hCSZZ_Tc5vz-jdGbhvxzeFtXrGF3boF28CxVJ8atbbL6kuo5vmZgQ7VU7nt6rtaqDa7NN1vXKZZ0cgITyYNpP7UIVh5nrruoDCuweoQROjQdfOiYSM9IKkkMoky1pMXwfJs0LGup3M3bzVoJk7kWJ6DY2sFjUtfe8Uhn9I22Jq9x9poM_0cYHcTMKVMYpYFIfqaY1zho9XLQzTVWAmWfmfd5y31wzEJef1AsABDRfDfgWJjFe8sLICNTTDCAxD7MqqYXbaAPZU_So1-orEjiKcCDE5jPISmBJIMRkERq055KtAdmMqunQKXMV1d8h7gLAy9RNwr6N5--EoFfgSgR-YiXd-Ofh01vw5PImreC_pvqjbhZuNZCvc13xZ0sl8PEd5e_Rjr6_wpLB0oSM0q6jCXxayyllAQ_oaT0-UxJyfwi_yKWYK-ckkallFTMG4FJHkufU9IvYwl9iiU5-y3Bkl-OpeAiljJKymGpSEliOSWdsPQ7lAR_k5JSaOHDVuSn7dq8yFOipqy1l-FTXYOtgS3WV88gGlrKpB5w4EueWrnRnasZzrVqG3ewdh_tjWuVXvh32GBeBAMHjr-_ivGS2BG-CkJ_6WCXXIXYMOyIcZ3QFzjtdkyGrXjVgje953HNWRhbtx25XOP1cRPJMag23h7mnmOMjBdlDoa2Ml8p6_ZovLjxX9bqXg0tj1_hCM1-PMULYgTuLRwPYyOYLOszFb96sxn_yL0-6R4YthSggFabGPc4Cn9sFE5e7N1ouYVYmZkb7uEtDnbidpoGRgSzP5siG62nwxHjhrpAu143wYMMFBPqAKVjSZdPV0zXLe0KZIiuqZjshDqnNdt6u9nU-abR4OuMa0b7QGhzDPFCofoTfNBM2Q",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=VbORLHiczVXdcqJIFH6AfY7hJomgaNRUUVPdLSpRYzBRdG4ohBZQ_kKjxNzts-w-1T7NNIgKCSY7c7G1p6ptujme_4_vz78d29v888dfVhQF5I5l4ziumL5vOrii-xXbYzWy93R25Tsk1K3vliNgjzEdwfaY7dbBQnyFgCRLSOo-KY2NpojMfifwjE4EjsG2UO1rkRZhddRS7VroPzZ3g6kLCJNaFdSlRvCaun1dE1Zl6c_mG9-hhwqpYE_twYo-iGQHTydwRSo1rsZXxqzmUh3w34komzDZ7wG6rERfiV-bSgxIAIo5SxIw0x2etRaH10hOXyHzojV48DlJ1WW6OupbP-7Q26w-nYv_pS5g4RinsQAQp1FCYH-dTU7kLJdjXp9U6qRdlKx6_vkm3-NCrAUx48KxS6NQAUJnJ3ln1IxVCONUKd0Erb4POxBML8dN6zOQQGMDZLEshbzI4qx-6txw0aM3rGHSweXYZUi3Kmvrlp4-hCSZZ_Tc5vz-jdGbhvxzeFtXrGF3boF28CxVJ8atbbL6kuo5vmZgQ7VU7nt6rtaqDa7NN1vXKZZ0cgITyYNpP7UIVh5nrruoDCuweoQROjQdfOiYSM9IKkkMoky1pMXwfJs0LGup3M3bzVoJk7kWJ6DY2sFjUtfe8Uhn9I22Jq9x9poM_0cYHcTMKVMYpYFIfqaY1zho9XLQzTVWAmWfmfd5y31wzEJef1AsABDRfDfgWJjFe8sLICNTTDCAxD7MqqYXbaAPZU_So1-orEjiKcCDE5jPISmBJIMRkERq055KtAdmMqunQKXMV1d8h7gLAy9RNwr6N5--EoFfgSgR-YiXd-Ofh01vw5PImreC_pvqjbhZuNZCvc13xZ0sl8PEd5e_Rjr6_wpLB0oSM0q6jCXxayyllAQ_oaT0-UxJyfwi_yKWYK-ckkallFTMG4FJHkufU9IvYwl9iiU5-y3Bkl-OpeAiljJKymGpSEliOSWdsPQ7lAR_k5JSaOHDVuSn7dq8yFOipqy1l-FTXYOtgS3WV88gGlrKpB5w4EueWrnRnasZzrVqG3ewdh_tjWuVXvh32GBeBAMHjr-_ivGS2BG-CkJ_6WCXXIXYMOyIcZ3QFzjtdkyGrXjVgje953HNWRhbtx25XOP1cRPJMag23h7mnmOMjBdlDoa2Ml8p6_ZovLjxX9bqXg0tj1_hCM1-PMULYgTuLRwPYyOYLOszFb96sxn_yL0-6R4YthSggFabGPc4Cn9sFE5e7N1ouYVYmZkb7uEtDnbidpoGRgSzP5siG62nwxHjhrpAu143wYMMFBPqAKVjSZdPV0zXLe0KZIiuqZjshDqnNdt6u9nU-abR4OuMa0b7QGhzDPFCofoTfNBM2Q"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "How common is it to deploy a website with issues or half- ...",
+      "link": "https://www.reddit.com/r/webdev/comments/1bnjaoo/how_common_is_it_to_deploy_a_website_with_issues/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmgEB6zswFd8qaQnSh9yauM9d7_kt4P-pIGYyFmTPLYoPj9LowJVXJSfPwEFG2Q6XFXgUgMoiYkW8VEtkQ2sK7cAjhDY5kOXiXPCdiuMXskvfwZR6FmVmvVnjvXmGcYCgQLiEYSwpd22BR8a_scLCQVtAnnswXgzPbX-pm7A5CIt9IlM2G-CNeOJFPLJKGiveVvqdkzST2inG3oyq&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQFnoECBQQAQ&uoh=1",
+      "displayed_link": "60+ comments \u00b7 2 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Knowing that the entire website is mostly working, is it common to deploy it with some issues you were struggling to fix and just decided ...",
+      "snippet_highlighted_words": [
+        "is it common to deploy it with some issues"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Knowing that the entire website is mostly working, is it common to deploy it with some issues you were struggling to fix and just decided ...",
+          "source_info_link": "https://www.reddit.com/r/webdev/comments/1bnjaoo/how_common_is_it_to_deploy_a_website_with_issues/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/webdev",
+      "read_more_link": "https://www.reddit.com/r/webdev/comments/1bnjaoo/how_common_is_it_to_deploy_a_website_with_issues/#:~:text=Knowing%20that%20the%20entire%20website,game%2Dbreaking%2C%20I'll%20fix%20it%20eventually%22%3F"
+    },
+    {
+      "position": 2,
+      "title": "How do you deploy a website? : r/webdev",
+      "link": "https://www.reddit.com/r/webdev/comments/x23b6h/how_do_you_deploy_a_website/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEShAEB6zswFdEGipOuKn9uYZpxFy9iM7s-IgVHRe1n4xlaiDoeVYxNVyJ98Y_rYjB6Kq5mIW41OXDxUXOrYwxYzasf8WH6pR2I02tD9-I2Lki7FoguVN_nYHPnZEe6pPTJ8s6PwXpWaHha-5bPri8SptRp87-q-wHA-iE8ZSt7FHDJhZQDvMM&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQFnoECB4QAQ&uoh=1",
+      "displayed_link": "50+ comments \u00b7 4 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "I've made an online multiplayer card game with React, Node / Express, and Socket. There is no database. I bought a domain name, and I'm in the process ...",
+      "about_this_result": {
+        "source": {
+          "description": "... problems are generally just getting some configuration right. Once you have it hosted and deployed then you should be able to test it.",
+          "source_info_link": "https://www.reddit.com/r/webdev/comments/x23b6h/how_do_you_deploy_a_website/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/webdev"
+    },
+    {
+      "position": 3,
+      "title": "How do I deploy my first interactive website : r/webdev",
+      "link": "https://www.reddit.com/r/webdev/comments/1rnl7ar/how_do_i_deploy_my_first_interactive_website/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlgEB6zswFTxzuAVl9Q_CLlkWcJ-QmSB7vKochb6vB69dDE3r9W0I1PB7D4lT3PTkfIV1Leq4Axo8ZT2TpDl3TrNJhX4in8mTpAQG8zagq_ZDch-2BEv7OT4zqoFSdQuIJ_SOq82p8Ic5Tjc6DNxhvDn6TXKU2FD0hILekXLS6nRriHVoMA8xks_HwYSldIJiBaSgXj_9e2U&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQFnoECCAQAQ&uoh=1",
+      "displayed_link": "30+ comments \u00b7 6 months ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "I've been working on an interactive website for a while and was planning on deploying it through GitHub however I recently discovered that you can only ...",
+      "about_this_result": {
+        "source": {
+          "description": "The main step is connecting the repo and configuring the build so the site can deploy automatically.",
+          "source_info_link": "https://www.reddit.com/r/webdev/comments/1rnl7ar/how_do_i_deploy_my_first_interactive_website/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/webdev"
+    },
+    {
+      "position": 4,
+      "title": "How Do You Deploy Your Website? : r/webdev",
+      "link": "https://www.reddit.com/r/webdev/comments/1dyxloi/how_do_you_deploy_your_website/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESiAEB6zswFZn0FoKrWJc3jqc1W7I41VI5scqLNBdzazBxdNj_b8cy8vLblQlLkGJvZPsREe0-jYzFuahLKT_RHV0lsUi5H4uIhIfOs5FtW7_ZgMYc951xUSkzMfLabJN8LjnIeR5IdJdBcWKpW-B6FrrTPAzRNXUhyuKmKDjyKZloUO6m-7YswSIM&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQFnoECCUQAQ&uoh=1",
+      "displayed_link": "70+ comments \u00b7 2 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "In my office where I work, we're having a debate about the most common methods developers use to deploy their websites. Please help us settle ...",
+      "about_this_result": {
+        "source": {
+          "description": "In my office where I work, we're having a debate about the most common methods developers use to deploy their websites.",
+          "source_info_link": "https://www.reddit.com/r/webdev/comments/1dyxloi/how_do_you_deploy_your_website/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/webdev"
+    },
+    {
+      "position": 5,
+      "title": "Question: deploying websites for clients : r/webdev",
+      "link": "https://www.reddit.com/r/webdev/comments/kmaapg/question_deploying_websites_for_clients/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESkAEB6zswFV-0JhZhNC9sEwPb4LVLol9cf7wetSaSRz6opo2UvI2rhFj2s0uU4iBGHnuVBB_k-4P8Q2iGSN_Yf_yl9qGpUnBcPlCaYv0fdG5m3YKyxurEYfO_A2FGZGTfV-ATu2nbfq0xRzfbmGixsm_LWSqqFk1wadgvBugsuK4jxqW1rQ7nD_DkbGpvwehN3uI&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQFnoECBMQAQ&uoh=1",
+      "displayed_link": "20+ comments \u00b7 5 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "I deploy using Netlify. If it's just html css and js it's a static site and there's no servers. So hosting is $0. I charge a monthly fee for ...",
+      "snippet_highlighted_words": [
+        "deploy",
+        "site"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "I deploy using Netlify. If it's just html css and js it's a static site and there's no servers. So hosting is $0. I charge a monthly fee for ...",
+          "source_info_link": "https://www.reddit.com/r/webdev/comments/kmaapg/question_deploying_websites_for_clients/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/webdev",
+      "read_more_link": "https://www.reddit.com/r/webdev/comments/kmaapg/question_deploying_websites_for_clients/#:~:text=I%20deploy%20using%20Netlify.%20If,free%20edits%20and%2024%2F7%20support."
+    },
+    {
+      "position": 6,
+      "title": "Guys how do you manage the fear of putting your first ...",
+      "link": "https://www.reddit.com/r/webdev/comments/pvpv0g/guys_how_do_you_manage_the_fear_of_putting_your/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmAEB6zswFbrw9SYUr_Y4BjpQ8N4uUrEZQrUiS95P1ADOSGK7mdeZqVO_h2BkIdkHV6zrSL4j4bDGxqMh6JgoOJc8YHThTpTjSunOM7OmvZ2igz1FB8z_FmfpHO7lbtN9wz6uyR_NCbSjjuidJZ8bEXeT4d_Lmyv4uQAK3qs3LrcT2Gc83Y6hai9zrQQyS0-UFhCl-uVkOWF85Q&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQFnoECBoQAQ&uoh=1",
+      "displayed_link": "160+ comments \u00b7 4 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "I am going to launch my first website(made with django) in a couple of days. and i am soooo scared. I don't know how to manage it. what if I make some ...",
+      "about_this_result": {
+        "source": {
+          "description": "Just deploy it to a publicly accessible URL. Test it and fix any bugs, make sure performance is great and images are optimised. \u2022 5y ago You ...",
+          "source_info_link": "https://www.reddit.com/r/webdev/comments/pvpv0g/guys_how_do_you_manage_the_fear_of_putting_your/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/webdev"
+    },
+    {
+      "position": 7,
+      "title": "Deploying a website in general... : r/webdev",
+      "link": "https://www.reddit.com/r/webdev/comments/15wl0jv/deploying_a_website_in_general/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESiAEB6zswFZseUUaxoF5YApyS5ZtWPsVJ2dfcLvUv5x6ymO846QO9wGtSA8XJcAb3qwE7_uA2Z3H85DRQYKmIx-uDOSMXGrsn6yHTLw3dAUVWu_YlX3bC2BeB7hdaf7R6P5NDA0I7POGGrpOG4vsy8vCiuuslyQP0wpw1t_Bho2OkP87YiA5mfwDJ&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQFnoECBsQAQ&uoh=1",
+      "displayed_link": "10+ comments \u00b7 3 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "What's the easiest and most affordable way to deploy a website using Go and Postgres as a backend, Mentioning website issues and fixes during ...",
+      "snippet_highlighted_words": [
+        "deploy",
+        "website",
+        "website"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "What's the easiest and most affordable way to deploy a website using Go and Postgres as a backend, Mentioning website issues and fixes during ...",
+          "source_info_link": "https://www.reddit.com/r/webdev/comments/15wl0jv/deploying_a_website_in_general/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/webdev"
+    },
+    {
+      "position": 8,
+      "title": "How to Fix Deployment Issues: Reddit's Top Solutions",
+      "link": "https://painonsocial.com/blog/deployment-issues-reddit",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbgHrOzAVsJeLhiBX15U-E2vrEvfYCSHQnykCViPTC2QKhXjl7g8jIJRFuNjTluMzpOt17g3fP8UMFNKbT1ML9Wr9mlsI1pTXsZ2IFn2ZO61NVppwWgYj34dt2tyxW-0BDfaCRuG_0BYXfwzEKN1w&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQFnoECBEQAQ&uoh=1",
+      "displayed_link": "https://painonsocial.com \u203a blog \u203a deployment-issues-reddit",
+      "favicon": "https://serpapi.com/images/i/UklGRhACAABXRUJQVlA4IAQCAAAQCQCdASogACAAAsBMJbACdMzQwN67TRdtj0AbYDnxfQpvAG8hz5RmKUCOBXASoIZ14x_pzgIGr_zHyOzew4xj10L2i-tYt04cS-viFEg5vQAA_vobbVzQ6UMQj6lEBP1fnkuh7ZfiNk8ldplrBP3Rpo20oG1IjtGLxtV3Ur3UVemsmBG2unLVsI5Tp-nYT6xzoRPqdU6gLHvfR7UoBHmzq_twD5WOwc9tJ1TxU43UMQc6PhGTpjvurXFQzGgMy76YQh8SK26lCW1fjycGpYoho-DEPLQLa1vBrApZDYhQR6_QLz-H8UIdD7OXHtwJthXtLk9Jr5k8HgjKGGrIAg6tWspFDad9yCzE5dcY4dvOQvqcfk-d_KyhIyD4MQjjSPLZAX8wx7cRmkXxrKkkQgOotOmvYOk0bFee_lkEsa-zlJtHAOaA8AjM4yy6ZqRz4JSKVC-zOf6Cp_WDsADVE9b-OXqiYDi2_D5T2S9mFW-tY6z4nEKGa7ZkZSCo-ngMhYwB_pw9wimMhn1NILCdzYK11F226EJ9-pwmPh2PpkD55og9ok590s_j6xQLR756D7R8dsHdHiAbTVXdtEaV7TnS5mqyilFyD8-PwLcnInjfsGC6cve14_ZepWIW71ryuTO-V6tgQ2ehfY4huBmADiruB_rI4DaHR80zfrLjYAZ2wrAAAAA.webp",
+      "snippet": "This guide synthesizes the collective wisdom from Reddit's developer communities to help you troubleshoot, fix, and prevent the most common deployment problems ...",
+      "snippet_highlighted_words": [
+        "troubleshoot, fix, and prevent the most common deployment problems"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "This guide synthesizes the collective wisdom from Reddit's developer communities to help you troubleshoot, fix, and prevent the most common deployment problems ...",
+          "source_info_link": "https://painonsocial.com/blog/deployment-issues-reddit",
+          "icon": "https://serpapi.com/images/i/UklGRhACAABXRUJQVlA4IAQCAAAQCQCdASogACAAAsBMJbACdMzQwN67TRdtj0AbYDnxfQpvAG8hz5RmKUCOBXASoIZ14x_pzgIGr_zHyOzew4xj10L2i-tYt04cS-viFEg5vQAA_vobbVzQ6UMQj6lEBP1fnkuh7ZfiNk8ldplrBP3Rpo20oG1IjtGLxtV3Ur3UVemsmBG2unLVsI5Tp-nYT6xzoRPqdU6gLHvfR7UoBHmzq_twD5WOwc9tJ1TxU43UMQc6PhGTpjvurXFQzGgMy76YQh8SK26lCW1fjycGpYoho-DEPLQLa1vBrApZDYhQR6_QLz-H8UIdD7OXHtwJthXtLk9Jr5k8HgjKGGrIAg6tWspFDad9yCzE5dcY4dvOQvqcfk-d_KyhIyD4MQjjSPLZAX8wx7cRmkXxrKkkQgOotOmvYOk0bFee_lkEsa-zlJtHAOaA8AjM4yy6ZqRz4JSKVC-zOf6Cp_WDsADVE9b-OXqiYDi2_D5T2S9mFW-tY6z4nEKGa7ZkZSCo-ngMhYwB_pw9wimMhn1NILCdzYK11F226EJ9-pwmPh2PpkD55og9ok590s_j6xQLR756D7R8dsHdHiAbTVXdtEaV7TnS5mqyilFyD8-PwLcnInjfsGC6cve14_ZepWIW71ryuTO-V6tgQ2ehfY4huBmADiruB_rI4DaHR80zfrLjYAZ2wrAAAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "PainOnSocial",
+      "read_more_link": "https://painonsocial.com/blog/deployment-issues-reddit#:~:text=This%20guide%20synthesizes%20the%20collective,problems%20entrepreneurs%20and%20developers%20face."
+    },
+    {
+      "position": 9,
+      "title": "What method do you use to deploy websites, and why?",
+      "link": "https://www.reddit.com/r/webdev/comments/1gpvmty/what_method_do_you_use_to_deploy_websites_and_why/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmwEB6zswFfHqCz7QfdjNA8rTGBMFDXd9d1tX6TtR-UNjHx8_N28wZCHxdvpnT2ZlF83BkwKXCGX3IcbdtGuAaiY5z6RmEQxPYW4-YycuWFqkRAqd3cilig-NxM5o5hSfUunGMxo6Vhw8V1jBJLUUnFJ8AcMZT0--OshW-3083L57W6ktZaF-dVBiNKRSYye96i5SiVaPfFoCadNESg&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQFnoECB8QAQ&uoh=1",
+      "displayed_link": "190+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Hey everyone! I'm curious about the different methods people use to deploy websites. There are so many options out there\u2014cloud services, CI/CD pipelines, ...",
+      "about_this_result": {
+        "source": {
+          "description": "Hey everyone! I'm curious about the different methods people use to deploy websites. There are so many options out there\u2014cloud services, ...",
+          "source_info_link": "https://www.reddit.com/r/webdev/comments/1gpvmty/what_method_do_you_use_to_deploy_websites_and_why/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/webdev"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Netlify",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Netlify&sa=X&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ1QJ6BAhHEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Netlify"
+    },
+    {
+      "block_position": 1,
+      "query": "How to deploy a website free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=How+to+deploy+a+website+free&sa=X&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ1QJ6BAhMEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=How+to+deploy+a+website+free"
+    },
+    {
+      "block_position": 1,
+      "query": "How to deploy a website on Google",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=How+to+deploy+a+website+on+Google&sa=X&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=How+to+deploy+a+website+on+Google"
+    },
+    {
+      "block_position": 1,
+      "query": "Deploy website vercel",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Deploy+website+vercel&sa=X&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ1QJ6BAhKEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Deploy+website+vercel"
+    },
+    {
+      "block_position": 1,
+      "query": "How to deploy a website in Netlify",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=How+to+deploy+a+website+in+Netlify&sa=X&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ1QJ6BAhLEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=How+to+deploy+a+website+in+Netlify"
+    },
+    {
+      "block_position": 1,
+      "query": "GitHub deploy website",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=GitHub+deploy+website&sa=X&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ1QJ6BAhNEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=GitHub+deploy+website"
+    },
+    {
+      "block_position": 1,
+      "query": "How to deploy a website on internet",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=How+to+deploy+a+website+on+internet&sa=X&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ1QJ6BAhJEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=How+to+deploy+a+website+on+internet"
+    },
+    {
+      "block_position": 1,
+      "query": "Website deployment services",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Website+deployment+services&sa=X&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ1QJ6BAhIEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Website+deployment+services"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=deploy+website+problems+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=1Hatate_M8_i2roP7vKUmAs&start=10&sa=N&sstk=AS6-VmJy0TuznivVPJeRxt8wN-MelXxMIzqhwKZUFmLB1XH2Sc1tUkAXrOgD286paL6mU8nK7f4xx9jlcw2ujFQvA-5q9nWAdnQYJA&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ8NMDegQIQxAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=deploy+website+problems+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=1Hatate_M8_i2roP7vKUmAs&start=10&sa=N&sstk=AS6-VmJy0TuznivVPJeRxt8wN-MelXxMIzqhwKZUFmLB1XH2Sc1tUkAXrOgD286paL6mU8nK7f4xx9jlcw2ujFQvA-5q9nWAdnQYJA&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ8tMDegQIQxAE",
+      "3": "https://www.google.co.in/search?q=deploy+website+problems+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=1Hatate_M8_i2roP7vKUmAs&start=20&sa=N&sstk=AS6-VmJy0TuznivVPJeRxt8wN-MelXxMIzqhwKZUFmLB1XH2Sc1tUkAXrOgD286paL6mU8nK7f4xx9jlcw2ujFQvA-5q9nWAdnQYJA&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ8tMDegQIQxAG",
+      "4": "https://www.google.co.in/search?q=deploy+website+problems+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=1Hatate_M8_i2roP7vKUmAs&start=30&sa=N&sstk=AS6-VmJy0TuznivVPJeRxt8wN-MelXxMIzqhwKZUFmLB1XH2Sc1tUkAXrOgD286paL6mU8nK7f4xx9jlcw2ujFQvA-5q9nWAdnQYJA&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ8tMDegQIQxAI",
+      "5": "https://www.google.co.in/search?q=deploy+website+problems+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=1Hatate_M8_i2roP7vKUmAs&start=40&sa=N&sstk=AS6-VmJy0TuznivVPJeRxt8wN-MelXxMIzqhwKZUFmLB1XH2Sc1tUkAXrOgD286paL6mU8nK7f4xx9jlcw2ujFQvA-5q9nWAdnQYJA&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ8tMDegQIQxAK",
+      "6": "https://www.google.co.in/search?q=deploy+website+problems+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=1Hatate_M8_i2roP7vKUmAs&start=50&sa=N&sstk=AS6-VmJy0TuznivVPJeRxt8wN-MelXxMIzqhwKZUFmLB1XH2Sc1tUkAXrOgD286paL6mU8nK7f4xx9jlcw2ujFQvA-5q9nWAdnQYJA&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ8tMDegQIQxAM",
+      "7": "https://www.google.co.in/search?q=deploy+website+problems+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=1Hatate_M8_i2roP7vKUmAs&start=60&sa=N&sstk=AS6-VmJy0TuznivVPJeRxt8wN-MelXxMIzqhwKZUFmLB1XH2Sc1tUkAXrOgD286paL6mU8nK7f4xx9jlcw2ujFQvA-5q9nWAdnQYJA&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ8tMDegQIQxAO",
+      "8": "https://www.google.co.in/search?q=deploy+website+problems+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=1Hatate_M8_i2roP7vKUmAs&start=70&sa=N&sstk=AS6-VmJy0TuznivVPJeRxt8wN-MelXxMIzqhwKZUFmLB1XH2Sc1tUkAXrOgD286paL6mU8nK7f4xx9jlcw2ujFQvA-5q9nWAdnQYJA&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ8tMDegQIQxAQ",
+      "9": "https://www.google.co.in/search?q=deploy+website+problems+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=1Hatate_M8_i2roP7vKUmAs&start=80&sa=N&sstk=AS6-VmJy0TuznivVPJeRxt8wN-MelXxMIzqhwKZUFmLB1XH2Sc1tUkAXrOgD286paL6mU8nK7f4xx9jlcw2ujFQvA-5q9nWAdnQYJA&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ8tMDegQIQxAS",
+      "10": "https://www.google.co.in/search?q=deploy+website+problems+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=1Hatate_M8_i2roP7vKUmAs&start=90&sa=N&sstk=AS6-VmJy0TuznivVPJeRxt8wN-MelXxMIzqhwKZUFmLB1XH2Sc1tUkAXrOgD286paL6mU8nK7f4xx9jlcw2ujFQvA-5q9nWAdnQYJA&ved=2ahUKEwjX-eTT1fiWAxVPsVYBHW45BbMQ8tMDegQIQxAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=deploy+website+problems+reddit&start=90"
+    }
+  }
+}

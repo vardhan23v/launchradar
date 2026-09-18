@@ -1,0 +1,387 @@
+{
+  "search_metadata": {
+    "id": "6aad73125fda0b6d11ceb583",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/wDTpSNqlwSBomaeFOFRApbqCYhwyb0-Y-6105QfdmO4/6aad73125fda0b6d11ceb583.json",
+    "markdown_endpoint": "https://serpapi.com/searches/wDTpSNqlwSBomaeFOFRApbqCYhwyb0-Y-6105QfdmO4/6aad73125fda0b6d11ceb583.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/wDTpSNqlwSBomaeFOFRApbqCYhwyb0-Y-6105QfdmO4/6aad73125fda0b6d11ceb583.json_with_pixel_position",
+    "created_at": "2026-09-18 17:21:22 UTC",
+    "processed_at": "2026-09-18 17:21:22 UTC",
+    "google_url": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&oq=AI+tools+for+college+students+in+India+reddit&uule=w+CAIQICIFSW5kaWE&hl=en&gl=in&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/wDTpSNqlwSBomaeFOFRApbqCYhwyb0-Y-6105QfdmO4/6aad73125fda0b6d11ceb583.html",
+    "total_time_taken": 4.71
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "AI tools for college students in India reddit",
+    "location_requested": "India",
+    "location_used": "India",
+    "google_domain": "google.co.in",
+    "hl": "en",
+    "gl": "in",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "AI tools for college students in India reddit",
+    "total_results": 175000000,
+    "time_taken_displayed": 0.31,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "ai_overview": {
+    "page_token": "D9LKY3iczVZbcqpIGF7ArGN4MYoKHjRV1KluAkrUaJvg5bxQ2FxEgU5sDCFvs5fZxexkVjMNXgKJJnPOw9R0lTTdfPz93z4-__gz8KPN37_9tYrjR3rN80mS1DxCvMCpYVLzI96iaYR5lwR0i1ffV4HsRNxuFzhyUlGAjnRF1-5nrY01UzkvkP2IS59lgcNUrnOOL2vzUWztpO0w3j02t2RcHY2iKkq43KpsLi3qrNmxL2vKmzy7bH4XbtiiRmtOZHZhDfdjFDjGBLq01qw3hdqIt0KGAf_dGCIAs_kWKJdB7JH6tanMgA6gWrCkAy-f4RtqsX-soPyR4l20BvdnTnI4Yr8b87WX3LDdY368fPu8K7C0THJfAEhyLyHwv46mMNAhlmNcn2TqhC6PQ_bI206xxiVfS8NLSkuNeWECRXk7pHgYM7MquXHKFPZAu0fgDQTGZb9Zfvo6aG0AUi-l9WRbnYqnyg0WXbbD2x5r3Dq_3LKpwft4hfObLc36WXno1EnPTOGwt3jYeb3m2ErHsdsazH-0nyRdQTxeMlxALNuxzZVZ_56vG81Gq94RpPZVziVMT2SiRTKlxoo6s_E0DBe1QQ02jjRS9kUHHyqmsrWinwkMKgdo6YV99QqNDU-bAGklIDw8Z9lRJ6Bc2v44y2v3uGQ9-spKU0S8nZo1_0ca7YdXACuTvSM6OQCLiD2qW6BuobA6OPeZed_aqAeOUaD1B2CJvMwVsAHHxCzeW14ApHhqxgFF7cFD1nDRBou4__4txHaRB-ERcXTwUJJiDFkKdASGQFeZTd_QWQ28rFf3jmbNcDhLUyEoleZCw-vsmJnybz59Zwb8ikTZQEe-vGv_Em0M3KZ0uFSbklaN1DHAgT8VXgMLj5LzNCHh8udEB_-vuLSXJPUgSZe5pH7NpVyS4CeSlN8vTlzK-lchF7kEu-claXhWksqJUsCkyKXPJemnuaR8yiV0uJ7hEjnPpceLXPKS91xiknTzJknqeUk6celXJAn-oiTl1HL2U1mfdmvvok5pYeIv1JWTamnLbw9m2uZpLuL-fTXWwJc65YbxdWjZwZXp29eweRun9pXJNsi1Y3NPMtArMWH_Nisu2VYwCQLHcyo03tlOFNOKH1X0yPatytaxbT_mwmBL5LrVGoVCZxJKr9FKROadmHaetJgYbqNu9rz4gZBHf34_EEBTuHMbxB8bxlKq6jgINnG1cWeafX1sxgttqqi3fl-LYyeYDEXB-jYbTx403AO2cD9f6LffOn29PXrpuG1zuhZf7AfLnQ6kl_XGT0Qfte90Y2G-TMTXefoj94zKS_fWnT4baOVTjsVIHbnBhVsss24QPXCHwMxjbank7QoMi7A5Aaj7jVULchRbpkOfZbFuSR3ckSQsSHZLELnQi9NHuVPnaLSVG_8AqjFTNg",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=D9LKY3iczVZbcqpIGF7ArGN4MYoKHjRV1KluAkrUaJvg5bxQ2FxEgU5sDCFvs5fZxexkVjMNXgKJJnPOw9R0lTTdfPz93z4-__gz8KPN37_9tYrjR3rN80mS1DxCvMCpYVLzI96iaYR5lwR0i1ffV4HsRNxuFzhyUlGAjnRF1-5nrY01UzkvkP2IS59lgcNUrnOOL2vzUWztpO0w3j02t2RcHY2iKkq43KpsLi3qrNmxL2vKmzy7bH4XbtiiRmtOZHZhDfdjFDjGBLq01qw3hdqIt0KGAf_dGCIAs_kWKJdB7JH6tanMgA6gWrCkAy-f4RtqsX-soPyR4l20BvdnTnI4Yr8b87WX3LDdY368fPu8K7C0THJfAEhyLyHwv46mMNAhlmNcn2TqhC6PQ_bI206xxiVfS8NLSkuNeWECRXk7pHgYM7MquXHKFPZAu0fgDQTGZb9Zfvo6aG0AUi-l9WRbnYqnyg0WXbbD2x5r3Dq_3LKpwft4hfObLc36WXno1EnPTOGwt3jYeb3m2ErHsdsazH-0nyRdQTxeMlxALNuxzZVZ_56vG81Gq94RpPZVziVMT2SiRTKlxoo6s_E0DBe1QQ02jjRS9kUHHyqmsrWinwkMKgdo6YV99QqNDU-bAGklIDw8Z9lRJ6Bc2v44y2v3uGQ9-spKU0S8nZo1_0ca7YdXACuTvSM6OQCLiD2qW6BuobA6OPeZed_aqAeOUaD1B2CJvMwVsAHHxCzeW14ApHhqxgFF7cFD1nDRBou4__4txHaRB-ERcXTwUJJiDFkKdASGQFeZTd_QWQ28rFf3jmbNcDhLUyEoleZCw-vsmJnybz59Zwb8ikTZQEe-vGv_Em0M3KZ0uFSbklaN1DHAgT8VXgMLj5LzNCHh8udEB_-vuLSXJPUgSZe5pH7NpVyS4CeSlN8vTlzK-lchF7kEu-claXhWksqJUsCkyKXPJemnuaR8yiV0uJ7hEjnPpceLXPKS91xiknTzJknqeUk6celXJAn-oiTl1HL2U1mfdmvvok5pYeIv1JWTamnLbw9m2uZpLuL-fTXWwJc65YbxdWjZwZXp29eweRun9pXJNsi1Y3NPMtArMWH_Nisu2VYwCQLHcyo03tlOFNOKH1X0yPatytaxbT_mwmBL5LrVGoVCZxJKr9FKROadmHaetJgYbqNu9rz4gZBHf34_EEBTuHMbxB8bxlKq6jgINnG1cWeafX1sxgttqqi3fl-LYyeYDEXB-jYbTx403AO2cD9f6LffOn29PXrpuG1zuhZf7AfLnQ6kl_XGT0Qfte90Y2G-TMTXefoj94zKS_fWnT4baOVTjsVIHbnBhVsss24QPXCHwMxjbank7QoMi7A5Aaj7jVULchRbpkOfZbFuSR3ckSQsSHZLELnQi9NHuVPnaLSVG_8AqjFTNg"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Looking for AI tools that truly help study : r/studytips",
+      "link": "https://www.reddit.com/r/studytips/comments/1ly1dio/looking_for_ai_tools_that_truly_help_study/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlwEB6zswFfcdBCxzuB5zdaY2Ae_70nXIPO3dMky4WL6T9xvqbGqZOGrBKveOh_YtOOVdGRp_UeujNn-mvrFkmPkJUdnhy7HRLcxr2NMG_9rnPKbsH7kfTwA-M4rbdUxRUm754XCO14lAGWIi7rHeM8UOchwhxjAqLCNURgM9sZrSeCdjJzhvfKhvotsvwewyAnTzcU7ax7Rt&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8QFnoECBgQAQ&uoh=1",
+      "displayed_link": "140+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Try using Sovi AI. It's been really helpful for breaking down concepts and walking through problems step by step. Also it can summarize articles ...",
+      "snippet_highlighted_words": [
+        "Sovi AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Try using Sovi AI. It's been really helpful for breaking down concepts and walking through problems step by step. Also it can summarize articles ...",
+          "source_info_link": "https://www.reddit.com/r/studytips/comments/1ly1dio/looking_for_ai_tools_that_truly_help_study/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/studytips",
+      "read_more_link": "https://www.reddit.com/r/studytips/comments/1ly1dio/looking_for_ai_tools_that_truly_help_study/#:~:text=Try%20using%20Sovi%20AI.%20It's,readings%20when%20short%20on%20time."
+    },
+    {
+      "position": 2,
+      "title": "College starts soon - what AI apps you like best?",
+      "link": "https://www.reddit.com/r/ProductivityApps/comments/1msg575/college_starts_soon_what_ai_apps_you_like_best/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESogEB6zswFZoTME4fnlSwUUX9GJKE94_MkTx_A7LAGTuycchMr_fVc4TuRt9dIOrJJN3YjaveW6EyHt7Keh-mx0Z2bJ80tujbPePTE_axM6hjFEj_7GXOqvn0d8iX0UnG7ZB2B_GxdWB1wUbf4p15MRbpD4Q-wv55Ew7UHRAfK7EbFkm0dXJq1RpDiSzdyKT0R0a-KOojZ0OALi1J199jxSe8D1Y&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8QFnoECBkQAQ&uoh=1",
+      "displayed_link": "60+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "There are just SO MANY apps out there! Generic AI apps: ChatGPT, Claude, Gemini, Perplexity AI study/note-taking apps: NotebookLM, Notion, Obsidian, ...",
+      "about_this_result": {
+        "source": {
+          "description": "There are just SO MANY apps out there! Generic AI apps: ChatGPT, Claude, Gemini, Perplexity. AI study/note-taking apps: NotebookLM, Notion, ...",
+          "source_info_link": "https://www.reddit.com/r/ProductivityApps/comments/1msg575/college_starts_soon_what_ai_apps_you_like_best/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/ProductivityApps"
+    },
+    {
+      "position": 3,
+      "title": "What ai tools are actually worth using for school? : r/studytips",
+      "link": "https://www.reddit.com/r/studytips/comments/1lk821x/what_ai_tools_are_actually_worth_using_for_school/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESngEB6zswFWTLZOihxkjilb1Rxwso4GkHWZqceEVv6Ee_9DzF1-TvnOlh8NDLERwb7c4NlgwYUCV2jj7W9cTNxMQFHz-dvxXr4aIkWFFa6plIBecphveTSZJ2IjPfRg4Ic4dEktSvncxOthfL-V-l7ermPGcs6a-Ae3_O3Wk8PaRnXUmD9oIbELuj0gbyEk-Sl7Hd7xSJOWDkiigOR3Kwiw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8QFnoECBcQAQ&uoh=1",
+      "displayed_link": "70+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "I\u2019ve tried way too many ai apps lately and most are either overpriced or just look cute but do nothing. here are 5 that i actually keep using: AskSia ...",
+      "about_this_result": {
+        "source": {
+          "description": "I use theaai , which has its premium feature all for free until the end of this year. It also has smart study, ai study guides, and practice ...",
+          "source_info_link": "https://www.reddit.com/r/studytips/comments/1lk821x/what_ai_tools_are_actually_worth_using_for_school/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/studytips"
+    },
+    {
+      "position": 4,
+      "title": "Which AI tool helps you the most with studying, and what ...",
+      "link": "https://www.reddit.com/r/developersIndia/comments/1uw0b54/which_ai_tool_helps_you_the_most_with_studying/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESoQEB6zswFUmju1e3diBo0PGogHqx06PcED9-ddF0kBLSsEjFyFSOSwIHNTQ2bd2_IUWEZVVFBgCawhlG5fk8l4lTV3n9Ohm8peXzIyofW1-TU9c8pcWU0TdolA_teEMaUDZbIgTrsRpvqdsPAknZj16RZMwtOQqKj9IGkdKsh-x7X4iJgipQ0fAY54rIbRonl0td-Ep2M9LAfoxNsvke_O__FQ&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8QFnoECB4QAQ&uoh=1",
+      "displayed_link": "10+ comments \u00b7 2 months ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Do you think the free version is enough, or is premium actually worth it ? I'm using Chatgpt right now ,and i think it's been really helpful for ...",
+      "about_this_result": {
+        "source": {
+          "description": "I use chatgpt and gemini both With this I studied complete pyspark and Databricks Just write prompt properly and they will help you learn topics ...",
+          "source_info_link": "https://www.reddit.com/r/developersIndia/comments/1uw0b54/which_ai_tool_helps_you_the_most_with_studying/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/developersIndia"
+    },
+    {
+      "position": 5,
+      "title": "In need of a free study ai tool : r/studytips",
+      "link": "https://www.reddit.com/r/studytips/comments/1faywue/in_need_of_a_free_study_ai_tool/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESjAEB6zswFZehs6SkPMVd4ZE1RlbKwESdCnjII5Bp5wUmsYsGB0tH44o-RrfRgfdBy_RxH5Oe_0uPd1oV9b6i3u2fGzeH4P2AMD3vQZb_8kRzH4ADk5Mac5G-0mYWuQX4PsnHSUopIYBiwOMD-nAmftCrnO0mcBQJJlTJdiYj6L1WHDCfH13Ur5h4GSaOdg&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8QFnoECB0QAQ&uoh=1",
+      "displayed_link": "130+ comments \u00b7 2 years ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "I recently found a cool website called Study Companion. This SaaS is an AI study assistant that can help students of all ages and grades by ...",
+      "snippet_highlighted_words": [
+        "Study Companion"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "I recently found a cool website called Study Companion. This SaaS is an AI study assistant that can help students of all ages and grades by ...",
+          "source_info_link": "https://www.reddit.com/r/studytips/comments/1faywue/in_need_of_a_free_study_ai_tool/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/studytips",
+      "read_more_link": "https://www.reddit.com/r/studytips/comments/1faywue/in_need_of_a_free_study_ai_tool/#:~:text=I%20recently%20found%20a%20cool,summaries%2C%20flashcards%2C%20exams%2C%20and%20more."
+    },
+    {
+      "position": 6,
+      "title": "I am starting college in October and I don't know what ai ...",
+      "link": "https://www.reddit.com/r/studytips/comments/1mfrsrh/i_am_starting_college_in_october_and_i_dont_know/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESnQEB6zswFTHDdKLiq_9K3BNgcDGtJ9nKiF5xiHSpKk5TOMR6uNvMvHWUQBK9Z12ZkW3IsOJsRlHR9eGIiOjBMxQR8da_dto2s6rfChBaOqko2MwQ5ia2EsZc3IteHqbz1ir-LlumykKD7PJxS6_f-XGRMGHMf3jw-jcCRkajEvyHt_B2_jsJ6rWXLsAsI_cR49Lv7qRCFmHHYng-g29p&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8QFnoECBoQAQ&uoh=1",
+      "displayed_link": "10+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "a lot of students are using AI tools like Notion AI, ChatGPT, and even tools like Grammarly for writing or summaries. for note-taking, you can ...",
+      "snippet_highlighted_words": [
+        "Notion AI, ChatGPT, and even tools like Grammarly"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "a lot of students are using AI tools like Notion AI, ChatGPT, and even tools like Grammarly for writing or summaries. for note-taking, you can ...",
+          "source_info_link": "https://www.reddit.com/r/studytips/comments/1mfrsrh/i_am_starting_college_in_october_and_i_dont_know/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/studytips",
+      "read_more_link": "https://www.reddit.com/r/studytips/comments/1mfrsrh/i_am_starting_college_in_october_and_i_dont_know/#:~:text=a%20lot%20of%20students%20are,or%20Evernote%20with%20AI%20plugins."
+    },
+    {
+      "position": 7,
+      "title": "Currently best AI for students? : r/ArtificialInteligence",
+      "link": "https://www.reddit.com/r/ArtificialInteligence/comments/1gbral0/currently_best_ai_for_students/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlwEB6zswFS-ipWvISQt0IdZ_xtPql7_CxOa448zQgWO244jXHJaFfX_n62pDMx8qhKh2blMj5cNu80LQmh2ZUoJWsT6kZ-HlLkof8ePEIDs4jxaZO3ax8C_-G0OKHMjM-rZCvx5nalS-_MI2XX5H_5ut77wl52YYPvXAbwpp_ytbCFK1DvXOHanuGDbbvsSWBVTVPsHi_2Bl&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8QFnoECCAQAQ&uoh=1",
+      "displayed_link": "30+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Hey, I recently started to study computer science and it's, who could've known, pretty hard. Such a high workload and everything is pretty complicated, ...",
+      "about_this_result": {
+        "source": {
+          "description": "For coding, use GitHub CoPilot. It's free for students. I would suggest ChatGPT's \"o1-preview\" model, which you can access for $20 a month. It' ...",
+          "source_info_link": "https://www.reddit.com/r/ArtificialInteligence/comments/1gbral0/currently_best_ai_for_students/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/ArtificialInteligence"
+    },
+    {
+      "position": 8,
+      "title": "The 8 Best AI-Powered Studying Apps in 2026 - Free & Powerful",
+      "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w",
+      "displayed_link": "1.2L+ views \u00b7 1 year ago",
+      "thumbnail": "https://serpapi.com/searches/6aad73125fda0b6d11ceb583/images/yOXAzlaZhUSMadwc0UaNSqnaWzHB2LeZGNt42CP89nA.jpeg",
+      "favicon": "https://serpapi.com/images/i/UklGRpwAAABXRUJQVlA4IJAAAAAQAwCdASoQABAAAsBMJbACdEyAZIBvHZEVF_xH8jFr8RAA_vdfqk7B4h7c7SA9EXLm1jvCcvS12TTPc4SgLiYbbdnDtj5mFYsy9rYK8egN-m_wy1bF7_lqaJwe1kOFY9IH8jmlO7DbAWe9V_-WsvvcWurSf-Cp-rbcVf_uF_E7k7jxw1wX2r_PvJ3PjrggAAA.webp",
+      "snippet": "The 8 Best AI-Powered Studying Apps in 2026. Tejas AI Best 9 AI Tools for Students !!",
+      "duration": "10:44",
+      "key_moments": [
+        {
+          "time": "00:00",
+          "title": "Introduction",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=0"
+        },
+        {
+          "time": "00:53",
+          "title": "NotebookLM",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=53"
+        },
+        {
+          "time": "02:03",
+          "title": "Anara",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=123"
+        },
+        {
+          "time": "03:00",
+          "title": "ChatGPT",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=180"
+        },
+        {
+          "time": "04:14",
+          "title": "Traverse.link",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=254"
+        },
+        {
+          "time": "05:05",
+          "title": "Canva",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=305"
+        },
+        {
+          "time": "06:00",
+          "title": "Jenni ai",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=360"
+        },
+        {
+          "time": "06:47",
+          "title": "Claude",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=407"
+        },
+        {
+          "time": "08:48",
+          "title": "Gauthmath",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=528"
+        },
+        {
+          "time": "09:39",
+          "title": "Question ai",
+          "link": "https://www.youtube.com/watch?v=JAGQtcRaC1w&t=579"
+        }
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "The 8 Best AI-Powered Studying Apps in 2026. Tejas AI Best 9 AI Tools for Students !!",
+          "icon": "https://serpapi.com/images/i/UklGRpwAAABXRUJQVlA4IJAAAAAQAwCdASoQABAAAsBMJbACdEyAZIBvHZEVF_xH8jFr8RAA_vdfqk7B4h7c7SA9EXLm1jvCcvS12TTPc4SgLiYbbdnDtj5mFYsy9rYK8egN-m_wy1bF7_lqaJwe1kOFY9IH8jmlO7DbAWe9V_-WsvvcWurSf-Cp-rbcVf_uF_E7k7jxw1wX2r_PvJ3PjrggAAA.webp"
+        }
+      },
+      "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcRUil3PdZX2etZfohGJp23EymeviXNH7ARlCg",
+      "source": "YouTube \u00b7 Dr Amina Yonis"
+    },
+    {
+      "position": 9,
+      "title": "Best AI Tools for Students",
+      "link": "https://www.reddit.com/r/Student/comments/1l7xcwd/best_ai_tools_for_students/",
+      "redirect_link": "https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=CAEShQEB6zswFTvnJ8kU3-napbHaUjlJ1xT7jkhybygNhn81UcQRa9JvEVLM1boIB6BuwbIEa7c0ZiSKQDYI6UZ7llsKKBB5LPTKJXRuJRw7hNa7Pp8fCuVMHNCxkUTadbE5dy-ZVZMqs9vIie53-q0gMSUahEERm4EchOm0_e70LbDp8vlY3HY1&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8QFnoECEsQAQ&uoh=1",
+      "displayed_link": "10+ comments \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp",
+      "snippet": "Blackbox AI\u2013 summarize vids and pdf, and deep research \u00b7 ChatGPT \u2013 great for breaking down hard concepts, writing drafts, or getting unstuck.",
+      "snippet_highlighted_words": [
+        "Blackbox AI"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Blackbox AI\u2013 summarize vids and pdf, and deep research \u00b7 ChatGPT \u2013 great for breaking down hard concepts, writing drafts, or getting unstuck.",
+          "source_info_link": "https://www.reddit.com/r/Student/comments/1l7xcwd/best_ai_tools_for_students/",
+          "icon": "https://serpapi.com/images/i/UklGRsgBAABXRUJQVlA4ILwBAABwCQCdASocABwAPrkurlcnIacnG_DgFwlsAJ0yhHmfjXFVOG9mcZ4QDxYP1m7Cm8NegB0qRXs-2xc_4RyNjKICSZ0GQliSROqR1wWiqSCHqbbO0wAA_vfwH4_riQbrKqktUHZQIXSB7cgfDG2XxRU1t3H2qzarEsy1mUvxybokwYpSVKzHnZ-izG5PYwBHsc1GtRcEZoZGf_6u28fsi_cWb4W-9i2bp_kRTmnuqM-BBD2L8-VOJcPOsfd1DB1l8_s_3IvanbQ3-krp22uWGcFAQ0Qx0IVfaFDbMfkeuTg04P8lvHyLNiFX4K-OPAt_D6D2n53jjz9MP6rCcImkST0rmUe510C8p7V5A03Xqh32Q8S4mUzVbW_5VoXr0-sfR4z_zJaQkvouwq_D_r7Egp_FPrFkVJXi7GPrP-f_IsNcCBvRKHMAM5dgcrzXOCJypnNnfv_oVmPx-9Y2rFO8yR1NQl_md3OtZBDsOZKkRFnfCN7_-XVBD4_74J8CFdRTTBZ4SXohYcnVS4zEUUs-SViDs_npDYUK3i7eDykmgeM2Y6cC5MAMXkzfFaXcRuCDi0lv5PSzrZbCDAqNAAA.webp"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "IN"
+        ]
+      },
+      "source": "Reddit \u00b7 r/Student",
+      "read_more_link": "https://www.reddit.com/r/Student/comments/1l7xcwd/best_ai_tools_for_students/#:~:text=Blackbox%20AI%E2%80%93%20summarize%20vids%20and,pdf%2C%20and%20deep%20research&text=ChatGPT%20%E2%80%93%20great%20for%20breaking,writing%20drafts%2C%20or%20getting%20unstuck."
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Best ai tools for college students in india reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Best+ai+tools+for+college+students+in+india+reddit&sa=X&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q1QJ6BAhFEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+ai+tools+for+college+students+in+india+reddit"
+    },
+    {
+      "block_position": 1,
+      "query": "Top ai tools for college students in india reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Top+ai+tools+for+college+students+in+india+reddit&sa=X&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q1QJ6BAhKEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Top+ai+tools+for+college+students+in+india+reddit"
+    },
+    {
+      "block_position": 1,
+      "query": "Ai tools for college students in india reddit free",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Ai+tools+for+college+students+in+india+reddit+free&sa=X&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Ai+tools+for+college+students+in+india+reddit+free"
+    },
+    {
+      "block_position": 1,
+      "query": "Best AI tools for students studying",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Best+AI+tools+for+students+studying&sa=X&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q1QJ6BAhGEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+tools+for+students+studying"
+    },
+    {
+      "block_position": 1,
+      "query": "Best AI tools for university students Reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Best+AI+tools+for+university+students+Reddit&sa=X&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q1QJ6BAhJEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+tools+for+university+students+Reddit"
+    },
+    {
+      "block_position": 1,
+      "query": "Best AI for university assignments",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Best+AI+for+university+assignments&sa=X&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q1QJ6BAhHEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+for+university+assignments"
+    },
+    {
+      "block_position": 1,
+      "query": "Best AI for students Reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Best+AI+for+students+Reddit&sa=X&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q1QJ6BAhIEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+for+students+Reddit"
+    },
+    {
+      "block_position": 1,
+      "query": "Best AI for university assignments reddit",
+      "link": "https://www.google.co.in/search?sca_esv=40a79c977c37d534&hl=en&gl=in&q=Best+AI+for+university+assignments+reddit&sa=X&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q1QJ6BAhDEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=Best+AI+for+university+assignments+reddit"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=FXOtau7rMtup2roP-OOn-Qw&start=10&sa=N&sstk=AS6-VmLb8GNWoDYJF8Few6VX9UGHcTD8pYnBbAglEsydC4Q1crf64fARhfWKDIyHptqUpwsnzG0xw9_BLgFXgGk3SzpJu5RKf7oEbw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q8NMDegQIQBAW",
+    "other_pages": {
+      "2": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=FXOtau7rMtup2roP-OOn-Qw&start=10&sa=N&sstk=AS6-VmLb8GNWoDYJF8Few6VX9UGHcTD8pYnBbAglEsydC4Q1crf64fARhfWKDIyHptqUpwsnzG0xw9_BLgFXgGk3SzpJu5RKf7oEbw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q8tMDegQIQBAE",
+      "3": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=FXOtau7rMtup2roP-OOn-Qw&start=20&sa=N&sstk=AS6-VmLb8GNWoDYJF8Few6VX9UGHcTD8pYnBbAglEsydC4Q1crf64fARhfWKDIyHptqUpwsnzG0xw9_BLgFXgGk3SzpJu5RKf7oEbw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q8tMDegQIQBAG",
+      "4": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=FXOtau7rMtup2roP-OOn-Qw&start=30&sa=N&sstk=AS6-VmLb8GNWoDYJF8Few6VX9UGHcTD8pYnBbAglEsydC4Q1crf64fARhfWKDIyHptqUpwsnzG0xw9_BLgFXgGk3SzpJu5RKf7oEbw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q8tMDegQIQBAI",
+      "5": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=FXOtau7rMtup2roP-OOn-Qw&start=40&sa=N&sstk=AS6-VmLb8GNWoDYJF8Few6VX9UGHcTD8pYnBbAglEsydC4Q1crf64fARhfWKDIyHptqUpwsnzG0xw9_BLgFXgGk3SzpJu5RKf7oEbw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q8tMDegQIQBAK",
+      "6": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=FXOtau7rMtup2roP-OOn-Qw&start=50&sa=N&sstk=AS6-VmLb8GNWoDYJF8Few6VX9UGHcTD8pYnBbAglEsydC4Q1crf64fARhfWKDIyHptqUpwsnzG0xw9_BLgFXgGk3SzpJu5RKf7oEbw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q8tMDegQIQBAM",
+      "7": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=FXOtau7rMtup2roP-OOn-Qw&start=60&sa=N&sstk=AS6-VmLb8GNWoDYJF8Few6VX9UGHcTD8pYnBbAglEsydC4Q1crf64fARhfWKDIyHptqUpwsnzG0xw9_BLgFXgGk3SzpJu5RKf7oEbw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q8tMDegQIQBAO",
+      "8": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=FXOtau7rMtup2roP-OOn-Qw&start=70&sa=N&sstk=AS6-VmLb8GNWoDYJF8Few6VX9UGHcTD8pYnBbAglEsydC4Q1crf64fARhfWKDIyHptqUpwsnzG0xw9_BLgFXgGk3SzpJu5RKf7oEbw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q8tMDegQIQBAQ",
+      "9": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=FXOtau7rMtup2roP-OOn-Qw&start=80&sa=N&sstk=AS6-VmLb8GNWoDYJF8Few6VX9UGHcTD8pYnBbAglEsydC4Q1crf64fARhfWKDIyHptqUpwsnzG0xw9_BLgFXgGk3SzpJu5RKf7oEbw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q8tMDegQIQBAS",
+      "10": "https://www.google.co.in/search?q=AI+tools+for+college+students+in+India+reddit&sca_esv=40a79c977c37d534&hl=en&gl=in&ei=FXOtau7rMtup2roP-OOn-Qw&start=90&sa=N&sstk=AS6-VmLb8GNWoDYJF8Few6VX9UGHcTD8pYnBbAglEsydC4Q1crf64fARhfWKDIyHptqUpwsnzG0xw9_BLgFXgGk3SzpJu5RKf7oEbw&ved=2ahUKEwiuyr-K0viWAxXblFYBHfjxKc8Q8tMDegQIQBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=in&google_domain=google.co.in&hl=en&location=India&q=AI+tools+for+college+students+in+India+reddit&start=90"
+    }
+  }
+}

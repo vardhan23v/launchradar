@@ -1,0 +1,809 @@
+{
+  "search_metadata": {
+    "id": "6aad76e6f357f66df1dc8cbc",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/cTCl2qMjNdytgdAJrXTop93Yi7noBQPiPIzwDY21AvY/6aad76e6f357f66df1dc8cbc.json",
+    "markdown_endpoint": "https://serpapi.com/searches/cTCl2qMjNdytgdAJrXTop93Yi7noBQPiPIzwDY21AvY/6aad76e6f357f66df1dc8cbc.md",
+    "created_at": "2026-09-18 17:37:42 UTC",
+    "processed_at": "2026-09-18 17:37:42 UTC",
+    "google_news_url": "https://news.google.com/search?q=new+funding+for+website+deployment+platforms+india+news&hl=en&gl=IN",
+    "raw_html_file": "https://serpapi.com/searches/cTCl2qMjNdytgdAJrXTop93Yi7noBQPiPIzwDY21AvY/6aad76e6f357f66df1dc8cbc.html",
+    "total_time_taken": 5.07
+  },
+  "search_parameters": {
+    "engine": "google_news",
+    "gl": "in",
+    "hl": "en",
+    "q": "new funding for website deployment platforms india news"
+  },
+  "news_results": [
+    {
+      "position": 2,
+      "title": "Finvolve marks Rs 90 crore first close of Rs 250 crore fund to back defence, aerospace and deeptech startups",
+      "source": {
+        "name": "Indian Startup News",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://indianstartupnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://indianstartupnews.com/news/finvolve-marks-rs-90-crore-first-close-of-rs-250-crore-fund-to-back-defence-aerospace-and-deeptech-startups-12543999",
+      "thumbnail": "https://img-cdn.publive.online/fit-in/1200x675/filters:format(webp)/indianstartupnews/media/media_files/2026/09/16/firi-raises-funding-2026-09-16-13-30-18.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXZXR3AzUTBobUxVaHpWVFZUVFJEZ0F4aUFCU2dLTWdZaGRKQ3VyUVk",
+      "date": "09/18/2026, 08:08 AM, +0000 UTC",
+      "iso_date": "2026-09-18T08:08:17Z"
+    },
+    {
+      "position": 3,
+      "title": "McKinsey Technology Trends Outlook 2026",
+      "source": {
+        "name": "mckinsey.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.mckinsey.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech",
+      "thumbnail": "https://www.mckinsey.com/spcontent/bespoke/tech-trends-2026-hero-nav//tech-trends-2026-00-7362480-thumb-1536x1536.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVRjRGxCYmt4bFJXMXlNRzFQVFJDcUJCaXFCQ2dLTWdZQmNKRG1yQVk",
+      "date": "09/15/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-09-15T07:00:00Z"
+    },
+    {
+      "position": 4,
+      "title": "Factrika Raises \u20b98.9 Crore Seed Funding Led by Info Edge to Expand Industrial Workforce Platform",
+      "source": {
+        "name": "Indian Startup Times",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.indianstartuptimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.indianstartuptimes.com/investment/factrika-raises-%E2%82%B98-9-crore-seed-funding-led-by-info-edge-to-expand-industrial-workforce-platform/",
+      "thumbnail": "https://i0.wp.com/www.indianstartuptimes.com/wp-content/uploads/2026/09/ex-2026-09-17T194911.999.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNUZTMkpoYm5vMVZsZE5ZWFJ4VFJDZkF4ampCU2dLTWdB",
+      "date": "09/17/2026, 02:20 PM, +0000 UTC",
+      "iso_date": "2026-09-17T14:20:58Z"
+    },
+    {
+      "position": 5,
+      "title": "Indian Startup IPO Tracker 2026",
+      "source": {
+        "name": "Inc42",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://inc42.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://inc42.com/features/indian-startup-ipo-tracker-2026/",
+      "thumbnail": "https://inc42.com/cdn-cgi/image/quality=90/https://asset.inc42.com/2026/01/FTR-2-100.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUxWVE15ZW5aTFlTMHpSRmhoVFJEZ0F4al9CQ2dLTWdtTlFZakh2S05xS0FJ",
+      "date": "09/13/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-09-13T07:00:00Z"
+    },
+    {
+      "position": 6,
+      "title": "DheyaTech Raises \u20b943 Crore in Pre-Series A Round Led by Avaana Capital",
+      "source": {
+        "name": "Indian Startup Times",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.indianstartuptimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.indianstartuptimes.com/investment/dheyatech-raises-%E2%82%B943-crore-in-pre-series-a-round-led-by-avaana-capital/",
+      "thumbnail": "https://i0.wp.com/www.indianstartuptimes.com/wp-content/uploads/2026/09/ex-2026-09-17T194257.925.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTVjMnBOYkRCT2J6ZGliWEJxVFJDZkF4ampCU2dLTWdrdEFwVE5NV2M5SXdN",
+      "date": "09/17/2026, 02:14 PM, +0000 UTC",
+      "iso_date": "2026-09-17T14:14:41Z"
+    },
+    {
+      "position": 7,
+      "title": "Startup news and updates: daily roundup (July 15, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/07/startup-news-and-updates-daily-roundup-july-15-2026",
+      "thumbnail": "https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/DailyRoundupImages1600x900-1774005165949.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVRRV1ZYZW5WSVdXZGljVjl4VFJDSEF4aVBCaWdLTWdZVllJNHVwUWM",
+      "date": "07/15/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-15T07:00:00Z"
+    },
+    {
+      "position": 8,
+      "title": "India\u2019s platform economy can boost women\u2019s employment, but financial inclusion is key: ILO-NCAER",
+      "source": {
+        "name": "Moneycontrol.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.moneycontrol.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Priyansh Verma"
+        ]
+      },
+      "link": "https://www.moneycontrol.com/news/business/india-s-platform-economy-can-boost-women-s-employment-but-financial-inclusion-is-key-ilo-ncaer-14014279.html",
+      "thumbnail": "https://images.moneycontrol.com/static-mcnews/2026/08/20260824135137_NCAER.jpeg?impolicy=website&width=350&height=196",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTFZbDlXT1dOd1YzY3hTbXRVVFJERUFSamVBaWdLTWdrQjRJU0J6S09Zc1FF",
+      "date": "08/24/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-24T07:00:00Z"
+    },
+    {
+      "position": 9,
+      "title": "JBM Ecolife to deploy 2,000 more electric buses following \u20ac70 million funding round",
+      "source": {
+        "name": "Sustainable Bus",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.sustainable-bus.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.sustainable-bus.com/news/jbm-investment-support-electric-bus-deployment-india/",
+      "thumbnail": "https://www.sustainable-bus.com/wp-content/uploads/2026/06/CITYLIFE-1085x724-1-1-480x480.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHhWbXhqVGtsbGVWVm1hR1ZLVFJEZ0F4amdBeWdLTWdZQmtJNnB0UVk",
+      "date": "06/19/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-19T07:00:00Z"
+    },
+    {
+      "position": 10,
+      "title": "Startup news and updates: daily roundup (June 30, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/06/startup-news-and-updates-daily-roundup-june-30-2026",
+      "thumbnail": "https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/DailyRoundupImages1600x900-1774005165949.jpg?mode=fit&crop=faces&ar=16%3A9&format=auto&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDFVR2Q1WlZwamFtcHBkazlwVFJDZkF4ampCU2dLTWdZUmNKQXVxUWM",
+      "date": "06/30/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-30T07:00:00Z"
+    },
+    {
+      "position": 11,
+      "title": "OpenAI raises $122 billion to accelerate the next phase of AI",
+      "source": {
+        "name": "openai.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://openai.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://openai.com/index/accelerating-the-next-phase-ai/",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/6OSKcUkJputeSfEUssuwQk/ca93432564e7748ab08ee2b5be907f29/Frame-1.png?w=1600&h=900&fit=fill",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW1helJzUTBsSFFWSnNVMlJyVFJDZkF4ampCU2dLTWdZTmtwUXh0UWM",
+      "date": "03/31/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-31T07:00:00Z"
+    },
+    {
+      "position": 12,
+      "title": "Kalshi, Polymarket defy India ban on online betting platforms",
+      "source": {
+        "name": "The Economic Times",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://m.economictimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Emily Nicolle",
+          "Sidhartha Shukla",
+          "Todd Gillespie"
+        ]
+      },
+      "link": "https://m.economictimes.com/news/india/kalshi-polymarket-defy-india-ban-on-online-betting-platforms/articleshow/131173694.cms",
+      "thumbnail": "https://m.economictimes.com/thumb/msid-131173737,width-1200,height-900,resizemode-4,imgsize-1497276/cms-2026-05-18t155958-542.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXVaazkxV0hoSFptVnNjRnBoVFJEZ0F4aUFCU2dLTWdhbElvcFFHUWc",
+      "date": "05/18/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-18T07:00:00Z"
+    },
+    {
+      "position": 13,
+      "title": "Anthropic partners with the Gates Foundation",
+      "source": {
+        "name": "Anthropic",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.anthropic.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "thumbnail": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6905c83d0735e1bc430025fdd1748d1406079036-1000x1000.svg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNDBkMFZuWkRVeWQxTTJUVlZhVFJDcUJCaXFCQ2dLTWdrSkVvVFRFR3VwMWdB",
+      "date": "05/14/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-14T07:00:00Z"
+    },
+    {
+      "position": 14,
+      "title": "E2E launches next-gen NVIDIA B200 cluster on TIR platform",
+      "source": {
+        "name": "scanx.trade",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://scanx.trade&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://scanx.trade/stock-market-news/companies/e2e-launches-next-gen-nvidia-b200-cluster-on-tir-platform/41664296",
+      "thumbnail": "https://news-images.dhan.co/e2e-launches-next-gen-nvidia-b200-cluster-on-tir-platform.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXVORzFUWTJaUlUzWnJPVWR3VFJDaUF4amRCU2dLTWdZQkVKYWdGQWs",
+      "date": "05/29/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-29T07:00:00Z"
+    },
+    {
+      "position": 15,
+      "title": "Dhruva Space wins Rs 105 crore grant for Project Garud, eyes 600 satellites a year",
+      "source": {
+        "name": "Moneycontrol.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.moneycontrol.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.moneycontrol.com/news/business/dhruva-space-wins-rs-105-crore-grant-for-project-garud-eyes-600-satellites-a-year-13919411.html",
+      "thumbnail": "https://images.moneycontrol.com/static-mcnews/2024/01/6595314602068da34e825946_wp-Team-DhruvaSpace-ISRO-Chairman-PSLV-C58-e1704292160837.jpg?impolicy=website&width=1600&height=900",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNDBPR1ZxWTB0ZlppMXRjMVZCVFJDZkF4ampCU2dLTWdrSk1KcU5uS21acUFJ",
+      "date": "05/14/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-14T07:00:00Z"
+    },
+    {
+      "position": 16,
+      "title": "Startup news and updates: Daily roundup (July 22, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/07/startup-news-and-updates-daily-roundup-july-22-2026",
+      "thumbnail": "https://images.yourstory.com/cs/2/e641e900925711e9926177f451727da9/RoundupIMG21600x900-1763028299752.jpg?mode=fit&crop=faces&ar=16%3A9&format=auto&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1UMVl6VG14S01YQnJSM1UxVFJDZkF4ampCU2dLTWdZZFk0eXNMUWM",
+      "date": "07/22/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-22T07:00:00Z"
+    },
+    {
+      "position": 17,
+      "title": "PIB Backgrounder",
+      "source": {
+        "name": "PIB",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.pib.gov.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156786&lang=1&reg=3",
+      "thumbnail": "https://static.pib.gov.in/WriteReadData/userfiles/image/image0065684.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXpkMTlUY0Y5cFJrSjBZV1V0VFJDY0F4aWVCQ2dLTWdhSk1Zd0hzUVU",
+      "date": "12/30/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-30T08:00:00Z"
+    },
+    {
+      "position": 18,
+      "title": "Startup news and updates: Daily roundup (June 15, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/06/startup-news-and-updates-daily-roundup-june-15-2026",
+      "thumbnail": "https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/DailyRoundupImages1600x900-1774005165949.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVRRV1ZYZW5WSVdXZGljVjl4VFJDSEF4aVBCaWdLTWdZVllJNHVwUWM",
+      "date": "06/15/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-15T07:00:00Z"
+    },
+    {
+      "position": 19,
+      "title": "Sarvam AI Powering a Made-in-India AI Revolution",
+      "source": {
+        "name": "PIB",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.pib.gov.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231169&reg=3&lang=1",
+      "thumbnail": "https://static.pib.gov.in/WriteReadData/userfiles/image/image003BRCC.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVpORXB2WmtzMVJGWjRlbnB2VFJEakFSaVJBeWdLTWdtSk1ZeW1GcVV0U0FJ",
+      "date": "02/21/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-21T08:00:00Z"
+    },
+    {
+      "position": 20,
+      "title": "Startup news and updates: Daily roundup (May 13, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/05/startup-news-and-updates-daily-roundup-may-13-2026",
+      "date": "05/13/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-13T07:00:00Z"
+    },
+    {
+      "position": 21,
+      "title": "Startup news and updates: daily roundup (April 15, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/04/startup-news-and-updates-daily-roundup-april-15-2026",
+      "date": "04/15/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-15T07:00:00Z"
+    },
+    {
+      "position": 22,
+      "title": "Startup news and updates: daily roundup (February 14, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/02/startup-news-and-updates-daily-roundup-february-14-2026",
+      "date": "02/14/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-14T08:00:00Z"
+    },
+    {
+      "position": 23,
+      "title": "Startup news and updates: Daily roundup (February 17, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/02/startup-news-and-updates-daily-roundup-february-17-2026",
+      "thumbnail": "https://images.yourstory.com/cs/2/a0bad530ce5d11e9a3fb4360e4b9139b/Imageeyc7-1770031516600.jpg?mode=crop&crop=faces&ar=1%3A1&format=auto&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW9SRUV4TnpGSGNXTXhaVk5KVFJDcUJCaXFCQ2dLTWdZQllaUUxLUWc",
+      "date": "02/17/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-17T08:00:00Z"
+    },
+    {
+      "position": 24,
+      "title": "Renault Group launches futuREady opening a new strategic era",
+      "source": {
+        "name": "Renault Group",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://media.renaultgroup.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://media.renaultgroup.com/renault-group-launches-futuready-opening-a-new-strategic-era/?lang=eng",
+      "thumbnail": "https://media.renaultgroup.com/wp-content/uploads/2026/03/40a252ea2c6aa30455e0bd8c41e8e9e7-l.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW1SVzlJUVdOVlFUTXdOV2RDVFJDZkF4amlCU2dLTWdZUkk1QnNtUWM",
+      "date": "03/10/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-10T07:00:00Z"
+    },
+    {
+      "position": 25,
+      "title": "NVIDIA GTC 2026: Live Updates on What\u2019s Next in AI",
+      "source": {
+        "name": "NVIDIA Blog",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://blogs.nvidia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+      "thumbnail": "https://blogs.nvidia.com/wp-content/uploads/2026/03/26gtc-blog-1920x1080-DEB35146.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDBibUYwUjBSMlEwUnhSamRFVFJDZkF4amlCU2dLTWdZcEpJN09FUW8",
+      "date": "03/19/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-19T07:00:00Z"
+    },
+    {
+      "position": 26,
+      "title": "National Blockchain Framework",
+      "source": {
+        "name": "PIB",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.pib.gov.in&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2182023&reg=3&lang=2",
+      "thumbnail": "https://static.pib.gov.in/WriteReadData/userfiles/image/image003MGAB.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXBjMDlEZW1zME0xTkhORkJXVFJDYkFoak1BeWdLTWdhbE5KS3RtUWM",
+      "date": "10/24/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-24T07:00:00Z"
+    },
+    {
+      "position": 27,
+      "title": "All the important news from the ongoing India AI Impact Summit",
+      "source": {
+        "name": "TechCrunch",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Ivan Mehta"
+        ]
+      },
+      "link": "https://techcrunch.com/2026/02/22/all-the-important-news-from-the-ongoing-india-ai-summit/",
+      "thumbnail": "https://techcrunch.com/wp-content/uploads/2024/06/india-ai.jpg?w=1024",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNU9OMFJJVmpacE9FdEpRbmd5VFJDMkF4aTlCU2dLTWdNRlpRZw",
+      "date": "02/22/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-22T08:00:00Z"
+    },
+    {
+      "position": 28,
+      "title": "DPDP Rules 2025: India Notifies Digital Privacy Law",
+      "source": {
+        "name": "india-briefing.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.india-briefing.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Melissa Cyrill"
+        ]
+      },
+      "link": "https://www.india-briefing.com/news/dpdp-rules-2025-india-data-protection-law-compliance-40769.html/",
+      "thumbnail": "https://www.india-briefing.com/news/wp-content/uploads/2025/11/DPDP-Rules-2025-Come-into-Effect-1.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTVhVEExWHpWa05YVmxXR05VVFJDZkF4ampCU2dLTWdhUlU0NnJMUWM",
+      "date": "11/17/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-17T08:00:00Z"
+    },
+    {
+      "position": 29,
+      "title": "Startup news and updates: daily roundup (July 20, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/07/startup-news-and-updates-daily-roundup-july-20-2026",
+      "thumbnail": "https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/DailyRoundupImages1600x900-1774005165949.jpg?mode=fit&crop=faces&ar=16%3A9&format=auto&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDFVR2Q1WlZwamFtcHBkazlwVFJDZkF4ampCU2dLTWdZUmNKQXVxUWM",
+      "date": "07/20/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-20T07:00:00Z"
+    },
+    {
+      "position": 30,
+      "title": "Startup news and updates: Daily Roundup (April 7, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/04/startup-news-and-updates-daily-roundup-april-7-2026",
+      "date": "04/07/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-07T07:00:00Z"
+    },
+    {
+      "position": 31,
+      "title": "Startup news and updates: daily roundup (May 21, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://yourstory.com/2026/05/startup-news-and-updates-daily-roundup-may-21-2026",
+      "thumbnail": "https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/DailyRoundupImages1600x900-1774005165949.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVRRV1ZYZW5WSVdXZGljVjl4VFJDSEF4aVBCaWdLTWdZVllJNHVwUWM",
+      "date": "05/21/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-21T07:00:00Z"
+    },
+    {
+      "position": 32,
+      "title": "Ascertis Credit eyes $1 billion for latest private credit fund",
+      "source": {
+        "name": "Livemint",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.livemint.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.livemint.com/companies/news/ascer-tis-credit-one-billion-dollar-private-credit-fund-india-investment-growth-11763438399691.html",
+      "thumbnail": "https://www.livemint.com/lm-img/img/2025/11/18/1600x900/logo/366025176_0-6_1605624716393_1605624732219_1763448264482.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVVNSGw2V25CdWNrVkNUakF3VFJDZkF4ampCU2dLTWdraEFJZ010V1VXUUFN",
+      "date": "11/18/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-18T08:00:00Z"
+    },
+    {
+      "position": 33,
+      "title": "AI-powered success\u2014with more than 1,000 stories of customer transformation and innovation",
+      "source": {
+        "name": "Microsoft",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.microsoft.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Alysa Taylor"
+        ]
+      },
+      "link": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/07/24/ai-powered-success-with-1000-stories-of-customer-transformation-and-innovation/",
+      "thumbnail": "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-content/uploads/2026/12/Cloud_1000customerstories_Blog_250716.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDRXVjk0Unpkc1pEZFViRlk0VFJDZkF4ampCU2dLTWdhRk5veGtHZ2c",
+      "date": "07/24/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-07-24T07:00:00Z"
+    },
+    {
+      "position": 34,
+      "title": "Just 8 months in, India\u2019s vibe-coding startup Emergent claims ARR of over $100M",
+      "source": {
+        "name": "TechCrunch",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://techcrunch.com/2026/02/17/emergent-hits-100m-arr-eight-months-after-launch-rolls-out-mobile-app/",
+      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/02/emergent-mobile-app.jpg?w=1024",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWpaamt0ZVdkM2REaG9ibmRCVFJERUF4aW5CU2dLTWdZcE5ZcnVIUWM",
+      "date": "02/17/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-17T08:00:00Z"
+    },
+    {
+      "position": 35,
+      "title": "Startup news and updates: daily roundup (January 20, 2026)",
+      "source": {
+        "name": "YourStory.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://yourstory.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Pooja Malik"
+        ]
+      },
+      "link": "https://yourstory.com/2026/01/startup-news-and-updates-daily-roundup-january-20-2026",
+      "date": "01/20/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-20T08:00:00Z"
+    },
+    {
+      "position": 36,
+      "title": "EV startup Evera Cabs to deploy 4,000 BluSmart cars on its platform",
+      "source": {
+        "name": "Business Standard",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.business-standard.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Udisha Srivastav"
+        ]
+      },
+      "link": "https://www.business-standard.com/companies/start-ups/ev-startup-evera-cabs-to-deploy-4-000-blusmart-cars-on-its-platform-125121600942_1.html",
+      "thumbnail": "https://bsmedia.business-standard.com/_media/bs/img/article/2025-05/05/full/1746455030-7571.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVNabTh3T0RkeVRHb3RkRVpMVFJEckF4andCQ2dLTWdZQm9wRHJ2UVk",
+      "date": "12/16/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-16T08:00:00Z"
+    },
+    {
+      "position": 37,
+      "title": "NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026",
+      "source": {
+        "name": "NVIDIA Newsroom",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=http://nvidianews.nvidia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "http://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+      "thumbnail": "https://iprsoftwaremedia.com/219/files/20224/DH1L4415-HDR-20220527-r5.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW1SRmhqVG1WZk0wZDRUbFkxVFJERUF4aW1CU2dLTWdZNUlZZlMxQUk",
+      "date": "02/25/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-25T08:00:00Z"
+    },
+    {
+      "position": 38,
+      "title": "Claude for Financial Services",
+      "source": {
+        "name": "Anthropic",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.anthropic.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.anthropic.com/news/claude-for-financial-services",
+      "thumbnail": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F333cd5ef21b4254fcd7f20ce5ae9e2697a0a425d-2880x1620.png&w=3840&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXdWWE5GY1VGU2RsRlpjbXhDVFJDb0FSaXNBaWdCTWdhbFk0eVBMUVk",
+      "date": "07/15/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-07-15T07:00:00Z"
+    },
+    {
+      "position": 39,
+      "title": "Anthropic\u2019s financial agents expose forward-deployed engineers as new AI limiting factor",
+      "source": {
+        "name": "cio.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.cio.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Evan Schuman"
+        ]
+      },
+      "link": "https://www.cio.com/article/4167981/anthropics-financial-agents-expose-forward-deployed-engineers-as-new-ai-limiting-factor.html",
+      "thumbnail": "https://www.cio.com/wp-content/uploads/2026/05/4167981-0-40617200-1778085287-shutterstock_editorial_2338803257.jpg?quality=50&strip=all&w=1024",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNURlRmxtVGxsaVNHVkZSSEp3VFJDZkF4ampCU2dLTWdZcFVvZ1F6UU0",
+      "date": "05/06/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-06T07:00:00Z"
+    },
+    {
+      "position": 40,
+      "title": "CEPI funds next phase of nanoparticle vaccine platform to support rapid outbreak response",
+      "source": {
+        "name": "CEPI",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://cepi.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://cepi.net/cepi-funds-next-phase-nanoparticle-vaccine-platform-support-rapid-outbreak-response",
+      "thumbnail": "https://static.cepi.net/images/3840x2160/2025-07/POP%20BIO%20Researchers.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUZYMFo0TXpGd00xbGtOVmxvVFJDZkF4ampCU2dLTWdtUkVhQ0hHcW8xNHdJ",
+      "date": "06/02/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-02T07:00:00Z"
+    },
+    {
+      "position": 41,
+      "title": "Ambani's Reliance Jio hires 17 banks for IPO, will raise no new funds, sources say",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Jayshree Pyasi",
+          "Aditya Kalra",
+          "Vibhuti Sharma"
+        ]
+      },
+      "link": "https://www.reuters.com/world/india/ambanis-reliance-jio-hires-banks-ipo-will-raise-no-new-funds-sources-say-2026-03-18/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/2TCHZ2D7LBNDFMZQOODOZEFIQU.jpg?auth=f50ecbe58bc175eb6946c1afcc9c04bfaf3553375917db13ab03c21ab5d8fd7f&width=1200&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDVZbkpHWVZKYVRXTjVUbFYyVFJEQUF4aXNCU2dLTWdhRnRZNGt3Z1U",
+      "date": "03/18/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-18T07:00:00Z"
+    },
+    {
+      "position": 42,
+      "title": "Northern Arc Capital partners with YES BANK for credit deployment",
+      "source": {
+        "name": "scanx.trade",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://scanx.trade&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://scanx.trade/stock-market-news/companies/northern-arc-capital-partners-with-yes-bank-for-credit-deployment/43079812",
+      "thumbnail": "https://news-images.dhan.co/northern-arc-capital-partners-with-yes-bank-for-credit-deployment.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUpVV3hHV0ROMU0xUmpXbFJLVFJDaUF4amRCU2dLTWdhZG9JNjJ0QVk",
+      "date": "06/15/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-15T07:00:00Z"
+    },
+    {
+      "position": 43,
+      "title": "Rocket.new, one of India's first vibe-coding startups, snags $15M from Accel, Salesforce Ventures",
+      "source": {
+        "name": "TechCrunch",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://techcrunch.com/2025/09/22/rocket-new-one-of-indias-first-vibe-coding-startups-snags-15m-from-accel-salesforce-ventures/",
+      "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/09/rocket-new-founders.jpg?w=1024",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXViMlpJTUdZNU16UXpaRVZXVFJERUF4aW5CU2dLTWdZQk1aekZIQW8",
+      "date": "09/22/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-09-22T07:00:00Z"
+    },
+    {
+      "position": 44,
+      "title": "Blackstone & co-investors to enable $1.2 bn fund infusion in AI cloud platform Neysa",
+      "source": {
+        "name": "Moneycontrol.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.moneycontrol.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Ashwin Mohan"
+        ]
+      },
+      "link": "https://www.moneycontrol.com/news/business/blackstone-co-investors-to-enable-1-2-bn-fund-infusion-in-ai-cloud-platform-neysa-13829047.html",
+      "thumbnail": "https://images.moneycontrol.com/static-mcnews/2025/03/20250312100749_Blackstone-AP-file-photo.jpg?impolicy=website&width=1600&height=900",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTFPV3BzTjFsclVVWkxia05xVFJDZkF4ampCU2dLTWdZRkFZT25WQUk",
+      "date": "02/16/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-16T08:00:00Z"
+    },
+    {
+      "position": 45,
+      "title": "India\u2019s Advance on AI Regulation",
+      "source": {
+        "name": "Carnegie Endowment for International Peace",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://carnegieendowment.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Amlan Mohanty"
+        ]
+      },
+      "link": "https://carnegieendowment.org/india/research/2024/11/indias-advance-on-ai-regulation",
+      "thumbnail": "https://assets.carnegieendowment.org/_/eyJrZXkiOiJzdGF0aWMvbWVkaWEvaW1hZ2VzL2lTdG9jay0xNjc3Mzc1MDg4LmpwZyJ9",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHdkREozU21Nd2VUZHNTa0Z0VFJDZkF4ampCU2dLTWdZaElJanZIQVU",
+      "date": "11/21/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-11-21T08:00:00Z"
+    },
+    {
+      "position": 46,
+      "title": "Stride Ventures raises $300 million with new funds across India, GCC and UK",
+      "source": {
+        "name": "Livemint",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.livemint.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.livemint.com/companies/stride-ventures-funds-india-gcc-startup-funding-debt-solutions-11761888749957.html",
+      "thumbnail": "https://www.livemint.com/lm-img/img/2025/10/31/1600x900/8764E6F3-15A7-4FC1-AD1B-FA95EF2CB737_1761891761508_1761891765715.JPG",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUZVM2hQYkhWSVRrcEpWMkk0VFJDZkF4ampCU2dLTWdtTkVwcVBsU3BGQ2dJ",
+      "date": "10/31/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-31T07:00:00Z"
+    },
+    {
+      "position": 47,
+      "title": "Helios Charging unveils platform to drive EV and solar investments",
+      "source": {
+        "name": "EV Infrastructure News",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.evinfrastructurenews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.evinfrastructurenews.com/ev-networks/helios-charging-unveils-platform-to-drive-ev-and-solar-investments",
+      "thumbnail": "https://eu-images.contentstack.com/v3/assets/blt452efb5f3e725f7e/blt775541f1ddde1a3a/68c98bbeb4840086d3fabf44/Helios-charging-platform-ev-solar.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTVibFJPUldKWFlVeHBMV1F3VFJDZkF4ampCU2dLTWdZTlFvNHNMUVk",
+      "date": "09/16/2025, 04:18 PM, +0000 UTC",
+      "iso_date": "2025-09-16T16:18:46Z"
+    },
+    {
+      "position": 48,
+      "title": "Utility Global Announces $100 Million First Close of Series D Financing to Deploy its Economic Industrial Decarbonization Platform Globally",
+      "source": {
+        "name": "PR Newswire",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.prnewswire.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.prnewswire.com/news-releases/utility-global-announces-100-million-first-close-of-series-d-financing-to-deploy-its-economic-industrial-decarbonization-platform-globally-302689146.html",
+      "thumbnail": "https://mma.prnewswire.com/media/2590736/Utility_Global_2025_Logo.jpg?p=twitter",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNXJkRWhEWVd0M1QxWnJjRXhmVFJEd0FSamRDQ2dLTWdNQlVCSQ",
+      "date": "02/17/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-17T08:00:00Z"
+    },
+    {
+      "position": 49,
+      "title": "Yotta Built India\u2019s First Sovereign AI Infrastructure With Shakti Cloud",
+      "source": {
+        "name": "NVIDIA",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.nvidia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.nvidia.com/en-us/case-studies/yotta-built-india-sovereign-ai-infrastructure-shakti-cloud/",
+      "thumbnail": "https://www.nvidia.com/content/dam/en-zz/Solutions/case-studies/yotta/yotta-customer-story-bbm-gel-d.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXRiV2xhU0hWaVpFeFpja3BKVFJDdkFoanlCeWdLTWdZOUFJZ3lrUWs",
+      "date": "06/11/2025, 11:08 PM, +0000 UTC",
+      "iso_date": "2025-06-11T23:08:04Z"
+    },
+    {
+      "position": 50,
+      "title": "India\u2019s Regulation of AI and Large Language Models",
+      "source": {
+        "name": "india-briefing.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.india-briefing.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Melissa Cyrill"
+        ]
+      },
+      "link": "https://www.india-briefing.com/news/india-regulation-of-ai-and-large-language-models-31680.html/",
+      "thumbnail": "https://www.india-briefing.com/news/wp-content/uploads/2024/03/Indias-Regulation-of-AI-and-Large-Language-Models.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTJWME5MVVhKaWFUUm9iR2t5VFJDZkF4ampCU2dLTWdtQlZJakpxU2gwandF",
+      "date": "03/27/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-03-27T07:00:00Z"
+    },
+    {
+      "position": 51,
+      "title": "Britain powers ahead on AI with billions of pounds of new investment and thousands of jobs secured as London Tech Week wraps up",
+      "source": {
+        "name": "GOV.UK",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.gov.uk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.gov.uk/government/news/britain-powers-ahead-on-ai-with-billions-of-pounds-of-new-investment-and-thousands-of-jobs-secured-as-london-tech-week-wraps-up",
+      "thumbnail": "https://assets.publishing.service.gov.uk/media/68a86caf960e2d135b4c8da5/s300_DSIT_GovUK.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWxNRFZYVEZCSGVUTlZXVUZzVFJEREFSaXNBaWdLTWdhaGxKQ3J0UVk",
+      "date": "06/12/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-12T07:00:00Z"
+    },
+    {
+      "position": 52,
+      "title": "Virtue AI Raises $30 Million in Seed and Series A Funding to Bridge the Critical AI Security Gap",
+      "source": {
+        "name": "Business Wire",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.businesswire.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.businesswire.com/news/home/20250415693312/en/Virtue-AI-Raises-%2430-Million-in-Seed-and-Series-A-Funding-to-Bridge-the-Critical-AI-Security-Gap",
+      "thumbnail": "https://mms.businesswire.com/media/20250415693312/en/2439029/22/virtue_logo_black_text_%282%29.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUplbFJ1VURGNlNtWldZbXRzVFJDSEF4aVBCaWdLTWdZQmNKYVJ1QWM",
+      "date": "04/15/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-04-15T07:00:00Z"
+    },
+    {
+      "position": 53,
+      "title": "24 Fastest Growing Companies & Startups (August 2026)",
+      "source": {
+        "name": "Exploding Topics",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://explodingtopics.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Josh Howarth"
+        ]
+      },
+      "link": "https://explodingtopics.com/blog/fast-growing-companies",
+      "thumbnail": "https://cdn.buttercms.com/output=f:webp/CRREi5AfTQyTcV9jkHWn",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW5WbWRwZVZGeFNYYzNVbkp5VFJDZUFSaS1BaWdCTWdZQmdJSU9QUU0",
+      "date": "08/25/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-25T07:00:00Z"
+    },
+    {
+      "position": 54,
+      "title": "Government Internet Shutdowns Are Changing. How Should Citizens and Democracies Respond?",
+      "source": {
+        "name": "Carnegie Endowment for International Peace",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://carnegieendowment.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Steven Feldstein"
+        ]
+      },
+      "link": "https://carnegieendowment.org/research/2022/03/government-internet-shutdowns-are-changing-how-should-citizens-and-democracies-respond",
+      "thumbnail": "https://assets.carnegieendowment.org/_/eyJrZXkiOiJzdGF0aWMvbWVkaWEvaW1hZ2VzL0dldHR5SW1hZ2VzLTEyMTk2MDYxNzFfcmVzaXh6ZWQtMS5qcGcifQ==",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVVYMDlNU1dveVRWcG1VMlJ4VFJDWUF4andCU2dLTWdZRnNJUkl4Z00",
+      "date": "03/31/2022, 07:00 AM, +0000 UTC",
+      "iso_date": "2022-03-31T07:00:00Z"
+    },
+    {
+      "position": 55,
+      "title": "Inside NIIF\u2019s Rs 30,000 crore strategy: Which key infrastructure sectors stand to win?",
+      "source": {
+        "name": "financialexpress.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.financialexpress.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Gopika Nair"
+        ]
+      },
+      "link": "https://www.financialexpress.com/business/infrastructure-inside-niifs-rs-30000-crore-strategy-which-key-infrastructure-sectors-stand-to-win-4281737/",
+      "thumbnail": "https://images.financialexpressdigital.com/2026/07/NIIF.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHdPRzlzYTNwcWFpMDNXVEJFVFJDZkF4ampCU2dLTWdZQmNJeXR0UVk",
+      "date": "07/02/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-02T07:00:00Z"
+    }
+  ],
+  "menu_links": [
+    {
+      "title": "India",
+      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE55YXpBU0JXVnVMVWRDS0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE55YXpBU0JXVnVMVWRDS0FBUAE"
+    },
+    {
+      "title": "World",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Your local news",
+      "topic_token": "CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE"
+    },
+    {
+      "title": "Business",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Technology",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Entertainment",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Sports",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Science",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Health",
+      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE"
+    }
+  ]
+}

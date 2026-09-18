@@ -1,0 +1,1099 @@
+{
+  "search_metadata": {
+    "id": "6aad73173b93e395700f369c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/Ozf6CTdD291jhSzWvAfeXrOvDVCG3zNEoHSrNBMTEy0/6aad73173b93e395700f369c.json",
+    "markdown_endpoint": "https://serpapi.com/searches/Ozf6CTdD291jhSzWvAfeXrOvDVCG3zNEoHSrNBMTEy0/6aad73173b93e395700f369c.md",
+    "created_at": "2026-09-18 17:21:27 UTC",
+    "processed_at": "2026-09-18 17:21:27 UTC",
+    "google_news_url": "https://news.google.com/search?q=Google+News%3A+new+AI+scholarship+program+launched+for+college+students+in+India&hl=en&gl=IN",
+    "raw_html_file": "https://serpapi.com/searches/Ozf6CTdD291jhSzWvAfeXrOvDVCG3zNEoHSrNBMTEy0/6aad73173b93e395700f369c.html",
+    "total_time_taken": 3.89
+  },
+  "search_parameters": {
+    "engine": "google_news",
+    "gl": "in",
+    "hl": "en",
+    "q": "Google News: new AI scholarship program launched for college students in India"
+  },
+  "news_results": [
+    {
+      "position": 1,
+      "title": "Start the semester with one year of Gemini, on us",
+      "source": {
+        "name": "blog.google",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://blog.google&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BTS_gemini_hero_withcopy.width-200.format-webp.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iKkNnNVRUMFJqYlVGdVkyUlRUSEJvVFJCd0dNZ0JLQW95QnFVeWppLXBCdw",
+      "date": "08/19/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-19T07:00:00Z"
+    },
+    {
+      "position": 2,
+      "title": "News from the world of Education: July 24, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-july-17-2026/article71259838.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/p7cjit/article71259832.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdWSGxpWWtreVZqZDJObk5QVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "07/24/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-24T07:00:00Z"
+    },
+    {
+      "position": 3,
+      "title": "Fee Reimbursement Telangana 2026: Good News for Students! Fee Reimbursement & Scholarships to Be Credited in the Same Academic Year",
+      "source": {
+        "name": "Sakshi Education",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://education.sakshi.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://education.sakshi.com/en/colleges/education-news/fee-reimbursement-telangana-2026-good-news-students-fee-reimbursement-scholarships-be-credited-same-academic-year-198059",
+      "thumbnail": "https://education.sakshi.com/sites/default/files/images/2026/08/10/tg1-1786337854.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXdWMVl3YW00d04zaEROWEJmVFJDeEF4akRCU2dLTWdtQkVZUzJvT2hFbHdB",
+      "date": "08/10/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-10T07:00:00Z"
+    },
+    {
+      "position": 4,
+      "title": "News from the world of Education: July 10, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-july-10-2026/article71206614.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/7vcba9/article71206506.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdWSGxpWWtreVZqZDJObk5QVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "07/10/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-10T07:00:00Z"
+    },
+    {
+      "position": 5,
+      "title": "Introducing Claude Corps",
+      "source": {
+        "name": "Anthropic",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.anthropic.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.anthropic.com/news/claude-corps",
+      "thumbnail": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Feb5d94573805e24cb381cd0676527cfada75c177-3840x2160.jpg&w=3840&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXRiRE5JV0hkalZYTk5NM0l5VFJDZkF4ampCU2dLTWdhcE5JRE9IUWc",
+      "date": "06/11/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-11T07:00:00Z"
+    },
+    {
+      "position": 6,
+      "title": "Sindh CM Murad announces 20,000 Google Career Certificate scholarships for students",
+      "source": {
+        "name": "Dawn",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.dawn.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.dawn.com/news/2012258",
+      "thumbnail": "https://i.dawn.com/large/2026/07/0208114931b9931.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUlTRXh6TFRkM1MxRnJiMUI1VFJDdEF4akxCU2dLTWdhQkpaYk9uUWs",
+      "date": "07/02/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-02T07:00:00Z"
+    },
+    {
+      "position": 7,
+      "title": "Big Boost For Creators: Govt launches 15,000 AI scholarships with Google, YouTube for digital skills growth",
+      "source": {
+        "name": "India.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.india.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.india.com/news/india/india-ai-scholarships-2026-ashwini-vaishnaw-ministry-of-information-and-broadcasting-google-youtube-ai-training-free-courses-digital-skills-animation-vfx-gaming-creators-india-8356421/",
+      "thumbnail": "https://static.india.com/wp-content/uploads/2026/03/AI-Scholarships-India.jpg?impolicy=Medium_Resize&w=1200&h=800",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNU1lVXBVVVcxbGNIZE1ZbUZtVFJERUF4aW1CU2dLTWdrQlFJamtQT1M0TEFJ",
+      "date": "03/26/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-26T07:00:00Z"
+    },
+    {
+      "position": 8,
+      "title": "Ministry of Information and Broadcasting launches 15000 AI scholarship with Google, Youtube to boost creative sector | Education",
+      "source": {
+        "name": "Hindustan Times",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hindustantimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.hindustantimes.com/education/news/ministry-of-information-and-broadcasting-launches-15000-ai-scholarship-with-google-youtube-to-boost-creative-sector-101774417078446.html",
+      "thumbnail": "https://www.hindustantimes.com/ht-img/img/2026/03/25/1600x900/logo/photo-1697577418970-95d99b5a55cf_1774417291833_1774417298804.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNU5URVp1VVhFMlowOUpNMEV6VFJDZkF4amlCU2dLTWdB",
+      "date": "03/25/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-25T07:00:00Z"
+    },
+    {
+      "position": 9,
+      "title": "News from the world of Education: July 3, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-july-3-2026/article71173672.ece",
+      "thumbnail": "https://th-i.thgim.com/public/incoming/s80aww/article71173686.ece/alternates/LANDSCAPE_1200/09EPBS_CAPORARELLO.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW9SakV6V2xGMVdsZERUMmhuVFJDZkF4ampCU2dLTWdhTlFvd29PUVk",
+      "date": "07/03/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-03T07:00:00Z"
+    },
+    {
+      "position": 10,
+      "title": "Canada Announces $100M Scholarships for Indian Students \u2013 Apply Now",
+      "source": {
+        "name": "Y-Axis Overseas Careers",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.y-axis.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.y-axis.com/news/canada-announces-100m-scholarships-for-indian-students/",
+      "thumbnail": "https://www.y-axis.com/assets/cms/2026-03/canada-announces-100m-scholarships-for-indian-students.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNWtPV3RoYUZJM2JEY3RlV1JXVFJEQ0F4aXBCU2dLTWdtaFJJVE5IU2xydGdB",
+      "date": "03/03/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-03-03T08:00:00Z"
+    },
+    {
+      "position": 11,
+      "title": "News from the world of Education: June 11, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-june-11-2026/article71083858.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/pfbyic/article71083851.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdWSGxpWWtreVZqZDJObk5QVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "06/11/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-11T07:00:00Z"
+    },
+    {
+      "position": 12,
+      "title": "News from the world of Education: May 28, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-may-28-2026/article71030933.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/5gcflv/article71030930.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "05/28/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-28T07:00:00Z"
+    },
+    {
+      "position": 13,
+      "title": "News from the world of Education: May 13, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-may-13-2026/article70972798.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/2a90nd/article70972792.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "05/13/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-13T07:00:00Z"
+    },
+    {
+      "position": 14,
+      "title": "News from the world of Education: May 6, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-may-6-2026/article70945978.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/pagavj/article70945947.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "05/06/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-06T07:00:00Z"
+    },
+    {
+      "position": 15,
+      "title": "News from the world of Education: April 16, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-april-16-2026/article70869521.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/a2p4w3/article70869513.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "04/16/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-16T07:00:00Z"
+    },
+    {
+      "position": 16,
+      "title": "News from the world of Education: November 13, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-november-13-2025/article70272781.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/ppw7nw/article70272780.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "11/13/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-13T08:00:00Z"
+    },
+    {
+      "position": 17,
+      "title": "News from the world of Education: November 29, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-november-29-2025/article70336322.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/fwsg46/article70336321.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "11/29/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-29T08:00:00Z"
+    },
+    {
+      "position": 18,
+      "title": "News from the world of Education: February 28, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-february-28-2026/article70687301.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/97908y/article70687291.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdWSGxpWWtreVZqZDJObk5QVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "02/28/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-28T08:00:00Z"
+    },
+    {
+      "position": 19,
+      "title": "News from the world of Education: November 20, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-november-20-2025/article70304824.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/7e0hwb/article70304819.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "11/21/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-21T08:00:00Z"
+    },
+    {
+      "position": 20,
+      "title": "News from the world of Education: January 16, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-january-16-2026/article70512759.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/vmmaz6/article70512757.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "01/16/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-16T08:00:00Z"
+    },
+    {
+      "position": 21,
+      "title": "Google Cloud India, TechBharat launch India's first AI Centre of Excellence",
+      "source": {
+        "name": "The Times of India",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://timesofindia.indiatimes.com/technology/tech-news/google-cloud-india-techbharat-launch-indias-first-ai-centre-of-excellence/articleshow/124501891.cms",
+      "thumbnail": "https://static.toiimg.com/thumb/msid-124501866,width-1280,height-720,resizemode-4/124501866.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5hWFIxZWtSVFlVVlBjRFZzVFJDZkF4ampCU2dLTWdZRlFKYktxQWM",
+      "date": "10/12/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-12T07:00:00Z"
+    },
+    {
+      "position": 22,
+      "title": "News from the world of Education: February 6, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-february-6-2026/article70599722.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/xgivoe/article70599655.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "02/06/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-06T08:00:00Z"
+    },
+    {
+      "position": 23,
+      "title": "Canada to fund 220 scholarships for Indian students, launch \u2018hybrid study locations\u2019",
+      "source": {
+        "name": "The Times of India",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://timesofindia.indiatimes.com/world/rest-of-world/canada-announces-100-million-scholarships-for-indian-students-introduces-hybrid-study-locations/articleshow/129025046.cms",
+      "thumbnail": "https://static.toiimg.com/thumb/msid-129025046,width-1280,height-720,imgsize-168602,resizemode-4,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXpWa3AzWkRsbmNtMXFZVU5QVFJDZkF4ampCU2dLTWdZRk1JaG9uZ2s",
+      "date": "03/07/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-03-07T08:00:00Z"
+    },
+    {
+      "position": 24,
+      "title": "News from the world of Education: September 16, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-september-17-2026/article71473989.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/yio6x8/article71473957.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdWSGxpWWtreVZqZDJObk5QVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "09/16/2026, 05:26 PM, +0000 UTC",
+      "iso_date": "2026-09-16T17:26:21Z"
+    },
+    {
+      "position": 25,
+      "title": "News from the world of Education: October 16, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-october-16-2025/article70172819.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/xgr2ld/article70172780.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "10/16/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-16T07:00:00Z"
+    },
+    {
+      "position": 26,
+      "title": "News from the world of Education: October 9, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-october-9-2025/article70140895.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/bbx13b/article70140883.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "10/09/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-09T07:00:00Z"
+    },
+    {
+      "position": 27,
+      "title": "IIT Madras, Google launch AI capacity-building course for government officials",
+      "source": {
+        "name": "news.careers360.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://news.careers360.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Aatif Ammad"
+        ]
+      },
+      "link": "https://news.careers360.com/iit-madras-google-launch-ai-course-government-officials-capacity-building-wsai-technology-tools",
+      "thumbnail": "https://cache.careers360.mobi/media/article_images/2025/12/19/IIT%20Madras%20Google%20Launch%20AI%20course%20for%20Governent%20officials.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1hVVpxT0dSSlJtMWtiMGhFVFJDZkF4ampCU2dLTWdZQmdvZ291UVU",
+      "date": "12/19/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-19T08:00:00Z"
+    },
+    {
+      "position": 28,
+      "title": "Bringing the best of AI to college students for free",
+      "source": {
+        "name": "blog.google",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://blog.google&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sundar Pichai"
+        ]
+      },
+      "link": "https://blog.google/products-and-platforms/products/gemini/google-ai-pro-students-learning/",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BTS_SP_Crop.width-200.format-webp.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iKkNnNUdiVWRuZVZoTFkxTXdiVTltVFJCd0dNZ0JLQW95Qm8xU2pnZ2xDQQ",
+      "date": "08/06/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-08-06T07:00:00Z"
+    },
+    {
+      "position": 29,
+      "title": "News from the world of Education: September 9, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-september-9-2026/article71444676.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/bwmt82/article71444675.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdWSGxpWWtreVZqZDJObk5QVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "09/09/2026, 06:37 AM, +0000 UTC",
+      "iso_date": "2026-09-09T06:37:00Z"
+    },
+    {
+      "position": 30,
+      "title": "News from the world of Education: October 1, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-october-1-2025/article70116673.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/x7ltak/article70116670.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "10/01/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-01T07:00:00Z"
+    },
+    {
+      "position": 31,
+      "title": "News from the world of education: April 15, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-april-15-2025/article69454269.ece",
+      "thumbnail": "https://th-i.thgim.com/public/incoming/a8fif9/article69454252.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "04/15/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-04-15T07:00:00Z"
+    },
+    {
+      "position": 32,
+      "title": "News from the world of education: March 26, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-march-26-2025/article69379076.ece",
+      "thumbnail": "https://th-i.thgim.com/public/incoming/u12s5q/article69379075.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "03/27/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-03-27T07:00:00Z"
+    },
+    {
+      "position": 33,
+      "title": "News from the world of Education: May 21, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-may-21-2025/article69600791.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/y2r4on/article69600843.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdWSGxpWWtreVZqZDJObk5QVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "05/21/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-05-21T07:00:00Z"
+    },
+    {
+      "position": 34,
+      "title": "News from the world of Education: February 12, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-february-12-2025/article69210845.ece",
+      "thumbnail": "https://th-i.thgim.com/public/incoming/3cwedp/article69210856.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "02/12/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-02-12T08:00:00Z"
+    },
+    {
+      "position": 35,
+      "title": "News from the world of education: March 11, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-march-11-2025/article69317735.ece",
+      "thumbnail": "https://th-i.thgim.com/public/incoming/38balc/article69317570.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "03/11/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-03-11T07:00:00Z"
+    },
+    {
+      "position": 36,
+      "title": "Google Launches Paid Internships for Students, Applications Open for 2026",
+      "source": {
+        "name": "College Mentor",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.collegementor.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.collegementor.com/news/google-launches-paid-internships-for-students-applications-open-for-2026",
+      "date": "01/27/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-27T08:00:00Z"
+    },
+    {
+      "position": 37,
+      "title": "American universities are cutting women\u2019s scholarships even when they don\u2019t have to",
+      "source": {
+        "name": "The Economic Times",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://m.economictimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Simone Foxman"
+        ]
+      },
+      "link": "https://m.economictimes.com/nri/study/american-universities-are-cutting-womens-scholarships-even-when-they-dont-have-to/articleshow/132603112.cms",
+      "thumbnail": "https://m.economictimes.com/thumb/msid-132603326,width-1200,height-900,resizemode-4,imgsize-1295697/cms-2026-07-24t162159-399.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVFZVlUzT1RSR1FWRXhYMFpVVFJEZ0F4aUFCU2dLTWdhSlU0ekdwUVk",
+      "date": "07/24/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-24T07:00:00Z"
+    },
+    {
+      "position": 38,
+      "title": "IIT Delhi launches online certificate course in applied data science, AI for students, working professionals",
+      "source": {
+        "name": "news.careers360.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://news.careers360.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Suviral Shukla"
+        ]
+      },
+      "link": "https://news.careers360.com/iit-delhi-launches-online-certificate-course-applied-data-science-ai-students-working-professionals-graduates-diploma-holders-cep",
+      "thumbnail": "https://cache.careers360.mobi/media/article_images/2026/7/27/iit-delhi-online-certificate-course-featured-image.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUhMWE51UjNCRmJ6QllTamx4VFJDZkF4ampCU2dLTWdhNU01WnhuUWs",
+      "date": "07/27/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-27T07:00:00Z"
+    },
+    {
+      "position": 39,
+      "title": "News from the world of Education: September 13, 2024",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-september-13-2024/article68640053.ece",
+      "thumbnail": "https://www.thehindu.com/theme/images/amp-og-image.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxjMll5TjBOVFpUQjRNSEZ4VFJDcUJCaXFCQ2dLTWdhTmtwQUlOUVk",
+      "date": "09/13/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-09-13T07:00:00Z"
+    },
+    {
+      "position": 40,
+      "title": "News from the world of Education: April 23, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-april-23-2026/article70896401.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/qmmzzx/article70896356.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "04/23/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-23T07:00:00Z"
+    },
+    {
+      "position": 41,
+      "title": "News from the world of Education: August 2, 2023",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-august-2-2023/article67149884.ece",
+      "thumbnail": "https://www.thehindu.com/theme/images/amp-og-image.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxjMll5TjBOVFpUQjRNSEZ4VFJDcUJCaXFCQ2dLTWdhTmtwQUlOUVk",
+      "date": "08/02/2023, 07:00 AM, +0000 UTC",
+      "iso_date": "2023-08-02T07:00:00Z"
+    },
+    {
+      "position": 42,
+      "title": "No AI product, no MBA degree: BITSoM Mumbai integrates artificial intelligence across all management courses",
+      "source": {
+        "name": "news.careers360.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://news.careers360.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Aeshwarya Tiwari"
+        ]
+      },
+      "link": "https://news.careers360.com/bits-pilani-bitsom-mumbai-school-of-management-mba-courses-b-school-ai-product-must-degree-admission-placement-faculty-scholarship",
+      "thumbnail": "https://cache.careers360.mobi/media/article_images/2026/5/6/saravanan-kesavan-dean-bitsom-featured-image.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXJRMU53VUdkUVpqZDBWRlpGVFJDZkF4ampCU2dLTWdhbFZvWU1xZ2M",
+      "date": "05/06/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-06T07:00:00Z"
+    },
+    {
+      "position": 43,
+      "title": "News from the world of Education: August 8, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-august-8-2025/article69911193.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/uli17o/article69911180.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdWSGxpWWtreVZqZDJObk5QVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "08/08/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-08-08T07:00:00Z"
+    },
+    {
+      "position": 44,
+      "title": "75 Indian students win Erasmus Mundus Scholarships for 2026-28",
+      "source": {
+        "name": "news.careers360.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://news.careers360.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://news.careers360.com/erasmus-mundus-scholarship-2026-28-75-indian-students-europe-masters-degree-abroad-iit-delhi-madras-jnu-mu-du-iisc",
+      "thumbnail": "https://cache.careers360.mobi/media/article_images/2026/6/23/75-indian-students-awarded-erasmus-mundus-scholarships.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNVVUbU4wYm1RNVZXdEZTWFpZVFJDZkF4ampCU2dLTWdNQmtBSQ",
+      "date": "06/23/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-23T07:00:00Z"
+    },
+    {
+      "position": 45,
+      "title": "Michigan Ross Announces New AI Concentration for Full-Time MBA Students",
+      "source": {
+        "name": "Michigan Ross School of Business",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://michiganross.umich.edu&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://michiganross.umich.edu/news/michigan-ross-announces-new-ai-concentration-full-time-mba-students",
+      "thumbnail": "https://michiganross.umich.edu/sites/default/files/styles/max_325x325/public/media/images/2025/10/aiconcentrationStory.jpg?itok=u9fGdpSL",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTJWVFZpYldWV01rcFlZMjR4VFJDb0FSaXJBaWdCTWdhWllJaXFUUU0",
+      "date": "10/31/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-31T07:00:00Z"
+    },
+    {
+      "position": 46,
+      "title": "Over 7.6 lakh Indian students went abroad last year, reveals government data: STEM, AI, and ambition driv",
+      "source": {
+        "name": "The Times of India",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://timesofindia.indiatimes.com/education/study-abroad/over-7-6-lakh-indian-students-went-abroad-last-year-reveals-government-data-stem-ai-and-ambition-driving-the-exodus/articleshow/123399661.cms",
+      "thumbnail": "https://static.toiimg.com/thumb/msid-123399668,width-1280,height-720,resizemode-4/123399668.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTNjbk5mZGkxUVUyZFJNbVV5VFJDZkF4ampCU2dLTWdrQm9JNkR1cVlscmdF",
+      "date": "08/20/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-08-20T07:00:00Z"
+    },
+    {
+      "position": 47,
+      "title": "University Of Wollongong India Takes FinTech Study Into GIFT City Classrooms",
+      "source": {
+        "name": "Prittle Prattle News",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.prittleprattlenews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.prittleprattlenews.com/education/university-of-wollongong-india-fintech-masters-gift-city/",
+      "thumbnail": "https://www.prittleprattlenews.com/wp-content/uploads/2026/06/University-Of-Wollongong-India-1.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNUpXbVJFVERoWFRXUkxTRk5zVFJDSEF4aVBCaWdLTWdNQmtBUQ",
+      "date": "06/08/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-08T07:00:00Z"
+    },
+    {
+      "position": 48,
+      "title": "News from the world of Education: January 6, 2026",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-january-6-2026/article70479695.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/yv053g/article70479693.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "01/07/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-07T08:00:00Z"
+    },
+    {
+      "position": 49,
+      "title": "News from the world of education June 5, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-june-5-2025/article69656883.ece",
+      "thumbnail": "https://th-i.thgim.com/public/incoming/d84cvk/article69656931.ece/alternates/LANDSCAPE_1200/education%204.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNW1kWFl0UW5ZM2VqUTJiV04wVFJDZkF4ampCU2dLTWdtTkFvWVNOYWF4d2dJ",
+      "date": "06/05/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-06-05T07:00:00Z"
+    },
+    {
+      "position": 50,
+      "title": "5 free AI courses offered by Google that you do not want to miss | Hindustan Times",
+      "source": {
+        "name": "Hindustan Times",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hindustantimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Tisha Elizabeth Jacob"
+        ]
+      },
+      "link": "https://www.hindustantimes.com/education/features/5-free-ai-courses-offered-by-google-that-you-do-not-want-to-miss-101723372375092.html",
+      "thumbnail": "https://images.hindustantimes.com/img/2024/08/11/1600x900/Screenshot_2024-01-14_173954_1705234246481_1723376434281.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUljVTloY25aSk5XSnVkMXBUVFJDZkF4ampCU2dLTWdhOUlvZ3pNUVE",
+      "date": "08/11/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-08-11T07:00:00Z"
+    },
+    {
+      "position": 51,
+      "title": "Odisha launches scholarship scheme for SC, ST students to study abroad",
+      "source": {
+        "name": "The Economic Times",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://m.economictimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://m.economictimes.com/nri/study/odisha-launches-scholarship-scheme-for-sc-st-students-to-study-abroad/articleshow/125590489.cms",
+      "thumbnail": "https://m.economictimes.com/thumb/msid-125590516,width-1200,height-900,resizemode-4,imgsize-93278/students.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVdMWFJaV1ZOa1FsQnFPRmc1VFJEZ0F4aUFCU2dLTWdrTklKN0dtV29leGdJ",
+      "date": "11/26/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-26T08:00:00Z"
+    },
+    {
+      "position": 52,
+      "title": "News from the world of education: March 4, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-march-4-2025/article69289659.ece",
+      "thumbnail": "https://th-i.thgim.com/public/incoming/lhieaz/article69289606.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNRVEUwZUVVd1lYaHFjakkyVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "03/04/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-03-04T08:00:00Z"
+    },
+    {
+      "position": 53,
+      "title": "News from the world of education: May 8, 2024",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-may-8-2024/article68153302.ece",
+      "thumbnail": "https://www.thehindu.com/theme/images/amp-og-image.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxjMll5TjBOVFpUQjRNSEZ4VFJDcUJCaXFCQ2dLTWdhTmtwQUlOUVk",
+      "date": "05/08/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-05-08T07:00:00Z"
+    },
+    {
+      "position": 54,
+      "title": "UK Prime Minister announces \u00a324m TechYouth initiative, providing AI skills training in all secondary schools over three years",
+      "source": {
+        "name": "EdTech Innovation Hub",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.edtechinnovationhub.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Rachel Lawler"
+        ]
+      },
+      "link": "https://www.edtechinnovationhub.com/news/prime-minister-announces-24m-techyouth-initiative",
+      "thumbnail": "https://images.squarespace-cdn.com/content/v1/65a69e0c110a6977ead9741c/36b99ab9-18c1-4840-aaf2-22f3a99ad458/Keir+Starmer+AI+skills.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlSaTB5TkdveU1GQnpiMWwzVFJEU0F4aVRCU2dLTWdZdFJaQ3VvUWc",
+      "date": "06/11/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-06-11T07:00:00Z"
+    },
+    {
+      "position": 55,
+      "title": "News from the world of education - August 15, 2023",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-august-15-2023/article67196624.ece",
+      "thumbnail": "https://www.thehindu.com/theme/images/amp-og-image.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxjMll5TjBOVFpUQjRNSEZ4VFJDcUJCaXFCQ2dLTWdhTmtwQUlOUVk",
+      "date": "08/15/2023, 07:00 AM, +0000 UTC",
+      "iso_date": "2023-08-15T07:00:00Z"
+    },
+    {
+      "position": 56,
+      "title": "Indian students turn to psychology careers abroad in AI era",
+      "source": {
+        "name": "The Economic Times",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://m.economictimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://m.economictimes.com/nri/study/indian-students-turn-to-psychology-careers-abroad-in-ai-era/articleshow/126326706.cms",
+      "thumbnail": "https://m.economictimes.com/thumb/msid-126326753,width-1200,height-900,resizemode-4,imgsize-97562/students-i.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNURURzFXVFd3MFpWWlpUMWhHVFJEZ0F4aUFCU2dLTWdZSmdKSm1zQWM",
+      "date": "01/04/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-04T08:00:00Z"
+    },
+    {
+      "position": 57,
+      "title": "LG Electronics India launches \u2018Life\u2019s Good Scholarship Program 2024\u2019 to aid meritorious students in academic pursuits | Education",
+      "source": {
+        "name": "Hindustan Times",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hindustantimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Gaurav Sarma"
+        ]
+      },
+      "link": "https://www.hindustantimes.com/education/news/lg-electronics-india-launches-life-s-good-scholarship-program-2024-to-aid-meritorious-students-in-academic-pursuits-101724999646154.html",
+      "thumbnail": "https://www.hindustantimes.com/ht-img/img/2024/08/30/1600x900/LG_Scholarship_Program_1724999997432_1725000037362.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNWtiVWw0Tkhwak9VYzNNWEZCVFJDbEF4alpCU2dLTWdB",
+      "date": "08/30/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-08-30T07:00:00Z"
+    },
+    {
+      "position": 58,
+      "title": "IIM Sambalpur opens admissions for UG courses in data science, AI; four-year fee at Rs 25 lakh",
+      "source": {
+        "name": "news.careers360.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://news.careers360.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sakshi Gupta"
+        ]
+      },
+      "link": "https://news.careers360.com/iim-sambalpur-opens-applications-for-ug-admissions-4-year-bsc-2026-data-science-ai-management-public-policy-selection-process",
+      "thumbnail": "https://cache.careers360.mobi/media/article_images/2026/5/13/iim-sambalpur-opens-applications-for-ug-bsc-courses-2026-eligibility-selection-process-data-science-ai-management-public-policy-featured.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNDJkbkZqVjJ0VWIwRTVkM2RzVFJDZkF4ampCU2dLTWdNQmtBNA",
+      "date": "05/13/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-13T07:00:00Z"
+    },
+    {
+      "position": 59,
+      "title": "France targets 30,000 Indian students by 2030: What you need to know to be one of them",
+      "source": {
+        "name": "The Times of India",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://timesofindia.indiatimes.com/education/study-abroad/europe/france-targets-30000-indian-students-by-2030-what-you-need-to-know-to-be-one-of-them/articleshow/121191703.cms",
+      "thumbnail": "https://static.toiimg.com/thumb/msid-121191722,width-1280,height-720,resizemode-4/121191722.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNWtWbWxyWmpkSUxWQTVVbVZFVFJDZkF4ampCU2dLTWdtUmdaQW5ybWMxcmdF",
+      "date": "05/16/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-05-16T07:00:00Z"
+    },
+    {
+      "position": 60,
+      "title": "AI is Destroying the University and Learning Itself",
+      "source": {
+        "name": "currentaffairs.org",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.currentaffairs.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Ronald E Purser"
+        ]
+      },
+      "link": "https://www.currentaffairs.org/news/ai-is-destroying-the-university-and-learning-itself",
+      "thumbnail": "https://www.currentaffairs.org/hubfs/Issue%2056%20Online%20Images/Issue56-Chatversity-Online-Image.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW5PRmRHVEZONFNqa3libU41VFJDNEF4aTZCU2dLTWdhcGRJcU9NUVk",
+      "date": "12/01/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-01T08:00:00Z"
+    },
+    {
+      "position": 61,
+      "title": "21 nonprofits join our first generative AI accelerator",
+      "source": {
+        "name": "blog.google",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://blog.google&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Annie Lewin"
+        ]
+      },
+      "link": "https://blog.google/company-news/outreach-and-initiatives/google-org/google-generative-ai-accelerator-nonprofits/",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Accelerator_Hero_1.width-200.format-webp.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iKkNnNDVUMXB2TldoWk1tSXlYMnRYVFJCd0dNZ0JLQW95QmdHQWtvczRCZw",
+      "date": "03/28/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-03-28T07:00:00Z"
+    },
+    {
+      "position": 62,
+      "title": "Microsoft Research opens 2026 Fellowship call for global academic collaborations",
+      "source": {
+        "name": "EdTech Innovation Hub",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.edtechinnovationhub.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.edtechinnovationhub.com/news/qjrqzbtjocxftnvoi7y95sa3ug7lp4",
+      "thumbnail": "https://images.squarespace-cdn.com/content/v1/65a69e0c110a6977ead9741c/917f5085-e3b1-4864-8082-836063c566dc/1762281002530.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWxRa0V0WjNWZlJWOHRNVmgxVFJDUUF4al9CU2dLTWdZQnFKU0V1Z1k",
+      "date": "11/06/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-06T08:00:00Z"
+    },
+    {
+      "position": 63,
+      "title": "School of Computing celebrates new leadership, innovative research, and student successes",
+      "source": {
+        "name": "binghamton.edu",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.binghamton.edu&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Chris Kocher"
+        ]
+      },
+      "link": "https://www.binghamton.edu/news/story/6126/school-of-computing-celebrates-new-leadership-innovative-research-and-student-successes",
+      "thumbnail": "https://www.binghamton.edu/news/images/uploads/features/_normal/20260303_KCWang18_jwc.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWhhakJ5T1VJeFltdzNXRXRLVFJDSEF4aVBCaWdLTWdhOVE1UlNIUWs",
+      "date": "03/20/2026, 02:46 PM, +0000 UTC",
+      "iso_date": "2026-03-20T14:46:10Z"
+    },
+    {
+      "position": 64,
+      "title": "Google commits $1 billion for AI training at US universities",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Kenrick Cai"
+        ]
+      },
+      "link": "https://www.reuters.com/world/us/google-commits-1-billion-ai-training-us-universities-2025-08-06/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/YNWU5R5LYVJPTI4LWXPPUD2NSI.jpg?auth=316e3b40db2a8738c4860c8a5d27b45a2ff0fce332bd6e7256c4f2171b4e382a&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVFWekkwUW1GRU5uTjFUMWRqVFJERUF4aW1CU2dLTWdZUk1KVG9uQWs",
+      "date": "08/06/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-08-06T07:00:00Z"
+    },
+    {
+      "position": 65,
+      "title": "Prime Minister Carney secures ambitious new partnership with India focused on energy, talent, and technology",
+      "source": {
+        "name": "pm.gc.ca",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.pm.gc.ca&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.pm.gc.ca/en/news/news-releases/2026/03/02/prime-minister-carney-secures-ambitious-new-partnership-india-focused",
+      "thumbnail": "https://www.pm.gc.ca/sites/pm/files/media/override_sharing/2025-11/PM_NewsRelease_EN.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUpSMUIyV0ZsV1IzQkNNM1phVFJDakFSaTJBaWdCTWdhbEJJeXN4UVE",
+      "date": "03/02/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-03-02T08:00:00Z"
+    },
+    {
+      "position": 66,
+      "title": "TalentSprint announces the launch of the 6th cohort of its Women Engineers Program, supported by Google",
+      "source": {
+        "name": "This Week India",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://thisweekindia.news&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://thisweekindia.news/talentsprint-announces-the-launch-of-the-6th-cohort-of-its-women-engineers-program-supported-by-google/",
+      "thumbnail": "https://thisweekindia.news/wp-content/uploads/2024/01/TalentSprint-announces-the-launch-of-the-6th-cohort-thisweekindia.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNXRiamd0YzFweE1YTmlVMDk2VFJDOEF4aXpCU2dLTWdB",
+      "date": "01/13/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-01-13T08:00:00Z"
+    },
+    {
+      "position": 67,
+      "title": "News from the world of Education: June 12, 2025",
+      "source": {
+        "name": "The Hindu",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thehindu.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thehindu.com/education/news-from-the-world-of-education-june-12-2025/article69684398.ece",
+      "thumbnail": "https://th-i.thgim.com/public/education/qxgrrn/article69684401.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdWSGxpWWtreVZqZDJObk5QVFJDZkF4ampCU2dLTWdZSkFZNjR2QVk",
+      "date": "06/12/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-06-12T07:00:00Z"
+    },
+    {
+      "position": 68,
+      "title": "Introducing Claude for Education",
+      "source": {
+        "name": "Anthropic",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.anthropic.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.anthropic.com/news/introducing-claude-for-education",
+      "thumbnail": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff5d0990ee33385000ff56ed82f3c5efb4e2d33da-2400x1260.png&w=3840&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5TMEpwYUhadU9UUlRRa3d0VFJDUkF4ajhCU2dLTWdZcFpZck90UVE",
+      "date": "04/02/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-04-02T07:00:00Z"
+    },
+    {
+      "position": 69,
+      "title": "Russell Group enters India as Queen\u2019s University Belfast launches GIFT City campus",
+      "source": {
+        "name": "The Economic Times",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://m.economictimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://m.economictimes.com/nri/study/russell-group-enters-india-as-queens-university-belfast-launches-gift-city-campus/articleshow/124287432.cms",
+      "thumbnail": "https://m.economictimes.com/thumb/msid-124287942,width-1200,height-900,resizemode-4,imgsize-1400131/cms-15.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVZTM0UxVjBGdmJsSTBWMnhWVFJEZ0F4aUFCU2dLTWdZQmtJNHF0UVU",
+      "date": "10/03/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-03T07:00:00Z"
+    },
+    {
+      "position": 70,
+      "title": "Stormzy 'proud' of his Cambridge University students",
+      "source": {
+        "name": "BBC",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Mariam Issimdar"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/c39d7vmm2l4o",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/7e39/live/f4e6a5d0-7901-11f0-9617-f1b0043e97a4.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVVhakpxYm5aek9VeEVORGR2VFJDb0FSaXNBaWdCTWdrSklacEZGdW90U1FJ",
+      "date": "08/14/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-08-14T07:00:00Z"
+    },
+    {
+      "position": 71,
+      "title": "The 25 Best U.S. Film Schools in 2026",
+      "source": {
+        "name": "The Hollywood Reporter",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hollywoodreporter.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Mia Galuppo"
+        ]
+      },
+      "link": "https://www.hollywoodreporter.com/lists/best-film-schools-2026-u-s/",
+      "thumbnail": "https://www.hollywoodreporter.com/wp-content/uploads/2026/07/IMG_3904-SPLASH-2026.jpg?w=2000&h=1126&crop=1",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXRXazkzZEY5eFZtUlpZVzVPVFJDZkF4amlCU2dLTWdhQlFJeTFQQVU",
+      "date": "07/24/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-24T07:00:00Z"
+    },
+    {
+      "position": 72,
+      "title": "Google One Diwali offer: Step-by-step guide to claim up to 2TB of storage at Rs 11",
+      "source": {
+        "name": "The Times of India",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://timesofindia.indiatimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://timesofindia.indiatimes.com/technology/tech-news/google-one-diwali-offer-step-by-step-guide-to-claim-up-to-2tb-of-storage-at-rs-11/articleshow/124619300.cms",
+      "thumbnail": "https://static.toiimg.com/thumb/msid-124619285,width-1280,height-720,resizemode-4/124619285.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdkbFZ2Y0c5a1IwcG5OMlZIVFJDZkF4ampCU2dLTWdZUllwSXJNUWM",
+      "date": "10/19/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-10-19T07:00:00Z"
+    },
+    {
+      "position": 73,
+      "title": "Six CIU students awarded Youngone Scholarship",
+      "source": {
+        "name": "The Daily Star",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thedailystar.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thedailystar.net/business/organisation-news/press-releases/news/six-ciu-students-awarded-youngone-scholarship",
+      "thumbnail": "https://www.thedailystar.net/sites/default/files/styles/big_1/public/images/2025/06/29/youngone_scholarship.jpg?h=8abcec71",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNDVVMlZhYlY5b1dtcHhRV0pTVFJDb0FSaXNBaWdCTWdB",
+      "date": "01/11/2026, 12:23 PM, +0000 UTC",
+      "iso_date": "2026-01-11T12:23:12Z"
+    },
+    {
+      "position": 74,
+      "title": "Seven join Harvard computer science faculty",
+      "source": {
+        "name": "Harvard University",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://seas.harvard.edu&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://seas.harvard.edu/news/seven-join-harvard-computer-science-faculty",
+      "thumbnail": "https://seas.harvard.edu/sites/default/files/2021-10/Sham%20Kakade_small_2.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUVlbGRsVW5kYVFXSkVjalpEVFJDUUF4aXNBaWdLTWdhbFZacnNJUWs",
+      "date": "10/18/2021, 07:00 AM, +0000 UTC",
+      "iso_date": "2021-10-18T07:00:00Z"
+    },
+    {
+      "position": 75,
+      "title": "CCDB launches scholarship programme for sustainable climate action",
+      "source": {
+        "name": "The Daily Star",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thedailystar.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thedailystar.net/business/organisation-news/press-releases/news/ccdb-launches-scholarship-programme-sustainable-climate-action-3835636",
+      "thumbnail": "https://www.thedailystar.net/sites/default/files/styles/big_1/public/images/2025/02/27/tds_93.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVlaRzlDVFhkSVdGRXpkMlpSVFJDZkF4ampCU2dLTWdZcFJZcXRuUVU",
+      "date": "02/27/2025, 06:52 PM, +0000 UTC",
+      "iso_date": "2025-02-27T18:52:13Z"
+    },
+    {
+      "position": 76,
+      "title": "Berklee College of Music starts A R RAHMAN SCHOLARSHIP",
+      "source": {
+        "name": "The Daily Star",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thedailystar.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thedailystar.net/arts-entertainment/music/berklee-college-music-starts-r-rahman-scholarship-75750",
+      "thumbnail": "https://www.thedailystar.net/sites/default/files/styles/big_1/public/feature/images/a_r_rahman.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWtYME5RYVdReU9EaFFWRlZOVFJDb0FSaXNBaWdCTWdhdEJLaVBBUTA",
+      "date": "06/23/2018, 07:17 PM, +0000 UTC",
+      "iso_date": "2018-06-23T19:17:55Z"
+    }
+  ],
+  "menu_links": [
+    {
+      "title": "India",
+      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE55YXpBU0JXVnVMVWRDS0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE55YXpBU0JXVnVMVWRDS0FBUAE"
+    },
+    {
+      "title": "World",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Your local news",
+      "topic_token": "CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE"
+    },
+    {
+      "title": "Business",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Technology",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Entertainment",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Sports",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Science",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKSlRpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKSlRpZ0FQAQ"
+    },
+    {
+      "title": "Health",
+      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=in&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE"
+    }
+  ]
+}
