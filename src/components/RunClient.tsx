@@ -481,17 +481,20 @@ export default function RunClient({ runId }: { runId: string }) {
     };
 
     void (async () => {
+      // A finished run never changes, and this browser's copy is complete (results + log).
+      // Prefer it: on a serverless host a second request may reach an instance that never saw the run.
+      const saved = loadSavedRun(runId);
+      if (saved && saved.view.run.status !== "running") {
+        await Promise.resolve(); // keep state updates out of the effect's synchronous body
+        if (!alive) return;
+        setView(saved.view);
+        setEvents(saved.events);
+        return;
+      }
       const v = await fetchView();
       if (!alive) return;
       if (!v) {
-        // a serverless host forgets runs; this browser keeps the ones it made
-        const saved = loadSavedRun(runId);
-        if (saved) {
-          setView(saved.view);
-          setEvents(saved.events);
-        } else {
-          setNotFound(true);
-        }
+        setNotFound(true);
         return;
       }
       // Always attach: a finished run replays its persisted log instantly. Events are

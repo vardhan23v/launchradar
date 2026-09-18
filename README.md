@@ -7,7 +7,7 @@
 [![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Tests: pytest](https://img.shields.io/badge/tests-pytest-0A9EDC?logo=pytest&logoColor=white)](backend/tests)
+[![Python tests](https://github.com/vardhan23v/launchradar/actions/workflows/python-package.yml/badge.svg)](https://github.com/vardhan23v/launchradar/actions/workflows/python-package.yml)
 [![Facts: SerpApi only](https://img.shields.io/badge/facts-SerpApi_only-c2410c)](https://serpapi.com)
 
 **Live:** https://launchradar-psi.vercel.app
