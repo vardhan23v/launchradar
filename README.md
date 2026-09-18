@@ -113,7 +113,7 @@ npm run build     # frontend production build
 
 ## Deploying (Antideploy)
 
-The app ships as **one container running two processes** (`Dockerfile`, `scripts/start.sh`): the Next.js frontend on
+The app runs as **one container with two processes** (`scripts/start.sh`, which `npm start` runs): the Next.js frontend on
 `$PORT`, and the Python API on `127.0.0.1:8000`, reachable only through the frontend's `/api/*` proxy. If either
 process exits, the container exits so the platform restarts it.
 
@@ -135,8 +135,10 @@ Things to know:
   Moving `store.py` to the platform's Postgres (`DATABASE_URL`) is the fix when this matters.
 - The server always runs `SERPAPI_MODE=live`; `record` is for local use.
 - `.env`, local run data, recorded SerpApi fixtures, tests and dependencies are never uploaded.
-- Accounts younger than 24 hours cannot use a Dockerfile on Antideploy. If the deploy is refused for that reason, wait
-  it out; `scripts/start.sh` can also bootstrap the Python side itself when the platform detects the build instead.
+- **Two build routes.** By default the platform detects and builds the Node project, and `scripts/start.sh` installs the
+  Python API's packages on first boot. If the platform image has no `python3`, the site still starts and the log says so.
+  The sturdier route is a container image: copy `deploy/container-image.txt` to `./Dockerfile` and
+  `deploy/container-ignore.txt` to `./.dockerignore`. Antideploy only accepts a Dockerfile once the account is 24 hours old.
 - The free plan allows 10 successful deploys a month.
 
 ## Recording a new demo run

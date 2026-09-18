@@ -50,6 +50,7 @@ oxcode.hooks.json
 
 # python backend
 backend/.venv/
+backend/.deps/
 __pycache__/
 *.pyc
 .pytest_cache/

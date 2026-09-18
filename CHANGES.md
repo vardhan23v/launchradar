@@ -117,3 +117,12 @@ Added `Dockerfile`, `.dockerignore`, `scripts/start.sh` (runs the API and the fr
 The production entry point was verified locally: both processes start, the API binds to 127.0.0.1 only, SSE streams
 through the frontend, and killing the API stops the container. The Docker image itself was not built locally (no Docker
 on this machine). Nothing has been deployed yet, and no secrets have been sent to the platform.
+
+### Deploy attempt 1–3 (failed) and the change that followed
+
+Antideploy refused the Dockerfile: accounts under 24 hours old may not deploy one. Following the platform's own advice,
+the Dockerfile was moved to `deploy/container-image.txt` so the platform builds the Node project itself. Because that
+build ignores `backend/`, `npm start` now runs `scripts/start.sh`, which installs the Python packages on first boot
+(venv, else `pip --target`), and falls back to frontend-only with a clear log line when the image has no `python3`.
+`next.config.ts` became `next.config.mjs` so `next start` needs no TypeScript after dev dependencies are pruned
+(verified locally with a pruned install).

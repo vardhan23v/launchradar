@@ -5,12 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "sh scripts/start.sh",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "api": "backend/.venv/bin/python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000",
     "test": "backend/.venv/bin/python -m pytest -q backend",
-    "start:prod": "sh scripts/start.sh",
     "deploy:check": "python3 scripts/antideploy.py check",
     "deploy:secrets": "python3 scripts/antideploy.py secrets",
     "deploy": "python3 scripts/antideploy.py deploy",
@@ -31,5 +30,8 @@
     "eslint-config-next": "16.3.5",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

@@ -28,7 +28,7 @@ MAX_BYTES = 29_360_128
 MAX_FILES = 4000
 
 # never uploaded: secrets, local state, dependencies, build output, other tooling
-EXCLUDE_DIRS = {".git", "node_modules", ".next", ".venv", "__pycache__", ".pytest_cache", "data", ".oxcode", ".oxcode-memory", ".claude"}
+EXCLUDE_DIRS = {".git", "node_modules", ".next", ".venv", "__pycache__", ".pytest_cache", ".deps", "data", ".oxcode", ".oxcode-memory", ".claude"}
 EXCLUDE_FILES = {".env", ".DS_Store", "oxcode.hooks.json", "tsconfig.tsbuildinfo"}
 EXCLUDE_PATHS = {"fixtures/serpapi", "backend/tests"}
 
