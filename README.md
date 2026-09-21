@@ -1,23 +1,33 @@
-# LaunchRadar
+<div align="center">
 
-[![Live on Vercel](https://img.shields.io/website?url=https%3A%2F%2Flaunchradar-psi.vercel.app&up_message=live&down_message=down&label=launchradar-psi.vercel.app&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app)
-[![v2 triage board](https://img.shields.io/badge/%2Fv2-triage_board-3de0b0?logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/v2)
-[![Deployed with Vercel](https://img.shields.io/badge/frontend-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
-[![Next.js 16](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
-[![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org)
-[![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Python tests](https://github.com/vardhan23v/launchradar/actions/workflows/python-package.yml/badge.svg)](https://github.com/vardhan23v/launchradar/actions/workflows/python-package.yml)
-[![Facts: SerpApi only](https://img.shields.io/badge/facts-SerpApi_only-c2410c)](https://serpapi.com)
+# 📡 LaunchRadar
 
-**Live:** https://launchradar-psi.vercel.app
+**Market signal, with receipts.**
 
 A market question goes in; evidence-backed product opportunities come out.
 SerpApi is the **only** source of facts — every claim in the output is traceable
 to verbatim quotes pinned to a recorded SerpApi search response (see
 `files/LAUNCHRADAR_ARCHITECTURE.md`).
+
+[![Live app](https://img.shields.io/badge/Live-launchradar--psi.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app)
+[![v2 triage board](https://img.shields.io/badge/%2Fv2-Triage_Board-0E9F76?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/v2)
+[![App Status](https://img.shields.io/website?url=https%3A%2F%2Flaunchradar-psi.vercel.app&style=for-the-badge&label=App&up_message=online&down_message=offline&up_color=0E9F6E)](https://launchradar-psi.vercel.app)
+[![Last Commit](https://img.shields.io/github/last-commit/vardhan23v/launchradar/main?style=for-the-badge&color=111827&label=Last%20Commit)](https://github.com/vardhan23v/launchradar/commits/main)
+
+[![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Tests](https://img.shields.io/github/actions/workflow/status/vardhan23v/launchradar/python-package.yml?style=for-the-badge&label=Tests)](https://github.com/vardhan23v/launchradar/actions/workflows/python-package.yml)
+[![Facts: SerpApi only](https://img.shields.io/badge/Facts-SerpApi_only-c2410c?style=for-the-badge&logo=googlechrome&logoColor=white)](https://serpapi.com/)
+
+[Live app](https://launchradar-psi.vercel.app) · [Triage board](https://launchradar-psi.vercel.app/v2) · [Two interfaces](#two-interfaces-one-app) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-vercel)
+
+</div>
+
+---
 
 ## Two interfaces, one app
 
@@ -218,3 +228,11 @@ and add its slug to `DEMO_SLUGS` in `backend/app/demo.py`.
 - **Review engines that need a product id** (`google_play_product`, `apple_reviews`, `google_maps_reviews`) are typed and normalised but not yet called by the pipeline.
 
 See `CHANGES.md` for what was fixed against the design docs.
+
+---
+
+<div align="center">
+
+Every claim carries the exact words it came from. 📡
+
+</div>
