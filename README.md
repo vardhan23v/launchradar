@@ -1,8 +1,10 @@
 # LaunchRadar
 
 [![Live on Vercel](https://img.shields.io/website?url=https%3A%2F%2Flaunchradar-psi.vercel.app&up_message=live&down_message=down&label=launchradar-psi.vercel.app&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app)
+[![v2 triage board](https://img.shields.io/badge/%2Fv2-triage_board-3de0b0?logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/v2)
 [![Deployed with Vercel](https://img.shields.io/badge/frontend-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
 [![Next.js 16](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
+[![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org)
@@ -17,12 +19,29 @@ SerpApi is the **only** source of facts — every claim in the output is traceab
 to verbatim quotes pinned to a recorded SerpApi search response (see
 `files/LAUNCHRADAR_ARCHITECTURE.md`).
 
+## Two interfaces, one app
+
+The app ships two complete frontends over the same API, pipeline and history:
+
+| Interface | Routes | Character |
+|---|---|---|
+| **Report view** (original) | `/` and `/runs/[id]` | An editorial, print-like report: findings prose with inline `[E1,E2]` citations, problems, competitors, the research log, Markdown export. |
+| **Triage board** (`/v2`, new) | `/v2` and `/v2/runs/[id]` | A working board for the same runs: score ring and five-part breakdowns, shortlist/dismiss with persistence, change view versus a previous run, ⌘K palette, dark/light themes, Markdown/JSON/CSV export. |
+
+Both share the run lifecycle exactly (one streaming request on serverless,
+browser-persisted finished runs, saved-first restoration) and you can move
+between them freely: `/v2/runs/<id>` opens the same run as `/runs/<id>`. The
+v2 screens live in `src/components/v2`, with the real-data mapping isolated in
+`src/lib/v2/adapter.ts` and its own scoped stylesheet `src/app/v2/lr.css`
+(every class `lr-`, every token `--lr-*`), so the report view's styles are
+untouched. See `REDESIGN.md` for the integration record.
+
 ## Stack
 
 - **Backend: Python** — FastAPI + Uvicorn + HTTPX in `backend/`. It owns everything server-side:
   SerpApi access, the LLM calls, the pipeline, scoring, the JSON store, SSE and the Markdown export.
 - **Frontend: Next.js 16** (App Router) · TypeScript · Tailwind v4. It holds no server logic and no keys;
-  `next.config.ts` proxies `/api/*` to the Python API.
+  `next.config.mjs` proxies `/api/*` to the Python API.
 - State is a JSON file store (`data/store.json`). No database required.
 
 ## Setup
@@ -110,11 +129,14 @@ api/index.py       Vercel entry point for the Python function (imports backend/a
 requirements.txt   what Vercel installs for that function
 vercel.json        function limits and bundled files
 src/
-  app/             pages only (home, run)
-  components/      HomeClient, RunClient, ui primitives
+  app/             pages only (home, run, and the /v2 triage board)
+  app/v2/lr.css    the triage board's scoped design system (imported only by /v2)
+  components/      HomeClient, RunClient, ui primitives (report view)
+  components/v2/   HomeV2, RunV2 hosts + pure HomeScreen, RunScreen, ResearchLog, primitives
   lib/types.ts     TypeScript shapes of the API's JSON
   lib/live.ts      a run streamed over one request (serverless), started exactly once
   lib/history.ts   finished runs kept in the browser
+  lib/v2/          adapter (real API -> view models, prefs) and viewModel (types, exports)
 fixtures/demo/     recorded demo run
 fixtures/serpapi/  hashed SerpApi responses (replay mode) — populated by record mode
 ```
