@@ -43,6 +43,16 @@ export function saveRun(view: RunView, events: StepEvent[]): void {
   }
 }
 
+/** Remove a stored run and its entry from the index (used by the triage view). */
+export function deleteSavedRun(id: string): void {
+  try {
+    window.localStorage.removeItem(key(id));
+    window.localStorage.setItem(INDEX, JSON.stringify(listSavedRuns().filter((r) => r.id !== id)));
+  } catch {
+    /* storage blocked or full: the list simply keeps showing this browser's copy */
+  }
+}
+
 const PENDING = "lr:pending";
 
 export interface PendingRun {

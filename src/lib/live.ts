@@ -18,6 +18,13 @@ export interface LiveState {
 let state: LiveState | null = null;
 const listeners = new Set<(s: LiveState) => void>();
 
+let runPathPrefix = "/runs/";
+
+/** The redesigned screens live under /v2; the default keeps the report view's address. */
+export function setRunPathPrefix(prefix: string): void {
+  runPathPrefix = prefix;
+}
+
 function publish(patch: Partial<LiveState>): void {
   if (!state) return;
   state = { ...state, ...patch };
@@ -98,7 +105,7 @@ function finish(view: RunView | null): void {
   if (view) {
     saveRun(view, state.events);
     // give the run its own address without reloading: a refresh now restores it from this browser
-    window.history.replaceState(null, "", `/runs/${view.run.id}`);
+    window.history.replaceState(null, "", `${runPathPrefix}${view.run.id}`);
   }
   publish({ view, done: true });
 }
