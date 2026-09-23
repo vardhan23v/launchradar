@@ -18,7 +18,7 @@ from .utils import now_ms
 
 POLL_S = 0.3
 MAX_FOLLOW_S = 15 * 60
-# Proxies in front of the API (Koyeb's edge, Vercel's rewrite) may close a response that stays
+# Proxies in front of the API (Render's proxy, Vercel's rewrite) may close a response that stays
 # silent too long, and an LLM rate-limit wait can last a minute. A comment line keeps it open.
 HEARTBEAT_S = 15.0
 PING: dict = {"type": "__ping"}  # sentinel, never persisted; encode_event turns it into ": ping"

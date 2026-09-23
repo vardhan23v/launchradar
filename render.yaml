@@ -1,0 +1,32 @@
+# Render Blueprint: the LaunchRadar API (the site itself stays on Vercel).
+# Render → New → Blueprint → pick this repository. It asks for the two keys (sync: false) once.
+services:
+  - type: web
+    name: launchradar-api
+    runtime: python
+    plan: free
+    region: singapore          # closest Render region to India
+    rootDir: backend           # backend/ is self-contained: code, fixtures, requirements
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips="*"
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: PYTHON_VERSION     # Render's default is 3.14; the project is tested on 3.9 to 3.12
+        value: 3.12.11
+      - key: STORE_PATH         # free instances have a temporary disk
+        value: /tmp/launchradar/store.json
+      - key: SERPAPI_MODE
+        value: live
+      - key: SERPAPI_API_KEY
+        sync: false
+      - key: LLM_PROVIDER
+        value: openai
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_BASE_URL
+        value: https://api.groq.com/openai/v1
+      - key: LLM_MODEL
+        value: openai/gpt-oss-120b
+      - key: LLM_REASONING_EFFORT
+        value: low

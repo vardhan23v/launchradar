@@ -20,11 +20,11 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![API on Koyeb](https://img.shields.io/badge/API_host-Koyeb-121212?style=for-the-badge&logo=koyeb&logoColor=white)](https://www.koyeb.com/)
+[![API on Render](https://img.shields.io/badge/API_host-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://render.com/)
 [![Tests](https://img.shields.io/github/actions/workflow/status/vardhan23v/launchradar/python-package.yml?style=for-the-badge&label=Tests)](https://github.com/vardhan23v/launchradar/actions/workflows/python-package.yml)
 [![Facts: SerpApi only](https://img.shields.io/badge/Facts-SerpApi_only-c2410c?style=for-the-badge&logo=googlechrome&logoColor=white)](https://serpapi.com/)
 
-[Live app](https://launchradar-psi.vercel.app) · [Triage board](https://launchradar-psi.vercel.app/v2) · [Two interfaces](#two-interfaces-one-app) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-koyeb)
+[Live app](https://launchradar-psi.vercel.app) · [Triage board](https://launchradar-psi.vercel.app/v2) · [Two interfaces](#two-interfaces-one-app) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-render)
 
 </div>
 
@@ -138,8 +138,8 @@ backend/
   fixtures/demo/   recorded demo run
   fixtures/serpapi/ hashed SerpApi responses (replay mode) — populated by record mode
   tests/           pytest: units, client, stream, API routes, golden pipeline run (stubbed network)
-  Procfile         start command for a Python buildpack host (Koyeb)
-  .python-version  Python version for that buildpack
+  Procfile         start command for Heroku-style Python hosts
+  .python-version  Python version for those hosts
 api/index.py       Vercel entry point for the Python function (imports backend/app)
 requirements.txt   what Vercel installs for that function
 vercel.json        function limits and bundled files
@@ -152,6 +152,7 @@ src/
   lib/live.ts      a run streamed over one request (serverless), started exactly once
   lib/history.ts   finished runs kept in the browser
   lib/v2/          adapter (real API -> view models, prefs) and viewModel (types, exports)
+render.yaml        Render Blueprint for the API (rootDir: backend)
 ```
 
 `backend/` is self-contained (code, fixtures, requirements, start command), so a host can build that folder on its own.
@@ -165,51 +166,53 @@ npm run lint      # eslint (frontend)
 npm run build     # frontend production build
 ```
 
-## Deploying: site on Vercel, API on Koyeb
+## Deploying: site on Vercel, API on Render
 
 Both deploy from GitHub, so **every push to `main` redeploys both**.
 
 | Part | Host | Builds from | How |
 |---|---|---|---|
 | Frontend | Vercel | repository root | Next.js build of `src/` |
-| API | Koyeb, free instance | `backend/` only | Python buildpack: `requirements.txt`, `.python-version`, start command in `Procfile` |
+| API | Render, free web service | `backend/` only | native Python; everything is in `render.yaml` |
 
 The site reaches the API through its own domain: with `API_URL` set on Vercel, `next.config.mjs` rewrites
-`/api/*` to `${API_URL}/api/*`. The browser never talks to Koyeb directly, so no CORS is needed. Every API
+`/api/*` to `${API_URL}/api/*`. The browser never talks to Render directly, so no CORS is needed. Every API
 answer carries `Cache-Control: no-store`, so Vercel's CDN never caches one.
 
-### 1. Create the API service on Koyeb
+### 1. Create the API on Render
 
-1. Sign in at koyeb.com, then **Create Web Service → GitHub**. Install the Koyeb GitHub app for the `launchradar` repository.
-2. **Builder:** Buildpack. **Work directory:** `backend`. Leave the build and run commands empty (the `Procfile` has the start command).
-3. **Instance:** Free. **Region:** Frankfurt (the closest free region to India).
-4. **Ports:** `8000`, HTTP, path `/`. **Health check:** HTTP on port `8000`, path `/api/health`.
-5. **Environment variables:** the table below. Use Koyeb **secrets** for the two keys.
-6. **Deploy.** When it is healthy, open `https://<service>.koyeb.app/api/health`; it answers `{"ok":true}`.
+1. Sign in at render.com with GitHub, then **New → Blueprint**. Connect the `launchradar` repository.
+2. Render reads `render.yaml` and shows one free web service, `launchradar-api`, in Singapore.
+3. It asks for the two secrets: `SERPAPI_API_KEY` and `LLM_API_KEY`. Paste them there. Every other setting is already in the file.
+4. **Apply.** When the service is live, open `https://<service>.onrender.com/api/health`; it answers `{"ok":true}`.
+
+`render.yaml` sets: build `pip install -r requirements.txt` in `backend/`, start `uvicorn app.main:app` on `$PORT`,
+health check `/api/health`, Python 3.12, and these variables:
 
 | Name | Value |
 |---|---|
 | `SERPAPI_MODE` | `live` |
-| `SERPAPI_API_KEY` | your SerpApi key |
-| `LLM_PROVIDER` | `openai` (for Groq or any OpenAI-compatible gateway) or `gemini` |
-| `LLM_API_KEY` | your LLM key |
-| `LLM_BASE_URL` | e.g. `https://api.groq.com/openai/v1` (omit for OpenAI itself or Gemini) |
-| `LLM_MODEL` | e.g. `openai/gpt-oss-120b` |
-| `LLM_REASONING_EFFORT` | `low` (reasoning models only) |
+| `SERPAPI_API_KEY` | asked for on first setup |
+| `LLM_PROVIDER` | `openai` (Groq speaks the OpenAI format) |
+| `LLM_API_KEY` | asked for on first setup |
+| `LLM_BASE_URL` | `https://api.groq.com/openai/v1` |
+| `LLM_MODEL` | `openai/gpt-oss-120b` |
+| `LLM_REASONING_EFFORT` | `low` |
+| `STORE_PATH` | `/tmp/launchradar/store.json` |
 
-Without the keys the API still starts and the recorded example replays; new questions stay switched off, and the home page says why.
+Change a key later under the service's **Environment** tab; Render restarts the service with it.
 
 ### 2. Point the site at it on Vercel
 
-Vercel → Project Settings → Environment Variables → add `API_URL` = `https://<service>.koyeb.app` (no trailing slash,
+Vercel → Project Settings → Environment Variables → add `API_URL` = `https://<service>.onrender.com` (no trailing slash,
 no `/api`). Then **Redeploy**: rewrites are fixed when the site is built. The LLM and SerpApi variables are not needed on
-Vercel any more.
+Vercel.
 
 ### How a run executes
 
-On Koyeb the API is an ordinary long-lived process, so a run works like it does locally:
+On Render the API is an ordinary long-lived process, so a run works like it does locally:
 
-| | Long-lived server (Koyeb, local) | Serverless fallback (Vercel function, no `API_URL`) |
+| | Long-lived server (Render, local) | Serverless fallback (Vercel function, no `API_URL`) |
 |---|---|---|
 | Start | `POST /api/runs`, pipeline in a background thread | `POST /api/runs/live`, pipeline runs **inside that one streaming request** |
 | Progress | resumable SSE: `GET /api/runs/{id}/stream` (`Last-Event-ID`), with a `: ping` comment every 15 s of silence so proxies keep it open | the same events on the same response, plus `view` frames |
@@ -219,8 +222,9 @@ On Koyeb the API is an ordinary long-lived process, so a run works like it does 
 
 The mode is chosen automatically: `VERCEL` is set only inside Vercel functions; `LAUNCHRADAR_INLINE=1` forces it anywhere.
 
-Limits of Koyeb's free instance (512 MB RAM, 0.1 vCPU):
-- It **sleeps after an hour without traffic**. The first visit after that waits while it wakes.
+Limits of Render's free web service:
+- It **sleeps after 15 minutes without traffic**. The first visit after that waits about a minute while it wakes.
+- It gets **750 free hours a month**, enough for one service running all month.
 - Its disk is **temporary**. A redeploy or a sleep clears the server's store, and with it the hourly and monthly search
   counters, so those two guards are best-effort. The 25-searches-per-run cap always holds, and SerpApi enforces your plan's
   own monthly limit. Finished runs stay in the browser.
@@ -233,7 +237,7 @@ it 300 s and bundles `backend/app` and `backend/fixtures/demo`); set the LLM and
 
 ### Other hosts
 
-Any Python host can run `backend/` with the `Procfile` command. `scripts/start.sh` (`npm start`) runs the API and the
+Any Python host can run `backend/` with the `Procfile` command (Render uses `render.yaml` instead). `scripts/start.sh` (`npm start`) runs the API and the
 frontend together on one machine.
 
 ## Recording a new demo run
@@ -244,7 +248,7 @@ and add its slug to `DEMO_SLUGS` in `backend/app/demo.py`.
 
 ## Deviations from the design docs
 
-- **Python backend instead of Next.js route handlers** — the design docs specify a single Next.js deployable; the backend was moved to FastAPI by request. Module boundaries follow ARCH §8 one to one. It deploys to Koyeb; the site stays on Vercel.
+- **Python backend instead of Next.js route handlers** — the design docs specify a single Next.js deployable; the backend was moved to FastAPI by request. Module boundaries follow ARCH §8 one to one. It deploys to Render; the site stays on Vercel.
 - **No Prisma/SQLite** — a JSON file store keeps the prototype dependency-free; swap `store.py` for a DB later without touching callers.
 - **SerpApi client uses HTTPX directly** (not the official `serpapi` package) to keep the payload → evidence pipeline fully under our control and to make `record`/`replay` symmetric.
 - **Validation is hand-written** rather than zod/pydantic models: each LLM stage has a small validator that drops malformed items and fails the stage loudly when the shape is unusable.

@@ -5,7 +5,7 @@ from typing import Dict, List, Optional, Tuple
 
 # launchradar/ — .env and data/ live beside the frontend when run from the repository
 ROOT = Path(__file__).resolve().parents[2]
-# backend/ — self-contained, so a host can build this folder on its own (Koyeb buildpack)
+# backend/ — self-contained, so a host can build this folder on its own (Render: rootDir backend)
 BACKEND = Path(__file__).resolve().parents[1]
 FIXTURES = BACKEND / "fixtures"
 
@@ -175,7 +175,7 @@ def store_path() -> Path:
     return ROOT / "data" / "store.json"
 
 
-_WHERE = ("Locally these go in .env; on Koyeb, in the service's Settings → Environment variables; "
+_WHERE = ("Locally these go in .env; on Render, in the service's Environment tab; "
           "on Vercel, in Project Settings → Environment Variables (then redeploy).")
 
 
