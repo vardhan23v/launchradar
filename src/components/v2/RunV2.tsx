@@ -206,7 +206,10 @@ export default function RunV2({ runId }: { runId: string }) {
   const currentRunId = view?.run.id;
   const previous = useMemo<RunVM | undefined>(() => {
     if (!currentRunId || !view || view.run.demo) return undefined;
-    const entry = listSavedRuns().find((r) => r.question === view.run.question && r.id !== currentRunId);
+    // the newest saved run of the same question that started before this one
+    const entry = listSavedRuns()
+      .filter((r) => r.question === view.run.question && r.id !== currentRunId && r.createdAt < view.run.createdAt)
+      .sort((a, b) => b.createdAt - a.createdAt)[0];
     if (!entry) return undefined;
     const saved = loadSavedRun(entry.id);
     return saved ? viewToRunVM(saved.view, { events: saved.events }) : undefined;

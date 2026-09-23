@@ -10,7 +10,7 @@ const geist = Geist({ variable: "--font-v3", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "LaunchRadar",
-  description: "Every opportunity LaunchRadar has found, ranked and filterable, each claim quoted from a search result.",
+  description: "Every opportunity LaunchRadar has found, ranked and filterable, with each case linked to the search results it cites.",
 };
 
 export default function V3Layout({ children }: { children: React.ReactNode }) {

@@ -195,3 +195,28 @@ Fixes found while building it:
 **Then made the home page.** The dashboard moved from `/v3` to `/` (route group `src/app/(radar)`), the original
 report-view home moved to `/report`, and `/v3` redirects to `/`. Run pages stay at `/runs/[id]` and `/v2/runs/[id]`;
 their "back to the start" links now land on the dashboard.
+
+## One design everywhere, and the review's fixes
+
+The request "keep everything in new design pattern": the run page is rebuilt in the new design at `/runs/[id]`
+(live progress and stage bar, opportunities, problems with verbatim quotes, competitors, research log, every source,
+Markdown export, re-run). The report view moved to `/report` and `/report/runs/[id]`; nothing in the new design links to
+it or to `/v2`. When a serverless run finishes, its address is now derived from the live page's own path, and only
+rewritten while that page is still open (before, it could relabel whatever page the reader had moved to).
+
+A five-lens review (data, React, accessibility, layout, regressions) with a second agent re-checking every finding
+confirmed 49 issues in the first version of the dashboard. All are fixed:
+- **Sources:** results with no web page (related questions, trend points) were merged into one footnote, so claims
+  pointed at the wrong result; each is now its own source, shown as plain text. Footnotes follow reading order.
+- **History:** only complete, real runs are copied into the browser, kept in date order, so replaying the example or
+  opening an old run never pushes your own runs out. Starring a run the server alone holds saves it.
+- **Feed:** duplicates are removed before the 12-run cap (and the page says when the cap hides runs); shortlisted items
+  from an older run of the same question stay visible; search covers the whole case; the example is labelled and kept
+  out of the date filters; the subtitle no longer claims every sentence is a quote.
+- **Layout:** the sources popover aligns to its button, opens downward unless there is more room above, and lifts its
+  card above neighbours; list rows keep their titles at 1024–1150 px; the new-research dialog scrolls on short screens;
+  the filter sheet closes itself if the screen grows past 1024 px.
+- **Keyboard and screen readers:** one modal hook (focus in, Tab trapped, Escape, scroll lock, focus returned or sent
+  to the page heading), native radio groups for date and layout, a disclosure instead of a fake menu, ⌘K ignored inside
+  dialogs and text areas, IME-safe Enter and Escape, constant accessible names on the shortlist star, contrast raised
+  to AA for small text, focus rings no longer overridden by the report view's global styles.

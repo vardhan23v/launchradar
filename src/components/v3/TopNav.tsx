@@ -1,91 +1,107 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState, type RefObject } from "react";
+import { useCallback, useEffect, useId, useRef, useState, type ReactNode, type RefObject } from "react";
 
 import type { SortKey } from "@/lib/v3/feed";
 import { CloseIcon, MenuIcon, PlusIcon, RadarLogo, SearchIcon, TagIcon, TrendIcon, TrophyIcon } from "./icons";
 import { cx, useDismiss } from "./parts";
 
+interface SearchProps {
+  value: string;
+  onChange: (value: string) => void;
+}
+
 interface Props {
-  search: string;
-  onSearch: (value: string) => void;
-  sort: SortKey;
-  onSort: (sort: SortKey) => void;
-  onCategories: () => void;
+  /** the feed's search box and quick links; the run page leaves these out */
+  search?: SearchProps;
+  sort?: SortKey;
+  onSort?: (sort: SortKey) => void;
+  onCategories?: () => void;
   onNew: () => void;
   budget: { monthUsed: number; monthLimit: number } | null;
   apiNote: string | null;
+  /** false while a dialog is open, so the search shortcut never pulls focus out of it */
+  shortcutsEnabled?: boolean;
+  /** extra controls on the right, before New research (the run page's Export) */
+  actions?: ReactNode;
+  /** a short trail after the logo, e.g. the run's status */
+  crumb?: ReactNode;
 }
 
 const QUICK: { key: SortKey | "categories"; label: string; icon: typeof TrendIcon; hint: string }[] = [
-  { key: "momentum", label: "Trending", icon: TrendIcon, hint: "Sort by momentum: how fast searches for the problem are rising" },
-  { key: "categories", label: "Categories", icon: TagIcon, hint: "Filter by research question, region and gap" },
+  { key: "momentum", label: "Trending", icon: TrendIcon, hint: "Sort by momentum: the 12-month search-interest slope, plus a bump when the run found recent news" },
+  { key: "categories", label: "Categories", icon: TagIcon, hint: "Filter by research question, gap status, confidence and region" },
   { key: "score", label: "Top rated", icon: TrophyIcon, hint: "Sort by opportunity score" },
 ];
 
-interface FieldProps {
-  search: string;
-  onSearch: (value: string) => void;
-  inputRef: RefObject<HTMLInputElement | null>;
-  shortcut: string;
-  className?: string;
-}
-
-function SearchField({ search, onSearch, inputRef, shortcut, className }: FieldProps) {
+function SearchField({ search, inputRef, shortcut, className }: { search: SearchProps; inputRef: RefObject<HTMLInputElement | null>; shortcut: string; className?: string }) {
+  const id = useId();
   return (
-    <label className={cx("group relative flex items-center", className)}>
-      <span className="sr-only">Search opportunities</span>
-      <SearchIcon size={16} className="pointer-events-none absolute left-3 text-zinc-500 transition-colors group-focus-within:text-indigo-300" />
+    <div className={cx("group relative flex items-center", className)}>
+      <label htmlFor={id} className="sr-only">
+        Search opportunities
+      </label>
+      <SearchIcon size={16} className="pointer-events-none absolute left-3 text-zinc-400 transition-colors group-focus-within:text-indigo-300" />
       <input
+        id={id}
         ref={inputRef}
         type="search"
-        value={search}
-        onChange={(e) => onSearch(e.target.value)}
+        value={search.value}
+        onChange={(e) => search.onChange(e.target.value)}
         onKeyDown={(e) => {
-          if (e.key === "Escape") {
-            onSearch("");
+          if (e.key === "Escape" && !e.nativeEvent.isComposing) {
+            search.onChange("");
             e.currentTarget.blur();
           }
         }}
+        aria-keyshortcuts={shortcut === "⌘K" ? "Meta+K" : "Control+K"}
         placeholder="Search opportunities, problems, questions…"
-        className="h-10 w-full rounded-xl border border-white/10 bg-white/[0.04] pl-9 pr-16 text-sm text-zinc-100 placeholder:text-zinc-500 transition-all duration-200 hover:border-white/15 focus:border-indigo-400/60 focus:bg-white/[0.06] focus:outline-none focus:ring-4 focus:ring-indigo-500/15 [&::-webkit-search-cancel-button]:hidden"
+        className="h-10 w-full rounded-xl border border-white/10 bg-white/[0.04] pl-9 pr-16 text-sm text-zinc-100 placeholder:text-zinc-400 transition-all duration-200 hover:border-white/15 focus:border-indigo-400/60 focus:bg-white/[0.06] focus:outline-none focus:ring-4 focus:ring-indigo-500/15 [&::-webkit-search-cancel-button]:hidden"
       />
-      {search ? (
+      {search.value ? (
         <button
           type="button"
-          onClick={() => onSearch("")}
+          onClick={() => search.onChange("")}
           aria-label="Clear search"
-          className="absolute right-2 grid size-7 place-items-center rounded-lg text-zinc-400 hover:bg-white/10 hover:text-white"
+          className="absolute right-2 grid size-7 place-items-center rounded-lg text-zinc-400 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70"
         >
           <CloseIcon size={14} />
         </button>
       ) : (
-        <kbd className="pointer-events-none absolute right-2.5 hidden rounded-md border border-white/10 bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] font-medium text-zinc-400 sm:inline-block">
+        <kbd aria-hidden="true" className="pointer-events-none absolute right-2.5 hidden rounded-md border border-white/10 bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] font-medium text-zinc-400 sm:inline-block">
           {shortcut}
         </kbd>
       )}
-    </label>
+    </div>
   );
 }
 
-export default function TopNav(props: Props) {
-  const { search, onSearch, sort, onSort, onCategories, onNew, budget, apiNote } = props;
+export default function TopNav({ search, sort, onSort, onCategories, onNew, budget, apiNote, shortcutsEnabled = true, actions, crumb }: Props) {
   const [menu, setMenu] = useState(false);
   const desktopRef = useRef<HTMLInputElement>(null);
   const mobileRef = useRef<HTMLInputElement>(null);
-  const [shortcut, setShortcut] = useState("Ctrl K");
-
-  // ⌘K / Ctrl+K, or "/" when not typing, focuses whichever search box is on screen
+  const [mac, setMac] = useState(false);
+  const enabled = useRef(shortcutsEnabled);
   useEffect(() => {
-    const t = window.setTimeout(() => {
-      if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) setShortcut("⌘K");
-    }, 0);
+    enabled.current = shortcutsEnabled;
+  }, [shortcutsEnabled]);
+  const panelId = useId();
+  const hasSearch = !!search;
+
+  // ⌘K on a Mac, Ctrl+K elsewhere, or "/" when not typing: focus whichever search box is on screen
+  useEffect(() => {
+    if (!hasSearch) return;
+    const isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
+    const t = window.setTimeout(() => setMac(isMac), 0);
     const onKey = (e: KeyboardEvent) => {
+      if (!enabled.current || e.isComposing || document.querySelector('[aria-modal="true"]')) return;
       const target = e.target as HTMLElement | null;
       const typing = !!target && (target.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName));
-      const combo = (e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k";
-      if (!combo && !(e.key === "/" && !typing)) return;
+      const combo = e.key.toLowerCase() === "k" && (isMac ? e.metaKey && !e.ctrlKey : e.ctrlKey && !e.metaKey);
+      const slash = e.key === "/" && !typing;
+      if (!combo && !slash) return;
+      if (combo && target?.tagName === "TEXTAREA") return; // leave the text field's own shortcuts alone
       const input = [desktopRef.current, mobileRef.current].find((el) => el && el.offsetParent !== null);
       if (!input) return;
       e.preventDefault();
@@ -97,46 +113,53 @@ export default function TopNav(props: Props) {
       window.clearTimeout(t);
       window.removeEventListener("keydown", onKey);
     };
-  }, []);
+  }, [hasSearch]);
+
   const closeMenu = useCallback(() => setMenu(false), []);
   const menuRef = useDismiss(menu, closeMenu);
+  const shortcut = mac ? "⌘K" : "Ctrl K";
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/[0.06] bg-zinc-950/70 backdrop-blur-xl supports-[backdrop-filter]:bg-zinc-950/55">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6">
-        <Link href="/" className="flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label="LaunchRadar home">
+        <Link href="/" className="flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label="LaunchRadar, all findings">
           <RadarLogo />
           <span className="text-[15px] font-semibold tracking-tight text-white">LaunchRadar</span>
         </Link>
+        {crumb && <div className="ml-1 hidden min-w-0 items-center gap-2 text-sm text-zinc-400 sm:flex">{crumb}</div>}
 
-        <nav aria-label="Quick links" className="ml-4 hidden items-center gap-1 lg:flex">
-          {QUICK.map(({ key, label, icon: Icon, hint }) => {
-            const active = key === sort;
-            return (
-              <button
-                key={key}
-                type="button"
-                title={hint}
-                aria-pressed={key === "categories" ? undefined : active}
-                onClick={() => (key === "categories" ? onCategories() : onSort(key))}
-                className={cx(
-                  "inline-flex h-8 items-center gap-1.5 rounded-lg px-2.5 text-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70",
-                  active ? "bg-white/[0.08] text-white" : "text-zinc-400 hover:bg-white/[0.05] hover:text-zinc-100",
-                )}
-              >
-                <Icon size={15} />
-                {label}
-              </button>
-            );
-          })}
-        </nav>
+        {search && onSort && onCategories && (
+          <nav aria-label="Quick links" className="ml-4 hidden items-center gap-1 lg:flex">
+            {QUICK.map(({ key, label, icon: Icon, hint }) => {
+              const active = key === sort;
+              return (
+                <button
+                  key={key}
+                  type="button"
+                  title={hint}
+                  aria-pressed={key === "categories" ? undefined : active}
+                  onClick={() => (key === "categories" ? onCategories() : onSort(key))}
+                  className={cx(
+                    "inline-flex h-8 items-center gap-1.5 rounded-lg px-2.5 text-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70",
+                    active ? "bg-white/[0.08] text-white" : "text-zinc-400 hover:bg-white/[0.05] hover:text-zinc-100",
+                  )}
+                >
+                  <Icon size={15} />
+                  {label}
+                </button>
+              );
+            })}
+          </nav>
+        )}
 
-        <SearchField search={search} onSearch={onSearch} inputRef={desktopRef} shortcut={shortcut} className="ml-auto hidden w-full max-w-sm md:flex" />
+        {search && <SearchField search={search} inputRef={desktopRef} shortcut={shortcut} className="ml-auto hidden w-full max-w-sm md:flex" />}
 
-        <div className="ml-auto flex items-center gap-2 md:ml-0">
+        <div className={cx("ml-auto flex items-center gap-2", search && "md:ml-0")}>
+          {actions}
           <button
             type="button"
             onClick={onNew}
+            aria-haspopup="dialog"
             className="group relative inline-flex h-10 items-center gap-2 overflow-hidden rounded-xl bg-indigo-500 px-3 text-sm font-semibold text-white shadow-[0_0_24px_-4px_rgba(99,102,241,0.75)] ring-1 ring-inset ring-white/20 transition-all duration-200 hover:bg-indigo-400 hover:shadow-[0_0_32px_-2px_rgba(129,140,248,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-200 sm:px-4"
           >
             <span aria-hidden="true" className="lr3-sheen pointer-events-none absolute inset-0" />
@@ -148,42 +171,44 @@ export default function TopNav(props: Props) {
           <div ref={menuRef} className="relative">
             <button
               type="button"
-              aria-haspopup="menu"
               aria-expanded={menu}
-              aria-label="More"
+              aria-controls={panelId}
+              aria-label="Search budget and status"
               onClick={() => setMenu((v) => !v)}
               className="grid size-10 place-items-center rounded-xl border border-white/10 bg-white/[0.04] text-zinc-300 transition-all duration-200 hover:border-white/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70"
             >
               <MenuIcon size={18} />
             </button>
             {menu && (
-              <div role="menu" className="lr3-appear absolute right-0 top-12 w-64 overflow-hidden rounded-xl border border-white/10 bg-zinc-900/95 p-1.5 shadow-2xl shadow-black/60 backdrop-blur-xl">
-                {budget && (
-                  <div className="px-3 pb-2.5 pt-2">
-                    <p className="flex justify-between text-xs text-zinc-400">
-                      <span>Searches this month</span>
-                      <span className="font-mono tabular-nums text-zinc-200">
-                        {budget.monthUsed}/{budget.monthLimit}
-                      </span>
-                    </p>
-                    <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/[0.07]">
-                      <div
-                        className="h-full rounded-full bg-linear-to-r from-indigo-400 to-emerald-400"
-                        style={{ width: `${Math.min(100, (budget.monthUsed / Math.max(1, budget.monthLimit)) * 100)}%` }}
-                      />
-                    </div>
-                    {apiNote && <p className="mt-2 text-[11px] leading-snug text-zinc-500">{apiNote}</p>}
-                  </div>
-                )}
+              <div id={panelId} className="lr3-appear absolute right-0 top-12 w-72 max-w-[calc(100vw-2rem)] overflow-hidden rounded-xl border border-white/10 bg-zinc-900/95 p-1.5 shadow-2xl shadow-black/60 backdrop-blur-xl">
+                <div className="px-3 pb-2.5 pt-2">
+                  {budget ? (
+                    <>
+                      <p className="flex justify-between gap-3 text-xs text-zinc-300">
+                        <span>Searches counted by the server this month</span>
+                        <span className="font-mono tabular-nums text-zinc-100">
+                          {budget.monthUsed}/{budget.monthLimit}
+                        </span>
+                      </p>
+                      <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/[0.07]" aria-hidden="true">
+                        <div
+                          className="h-full rounded-full bg-linear-to-r from-indigo-400 to-emerald-400"
+                          style={{ width: `${Math.min(100, (budget.monthUsed / Math.max(1, budget.monthLimit)) * 100)}%` }}
+                        />
+                      </div>
+                      <p className="mt-2 text-[11px] leading-snug text-zinc-400">
+                        The free server starts this count again whenever it restarts. SerpApi still enforces your plan&apos;s own monthly limit.
+                      </p>
+                    </>
+                  ) : (
+                    <p className="text-xs text-zinc-400">Connecting to the research server…</p>
+                  )}
+                  {apiNote && <p className="mt-2 text-xs leading-snug text-zinc-200">{apiNote}</p>}
+                </div>
                 <div className="my-1 h-px bg-white/[0.06]" />
-                <p className="px-3 pb-1 pt-1.5 text-[11px] font-medium uppercase tracking-wider text-zinc-500">Other views</p>
-                <Link role="menuitem" href="/report" className="block rounded-lg px-3 py-2 text-sm text-zinc-200 hover:bg-white/[0.06]" onClick={closeMenu}>
-                  Report view
-                  <span className="block text-xs text-zinc-500">The original home page; each run as a cited report</span>
-                </Link>
-                <Link role="menuitem" href="/v2" className="block rounded-lg px-3 py-2 text-sm text-zinc-200 hover:bg-white/[0.06]" onClick={closeMenu}>
-                  Triage board
-                  <span className="block text-xs text-zinc-500">Shortlist and dismiss, run by run</span>
+                <Link href="/" className="block rounded-lg px-3 py-2 text-sm text-zinc-200 hover:bg-white/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-400/70" onClick={closeMenu}>
+                  All findings
+                  <span className="block text-xs text-zinc-400">Every opportunity from every finished run</span>
                 </Link>
               </div>
             )}
@@ -191,9 +216,11 @@ export default function TopNav(props: Props) {
         </div>
       </div>
 
-      <div className="border-t border-white/[0.04] px-4 pb-3 pt-2 md:hidden">
-        <SearchField search={search} onSearch={onSearch} inputRef={mobileRef} shortcut={shortcut} />
-      </div>
+      {search && (
+        <div className="border-t border-white/[0.04] px-4 pb-3 pt-2 md:hidden">
+          <SearchField search={search} inputRef={mobileRef} shortcut={shortcut} />
+        </div>
+      )}
     </header>
   );
 }

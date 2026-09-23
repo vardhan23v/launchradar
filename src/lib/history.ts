@@ -44,16 +44,29 @@ export function saveRun(view: RunView, events: StepEvent[]): void {
 }
 
 /**
- * Keep a copy of a run that finished on a long-lived server (Render, local). That server's disk is
- * temporary (a free Render service forgets everything when it sleeps), so without this a finished
- * run would vanish from history. Saves once per finish: viewing an already-saved run changes nothing.
+ * Keep a copy of a real run that finished on a long-lived server (Render, local). That server's
+ * disk is temporary (a free Render service forgets everything when it sleeps), so without this a
+ * finished run would vanish from history.
+ *
+ * Only complete, real runs are kept: the recorded example can always be replayed, and a failed run
+ * holds no findings. The index stays newest-first by the run's own start time, so opening an old
+ * run never pushes a newer one out of the KEEP limit. Viewing an already-saved run changes nothing.
  */
 export function saveFinishedRun(view: RunView, events: StepEvent[]): void {
-  if (view.run.status === "running" || view.run.status === "queued") return;
+  const { run } = view;
+  if (run.status !== "complete" || run.demo) return;
   if (!events.some((e) => e?.type === "done")) return; // the research log is not complete yet
-  const saved = loadSavedRun(view.run.id);
-  if (saved && saved.view.run.status === view.run.status && saved.view.run.finishedAt === view.run.finishedAt) return;
-  saveRun(view, events.filter(Boolean));
+  const saved = loadSavedRun(run.id);
+  if (saved && saved.view.run.status === run.status && saved.view.run.finishedAt === run.finishedAt) return;
+  const index = [run, ...listSavedRuns().filter((r) => r.id !== run.id)].sort((a, b) => b.createdAt - a.createdAt);
+  if (index.findIndex((r) => r.id === run.id) >= KEEP) return; // older than everything this browser keeps
+  try {
+    for (const old of index.slice(KEEP)) window.localStorage.removeItem(key(old.id));
+    window.localStorage.setItem(key(run.id), JSON.stringify({ view, events: events.filter(Boolean) }));
+    window.localStorage.setItem(INDEX, JSON.stringify(index.slice(0, KEEP)));
+  } catch {
+    /* storage full or blocked: the run stays on the server until it restarts */
+  }
 }
 
 /** Remove a stored run and its entry from the index (used by the triage view). */

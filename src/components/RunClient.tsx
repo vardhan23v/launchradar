@@ -5,7 +5,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Cluster, Evidence, Gap, Opportunity, RunView, Signal, StepEvent } from "@/lib/types";
 import { citeGroups } from "@/lib/evidence";
 import { loadSavedRun, saveFinishedRun } from "@/lib/history";
-import { ensureLiveRun, subscribeLive } from "@/lib/live";
+import { ensureLiveRun, setRunPathPrefix, subscribeLive } from "@/lib/live";
 import { GapText, Lines, Note, ScoreTable, StatusText, Tabs, Wordmark, confidenceWord, engineLabel } from "@/components/ui";
 
 type Cite = (ids: string[], quote?: string) => void;
@@ -457,14 +457,19 @@ export default function RunClient({ runId }: { runId: string }) {
   useEffect(() => {
     if (!isLive) return;
     if (!ensureLiveRun()) {
-      router.replace("/");
+      router.replace("/report");
       return;
     }
-    return subscribeLive((s) => {
+    setRunPathPrefix("/report/runs/");
+    const unsubscribe = subscribeLive((s) => {
       if (s.view) setView(s.view);
       setEvents(s.events);
       if (s.error) setStartError(s.error);
     });
+    return () => {
+      unsubscribe();
+      setRunPathPrefix("/runs/"); // the new-design run page owns /runs/ addresses
+    };
   }, [isLive, router]);
 
   // (2) a run the server knows, or (3) one saved in this browser
@@ -570,7 +575,7 @@ export default function RunClient({ runId }: { runId: string }) {
     return (
       <main className="mx-auto w-full max-w-[880px] flex-1 px-6 pt-24">
         <p className="font-serif text-3xl">There is no run at this address.</p>
-        <button onClick={() => router.push("/")} className="mt-4 text-sm font-semibold underline decoration-border underline-offset-4 hover:text-accent">Back to the start</button>
+        <button onClick={() => router.push("/report")} className="mt-4 text-sm font-semibold underline decoration-border underline-offset-4 hover:text-accent">Back to the start</button>
       </main>
     );
   }
@@ -579,7 +584,7 @@ export default function RunClient({ runId }: { runId: string }) {
       <main className="mx-auto w-full max-w-[880px] flex-1 px-6 pt-24">
         <p className="font-serif text-3xl">This run could not start.</p>
         <p className="mt-4 max-w-[62ch] border-l-2 border-danger pl-4 text-sm text-danger">{startError}</p>
-        <button onClick={() => router.push("/")} className="mt-6 text-sm font-semibold underline decoration-border underline-offset-4 hover:text-accent">Back to the start</button>
+        <button onClick={() => router.push("/report")} className="mt-6 text-sm font-semibold underline decoration-border underline-offset-4 hover:text-accent">Back to the start</button>
       </main>
     );
   }
@@ -594,7 +599,7 @@ export default function RunClient({ runId }: { runId: string }) {
   return (
     <main className="mx-auto w-full max-w-[1180px] flex-1 px-6 pb-24">
       <header className="flex items-baseline justify-between gap-4 border-b border-rule py-4">
-        <button onClick={() => router.push("/")} className="hover:text-accent" aria-label="Back to LaunchRadar home"><Wordmark live={live} /></button>
+        <button onClick={() => router.push("/report")} className="hover:text-accent" aria-label="Back to LaunchRadar home"><Wordmark live={live} /></button>
         <div className="flex items-baseline gap-5 font-mono text-xs tabular-nums text-muted">
           <span className="hidden sm:inline" title="Searches spent by this run, and billed searches this month">
             {run.searchesUsed}/{run.budget} this run{budget ? ` · ${budget.monthUsed}/${budget.monthLimit} this month` : ""}

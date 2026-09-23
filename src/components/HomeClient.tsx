@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { Run } from "@/lib/types";
 import { listSavedRuns, setPending, type PendingRun } from "@/lib/history";
+import { setRunPathPrefix } from "@/lib/live";
 import { Lines, StatusText, Wordmark } from "@/components/ui";
 
 interface HomeData {
@@ -57,7 +58,8 @@ export default function HomeClient() {
     if (data?.pipeline?.inline) {
       // serverless host: the run page performs the run inside one streaming request
       setPending(payload);
-      router.push("/runs/live");
+      setRunPathPrefix("/report/runs/");
+      router.push("/report/runs/live");
       return;
     }
     try {
@@ -68,7 +70,7 @@ export default function HomeClient() {
       });
       // a crashed route answers with an empty or HTML body; never let that throw here
       const json = (await res.json().catch(() => null)) as { id?: string; error?: string } | null;
-      if (json?.id) router.push(`/runs/${json.id}`);
+      if (json?.id) router.push(`/report/runs/${json.id}`);
       else setError(json?.error ?? `Could not start the run (HTTP ${res.status}).`);
     } catch {
       setError("Could not reach the server.");
@@ -173,7 +175,7 @@ export default function HomeClient() {
           {[...saved, ...(data?.runs ?? []).filter((r) => !saved.some((x) => x.id === r.id))].slice(0, 8).map((r) => (
             <button
               key={r.id}
-              onClick={() => router.push(`/runs/${r.id}`)}
+              onClick={() => router.push(`/report/runs/${r.id}`)}
               className="group grid w-full grid-cols-[1fr_auto] items-baseline gap-x-6 border-b border-border py-3.5 text-left sm:grid-cols-[110px_1fr_auto]"
             >
               <span className="hidden sm:block"><StatusText status={r.status} /></span>

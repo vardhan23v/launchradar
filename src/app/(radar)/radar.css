@@ -1,4 +1,4 @@
-/* Radar dashboard (the home page): font, page colour and motion. Every class starts lr3-, so nothing leaks into the report view or /v2. */
+/* The new design (home page and run pages): font, page colour and motion. Every class starts lr3-, so nothing leaks into the report view or /v2. */
 
 .lr3-root {
   font-family: var(--font-v3), ui-sans-serif, system-ui, sans-serif;
@@ -9,6 +9,22 @@
 /* the page behind the dashboard is dark too, so overscroll never flashes the report view's paper colour */
 body:has(.lr3-root) {
   background: #09090b;
+}
+
+/* globals.css (the report view's styles) sets focus outlines, button transitions and the selection
+   colour without a cascade layer, which beats every Tailwind utility. Inside the new design, hand
+   those properties back to the utilities: focus rings are indigo and transitions are 200ms. */
+.lr3-root :focus-visible {
+  outline: revert-layer;
+  outline-offset: revert-layer;
+}
+.lr3-root a,
+.lr3-root button {
+  transition: revert-layer;
+}
+.lr3-root ::selection {
+  background: rgba(99, 102, 241, 0.45);
+  color: #fff;
 }
 
 .lr3-grid {

@@ -1,11 +1,12 @@
 /**
- * The /v3 dashboard's data layer: every opportunity from every finished run, as one feed.
+ * Data layer for the radar dashboard (home page) and the run page: opportunities from finished
+ * runs as feed items.
  *
- * Pure functions only (no fetch, no storage, no clock), so the screen can be tested and reasoned
- * about. Nothing here is invented: each field comes from the run view the API returned. There are
- * no upvotes, makers or launch dates in LaunchRadar, so the feed does not pretend to have them:
- * the ranking number is the opportunity score, and "trending" is the momentum sub-score, which
- * comes from Google Trends data gathered during the run.
+ * Pure functions only (no fetch, no storage, no clock). Nothing here is invented: each field comes
+ * from the run view the API returned. There are no upvotes, makers or launch dates in LaunchRadar,
+ * so the feed does not pretend to have them: the ranking number is the opportunity score, and
+ * "trending" is the momentum sub-score (the 12-month Google Trends slope of the problem, plus a bump
+ * when the run found recent news; see backend/app/score.py).
  */
 
 import type { Evidence, GapStatus, Opportunity, RunView } from "@/lib/types";
@@ -38,18 +39,21 @@ export const GAP_LABEL: Record<GapStatus, string> = {
 };
 
 export function confidenceLabel(value: string): string {
-  const v = value.trim().toLowerCase();
+  const v = (value ?? "").trim().toLowerCase();
   if (v.startsWith("h")) return "High";
   if (v.startsWith("m")) return "Medium";
   if (v.startsWith("l")) return "Low";
   return value || "Unknown";
 }
 
+/** A search result an opportunity cites. `url` is empty for results with no page (a related question, a trend point). */
 export interface Source {
   id: string;
   title: string;
   url: string;
   domain: string;
+  /** what kind of search result it is, e.g. "related question" */
+  kind: string;
 }
 
 export interface FeedItem {
@@ -67,15 +71,19 @@ export interface FeedItem {
   question: string;
   demo: boolean;
   createdAt: number;
-  /** Every source the opportunity's text cites, in first-cited order, one per URL. */
+  /** true when a newer run of the same question exists and this item is kept only because it is shortlisted */
+  superseded: boolean;
+  /** Every source the case cites, numbered in reading order, one per web page. */
   sources: Source[];
-  /** Evidence ids cited, mapped to their 1-based footnote number in `sources`. */
+  /** Evidence id -> its 1-based footnote number in `sources`. */
   footnotes: Record<string, number>;
+  /** lower-cased, citation-free text of everything the detail panel shows, for search */
+  haystack: string;
 }
 
 /** Remove [E1,E2] citation markers from prose (they become footnotes in the detail panel). */
 export function stripCites(text: string): string {
-  return text.replace(new RegExp(`\\s*${CITE_RE.source}`, "g"), "").replace(/\s+([.,;:])/g, "$1").trim();
+  return (text ?? "").replace(new RegExp(`\\s*${CITE_RE.source}`, "g"), "").replace(/\s+([.,;:])/g, "$1").trim();
 }
 
 function firstSentence(text: string, max = 160): string {
@@ -85,75 +93,106 @@ function firstSentence(text: string, max = 160): string {
   return s.length > max ? `${s.slice(0, max - 1).trimEnd()}…` : s;
 }
 
+/** Cited ids in the order the detail panel shows them, then evidence the case relies on without citing inline. */
 function citedIds(o: Opportunity, view: RunView): string[] {
-  const prose = [o.problem, o.existingSolutions, o.gap, o.pitch, o.firstValidationStep, ...o.mvpScope];
+  const prose = [o.pitch, o.problem, o.existingSolutions, o.gap, ...(o.mvpScope ?? []), o.firstValidationStep, ...(o.skeptic ?? []).map((s) => s.basis)];
   const ids: string[] = [];
   for (const t of prose) for (const g of citeGroups(t ?? "")) ids.push(...g.ids);
-  for (const s of o.skeptic ?? []) {
-    for (const g of citeGroups(s.basis ?? "")) ids.push(...g.ids);
-    ids.push(...(s.evidenceIds ?? []));
-  }
   const gap = view.gaps.find((g) => g.id === o.gapId);
   for (const p of gap?.foundProducts ?? []) ids.push(p.evidenceId);
+  for (const s of o.skeptic ?? []) ids.push(...(s.evidenceIds ?? []));
   return ids;
 }
 
 function sourcesFor(o: Opportunity, view: RunView): { sources: Source[]; footnotes: Record<string, number> } {
   const byId = new Map<string, Evidence>(view.evidence.map((e) => [e.id, e]));
   const sources: Source[] = [];
-  const byUrl = new Map<string, number>();
+  const byPage = new Map<string, number>();
   const footnotes: Record<string, number> = {};
   for (const id of citedIds(o, view)) {
     if (footnotes[id]) continue;
     const e = byId.get(id);
-    if (!e) continue; // the citation validator already rejects unknown ids; stay tolerant anyway
-    let n = byUrl.get(e.url);
+    if (!e) continue; // the citation validator already drops unknown ids; stay tolerant anyway
+    // results with no web page (related questions, trend points) are each their own source
+    const page = e.url || `id:${e.id}`;
+    let n = byPage.get(page);
     if (!n) {
-      sources.push({ id: e.id, title: e.title, url: e.url, domain: e.domain });
+      sources.push({ id: e.id, title: e.title || e.snippet?.slice(0, 120) || "", url: e.url, domain: e.domain, kind: e.blockType.replace(/_/g, " ") });
       n = sources.length;
-      byUrl.set(e.url, n);
+      byPage.set(page, n);
     }
     footnotes[id] = n;
   }
   return { sources, footnotes };
 }
 
+/** Feed items for one run's opportunities (used directly by the run page). */
+export function itemsForView(v: RunView, superseded = false): FeedItem[] {
+  return v.opportunities.map((o) => {
+    const { sources, footnotes } = sourcesFor(o, v);
+    const haystack = [
+      o.title,
+      o.target,
+      o.pitch,
+      o.problem,
+      o.existingSolutions,
+      o.gap,
+      ...(o.mvpScope ?? []),
+      o.firstValidationStep,
+      ...(o.skeptic ?? []).flatMap((s) => [s.objection, s.basis, s.wouldChangeMind]),
+      v.run.question,
+    ]
+      .map((t) => stripCites(t ?? ""))
+      .join(" ")
+      .toLowerCase();
+    return {
+      key: `${v.run.id}:${o.id}`,
+      runId: v.run.id,
+      opportunity: o,
+      title: stripCites(o.title),
+      tagline: firstSentence(o.pitch || o.problem),
+      score: o.score,
+      momentum: o.subScores?.momentum ?? 0,
+      confidence: confidenceLabel(o.confidence),
+      gapStatus: v.gaps.find((g) => g.id === o.gapId)?.status ?? null,
+      region: v.run.region,
+      question: v.run.question,
+      demo: v.run.demo,
+      createdAt: v.run.createdAt,
+      superseded,
+      sources,
+      footnotes,
+      haystack,
+    };
+  });
+}
+
+/** The key two runs share when one replaces the other in the feed. Examples never replace real runs. */
+export function runKey(r: { demo: boolean; question: string; region: string }): string {
+  return `${r.demo ? "example" : "real"}|${r.question.trim().toLowerCase()}|${r.region}`;
+}
+
 /**
- * One feed from many runs. Only finished runs count, and only the newest run of each
- * question + region (examples and real runs kept apart), so re-running a question replaces its older findings instead of doubling them.
+ * One feed from many runs. Only finished runs count, and only the newest run of each question +
+ * region, so re-running a question replaces its older findings instead of doubling them. Items from
+ * an older run stay (marked superseded) when they are on the shortlist, so a star never disappears.
  */
-export function buildFeed(views: RunView[]): { items: FeedItem[]; runs: RunView[] } {
+export function buildFeed(views: RunView[], shortlist: Set<string> = new Set()): { items: FeedItem[]; runs: RunView[] } {
+  const finished = views.filter((v) => v.run.status === "complete");
   const newest = new Map<string, RunView>();
-  for (const v of views) {
-    if (v.run.status !== "complete") continue;
-    // the recorded example never replaces a real run of the same question, or the other way round
-    const k = `${v.run.demo ? "example" : "real"}|${v.run.question.trim().toLowerCase()}|${v.run.region}`;
+  for (const v of finished) {
+    const k = runKey(v.run);
     const prev = newest.get(k);
     if (!prev || v.run.createdAt > prev.run.createdAt) newest.set(k, v);
   }
   const runs = [...newest.values()].sort((a, b) => b.run.createdAt - a.run.createdAt);
-  const items: FeedItem[] = [];
-  for (const v of runs) {
-    for (const o of v.opportunities) {
-      const { sources, footnotes } = sourcesFor(o, v);
-      items.push({
-        key: `${v.run.id}:${o.id}`,
-        runId: v.run.id,
-        opportunity: o,
-        title: stripCites(o.title),
-        tagline: firstSentence(o.pitch || o.problem),
-        score: o.score,
-        momentum: o.subScores?.momentum ?? 0,
-        confidence: confidenceLabel(o.confidence),
-        gapStatus: v.gaps.find((g) => g.id === o.gapId)?.status ?? null,
-        region: v.run.region,
-        question: v.run.question,
-        demo: v.run.demo,
-        createdAt: v.run.createdAt,
-        sources,
-        footnotes,
-      });
-    }
+  const kept = new Set(runs.map((v) => v.run.id));
+  const items: FeedItem[] = runs.flatMap((v) => itemsForView(v));
+  const seen = new Set<string>();
+  for (const v of finished) {
+    if (kept.has(v.run.id) || seen.has(v.run.id)) continue;
+    seen.add(v.run.id);
+    items.push(...itemsForView(v, true).filter((i) => shortlist.has(i.key)));
   }
   return { items, runs };
 }
@@ -184,23 +223,23 @@ export function activeFilterCount(f: Filters): number {
 
 const DAY = 24 * 60 * 60 * 1000;
 
-function inRange(createdAt: number, range: DateRange, now: number): boolean {
+function inRange(item: FeedItem, range: DateRange, now: number): boolean {
   if (range === "all") return true;
-  if (range === "week") return now - createdAt < 7 * DAY;
+  // the recorded example is stamped with the time it was replayed, not when it was researched
+  if (item.demo) return false;
+  if (range === "week") return now - item.createdAt < 7 * DAY;
   const start = new Date(now);
   start.setHours(0, 0, 0, 0);
-  return createdAt >= start.getTime();
+  return item.createdAt >= start.getTime();
 }
 
 function matches(item: FeedItem, q: string): boolean {
   if (!q) return true;
-  const o = item.opportunity;
-  const hay = [item.title, item.tagline, o.target, o.problem, o.gap, item.question].join(" ").toLowerCase();
   return q
     .toLowerCase()
     .split(/\s+/)
     .filter(Boolean)
-    .every((word) => hay.includes(word));
+    .every((word) => item.haystack.includes(word));
 }
 
 export function applyFilters(items: FeedItem[], f: Filters, shortlist: Set<string>, now: number): FeedItem[] {
@@ -211,7 +250,7 @@ export function applyFilters(items: FeedItem[], f: Filters, shortlist: Set<strin
       (!f.gaps.length || (it.gapStatus !== null && f.gaps.includes(it.gapStatus))) &&
       (!f.confidence.length || f.confidence.includes(it.confidence)) &&
       (!f.questions.length || f.questions.includes(it.question)) &&
-      inRange(it.createdAt, f.date, now) &&
+      inRange(it, f.date, now) &&
       (!f.shortlistedOnly || shortlist.has(it.key)),
   );
 }

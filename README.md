@@ -25,29 +25,25 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 [![Tests](https://img.shields.io/github/actions/workflow/status/vardhan23v/launchradar/python-package.yml?style=for-the-badge&label=Tests)](https://github.com/vardhan23v/launchradar/actions/workflows/python-package.yml)
 [![Facts: SerpApi only](https://img.shields.io/badge/Facts-SerpApi_only-c2410c?style=for-the-badge&logo=googlechrome&logoColor=white)](https://serpapi.com/)
 
-[Live app](https://launchradar-psi.vercel.app) · [Triage board](https://launchradar-psi.vercel.app/v2) · [Report view](https://launchradar-psi.vercel.app/report) · [Three interfaces](#three-interfaces-one-app) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-render)
+[Live app](https://launchradar-psi.vercel.app) · [Triage board](https://launchradar-psi.vercel.app/v2) · [Interfaces](#interfaces) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-render)
 
 </div>
 
 ---
 
-## Three interfaces, one app
+## Interfaces
 
-The app ships three complete frontends over the same API, pipeline and history:
+Everything linked from the home page uses one design: dark (zinc-950), Geist, indigo actions, emerald for open gaps.
 
-| Interface | Routes | Character |
+| Page | Route | What it shows |
 |---|---|---|
-| **Report view** (original) | `/report` and `/runs/[id]` | An editorial, print-like report: findings prose with inline `[E1,E2]` citations, problems, competitors, the research log, Markdown export. |
-| **Triage board** (`/v2`) | `/v2` and `/v2/runs/[id]` | A working board for the same runs: score ring and five-part breakdowns, shortlist/dismiss with persistence, change view versus a previous run, ⌘K palette, dark/light themes, Markdown/JSON/CSV export. |
-| **Radar dashboard** (home page) | `/` (old `/v3` links redirect here) | Every opportunity from every finished run in one dark, ranked feed: #1 featured card with the sub-score pentagon, grid/list toggle, sticky filters (research question, gap status, confidence, region, date, shortlist), search with ⌘K, sort by score / momentum / newest, a detail panel with numbered source footnotes. Opens runs in the other two views. |
+| **Home: the radar** | `/` (old `/v3` links redirect here) | Every opportunity from every finished run in one ranked feed: #1 featured card with the sub-score pentagon, grid/list toggle, sticky filters (research question, gap status, confidence, region, date, shortlist), search with ⌘K / Ctrl+K, sort by score / momentum / newest, a detail panel with numbered source footnotes. |
+| **A research run** | `/runs/[id]` (and `/runs/live` on serverless hosts) | Live progress (seven stages, research log), then the run's opportunities, problems with verbatim quotes, competitors with pricing, rating and complaints, the research log and every search result, plus Markdown export. |
 
-Both share the run lifecycle exactly (one streaming request on serverless,
-browser-persisted finished runs, saved-first restoration) and you can move
-between them freely: `/v2/runs/<id>` opens the same run as `/runs/<id>`, and the shortlist is shared between `/v2` and `/v3`. The
-v2 screens live in `src/components/v2`, with the real-data mapping isolated in
-`src/lib/v2/adapter.ts` and its own scoped stylesheet `src/app/v2/lr.css`
-(every class `lr-`, every token `--lr-*`), so the report view's styles are
-untouched. See `REDESIGN.md` for the integration record.
+Two earlier designs are still served for anyone with a link, but nothing in the new design links to them:
+`/report` and `/report/runs/[id]` (the original print-like report view) and `/v2` (the triage board). The shortlist is shared
+between `/`, `/runs/[id]` and `/v2`. The new design lives in `src/components/v3`, `src/lib/v3/feed.ts` and the route group
+`src/app/(radar)` with its own stylesheet, so the older views' styles are untouched. See `REDESIGN.md` for the `/v2` record.
 
 ## Stack
 
@@ -149,7 +145,8 @@ src/
   app/             pages only (home, run, and the /v2 triage board)
   app/v2/lr.css    the triage board's scoped design system (imported only by /v2)
   app/(radar)/     the home page (radar dashboard) and its radar.css: font, page colour, keyframes
-  app/report/      the original report-view home page
+  app/(radar)/runs/ the new-design run page
+  app/report/      the original report view (home and runs), no longer linked
   components/      HomeClient, RunClient, ui primitives (report view)
   components/v2/   HomeV2, RunV2 hosts + pure HomeScreen, RunScreen, ResearchLog, primitives
   components/v3/   radar dashboard: Dashboard host, TopNav, Cards, FilterPanel, DetailPanel, NewResearchDialog
