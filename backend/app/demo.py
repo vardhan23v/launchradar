@@ -18,7 +18,7 @@ def make_id(prefix: str) -> str:
 def load_fixture(slug: str) -> dict:
     if slug not in DEMO_SLUGS:
         raise KeyError("unknown demo run")
-    return json.loads((config.ROOT / "fixtures" / "demo" / ("%s.json" % slug)).read_text(encoding="utf-8"))
+    return json.loads((config.FIXTURES / "demo" / ("%s.json" % slug)).read_text(encoding="utf-8"))
 
 
 def list_demos() -> List[dict]:

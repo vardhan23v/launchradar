@@ -53,7 +53,7 @@ class SerpApiService:
                  transport: Optional[httpx.BaseTransport] = None) -> None:
         self.store = store
         self.on_event = on_event
-        self.fixture_dir = Path(fixture_dir) if fixture_dir else config.ROOT / "fixtures" / "serpapi"
+        self.fixture_dir = Path(fixture_dir) if fixture_dir else config.FIXTURES / "serpapi"
         self.transport = transport
         # discovery runs searches concurrently; guards + bookkeeping must be atomic
         self._lock = threading.RLock()

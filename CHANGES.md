@@ -145,3 +145,18 @@ Serverless changes the rules (no background work after a response, no shared dis
   remounts) would spend the search budget twice.
 - **Stateless export** (`POST /api/export`), so Markdown export works when the server has forgotten the run.
 - Setup messages name Vercel's environment settings, and `record` mode becomes `live` on a read-only host.
+
+## API moved to Koyeb, site stays on Vercel
+
+Vercel functions stop at 300 s and freeze after each response, so a real run had to squeeze into 270 s. On Koyeb the
+API is a long-lived process and uses the background-thread mode with the resumable stream, which has no time limit.
+No Docker: Koyeb's Python buildpack builds `backend/` on its own.
+
+- **`backend/` is self-contained.** `fixtures/` moved to `backend/fixtures/` (`config.FIXTURES`), and `backend/Procfile`
+  and `backend/.python-version` tell the buildpack how to start it. Checked by copying only `backend/` elsewhere and
+  running the Procfile command: health, the home data (`inline: false`) and a full demo run all work.
+- **SSE heartbeat:** the stream sends a `: ping` comment after 15 s of silence (an LLM rate-limit wait can last a minute),
+  so Koyeb's edge and Vercel's rewrite do not close a quiet stream. Browsers ignore comments.
+- **`Cache-Control: no-store`** on every API answer (plain ASGI middleware, so streams pass through untouched): Vercel's CDN
+  honours upstream cache headers on an external rewrite.
+- The Vercel function stays as a fallback, used whenever `API_URL` is not set on Vercel.

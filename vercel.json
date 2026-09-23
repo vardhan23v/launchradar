@@ -4,8 +4,8 @@
   "functions": {
     "api/index.py": {
       "maxDuration": 300,
-      "includeFiles": "{backend/app/**,fixtures/demo/**}",
-      "excludeFiles": "{node_modules/**,.next/**,src/**,public/**,fixtures/serpapi/**,backend/tests/**,backend/.venv/**,data/**}"
+      "includeFiles": "{backend/app/**,backend/fixtures/demo/**}",
+      "excludeFiles": "{node_modules/**,.next/**,src/**,public/**,backend/fixtures/serpapi/**,backend/tests/**,backend/.venv/**,data/**}"
     }
   }
 }

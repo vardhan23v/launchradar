@@ -18,6 +18,10 @@ from .utils import now_ms
 
 POLL_S = 0.3
 MAX_FOLLOW_S = 15 * 60
+# Proxies in front of the API (Koyeb's edge, Vercel's rewrite) may close a response that stays
+# silent too long, and an LLM rate-limit wait can last a minute. A comment line keeps it open.
+HEARTBEAT_S = 15.0
+PING: dict = {"type": "__ping"}  # sentinel, never persisted; encode_event turns it into ": ping"
 
 
 def _delay_s(event: dict) -> float:
@@ -29,13 +33,16 @@ def _delay_s(event: dict) -> float:
 
 
 async def follow_run_events(store: Store, run_id: str, from_index: int = 0,
-                            is_cancelled: Optional[Callable[[], Awaitable[bool]]] = None) -> AsyncIterator[Tuple[int, dict]]:
+                            is_cancelled: Optional[Callable[[], Awaitable[bool]]] = None,
+                            heartbeat_s: Optional[float] = None) -> AsyncIterator[Tuple[int, dict]]:
+    """Yields (index, event). With heartbeat_s, also yields (-1, PING) after that many silent seconds."""
     first = store.get_run(run_id)
     if first is None:
         return
     cursor = max(0, from_index)
     paced = bool(first.get("demo")) and first["status"] == "running"
     deadline = time.time() + MAX_FOLLOW_S
+    last_sent = time.time()
 
     async def cancelled() -> bool:
         return bool(is_cancelled and await is_cancelled())
@@ -46,6 +53,7 @@ async def follow_run_events(store: Store, run_id: str, from_index: int = 0,
             event = events[cursor]
             yield cursor, event
             cursor += 1
+            last_sent = time.time()
             if paced:
                 await asyncio.sleep(_delay_s(event))
             if await cancelled():
@@ -68,8 +76,13 @@ async def follow_run_events(store: Store, run_id: str, from_index: int = 0,
             return
         if time.time() > deadline:
             return
+        if heartbeat_s is not None and time.time() - last_sent >= heartbeat_s:
+            yield -1, PING
+            last_sent = time.time()
         await asyncio.sleep(POLL_S)
 
 
 def encode_event(index: int, event: dict) -> str:
+    if event is PING:
+        return ": ping\n\n"  # an SSE comment: browsers ignore it, proxies see traffic
     return "id: %d\ndata: %s\n\n" % (index, json.dumps(event, ensure_ascii=False))

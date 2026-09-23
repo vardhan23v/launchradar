@@ -106,7 +106,7 @@ def test_dates_slope_json_and_citation_helpers():
 
 
 def test_demo_fixture_integrity():
-    f = json.loads((config.ROOT / "fixtures" / "demo" / "ai-tools-college-india.json").read_text())
+    f = json.loads((config.FIXTURES / "demo" / "ai-tools-college-india.json").read_text())
     ev = f["evidence"]
     assert validate_signals(f["signals"], ev)[1] == 0
     for c in f["competitors"]:

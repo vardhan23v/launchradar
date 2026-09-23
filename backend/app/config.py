@@ -3,8 +3,11 @@ import os
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-# launchradar/ — fixtures and data live beside the frontend, as before
+# launchradar/ — .env and data/ live beside the frontend when run from the repository
 ROOT = Path(__file__).resolve().parents[2]
+# backend/ — self-contained, so a host can build this folder on its own (Koyeb buildpack)
+BACKEND = Path(__file__).resolve().parents[1]
+FIXTURES = BACKEND / "fixtures"
 
 ALL_ENGINES = [
     "google", "google_news", "google_autocomplete", "google_trends", "google_maps",
@@ -172,7 +175,8 @@ def store_path() -> Path:
     return ROOT / "data" / "store.json"
 
 
-_WHERE = "Locally these go in .env; on Vercel, in Project Settings → Environment Variables (then redeploy)."
+_WHERE = ("Locally these go in .env; on Koyeb, in the service's Settings → Environment variables; "
+          "on Vercel, in Project Settings → Environment Variables (then redeploy).")
 
 
 def pipeline_readiness() -> Tuple[bool, Optional[str]]:

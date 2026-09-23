@@ -9,7 +9,7 @@ from app import main
 from app.demo import start_demo_run
 from app.engines import hash_params, to_raw_params
 from app.serpapi import BudgetExceeded, SerpApiService
-from app.stream import follow_run_events
+from app.stream import encode_event, follow_run_events
 from conftest import make_run
 
 ORGANIC = {"search_metadata": {"id": "sim_1"}, "organic_results": [{"title": "T", "link": "https://a.com", "snippet": "S"}]}
@@ -208,3 +208,28 @@ def test_single_request_run_refuses_before_streaming(store, monkeypatch):
     assert client.post("/api/runs/live", json={}).status_code == 400
     assert client.post("/api/runs/live", json={"demo": "../x"}).status_code == 404
     assert store.list_runs() == []
+
+
+def test_silent_stream_sends_heartbeats_and_api_is_never_cached(store, monkeypatch):
+    # a live run that goes quiet (e.g. an LLM rate-limit wait) must still send bytes to the proxy
+    store.create_run(make_run(id="quiet"))
+    store.append_events("quiet", [{"type": "stage", "stage": "planner", "message": "m", "level": "info"}])
+
+    async def go():
+        seen = []
+        async def cancelled():
+            return len(seen) >= 3
+        async for index, event in follow_run_events(store, "quiet", 0, cancelled, heartbeat_s=0.05):
+            seen.append(encode_event(index, event))
+        return seen
+    seen = asyncio.run(go())
+    assert seen[0].startswith("id: 0\n") and seen[1:] == [": ping\n\n", ": ping\n\n"]
+    assert _collect(store, "quiet", stop_after=1) == [(0, "stage")]  # no pings unless asked for
+
+    main.set_store(store)
+    client = TestClient(main.app)
+    assert client.get("/api/runs").headers["cache-control"] == "no-store"
+    assert client.get("/api/health").headers["cache-control"] == "no-store"
+    demo = client.post("/api/runs", json={"demo": "ai-tools-college-india"}).json()
+    with client.stream("GET", "/api/runs/%s/stream" % demo["id"]) as res:
+        assert res.headers["cache-control"] == "no-cache, no-transform"  # the stream keeps its own

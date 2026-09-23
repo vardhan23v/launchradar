@@ -13,12 +13,41 @@ from .demo import list_demos, make_id, start_demo_run
 from .export import export_markdown
 from .pipeline import run_pipeline
 from .store import Store
-from .stream import encode_event, follow_run_events
+from .stream import HEARTBEAT_S, PING, encode_event, follow_run_events
 from .utils import now_ms
 
 config.load_dotenv()
 app = FastAPI(title="LaunchRadar API", docs_url=None, redoc_url=None)
 _store: Optional[Store] = None
+
+
+class NoStoreMiddleware:
+    """
+    API answers are per-run and change by the second. Vercel's CDN honours upstream cache headers on
+    an external rewrite, so say explicitly that nothing here may be cached. Plain ASGI (not
+    BaseHTTPMiddleware) so streamed responses and disconnect detection pass through untouched.
+    """
+
+    def __init__(self, inner: Any) -> None:
+        self.inner = inner
+
+    async def __call__(self, scope: Any, receive: Any, send: Any) -> None:
+        if scope["type"] != "http" or not scope["path"].startswith("/api"):
+            await self.inner(scope, receive, send)
+            return
+
+        async def send_with_header(message: Any) -> None:
+            if message["type"] == "http.response.start":
+                headers = list(message.get("headers", []))
+                if not any(k.lower() == b"cache-control" for k, _ in headers):
+                    headers.append((b"cache-control", b"no-store"))
+                message = {**message, "headers": headers}
+            await send(message)
+
+        await self.inner(scope, receive, send_with_header)
+
+
+app.add_middleware(NoStoreMiddleware)
 
 
 def get_store() -> Store:
@@ -172,7 +201,10 @@ async def run_live(request: Request) -> Any:
         yield "retry: 600000\n\n"  # a run cannot be resumed; never let the browser re-POST it
         yield _sse({"type": "view", "view": _client_view(store, run_id)})
         last = signature()
-        async for index, event in follow_run_events(store, run_id, 0, request.is_disconnected):
+        async for index, event in follow_run_events(store, run_id, 0, request.is_disconnected, HEARTBEAT_S):
+            if event is PING:
+                yield encode_event(index, event)
+                continue
             if event.get("type") == "done":
                 break  # the final view must arrive before `done`
             yield _sse(event, index)
@@ -229,7 +261,7 @@ async def stream_run(run_id: str, request: Request) -> Any:
 
     async def body():
         yield "retry: 2000\n\n"
-        async for index, event in follow_run_events(store, run_id, from_index, request.is_disconnected):
+        async for index, event in follow_run_events(store, run_id, from_index, request.is_disconnected, HEARTBEAT_S):
             yield encode_event(index, event)
 
     return StreamingResponse(body(), media_type="text/event-stream",

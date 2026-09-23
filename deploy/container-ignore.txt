@@ -11,7 +11,7 @@ data
 .oxcode
 .oxcode-memory
 oxcode.hooks.json
-fixtures/serpapi
+backend/fixtures/serpapi
 backend/tests
 *.tsbuildinfo
 .DS_Store

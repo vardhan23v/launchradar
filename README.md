@@ -20,10 +20,11 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![API on Koyeb](https://img.shields.io/badge/API_host-Koyeb-121212?style=for-the-badge&logo=koyeb&logoColor=white)](https://www.koyeb.com/)
 [![Tests](https://img.shields.io/github/actions/workflow/status/vardhan23v/launchradar/python-package.yml?style=for-the-badge&label=Tests)](https://github.com/vardhan23v/launchradar/actions/workflows/python-package.yml)
 [![Facts: SerpApi only](https://img.shields.io/badge/Facts-SerpApi_only-c2410c?style=for-the-badge&logo=googlechrome&logoColor=white)](https://serpapi.com/)
 
-[Live app](https://launchradar-psi.vercel.app) · [Triage board](https://launchradar-psi.vercel.app/v2) · [Two interfaces](#two-interfaces-one-app) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-vercel)
+[Live app](https://launchradar-psi.vercel.app) · [Triage board](https://launchradar-psi.vercel.app/v2) · [Two interfaces](#two-interfaces-one-app) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-koyeb)
 
 </div>
 
@@ -78,7 +79,7 @@ npm run dev             # frontend on http://localhost:3000
 ```
 
 The app runs out of the box with **no keys**: `SERPAPI_MODE=replay` replays
-recorded responses from `fixtures/`, and `LLM_PROVIDER=demo` replays the recorded run.
+recorded responses from `backend/fixtures/`, and `LLM_PROVIDER=demo` replays the recorded run.
 A pre-recorded demo run ("AI tools for college students in India") is listed on
 the home page and replays the full research trace over SSE.
 
@@ -86,8 +87,8 @@ the home page and replays the full research trace over SSE.
 
 | `SERPAPI_MODE` | Behaviour                                                    |
 | -------------- | ------------------------------------------------------------ |
-| `replay`       | Reads hashed responses from `fixtures/serpapi/` (default)    |
-| `record`       | Hits SerpApi and writes responses into `fixtures/serpapi/`   |
+| `replay`       | Reads hashed responses from `backend/fixtures/serpapi/` (default) |
+| `record`       | Hits SerpApi and writes responses into `backend/fixtures/serpapi/` |
 | `live`         | Hits SerpApi; identical params within 24 h come from the store cache |
 
 - `SERPAPI_API_KEY` is required for `record`/`live`.
@@ -134,7 +135,11 @@ backend/
     store.py       JSON persistence
     demo.py        recorded demo runs
     export.py      markdown export
+  fixtures/demo/   recorded demo run
+  fixtures/serpapi/ hashed SerpApi responses (replay mode) — populated by record mode
   tests/           pytest: units, client, stream, API routes, golden pipeline run (stubbed network)
+  Procfile         start command for a Python buildpack host (Koyeb)
+  .python-version  Python version for that buildpack
 api/index.py       Vercel entry point for the Python function (imports backend/app)
 requirements.txt   what Vercel installs for that function
 vercel.json        function limits and bundled files
@@ -147,9 +152,9 @@ src/
   lib/live.ts      a run streamed over one request (serverless), started exactly once
   lib/history.ts   finished runs kept in the browser
   lib/v2/          adapter (real API -> view models, prefs) and viewModel (types, exports)
-fixtures/demo/     recorded demo run
-fixtures/serpapi/  hashed SerpApi responses (replay mode) — populated by record mode
 ```
+
+`backend/` is self-contained (code, fixtures, requirements, start command), so a host can build that folder on its own.
 
 ## Tests
 
@@ -160,21 +165,27 @@ npm run lint      # eslint (frontend)
 npm run build     # frontend production build
 ```
 
-## Deploying (Vercel)
+## Deploying: site on Vercel, API on Koyeb
 
-The GitHub repository is connected to Vercel, so **every push to `main` deploys**. One Vercel project serves both halves:
+Both deploy from GitHub, so **every push to `main` redeploys both**.
 
-| Part | Where it runs on Vercel | Source |
-|---|---|---|
-| Frontend | Next.js build | `src/` |
-| API | one Python serverless function (FastAPI over ASGI) | `api/index.py` → `backend/app`, dependencies from `requirements.txt` |
+| Part | Host | Builds from | How |
+|---|---|---|---|
+| Frontend | Vercel | repository root | Next.js build of `src/` |
+| API | Koyeb, free instance | `backend/` only | Python buildpack: `requirements.txt`, `.python-version`, start command in `Procfile` |
 
-`next.config.mjs` rewrites `/api/*` to that function on Vercel, and to `npm run api` (127.0.0.1:8000) everywhere else.
-`vercel.json` gives the function its 300-second limit and bundles `backend/app` and `fixtures/demo` with it.
+The site reaches the API through its own domain: with `API_URL` set on Vercel, `next.config.mjs` rewrites
+`/api/*` to `${API_URL}/api/*`. The browser never talks to Koyeb directly, so no CORS is needed. Every API
+answer carries `Cache-Control: no-store`, so Vercel's CDN never caches one.
 
-### Environment variables (Vercel → Project Settings → Environment Variables)
+### 1. Create the API service on Koyeb
 
-Without them the site works and the recorded example replays; new questions stay switched off, and the home page says why.
+1. Sign in at koyeb.com, then **Create Web Service → GitHub**. Install the Koyeb GitHub app for the `launchradar` repository.
+2. **Builder:** Buildpack. **Work directory:** `backend`. Leave the build and run commands empty (the `Procfile` has the start command).
+3. **Instance:** Free. **Region:** Frankfurt (the closest free region to India).
+4. **Ports:** `8000`, HTTP, path `/`. **Health check:** HTTP on port `8000`, path `/api/health`.
+5. **Environment variables:** the table below. Use Koyeb **secrets** for the two keys.
+6. **Deploy.** When it is healthy, open `https://<service>.koyeb.app/api/health`; it answers `{"ok":true}`.
 
 | Name | Value |
 |---|---|
@@ -186,40 +197,54 @@ Without them the site works and the recorded example replays; new questions stay
 | `LLM_MODEL` | e.g. `openai/gpt-oss-120b` |
 | `LLM_REASONING_EFFORT` | `low` (reasoning models only) |
 
-Redeploy after changing them; a deployment reads its variables when it is built.
+Without the keys the API still starts and the recorded example replays; new questions stay switched off, and the home page says why.
 
-### How a run executes: two modes, one codebase
+### 2. Point the site at it on Vercel
 
-A serverless function is frozen the moment its response ends, and requests share no disk. So the app has two modes,
-chosen automatically (`VERCEL` is set on Vercel; `LAUNCHRADAR_INLINE=1` forces it anywhere):
+Vercel → Project Settings → Environment Variables → add `API_URL` = `https://<service>.koyeb.app` (no trailing slash,
+no `/api`). Then **Redeploy**: rewrites are fixed when the site is built. The LLM and SerpApi variables are not needed on
+Vercel any more.
 
-| | Long-lived server (local, containers) | Serverless (Vercel) |
+### How a run executes
+
+On Koyeb the API is an ordinary long-lived process, so a run works like it does locally:
+
+| | Long-lived server (Koyeb, local) | Serverless fallback (Vercel function, no `API_URL`) |
 |---|---|---|
 | Start | `POST /api/runs`, pipeline in a background thread | `POST /api/runs/live`, pipeline runs **inside that one streaming request** |
-| Progress | resumable SSE: `GET /api/runs/{id}/stream` (`Last-Event-ID`) | the same events on the same response, plus `view` frames carrying the results so far |
-| Where a finished run lives | `data/store.json` | **the browser** (`localStorage`, last 6 runs); the server may forget it at any time |
+| Progress | resumable SSE: `GET /api/runs/{id}/stream` (`Last-Event-ID`), with a `: ping` comment every 15 s of silence so proxies keep it open | the same events on the same response, plus `view` frames |
+| Where a finished run lives | the server's store, and the browser (`localStorage`, last 6 runs) | **the browser** only |
 | Refresh mid-run | safe | the run is lost (the request is the run) |
-| Time limit | none | 270 s budget: optional steps are skipped so the run completes with what it has |
-| Export | `POST /api/export` — the browser sends the run it holds, so it works in both modes | |
+| Time limit | none (the stream reconnects if a proxy cuts it) | 270 s budget: optional steps are skipped |
 
-Limits to know on Vercel: the monthly and hourly search guards count per function instance, so they are best-effort
-there (the 25-searches-per-run cap always holds); and a free-tier LLM that rate-limits heavily may hit the time budget,
-in which case the run finishes early with its problems and competitors but fewer opportunities.
+The mode is chosen automatically: `VERCEL` is set only inside Vercel functions; `LAUNCHRADAR_INLINE=1` forces it anywhere.
+
+Limits of Koyeb's free instance (512 MB RAM, 0.1 vCPU):
+- It **sleeps after an hour without traffic**. The first visit after that waits while it wakes.
+- Its disk is **temporary**. A redeploy or a sleep clears the server's store, and with it the hourly and monthly search
+  counters, so those two guards are best-effort. The 25-searches-per-run cap always holds, and SerpApi enforces your plan's
+  own monthly limit. Finished runs stay in the browser.
+- A run in progress when the service restarts is marked failed.
+
+### Fallback: everything on Vercel
+
+Remove `API_URL` on Vercel and redeploy. The site then uses the Python function in `api/index.py` again (`vercel.json` gives
+it 300 s and bundles `backend/app` and `backend/fixtures/demo`); set the LLM and SerpApi variables on Vercel for that.
 
 ### Other hosts
 
-`scripts/start.sh` (`npm start`) runs the API and the frontend together in one container, and
-`deploy/container-image.txt` is a ready Dockerfile for that (copy it to `./Dockerfile`).
+Any Python host can run `backend/` with the `Procfile` command. `scripts/start.sh` (`npm start`) runs the API and the
+frontend together on one machine.
 
 ## Recording a new demo run
 
 Set `SERPAPI_API_KEY` + `SERPAPI_MODE=record`, run research for a question, then
-re-package the persisted run (store + fixtures) as a `fixtures/demo/<slug>.json`
+re-package the persisted run (store + fixtures) as a `backend/fixtures/demo/<slug>.json`
 and add its slug to `DEMO_SLUGS` in `backend/app/demo.py`.
 
 ## Deviations from the design docs
 
-- **Python backend instead of Next.js route handlers** — the design docs specify a single Next.js deployable; the backend was moved to FastAPI by request. Module boundaries follow ARCH §8 one to one. On Vercel it still ships as one project.
+- **Python backend instead of Next.js route handlers** — the design docs specify a single Next.js deployable; the backend was moved to FastAPI by request. Module boundaries follow ARCH §8 one to one. It deploys to Koyeb; the site stays on Vercel.
 - **No Prisma/SQLite** — a JSON file store keeps the prototype dependency-free; swap `store.py` for a DB later without touching callers.
 - **SerpApi client uses HTTPX directly** (not the official `serpapi` package) to keep the payload → evidence pipeline fully under our control and to make `record`/`replay` symmetric.
 - **Validation is hand-written** rather than zod/pydantic models: each LLM stage has a small validator that drops malformed items and fails the stage loudly when the shape is unusable.
