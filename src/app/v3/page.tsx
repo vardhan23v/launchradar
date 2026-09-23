@@ -1,5 +1,6 @@
-import Dashboard from "@/components/v3/Dashboard";
+import { redirect } from "next/navigation";
 
-export default function V3Home() {
-  return <Dashboard />;
+/** The dashboard first shipped at /v3 and is now the home page; old links still work. */
+export default function V3() {
+  redirect("/");
 }

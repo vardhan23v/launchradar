@@ -104,7 +104,7 @@ export default function TopNav(props: Props) {
   return (
     <header className="sticky top-0 z-40 border-b border-white/[0.06] bg-zinc-950/70 backdrop-blur-xl supports-[backdrop-filter]:bg-zinc-950/55">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6">
-        <Link href="/v3" className="flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label="LaunchRadar home">
+        <Link href="/" className="flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label="LaunchRadar home">
           <RadarLogo />
           <span className="text-[15px] font-semibold tracking-tight text-white">LaunchRadar</span>
         </Link>
@@ -177,9 +177,9 @@ export default function TopNav(props: Props) {
                 )}
                 <div className="my-1 h-px bg-white/[0.06]" />
                 <p className="px-3 pb-1 pt-1.5 text-[11px] font-medium uppercase tracking-wider text-zinc-500">Other views</p>
-                <Link role="menuitem" href="/" className="block rounded-lg px-3 py-2 text-sm text-zinc-200 hover:bg-white/[0.06]" onClick={closeMenu}>
+                <Link role="menuitem" href="/report" className="block rounded-lg px-3 py-2 text-sm text-zinc-200 hover:bg-white/[0.06]" onClick={closeMenu}>
                   Report view
-                  <span className="block text-xs text-zinc-500">Each run as a cited report</span>
+                  <span className="block text-xs text-zinc-500">The original home page; each run as a cited report</span>
                 </Link>
                 <Link role="menuitem" href="/v2" className="block rounded-lg px-3 py-2 text-sm text-zinc-200 hover:bg-white/[0.06]" onClick={closeMenu}>
                   Triage board

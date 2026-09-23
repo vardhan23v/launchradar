@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * /v3: every opportunity LaunchRadar has found, as one ranked, filterable feed.
+ * The home page (/; first shipped at /v3): every opportunity LaunchRadar has found, as one ranked, filterable feed.
  *
  * Data comes from the same places as the other two views: finished runs this browser keeps
  * (src/lib/history.ts) plus finished runs the API still holds. The shortlist is the triage

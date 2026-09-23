@@ -1,4 +1,4 @@
-/* /v3 dashboard: font, page colour and motion. Every class starts lr3-, so nothing leaks into / or /v2. */
+/* Radar dashboard (the home page): font, page colour and motion. Every class starts lr3-, so nothing leaks into the report view or /v2. */
 
 .lr3-root {
   font-family: var(--font-v3), ui-sans-serif, system-ui, sans-serif;

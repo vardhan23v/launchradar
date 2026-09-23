@@ -11,7 +11,7 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 
 [![Live app](https://img.shields.io/badge/Live-launchradar--psi.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app)
 [![v2 triage board](https://img.shields.io/badge/%2Fv2-Triage_Board-0E9F76?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/v2)
-[![v3 radar dashboard](https://img.shields.io/badge/%2Fv3-Radar_Dashboard-6366F1?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/v3)
+[![Report view](https://img.shields.io/badge/%2Freport-Report_view-c2410c?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/report)
 [![App Status](https://img.shields.io/website?url=https%3A%2F%2Flaunchradar-psi.vercel.app&style=for-the-badge&label=App&up_message=online&down_message=offline&up_color=0E9F6E)](https://launchradar-psi.vercel.app)
 [![Last Commit](https://img.shields.io/github/last-commit/vardhan23v/launchradar/main?style=for-the-badge&color=111827&label=Last%20Commit)](https://github.com/vardhan23v/launchradar/commits/main)
 
@@ -25,7 +25,7 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 [![Tests](https://img.shields.io/github/actions/workflow/status/vardhan23v/launchradar/python-package.yml?style=for-the-badge&label=Tests)](https://github.com/vardhan23v/launchradar/actions/workflows/python-package.yml)
 [![Facts: SerpApi only](https://img.shields.io/badge/Facts-SerpApi_only-c2410c?style=for-the-badge&logo=googlechrome&logoColor=white)](https://serpapi.com/)
 
-[Live app](https://launchradar-psi.vercel.app) · [Triage board](https://launchradar-psi.vercel.app/v2) · [Radar dashboard](https://launchradar-psi.vercel.app/v3) · [Three interfaces](#three-interfaces-one-app) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-render)
+[Live app](https://launchradar-psi.vercel.app) · [Triage board](https://launchradar-psi.vercel.app/v2) · [Report view](https://launchradar-psi.vercel.app/report) · [Three interfaces](#three-interfaces-one-app) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-render)
 
 </div>
 
@@ -37,9 +37,9 @@ The app ships three complete frontends over the same API, pipeline and history:
 
 | Interface | Routes | Character |
 |---|---|---|
-| **Report view** (original) | `/` and `/runs/[id]` | An editorial, print-like report: findings prose with inline `[E1,E2]` citations, problems, competitors, the research log, Markdown export. |
+| **Report view** (original) | `/report` and `/runs/[id]` | An editorial, print-like report: findings prose with inline `[E1,E2]` citations, problems, competitors, the research log, Markdown export. |
 | **Triage board** (`/v2`) | `/v2` and `/v2/runs/[id]` | A working board for the same runs: score ring and five-part breakdowns, shortlist/dismiss with persistence, change view versus a previous run, ⌘K palette, dark/light themes, Markdown/JSON/CSV export. |
-| **Radar dashboard** (`/v3`, new) | `/v3` | Every opportunity from every finished run in one dark, ranked feed: #1 featured card with the sub-score pentagon, grid/list toggle, sticky filters (research question, gap status, confidence, region, date, shortlist), search with ⌘K, sort by score / momentum / newest, a detail panel with numbered source footnotes. Opens runs in the other two views. |
+| **Radar dashboard** (home page) | `/` (old `/v3` links redirect here) | Every opportunity from every finished run in one dark, ranked feed: #1 featured card with the sub-score pentagon, grid/list toggle, sticky filters (research question, gap status, confidence, region, date, shortlist), search with ⌘K, sort by score / momentum / newest, a detail panel with numbered source footnotes. Opens runs in the other two views. |
 
 Both share the run lifecycle exactly (one streaming request on serverless,
 browser-persisted finished runs, saved-first restoration) and you can move
@@ -148,7 +148,8 @@ vercel.json        function limits and bundled files
 src/
   app/             pages only (home, run, and the /v2 triage board)
   app/v2/lr.css    the triage board's scoped design system (imported only by /v2)
-  app/v3/v3.css    the radar dashboard's font, page colour and keyframes (imported only by /v3)
+  app/(radar)/     the home page (radar dashboard) and its radar.css: font, page colour, keyframes
+  app/report/      the original report-view home page
   components/      HomeClient, RunClient, ui primitives (report view)
   components/v2/   HomeV2, RunV2 hosts + pure HomeScreen, RunScreen, ResearchLog, primitives
   components/v3/   radar dashboard: Dashboard host, TopNav, Cards, FilterPanel, DetailPanel, NewResearchDialog

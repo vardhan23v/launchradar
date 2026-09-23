@@ -191,3 +191,7 @@ Fixes found while building it:
   finishes (`saveFinishedRun` in `src/lib/history.ts`), as the serverless mode already did.
 - **Citations with a letter suffix** (`[E9,E9b]`, used by the recorded example) showed as raw text in every view.
   The pattern now accepts them and spaces after commas, in `src/lib/evidence.ts` and `backend/app/utils.py`.
+
+**Then made the home page.** The dashboard moved from `/v3` to `/` (route group `src/app/(radar)`), the original
+report-view home moved to `/report`, and `/v3` redirects to `/`. Run pages stay at `/runs/[id]` and `/v2/runs/[id]`;
+their "back to the start" links now land on the dashboard.
