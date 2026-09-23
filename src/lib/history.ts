@@ -43,6 +43,19 @@ export function saveRun(view: RunView, events: StepEvent[]): void {
   }
 }
 
+/**
+ * Keep a copy of a run that finished on a long-lived server (Render, local). That server's disk is
+ * temporary (a free Render service forgets everything when it sleeps), so without this a finished
+ * run would vanish from history. Saves once per finish: viewing an already-saved run changes nothing.
+ */
+export function saveFinishedRun(view: RunView, events: StepEvent[]): void {
+  if (view.run.status === "running" || view.run.status === "queued") return;
+  if (!events.some((e) => e?.type === "done")) return; // the research log is not complete yet
+  const saved = loadSavedRun(view.run.id);
+  if (saved && saved.view.run.status === view.run.status && saved.view.run.finishedAt === view.run.finishedAt) return;
+  saveRun(view, events.filter(Boolean));
+}
+
 /** Remove a stored run and its entry from the index (used by the triage view). */
 export function deleteSavedRun(id: string): void {
   try {

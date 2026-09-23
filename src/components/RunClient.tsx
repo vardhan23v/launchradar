@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Cluster, Evidence, Gap, Opportunity, RunView, Signal, StepEvent } from "@/lib/types";
 import { citeGroups } from "@/lib/evidence";
-import { loadSavedRun } from "@/lib/history";
+import { loadSavedRun, saveFinishedRun } from "@/lib/history";
 import { ensureLiveRun, subscribeLive } from "@/lib/live";
 import { GapText, Lines, Note, ScoreTable, StatusText, Tabs, Wordmark, confidenceWord, engineLabel } from "@/components/ui";
 
@@ -534,6 +534,13 @@ export default function RunClient({ runId }: { runId: string }) {
       stop();
     };
   }, [runId, isLive, fetchView]);
+
+  // A long-lived server forgets runs when it restarts (free Render sleeps after 15 idle minutes),
+  // so a run that finished here is copied into this browser, like serverless runs already are.
+  useEffect(() => {
+    if (isLive || !view || view.run.id !== runId) return;
+    saveFinishedRun(view, events);
+  }, [isLive, runId, view, events]);
 
   const status = view?.run.status;
   useEffect(() => {

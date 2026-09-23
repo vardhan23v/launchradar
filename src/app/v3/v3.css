@@ -1,0 +1,131 @@
+/* /v3 dashboard: font, page colour and motion. Every class starts lr3-, so nothing leaks into / or /v2. */
+
+.lr3-root {
+  font-family: var(--font-v3), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+  color-scheme: dark;
+}
+
+/* the page behind the dashboard is dark too, so overscroll never flashes the report view's paper colour */
+body:has(.lr3-root) {
+  background: #09090b;
+}
+
+.lr3-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 30%, transparent 100%);
+}
+
+@keyframes lr3-appear {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+@keyframes lr3-fade {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes lr3-slide {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+}
+@keyframes lr3-slide-left {
+  from {
+    transform: translateX(-24px);
+    opacity: 0;
+  }
+}
+@keyframes lr3-rise {
+  from {
+    transform: translateY(16px) scale(0.98);
+    opacity: 0;
+  }
+}
+@keyframes lr3-pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.35) rotate(-8deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lr3-sweep {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes lr3-sheen {
+  0%,
+  70% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+@keyframes lr3-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+@keyframes lr3-fill {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+.lr3-appear {
+  animation: lr3-appear 320ms cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+.lr3-fade {
+  animation: lr3-fade 200ms ease-out;
+}
+.lr3-slide {
+  animation: lr3-slide 260ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.lr3-slide-left {
+  animation: lr3-slide-left 260ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.lr3-rise {
+  animation: lr3-rise 240ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.lr3-pop {
+  animation: lr3-pop 360ms cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+.lr3-sweep {
+  transform-origin: 16px 16px;
+  animation: lr3-sweep 4s linear infinite;
+}
+.lr3-sheen {
+  background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, 0.28) 50%, transparent 70%);
+  animation: lr3-sheen 4.5s ease-in-out infinite;
+}
+.lr3-shimmer {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.09) 50%, rgba(255, 255, 255, 0.04) 100%);
+  background-size: 200% 100%;
+  animation: lr3-shimmer 1.4s linear infinite;
+}
+.lr3-fill {
+  transform-origin: left;
+  animation: lr3-fill 700ms cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lr3-root *,
+  .lr3-root *::before,
+  .lr3-root *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}

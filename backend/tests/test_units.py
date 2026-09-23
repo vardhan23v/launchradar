@@ -102,6 +102,10 @@ def test_dates_slope_json_and_citation_helpers():
     assert parse_json("nonsense") is None
 
     assert cite_groups("x [E1,E22] y")[0]["ids"] == ["E1", "E22"]
+    # letter-suffixed ids (the recorded example splits some results into E9 and E9b) and spaces
+    assert cite_groups("x [E9,E9b] y [E10b, E2]")[0]["ids"] == ["E9", "E9b"]
+    assert cite_groups("x [E9,E9b] y [E10b, E2]")[1]["ids"] == ["E10b", "E2"]
+    assert keep_known_citations("Fact [E9, E9b, E77].", {"E9", "E9b"}) == "Fact [E9,E9b]."
     assert keep_known_citations("Fact [E1,E99]. Other [E98].", {"E1"}) == "Fact [E1]. Other."
 
 

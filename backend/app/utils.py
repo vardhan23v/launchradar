@@ -13,7 +13,8 @@ _UNIT_MS = {
 }
 _REL = re.compile(r"^(an?|\d+)\s+(minute|min|hour|day|week|month|year)s?\s+ago$", re.I)
 _NEWS = re.compile(r"^(\d{2})/(\d{2})/(\d{4}),\s*(\d{1,2}):(\d{2})\s*(AM|PM)", re.I)
-_CITE = re.compile(r"\[(E\d+(?:,E\d+)*)\]")
+# [E1,E2]; ids may carry a letter suffix (E9b: one search result split into two evidence rows)
+_CITE = re.compile(r"\[(E\d+[a-z]?(?:\s*,\s*E\d+[a-z]?)*)\]")
 
 
 def now_ms() -> int:
@@ -65,7 +66,8 @@ def parse_serp_date(value: Optional[str], now: Optional[int] = None) -> Optional
 
 def cite_groups(text: str) -> List[dict]:
     """[E1,E2] → groups of ids with their position in the text."""
-    return [{"ids": m.group(1).split(","), "index": m.start(), "length": len(m.group(0))} for m in _CITE.finditer(text)]
+    return [{"ids": [i.strip() for i in m.group(1).split(",")], "index": m.start(), "length": len(m.group(0))}
+            for m in _CITE.finditer(text)]
 
 
 def keep_known_citations(text: str, known: set) -> str:

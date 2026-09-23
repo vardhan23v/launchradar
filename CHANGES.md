@@ -164,3 +164,30 @@ API goes to Render instead. `render.yaml` is a Blueprint: free plan, Singapore, 
 - **`Cache-Control: no-store`** on every API answer (plain ASGI middleware, so streams pass through untouched): Vercel's CDN
   honours upstream cache headers on an external rewrite.
 - The Vercel function stays as a fallback, used whenever `API_URL` is not set on Vercel.
+
+## Radar dashboard at /v3
+
+A request asked for a Product-Hunt-style dark dashboard (launches, makers, upvotes, pricing filters). LaunchRadar
+has none of those things, so the design was built on what it does have, and nothing on the page is invented:
+
+| Asked for | Built as | Why |
+|---|---|---|
+| Launch feed | every opportunity from every finished run | opportunities are what LaunchRadar finds |
+| Upvote button + counter | the 0–100 opportunity score as the counter, a Shortlist star as the action | there are no accounts to vote with; the shortlist is the triage board's, so it syncs with /v2 |
+| Maker avatar and name | the research question and region that found it | that is where a finding comes from |
+| Product logo | a monogram tile with a stable colour | runs have no logos |
+| External link preview | a popover of the pages the opportunity cites | every claim links to its source |
+| Category / pricing filters | research question, gap status, confidence, region | opportunities have no pricing model |
+| "Trending" | sorted by the momentum sub-score (search-interest growth) | the only trend signal in the data |
+| #1 of the day with a preview | #1 of the current feed, with the five sub-scores drawn as a pentagon | the preview is real numbers, not a screenshot |
+
+Built with Tailwind (zinc-950, indigo actions, emerald for open gaps, Geist), a sticky glass header, a glowing primary
+action, grid/list toggle, sticky sidebar filters that become a slide-over sheet below 1024 px, and a detail panel with
+numbered footnotes. Checked at 280, 375 and 1440 px wide.
+
+Fixes found while building it:
+- **Finished runs now survive Render's sleep.** On a long-lived server, finished runs were kept only by the server,
+  and a free Render service wipes its disk when it sleeps. Both run pages now copy a run into the browser when it
+  finishes (`saveFinishedRun` in `src/lib/history.ts`), as the serverless mode already did.
+- **Citations with a letter suffix** (`[E9,E9b]`, used by the recorded example) showed as raw text in every view.
+  The pattern now accepts them and spaces after commas, in `src/lib/evidence.ts` and `backend/app/utils.py`.

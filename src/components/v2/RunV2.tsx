@@ -12,7 +12,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 import type { RunView, StepEvent } from "@/lib/types";
-import { deleteSavedRun, listSavedRuns, loadSavedRun, setPending } from "@/lib/history";
+import { deleteSavedRun, listSavedRuns, loadSavedRun, saveFinishedRun, setPending } from "@/lib/history";
 import { ensureLiveRun, setRunPathPrefix, subscribeLive } from "@/lib/live";
 import {
   loadDensity,
@@ -180,6 +180,13 @@ export default function RunV2({ runId }: { runId: string }) {
       stop();
     };
   }, [isLive, runId, fetchView]);
+
+  // A long-lived server forgets runs when it restarts (free Render sleeps after 15 idle minutes),
+  // so a run that finished here is copied into this browser, like serverless runs already are.
+  useEffect(() => {
+    if (isLive || !view || view.run.id !== runId) return;
+    saveFinishedRun(view, events);
+  }, [isLive, runId, view, events]);
 
   // pipeline readiness decides how a re-run is started (inline streaming vs a server-side run)
   useEffect(() => {
