@@ -13,6 +13,7 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 [![v2 triage board](https://img.shields.io/badge/%2Fv2-Triage_Board-0E9F76?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/v2)
 [![Report view](https://img.shields.io/badge/%2Freport-Report_view-c2410c?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/report)
 [![App Status](https://img.shields.io/website?url=https%3A%2F%2Flaunchradar-psi.vercel.app&style=for-the-badge&label=App&up_message=online&down_message=offline&up_color=0E9F6E)](https://launchradar-psi.vercel.app)
+[![API Status](https://img.shields.io/website?url=https%3A%2F%2Flaunchradar-api.launchradar-worker.workers.dev%2Fapi%2Fhealth&style=for-the-badge&label=API&up_message=online&down_message=offline&up_color=0E9F6E)](https://launchradar-api.launchradar-worker.workers.dev/api/health)
 [![Last Commit](https://img.shields.io/github/last-commit/vardhan23v/launchradar/main?style=for-the-badge&color=111827&label=Last%20Commit)](https://github.com/vardhan23v/launchradar/commits/main)
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
@@ -24,7 +25,7 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 [![CI](https://img.shields.io/github/actions/workflow/status/vardhan23v/launchradar/ci.yml?style=for-the-badge&label=CI)](https://github.com/vardhan23v/launchradar/actions/workflows/ci.yml)
 [![Facts: SerpApi only](https://img.shields.io/badge/Facts-SerpApi_only-c2410c?style=for-the-badge&logo=googlechrome&logoColor=white)](https://serpapi.com/)
 
-[Live app](https://launchradar-psi.vercel.app) · [Triage board](https://launchradar-psi.vercel.app/v2) · [Interfaces](#interfaces) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-cloudflare-workers)
+[Live app](https://launchradar-psi.vercel.app) · [API health](https://launchradar-api.launchradar-worker.workers.dev/api/health) · [Interfaces](#interfaces) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Security](#security) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-cloudflare-workers)
 
 </div>
 
@@ -88,8 +89,11 @@ on the home page and replays the full research trace over SSE. To research a **n
   provider — `demo` only replays the recorded run. The home page says what is missing.
 - Budgets are guarded **before** any network cost:
   25 searches per run, 40 billed searches per hour, 250 per calendar month (`RUN_SEARCH_BUDGET`, `HOURLY_SEARCH_GUARD`,
-  `MONTHLY_SEARCH_BUDGET`). Cache hits and fixture replays are never counted as billed. The counters live in D1, so they
-  survive deploys.
+  `MONTHLY_SEARCH_BUDGET`; `0` stops all billed searches). Cache hits and fixture replays are never counted as billed.
+  The counters live in D1, so they survive deploys.
+- A new run must fit **whole**: it is refused up front unless the hour and the month can still cover its 25 searches,
+  so a run never stops halfway after spending LLM calls. Only **one run at a time** is in progress across all visitors
+  (`CONCURRENT_RUN_LIMIT`); the home page says when the next one can start.
 - Per-run split: discovery 12 (including 2 autocomplete seeds) · trends 2 ·
   competitors 6 · gap verification 5.
 
@@ -121,6 +125,28 @@ browser that closes the tab cannot stop a run. A unit that is retried after a cr
 follows a ten-minute run. A finished run replays its whole log and the response ends. The recorded example is paced by the
 stream itself, so its trace animates.
 
+## Security
+
+LaunchRadar has **no accounts**: anyone who opens the site can start research, and every run (its question, findings
+and research log) is visible to every visitor. So the controls protect the operator's spend, the shared database and
+the keys, and they keep scraped or model-written text from doing anything but display.
+
+| Area | What is enforced | Where |
+|---|---|---|
+| Spend | One live run at a time, claimed in one SQL statement; a run is refused unless the hour and month cover its whole search budget; per-run, hourly and monthly search caps checked before every billed search | `worker/src/index.ts`, `store.ts`, `serpapi.ts` |
+| Shared database | The recorded example is copied at most 6 times an hour (then the newest copy is reused) and only the newest 10 copies are kept; the run list returns the newest 50; request bodies are capped (16 KiB to start a run, 2 MiB and 2,000 records to export) | `index.ts`, `store.ts`, `export.ts` |
+| Keys | Stored only as Worker secrets (never in the repository or the browser); the LLM key travels in a header and only over https; provider error bodies never reach a run, and every message shown publicly or logged is scrubbed of keys; `OPENAI_API_KEY` is only sent to OpenAI | `config.ts`, `llm.ts`, `serpapi.ts`, `pipeline.ts` |
+| Untrusted text | Scraped pages and model output are data: prompt rules go in the system message, the evidence block cannot be closed from inside it, every quote must be a verbatim substring of its cited result, model-written fields are length-bounded, competitor links must be pages the competitor was cited from | `prompts.ts`, `llm.ts`, `pipeline.ts`, `citations.ts` |
+| Browser | Only absolute http(s) links become clickable (checked on the server and again at every link); React escapes all text; saved runs are shape-checked; CSV cells cannot start a spreadsheet formula; pages send `frame-ancestors 'none'`, `X-Frame-Options`, `nosniff`, a referrer and permissions policy and HSTS | `normalise.ts`, `src/lib/evidence.ts`, `src/lib/history.ts`, `next.config.mjs` |
+| Requests | Bodies must be `application/json` (no cross-site form posts); unknown routes and methods are refused before the database is touched; resume ids must be small integers; answers carry `Cache-Control: no-store` | `index.ts` |
+| CI | Read-only token, checkout without persisted credentials, actions pinned to commit SHAs | `.github/workflows/ci.yml` |
+
+The code was reviewed with Cloudflare's [security-audit skill](https://github.com/cloudflare/security-audit-skill)
+(source review only; no target code was executed). Every issue its hunters reported is fixed above, but the run was
+stopped before its independent verification and report stages, so treat it as a partial review rather than a sign-off.
+Known trade-offs: the Worker cannot tell individual visitors apart behind Vercel's proxy, so limits are global rather than
+per person, and the 10 ms CPU limit of the free plan is the backstop for anything heavier than expected.
+
 ## Project layout
 
 ```
@@ -142,8 +168,10 @@ worker/
     demo.ts        recorded demo runs
     export.ts      markdown export
   fixtures/demo/   recorded demo run
-  test/            vitest inside the Workers runtime: units, API routes, stream, golden pipeline run (stubbed network)
+  test/            vitest inside the Workers runtime: units, API routes, stream, guards, golden pipeline run (stubbed network)
   wrangler.jsonc   the Worker's config: D1 and Durable Object bindings, non-secret settings
+  .dev.vars        local secrets for `npm run api` (git-ignored, never committed)
+.github/workflows/ci.yml  typecheck + tests for the Worker, typecheck + lint + build for the site
 src/
   app/             pages only (home, run, and the /v2 triage board)
   app/v2/lr.css    the triage board's scoped design system (imported only by /v2)
@@ -162,7 +190,7 @@ src/
 ## Tests
 
 ```bash
-npm test          # the Worker's vitest suite, run inside the Workers runtime: no network, no quota
+npm test          # the Worker's 33 vitest tests, run inside the Workers runtime: no network, no quota
 npm run typecheck # tsc --noEmit (frontend); npm run typecheck:api for the Worker
 npm run lint      # eslint (frontend)
 npm run build     # frontend production build
@@ -170,46 +198,55 @@ npm run build     # frontend production build
 
 ## Deploying: site on Vercel, API on Cloudflare Workers
 
-Both are free and both deploy from GitHub, so **every push to `main` redeploys both**. Neither sleeps.
+Both are on free plans and neither sleeps.
 
-| Part | Host | Builds from | How |
+| Part | Host | Live URL | How it deploys |
 |---|---|---|---|
-| Frontend | Vercel | repository root | Next.js build of `src/` |
-| API | Cloudflare Workers (free plan) | `worker/` only | Workers Builds runs `wrangler deploy` |
+| Site | Vercel (Hobby) | https://launchradar-psi.vercel.app | every push to `main` (Vercel Git integration) |
+| API | Cloudflare Workers (Free) | https://launchradar-api.launchradar-worker.workers.dev | `npm run deploy:api` (wrangler), or Workers Builds for push-to-deploy |
 
-The site reaches the API through its own domain: with `API_URL` set on Vercel, `next.config.mjs` rewrites
-`/api/*` to `${API_URL}/api/*`. The browser never talks to the Worker directly, so no CORS is needed. Every API
-answer carries `Cache-Control: no-store`, so Vercel's CDN never caches one.
+The site reaches the API through its own domain: `API_URL` on Vercel names the Worker, and `next.config.mjs` rewrites
+`/api/*` to `${API_URL}/api/*`. The browser never talks to the Worker directly, so no CORS is needed, and every API answer
+carries `Cache-Control: no-store`, so Vercel's CDN never caches one. A Vercel build **fails** if `API_URL` is missing or is
+not an `https://` origin, so a misconfigured site cannot go live.
 
-### 1. Create the API on Cloudflare
+### API: first-time setup on Cloudflare
 
-1. Sign up at dash.cloudflare.com (email and password; the Workers Free plan is the default, no card).
-2. **Storage & Databases → D1 → Create** a database named `launchradar`. Copy its **Database ID** into
-   `worker/wrangler.jsonc` (`database_id`) and push. The tables are created by the Worker itself on first use.
-3. **Workers & Pages → Create → Import a repository** → choose `launchradar`. Set the **root directory** to `worker`,
-   leave the build command empty and the deploy command as `npx wrangler deploy`. The Worker name must be
-   `launchradar-api` (it is read from `wrangler.jsonc`).
-4. When the first build finishes, open the Worker → **Settings → Variables and Secrets** and add two **secrets**:
-   `SERPAPI_API_KEY` and `LLM_API_KEY`. Everything else is already in `wrangler.jsonc`:
+```bash
+cd worker
+npx wrangler login                    # once, in the browser
+npx wrangler d1 create launchradar    # put the printed database_id in wrangler.jsonc (already done for this repo)
+npm run deploy                        # wrangler deploy; prints the workers.dev URL
+npx wrangler secret put SERPAPI_API_KEY
+npx wrangler secret put LLM_API_KEY   # paste each key when asked; nothing is echoed or written to a file
+```
 
-| Name | Value |
-|---|---|
-| `SERPAPI_MODE` | `live` |
-| `LLM_PROVIDER` | `openai` (Groq speaks the OpenAI format) |
-| `LLM_BASE_URL` | `https://api.groq.com/openai/v1` |
-| `LLM_MODEL` | `openai/gpt-oss-120b` |
-| `LLM_REASONING_EFFORT` | `low` |
+The tables are created by the Worker on first use; there is no migration step. `npx wrangler secret bulk .dev.vars` uploads
+both keys from the git-ignored local file instead. Change a key later with the same command or in the dashboard
+(Worker → Settings → Variables and Secrets); the next request uses it. For deploy-on-push, connect the repository under
+Workers & Pages → the Worker → Settings → Builds, with root directory `worker` and deploy command `npm ci && npx wrangler deploy`.
 
-5. Open `https://launchradar-api.<your-subdomain>.workers.dev/api/health`; it answers `{"ok":true}`.
+Settings (all optional; non-secret ones live in `worker/wrangler.jsonc` under `vars`):
 
-Secrets are never written to the repository or printed by the Worker. Change one later in the same **Variables and
-Secrets** tab; the next request uses it.
+| Name | Default | Meaning |
+|---|---|---|
+| `SERPAPI_API_KEY`, `LLM_API_KEY` | — | **secrets**: the two keys a new question needs |
+| `SERPAPI_MODE` | `live` | `replay` serves fixtures only (tests) |
+| `LLM_PROVIDER` / `LLM_BASE_URL` / `LLM_MODEL` / `LLM_REASONING_EFFORT` | `openai` / Groq / `openai/gpt-oss-120b` / `low` | any OpenAI-compatible gateway over https, or `gemini` |
+| `RUN_SEARCH_BUDGET` | `25` | searches one run may use |
+| `HOURLY_SEARCH_GUARD` / `MONTHLY_SEARCH_BUDGET` | `40` / `250` | billed searches per hour / calendar month; `0` stops spending |
+| `CONCURRENT_RUN_LIMIT` | `1` | live runs in progress at once, across all visitors |
+| `DEMO_RUNS_PER_HOUR` | `6` | fresh copies of the recorded example per hour before the newest is reused |
+| `CACHE_TTL_HOURS` | `24` | identical searches inside this window are served from D1 for free |
 
-### 2. Point the site at it on Vercel
+### Site: point Vercel at the API
 
-Vercel → Project Settings → Environment Variables → set `API_URL` = `https://launchradar-api.<your-subdomain>.workers.dev`
-(no trailing slash, no `/api`). Then **Redeploy**: rewrites are fixed when the site is built. The LLM and SerpApi
-variables are not needed on Vercel.
+Vercel → Project Settings → Environment Variables → `API_URL` = `https://launchradar-api.launchradar-worker.workers.dev`
+(no trailing slash, no `/api`), then **Redeploy**: rewrites are fixed when the site is built. The LLM and SerpApi keys are
+not needed on Vercel.
+
+The API previously ran on Render's free plan, which slept after 15 idle minutes; that service is no longer used and can be
+suspended or deleted in the Render dashboard.
 
 ### What the free plans give
 

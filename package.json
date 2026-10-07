@@ -11,7 +11,8 @@
     "api": "npm --prefix worker run dev",
     "test": "npm --prefix worker test",
     "test:api": "npm --prefix worker test",
-    "typecheck:api": "npm --prefix worker run typecheck"
+    "typecheck:api": "npm --prefix worker run typecheck",
+    "deploy:api": "npm --prefix worker run deploy"
   },
   "dependencies": {
     "next": "16.3.5",

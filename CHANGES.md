@@ -250,3 +250,15 @@ What is different:
 
 The 25 Python tests were ported to vitest running inside the Workers runtime (24 tests: units, API routes, SSE,
 and the golden pipeline run both in-process and through the Worker + Durable Object with alarms).
+
+## Security review and fixes (Cloudflare security-audit skill)
+
+The Worker and site were reviewed with `cloudflare/security-audit-skill` (source review only). The run was stopped
+before its verification and report stages, so this is a partial review. Everything its hunters reported was fixed and
+deployed: a global one-run-at-a-time cap and a whole-run budget reservation (anonymous visitors could otherwise start
+many paid runs at once); the recorded example's fixed search-call ids (a second copy failed on a primary key) plus an
+hourly copy limit and pruning; provider error bodies kept out of public run records and every shown or logged message
+scrubbed of keys; JSON-only request bodies; own-key region lookup; bounded model-written text and quotes; competitor
+links tied to cited pages; http(s)-only result links on the server and at every link in the site; shape-checked saved
+runs; CSV formula guarding; page security headers; a build-time check that `API_URL` is an https origin; and CI
+actions pinned to commit SHAs. See the README's Security section for the full list.
