@@ -19,8 +19,8 @@
     {
       "binding": "DB",
       "database_name": "launchradar",
-      // replace with the id shown by `npx wrangler d1 create launchradar` (or the D1 dashboard)
-      "database_id": "00000000-0000-0000-0000-000000000000"
+      // created with `npx wrangler d1 create launchradar` (the id is not a secret)
+      "database_id": "0b7240bb-d626-4252-a1bd-2e9280445e5e"
     }
   ],
   "durable_objects": {
