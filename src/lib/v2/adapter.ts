@@ -6,7 +6,7 @@
  */
 
 import type { Evidence, Gap, Opportunity, Run, RunView, StepEvent } from "@/lib/types";
-import { citeGroups } from "@/lib/evidence";
+import { citeGroups, safeUrl } from "@/lib/evidence";
 import type {
   CoverageVM,
   DensityVM,
@@ -236,7 +236,7 @@ function evidenceVMs(ids: string[], byId: Map<string, Evidence>): EvidenceVM[] {
     const vm: EvidenceVM = {
       id: e.id,
       quote: e.snippet || e.text || e.title,
-      url: e.url,
+      url: safeUrl(e.url),
       domain: e.domain,
     };
     if (e.title) vm.title = e.title;

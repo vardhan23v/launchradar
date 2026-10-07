@@ -5,7 +5,7 @@
 import { Fragment, useEffect, useId, useRef, useState, type ReactNode, type RefObject } from "react";
 
 import type { GapStatus, Opportunity } from "@/lib/types";
-import { citeGroups } from "@/lib/evidence";
+import { citeGroups, safeUrl } from "@/lib/evidence";
 import { GAP_LABEL, SUB_SCORES, hueFor, monogram, type Source } from "@/lib/v3/feed";
 import { ExternalIcon, StarIcon } from "./icons";
 
@@ -312,9 +312,9 @@ export function SourceLine({ s, n }: { s: Source; n?: number }) {
     </>
   );
   const cls = "group flex items-start gap-3 rounded-lg px-2 py-2";
-  return s.url ? (
+  return safeUrl(s.url) ? (
     <a
-      href={s.url}
+      href={safeUrl(s.url)}
       target="_blank"
       rel="noopener noreferrer"
       onClick={(e) => e.stopPropagation()}

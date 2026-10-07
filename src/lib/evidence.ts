@@ -1,3 +1,20 @@
+/**
+ * A link target that is safe to put in an href: only absolute http(s) URLs. Search results come
+ * from third-party pages (and saved runs from this browser's storage), so a `javascript:` or
+ * relative URL must never become a clickable link on this origin.
+ */
+export function safeUrl(url: unknown): string {
+  if (typeof url !== "string") return "";
+  const u = url.trim();
+  if (!/^https?:\/\//i.test(u)) return "";
+  try {
+    const parsed = new URL(u);
+    return parsed.protocol === "http:" || parsed.protocol === "https:" ? parsed.href : "";
+  } catch {
+    return "";
+  }
+}
+
 export interface CiteGroup {
   ids: string[];
   index: number;

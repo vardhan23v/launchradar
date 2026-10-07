@@ -625,8 +625,14 @@ function selected(run: RunVM, opts: ExportOptions): OpportunityVM[] {
   return run.opportunities.filter((o) => saved.has(o.id));
 }
 
+/**
+ * One CSV cell. Text that starts with = + - @ (or a tab/CR) is prefixed with a quote so a
+ * spreadsheet shows it as text instead of evaluating it as a formula: the names and one-liners
+ * come from scraped pages and model output.
+ */
 function csvCell(v: string): string {
-  return /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
+  const safe = /^[=+\-@\t\r]/.test(v) ? `'${v}` : v;
+  return /[",\n\r]/.test(safe) ? `"${safe.replace(/"/g, '""')}"` : safe;
 }
 
 export function toCsv(run: RunVM, opts: ExportOptions = {}): string {

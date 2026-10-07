@@ -24,6 +24,7 @@ import {
   type StageVM,
   type ThemeVM,
 } from "@/lib/v2/viewModel";
+import { safeUrl } from "@/lib/evidence";
 
 function cx(...parts: Array<string | false | null | undefined>): string {
   return parts.filter(Boolean).join(" ");
@@ -467,8 +468,8 @@ export function EvidenceCard({ ev, onCopy }: { ev: EvidenceVM; onCopy?: (text: s
         {ev.title ? <span>{ev.title}</span> : null}
         {ev.sourceDate ? <span className="lr-num">published {ev.sourceDate}</span> : null}
         <span className="lr-spacer" />
-        {ev.url ? (
-          <a className="lr-ev__link" href={ev.url} target="_blank" rel="noreferrer noopener">
+        {safeUrl(ev.url) ? (
+          <a className="lr-ev__link" href={safeUrl(ev.url)} target="_blank" rel="noreferrer noopener">
             Open source
           </a>
         ) : null}

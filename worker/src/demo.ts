@@ -30,19 +30,28 @@ export async function startDemoRun(store: Store, slug: string): Promise<string> 
   delete recorded.status;
   const run: Run = { ...defaults, ...recorded };
   await store.createRun(run);
-  const tag = <T extends object>(rows: T[]): (T & { runId: string })[] => rows.map((r) => ({ ...r, runId }));
-  for (const c of tag(f.searchCalls)) {
-    // recorded calls predate the budget bookkeeping: they were never billed and carry no timestamp
-    const call = c as Partial<SearchCall> & typeof c;
-    await store.addSearchCall({ ...c, billed: call.billed ?? false, createdAt: call.createdAt ?? run.createdAt } as SearchCall, null);
+  try {
+    // the fixture's call ids (sc_demo_1…) are global keys: give every copy its own
+    const callIds = new Map<string, string>();
+    f.searchCalls.forEach((c, i) => callIds.set(c.id, `sc_${runId}_${i + 1}`));
+    const tag = <T extends object>(rows: T[]): (T & { runId: string })[] => rows.map((r) => ({ ...r, runId }));
+    for (const c of tag(f.searchCalls)) {
+      // recorded calls predate the budget bookkeeping: they were never billed and carry no timestamp
+      const call = c as Partial<SearchCall> & typeof c;
+      await store.addSearchCall({ ...c, id: callIds.get(c.id) as string, billed: false, createdAt: call.createdAt ?? run.createdAt } as SearchCall, null);
+    }
+    // the recorded rows keep their original evidence ids (the example splits some results into E9 and E9b)
+    await store.addEvidence(runId, "demo", f.evidence.map(({ runId: _r, searchCallId, ...rest }) => ({ ...rest, searchCallId: callIds.get(searchCallId) ?? "demo" })));
+    await store.addSignals(runId, tag(f.signals) as Signal[]);
+    await store.setClusters(runId, tag(f.clusters) as Cluster[]);
+    await store.addCompetitors(runId, tag(f.competitors).map((c) => ({ ...c, clusterIds: c.clusterIds ?? [] })) as Competitor[]);
+    await store.setGaps(runId, tag(f.gaps) as Gap[]);
+    await store.setOpportunities(runId, tag(f.opportunities) as Opportunity[]);
+    await store.setEvents(runId, f.events);
+  } catch (err) {
+    // never leave a half-written example "running" in the public list
+    await store.deleteRun(runId).catch(() => undefined);
+    throw err;
   }
-  // the recorded rows keep their original ids (the example splits some results into E9 and E9b)
-  await store.addEvidence(runId, "demo", tag(f.evidence).map(({ runId: _r, searchCallId: _s, ...rest }) => rest));
-  await store.addSignals(runId, tag(f.signals) as Signal[]);
-  await store.setClusters(runId, tag(f.clusters) as Cluster[]);
-  await store.addCompetitors(runId, tag(f.competitors).map((c) => ({ ...c, clusterIds: c.clusterIds ?? [] })) as Competitor[]);
-  await store.setGaps(runId, tag(f.gaps) as Gap[]);
-  await store.setOpportunities(runId, tag(f.opportunities) as Opportunity[]);
-  await store.setEvents(runId, f.events);
   return runId;
 }

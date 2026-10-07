@@ -8,7 +8,8 @@ Rules:
 - Cite evidence by id (E12). Every quote must be copied character-for-character from the cited row.
 - Output only a JSON object matching the schema. No prose, no markdown fences.`;
 
-const p = (body: string) => `${SYSTEM_PREAMBLE}\n\n${body}`;
+// the preamble travels as the system message (llm.ts); every prompt below is the user message
+const p = (body: string) => body;
 
 export function classifyPrompt(question: string): string {
   return p(`Task: classify this market question into exactly one type.

@@ -9,6 +9,7 @@
  * when the run found recent news; see backend/app/score.py).
  */
 
+import { safeUrl } from "@/lib/evidence";
 import type { Evidence, GapStatus, Opportunity, RunView } from "@/lib/types";
 import { CITE_RE, citeGroups } from "@/lib/evidence";
 
@@ -114,10 +115,11 @@ function sourcesFor(o: Opportunity, view: RunView): { sources: Source[]; footnot
     const e = byId.get(id);
     if (!e) continue; // the citation validator already drops unknown ids; stay tolerant anyway
     // results with no web page (related questions, trend points) are each their own source
-    const page = e.url || `id:${e.id}`;
+    const url = safeUrl(e.url);
+    const page = url || `id:${e.id}`;
     let n = byPage.get(page);
     if (!n) {
-      sources.push({ id: e.id, title: e.title || e.snippet?.slice(0, 120) || "", url: e.url, domain: e.domain, kind: e.blockType.replace(/_/g, " ") });
+      sources.push({ id: e.id, title: e.title || e.snippet?.slice(0, 120) || "", url, domain: e.domain, kind: e.blockType.replace(/_/g, " ") });
       n = sources.length;
       byPage.set(page, n);
     }

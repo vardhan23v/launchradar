@@ -11,6 +11,8 @@ import { computeScore, type ScoreInput } from "../src/score";
 import { INTERRUPTED } from "../src/store";
 import type { Evidence, StepEvent } from "../src/types";
 import { citeGroups, keepKnownCitations, parseSerpDate } from "../src/utils";
+import { PipelineError, publicMessage } from "../src/pipeline";
+import { BudgetExceeded } from "../src/serpapi";
 import { freshStore, jsonResponse, LIVE, makeRun } from "./fakes";
 
 const EV = [{ id: "E1", title: "Thread", snippet: "The app   glitches on Indian school content", text: null }];
@@ -193,7 +195,12 @@ describe("llm client", () => {
     const client = new LlmClient(settings, (e) => { events.push(e); }, async () => answers.shift() as Response);
     client.sleepImpl = async (ms) => { waits.push(ms); };
     expect(await client.complete("selftest", "d", "p", (v) => (v as { ok: boolean }).ok)).toBe(true);
-    expect(waits).toEqual([2000, 10000]); // honours retry-after, otherwise backs off
+    // honours retry-after, otherwise backs off; up to half a second of jitter keeps runs out of lockstep
+    expect(waits).toHaveLength(2);
+    expect(waits[0]).toBeGreaterThanOrEqual(2000);
+    expect(waits[0]).toBeLessThan(2500);
+    expect(waits[1]).toBeGreaterThanOrEqual(10000);
+    expect(waits[1]).toBeLessThan(10500);
     expect(events.filter((e) => e.type === "stage" && e.level === "warn")).toHaveLength(2);
 
     // a provider that never recovers fails loudly instead of hanging the run
@@ -235,5 +242,44 @@ describe("store", () => {
     await Promise.all([store.chargeSearch("r1"), store.chargeSearch("r1")]);
     expect(await store.getRun("r1")).toMatchObject({ questionType: "b2b", searchesUsed: 2 });
     await expect(store.updateRun("nope", { status: "failed" })).rejects.toThrow(/run not found/);
+  });
+});
+
+describe("secrets never reach a run record", () => {
+  it("keeps provider error bodies out of LLM errors", async () => {
+    const settings = { LLM_PROVIDER: "openai", LLM_API_KEY: "gsk_live_secret_value_123" };
+    const client = new LlmClient(settings, null, async () => jsonResponse({ error: { message: "Invalid API Key gsk_live_secret_value_123 for Bearer gsk_live_secret_value_123" } }, 401));
+    const err = await client.complete("planner", "d", "p", (v) => v).catch((e: unknown) => e);
+    expect(err).toBeInstanceOf(LlmError);
+    expect((err as Error).message).toBe("LLM provider returned 401 (check LLM_API_KEY).");
+  });
+
+  it("shows only messages the pipeline wrote, scrubbed; anything else becomes a fixed sentence", () => {
+    const settings = { SERPAPI_API_KEY: "serp_key_abcdef", LLM_API_KEY: "gsk_another_secret_99" };
+    expect(publicMessage(new PipelineError("Discovery yielded only 3 evidence rows"), settings)).toBe("Discovery yielded only 3 evidence rows");
+    expect(publicMessage(new BudgetExceeded("Run budget exceeded (25/25)."), settings)).toBe("Run budget exceeded (25/25).");
+    expect(publicMessage(new LlmError("echo gsk_another_secret_99 and api_key=serp_key_abcdef"), settings)).not.toMatch(/gsk_another|serp_key/);
+    expect(publicMessage(new TypeError("Cannot read properties of undefined (reading 'x')"), settings)).toBe("An internal error interrupted this step.");
+    expect(publicMessage(new Error("D1_ERROR: no such table: runs"), settings)).toBe("An internal error interrupted this step.");
+  });
+
+  it("only uses OPENAI_API_KEY against OpenAI and only sends keys over https", () => {
+    expect(config.llmApiKey({ LLM_PROVIDER: "openai", OPENAI_API_KEY: "sk-real" })).toBe("sk-real");
+    expect(config.llmApiKey({ LLM_PROVIDER: "openai", OPENAI_API_KEY: "sk-real", LLM_BASE_URL: "https://gateway.example/v1" })).toBe("");
+    const base = { LLM_PROVIDER: "openai", LLM_API_KEY: "k", LLM_MODEL: "m" };
+    expect(config.pipelineReadiness({ ...base, LLM_BASE_URL: "http://gateway.example/v1" })[0]).toBe(false);
+    expect(config.pipelineReadiness({ ...base, LLM_BASE_URL: "http://127.0.0.1:11434/v1" })[0]).toBe(true);
+    expect(config.pipelineReadiness({ LLM_PROVIDER: "gsk_pasted_by_mistake", LLM_API_KEY: "k" })[1]).not.toContain("gsk_pasted");
+  });
+});
+
+describe("links", () => {
+  it("keeps only absolute http(s) result links", () => {
+    const rows = normalise("google", { organic_results: [
+      { title: "a", link: "javascript:alert(1)", snippet: "s" },
+      { title: "b", link: "//evil.test/x", snippet: "s" },
+      { title: "c", link: "https://ok.test/page", snippet: "s" },
+    ], ads: [{ title: "d", displayed_link: "shop.test/offer", snippet: "s" }] });
+    expect(rows.map((r) => r.url)).toEqual(["", "", "https://ok.test/page", ""]);
   });
 });

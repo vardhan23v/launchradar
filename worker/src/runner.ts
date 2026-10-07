@@ -26,6 +26,12 @@ export class ResearchRunner extends DurableObject<Env> {
     if (!state || state.phase === "done") return;
     await ensureSchema(this.env.DB);
     const store = new Store(this.env.DB, this.env);
+    const run = await store.getRun(state.runId);
+    if (!run || run.status !== "running") {
+      // closed as interrupted (or deleted): spend nothing more on it
+      await this.ctx.storage.put(STATE, { ...state, phase: "done", status: run?.status === "complete" ? "complete" : "failed" });
+      return;
+    }
     const next = await runUnit(makeCtx(store, this.env, state.runId), state);
     const units = ((await this.ctx.storage.get<number>(UNITS)) ?? 0) + 1;
     await this.ctx.storage.put({ [STATE]: next, [UNITS]: units });

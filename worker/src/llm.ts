@@ -1,6 +1,6 @@
 /** Provider-agnostic JSON-mode LLM client: validated output, exactly one repair retry, then fail loudly. */
-import { LLM_TIMEOUT_MS, llmApiKey, llmBaseUrl, llmJsonMode, llmModel, llmProvider, llmReasoningEffort, type Settings } from "./config";
-import { repairPrompt } from "./prompts";
+import { LLM_TIMEOUT_MS, llmApiKey, llmBaseUrl, llmJsonMode, llmModel, llmProvider, llmReasoningEffort, scrubSecrets, type Settings } from "./config";
+import { repairPrompt, SYSTEM_PREAMBLE } from "./prompts";
 import type { StepEvent } from "./types";
 import { isRecord, sleep } from "./utils";
 
@@ -72,7 +72,8 @@ export class LlmClient {
     const provider = llmProvider(this.settings), model = llmModel(this.settings);
     if (provider === "openai") {
       // the OpenAI wire format, at api.openai.com or any compatible gateway (LLM_BASE_URL)
-      const body: Record<string, unknown> = { model, temperature, messages: [{ role: "user", content: prompt }] };
+      // the rules go in the system role, so the provider keeps them apart from scraped evidence
+      const body: Record<string, unknown> = { model, temperature, messages: [{ role: "system", content: SYSTEM_PREAMBLE }, { role: "user", content: prompt }] };
       if (llmJsonMode(this.settings)) body.response_format = { type: "json_object" };
       if (llmReasoningEffort(this.settings)) body.reasoning_effort = llmReasoningEffort(this.settings);
       const data = await this.post(`${llmBaseUrl(this.settings)}/chat/completions`, { authorization: `Bearer ${key}` }, body);
@@ -84,7 +85,11 @@ export class LlmClient {
       const data = await this.post(
         `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
         { "x-goog-api-key": key },
-        { generationConfig: { temperature, responseMimeType: "application/json" }, contents: [{ role: "user", parts: [{ text: prompt }] }] },
+        {
+          systemInstruction: { parts: [{ text: SYSTEM_PREAMBLE }] },
+          generationConfig: { temperature, responseMimeType: "application/json" },
+          contents: [{ role: "user", parts: [{ text: prompt }] }],
+        },
       );
       const candidates = Array.isArray(data.candidates) ? data.candidates : [];
       const content = isRecord(candidates[0]) && isRecord(candidates[0].content) ? candidates[0].content : {};
@@ -104,17 +109,24 @@ export class LlmClient {
           signal: AbortSignal.timeout(LLM_TIMEOUT_MS),
         });
       } catch (err) {
-        throw new LlmError(`LLM request failed: ${err instanceof Error ? err.message : String(err)}`);
+        const why = err instanceof Error && err.name === "TimeoutError" ? "timed out" : "could not be reached";
+        console.error("llm request failed", scrubSecrets(err instanceof Error ? err.message : String(err), this.settings));
+        throw new LlmError(`The language model provider ${why}.`);
       }
       if (res.status !== 429 || attempt === MAX_RATE_LIMIT_RETRIES) break;
       const header = Number.parseFloat(res.headers.get("retry-after") ?? "");
       const wait = Number.isFinite(header) ? header * 1000 : 5000 * (attempt + 1);
-      const capped = Math.min(Math.max(wait, 1000), MAX_RATE_LIMIT_WAIT_MS);
+      // a little jitter so several runs that hit the limit together do not retry in lockstep
+      const capped = Math.min(Math.max(wait, 1000), MAX_RATE_LIMIT_WAIT_MS) + Math.floor(Math.random() * 500);
       await this.onEvent?.({ type: "stage", stage: "llm", level: "warn", message: `Provider rate limit hit; waiting ${Math.round(capped / 1000)}s before retrying` });
       await this.sleepImpl(capped);
     }
-    if (!res) throw new LlmError("LLM request failed");
-    if (res.status >= 400) throw new LlmError(`LLM provider returned ${res.status}: ${(await res.text()).slice(0, 300)}`);
+    if (!res) throw new LlmError("The language model provider could not be reached.");
+    if (res.status >= 400) {
+      // the body can echo request details (headers, a key prefix): it goes to the operator's log, scrubbed, never to a run
+      console.error("llm provider error", res.status, scrubSecrets((await res.text().catch(() => "")).slice(0, 500), this.settings));
+      throw new LlmError(`LLM provider returned ${res.status}${res.status === 401 || res.status === 403 ? " (check LLM_API_KEY)" : res.status === 429 ? " (rate limited)" : ""}.`);
+    }
     const data: unknown = await res.json().catch(() => null);
     if (!isRecord(data)) throw new LlmError("LLM provider returned a non-JSON body");
     return data;

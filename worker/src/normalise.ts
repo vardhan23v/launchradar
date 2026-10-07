@@ -43,11 +43,18 @@ function g(v: number): string {
   return Number.isInteger(v) ? String(v) : String(Number(v.toPrecision(6)));
 }
 
+/** Only absolute http(s) links are kept: a result's link becomes a clickable href in the browser. */
+function safeLink(url: string): string {
+  return /^https?:\/\/[^\s]+$/i.test(url) ? url.slice(0, 2000) : "";
+}
+
+const clip = (v: string, n: number) => (v.length > n ? v.slice(0, n) : v);
+
 function row(block: string, title: string, url: string, dom: string, snippet: string, position: number,
   date?: string, text?: string, meta?: Record<string, unknown>): Row {
-  const r: Row = { blockType: block, title, url, domain: dom, snippet, position, meta: meta ?? {} };
-  if (date) r.date = date;
-  if (text) r.text = text;
+  const r: Row = { blockType: block, title: clip(title, 500), url: safeLink(url), domain: clip(dom, 253), snippet: clip(snippet, 2000), position, meta: meta ?? {} };
+  if (date) r.date = clip(date, 64);
+  if (text) r.text = clip(text, 2000);
   return r;
 }
 

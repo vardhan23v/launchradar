@@ -131,9 +131,9 @@ export function fakeFetch(record?: { serp: URLSearchParams[]; llm: { url: string
       record?.serp.push(u.searchParams);
       return jsonResponse(serpBody(u.searchParams));
     }
-    const body = JSON.parse(String(init.body)) as { messages: { content: string }[] };
+    const body = JSON.parse(String(init.body)) as { messages: { role: string; content: string }[] };
     record?.llm.push({ url, headers: Object.fromEntries(Object.entries(init.headers as Record<string, string>)), body });
-    return jsonResponse({ choices: [{ message: { content: JSON.stringify(llmAnswer(body.messages[0].content)) } }] });
+    return jsonResponse({ choices: [{ message: { content: JSON.stringify(llmAnswer(body.messages[body.messages.length - 1].content)) } }] });
   };
 }
 

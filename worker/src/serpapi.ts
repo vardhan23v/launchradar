@@ -2,7 +2,7 @@
  * The only module allowed to reach SerpApi. Every search passes through:
  * budget guard → cache lookup → call → normalise → persist → emit step event.
  */
-import { cacheTtlHours, RETRIES_ON_5XX, SEARCH_TIMEOUT_MS, serpapiKey, serpapiMode, type Settings } from "./config";
+import { cacheTtlHours, RETRIES_ON_5XX, scrubSecrets, SEARCH_TIMEOUT_MS, serpapiKey, serpapiMode, type Settings } from "./config";
 import { fmt, hashParams, redact, toRawParams } from "./engines";
 import { normalise } from "./normalise";
 import type { Store } from "./store";
@@ -17,6 +17,9 @@ export type FixtureSource = (hash: string) => Promise<unknown | null>;
 
 export class BudgetExceeded extends Error {}
 
+/** A search that failed for a reason this client describes itself (message already scrubbed). */
+export class SerpApiError extends Error {}
+
 export class SerpApiHttpError extends Error {
   constructor(public readonly status: number, detail: string) {
     super(`SerpApi ${status}: ${detail}`);
@@ -25,9 +28,7 @@ export class SerpApiHttpError extends Error {
 
 /** Secrets never reach logs, the store or the browser — even inside error text. */
 export function scrub(text: string, settings: Settings): string {
-  const key = serpapiKey(settings);
-  if (key) text = text.split(key).join("[redacted]");
-  return text.replace(/api_key=[^&\s"]+/gi, "api_key=[redacted]");
+  return scrubSecrets(text, settings);
 }
 
 function queryOf(params: Params): string {
@@ -66,7 +67,7 @@ export class SerpApiService {
     // the call id is deterministic, so a recorded answer is simply handed back
     const recorded = await this.store.searchCallById(`sc_${runId}_${order}`);
     if (recorded !== null) {
-      if (recorded.status !== "ok") throw new (recorded.status === "skipped" ? BudgetExceeded : Error)(recorded.error ?? "search failed");
+      if (recorded.status !== "ok") throw new (recorded.status === "skipped" ? BudgetExceeded : SerpApiError)(recorded.error ?? "search failed");
       return { call: recorded, evidence: await this.store.evidenceForCall(runId, recorded.id), cached: recorded.cached };
     }
     try {
@@ -126,7 +127,7 @@ export class SerpApiService {
   private async fromFixture(engine: string, params: Params, phash: string, ctx: CallCtx): Promise<SearchResult> {
     const raw = this.fixtures ? await this.fixtures(phash) : null;
     if (raw === null || raw === undefined) {
-      throw new Error(`[replay] missing fixture ${phash} for engine=${engine} params=${JSON.stringify(redact(params))}. Set SERPAPI_MODE=live, or load a demo run.`);
+      throw new SerpApiError(`[replay] missing fixture ${phash} for engine=${engine} params=${JSON.stringify(redact(params))}. Set SERPAPI_MODE=live, or load a demo run.`);
     }
     return this.persistRaw(ctx, engine, params, phash, raw, true, false, nowMs());
   }
@@ -134,7 +135,7 @@ export class SerpApiService {
   /** 20 s timeout · one retry on 5xx, timeout or network failure · never on 4xx. */
   private async callNetwork(engine: string, params: Params): Promise<unknown> {
     const key = serpapiKey(this.settings);
-    if (!key) throw new Error(`SERPAPI_API_KEY is required for SERPAPI_MODE=${serpapiMode(this.settings)}.`);
+    if (!key) throw new SerpApiError(`SERPAPI_API_KEY is required for SERPAPI_MODE=${serpapiMode(this.settings)}.`);
     const query = new URLSearchParams();
     for (const [k, v] of Object.entries(params)) if (v !== null && v !== undefined && k !== "api_key") query.set(k, fmt(v));
     query.set("engine", engine);
@@ -150,7 +151,9 @@ export class SerpApiService {
         if (err instanceof SerpApiHttpError && err.status < 500) break;
       }
     }
-    throw new Error(scrub(last.message, this.settings));
+    const why = last instanceof SerpApiHttpError ? last.message : last.name === "TimeoutError" ? "SerpApi timed out" : "SerpApi could not be reached";
+    if (!(last instanceof SerpApiHttpError)) console.error("serpapi request failed", scrub(last.message, this.settings));
+    throw new SerpApiError(scrub(why, this.settings));
   }
 
   private async persistRaw(ctx: CallCtx, engine: string, params: Params, phash: string, raw: unknown, cached: boolean, billed: boolean, started: number): Promise<SearchResult> {

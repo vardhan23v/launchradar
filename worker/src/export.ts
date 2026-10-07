@@ -4,6 +4,8 @@ import type { RunView } from "./types";
 import { isRecord } from "./utils";
 
 const LISTS = ["searchCalls", "evidence", "signals", "clusters", "competitors", "gaps", "opportunities"] as const;
+/** A real run has a few hundred records; the cap keeps one request from building a huge document. */
+const MAX_RECORDS = 2000;
 
 /**
  * The browser sends the run it holds back for export, so the shape is checked before anything is
@@ -16,14 +18,19 @@ export function asRunView(value: unknown): RunView {
     || typeof run.createdAt !== "number" || typeof run.searchesUsed !== "number" || typeof run.budget !== "number") {
     throw new Error("not a run view");
   }
+  if (!(run.finishedAt === null || run.finishedAt === undefined || typeof run.finishedAt === "number")) throw new Error("not a run view");
+  let total = 0;
   for (const key of LISTS) {
     const list = value[key] ?? [];
     if (!Array.isArray(list) || !list.every(isRecord)) throw new Error(`${key} must be a list`);
+    total += list.length;
   }
+  if (total > MAX_RECORDS) throw new Error("too many records");
   return value as unknown as RunView;
 }
 
-const s = (v: unknown): string => (typeof v === "string" ? v : v === null || v === undefined ? "" : String(v));
+const s = (v: unknown): string =>
+  (typeof v === "string" ? v : v === null || v === undefined ? "" : String(v)).replace(/[\r\n\u2028\u2029]+/g, " ");
 const list = (v: unknown): unknown[] => (Array.isArray(v) ? v : []);
 const recs = (v: unknown): Record<string, unknown>[] => list(v).filter(isRecord);
 
@@ -32,8 +39,8 @@ export function exportMarkdown(view: RunView): string {
   const evidence = recs(view.evidence);
   const day = new Date(run.finishedAt ?? run.createdAt).toISOString().slice(0, 10);
   const out: string[] = [
-    `# LaunchRadar — ${run.question}`, "",
-    `- Region: ${regionName(run.region)}`, `- Run: ${run.id} · ${day}`,
+    `# LaunchRadar — ${s(run.question)}`, "",
+    `- Region: ${regionName(run.region)}`, `- Run: ${s(run.id)} · ${day}`,
     `- Searches used: ${run.searchesUsed} / budget ${run.budget}`,
     `- Evidence: ${evidence.length} rows, ${new Set(evidence.map((e) => s(e.domain)).filter(Boolean)).size} domains, ${new Set(evidence.map((e) => s(e.blockType))).size} source types`, "",
     "## Opportunities (ranked)", "",

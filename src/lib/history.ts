@@ -22,12 +22,33 @@ function read<T>(k: string): T | null {
   }
 }
 
+const isObj = (v: unknown): v is Record<string, unknown> => typeof v === "object" && v !== null && !Array.isArray(v);
+
+function isRun(v: unknown): v is Run {
+  return isObj(v) && typeof v.id === "string" && typeof v.status === "string" && typeof v.question === "string" && typeof v.createdAt === "number";
+}
+
+/** Storage is shared by every script on this origin and can hold anything: check the shape before use. */
+function isSavedRun(v: unknown): v is SavedRun {
+  if (!isObj(v) || !isObj(v.view) || !Array.isArray(v.events) || !isRun(v.view.run)) return false;
+  return ["evidence", "signals", "clusters", "competitors", "gaps", "opportunities"].every((k) => Array.isArray((v.view as Record<string, unknown>)[k]));
+}
+
 export function listSavedRuns(): Run[] {
-  return read<Run[]>(INDEX) ?? [];
+  const list = read<unknown>(INDEX);
+  return Array.isArray(list) ? list.filter(isRun) : [];
 }
 
 export function loadSavedRun(id: string): SavedRun | null {
-  return read<SavedRun>(key(id));
+  const saved = read<unknown>(key(id));
+  if (saved === null) return null;
+  if (isSavedRun(saved) && saved.view.run.id === id) return saved;
+  try {
+    window.localStorage.removeItem(key(id)); // corrupt or foreign: forget it rather than render it
+  } catch {
+    // storage blocked
+  }
+  return null;
 }
 
 export function saveRun(view: RunView, events: StepEvent[]): void {

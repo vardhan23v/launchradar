@@ -10,10 +10,10 @@
  */
 import * as config from "./config";
 import { verifyQuote } from "./citations";
-import { LlmClient } from "./llm";
+import { LlmClient, LlmError } from "./llm";
 import * as prompts from "./prompts";
 import { computeScore } from "./score";
-import { SerpApiService } from "./serpapi";
+import { BudgetExceeded, SerpApiError, SerpApiService } from "./serpapi";
 import type { Store } from "./store";
 import type { Cluster, Competitor, Complaint, Evidence, FoundProduct, Gap, Opportunity, Params, Signal, StepEvent } from "./types";
 import { isRecord, keepKnownCitations, keyTerms, need, normaliseQuery, nowMs, num, parseSerpDate, str, strList, uniq } from "./utils";
@@ -93,6 +93,7 @@ export interface Ctx {
   store: Store;
   serp: SerpApiService;
   llm: LlmClient;
+  settings: config.Settings;
 }
 
 export function makeCtx(store: Store, settings: config.Settings, runId: string, serp?: SerpApiService, llm?: LlmClient): Ctx {
@@ -101,10 +102,30 @@ export function makeCtx(store: Store, settings: config.Settings, runId: string, 
   const l = llm ?? new LlmClient(settings);
   s.onEvent = s.onEvent ?? emit;
   l.onEvent = l.onEvent ?? emit;
-  return { store, serp: s, llm: l };
+  return { store, serp: s, llm: l, settings };
 }
 
 // ---- small helpers ---------------------------------------------------------
+
+/** A failure the pipeline describes itself, in words safe to show every visitor. */
+export class PipelineError extends Error {}
+
+/**
+ * Text for the public research log. Run records are readable by anyone, so only messages this
+ * code wrote itself are shown (scrubbed of keys once more); anything else, such as a runtime or
+ * database error, is replaced by a fixed sentence and its details go to the operator's log.
+ */
+export function publicMessage(err: unknown, settings: config.Settings, max = 300): string {
+  const known = err instanceof PipelineError || err instanceof LlmError || err instanceof BudgetExceeded || err instanceof SerpApiError;
+  if (known) return config.scrubSecrets(err.message, settings).slice(0, max);
+  console.error("pipeline error", config.scrubSecrets(err instanceof Error ? `${err.name}: ${err.message}` : String(err), settings));
+  return "An internal error interrupted this step.";
+}
+
+/** Model-written text is stored and shown to everyone: bound it. */
+const cap = (v: string, n: number) => (v.length > n ? `${v.slice(0, n - 1)}…` : v);
+const MIN_QUOTE = 12; // a quote has to say something: "the app" matches almost any row
+const MAX_QUOTE = 400;
 
 /** 'Quora question: best X' → 'best X quora'; typographic dashes/quotes → plain ASCII. */
 export function cleanQuery(input: string): string {
@@ -135,8 +156,13 @@ function paramsFor(engine: string, q: string): Params {
   return { q };
 }
 
+/** Scraped text may not open or close the evidence block, or fake another row's id. */
+function neutral(t: string): string {
+  return t.replace(/<\/?\s*evidence\s*>/gi, "[evidence]").replace(/\[(E\d+[a-z]?)\]/g, "($1)").replace(/[\r\n]+/g, " ");
+}
+
 function row(e: Evidence): string {
-  const text = [e.title, e.snippet].filter(Boolean).join(" — ");
+  const text = neutral([e.title, e.snippet].filter(Boolean).join(" — "));
   const date = e.date ? ` · ${e.date.slice(0, 10)}` : "";
   return `[${e.id}] (${e.blockType} · ${e.domain || "n/a"}${date}) ${text}`;
 }
@@ -190,6 +216,10 @@ function segmentOf(cluster: Cluster | undefined, signals: Signal[]): string {
 class Pipeline {
   constructor(private readonly ctx: Ctx, private readonly s: PipelineState) {}
 
+  why(err: unknown, max: number): string {
+    return publicMessage(err, this.ctx.settings, max);
+  }
+
   stage(stage: string, message: string, level: "info" | "ok" | "warn" | "error" = "info"): Promise<void> {
     return this.ctx.store.appendEvents(this.s.runId, [{ type: "stage", stage, message, level }]);
   }
@@ -202,7 +232,7 @@ class Pipeline {
     try {
       return (await this.ctx.serp.search(engine, params, this.s.runId, stage, this.s.order, this.s.region)).evidence;
     } catch (err) { // the client already recorded the failed/skipped call
-      await this.stage(stage, String(err instanceof Error ? err.message : err).slice(0, 200), "warn");
+      await this.stage(stage, this.why(err, 200), "warn");
       return [];
     }
   }
@@ -264,7 +294,7 @@ class Pipeline {
         return out;
       });
     } catch (err) {
-      await this.stage("planner", `Planner failed, using template queries: ${String(err instanceof Error ? err.message : err).slice(0, 120)}`, "warn");
+      await this.stage("planner", `Planner failed, using template queries: ${this.why(err, 120)}`, "warn");
     }
 
     const seen = new Set<string>();
@@ -311,9 +341,9 @@ class Pipeline {
       const calls = await this.ctx.store.searchCallsFor(this.s.runId);
       const skipped = calls.filter((c) => c.status === "skipped");
       if (skipped.length && skipped.length >= Math.floor(calls.length / 2)) {
-        throw new Error((await this.ctx.store.quotaBlock()) ?? skipped[0].error ?? "Searches were skipped by a budget guard.");
+        throw new PipelineError((await this.ctx.store.quotaBlock()) ?? "Searches were skipped by a budget guard.");
       }
-      throw new Error(`Discovery yielded only ${discovered.length} evidence rows (< ${config.MIN_DISCOVERY_EVIDENCE}). Try a broader question.`);
+      throw new PipelineError(`Discovery yielded only ${discovered.length} evidence rows (< ${config.MIN_DISCOVERY_EVIDENCE}). Try a broader question.`);
     }
     const rows = selectForExtraction(discovered);
     this.s.batches = [];
@@ -347,26 +377,27 @@ class Pipeline {
           return good;
         });
     } catch (err) {
-      await this.stage("signals", `Batch skipped: ${String(err instanceof Error ? err.message : err).slice(0, 140)}`, "warn");
+      await this.stage("signals", `Batch skipped: ${this.why(err, 140)}`, "warn");
     }
     const seen = new Set(this.s.signals.map((x) => normaliseQuery(x.statement)));
     for (const sig of raw) {
       const ids = strList(sig.evidenceIds);
-      // the validator is the gate: unknown id or non-verbatim quote → dropped and counted
-      if (!verifyQuote(ids, sig.quote, batch)[0]) {
+      const quote = str(sig.quote);
+      // the validator is the gate: unknown id, non-verbatim or trivially short quote → dropped and counted
+      if (quote.length < MIN_QUOTE || quote.length > MAX_QUOTE || !verifyQuote(ids, quote, batch)[0]) {
         this.s.rejected += 1;
         continue;
       }
-      const statement = str(sig.statement);
+      const statement = cap(str(sig.statement), 400);
       const key = normaliseQuery(statement);
       if (seen.has(key)) continue;
       seen.add(key);
       const signal: Signal = {
         id: `S${this.s.signals.length + 1}`, // assigned after validation: dense and unique
-        runId: this.s.runId, type: sig.type as string, statement, intensity: sig.intensity as number, evidenceIds: ids, quote: sig.quote as string,
+        runId: this.s.runId, type: sig.type as string, statement, intensity: sig.intensity as number, evidenceIds: ids.slice(0, 4), quote,
         domains: uniq(ids.map((i) => byId.get(i)?.domain ?? "").filter(Boolean)),
       };
-      if (str(sig.who)) signal.who = str(sig.who);
+      if (str(sig.who)) signal.who = cap(str(sig.who), 120);
       this.s.signals.push(signal);
     }
     this.s.i += 1;
@@ -375,7 +406,7 @@ class Pipeline {
     const run = await this.ctx.store.getRun(this.s.runId);
     await this.ctx.store.updateRun(this.s.runId, { rejectedSignals: (run?.rejectedSignals ?? 0) + this.s.rejected });
     await this.stage("signals", `${this.s.signals.length} signals kept, ${this.s.rejected} rejected by the citation validator`, "ok");
-    if (!this.s.signals.length) throw new Error("No signal survived the citation validator. Try a broader question.");
+    if (!this.s.signals.length) throw new PipelineError("No signal survived the citation validator. Try a broader question.");
     await this.ctx.store.addSignals(this.s.runId, this.s.signals);
     this.next("cluster");
   }
@@ -402,11 +433,12 @@ class Pipeline {
       for (const i of ids) taken.add(i);
       const domains = new Set(ids.flatMap((i) => byId.get(i)?.domains ?? []));
       clusters.push({
-        id: `C${clusters.length + 1}`, runId: this.s.runId, name: str(c.name), jobToBeDone: str(c.jobToBeDone),
-        searchKeyword: str(c.searchKeyword).replace(/,/g, " ").slice(0, 80), signalIds: ids, weak: ids.length < 2 || domains.size < 2,
+        id: `C${clusters.length + 1}`, runId: this.s.runId, name: cap(str(c.name), 160), jobToBeDone: cap(str(c.jobToBeDone), 400),
+        // the keyword is sent to Google Trends with the operator's key: same cleaning as planner queries
+        searchKeyword: cleanQuery(str(c.searchKeyword).replace(/,/g, " ")).slice(0, 80) || cap(str(c.name), 80), signalIds: ids, weak: ids.length < 2 || domains.size < 2,
       });
     }
-    if (!clusters.length) throw new Error("Clustering produced no usable cluster.");
+    if (!clusters.length) throw new PipelineError("Clustering produced no usable cluster.");
     await this.stage("cluster", `${clusters.length} clusters (${clusters.filter((c) => c.weak).length} weak)`, "ok");
     this.s.clusters = clusters;
     await this.ctx.store.setClusters(this.s.runId, clusters);
@@ -483,7 +515,7 @@ class Pipeline {
         return comps.filter((c): c is Record<string, unknown> => isRecord(c) && Boolean(str(c.name)));
       });
     } catch (err) {
-      await this.stage("competitors", `Skipped "${cluster.name}": ${String(err instanceof Error ? err.message : err).slice(0, 120)}`, "warn");
+      await this.stage("competitors", `Skipped "${cluster.name}": ${this.why(err, 120)}`, "warn");
       return;
     }
 
@@ -491,32 +523,44 @@ class Pipeline {
     for (const c of raw) {
       // a competitor must originate from an evidence row, never from LLM memory:
       // its name has to literally appear in one of the rows it cites
-      const name = str(c.name);
+      const name = cap(str(c.name), 120);
       const needle = name.toLowerCase();
       const cited = strList(c.evidenceIds).filter((i) => evById.has(i));
-      if (!cited.some((i) => {
+      if (needle.length < 2 || !cited.some((i) => {
         const e = evById.get(i) as Evidence;
         return `${e.title} ${e.snippet} ${e.url}`.toLowerCase().includes(needle);
       })) continue;
       const complaints: Complaint[] = [];
+      const quoted = new Set<string>();
       for (const x of Array.isArray(c.complaints) ? c.complaints : []) {
-        if (isRecord(x) && str(x.text) && typeof x.evidenceId === "string" && typeof x.quote === "string"
-          && verifyQuote([x.evidenceId], x.quote, ev)[0]) {
-          complaints.push({ text: str(x.text), evidenceId: x.evidenceId, quote: x.quote });
-        }
+        if (!isRecord(x) || !str(x.text) || typeof x.evidenceId !== "string") continue;
+        const quote = str(x.quote);
+        // one verbatim quote is one complaint, even when the model repeats it
+        if (quote.length < MIN_QUOTE || quote.length > MAX_QUOTE || quoted.has(normaliseQuery(quote)) || !verifyQuote([x.evidenceId], quote, ev)[0]) continue;
+        quoted.add(normaliseQuery(quote));
+        complaints.push({ text: cap(str(x.text), 300), evidenceId: x.evidenceId, quote });
       }
       let rating = num(c.rating), reviews = num(c.reviewCount);
       rating = rating !== null && rating >= 0 && rating <= 5 ? rating : null;
       reviews = reviews !== null && reviews >= 0 ? Math.round(reviews) : null;
-      const url = typeof c.url === "string" && /^https?:\/\//.test(c.url) ? c.url : null;
-      const pricing = str(c.pricing) || null;
+      // the link must be one of the pages the competitor was found on, never a model-made address
+      const host = (u: string) => {
+        try {
+          return /^https?:\/\//i.test(u) ? new URL(u).hostname.replace(/^www\./, "") : "";
+        } catch {
+          return "";
+        }
+      };
+      const citedHosts = new Set(cited.map((i) => host((evById.get(i) as Evidence).url)).filter(Boolean));
+      const url = typeof c.url === "string" && host(c.url) && citedHosts.has(host(c.url)) ? c.url.slice(0, 500) : null;
+      const pricing = cap(str(c.pricing), 120) || null;
       const category = typeof c.category === "string" && CATEGORIES.has(c.category) ? c.category : "adjacent";
 
       const existing = this.s.competitors.find((x) => x.name.toLowerCase() === needle);
       if (existing) {
         existing.evidenceIds = uniq([...existing.evidenceIds, ...cited]);
         existing.clusterIds = uniq([...existing.clusterIds, cluster.id]);
-        existing.coveredNeeds = uniq([...existing.coveredNeeds, ...strList(c.coveredNeeds)]);
+        existing.coveredNeeds = uniq([...existing.coveredNeeds, ...strList(c.coveredNeeds).map((n) => cap(n, 200))]).slice(0, 12);
         // the same page resurfaces under other searches with a new evidence id;
         // one verbatim quote is one complaint, however often it is found
         const known = new Set(existing.complaints.map((y) => normaliseQuery(y.quote)));
@@ -528,7 +572,7 @@ class Pipeline {
       }
       this.s.competitors.push({
         id: `CO${this.s.competitors.length + 1}`, runId: this.s.runId, name, url, category, pricing, rating, reviewCount: reviews,
-        coveredNeeds: strList(c.coveredNeeds), complaints, evidenceIds: cited, clusterIds: [cluster.id],
+        coveredNeeds: uniq(strList(c.coveredNeeds).map((n) => cap(n, 200))).slice(0, 12), complaints, evidenceIds: cited, clusterIds: [cluster.id],
       });
     }
   }
@@ -541,7 +585,7 @@ class Pipeline {
       gaps = await this.gapHypothesis();
     } catch (err) {
       // the problems and competitors found so far are still worth showing
-      await this.stage("gaps", `Gap analysis skipped: ${String(err instanceof Error ? err.message : err).slice(0, 160)}`, "warn");
+      await this.stage("gaps", `Gap analysis skipped: ${this.why(err, 160)}`, "warn");
     }
     this.s.gaps = gaps;
     await this.ctx.store.setGaps(this.s.runId, gaps);
@@ -575,10 +619,11 @@ class Pipeline {
     const gaps: Gap[] = [];
     for (const g of raw) {
       const clusterId = str(g.clusterId).replace(/^\[+|\]+$/g, "");
-      const kill = strList(g.killQueries).map((q) => q.trim()).filter(Boolean).slice(0, 3);
+      // kill queries are searched with the operator's key: cleaned and bounded like planner queries
+      const kill = uniq(strList(g.killQueries).map((q) => cleanQuery(q)).filter(Boolean)).slice(0, 3);
       if (!clusterIds.has(clusterId) || !kill.length) continue;
       gaps.push({
-        id: `G${gaps.length + 1}`, runId: this.s.runId, clusterId, unmetNeed: str(g.unmetNeed), whyExistingFail: str(g.whyExistingFail), status: "open",
+        id: `G${gaps.length + 1}`, runId: this.s.runId, clusterId, unmetNeed: cap(str(g.unmetNeed), 400), whyExistingFail: cap(str(g.whyExistingFail), 800), status: "open",
         killQueries: kill, foundProducts: [], remainingWedge: null, evidenceIds: strList(g.evidenceIds).filter((i) => known.has(i)),
       });
       if (gaps.length === 5) break;
@@ -634,14 +679,18 @@ class Pipeline {
       const products = Array.isArray(raw.foundProducts) ? raw.foundProducts : [];
       gap.foundProducts = products
         .filter((p): p is Record<string, unknown> => isRecord(p) && Boolean(str(p.name)) && typeof p.evidenceId === "string" && ids.has(p.evidenceId))
-        .map((p): FoundProduct => ({ name: str(p.name), evidenceId: p.evidenceId as string, match: str(p.match) || "found by kill query" }));
-      // "served" needs at least one product that resolves to kill-query evidence
-      gap.status = raw.status === "served" && !gap.foundProducts.length ? "partially-served" : raw.status;
-      gap.remainingWedge = str(raw.remainingWedge) || null;
+        .map((p): FoundProduct => ({ name: cap(str(p.name), 120), evidenceId: p.evidenceId as string, match: cap(str(p.match), 300) || "found by kill query" }))
+        .slice(0, 8);
+      // "served" needs at least one product that resolves to kill-query evidence, and a gap with such
+      // a product is never "open"
+      if (raw.status === "served") gap.status = gap.foundProducts.length ? "served" : "partially-served";
+      else if (raw.status === "open") gap.status = gap.foundProducts.length ? "partially-served" : "open";
+      else gap.status = raw.status;
+      gap.remainingWedge = cap(str(raw.remainingWedge), 400) || null;
     } catch (err) {
       gap.status = "partially-served";
       gap.remainingWedge = "Not verified — the verifier failed.";
-      await this.stage("verify", `Gap ${gap.id}: ${String(err instanceof Error ? err.message : err).slice(0, 140)}`, "warn");
+      await this.stage("verify", `Gap ${gap.id}: ${this.why(err, 140)}`, "warn");
     }
   }
 
@@ -707,19 +756,19 @@ class Pipeline {
         return v as Record<string, unknown>;
       });
     } catch (err) {
-      await this.stage("opportunity", `Card copy fell back to evidence summary: ${String(err instanceof Error ? err.message : err).slice(0, 120)}`, "warn");
+      await this.stage("opportunity", `Card copy fell back to evidence summary: ${this.why(err, 120)}`, "warn");
     }
 
     const existingFallback = relevant.map((c) => `${c.name}${cite(c.evidenceIds)}`).join(", ") || "No competitor surfaced in the evidence.";
     this.s.opportunities.push({
       id: "O0", runId: this.s.runId, gapId: gap.id, clusterId: cluster.id,
-      title: str(copy.title) || cluster.name, target: str(copy.target) || target,
-      problem: keepKnownCitations(str(copy.problem) || sigs.map((s) => `${s.statement}${cite(s.evidenceIds)}`).join(" "), known),
-      existingSolutions: keepKnownCitations(str(copy.existingSolutions) || existingFallback, known),
-      gap: keepKnownCitations(str(copy.gap) || `${gap.unmetNeed}${cite(gap.evidenceIds)}`, known),
-      pitch: str(copy.pitch) || "Validate this gap with target users before building.",
-      mvpScope: strList(copy.mvpScope),
-      firstValidationStep: str(copy.firstValidationStep) || "Interview five people from the target segment this week.",
+      title: cap(str(copy.title), 120) || cluster.name, target: cap(str(copy.target), 160) || target,
+      problem: cap(keepKnownCitations(str(copy.problem) || sigs.map((s) => `${s.statement}${cite(s.evidenceIds)}`).join(" "), known), 1500),
+      existingSolutions: cap(keepKnownCitations(str(copy.existingSolutions) || existingFallback, known), 1500),
+      gap: cap(keepKnownCitations(str(copy.gap) || `${gap.unmetNeed}${cite(gap.evidenceIds)}`, known), 1500),
+      pitch: cap(keepKnownCitations(str(copy.pitch), known), 400) || "Validate this gap with target users before building.",
+      mvpScope: strList(copy.mvpScope).map((m) => cap(keepKnownCitations(m.trim(), known), 300)).filter(Boolean).slice(0, 5),
+      firstValidationStep: cap(keepKnownCitations(str(copy.firstValidationStep), known), 400) || "Interview five people from the target segment this week.",
       score: scored.total, subScores: scored.subScores, confidence: scored.confidence, skeptic: [],
     });
     this.s.citedByGap[gap.id] = rowIds;
@@ -751,26 +800,33 @@ class Pipeline {
         return objections.filter((x): x is Record<string, unknown> => isRecord(x) && Boolean(str(x.objection) && str(x.basis) && str(x.wouldChangeMind)));
       });
       o.skeptic = raw.slice(0, 3).map((x) => ({
-        objection: str(x.objection), basis: str(x.basis), wouldChangeMind: str(x.wouldChangeMind), evidenceIds: strList(x.evidenceIds).filter((i) => known.has(i)),
+        objection: cap(str(x.objection), 400), basis: cap(keepKnownCitations(str(x.basis), known), 600), wouldChangeMind: cap(str(x.wouldChangeMind), 400),
+        evidenceIds: uniq(strList(x.evidenceIds).filter((i) => known.has(i))).slice(0, 6),
       }));
     } catch (err) {
-      await this.stage("skeptic", `Skipped: ${String(err instanceof Error ? err.message : err).slice(0, 120)}`, "warn");
+      await this.stage("skeptic", `Skipped: ${this.why(err, 120)}`, "warn");
     }
   }
 
   // ---- terminal ------------------------------------------------------------
 
   async finish(): Promise<void> {
+    // the log line first, so a viewer that sees the run turn complete has it; a run already closed
+    // (as interrupted) keeps that ending
     await this.stage("done", `Run complete in ${((nowMs() - this.s.startedAt) / 1000).toFixed(1)}s`, "ok");
-    await this.ctx.store.updateRun(this.s.runId, { status: "complete", finishedAt: nowMs() });
-    await this.terminal("complete");
+    if (await this.ctx.store.finishIfRunning(this.s.runId, { status: "complete", finishedAt: nowMs() })) await this.terminal("complete");
+    this.s.status = "complete";
+    this.next("done");
   }
 
   async fail(err: unknown): Promise<void> {
-    const message = err instanceof Error ? err.message : String(err);
-    await this.ctx.store.updateRun(this.s.runId, { status: "failed", error: message, finishedAt: nowMs() });
-    await this.stage("error", message.slice(0, 300), "error");
-    await this.terminal("failed");
+    const message = this.why(err, 300);
+    if (await this.ctx.store.finishIfRunning(this.s.runId, { status: "failed", error: message, finishedAt: nowMs() })) {
+      await this.stage("error", message, "error");
+      await this.terminal("failed");
+    }
+    this.s.status = "failed";
+    this.next("done");
   }
 
   private async terminal(status: "complete" | "failed"): Promise<void> {

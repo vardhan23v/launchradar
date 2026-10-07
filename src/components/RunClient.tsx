@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Cluster, Evidence, Gap, Opportunity, RunView, Signal, StepEvent } from "@/lib/types";
-import { citeGroups } from "@/lib/evidence";
+import { citeGroups, safeUrl } from "@/lib/evidence";
 import { loadSavedRun, saveFinishedRun } from "@/lib/history";
 import { ensureLiveRun, setRunPathPrefix, subscribeLive } from "@/lib/live";
 import { GapText, Lines, Note, ScoreTable, StatusText, Tabs, Wordmark, confidenceWord, engineLabel } from "@/components/ui";
@@ -402,8 +402,8 @@ function Sources({ ids, quote, evidence, onClose }: { ids: string[]; quote?: str
               </div>
               <p className="mt-2 font-serif text-lg leading-snug">{e.title || "Untitled result"}</p>
               <p className="mt-2 text-sm leading-relaxed text-muted"><Highlighted text={e.snippet || e.text || ""} quote={quote} /></p>
-              {e.url && (
-                <a href={e.url} target="_blank" rel="noreferrer" className="mt-3 inline-block break-all text-sm text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
+              {safeUrl(e.url) && (
+                <a href={safeUrl(e.url)} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block break-all text-sm text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
                   {e.domain || "Open the page"}
                 </a>
               )}

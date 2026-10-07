@@ -1,4 +1,4 @@
-import { createExecutionContext, env, waitOnExecutionContext } from "cloudflare:test";
+import { env } from "cloudflare:test";
 import { describe, expect, it } from "vitest";
 
 import { startDemoRun } from "../src/demo";
@@ -6,6 +6,7 @@ import type { Env } from "../src/env";
 import { hashParams, toRawParams } from "../src/engines";
 import worker from "../src/index";
 import { BudgetExceeded, SerpApiService } from "../src/serpapi";
+import { Store } from "../src/store";
 import { encodeEvent, followRunEvents, PING } from "../src/stream";
 import { nowMs } from "../src/utils";
 import { freshStore, jsonResponse, LIVE, makeRun, REPLAY } from "./fakes";
@@ -21,10 +22,7 @@ const answering = (handler: (url: URL) => Response | Promise<Response>, calls: U
 
 /** Calls the Worker with the test bindings, optionally overridden (e.g. an unconfigured pipeline). */
 async function api(path: string, init: RequestInit = {}, over: Partial<Env> = {}): Promise<Response> {
-  const ctx = createExecutionContext();
-  const res = await worker.fetch(new Request(`https://api.test${path}`, init), { ...env, ...over } as Env, ctx);
-  await waitOnExecutionContext(ctx);
-  return res;
+  return worker.fetch(new Request(`https://api.test${path}`, init), { ...env, ...over } as Env);
 }
 
 const postJson = (path: string, body: unknown, over: Partial<Env> = {}) =>
@@ -116,7 +114,7 @@ describe("serpapi service", () => {
 
 async function collect(store: Awaited<ReturnType<typeof freshStore>>, runId: string, fromIndex = 0, stopAfter: number | null = null) {
   const seen: [number, string][] = [];
-  for await (const item of followRunEvents(store, runId, fromIndex, env, { isCancelled: () => stopAfter !== null && seen.length >= stopAfter, windowMs: 200, pollMs: 10 })) {
+  for await (const item of followRunEvents(store, runId, fromIndex, env, { isCancelled: () => stopAfter !== null && seen.length >= stopAfter, windowMs: 10_000, pollMs: 10 })) {
     if (item !== PING) seen.push([item[0], item[1].type]);
   }
   return seen;
@@ -139,6 +137,19 @@ describe("stream", () => {
     expect(seen.map(([i]) => i)).toEqual(seen.map((_, i) => i));
     expect(seen.at(-1)?.[1]).toBe("done");
     expect(await collect(store, runId, seen.length - 2)).toEqual(seen.slice(-2));
+  });
+
+  it("hands a slow paced replay over to the reconnect instead of holding one request", async () => {
+    const store = await freshStore(LIVE);
+    const runId = await startDemoRun(store, "ai-tools-college-india");
+    const first: number[] = [];
+    for await (const item of followRunEvents(store, runId, 0, env, { windowMs: 1 })) if (item !== PING) first.push(item[0]);
+    expect(first.length).toBeGreaterThan(0);
+    expect(first.length).toBeLessThan(26);
+    expect((await store.getRun(runId))?.status).toBe("running"); // not completed by a cut-off viewer
+    const rest = await collect(store, runId, first[first.length - 1] + 1);
+    expect(rest.at(-1)?.[1]).toBe("done");
+    expect(rest[0][0]).toBe(first[first.length - 1] + 1);
   });
 
   it("sends heartbeats while a live run is silent and hands over after its window", async () => {
@@ -171,19 +182,27 @@ describe("api routes", () => {
     expect((await postJson("/api/runs", { demo: "../../package" })).status).toBe(404);
     expect((await postJson("/api/runs", { demo: "constructor" })).status).toBe(404);
     expect((await postJson("/api/runs", {})).status).toBe(400);
-    expect((await api("/api/runs", { method: "POST", body: "{bad" })).status).toBe(400);
+    expect((await api("/api/runs", { method: "POST", body: "{bad" })).status).toBe(415); // not declared as JSON
+    expect((await api("/api/runs", { method: "POST", headers: { "content-type": "text/plain" }, body: '{"demo":"ai-tools-college-india"}' })).status).toBe(415);
+    expect((await api("/api/runs", { method: "POST", headers: { "content-type": "application/json" }, body: "{bad" })).status).toBe(400);
     expect((await postJson("/api/runs", { question: "x".repeat(301) })).status).toBe(400);
     expect((await postJson("/api/runs", { question: "x".repeat(20_000) })).status).toBe(413);
     expect((await api("/api/runs/live", { method: "POST", body: "{}" })).status).toBe(410);
     expect((await api("/api/health", { method: "DELETE" })).status).toBe(405);
+    expect((await api("/api/runs/x", { method: "HEAD" })).status).toBe(405);
+    expect((await api("/api/export", { method: "GET" })).status).toBe(405);
     expect((await api("/nope")).status).toBe(404);
 
-    const failed = await (await postJson("/api/runs", { question: "meal kits", region: "us" }, UNCONFIGURED)).json() as { id: string; mode: string };
-    expect(failed.mode).toBe("failed");
-    const failedView = await (await api(`/api/runs/${failed.id}`)).json() as { run: { error: string } };
-    expect(failedView.run.error).toContain("LLM_PROVIDER");
+    // an unconfigured server refuses before creating anything
+    const refused = await postJson("/api/runs", { question: "meal kits", region: "us" }, UNCONFIGURED);
+    expect(refused.status).toBe(503);
+    expect(((await refused.json()) as { error: string }).error).toContain("LLM_PROVIDER");
+    expect(((await (await api("/api/runs")).json()) as { runs: unknown[] }).runs).toEqual([]);
 
     const demo = await (await postJson("/api/runs", { demo: "ai-tools-college-india" })).json() as { id: string };
+    // a resume id that is not a small index starts from the top instead of being trusted
+    const huge = await (await api(`/api/runs/${demo.id}/stream`, { headers: { "last-event-id": "99999999999999999999" } })).text();
+    expect(huge).toContain("id: 0\n");
     const stream = await api(`/api/runs/${demo.id}/stream`);
     expect(stream.headers.get("content-type")).toContain("text/event-stream");
     expect(stream.headers.get("cache-control")).toBe("no-cache, no-transform"); // the stream keeps its own
@@ -205,6 +224,11 @@ describe("api routes", () => {
     expect(await exported.text()).toContain("## Opportunities (ranked)");
     expect((await postJson("/api/export", { nope: 1 })).status).toBe(400);
     expect((await postJson("/api/export", { run: { id: "x", question: "q", region: "in", createdAt: 1, searchesUsed: 0, budget: 1 }, evidence: "no" })).status).toBe(400);
+    const run = { id: "x", question: "q\n# injected heading", region: "in", createdAt: 1, finishedAt: null, searchesUsed: 0, budget: 1 };
+    expect((await postJson("/api/export", { run, opportunities: Array.from({ length: 2001 }, () => ({})) })).status).toBe(400);
+    const oneLine = await (await postJson("/api/export", { run, evidence: [{ id: "E1", title: "a\nb", url: "https://x.test", snippet: "s" }] })).text();
+    expect(oneLine).toContain("# LaunchRadar — q # injected heading");
+    expect(oneLine).not.toMatch(/^# injected/m);
   });
 
   it("refuses up front when the hourly quota is used and never caches answers", async () => {
@@ -230,5 +254,69 @@ describe("api routes", () => {
     expect((await api("/api/health")).headers.get("cache-control")).toBe("no-store");
     // the recorded example costs nothing, so it still works
     expect((await postJson("/api/runs", { demo: "ai-tools-college-india" }, over)).status).toBe(201);
+  });
+});
+
+describe("spend and shared-state guards", () => {
+  it("lets only one live run in at a time, ignoring runs left behind", async () => {
+    const store = await freshStore(LIVE);
+    const now = 10_000_000_000;
+    expect(await store.createRunIfCapacity(makeRun({ id: "a", createdAt: now }), 1, now)).toBe(true);
+    expect(await store.createRunIfCapacity(makeRun({ id: "b", createdAt: now }), 1, now)).toBe(false);
+    expect(await store.getRun("b")).toBeNull();
+    // a run that has shown nothing for 40 minutes no longer holds the slot
+    expect(await store.createRunIfCapacity(makeRun({ id: "c", createdAt: now + 41 * 60_000 }), 1, now + 41 * 60_000)).toBe(true);
+    // two simultaneous attempts: exactly one gets in
+    const results = await Promise.all(["d", "e"].map((id) => store.createRunIfCapacity(makeRun({ id, createdAt: now + 42 * 60_000 }), 2, now + 42 * 60_000)));
+    expect(results.filter(Boolean)).toHaveLength(1);
+  });
+
+  it("reserves a whole run's searches before starting one", async () => {
+    const settings = { ...LIVE, MONTHLY_SEARCH_BUDGET: "30", HOURLY_SEARCH_GUARD: "40" };
+    const store = await freshStore(settings);
+    const now = nowMs();
+    const billed = (n: number, at: number) => Promise.all(Array.from({ length: n }, (_, i) => store.addSearchCall({
+      id: `sc_x_${at}_${i}`, runId: "x", stage: "d", engine: "google", params: {}, paramsHash: "h", cached: false, status: "ok", latencyMs: 0, resultCount: 0, createdAt: at, billed: true,
+    }, null)));
+    expect(await store.runStartBlock(now)).toBeNull();
+    await billed(10, now - 30 * 60_000);
+    expect(await store.runStartBlock(now)).toContain("cannot cover another run"); // 10 + 25 > 30
+    const roomy = await freshStore({ ...LIVE, HOURLY_SEARCH_GUARD: "40" });
+    await billed(20, now - 50 * 60_000);
+    expect(await roomy.runStartBlock(now)).toContain("about 10 minutes"); // 20 + 25 > 40 until 5 expire
+    expect(await new Store(env.DB, { ...LIVE, MONTHLY_SEARCH_BUDGET: "0" }).runStartBlock(now)).toContain("used up"); // 0 stops spending
+  });
+
+  it("writes a bounded number of copies of the example and keeps every copy working", async () => {
+    const store = await freshStore(LIVE);
+    const over: Partial<Env> = { DEMO_RUNS_PER_HOUR: "2" };
+    const ids: string[] = [];
+    for (let i = 0; i < 3; i++) ids.push(((await (await postJson("/api/runs", { demo: "ai-tools-college-india" }, over)).json()) as { id: string }).id);
+    expect(new Set(ids).size).toBe(2); // the third request is handed the newest copy
+    expect(ids[2]).toBe(ids[1]);
+    for (const id of new Set(ids)) {
+      const body = await (await api(`/api/runs/${id}/stream`)).text();
+      expect(body).toContain('"type":"done"');
+      const view = await (await api(`/api/runs/${id}`)).json() as { evidence: { searchCallId: string }[]; searchCalls: { id: string }[] };
+      expect(view.evidence).toHaveLength(34);
+      expect(view.searchCalls.every((c) => c.id.startsWith(`sc_${id}_`))).toBe(true);
+      expect(view.evidence.every((e) => e.searchCallId.startsWith(`sc_${id}_`))).toBe(true);
+    }
+    // only one ending per run, however many viewers reach it
+    const events = await store.eventsFor(ids[0]);
+    expect(events.filter(([, e]) => e.type === "done")).toHaveLength(1);
+    // old copies are pruned
+    await store.pruneDemoRuns(1);
+    expect(await store.getRun(ids[0])).toBeNull();
+    expect(await store.evidenceFor(ids[0])).toEqual([]);
+    expect(await store.getRun(ids[1])).not.toBeNull();
+  });
+
+  it("accepts only real regions and one-line questions", async () => {
+    const { isRegion, regionName } = await import("../src/config");
+    expect(isRegion("constructor")).toBe(false);
+    expect(isRegion("__proto__")).toBe(false);
+    expect(isRegion("UK")).toBe(true);
+    expect(regionName("constructor")).toBe("CONSTRUCTOR");
   });
 });

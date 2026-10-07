@@ -54,14 +54,16 @@ export async function* followRunEvents(store: Store, runId: string, fromIndex: n
       cursor = index + 1;
       lastSent = nowMs();
       if (paced) await sleep(delayMs(event, settings));
-      if (isCancelled()) return;
+      if (isCancelled() || nowMs() > deadline) return; // the client resumes from the last id it saw
     }
 
     const run = await store.getRun(runId);
     if (!run) return;
     if (run.demo && run.status === "running") {
-      await store.updateRun(runId, { status: "complete", finishedAt: nowMs() });
-      await store.appendEvents(runId, [{ type: "status", status: "complete" }, { type: "done", runId, searchesUsed: run.searchesUsed }]);
+      // two viewers can reach the end together; only the one that makes the transition writes the ending
+      if (await store.finishIfRunning(runId, { status: "complete", finishedAt: nowMs() })) {
+        await store.appendEvents(runId, [{ type: "status", status: "complete" }, { type: "done", runId, searchesUsed: run.searchesUsed }]);
+      }
       continue; // loop once more to deliver the two events just written
     }
     if (run.status === "complete" || run.status === "failed") {

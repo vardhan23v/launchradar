@@ -110,7 +110,8 @@ export async function fetchRunEvents(runId: string): Promise<StepEvent[] | null>
       const data = /^data: (.*)$/m.exec(block);
       if (!data) continue;
       const e = JSON.parse(data[1]) as StepEvent;
-      if (id) events[Number(id[1])] = e;
+      const index = id ? Number(id[1]) : NaN;
+      if (Number.isSafeInteger(index) && index >= 0 && index < 10_000) events[index] = e;
       else events.push(e);
     }
     return events;
