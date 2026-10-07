@@ -181,8 +181,8 @@ export default function RunV2({ runId }: { runId: string }) {
     };
   }, [isLive, runId, fetchView]);
 
-  // A long-lived server forgets runs when it restarts (free Render sleeps after 15 idle minutes),
-  // so a run that finished here is copied into this browser, like serverless runs already are.
+  // A run that finished here is copied into this browser, so history does not depend on the
+  // server keeping it (a local dev database, or a change of API host, would otherwise lose it).
   useEffect(() => {
     if (isLive || !view || view.run.id !== runId) return;
     saveFinishedRun(view, events);

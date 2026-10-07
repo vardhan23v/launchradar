@@ -259,7 +259,7 @@ export default function Dashboard() {
               <p className="mt-1 max-w-2xl text-sm text-zinc-300">
                 {loading && items.length === 0
                   ? slow
-                    ? "Waking the research server. The free host sleeps when idle, so this can take up to a minute."
+                    ? "Still loading. The research server is taking longer than usual to answer."
                     : "Loading findings…"
                   : items.length === 0
                     ? "No findings yet."

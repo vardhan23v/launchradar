@@ -1,0 +1,30 @@
+// LaunchRadar research API — Cloudflare Workers (free plan, always on).
+// Secrets (SERPAPI_API_KEY, LLM_API_KEY) are NOT here: set them in the dashboard under
+// Worker → Settings → Variables and Secrets, or locally in worker/.dev.vars (git-ignored).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "launchradar-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "vars": {
+    "SERPAPI_MODE": "live",
+    "LLM_PROVIDER": "openai",
+    "LLM_BASE_URL": "https://api.groq.com/openai/v1",
+    "LLM_MODEL": "openai/gpt-oss-120b",
+    "LLM_REASONING_EFFORT": "low"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "launchradar",
+      // replace with the id shown by `npx wrangler d1 create launchradar` (or the D1 dashboard)
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [{ "name": "RUNNER", "class_name": "ResearchRunner" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["ResearchRunner"] }]
+}

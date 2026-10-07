@@ -5,11 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "sh scripts/start.sh",
+    "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "api": "backend/.venv/bin/python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000",
-    "test": "backend/.venv/bin/python -m pytest -q backend"
+    "api": "npm --prefix worker run dev",
+    "test": "npm --prefix worker test",
+    "test:api": "npm --prefix worker test",
+    "typecheck:api": "npm --prefix worker run typecheck"
   },
   "dependencies": {
     "next": "16.3.5",

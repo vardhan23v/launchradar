@@ -44,9 +44,9 @@ export function saveRun(view: RunView, events: StepEvent[]): void {
 }
 
 /**
- * Keep a copy of a real run that finished on a long-lived server (Render, local). That server's
- * disk is temporary (a free Render service forgets everything when it sleeps), so without this a
- * finished run would vanish from history.
+ * Keep a copy of a real run that finished on the server. The server keeps its own copy too, but a
+ * database clean-up, a local dev database or a change of API host would otherwise make a finished
+ * run vanish from history.
  *
  * Only complete, real runs are kept: the recorded example can always be replayed, and a failed run
  * holds no findings. The index stays newest-first by the run's own start time, so opening an old

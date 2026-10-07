@@ -220,3 +220,33 @@ confirmed 49 issues in the first version of the dashboard. All are fixed:
   to the page heading), native radio groups for date and layout, a disclosure instead of a fake menu, ⌘K ignored inside
   dialogs and text areas, IME-safe Enter and Escape, constant accessible names on the shortlist star, contrast raised
   to AA for small text, focus rings no longer overridden by the report view's global styles.
+
+## Hosting: the API moved to Cloudflare Workers (free, always on)
+
+The free Render service slept after 15 idle minutes and took up to a minute to wake, and a GitHub Actions ping ran
+only every few hours (free-repo schedules are throttled), so the first visit of the day usually failed. The user's own
+comparison of free hosts (`vardhan23v/source-stuff`) and a check of Cloudflare's current limits pages agree: no free
+container host stays awake without a card; Cloudflare Workers is the only no-card, no-sleep compute, and D1 and
+Durable Objects are on its free plan.
+
+The Python/FastAPI backend was ported one module to one into a TypeScript Worker (`worker/`): same routes, same JSON,
+same prompts, validators, guards and score, so the frontend did not change apart from the `API_URL` it points at.
+What is different:
+
+- **One unit per invocation.** The free plan allows 10 ms of CPU and 50 D1 queries per invocation, and the docs do not
+  say whether a Workflow's steps share one invocation. So each run has a Durable Object whose every alarm performs
+  exactly one unit of the pipeline (a search, an LLM call, or a bookkeeping step), persists the state and schedules
+  the next alarm. A unit retried after a crash finds its search already recorded and does not search twice.
+- **Durable state.** Runs, events, evidence, the search cache and the billed-search counters live in D1, so the
+  hourly and monthly guards now survive deploys (on Render's temporary disk they reset).
+- **Database-assigned ids.** Evidence ids and event indexes are assigned by SQL (`MAX + 1` inside one transaction),
+  so parallel searches can never produce the same id; `searchesUsed` is incremented in one statement.
+- **Streams that hand over.** A live run's SSE response follows the run for 24 s with a `: ping` every 10 s of
+  silence, then closes; `EventSource` reconnects with `Last-Event-ID`. One request never accumulates ten minutes of CPU.
+- **No single-request ("inline") mode.** It existed for Vercel's function limit; `POST /api/runs/live` now answers 410.
+- **Removed:** `backend/`, `api/index.py`, `render.yaml`, `requirements.txt`, `scripts/start.sh`, `deploy/`, the
+  Python CI workflows and the keep-awake ping. CI (`.github/workflows/ci.yml`) now runs the Worker's vitest suite and
+  the site's typecheck, lint and build.
+
+The 25 Python tests were ported to vitest running inside the Workers runtime (24 tests: units, API routes, SSE,
+and the golden pipeline run both in-process and through the Worker + Durable Object with alarms).

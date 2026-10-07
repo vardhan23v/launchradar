@@ -15,6 +15,8 @@ const eslintConfig = defineConfig([
     // scratch files written by other tooling, not part of the app
     ".oxcode/**",
     ".oxcode-memory/**",
+    // the API is its own package with its own toolchain (worker/package.json)
+    "worker/**",
   ]),
 ]);
 

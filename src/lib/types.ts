@@ -1,6 +1,6 @@
 /**
- * Shapes of the JSON the Python API returns (backend/app). Types only — the
- * frontend holds no server logic, keys or SerpApi access.
+ * Shapes of the JSON the research API returns (worker/src/types.ts is the server side). Types
+ * only — the frontend holds no server logic, keys or SerpApi access.
  */
 export type GapStatus = "open" | "partially-served" | "served";
 export type RunStatus = "queued" | "running" | "complete" | "failed";

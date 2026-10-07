@@ -47,7 +47,7 @@ export function useHome(): { home: HomeData | null; down: boolean; loaded: boole
 /** Why a new question cannot be researched right now, or null when it can. */
 export function blockedReasonFor(home: HomeData | null, down: boolean): string | null {
   if (down) return "The research server is not reachable right now, so a new run cannot start.";
-  if (!home) return "Connecting to the research server… The free server sleeps when idle, so this can take up to a minute.";
+  if (!home) return "Connecting to the research server…";
   if (home.pipeline?.ready === false) return home.pipeline.reason ?? "New questions are switched off on this server.";
   return home.pipeline?.quota ?? null;
 }

@@ -69,7 +69,7 @@ export default function HomeV2() {
       .then((json) => {
         if (cancelled) return;
         if (json) setData(json);
-        else setError(API_DOWN); // the Next.js proxy answers 500 when the Python API is down
+        else setError(API_DOWN); // the Next.js proxy answers 500 when the API is down
       })
       .catch(() => {
         if (!cancelled) setError(API_DOWN);

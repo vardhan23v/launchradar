@@ -324,7 +324,7 @@ export default function RunPage({ runId }: { runId: string }) {
     };
   }, [runId, isLive, fetchView]);
 
-  // a free server forgets runs when it sleeps: keep a copy of a real run that finished here
+  // keep a copy of a real run that finished here, so history survives whatever happens to the server's copy
   useEffect(() => {
     if (isLive || !view || view.run.id !== runId) return;
     saveFinishedRun(view, events);
@@ -409,7 +409,7 @@ export default function RunPage({ runId }: { runId: string }) {
         </h1>
         <p className="mt-2 text-sm text-zinc-300">
           {notFound
-            ? "The free research server forgets runs when it sleeps, and this browser has no copy of this one."
+            ? "The research server has no run with this id, and this browser has no copy of it."
             : startError}
         </p>
         <button
