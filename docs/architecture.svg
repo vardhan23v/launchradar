@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-labelledby="t d">
+  <title id="t">LaunchRadar architecture</title>
+  <desc id="d">The visitor's browser loads the Next.js site from Vercel. Vercel rewrites /api requests to a Cloudflare Worker. The Worker stores runs in D1 and starts one Durable Object per research run; each alarm of that object performs one unit of work, a SerpApi search or a Groq LLM call, and writes the result to D1. The browser follows the research log over server-sent events.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#a1a1aa"/>
+    </marker>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      text { font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #e4e4e7; }
+      .h { font-size: 15px; font-weight: 700; }
+      .s { font-size: 12.5px; fill: #a1a1aa; }
+      .m { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11.5px; fill: #c7d2fe; }
+      .lab { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; }
+      .edge { font-size: 11.5px; fill: #d4d4d8; }
+      .card { fill: #18181b; stroke: #3f3f46; stroke-width: 1.2; }
+      .line { stroke: #a1a1aa; stroke-width: 1.6; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" rx="24" fill="#09090b"/>
+  <rect width="1200" height="720" rx="24" fill="url(#glow)"/>
+
+  <!-- title -->
+  <text x="48" y="58" style="font-size:26px;font-weight:800">LaunchRadar architecture</text>
+  <text x="48" y="86" class="s" style="font-size:14px">Free and always on: the site on Vercel, the research API on Cloudflare Workers. SerpApi is the only source of facts.</text>
+
+  <!-- browser -->
+  <rect x="48" y="170" width="200" height="270" rx="14" class="card" stroke="#6366f1"/>
+  <text x="66" y="200" class="lab" style="fill:#a5b4fc">VISITOR</text>
+  <text x="66" y="224" class="h">Browser</text>
+  <text x="66" y="252" class="s">Radar dashboard</text>
+  <text x="66" y="270" class="s">(React 19, Tailwind 4)</text>
+  <text x="66" y="298" class="s">EventSource follows</text>
+  <text x="66" y="316" class="s">the research log</text>
+  <text x="66" y="344" class="s">localStorage keeps</text>
+  <text x="66" y="362" class="s">finished runs</text>
+  <text x="66" y="398" class="s" style="fill:#71717a">No keys. Only http(s)</text>
+  <text x="66" y="416" class="s" style="fill:#71717a">links are clickable.</text>
+
+  <!-- vercel -->
+  <rect x="290" y="150" width="230" height="310" rx="18" fill="none" stroke="#e4e4e7" stroke-opacity="0.45" stroke-dasharray="6 6"/>
+  <text x="308" y="176" class="lab">▲ VERCEL · HOBBY</text>
+  <rect x="308" y="192" width="194" height="112" rx="12" class="card"/>
+  <text x="324" y="220" class="h">Next.js 16 site</text>
+  <text x="324" y="244" class="s">Static pages</text>
+  <text x="324" y="264" class="s">CSP frame-ancestors,</text>
+  <text x="324" y="282" class="s">nosniff, HSTS</text>
+  <rect x="308" y="322" width="194" height="120" rx="12" class="card"/>
+  <text x="324" y="350" class="h">Rewrite</text>
+  <text x="324" y="372" class="m">/api/* → API_URL</text>
+  <text x="324" y="396" class="s">Build fails unless</text>
+  <text x="324" y="414" class="s">API_URL is https.</text>
+  <text x="324" y="432" class="s">Same origin: no CORS.</text>
+
+  <!-- cloudflare region -->
+  <rect x="560" y="130" width="390" height="480" rx="18" fill="#f38020" fill-opacity="0.04" stroke="#f38020" stroke-opacity="0.75" stroke-dasharray="6 6"/>
+  <text x="578" y="156" class="lab" style="fill:#fdba74">CLOUDFLARE · WORKERS FREE PLAN</text>
+
+  <!-- worker -->
+  <rect x="578" y="172" width="354" height="160" rx="12" class="card" stroke="#f38020" stroke-opacity="0.8"/>
+  <text x="596" y="200" class="h">Worker <tspan class="m" style="font-size:12.5px">launchradar-api</tspan></text>
+  <text x="596" y="224" class="m">GET POST /api/runs</text>
+  <text x="596" y="242" class="m">GET /api/runs/{id} · /stream · /export</text>
+  <text x="596" y="268" class="s">One run at a time · whole-run budget check</text>
+  <text x="596" y="286" class="s">JSON-only bodies · size caps · key scrubbing</text>
+  <text x="596" y="304" class="s">SSE in 24 s windows, resumed by</text>
+  <text x="596" y="322" class="s">Last-Event-ID</text>
+
+  <!-- d1 -->
+  <rect x="578" y="384" width="160" height="206" rx="12" class="card" stroke="#34d399" stroke-opacity="0.8"/>
+  <text x="596" y="412" class="lab" style="fill:#6ee7b7">DATABASE</text>
+  <text x="596" y="434" class="h">D1 (SQLite)</text>
+  <text x="596" y="460" class="m">runs</text>
+  <text x="596" y="480" class="m">events</text>
+  <text x="596" y="500" class="m">search_calls</text>
+  <text x="596" y="518" class="s">  + 24 h search cache</text>
+  <text x="596" y="542" class="m">evidence</text>
+  <text x="596" y="562" class="m">entities</text>
+
+  <!-- durable object -->
+  <rect x="772" y="384" width="160" height="206" rx="12" class="card" stroke="#f38020" stroke-opacity="0.8"/>
+  <text x="790" y="412" class="lab" style="fill:#fdba74">DURABLE OBJECT</text>
+  <text x="790" y="434" class="h">ResearchRunner</text>
+  <text x="790" y="458" class="s">one per run</text>
+  <text x="790" y="484" class="s">each alarm runs</text>
+  <text x="790" y="502" class="s">one unit: a search</text>
+  <text x="790" y="520" class="s">or an LLM call,</text>
+  <text x="790" y="538" class="s">then saves state</text>
+  <text x="790" y="566" class="s" style="fill:#71717a">keeps going if the</text>
+  <text x="790" y="582" class="s" style="fill:#71717a">tab is closed</text>
+
+  <!-- external -->
+  <rect x="980" y="150" width="180" height="440" rx="18" fill="none" stroke="#a1a1aa" stroke-opacity="0.45" stroke-dasharray="6 6"/>
+  <text x="998" y="176" class="lab" style="fill:#d4d4d8">EXTERNAL APIS</text>
+  <rect x="996" y="192" width="148" height="160" rx="12" class="card"/>
+  <text x="1012" y="220" class="h">SerpApi</text>
+  <text x="1012" y="244" class="s">Google, News,</text>
+  <text x="1012" y="262" class="s">Trends, Maps …</text>
+  <text x="1012" y="288" class="s">≤ 25 searches a run</text>
+  <text x="1012" y="306" class="s">250 a month</text>
+  <text x="1012" y="334" class="s" style="fill:#71717a">key: Worker secret</text>
+  <rect x="996" y="400" width="148" height="170" rx="12" class="card"/>
+  <text x="1012" y="428" class="h">Groq</text>
+  <text x="1012" y="450" class="m">gpt-oss-120b</text>
+  <text x="1012" y="474" class="s">OpenAI-compatible</text>
+  <text x="1012" y="498" class="s">rules in the system</text>
+  <text x="1012" y="516" class="s">message; output is</text>
+  <text x="1012" y="534" class="s">validated</text>
+  <text x="1012" y="556" class="s" style="fill:#71717a">key: header, https</text>
+
+  <!-- edges -->
+  <path d="M248 248 H306" class="line" marker-end="url(#a)"/>
+  <text x="256" y="240" class="edge">pages</text>
+  <path d="M248 382 H306" class="line" marker-end="url(#a)"/>
+  <text x="256" y="374" class="edge">/api</text>
+  <path d="M502 382 H540 V252 H576" class="line" marker-end="url(#a)"/>
+  <path d="M658 332 V382" class="line" marker-end="url(#a)"/>
+  <text x="666" y="362" class="edge">read / write</text>
+  <path d="M852 332 V382" class="line" marker-end="url(#a)"/>
+  <text x="860" y="362" class="edge">start</text>
+  <path d="M772 490 H740" class="line" marker-end="url(#a)"/>
+  <text x="742" y="480" class="edge" style="font-size:10.5px">save</text>
+  <path d="M932 420 H962 V272 H994" class="line" marker-end="url(#a)"/>
+  <path d="M932 484 H994" class="line" marker-end="url(#a)"/>
+
+  <!-- flow -->
+  <line x1="48" y1="632" x2="1152" y2="632" stroke="#27272a"/>
+  <g class="s" style="font-size:12.5px">
+    <text x="48" y="662"><tspan style="fill:#a5b4fc;font-weight:700">1</tspan>  You ask a question: POST /api/runs (refused up front if the budget or the run slot is taken)</text>
+    <text x="48" y="688"><tspan style="fill:#a5b4fc;font-weight:700">2</tspan>  The Worker saves the run in D1 and starts its Durable Object</text>
+    <text x="640" y="662"><tspan style="fill:#a5b4fc;font-weight:700">3</tspan>  Each alarm runs one unit and writes it to D1</text>
+    <text x="640" y="688"><tspan style="fill:#a5b4fc;font-weight:700">4</tspan>  The page follows the log over SSE and keeps a copy of the finished run</text>
+  </g>
+</svg>

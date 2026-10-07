@@ -9,27 +9,62 @@ SerpApi is the **only** source of facts — every claim in the output is traceab
 to verbatim quotes pinned to a recorded SerpApi search response (see
 `files/LAUNCHRADAR_ARCHITECTURE.md`).
 
+<!-- live -->
 [![Live app](https://img.shields.io/badge/Live-launchradar--psi.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app)
-[![v2 triage board](https://img.shields.io/badge/%2Fv2-Triage_Board-0E9F76?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/v2)
-[![Report view](https://img.shields.io/badge/%2Freport-Report_view-c2410c?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/report)
 [![App Status](https://img.shields.io/website?url=https%3A%2F%2Flaunchradar-psi.vercel.app&style=for-the-badge&label=App&up_message=online&down_message=offline&up_color=0E9F6E)](https://launchradar-psi.vercel.app)
 [![API Status](https://img.shields.io/website?url=https%3A%2F%2Flaunchradar-api.launchradar-worker.workers.dev%2Fapi%2Fhealth&style=for-the-badge&label=API&up_message=online&down_message=offline&up_color=0E9F6E)](https://launchradar-api.launchradar-worker.workers.dev/api/health)
-[![Last Commit](https://img.shields.io/github/last-commit/vardhan23v/launchradar/main?style=for-the-badge&color=111827&label=Last%20Commit)](https://github.com/vardhan23v/launchradar/commits/main)
+[![Always on](https://img.shields.io/badge/Always_on-no_sleep-0E9F6E?style=for-the-badge)](#deploying-site-on-vercel-api-on-cloudflare-workers)
+[![Hosting cost](https://img.shields.io/badge/Hosting-%240%2Fmonth-0E9F6E?style=for-the-badge)](#deploying-site-on-vercel-api-on-cloudflare-workers)
+[![v2 triage board](https://img.shields.io/badge/%2Fv2-Triage_Board-0E9F76?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/v2)
+[![Report view](https://img.shields.io/badge/%2Freport-Report_view-c2410c?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/report)
 
+<!-- stack -->
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-22-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Site on Vercel](https://img.shields.io/badge/Site_host-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 [![API on Cloudflare Workers](https://img.shields.io/badge/API_host-Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 [![Cloudflare D1](https://img.shields.io/badge/Database-Cloudflare_D1-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://developers.cloudflare.com/d1/)
-[![CI](https://img.shields.io/github/actions/workflow/status/vardhan23v/launchradar/ci.yml?style=for-the-badge&label=CI)](https://github.com/vardhan23v/launchradar/actions/workflows/ci.yml)
+[![Durable Objects](https://img.shields.io/badge/Jobs-Durable_Objects-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://developers.cloudflare.com/durable-objects/)
+[![Wrangler](https://img.shields.io/badge/Wrangler-4-F38020?style=for-the-badge&logo=cloudflareworkers&logoColor=white)](https://developers.cloudflare.com/workers/wrangler/)
 [![Facts: SerpApi only](https://img.shields.io/badge/Facts-SerpApi_only-c2410c?style=for-the-badge&logo=googlechrome&logoColor=white)](https://serpapi.com/)
+[![LLM: Groq](https://img.shields.io/badge/LLM-Groq_·_gpt--oss--120b-F55036?style=for-the-badge)](https://groq.com/)
+[![Streaming: SSE](https://img.shields.io/badge/Live_log-Server--Sent_Events-6366F1?style=for-the-badge)](#how-a-run-executes)
 
-[Live app](https://launchradar-psi.vercel.app) · [API health](https://launchradar-api.launchradar-worker.workers.dev/api/health) · [Interfaces](#interfaces) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Security](#security) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-cloudflare-workers)
+<!-- quality -->
+[![CI](https://img.shields.io/github/actions/workflow/status/vardhan23v/launchradar/ci.yml?style=for-the-badge&label=CI&logo=githubactions&logoColor=white)](https://github.com/vardhan23v/launchradar/actions/workflows/ci.yml)
+[![Tests](https://img.shields.io/badge/Tests-33_passing-0E9F6E?style=for-the-badge&logo=vitest&logoColor=white)](#tests)
+[![Security](https://img.shields.io/badge/Security-audited_%28partial%29-F59E0B?style=for-the-badge&logo=cloudflare&logoColor=white)](#security)
+[![Last Commit](https://img.shields.io/github/last-commit/vardhan23v/launchradar/main?style=for-the-badge&color=111827&label=Last%20Commit)](https://github.com/vardhan23v/launchradar/commits/main)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/vardhan23v/launchradar?style=for-the-badge&color=111827)](https://github.com/vardhan23v/launchradar/commits/main)
+[![Top language](https://img.shields.io/github/languages/top/vardhan23v/launchradar?style=for-the-badge&color=3178C6)](https://github.com/vardhan23v/launchradar)
+[![Code size](https://img.shields.io/github/languages/code-size/vardhan23v/launchradar?style=for-the-badge&color=111827)](https://github.com/vardhan23v/launchradar)
+[![Repo size](https://img.shields.io/github/repo-size/vardhan23v/launchradar?style=for-the-badge&color=111827)](https://github.com/vardhan23v/launchradar)
+[![Stars](https://img.shields.io/github/stars/vardhan23v/launchradar?style=for-the-badge&logo=github&color=111827)](https://github.com/vardhan23v/launchradar/stargazers)
+
+[Live app](https://launchradar-psi.vercel.app) · [API health](https://launchradar-api.launchradar-worker.workers.dev/api/health) · [Architecture](#architecture) · [Interfaces](#interfaces) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Security](#security) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-cloudflare-workers)
 
 </div>
 
 ---
+
+## Architecture
+
+<p align="center">
+  <img src="docs/architecture.svg" alt="LaunchRadar architecture: the browser loads the Next.js site from Vercel; Vercel rewrites /api to a Cloudflare Worker, which stores runs in D1 and starts one Durable Object per run; each alarm of that object makes one SerpApi search or one Groq call and saves it to D1; the browser follows the research log over server-sent events." width="100%">
+</p>
+
+1. **Ask.** The browser posts a question to `/api/runs` on the site's own domain; Vercel rewrites it to the Worker. The
+   Worker refuses up front if another run is in progress or the hour or month cannot cover a whole run.
+2. **Start.** The Worker saves the run in D1 and starts the run's Durable Object.
+3. **Research.** Every alarm of that object does one unit of work, a SerpApi search or a Groq call, and saves the result
+   to D1. A closed tab does not stop it.
+4. **Follow.** The page streams the research log from `/api/runs/{id}/stream` (server-sent events, resumable), then shows
+   the opportunities and keeps a copy of the finished run in the browser.
+
+The diagram source is [`docs/architecture.svg`](docs/architecture.svg).
 
 ## Interfaces
 
@@ -172,6 +207,7 @@ worker/
   wrangler.jsonc   the Worker's config: D1 and Durable Object bindings, non-secret settings
   .dev.vars        local secrets for `npm run api` (git-ignored, never committed)
 .github/workflows/ci.yml  typecheck + tests for the Worker, typecheck + lint + build for the site
+docs/architecture.svg     the architecture diagram shown above
 src/
   app/             pages only (home, run, and the /v2 triage board)
   app/v2/lr.css    the triage board's scoped design system (imported only by /v2)
