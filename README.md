@@ -145,7 +145,7 @@ on the home page and replays the full research trace over SSE. To research a **n
   it is recorded and counted as **billed** (the guards never under-count).
 - A finished run carries an `outcome`: `full`, `limited` (a discovery or competitor search failed, or the citation
   validator rejected most signals) or `empty` (no opportunity found). The last line of its log says the same in words,
-  e.g. "Run complete with limited evidence: 9 of 16 searches failed (SerpApi timed out), so 0 opportunities were found."
+  e.g. "Done, but with less proof than usual: 9 of 16 lookups didn't work (the web lookup took too long), so 0 ideas found."
 - A run that writes nothing to its log for **15 minutes** was interrupted: it is closed as failed (a recorded example in
   that state is closed as complete) the next time the run list, its page or its stream is opened.
 - Per-run split: discovery 12 (including 2 autocomplete seeds) · trends 2 ·
@@ -162,9 +162,21 @@ on the home page and replays the full research trace over SSE. To research a **n
 7. **Score** — 0–100 weighted opportunity score (pain 30 · momentum 20 · commercial 20 · whitespace 20 · weak rivals 10) + confidence bucket.
 8. **Skeptic** — 3 objections per opportunity, each pinned to evidence.
 
-Served gaps never become opportunity cards; they stay on the page as **Crowded**, with the products the kill query found.
+Served gaps never become opportunity cards; they stay on the page as **Already solved**, with the products the kill query found.
 
 Progress streams to the UI as SSE step events (persisted events first, then live ones, resumable via `Last-Event-ID`); each `search_call` shows engine, query, result count, latency, and budget impact.
+
+Every message the Worker writes for a visitor (stage lines, outcome, errors, refusals, the Markdown export) uses the
+site's plain words: a run is a "search", one SerpApi call a "lookup", an opportunity an "idea", a signal a
+"complaint", a competitor an "existing product", SerpApi "the web lookup service" and the LLM "the writing helper".
+Setting names and HTTP codes appear only in trailing brackets. The stage lines read "Working out what to look up",
+"Looking around the web — 12 lookups", "Finding complaints in the pages we read", "14 complaints kept, 1 dropped
+because we couldn't find their exact words on the page", "Grouping the complaints", "Checking Google Trends: is this
+getting more popular?", "Looking for products that already exist", "Working out what's missing", "Checking whether
+anyone already solves it", "2 nobody solves yet, 1 partly solved, 1 already solved", "Scoring the ideas"; the last
+line is "Done in 41.2s: 2 ideas from 16 lookups (1 didn't work).", "Done, but with less proof than usual: …" or
+"Done in 41.2s, but no idea was found: someone already solves each one." An interrupted run reads "Stopped: the
+search job quit before it finished. Start it again; lookups we already did are reused."
 
 ### How a run executes
 

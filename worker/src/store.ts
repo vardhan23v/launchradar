@@ -31,7 +31,7 @@ export type Kind = (typeof KINDS)[number];
 
 /** A run that has written nothing to its log for this long was interrupted (the workflow died). */
 export const STALE_RUN_MS = 15 * 60_000;
-export const INTERRUPTED = "Interrupted: the research job stopped before this run finished. Start it again; saved searches replay from cache.";
+export const INTERRUPTED = "Stopped: the search job quit before it finished. Start it again; lookups we already did are reused.";
 /** The home page shows the newest runs; older ones stay readable by id. */
 export const LIST_LIMIT = 50;
 const ALL_TABLES = ["events", "search_calls", "evidence", "entities"] as const;
@@ -84,7 +84,7 @@ function runOf(text: string): Run {
   return { searchCalls: 0, failedSearches: 0, outcome: null, lastProgressAt: stored.createdAt, ...stored } as Run;
 }
 
-const DEMO_DONE = "Replay finished.";
+const DEMO_DONE = "Example finished.";
 
 export class Store {
   constructor(private readonly db: D1Database, private readonly settings: Settings) {}
@@ -275,12 +275,12 @@ export class Store {
    */
   async runStartBlock(now = nowMs()): Promise<string | null> {
     const perHour = runsPerHour(this.settings);
-    if (perHour === 0) return "New research runs are switched off (RUNS_PER_HOUR=0). The recorded example still works.";
+    if (perHour === 0) return "New searches are switched off on this server (RUNS_PER_HOUR=0). The example search still works.";
     const { results: starts } = await this.db.prepare("SELECT created_at FROM runs WHERE demo = 0 AND created_at >= ? ORDER BY created_at")
       .bind(now - 3_600_000).all<{ created_at: number }>();
     if (starts.length >= perHour) {
       const minutes = Math.max(1, Math.ceil((starts[starts.length - perHour].created_at + 3_600_000 - now) / 60_000));
-      return `The limit of ${perHour} research run${perHour === 1 ? "" : "s"} per hour is reached. The next run can start in about ${minutes} minute${minutes === 1 ? "" : "s"}.`;
+      return `This server allows ${perHour} search${perHour === 1 ? "" : "es"} per hour, and that is used up. The next search can start in about ${minutes} minute${minutes === 1 ? "" : "s"}.`;
     }
     const blocked = await this.quotaBlock(now);
     if (blocked) return blocked;
@@ -288,16 +288,16 @@ export class Store {
     const monthLimit = monthlySearchBudget(this.settings);
     const month = await this.billedSearchesThisMonth(now);
     if (month + need > monthLimit) {
-      return `This month's search budget cannot cover another run (${month} of ${monthLimit} used; a run needs up to ${need}). It resets on the 1st.`;
+      return `This month's lookups can't cover another search (${month} of ${monthLimit} used; one search needs up to ${need}). The count resets on the 1st.`;
     }
     const limit = hourlyRateGuard(this.settings);
-    if (need > limit) return "The hourly search limit is smaller than one run's budget, so no run can start. Raise HOURLY_SEARCH_GUARD.";
+    if (need > limit) return "The hourly lookup limit is smaller than what one search needs, so no search can start (raise HOURLY_SEARCH_GUARD).";
     const { results } = await this.db.prepare("SELECT created_at FROM search_calls WHERE billed = 1 AND created_at >= ? ORDER BY created_at")
       .bind(now - 3_600_000).all<{ created_at: number }>();
     const mustExpire = results.length + need - limit;
     if (mustExpire > 0) {
       const minutes = Math.max(1, Math.ceil((results[mustExpire - 1].created_at + 3_600_000 - now) / 60_000));
-      return `The hourly search limit leaves too little room for a run (${results.length} of ${limit} used in the last hour). Try again in about ${minutes} minute${minutes === 1 ? "" : "s"}.`;
+      return `The hourly lookup limit leaves too little room for a search (${results.length} of ${limit} used in the last hour). Try again in about ${minutes} minute${minutes === 1 ? "" : "s"}.`;
     }
     return null;
   }
@@ -306,16 +306,16 @@ export class Store {
   async quotaBlock(now = nowMs()): Promise<string | null> {
     const monthLimit = monthlySearchBudget(this.settings);
     const month = await this.billedSearchesThisMonth(now);
-    if (month >= monthLimit) return `This month's search budget is used up (${month} of ${monthLimit}). It resets on the 1st.`;
+    if (month >= monthLimit) return `This month's lookups are used up (${month} of ${monthLimit}). The count resets on the 1st.`;
     const limit = hourlyRateGuard(this.settings);
-    if (limit === 0) return "Billed searches are switched off (HOURLY_SEARCH_GUARD=0). The recorded example still works.";
+    if (limit === 0) return "Paid lookups are switched off on this server (HOURLY_SEARCH_GUARD=0). The example search still works.";
     const { results } = await this.db.prepare("SELECT created_at FROM search_calls WHERE billed = 1 AND created_at >= ? ORDER BY created_at")
       .bind(now - 3_600_000).all<{ created_at: number }>();
     if (results.length >= limit) {
       // the slot frees when the oldest search inside the window turns an hour old
       const freesAt = results[results.length - limit].created_at + 3_600_000;
       const minutes = Math.max(1, Math.ceil((freesAt - now) / 60_000));
-      return `The hourly search limit is reached (${results.length} of ${limit} in the last hour). Try again in about ${minutes} minute${minutes === 1 ? "" : "s"}.`;
+      return `The hourly lookup limit is reached (${results.length} of ${limit} in the last hour). Try again in about ${minutes} minute${minutes === 1 ? "" : "s"}.`;
     }
     return null;
   }

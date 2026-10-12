@@ -8,7 +8,7 @@ import "./radar.css";
  */
 const geist = Geist({ variable: "--font-v3", subsets: ["latin"] });
 
-const DESCRIPTION = "Every opportunity LaunchRadar has found, ranked and filterable, with each case linked to the search results it cites.";
+const DESCRIPTION = "Product ideas from what people complain about on the web, each with the web pages it came from so you can check for yourself.";
 
 export const metadata: Metadata = {
   description: DESCRIPTION,

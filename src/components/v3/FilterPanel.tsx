@@ -1,7 +1,7 @@
 "use client";
 
 import type { GapStatus } from "@/lib/types";
-import { GAP_LABEL, activeFilterCount, regionLabel, type DateRange, type Filters, type facetCounts } from "@/lib/v3/feed";
+import { GAP_HELP, GAP_LABEL, activeFilterCount, regionLabel, sureLabel, type DateRange, type Filters, type facetCounts } from "@/lib/v3/feed";
 import { StarIcon } from "./icons";
 import { Segmented, cx } from "./parts";
 
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id?: string; children
   return (
     <div id={id} className="scroll-mt-24 border-t border-white/[0.06] pt-4">
       <fieldset>
-        <legend className="mb-2.5 text-[11px] font-semibold uppercase tracking-wider text-zinc-400">{title}</legend>
+        <legend className="mb-2.5 text-[13px] font-semibold text-zinc-300">{title}</legend>
         {children}
       </fieldset>
     </div>
@@ -106,7 +106,7 @@ export default function FilterPanel({
         )}
       >
         <StarIcon size={15} filled={filters.shortlistedOnly} className={filters.shortlistedOnly ? "text-amber-300" : "text-zinc-400"} />
-        Shortlist only
+        Saved only
         <span className="ml-auto font-mono text-xs tabular-nums text-zinc-400">
           <span className="sr-only">, </span>
           {shortlistCount}
@@ -114,14 +114,14 @@ export default function FilterPanel({
       </button>
 
       <div className="border-t border-white/[0.06] pt-4">
-        <p aria-hidden="true" className="mb-2.5 text-[11px] font-semibold uppercase tracking-wider text-zinc-400">
+        <p aria-hidden="true" className="mb-2.5 text-[13px] font-semibold text-zinc-300">
           When
         </p>
-        <Segmented name={`${idPrefix}-date`} label="When the research ran" value={filters.date} onChange={(date) => set({ date })} options={DATES} />
+        <Segmented name={`${idPrefix}-date`} label="When the search ran" value={filters.date} onChange={(date) => set({ date })} options={DATES} />
       </div>
 
       {counts.questions.size > 0 && (
-        <Section title="Research question" id={`${idPrefix}-categories`}>
+        <Section title="Topic" id={`${idPrefix}-categories`}>
           <div className="space-y-0.5">
             {[...counts.questions.entries()].map(([q, n]) => (
               <Check key={q} label={q} title={q} count={n} checked={filters.questions.includes(q)} onChange={() => set({ questions: toggle(filters.questions, q) })} />
@@ -130,25 +130,25 @@ export default function FilterPanel({
         </Section>
       )}
 
-      <Section title="Gap status">
+      <Section title="Is it solved?">
         <div className="space-y-0.5">
           {gapOrder
             .filter((g) => counts.gaps.has(g))
             .map((g) => (
-              <Check key={g} label={GAP_LABEL[g]} count={counts.gaps.get(g) ?? 0} checked={filters.gaps.includes(g)} onChange={() => set({ gaps: toggle(filters.gaps, g) })} />
+              <Check key={g} label={GAP_LABEL[g]} title={GAP_HELP[g]} count={counts.gaps.get(g) ?? 0} checked={filters.gaps.includes(g)} onChange={() => set({ gaps: toggle(filters.gaps, g) })} />
             ))}
         </div>
       </Section>
 
-      <Section title="Confidence">
+      <Section title="How sure we are">
         <div className="space-y-0.5">
           {confidences.map((c) => (
-            <Check key={c} label={c} count={counts.confidence.get(c) ?? 0} checked={filters.confidence.includes(c)} onChange={() => set({ confidence: toggle(filters.confidence, c) })} />
+            <Check key={c} label={sureLabel(c)} count={counts.confidence.get(c) ?? 0} checked={filters.confidence.includes(c)} onChange={() => set({ confidence: toggle(filters.confidence, c) })} />
           ))}
         </div>
       </Section>
 
-      <Section title="Region">
+      <Section title="Country">
         <div className="space-y-0.5">
           {[...counts.regions.entries()].map(([r, n]) => (
             <Check key={r} label={regionLabel(r)} count={n} checked={filters.regions.includes(r)} onChange={() => set({ regions: toggle(filters.regions, r) })} />

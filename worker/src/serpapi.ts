@@ -34,16 +34,16 @@ export class SerpApiError extends Error {
  */
 export class SerpApiHttpError extends Error {
   constructor(public readonly status: number) {
-    super(`SerpApi ${status}: ${httpReason(status)}`);
+    super(`The web lookup service said no (${status}): ${httpReason(status)}`);
   }
 }
 
 function httpReason(status: number): string {
-  if (status === 401) return "the API key was rejected (check SERPAPI_API_KEY).";
-  if (status === 403) return "access was refused for this key or plan.";
-  if (status === 429) return "rate limited or the plan's quota is exhausted.";
-  if (status >= 500) return "SerpApi had an internal error.";
-  return "SerpApi refused the request.";
+  if (status === 401) return "the key was rejected (SERPAPI_API_KEY).";
+  if (status === 403) return "this key or plan isn't allowed to do that.";
+  if (status === 429) return "too many lookups, or the plan's allowance is used up.";
+  if (status >= 500) return "something went wrong on its side.";
+  return "it refused the request.";
 }
 
 /** Secrets never reach logs, the store or the browser — even inside error text. */
@@ -79,7 +79,7 @@ export class SerpApiService {
 
   async search(engine: string, params: Params, runId: string, stage: string, order: number, region?: string): Promise<SearchResult> {
     const run = await this.store.getRun(runId);
-    if (run === null) throw new BudgetExceeded("Run not found, cannot charge searches.");
+    if (run === null) throw new BudgetExceeded("This search no longer exists, so no lookup can be charged to it.");
     const rawParams = toRawParams(engine, params, region ?? run.region);
     const phash = await hashParams(engine, rawParams);
     const ctx: CallCtx = { runId, stage, order };
@@ -88,12 +88,12 @@ export class SerpApiService {
     // the call id is deterministic, so a recorded answer is simply handed back
     const recorded = await this.store.searchCallById(`sc_${runId}_${order}`);
     if (recorded !== null) {
-      if (recorded.status !== "ok") throw new (recorded.status === "skipped" ? BudgetExceeded : SerpApiError)(recorded.error ?? "search failed");
+      if (recorded.status !== "ok") throw new (recorded.status === "skipped" ? BudgetExceeded : SerpApiError)(recorded.error ?? "The lookup didn't work.");
       return { call: recorded, evidence: await this.store.evidenceForCall(runId, recorded.id), cached: recorded.cached };
     }
     try {
       // 1. per-run budget — always, and before any cost
-      if (run.searchesUsed >= run.budget) throw new BudgetExceeded(`Run budget exceeded (${run.searchesUsed}/${run.budget}).`);
+      if (run.searchesUsed >= run.budget) throw new BudgetExceeded(`This search has used all its lookups (${run.searchesUsed} of ${run.budget}).`);
       if (serpapiMode(this.settings) === "replay") return await this.fromFixture(engine, rawParams, phash, ctx);
       // 2. cache — an identical search inside the TTL is free
       const cached = await this.store.findCachedCall(phash, cacheTtlHours(this.settings) * HOUR_MS);
@@ -152,7 +152,7 @@ export class SerpApiService {
   private async fromFixture(engine: string, params: Params, phash: string, ctx: CallCtx): Promise<SearchResult> {
     const raw = this.fixtures ? await this.fixtures(phash) : null;
     if (raw === null || raw === undefined) {
-      throw new SerpApiError(`[replay] missing fixture ${phash} for engine=${engine} params=${JSON.stringify(redact(params))}. Set SERPAPI_MODE=live, or load a demo run.`);
+      throw new SerpApiError(`No recorded answer for this lookup (${phash}, engine=${engine}, params=${JSON.stringify(redact(params))}). Set SERPAPI_MODE=live, or open the example search.`);
     }
     return this.persistRaw(ctx, engine, params, phash, raw, true, false, nowMs());
   }
@@ -160,12 +160,12 @@ export class SerpApiService {
   /** SEARCH_TIMEOUT_MS per attempt · one retry on 5xx, timeout or network failure · never on 4xx. */
   private async callNetwork(engine: string, params: Params): Promise<unknown> {
     const key = serpapiKey(this.settings);
-    if (!key) throw new SerpApiError(`SERPAPI_API_KEY is required for SERPAPI_MODE=${serpapiMode(this.settings)}.`);
+    if (!key) throw new SerpApiError(`Live lookups need a key (SERPAPI_API_KEY, since SERPAPI_MODE=${serpapiMode(this.settings)}).`);
     const query = new URLSearchParams();
     for (const [k, v] of Object.entries(params)) if (v !== null && v !== undefined && k !== "api_key") query.set(k, fmt(v));
     query.set("engine", engine);
     query.set("api_key", key);
-    let last: Error = new Error("SerpApi call failed");
+    let last: Error = new Error("The web lookup didn't work.");
     let timedOut = false; // an attempt SerpApi may have completed after this side stopped waiting
     for (let attempt = 0; attempt <= RETRIES_ON_5XX; attempt++) {
       try {
@@ -182,7 +182,7 @@ export class SerpApiService {
         if (err instanceof SerpApiHttpError && err.status < 500) break;
       }
     }
-    const why = last instanceof SerpApiHttpError ? last.message : last.name === "TimeoutError" ? "SerpApi timed out" : "SerpApi could not be reached";
+    const why = last instanceof SerpApiHttpError ? last.message : last.name === "TimeoutError" ? "The web lookup took too long" : "We couldn't reach the web lookup service";
     if (!(last instanceof SerpApiHttpError)) console.error("serpapi request failed", engine, scrub(last.message, this.settings));
     throw new SerpApiError(scrub(why, this.settings), timedOut);
   }

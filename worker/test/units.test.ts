@@ -51,38 +51,38 @@ describe("citations", () => {
 
 describe("run outcome", () => {
   const call = (stage: string, status: "ok" | "failed" | "skipped", error?: string) => ({ stage, status, error });
-  const timedOut = (n: number) => Array.from({ length: n }, () => call("discovery", "failed", "SerpApi timed out"));
+  const timedOut = (n: number) => Array.from({ length: n }, () => call("discovery", "failed", "The web lookup took too long"));
   const fine = (n: number, stage = "discovery") => Array.from({ length: n }, () => call(stage, "ok"));
 
   it("says plainly when searches failed and nothing was found", () => {
     const r = summariseOutcome([...timedOut(9), ...fine(7)], [], 0, 2, 5, 424_700);
     expect(r).toMatchObject({ outcome: "empty", searchCalls: 16, failedSearches: 9, level: "warn" });
-    expect(r.message).toBe("Run complete with limited evidence: 9 of 16 searches failed (SerpApi timed out), so 0 opportunities were found.");
+    expect(r.message).toBe("Done, but with less proof than usual: 9 of 16 lookups didn't work (the web lookup took too long), so 0 ideas found.");
     // one opportunity, one failed discovery search → limited
     const one = summariseOutcome([...timedOut(1), ...fine(15)], [{ status: "open" }], 1, 0, 5, 1000);
     expect(one.outcome).toBe("limited");
-    expect(one.message).toBe("Run complete with limited evidence: 1 of 16 searches failed (SerpApi timed out), so 1 opportunity was found.");
+    expect(one.message).toBe("Done, but with less proof than usual: 1 of 16 lookups didn't work (the web lookup took too long), so 1 idea found.");
     // the validator throwing away most signals is limited evidence too
     const rejected = summariseOutcome(fine(16), [{ status: "open" }], 2, 9, 4, 1000);
     expect(rejected.outcome).toBe("limited");
-    expect(rejected.message).toBe("Run complete with limited evidence: the citation validator rejected 9 of 13 signals, so 2 opportunities were found.");
+    expect(rejected.message).toBe("Done, but with less proof than usual: 9 of 13 complaints were dropped because we couldn't find their exact words on the page, so 2 ideas found.");
     // mixed reasons name the most common one
-    const mixed = summariseOutcome([...timedOut(2), call("competitors", "failed", "SerpApi 429: rate limited."), ...fine(5)], [], 1, 0, 3, 1000);
-    expect(mixed.message).toContain("3 of 8 searches failed (SerpApi timed out, among others)");
+    const mixed = summariseOutcome([...timedOut(2), call("competitors", "failed", "The web lookup service said no (429): too many lookups."), ...fine(5)], [], 1, 0, 3, 1000);
+    expect(mixed.message).toContain("3 of 8 lookups didn't work (the web lookup took too long, among other reasons)");
   });
 
   it("is full when every evidence search answered, and explains an empty result", () => {
     const full = summariseOutcome(fine(16), [{ status: "open" }], 2, 1, 5, 1000);
     expect(full).toMatchObject({ outcome: "full", failedSearches: 0, level: "ok" });
-    expect(full.message).toBe("Run complete in 1.0s: 2 opportunities were found from 16 searches.");
+    expect(full.message).toBe("Done in 1.0s: 2 ideas from 16 lookups.");
     // a lost kill query or trends call does not limit the evidence, but it is counted
-    const verify = summariseOutcome([...fine(15), call("verify", "failed", "SerpApi timed out")], [{ status: "open" }], 1, 0, 5, 1000);
+    const verify = summariseOutcome([...fine(15), call("verify", "failed", "The web lookup took too long")], [{ status: "open" }], 1, 0, 5, 1000);
     expect(verify.outcome).toBe("full");
-    expect(verify.message).toBe("Run complete in 1.0s: 1 opportunity was found from 16 searches (1 failed).");
+    expect(verify.message).toBe("Done in 1.0s: 1 idea from 16 lookups (1 didn't work).");
     const served = summariseOutcome(fine(16), [{ status: "served" }, { status: "served" }], 0, 0, 5, 2500);
     expect(served.outcome).toBe("empty");
-    expect(served.message).toBe("Run complete in 2.5s, but no opportunity was found: every candidate gap is already served.");
-    expect(summariseOutcome(fine(16), [], 0, 0, 5, 2500).message).toContain("no candidate gap was proposed");
+    expect(served.message).toBe("Done in 2.5s, but no idea was found: someone already solves each one.");
+    expect(summariseOutcome(fine(16), [], 0, 0, 5, 2500).message).toContain("we couldn't work out what's missing");
   });
 });
 
@@ -219,7 +219,7 @@ describe("demo fixture", () => {
 describe("llm client", () => {
   it("speaks to an OpenAI-compatible gateway with the key in a header", async () => {
     const base = { LLM_PROVIDER: "openai", LLM_API_KEY: "sk-test", LLM_BASE_URL: "https://gateway.example/v1/" };
-    expect(config.pipelineReadiness(base)).toEqual([false, "LLM_BASE_URL is set, so LLM_MODEL must name a model that gateway serves."]);
+    expect(config.pipelineReadiness(base)).toEqual([false, "The writing helper has an address but no model name (LLM_BASE_URL is set, so LLM_MODEL is needed too)."]);
     const settings = { ...base, LLM_MODEL: "some-model" };
     expect(config.pipelineReadiness(settings)).toEqual([true, null]); // replay mode needs no SerpApi key
 
@@ -337,16 +337,16 @@ describe("secrets never reach a run record", () => {
     const client = new LlmClient(settings, null, async () => jsonResponse({ error: { message: "Invalid API Key gsk_live_secret_value_123 for Bearer gsk_live_secret_value_123" } }, 401));
     const err = await client.complete("planner", "d", "p", (v) => v).catch((e: unknown) => e);
     expect(err).toBeInstanceOf(LlmError);
-    expect((err as Error).message).toBe("LLM provider returned 401 (check LLM_API_KEY).");
+    expect((err as Error).message).toBe("The writing helper said no (HTTP 401, check LLM_API_KEY).");
   });
 
   it("shows only messages the pipeline wrote, scrubbed; anything else becomes a fixed sentence", () => {
     const settings = { SERPAPI_API_KEY: "serp_key_abcdef", LLM_API_KEY: "gsk_another_secret_99" };
-    expect(publicMessage(new PipelineError("Discovery yielded only 3 evidence rows"), settings)).toBe("Discovery yielded only 3 evidence rows");
-    expect(publicMessage(new BudgetExceeded("Run budget exceeded (25/25)."), settings)).toBe("Run budget exceeded (25/25).");
+    expect(publicMessage(new PipelineError("We found only 3 web results"), settings)).toBe("We found only 3 web results");
+    expect(publicMessage(new BudgetExceeded("This search has used all its lookups (25 of 25)."), settings)).toBe("This search has used all its lookups (25 of 25).");
     expect(publicMessage(new LlmError("echo gsk_another_secret_99 and api_key=serp_key_abcdef"), settings)).not.toMatch(/gsk_another|serp_key/);
-    expect(publicMessage(new TypeError("Cannot read properties of undefined (reading 'x')"), settings)).toBe("An internal error interrupted this step.");
-    expect(publicMessage(new Error("D1_ERROR: no such table: runs"), settings)).toBe("An internal error interrupted this step.");
+    expect(publicMessage(new TypeError("Cannot read properties of undefined (reading 'x')"), settings)).toBe("Something went wrong on our side during this step.");
+    expect(publicMessage(new Error("D1_ERROR: no such table: runs"), settings)).toBe("Something went wrong on our side during this step.");
   });
 
   it("only uses OPENAI_API_KEY against OpenAI and only sends keys over https", () => {

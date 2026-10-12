@@ -18,9 +18,9 @@ export interface HomeData {
 }
 
 /** What the server said when it could not start or answer: the bare 500 gets a sentence a visitor can act on. */
-export const INTERNAL_ERROR = "The research server hit an internal error. Try again in a minute.";
-export const START_INTERNAL_ERROR = "The research server hit an internal error. Nothing was started; try again in a minute.";
-export const UNREACHABLE = "Can't reach the research server.";
+export const INTERNAL_ERROR = "Something went wrong on our side. Try again in a minute.";
+export const START_INTERNAL_ERROR = "Something went wrong on our side. Nothing was started; try again in a minute.";
+export const UNREACHABLE = "We can't reach the server.";
 
 export function serverMessage(status: number, error: string | undefined, fallback: string, starting = false): string {
   if (status >= 500 && (!error || /^internal error$/i.test(error.trim()))) return starting ? START_INTERNAL_ERROR : INTERNAL_ERROR;
@@ -43,9 +43,9 @@ export async function fetchJson<T>(url: string): Promise<Fetched<T>> {
   if ((res.status === 502 || res.status === 503 || res.status === 504) && body === null) return { kind: "unreachable" };
   if (!res.ok) {
     const error = body && typeof body === "object" && typeof (body as { error?: unknown }).error === "string" ? (body as { error: string }).error : undefined;
-    return { kind: "error", status: res.status, message: serverMessage(res.status, error, `The research server answered with HTTP ${res.status}.`) };
+    return { kind: "error", status: res.status, message: serverMessage(res.status, error, `The server answered with an error (HTTP ${res.status}).`) };
   }
-  if (body === null || typeof body !== "object") return { kind: "error", status: res.status, message: "The research server sent an answer this page cannot read." };
+  if (body === null || typeof body !== "object") return { kind: "error", status: res.status, message: "The server sent an answer this page can't read." };
   return { kind: "ok", data: body as T };
 }
 
@@ -77,18 +77,18 @@ export function useHome(): { home: HomeData | null; down: boolean; loaded: boole
   return { home, down, loaded, reload: useCallback(() => setTick((t) => t + 1), []) };
 }
 
-/** Why a new question cannot be researched right now, or null when it can. */
+/** Why a new search cannot start right now, or null when it can. */
 export function blockedReasonFor(home: HomeData | null, down: boolean): string | null {
-  if (down) return "The research server is not reachable right now, so a new run cannot start.";
-  if (!home) return "Connecting to the research server…";
-  if (home.pipeline?.ready === false) return home.pipeline.reason ?? "New questions are switched off on this server.";
+  if (down) return "We can't reach the server right now, so a new search can't start.";
+  if (!home) return "Connecting to the server…";
+  if (home.pipeline?.ready === false) return home.pipeline.reason ?? "New searches are switched off on this server.";
   return home.pipeline?.quota ?? null;
 }
 
 /**
- * Starts a run and opens its page. The API starts the research in the background and the run
- * page follows it. `busy` stays true once navigation begins, so a second click cannot start
- * (and pay for) a second run.
+ * Starts a search (a run) and opens its page. The API starts the research in the background and
+ * the run page follows it. `busy` stays true once navigation begins, so a second click cannot
+ * start (and pay for) a second run.
  */
 export function useStartRun() {
   const router = useRouter();
@@ -110,7 +110,7 @@ export function useStartRun() {
           router.push(`/runs/${json.id}`);
           return; // stay busy until the next page takes over
         }
-        setError(serverMessage(res.status, json?.error, `Could not start the run (HTTP ${res.status}).`, true));
+        setError(serverMessage(res.status, json?.error, `The search couldn't be started (HTTP ${res.status}).`, true));
       } catch {
         setError(`${UNREACHABLE} Check your connection and try again.`);
       }

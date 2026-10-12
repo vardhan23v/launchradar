@@ -2,11 +2,11 @@
 
 import { useId, useRef, useState } from "react";
 
-import { REGIONS } from "@/lib/v3/feed";
+import { INTRO, REGIONS } from "@/lib/v3/feed";
 import { ChevronDownIcon, CloseIcon, RadarLogo } from "./icons";
-import { useModal } from "./parts";
+import { HowItWorks, useModal } from "./parts";
 
-const MAX = 300; // the API refuses longer questions
+const MAX = 300; // the server refuses longer topics
 
 export default function NewResearchDialog({
   onClose,
@@ -25,7 +25,7 @@ export default function NewResearchDialog({
   onExample: () => void;
   busy: boolean;
   error: string | null;
-  /** Why a new question cannot be researched right now (missing keys, quota), or null. */
+  /** Why a new search cannot start right now (missing keys, lookup limit), or null. */
   blockedReason: string | null;
   runBudget: number;
   hasExample: boolean;
@@ -34,10 +34,11 @@ export default function NewResearchDialog({
 }) {
   const [question, setQuestion] = useState(initialQuestion);
   const [region, setRegion] = useState(initialRegion);
+  const [showHow, setShowHow] = useState(false);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   useModal(dialogRef, onClose, inputRef);
-  const ids = { q: useId(), count: useId(), note: useId(), region: useId() };
+  const ids = { q: useId(), count: useId(), note: useId(), region: useId(), how: useId() };
 
   const trimmed = question.trim();
   const canStart = !busy && !blockedReason && trimmed.length > 0 && trimmed.length <= MAX;
@@ -60,15 +61,12 @@ export default function NewResearchDialog({
             if (canStart) onStart(trimmed, region);
           }}
         >
-          <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <RadarLogo size={32} />
-              <div>
-                <h2 id="lr3-new-title" className="text-lg font-semibold tracking-tight text-white">
-                  New research
-                </h2>
-                <p className="text-sm text-zinc-300">Name a market. LaunchRadar searches it and brings back gaps with their sources.</p>
-              </div>
+              <h2 id="lr3-new-title" className="text-lg font-semibold tracking-tight text-white">
+                New search
+              </h2>
             </div>
             <button
               type="button"
@@ -79,10 +77,26 @@ export default function NewResearchDialog({
               <CloseIcon size={16} />
             </button>
           </div>
+          <p className="mt-3 text-sm leading-relaxed text-zinc-300">{INTRO}</p>
+          <button
+            type="button"
+            aria-expanded={showHow}
+            aria-controls={ids.how}
+            onClick={() => setShowHow((v) => !v)}
+            className="mt-1.5 rounded text-[13px] font-medium text-indigo-300 transition-colors hover:text-indigo-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70"
+          >
+            {showHow ? "Hide how it works" : "How does this work?"}
+          </button>
+
+          {showHow && (
+            <div id={ids.how} className="lr3-appear mt-4 rounded-xl border border-white/[0.07] bg-white/[0.02] px-4 py-3">
+              <HowItWorks />
+            </div>
+          )}
 
           <div className="mt-5">
-            <label htmlFor={ids.q} className="text-xs font-medium text-zinc-200">
-              Market or question
+            <label htmlFor={ids.q} className="text-[13px] font-medium text-zinc-200">
+              What topic?
             </label>
             <textarea
               id={ids.q}
@@ -90,7 +104,7 @@ export default function NewResearchDialog({
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               onKeyDown={(e) => {
-                // an input method confirms a candidate with Enter: that must never start a paid run
+                // an input method confirms a candidate with Enter: that must never start a search
                 if (e.nativeEvent.isComposing || e.keyCode === 229) return;
                 if (e.key === "Enter" && !e.shiftKey) {
                   e.preventDefault();
@@ -100,17 +114,17 @@ export default function NewResearchDialog({
               rows={3}
               maxLength={MAX}
               aria-describedby={`${ids.count} ${ids.note}`}
-              placeholder="e.g. Meal planning for shift workers"
+              placeholder="e.g. meal planning for nurses"
               className="mt-1.5 w-full resize-none rounded-xl border border-white/10 bg-white/[0.04] px-3.5 py-3 text-[15px] text-zinc-100 placeholder:text-zinc-400 transition-all duration-200 focus:border-indigo-400/60 focus:outline-none focus:ring-4 focus:ring-indigo-500/15"
             />
-            <p id={ids.count} className="mt-1 text-right font-mono text-[11px] tabular-nums text-zinc-400">
+            <p id={ids.count} className="mt-1 text-right font-mono text-xs tabular-nums text-zinc-400">
               {question.length} of {MAX} characters
             </p>
           </div>
 
           <div>
-            <label htmlFor={ids.region} className="text-xs font-medium text-zinc-200">
-              Region
+            <label htmlFor={ids.region} className="text-[13px] font-medium text-zinc-200">
+              Country
             </label>
             <div className="relative mt-1.5">
               <select
@@ -134,8 +148,8 @@ export default function NewResearchDialog({
               {blockedReason}
             </p>
           ) : (
-            <p id={ids.note} className="mt-4 text-xs text-zinc-400">
-              Uses up to {runBudget} searches. Runs usually take 5–10 minutes; you can leave and come back.
+            <p id={ids.note} className="mt-4 text-[13px] text-zinc-400">
+              Uses up to {runBudget} lookups. Usually takes 5–10 minutes; you can leave and come back.
             </p>
           )}
           {error && (
@@ -152,7 +166,7 @@ export default function NewResearchDialog({
                 disabled={busy}
                 className="h-10 rounded-xl px-3 text-sm font-medium text-zinc-200 transition-colors hover:bg-white/[0.06] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70 disabled:opacity-50 sm:mr-auto"
               >
-                Open the recorded example
+                Open the example search
               </button>
             )}
             <button
@@ -160,7 +174,7 @@ export default function NewResearchDialog({
               disabled={!canStart}
               className="h-10 rounded-xl bg-indigo-500 px-4 text-sm font-semibold text-white shadow-[0_0_24px_-6px_rgba(99,102,241,0.8)] ring-1 ring-inset ring-white/20 transition-all duration-200 hover:bg-indigo-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-200 disabled:cursor-not-allowed disabled:bg-zinc-700 disabled:text-zinc-300 disabled:shadow-none"
             >
-              {busy ? "Starting…" : "Start research"}
+              {busy ? "Starting…" : "Start searching"}
             </button>
           </div>
         </form>

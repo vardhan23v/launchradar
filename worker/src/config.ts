@@ -178,23 +178,23 @@ function llmBaseUrlIsSafe(s: Settings): boolean {
   }
 }
 
-const WHERE = "Locally these go in worker/.dev.vars; on Cloudflare, in the Worker's Settings → Variables and Secrets.";
+const WHERE = "Set it locally in worker/.dev.vars, or on Cloudflare under the Worker's Settings → Variables and Secrets.";
 
 /** Can a fresh (non-demo) question be researched with the current settings? */
 export function pipelineReadiness(s: Settings): [boolean, string | null] {
   const mode = serpapiMode(s);
-  if (mode !== "replay" && !serpapiKey(s)) return [false, `SERPAPI_MODE=${mode} needs SERPAPI_API_KEY. ${WHERE}`];
+  if (mode !== "replay" && !serpapiKey(s)) return [false, `Live lookups need a key (SERPAPI_API_KEY, since SERPAPI_MODE=${mode}). ${WHERE}`];
   const provider = llmProvider(s);
   if (provider === "demo") {
-    return [false, "LLM_PROVIDER=demo can only replay recorded demo runs. Set SERPAPI_MODE=live, SERPAPI_API_KEY, "
-      + "LLM_PROVIDER (gemini or openai) and LLM_API_KEY to research a new question. " + WHERE];
+    return [false, "This server can only replay the example (LLM_PROVIDER=demo). To search a new topic, set SERPAPI_MODE=live, "
+      + "SERPAPI_API_KEY, LLM_PROVIDER (gemini or openai) and LLM_API_KEY. " + WHERE];
   }
   // fixed sentences only: these answers go to anonymous visitors, so no setting value is echoed
-  if (provider !== "gemini" && provider !== "openai") return [false, "LLM_PROVIDER is not supported. Use gemini or openai."];
-  if (!llmApiKey(s)) return [false, "LLM_API_KEY is missing. " + WHERE];
+  if (provider !== "gemini" && provider !== "openai") return [false, "The writing helper isn't one we support (LLM_PROVIDER must be gemini or openai)."];
+  if (!llmApiKey(s)) return [false, "The writing helper needs a key (LLM_API_KEY). " + WHERE];
   if (provider === "openai" && s.LLM_BASE_URL && !s.LLM_MODEL) {
-    return [false, "LLM_BASE_URL is set, so LLM_MODEL must name a model that gateway serves."];
+    return [false, "The writing helper has an address but no model name (LLM_BASE_URL is set, so LLM_MODEL is needed too)."];
   }
-  if (provider === "openai" && !llmBaseUrlIsSafe(s)) return [false, "LLM_BASE_URL must be an https:// address."];
+  if (provider === "openai" && !llmBaseUrlIsSafe(s)) return [false, "The writing helper's address must start with https:// (LLM_BASE_URL)."];
   return [true, null];
 }

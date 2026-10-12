@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * One research run: live progress while it runs, then its opportunities, problems, competitors,
- * research log and sources.
+ * One search (a research run): live progress while it runs, then its ideas, the complaints people
+ * have, the existing products, and where we looked (the step log and the web pages we read).
  *
  * Where the data comes from:
  *   (1) a run the server holds: its view, plus a resumable event stream (Last-Event-ID)
@@ -16,7 +16,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import type { Cluster, Evidence, RunView, Signal, StepEvent } from "@/lib/types";
 import { loadSavedRun, saveFinishedRun } from "@/lib/history";
-import { GAP_LABEL, itemsForView, regionLabel, sortItems, stripCites, type FeedItem, type Source } from "@/lib/v3/feed";
+import { CALL_STATUS_LABEL, CATEGORY_LABEL, GAP_LABEL, itemsForView, regionLabel, sortItems, stripCites, type FeedItem, type Source } from "@/lib/v3/feed";
 import { PIPELINE, engineLabel, outcomeOf, parseStepEvent, searchStats, stageMostlyFailed, stageOf, type SearchStats } from "@/lib/v3/run";
 import { loadIds, saveIds } from "@/lib/v3/storage";
 import { CardSkeleton, FeaturedCard, GridCard } from "./Cards";
@@ -27,7 +27,7 @@ import NewResearchDialog from "./NewResearchDialog";
 import { Badge, FOCUS_FALLBACK_ID, ScoreExplainer, Segmented, SourceLine, cx } from "./parts";
 import TopNav from "./TopNav";
 
-type Section = "opportunities" | "problems" | "competitors" | "log" | "sources";
+type Section = "ideas" | "complaints" | "products" | "looked";
 
 /** How the first load went. Once a view exists, later failures become a connection state instead. */
 type Load = { kind: "loading" } | { kind: "ready" } | { kind: "not-found" } | { kind: "unreachable" } | { kind: "error"; message: string };
@@ -41,23 +41,33 @@ function plural(n: number, w: string): string {
   return `${n} ${w}${n === 1 ? "" : /(s|ch|sh|x)$/.test(w) ? "es" : "s"}`;
 }
 
-function summary(view: RunView, stats: SearchStats): string {
+/**
+ * The one-paragraph story of the search, in plain words: what we did, what we found, and (when it
+ * ended with little or nothing) why. While the search is still going the same facts read "so far".
+ */
+function summary(view: RunView, stats: SearchStats, outcome: "full" | "limited" | "empty" | null, running: boolean): string {
   const { run, evidence, signals, competitors, gaps } = view;
+  if (running && stats.total === 0) return "Picking what to look up…";
+  const lookups = plural(stats.total, "lookup");
+  const pages = plural(evidence.length, "web page");
   const parts: string[] = [];
-  if (stats.failed > 0) {
-    const ok = Math.max(0, stats.total - stats.failed);
-    parts.push(`${plural(stats.total, "search")} ran and ${stats.failed} failed; the other ${ok} returned ${plural(evidence.length, "result")}.`);
+  if (running) {
+    parts.push(stats.failed > 0 ? `So far we did ${lookups}, but ${stats.failed} didn't work, so we read only ${pages}.` : `So far we did ${lookups} and read ${pages}.`);
+  } else if (stats.failed > 0) {
+    parts.push(`We did ${lookups}, but ${stats.failed} didn't work, so we read only ${pages}.`);
   } else {
-    parts.push(`${plural(stats.total, "search")} returned ${plural(evidence.length, "result")}.`);
+    parts.push(`We did ${lookups} and read ${pages}.`);
   }
-  if (signals.length > 0 || run.rejectedSignals > 0) {
-    parts.push(
-      `${plural(signals.length, "signal")} passed the word-for-word quote check${
-        run.rejectedSignals > 0 ? ` and ${run.rejectedSignals} ${run.rejectedSignals === 1 ? "was" : "were"} thrown out` : ""
-      }.`,
-    );
+  if (signals.length > 0 || competitors.length > 0 || gaps.length > 0) {
+    const found = `We found ${plural(signals.length, "complaint")} and ${plural(competitors.length, "existing product")}`;
+    parts.push(gaps.length > 0 || !running ? `${found}, and checked ${plural(gaps.length, "idea")}.` : `${found} so far.`);
   }
-  if (competitors.length > 0 || gaps.length > 0) parts.push(`We found ${plural(competitors.length, "competitor")} and tested ${plural(gaps.length, "gap")}.`);
+  if (run.rejectedSignals > 0) {
+    parts.push(`${run.rejectedSignals === 1 ? "1 complaint was" : `${run.rejectedSignals} complaints were`} dropped because we couldn't find ${run.rejectedSignals === 1 ? "its" : "their"} exact words on the page.`);
+  }
+  if (outcome === "empty") {
+    parts.push(gaps.length > 0 && view.opportunities.length === 0 ? "None of the ideas made it: someone already solves each one." : "In the end, we couldn't find an idea with enough proof.");
+  }
   return parts.join(" ");
 }
 
@@ -85,18 +95,18 @@ function Stepper({ events, status, stats }: { events: StepEvent[]; status: strin
           style={{ width: `${pct}%` }}
         />
       </div>
-      <ol className="mt-3 grid grid-cols-3 gap-x-2 gap-y-2 sm:grid-cols-4 md:grid-cols-7" aria-label="Research stages">
+      <ol className="mt-3 grid grid-cols-3 gap-x-2 gap-y-2 sm:grid-cols-4 md:grid-cols-7" aria-label="Search steps">
         {PIPELINE.map((p, i) => {
           const past = done || i < reached;
           const now = !done && i === reached;
-          // a stage that lost most of its searches is not a success, whatever came after it
+          // a step that lost most of its lookups is not a success, whatever came after it
           const warn = past && stageMostlyFailed(stats.byStage[i]);
           return (
             <li key={p.id} className={cx("flex min-w-0 items-center gap-1.5 text-xs", now ? (failed ? "text-rose-300" : "text-indigo-200") : warn ? "text-amber-200" : past ? "text-zinc-200" : "text-zinc-400")}>
               <span
                 aria-hidden="true"
                 className={cx(
-                  "grid size-4 shrink-0 place-items-center rounded-full text-[9px] font-semibold",
+                  "grid size-5 shrink-0 place-items-center rounded-full text-xs font-semibold",
                   warn ? "bg-amber-400/20 text-amber-200" : past ? "bg-emerald-400/20 text-emerald-300" : now ? (failed ? "bg-rose-400/20" : "bg-indigo-400/25") : "bg-white/[0.06]",
                 )}
               >
@@ -105,7 +115,7 @@ function Stepper({ events, status, stats }: { events: StepEvent[]; status: strin
               <span className="truncate">{p.label}</span>
               <span className="sr-only">
                 {warn
-                  ? `, done, but ${stats.byStage[i].failed} of its ${stats.byStage[i].total} searches failed`
+                  ? `, done, but ${stats.byStage[i].failed} of its ${stats.byStage[i].total} lookups didn't work`
                   : past
                     ? ", done"
                     : now
@@ -122,9 +132,9 @@ function Stepper({ events, status, stats }: { events: StepEvent[]; status: strin
   );
 }
 
-/* ------------------------------------------------------------------ research log */
+/* ------------------------------------------------------------------ step log */
 
-function ResearchLog({ events, status }: { events: StepEvent[]; status: string }) {
+function StepLog({ events, status }: { events: StepEvent[]; status: string }) {
   const box = useRef<HTMLOListElement>(null);
   const count = events.length;
   useEffect(() => {
@@ -141,24 +151,24 @@ function ResearchLog({ events, status }: { events: StepEvent[]; status: string }
 
   if (count === 0) return <p className="rounded-2xl border border-white/[0.07] bg-zinc-900/30 px-5 py-8 text-sm text-zinc-300">Waiting for the first step.</p>;
   return (
-    <ol ref={box} className="max-h-[70vh] overflow-y-auto rounded-2xl border border-white/[0.07] bg-zinc-900/30 p-2 [scrollbar-width:thin]" aria-label="Research log">
+    <ol ref={box} className="max-h-[70vh] overflow-y-auto rounded-2xl border border-white/[0.07] bg-zinc-900/30 p-2 [scrollbar-width:thin]" aria-label="Step log">
       {events.map((e, i) => {
         if (!e) return null;
         if (e.type === "search_call") {
           const bad = e.call.status !== "ok";
           return (
             <li key={i} className="lr3-appear grid grid-cols-[2rem_1fr] gap-x-2 rounded-lg px-2 py-2 hover:bg-white/[0.03]">
-              <span className="pt-0.5 text-right font-mono text-[11px] tabular-nums text-zinc-400">{numbers[i]}</span>
+              <span className="pt-0.5 text-right font-mono text-xs tabular-nums text-zinc-400">{numbers[i]}</span>
               <div className="min-w-0">
                 <p className={cx("text-sm [overflow-wrap:anywhere]", bad ? "text-zinc-400 line-through" : "text-zinc-100")}>{e.call.query}</p>
-                <p className="mt-0.5 flex flex-wrap gap-x-2 font-mono text-[11px] text-zinc-400">
+                <p className="mt-0.5 flex flex-wrap gap-x-2 text-xs text-zinc-400">
                   <span className="text-indigo-300">{engineLabel(e.call.engine)}</span>
                   {bad ? (
-                    <span className="text-rose-300">{e.call.status}</span>
+                    <span className="text-rose-300">{CALL_STATUS_LABEL[e.call.status] ?? e.call.status}</span>
                   ) : (
                     <>
-                      <span>{e.call.resultCount} results</span>
-                      <span>{e.call.cached ? "cached" : `${(e.call.latencyMs / 1000).toFixed(1)}s`}</span>
+                      <span>{plural(e.call.resultCount, "result")}</span>
+                      <span className="tabular-nums">{e.call.cached ? "reused from earlier" : `${(e.call.latencyMs / 1000).toFixed(1)}s`}</span>
                     </>
                   )}
                 </p>
@@ -176,9 +186,9 @@ function ResearchLog({ events, status }: { events: StepEvent[]; status: string }
         }
         if (e.type === "stage") {
           return (
-            <li key={i} className="lr3-appear px-2 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-zinc-300">
+            <li key={i} className="lr3-appear px-2 pb-1 pt-4 text-[13px] font-semibold text-zinc-300">
               {PIPELINE.find((p) => p.keys.includes(e.stage))?.label ?? e.stage}
-              <span className="ml-2 font-normal normal-case tracking-normal text-zinc-400">{e.message}</span>
+              <span className="ml-2 font-normal text-zinc-400">{e.message}</span>
             </li>
           );
         }
@@ -188,7 +198,7 @@ function ResearchLog({ events, status }: { events: StepEvent[]; status: string }
   );
 }
 
-/* ------------------------------------------------------------------ problems + competitors */
+/* ------------------------------------------------------------------ complaints + existing products */
 
 function Quote({ quote, source }: { quote: string; source?: Source }) {
   return (
@@ -203,18 +213,21 @@ function Quote({ quote, source }: { quote: string; source?: Source }) {
   );
 }
 
-function ProblemCard({ c, signals, byId, open, onToggle }: { c: Cluster; signals: Signal[]; byId: Map<string, Evidence>; open: boolean; onToggle: () => void }) {
+/** One group of complaints: what people want, how many said it, and (open) each complaint with its quote. */
+function ComplaintCard({ c, signals, byId, open, onToggle }: { c: Cluster; signals: Signal[]; byId: Map<string, Evidence>; open: boolean; onToggle: () => void }) {
   const domains = new Set(signals.flatMap((s) => s.domains)).size;
   return (
     <li className="rounded-2xl border border-white/[0.07] bg-zinc-900/40 transition-colors hover:border-white/15">
       <button type="button" aria-expanded={open} onClick={onToggle} className="flex w-full items-start gap-4 rounded-2xl p-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70">
         <div className="min-w-0 flex-1">
           <h3 className="text-base font-semibold text-zinc-50">{c.name}</h3>
-          <p className="mt-1 text-sm text-zinc-300">{c.jobToBeDone}</p>
+          <p className="mt-1 text-sm text-zinc-300">
+            <span className="font-medium text-zinc-200">What they want:</span> {c.jobToBeDone}
+          </p>
           <div className="mt-3 flex flex-wrap gap-1.5">
-            <Badge tone="indigo">{plural(signals.length, "signal")}</Badge>
-            <Badge>{plural(domains, "site")}</Badge>
-            {c.weak && <Badge tone="amber">Thin evidence</Badge>}
+            <Badge tone="indigo">{plural(signals.length, "complaint")}</Badge>
+            <Badge>{plural(domains, "website")}</Badge>
+            {c.weak && <Badge tone="amber">Only a little proof</Badge>}
           </div>
         </div>
         <span aria-hidden="true" className={cx("mt-1 text-zinc-400 transition-transform duration-200", open && "rotate-90")}>
@@ -226,8 +239,8 @@ function ProblemCard({ c, signals, byId, open, onToggle }: { c: Cluster; signals
           {signals.map((s) => (
             <li key={s.id}>
               <div className="flex items-start gap-3">
-                <span className="mt-0.5 shrink-0 rounded-md bg-white/[0.06] px-1.5 py-0.5 font-mono text-[11px] text-zinc-300" title="How strongly it was felt, 1 to 5">
-                  {s.intensity}/5
+                <span className="mt-0.5 shrink-0 whitespace-nowrap rounded-md bg-white/[0.06] px-1.5 py-0.5 text-xs text-zinc-300" title="How much it hurts, 1 to 5">
+                  Hurts {s.intensity} out of 5
                 </span>
                 <div className="min-w-0 flex-1">
                   <p className="text-sm text-zinc-100">{s.statement}</p>
@@ -246,13 +259,10 @@ function ProblemCard({ c, signals, byId, open, onToggle }: { c: Cluster; signals
 
 const retryButton = "inline-flex h-9 items-center rounded-lg border border-current/30 bg-white/[0.04] px-3 text-sm font-medium transition-colors hover:bg-white/[0.1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70";
 
-/** What a finished run with little or no evidence should tell the reader, and what to do next. */
+/** What a finished search with little or no proof should tell the reader, and what to do next. */
 function OutcomeNotice({ outcome, stats, onRerun, canRerun }: { outcome: "limited" | "empty"; stats: SearchStats; onRerun: () => void; canRerun: boolean }) {
-  const heading = outcome === "empty" ? "This run finished without finding an opportunity." : "This run finished with limited evidence.";
-  const what =
-    stats.failed > 0
-      ? `${stats.failed} of its ${plural(stats.total, "search")} failed, so the findings below rest on less evidence than a full run would collect.`
-      : "Its searches ran, but the results did not hold a problem with a gap that passed the checks.";
+  const heading = outcome === "empty" ? "We didn't find a new idea this time." : "We finished, but with less proof than usual.";
+  const what = stats.failed > 0 ? `${stats.failed} of ${plural(stats.total, "lookup")} didn't work, so we had less to go on.` : "Everything we found is already solved, or there wasn't enough proof.";
   return (
     <div role="status" aria-live="polite" className="max-w-3xl rounded-xl border border-amber-400/25 bg-amber-400/[0.07] px-4 py-3 text-sm text-amber-50">
       <p>
@@ -268,10 +278,10 @@ function OutcomeNotice({ outcome, stats, onRerun, canRerun }: { outcome: "limite
         </ul>
       )}
       <div className="mt-3 flex flex-wrap items-center gap-3">
-        <span className="text-amber-100/90">{stats.failed > 0 ? "Next step: run it again later, when the search service answers." : "Next step: run it again with a narrower market, or a different phrasing."}</span>
+        <span className="text-amber-100/90">{stats.failed > 0 ? "Next step: try again later, when web lookups work again." : "Next step: try a smaller topic, or say it a different way."}</span>
         {canRerun && (
           <button type="button" onClick={onRerun} className={cx(retryButton, "text-amber-50")}>
-            Run it again
+            Search again
           </button>
         )}
       </div>
@@ -290,9 +300,9 @@ export default function RunPage({ runId }: { runId: string }) {
   const [load, setLoad] = useState<Load>({ kind: "loading" });
   const [connection, setConnection] = useState<"ok" | "lost">("ok");
   const [attempt, setAttempt] = useState(0);
-  const [section, setSection] = useState<Section>("opportunities");
+  const [section, setSection] = useState<Section>("ideas");
   const [openItem, setOpenItem] = useState<FeedItem | null>(null);
-  const [openProblem, setOpenProblem] = useState<string | null>(null);
+  const [openComplaint, setOpenComplaint] = useState<string | null>(null);
   const [dialog, setDialog] = useState(false);
   const [shortlist, setShortlist] = useState<string[]>([]);
   const [exportState, setExportState] = useState<"idle" | "busy" | "failed">("idle");
@@ -471,7 +481,7 @@ export default function RunPage({ runId }: { runId: string }) {
       <TopNav
         onNew={() => setDialog(true)}
         budget={home?.budget ? { monthUsed: home.budget.monthUsed, monthLimit: home.budget.monthLimit } : null}
-        apiNote={home || down ? (blockedReasonFor(home, down) ?? "New questions can be researched.") : null}
+        apiNote={home || down ? (blockedReasonFor(home, down) ?? "You can start a new search.") : null}
         crumb={crumb}
         actions={actions}
       />
@@ -496,11 +506,11 @@ export default function RunPage({ runId }: { runId: string }) {
 
   if (!view && load.kind !== "loading" && load.kind !== "ready") {
     const notFound = load.kind === "not-found";
-    const title = notFound ? "There is no run at this address" : load.kind === "unreachable" ? UNREACHABLE : "The research server could not answer";
+    const title = notFound ? "There's no search at this address" : load.kind === "unreachable" ? UNREACHABLE : "The server couldn't answer";
     const body = notFound
-      ? "The research server has no run with this id, and this browser has no copy of it."
+      ? "The server has no search with this id and this browser has no copy."
       : load.kind === "unreachable"
-        ? "The run may still be there. Check your connection, then try again."
+        ? "The search may still be there. Check your connection, then try again."
         : load.message;
     return shell(
       <section className="mx-auto max-w-xl rounded-2xl border border-white/[0.07] bg-zinc-900/40 px-6 py-14 text-center" aria-live="polite">
@@ -516,7 +526,7 @@ export default function RunPage({ runId }: { runId: string }) {
               onClick={retry}
               className="inline-flex h-10 items-center rounded-xl bg-white px-4 text-sm font-semibold text-zinc-900 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300"
             >
-              Retry
+              Try again
             </button>
           )}
           <button
@@ -527,7 +537,7 @@ export default function RunPage({ runId }: { runId: string }) {
               notFound ? "bg-white text-zinc-900 hover:bg-indigo-50 focus-visible:ring-indigo-300" : "border border-white/10 text-zinc-200 hover:bg-white/[0.06] focus-visible:ring-indigo-400/70",
             )}
           >
-            Back to all findings
+            Back to all ideas
           </button>
         </div>
       </section>,
@@ -545,7 +555,7 @@ export default function RunPage({ runId }: { runId: string }) {
           ))}
         </div>
         <p className="sr-only" role="status">
-          Loading the run
+          Loading the search
         </p>
       </div>,
     );
@@ -558,30 +568,29 @@ export default function RunPage({ runId }: { runId: string }) {
   const date = new Date(run.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "long", year: "numeric" });
   const replayed = new Date(run.createdAt).toLocaleString(undefined, { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
   const crowded = view.gaps.filter((g) => g.status === "served");
-  const searchCount = events.filter((e) => e?.type === "search_call").length;
+  const lookupCount = events.filter((e) => e?.type === "search_call").length;
 
   const statusBadge = disconnected ? (
-    <Badge tone="amber">Connection lost</Badge>
+    <Badge tone="amber">Lost connection</Badge>
   ) : running ? (
     <Badge tone="indigo" dot>
-      Researching
+      Searching…
     </Badge>
   ) : failed ? (
     <Badge tone="rose">Stopped</Badge>
   ) : outcome === "limited" ? (
-    <Badge tone="amber">Complete · limited evidence</Badge>
+    <Badge tone="amber">Done, with little proof</Badge>
   ) : outcome === "empty" ? (
-    <Badge tone="amber">Complete · no opportunities</Badge>
+    <Badge tone="amber">Done, no ideas found</Badge>
   ) : (
-    <Badge tone="emerald">Complete</Badge>
+    <Badge tone="emerald">Done</Badge>
   );
 
   const sections: { value: Section; label: string }[] = [
-    { value: "opportunities", label: `Opportunities ${view.opportunities.length}` },
-    { value: "problems", label: `Problems ${view.clusters.length}` },
-    { value: "competitors", label: `Competitors ${view.competitors.length}` },
-    { value: "log", label: `Research log ${searchCount}` },
-    { value: "sources", label: `Sources ${view.evidence.length}` },
+    { value: "ideas", label: `Ideas (${view.opportunities.length})` },
+    { value: "complaints", label: `What people complain about (${view.clusters.length})` },
+    { value: "products", label: `Existing products (${view.competitors.length})` },
+    { value: "looked", label: `Where we looked (${lookupCount})` },
   ];
 
   return shell(
@@ -589,31 +598,31 @@ export default function RunPage({ runId }: { runId: string }) {
       <header className="space-y-5">
         <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-300">
           {statusBadge}
-          {run.demo && <Badge tone="amber">Recorded example</Badge>}
+          {run.demo && <Badge tone="amber">Example search</Badge>}
           <span>{regionLabel(run.region)}</span>
           <span aria-hidden="true" className="text-zinc-500">
             ·
           </span>
-          {/* the example's timestamp is when it was replayed, not when the research happened */}
-          <span>{run.demo ? `Recorded example, replayed ${replayed}` : date}</span>
+          {/* the example's timestamp is when it was replayed, not when the search happened */}
+          <span>{run.demo ? `Example search, replayed ${replayed}` : date}</span>
           <span aria-hidden="true" className="text-zinc-500">
             ·
           </span>
-          <span className="font-mono tabular-nums">
-            {run.searchesUsed}/{run.budget} searches
+          <span className="tabular-nums">
+            {run.searchesUsed} of {run.budget} lookups
           </span>
         </div>
         <h1 id={FOCUS_FALLBACK_ID} tabIndex={-1} className="max-w-4xl text-balance bg-linear-to-br from-white via-zinc-100 to-zinc-400 bg-clip-text text-3xl font-semibold tracking-tight text-transparent [overflow-wrap:anywhere] focus:outline-none sm:text-4xl">
           {run.question}
         </h1>
         <p className="max-w-3xl text-[15px] leading-relaxed text-zinc-300" aria-live="polite">
-          {running && stats.total === 0 ? "Planning the searches…" : summary(view, stats)}
+          {summary(view, stats, outcome, running)}
         </p>
         {disconnected && (
           <div role="status" aria-live="polite" className="flex max-w-3xl flex-wrap items-center gap-3 rounded-xl border border-amber-400/25 bg-amber-400/[0.07] px-4 py-3 text-sm text-amber-50">
-            <span>Connection lost, retrying… The research keeps running on the server; this page will catch up when it can reach it again.</span>
+            <span>Lost connection, trying again… The search keeps going on the server; this page will catch up.</span>
             <button type="button" onClick={retry} className={cx(retryButton, "text-amber-50")}>
-              Retry now
+              Try now
             </button>
           </div>
         )}
@@ -630,8 +639,8 @@ export default function RunPage({ runId }: { runId: string }) {
 
       <Segmented name="lr3-section" label="Section" value={section} onChange={setSection} options={sections} className="max-w-full overflow-x-auto [&>label]:flex-none sm:[&>label]:flex-1" />
 
-      {section === "opportunities" && (
-        <section aria-label="Opportunities" className="space-y-6">
+      {section === "ideas" && (
+        <section aria-label="Ideas" className="space-y-6">
           {items.length === 0 ? (
             running ? (
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -642,17 +651,17 @@ export default function RunPage({ runId }: { runId: string }) {
             ) : (
               <p className="rounded-2xl border border-dashed border-white/10 px-6 py-12 text-center text-sm text-zinc-300">
                 {view.gaps.length > 0
-                  ? "Every gap this run tested already has a product filling it, so there is nothing to recommend."
+                  ? "No ideas this time: someone already solves every one we checked."
                   : stats.failed > 0
-                    ? "This run did not get far enough to produce opportunities: too many of its searches failed."
-                    : "This run did not get far enough to produce opportunities."}
+                    ? "No ideas this time: too many lookups didn't work, so the search didn't get far enough."
+                    : "No ideas this time: the search didn't get far enough."}
               </p>
             )
           ) : (
             <>
               <FeaturedCard
                 item={items[0]}
-                scopeLabel="#1 in this run"
+                scopeLabel="#1 in this search"
                 shortlisted={shortlist.includes(items[0].opportunity.id)}
                 onToggleShortlist={() => toggleShortlist(items[0])}
                 onOpen={() => setOpenItem(items[0])}
@@ -681,8 +690,8 @@ export default function RunPage({ runId }: { runId: string }) {
 
           {crowded.length > 0 && (
             <div className="rounded-2xl border border-white/[0.07] bg-zinc-900/30 p-5">
-              <h2 className="text-sm font-semibold text-zinc-100">Tested and ruled out</h2>
-              <p className="mt-1 text-sm text-zinc-300">These looked like gaps until a search found a product that already fills them.</p>
+              <h2 className="text-sm font-semibold text-zinc-100">Ideas we dropped: someone already solves these</h2>
+              <p className="mt-1 text-sm text-zinc-300">These looked promising until a lookup found a product that already does it.</p>
               <ul className="mt-4 space-y-4">
                 {crowded.map((g) => (
                   <li key={g.id} className="border-t border-white/[0.06] pt-4">
@@ -713,20 +722,20 @@ export default function RunPage({ runId }: { runId: string }) {
         </section>
       )}
 
-      {section === "problems" && (
-        <section aria-label="Problems people have">
+      {section === "complaints" && (
+        <section aria-label="What people complain about">
           {view.clusters.length === 0 ? (
-            <p className="rounded-2xl border border-dashed border-white/10 px-6 py-12 text-center text-sm text-zinc-300">{running ? "Problems appear here once the evidence is grouped." : "No problems were grouped in this run."}</p>
+            <p className="rounded-2xl border border-dashed border-white/10 px-6 py-12 text-center text-sm text-zinc-300">{running ? "Complaints show up here once we group them." : "We didn't find any complaints to group in this search."}</p>
           ) : (
             <ul className="grid grid-cols-1 gap-4 lg:grid-cols-2">
               {view.clusters.map((c, i) => (
-                <ProblemCard
+                <ComplaintCard
                   key={c.id}
                   c={c}
                   signals={view.signals.filter((s) => c.signalIds.includes(s.id))}
                   byId={byId}
-                  open={openProblem === c.id || (openProblem === null && i === 0)}
-                  onToggle={() => setOpenProblem((cur) => (cur === c.id || (cur === null && i === 0) ? "" : c.id))}
+                  open={openComplaint === c.id || (openComplaint === null && i === 0)}
+                  onToggle={() => setOpenComplaint((cur) => (cur === c.id || (cur === null && i === 0) ? "" : c.id))}
                 />
               ))}
             </ul>
@@ -734,32 +743,32 @@ export default function RunPage({ runId }: { runId: string }) {
         </section>
       )}
 
-      {section === "competitors" && (
-        <section aria-label="Competitors">
+      {section === "products" && (
+        <section aria-label="Existing products">
           {view.competitors.length === 0 ? (
-            <p className="rounded-2xl border border-dashed border-white/10 px-6 py-12 text-center text-sm text-zinc-300">{running ? "Competitors appear here as the run finds them." : "No competitors turned up in the evidence."}</p>
+            <p className="rounded-2xl border border-dashed border-white/10 px-6 py-12 text-center text-sm text-zinc-300">{running ? "Existing products show up here as we find them." : "No existing products turned up."}</p>
           ) : (
             <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {view.competitors.map((c) => (
                 <li key={c.id} className="flex flex-col gap-3 rounded-2xl border border-white/[0.07] bg-zinc-900/40 p-5">
                   <div>
                     <h3 className="text-base font-semibold text-zinc-50 [overflow-wrap:anywhere]">{c.name}</h3>
-                    <p className="text-xs capitalize text-zinc-400">{c.category.replace(/-/g, " ")}</p>
+                    <p className="text-xs text-zinc-400">{CATEGORY_LABEL[c.category] ?? c.category.replace(/-/g, " ")}</p>
                   </div>
-                  {/* "Not verified": the searches did not turn up a figure that passed the evidence check; it may still exist */}
+                  {/* "Not found": the lookups did not turn up a figure that passed the proof check; it may still exist */}
                   <dl className="grid grid-cols-2 gap-2 text-sm">
                     <div className="rounded-lg bg-white/[0.03] px-3 py-2">
-                      <dt className="text-[11px] uppercase tracking-wider text-zinc-400">Pricing</dt>
-                      <dd className={cx("mt-0.5", c.pricing ? "text-zinc-100" : "text-zinc-400")}>{c.pricing ?? "Not verified"}</dd>
+                      <dt className="text-xs text-zinc-400">Price</dt>
+                      <dd className={cx("mt-0.5", c.pricing ? "text-zinc-100" : "text-zinc-400")}>{c.pricing ?? "Not found"}</dd>
                     </div>
                     <div className="rounded-lg bg-white/[0.03] px-3 py-2">
-                      <dt className="text-[11px] uppercase tracking-wider text-zinc-400">Rating</dt>
-                      <dd className={cx("mt-0.5 tabular-nums", c.rating !== null ? "font-mono text-zinc-100" : "text-zinc-400")}>{c.rating !== null ? c.rating.toFixed(1) : "Not verified"}</dd>
+                      <dt className="text-xs text-zinc-400">Star rating</dt>
+                      <dd className={cx("mt-0.5 tabular-nums", c.rating !== null ? "text-zinc-100" : "text-zinc-400")}>{c.rating !== null ? `${c.rating.toFixed(1)} out of 5` : "Not found"}</dd>
                     </div>
                   </dl>
                   {c.complaints.length > 0 ? (
                     <div>
-                      <p className="text-[11px] font-semibold uppercase tracking-wider text-zinc-400">What users complain about</p>
+                      <p className="text-[13px] font-semibold text-zinc-300">What people complain about</p>
                       {c.complaints.slice(0, 2).map((x, i) => {
                         const e = byId.get(x.evidenceId);
                         return (
@@ -771,7 +780,7 @@ export default function RunPage({ runId }: { runId: string }) {
                       })}
                     </div>
                   ) : (
-                    <p className="text-sm text-zinc-400">No complaints found in the evidence.</p>
+                    <p className="text-sm text-zinc-400">No complaints about it on the pages we read.</p>
                   )}
                 </li>
               ))}
@@ -780,26 +789,24 @@ export default function RunPage({ runId }: { runId: string }) {
         </section>
       )}
 
-      {section === "log" && (
-        <section aria-label="Research log">
-          <ResearchLog events={events} status={run.status} />
-        </section>
-      )}
-
-      {section === "sources" && (
-        <section aria-label="Sources">
-          {view.evidence.length === 0 ? (
-            <p className="rounded-2xl border border-dashed border-white/10 px-6 py-12 text-center text-sm text-zinc-300">No search results yet.</p>
-          ) : (
-            <ol className="grid grid-cols-1 gap-3 lg:grid-cols-2">
-              {view.evidence.map((e) => (
-                <li key={e.id} className="rounded-xl border border-white/[0.07] bg-zinc-900/40 p-2">
-                  <SourceLine s={evidenceSource(e)} />
-                  {(e.snippet || e.text) && <p className="line-clamp-3 px-2 pb-1 text-xs leading-relaxed text-zinc-400">{e.snippet || e.text}</p>}
-                </li>
-              ))}
-            </ol>
-          )}
+      {section === "looked" && (
+        <section aria-label="Where we looked" className="space-y-6">
+          <StepLog events={events} status={run.status} />
+          <div>
+            <h2 className="mb-3 text-[13px] font-semibold text-zinc-300">Web pages we read ({view.evidence.length})</h2>
+            {view.evidence.length === 0 ? (
+              <p className="rounded-2xl border border-dashed border-white/10 px-6 py-12 text-center text-sm text-zinc-300">No web pages yet.</p>
+            ) : (
+              <ol className="grid grid-cols-1 gap-3 lg:grid-cols-2" aria-label="Web pages we read">
+                {view.evidence.map((e) => (
+                  <li key={e.id} className="rounded-xl border border-white/[0.07] bg-zinc-900/40 p-2">
+                    <SourceLine s={evidenceSource(e)} />
+                    {(e.snippet || e.text) && <p className="line-clamp-3 px-2 pb-1 text-xs leading-relaxed text-zinc-400">{e.snippet || e.text}</p>}
+                  </li>
+                ))}
+              </ol>
+            )}
+          </div>
         </section>
       )}
     </div>,
@@ -807,18 +814,18 @@ export default function RunPage({ runId }: { runId: string }) {
       <span aria-hidden="true" className="text-zinc-600">
         /
       </span>
-      <span className="truncate text-zinc-300">Research run</span>
+      <span className="truncate text-zinc-300">Search</span>
     </>,
     <>
       <button
         type="button"
         onClick={() => void exportMarkdown()}
         disabled={exportState === "busy"}
-        title="Download this run as Markdown"
+        title="Download as a text file"
         className="inline-flex h-10 items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-3 text-sm text-zinc-200 transition-all duration-200 hover:border-white/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70 disabled:opacity-60"
       >
         <ExternalIcon size={15} />
-        <span className="sr-only sm:not-sr-only">{exportState === "busy" ? "Exporting…" : exportState === "failed" ? "Export failed, retry" : "Export"}</span>
+        <span className="sr-only sm:not-sr-only">{exportState === "busy" ? "Downloading…" : exportState === "failed" ? "Download didn't work, try again" : "Download"}</span>
       </button>
     </>,
   );

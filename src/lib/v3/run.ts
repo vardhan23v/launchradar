@@ -14,16 +14,19 @@ export interface StageDef {
 }
 
 export const PIPELINE: StageDef[] = [
-  { id: "plan", label: "Plan", keys: ["planner", "autocomplete-seed"] },
-  { id: "discover", label: "Discover", keys: ["discovery"] },
-  { id: "extract", label: "Extract", keys: ["signals", "extract"] },
-  { id: "cluster", label: "Cluster", keys: ["cluster", "trends"] },
-  { id: "competitors", label: "Competitors", keys: ["competitors"] },
-  { id: "verify", label: "Verify", keys: ["gaps", "verify"] },
-  { id: "score", label: "Score", keys: ["score", "opportunity", "skeptic", "done"] },
+  { id: "plan", label: "Pick lookups", keys: ["planner", "autocomplete-seed"] },
+  { id: "discover", label: "Look around the web", keys: ["discovery"] },
+  { id: "extract", label: "Find complaints", keys: ["signals", "extract"] },
+  { id: "cluster", label: "Group them", keys: ["cluster", "trends"] },
+  { id: "competitors", label: "Find existing products", keys: ["competitors"] },
+  { id: "verify", label: "Check if anyone solves it", keys: ["gaps", "verify"] },
+  { id: "score", label: "Score the ideas", keys: ["score", "opportunity", "skeptic", "done"] },
 ];
 
 export const stageIndex = (key: string): number => PIPELINE.findIndex((p) => p.keys.includes(key));
+
+/** The plain label of a pipeline step by its id ("plan", "score", ...). */
+export const stageLabel = (id: string): string => PIPELINE.find((p) => p.id === id)?.label ?? id;
 
 export function stageOf(e: StepEvent): string | null {
   if (e.type === "stage" || e.type === "llm") return e.stage;
@@ -31,21 +34,22 @@ export function stageOf(e: StepEvent): string | null {
   return null;
 }
 
+/** Where one lookup went, in the names people know. */
 const ENGINE_LABEL: Record<string, string> = {
-  google: "web",
-  google_news: "news",
-  google_autocomplete: "autocomplete",
-  google_trends: "trends",
-  google_maps: "maps",
-  google_maps_reviews: "maps reviews",
-  google_play_product: "play store",
-  apple_reviews: "app store",
-  google_shopping: "shopping",
-  google_jobs: "jobs",
-  youtube: "youtube",
+  google: "Google search",
+  google_news: "Google News",
+  google_autocomplete: "search suggestions",
+  google_trends: "Google Trends",
+  google_maps: "Google Maps",
+  google_maps_reviews: "Google Maps reviews",
+  google_play_product: "Play Store",
+  apple_reviews: "App Store",
+  google_shopping: "Google Shopping",
+  google_jobs: "Google Jobs",
+  youtube: "YouTube",
 };
 
-export const engineLabel = (engine: string): string => ENGINE_LABEL[engine] ?? engine;
+export const engineLabel = (engine: string): string => ENGINE_LABEL[engine] ?? engine.replace(/_/g, " ");
 
 const isObj = (v: unknown): v is Record<string, unknown> => typeof v === "object" && v !== null && !Array.isArray(v);
 const RUN_STATUSES = ["queued", "running", "complete", "failed"];
@@ -102,7 +106,7 @@ export interface SearchStats {
   /** every search the run made, failed ones included */
   total: number;
   failed: number;
-  /** why searches failed, one line each, in the words the research log used ("SerpApi timed out") */
+  /** why lookups didn't work, one line each, in the words the step log used ("The web lookup took too long") */
   reasons: string[];
   /** per pipeline stage: how many searches it made and how many of those failed */
   byStage: { total: number; failed: number }[];
@@ -128,7 +132,7 @@ export function searchStats(events: StepEvent[], run?: Run): SearchStats {
     failed += 1;
     if (s >= 0) byStage[s].failed += 1;
     const next = events[i + 1];
-    const why = next && next.type === "stage" && next.level === "warn" ? next.message.trim() : "The search failed";
+    const why = next && next.type === "stage" && next.level === "warn" ? next.message.trim() : "The lookup didn't work";
     reasons.set(why, (reasons.get(why) ?? 0) + 1);
   }
   const sorted = [...reasons.entries()].sort((a, b) => b[1] - a[1]).map(([why, n]) => (n > 1 ? `${why} (${n} times)` : why));
@@ -160,15 +164,15 @@ export const stageMostlyFailed = (s: { total: number; failed: number }): boolean
 
 /** Which stage a run is in, from the parts of the view that exist (for a list that has no event log). */
 export function latestStageOf(view: RunView): string {
-  if (view.opportunities.length > 0) return "Score";
-  if (view.gaps.length > 0) return "Verify";
-  if (view.competitors.length > 0) return "Competitors";
-  if (view.clusters.length > 0) return "Cluster";
-  if (view.signals.length > 0) return "Extract";
+  if (view.opportunities.length > 0) return stageLabel("score");
+  if (view.gaps.length > 0) return stageLabel("verify");
+  if (view.competitors.length > 0) return stageLabel("competitors");
+  if (view.clusters.length > 0) return stageLabel("cluster");
+  if (view.signals.length > 0) return stageLabel("extract");
   const calls = Array.isArray(view.searchCalls) ? view.searchCalls : [];
   const last = calls[calls.length - 1];
   const key = isObj(last) && typeof last.stage === "string" ? last.stage : null;
   const i = key ? stageIndex(key) : -1;
   if (i >= 0) return PIPELINE[i].label;
-  return calls.length > 0 || view.evidence.length > 0 ? "Discover" : "Plan";
+  return calls.length > 0 || view.evidence.length > 0 ? stageLabel("discover") : stageLabel("plan");
 }

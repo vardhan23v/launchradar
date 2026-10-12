@@ -24,51 +24,94 @@ export type ViewMode = "grid" | "list";
 export const SUB_SCORES: { key: keyof Opportunity["subScores"]; label: string; short: string; max: number; what: string }[] = [
   {
     key: "pain",
-    label: "Pain",
-    short: "Pain",
+    label: "How much it hurts",
+    short: "Hurts",
     max: 30,
-    what: "How strongly users describe the problem (the signals' average intensity, 1 to 5) and on how many different sites they say it (up to 6).",
+    what: "How upset people sound, 1 to 5, and on how many different websites they say it (up to 6).",
   },
   {
     key: "momentum",
-    label: "Momentum",
-    short: "Mom.",
+    label: "Getting popular",
+    short: "Popular",
     max: 20,
-    what: "The 12-month Google Trends slope for the problem's keyword, plus a bump when at least two news results are from the last 90 days. No trend data scores 0.",
+    what: "Whether Google searches for this problem went up over the last 12 months, plus a little extra when at least two news stories about it are from the last 90 days. No trend data means 0.",
   },
   {
     key: "commercial",
-    label: "Commercial intent",
-    short: "Comm.",
+    label: "People would pay",
+    short: "Pay",
     max: 20,
-    what: "Buying signals in the results: ads for the problem (half the weight, full at 4), whether any competitor publishes a price (30%), and job postings (20%, full at 10).",
+    what: "Signs that people would pay: ads for this problem (half the points, full at 4 ads), whether any existing product shows a price (30%), and job ads about it (20%, full at 10).",
   },
   {
     key: "whitespace",
-    label: "Whitespace",
-    short: "White.",
+    label: "Room for something new",
+    short: "Room",
     max: 20,
-    what: "The gap check's verdict (open: full marks, partly served: half, already served: a tenth), reduced by each direct competitor or product the check found, to zero at 8.",
+    what: "Full points when nobody solves it, half when it's partly solved, almost none when it's already solved. Then fewer points for every product of the same kind we found, down to zero at 8.",
   },
   {
     key: "weakRivals",
-    label: "Weak rivals",
-    short: "Rivals",
+    label: "Weak existing products",
+    short: "Weak",
     max: 10,
-    what: "The share of competitors in this problem's space that are rated under 4 or have three or more complaints in the evidence.",
+    what: "The share of existing products for this problem that have a star rating under 4, or at least three complaints in the pages we read.",
   },
 ];
 
 /** How the total is made, for the "How the score works" disclosure. */
 export const SCORE_NOTE =
-  "The score is deterministic: the same evidence always gives the same number, and nothing is imputed when evidence is missing. It is computed only from what the run's searches found, so it rates the evidence, not the idea. A high score is not commercial validation.";
+  "The same pages always give the same score. The score only says how strong the proof is; it can't promise the idea will work.";
 
-/** What the confidence label means (worker/src/score.ts): it rates the amount and spread of evidence, not the idea. */
-export const CONFIDENCE_NOTE: Record<string, string> = {
-  High: "High confidence: the run collected at least 30 results from at least 4 sites and 3 kinds of search, so the case rests on broad evidence.",
-  Medium: "Medium confidence: the run collected at least 12 results from at least 2 sites and 2 kinds of search. Treat the case as a lead, not a conclusion.",
-  Low: "Low confidence: the run collected fewer than 12 results, or they came from a single site or a single kind of search. The case rests on thin evidence.",
+/** The sureness words shown for the server's High / Medium / Low confidence. */
+export const CONFIDENCE_LABEL: Record<"High" | "Medium" | "Low", string> = {
+  High: "Very sure",
+  Medium: "Fairly sure",
+  Low: "Not very sure",
 };
+
+/** What each sureness level means (worker/src/score.ts): it rates how much proof we found, not the idea. */
+export const CONFIDENCE_NOTE: Record<string, string> = {
+  High: "Very sure: we found at least 30 results on at least 4 different websites and from 3 kinds of lookup, so there's a lot of proof.",
+  Medium: "Fairly sure: we found at least 12 results on at least 2 websites and from 2 kinds of lookup. Treat it as a lead, not a sure thing.",
+  Low: "Not very sure: we found fewer than 12 results, or they all came from one website or one kind of lookup. There's only a little proof.",
+};
+
+/** The sureness word for any confidence value the server may send ("High", "med", "low", ...). */
+export function sureLabel(value: string): string {
+  const c = confidenceLabel(value);
+  return c === "High" || c === "Medium" || c === "Low" ? CONFIDENCE_LABEL[c] : c;
+}
+
+/** The kind of existing product the "does anyone solve it?" check found. Unknown kinds show as-is. */
+export const CATEGORY_LABEL: Record<string, string> = {
+  direct: "Same kind of product",
+  adjacent: "Similar product",
+  "generic-substitute": "Workaround",
+};
+
+export const categoryLabel = (category: string): string => CATEGORY_LABEL[category] ?? category;
+
+/** What happened to one lookup. */
+export const CALL_STATUS_LABEL: Record<string, string> = {
+  ok: "worked",
+  failed: "didn't work",
+  skipped: "skipped",
+};
+
+export const callStatusLabel = (status: string): string => CALL_STATUS_LABEL[status] ?? status;
+
+/** The two sentences that explain the app, under the home heading and in the new-search dialog. */
+export const INTRO =
+  "LaunchRadar looks around the web for things people complain about, then suggests product ideas nobody has built yet. Every idea shows the web pages it came from, so you can check for yourself.";
+
+/** The four steps of the "How does this work?" explainer. */
+export const HOW_IT_WORKS: string[] = [
+  "You type a topic, like “meal planning for nurses”.",
+  "We look around the web for what people complain about.",
+  "We check whether an existing product already solves each complaint.",
+  "Complaints nobody solves yet become ideas, each with a score and the pages we read.",
+];
 
 export const REGIONS: { code: string; label: string }[] = [
   { code: "in", label: "India" },
@@ -79,9 +122,16 @@ export const REGIONS: { code: string; label: string }[] = [
 export const regionLabel = (code: string) => REGIONS.find((r) => r.code === code)?.label ?? code.toUpperCase();
 
 export const GAP_LABEL: Record<GapStatus, string> = {
-  open: "Open gap",
-  "partially-served": "Partly served",
-  served: "Already served",
+  open: "Nobody solves this yet",
+  "partially-served": "Partly solved",
+  served: "Already solved",
+};
+
+/** One-line meaning of each "is it solved?" answer, shown as a tooltip next to the badge. */
+export const GAP_HELP: Record<GapStatus, string> = {
+  open: "We looked for a product that does this and didn't find one.",
+  "partially-served": "Some products do part of this, but not all.",
+  served: "A product already does this.",
 };
 
 export function confidenceLabel(value: string): string {

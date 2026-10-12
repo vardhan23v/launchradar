@@ -44,7 +44,7 @@ export class LlmClient {
     // every call is visible in the research trace
     await this.onEvent?.({ type: "llm", stage, model: provider === "demo" ? "demo" : llmModel(this.settings), description });
     if (provider === "demo") {
-      throw new LlmError(`demo provider has no recorded answer for stage "${stage}". Set LLM_PROVIDER to gemini or openai.`);
+      throw new LlmError(`This server can only replay the example: there is no recorded answer for the "${stage}" step (LLM_PROVIDER=demo; set it to gemini or openai).`);
     }
     const raw = await this.call(prompt, temperature);
     try {
@@ -61,14 +61,14 @@ export class LlmClient {
       return validate(value);
     } catch (err) {
       if (err instanceof LlmError) throw err;
-      throw new LlmError(`LLM output failed validation (stage ${stage}): ${err instanceof Error ? err.message : String(err)}`);
+      throw new LlmError(`The writing helper sent something we couldn't use (${stage} step): ${err instanceof Error ? err.message : String(err)}`);
     }
   }
 
   /** Returns the model's raw text. The API key travels in a header, never in a URL. */
   private async call(prompt: string, temperature: number): Promise<string> {
     const key = llmApiKey(this.settings);
-    if (!key) throw new LlmError("LLM_API_KEY is required for a live provider.");
+    if (!key) throw new LlmError("The writing helper needs a key (LLM_API_KEY).");
     const provider = llmProvider(this.settings), model = llmModel(this.settings);
     if (provider === "openai") {
       // the OpenAI wire format, at api.openai.com or any compatible gateway (LLM_BASE_URL)
@@ -96,7 +96,7 @@ export class LlmClient {
       const parts = Array.isArray(content.parts) ? content.parts : [];
       return parts.map((p) => (isRecord(p) && typeof p.text === "string" ? p.text : "")).join("");
     }
-    throw new LlmError(`Unsupported LLM_PROVIDER: ${provider}`);
+    throw new LlmError("This writing helper isn't one we support (LLM_PROVIDER must be gemini or openai).");
   }
 
   /** POST with patience for rate limits: free tiers (Groq, Gemini) answer 429 when a run bursts. */
@@ -109,26 +109,26 @@ export class LlmClient {
           signal: AbortSignal.timeout(LLM_TIMEOUT_MS),
         });
       } catch (err) {
-        const why = err instanceof Error && err.name === "TimeoutError" ? "timed out" : "could not be reached";
+        const why = err instanceof Error && err.name === "TimeoutError" ? "took too long" : "couldn't be reached";
         console.error("llm request failed", scrubSecrets(err instanceof Error ? err.message : String(err), this.settings));
-        throw new LlmError(`The language model provider ${why}.`);
+        throw new LlmError(`The writing helper ${why}.`);
       }
       if (res.status !== 429 || attempt === MAX_RATE_LIMIT_RETRIES) break;
       const header = Number.parseFloat(res.headers.get("retry-after") ?? "");
       const wait = Number.isFinite(header) ? header * 1000 : 5000 * (attempt + 1);
       // a little jitter so several runs that hit the limit together do not retry in lockstep
       const capped = Math.min(Math.max(wait, 1000), MAX_RATE_LIMIT_WAIT_MS) + Math.floor(Math.random() * 500);
-      await this.onEvent?.({ type: "stage", stage: "llm", level: "warn", message: `Provider rate limit hit; waiting ${Math.round(capped / 1000)}s before retrying` });
+      await this.onEvent?.({ type: "stage", stage: "llm", level: "warn", message: `The writing helper is busy; waiting ${Math.round(capped / 1000)}s before trying again` });
       await this.sleepImpl(capped);
     }
-    if (!res) throw new LlmError("The language model provider could not be reached.");
+    if (!res) throw new LlmError("The writing helper couldn't be reached.");
     if (res.status >= 400) {
       // the body can echo request details (headers, a key prefix): it goes to the operator's log, scrubbed, never to a run
       console.error("llm provider error", res.status, scrubSecrets((await res.text().catch(() => "")).slice(0, 500), this.settings));
-      throw new LlmError(`LLM provider returned ${res.status}${res.status === 401 || res.status === 403 ? " (check LLM_API_KEY)" : res.status === 429 ? " (rate limited)" : ""}.`);
+      throw new LlmError(`The writing helper said no (HTTP ${res.status}${res.status === 401 || res.status === 403 ? ", check LLM_API_KEY" : res.status === 429 ? ", too many requests" : ""}).`);
     }
     const data: unknown = await res.json().catch(() => null);
-    if (!isRecord(data)) throw new LlmError("LLM provider returned a non-JSON body");
+    if (!isRecord(data)) throw new LlmError("The writing helper sent something that isn't JSON.");
     return data;
   }
 }

@@ -119,7 +119,7 @@ export function publicMessage(err: unknown, settings: config.Settings, max = 300
   const known = err instanceof PipelineError || err instanceof LlmError || err instanceof BudgetExceeded || err instanceof SerpApiError;
   if (known) return config.scrubSecrets(err.message, settings).slice(0, max);
   console.error("pipeline error", config.scrubSecrets(err instanceof Error ? `${err.name}: ${err.message}` : String(err), settings));
-  return "An internal error interrupted this step.";
+  return "Something went wrong on our side during this step.";
 }
 
 /** Model-written text is stored and shown to everyone: bound it. */
@@ -199,27 +199,30 @@ export function summariseOutcome(calls: Pick<SearchCall, "stage" | "status" | "e
   const mostRejected = rejected > kept;
   const outcome: RunOutcome = opportunities === 0 ? "empty" : lostEvidence || mostRejected ? "limited" : "full";
   const secs = (elapsedMs / 1000).toFixed(1);
-  const found = `${opportunities} opportunit${opportunities === 1 ? "y was" : "ies were"} found`;
-  const failedNote = failed.length ? ` (${failed.length} failed)` : "";
+  const ideas = `${opportunities} idea${opportunities === 1 ? "" : "s"}`;
+  const failedNote = failed.length ? ` (${failed.length} didn't work)` : "";
   let message: string;
   if (lostEvidence || mostRejected) {
     const parts: string[] = [];
     if (failed.length) {
       // the most common failure explains the loss; the log has each one
       const tally = new Map<string, number>();
-      for (const c of failed) tally.set(c.error ?? "search failed", (tally.get(c.error ?? "search failed") ?? 0) + 1);
+      const unknown = "the lookup didn't work";
+      for (const c of failed) tally.set(c.error ?? unknown, (tally.get(c.error ?? unknown) ?? 0) + 1);
       const [reason] = [...tally.entries()].sort((a, b) => b[1] - a[1])[0];
-      parts.push(`${failed.length} of ${calls.length} searches failed (${reason.replace(/\.$/, "")}${tally.size > 1 ? ", among others" : ""})`);
+      // the reason is a sentence of its own; inside brackets it reads on from "didn't work"
+      const inline = reason.replace(/\.$/, "").replace(/^[A-Z](?=[a-z])/, (c) => c.toLowerCase());
+      parts.push(`${failed.length} of ${calls.length} lookups didn't work (${inline}${tally.size > 1 ? ", among other reasons" : ""})`);
     }
-    if (mostRejected) parts.push(`the citation validator rejected ${rejected} of ${rejected + kept} signals`);
-    message = `Run complete with limited evidence: ${parts.join(" and ")}, so ${found}.`;
+    if (mostRejected) parts.push(`${rejected} of ${rejected + kept} complaints were dropped because we couldn't find their exact words on the page`);
+    message = `Done, but with less proof than usual: ${parts.join(" and ")}, so ${ideas} found.`;
   } else if (opportunities === 0) {
-    const why = !gaps.length ? "no candidate gap was proposed"
-      : gaps.every((g) => g.status === "served") ? "every candidate gap is already served"
-      : "no candidate gap produced an opportunity card";
-    message = `Run complete in ${secs}s, but no opportunity was found: ${why}${failedNote}.`;
+    const why = !gaps.length ? "we couldn't work out what's missing"
+      : gaps.every((g) => g.status === "served") ? "someone already solves each one"
+      : "no idea had enough proof";
+    message = `Done in ${secs}s, but no idea was found: ${why}${failedNote}.`;
   } else {
-    message = `Run complete in ${secs}s: ${found} from ${calls.length} searches${failedNote}.`;
+    message = `Done in ${secs}s: ${ideas} from ${calls.length} lookups${failedNote}.`;
   }
   return { outcome, searchCalls: calls.length, failedSearches: failed.length, message, level: outcome === "full" ? "ok" : "warn" };
 }
@@ -302,8 +305,8 @@ class Pipeline {
   // ---- planner -------------------------------------------------------------
 
   async classify(): Promise<void> {
-    await this.stage("planner", "Planning research — classifying market type, seeding from autocomplete");
-    this.s.questionType = await this.ctx.llm.complete("planner", "Classifying market type", prompts.classifyPrompt(this.s.question), (v) => {
+    await this.stage("planner", "Working out what to look up");
+    this.s.questionType = await this.ctx.llm.complete("planner", "Working out what kind of product this is", prompts.classifyPrompt(this.s.question), (v) => {
       const t = need(v, "type");
       if (typeof t !== "string" || !QUESTION_TYPES.has(t)) throw new Error(`type must be one of ${[...QUESTION_TYPES].sort().join(", ")}`);
       return t;
@@ -334,7 +337,7 @@ class Pipeline {
 
     let planned: PlannedQuery[] = [];
     try {
-      planned = await this.ctx.llm.complete("planner", "Building discovery queries", prompts.planPrompt(
+      planned = await this.ctx.llm.complete("planner", "Writing the lookups", prompts.planPrompt(
         this.s.question, config.regionName(this.s.region), this.s.questionType ?? "", allowed.join(", "),
         this.s.suggestions.join("; ") || "(none)", n), (v) => {
         const out: PlannedQuery[] = [];
@@ -351,7 +354,7 @@ class Pipeline {
         return out;
       });
     } catch (err) {
-      await this.stage("planner", `Planner failed, using template queries: ${this.why(err, 120)}`, "warn");
+      await this.stage("planner", `The writing helper couldn't plan the lookups, so standard ones are used: ${this.why(err, 120)}`, "warn");
     }
 
     const seen = new Set<string>();
@@ -376,7 +379,7 @@ class Pipeline {
       { q: core, engine: allowed.includes("google_news") ? "google_news" : "google" },
     ];
     this.s.queries = [...onTopic, ...dedupe(templates)].slice(0, n);
-    await this.stage("discovery", `Discovery pass — ${this.s.queries.length} queries`);
+    await this.stage("discovery", `Looking around the web — ${this.s.queries.length} lookups`);
     this.next("discover");
   }
 
@@ -398,14 +401,14 @@ class Pipeline {
       const calls = await this.ctx.store.searchCallsFor(this.s.runId);
       const skipped = calls.filter((c) => c.status === "skipped");
       if (skipped.length && skipped.length >= Math.floor(calls.length / 2)) {
-        throw new PipelineError((await this.ctx.store.quotaBlock()) ?? "Searches were skipped by a budget guard.");
+        throw new PipelineError((await this.ctx.store.quotaBlock()) ?? "Lookups were skipped because a spending limit was reached.");
       }
-      throw new PipelineError(`Discovery yielded only ${discovered.length} evidence rows (< ${config.MIN_DISCOVERY_EVIDENCE}). Try a broader question.`);
+      throw new PipelineError(`We found only ${discovered.length} web results (we need at least ${config.MIN_DISCOVERY_EVIDENCE}). Try a broader topic.`);
     }
     const rows = selectForExtraction(discovered);
     this.s.batches = [];
     for (let offset = 0; offset < rows.length; offset += EXTRACT_BATCH) this.s.batches.push(rows.slice(offset, offset + EXTRACT_BATCH).map((e) => e.id));
-    await this.stage("signals", "Extracting market signals from evidence");
+    await this.stage("signals", "Finding complaints in the pages we read");
     this.next("extract");
   }
 
@@ -417,7 +420,7 @@ class Pipeline {
     const batch = (this.s.batches[this.s.i] ?? []).map((id) => byId.get(id)).filter((e): e is Evidence => e !== undefined);
     let raw: Record<string, unknown>[] = [];
     try {
-      raw = await this.ctx.llm.complete("extract", `Extracting signals (${batch.length} rows)`,
+      raw = await this.ctx.llm.complete("extract", `Finding complaints in ${batch.length} results`,
         prompts.extractPrompt(this.s.question, batch.map(row).join("\n")), (v) => {
           const good: Record<string, unknown>[] = [];
           const signals = need(v, "signals");
@@ -434,7 +437,7 @@ class Pipeline {
           return good;
         });
     } catch (err) {
-      await this.stage("signals", `Batch skipped: ${this.why(err, 140)}`, "warn");
+      await this.stage("signals", `Skipped one batch of results: ${this.why(err, 140)}`, "warn");
     }
     const seen = new Set(this.s.signals.map((x) => normaliseQuery(x.statement)));
     for (const sig of raw) {
@@ -463,8 +466,8 @@ class Pipeline {
 
     // the state carries the total, so a unit retried after a crash writes the same number, not double
     await this.ctx.store.updateRun(this.s.runId, { rejectedSignals: this.s.rejected });
-    await this.stage("signals", `${this.s.signals.length} signals kept, ${this.s.rejected} rejected by the citation validator`, "ok");
-    if (!this.s.signals.length) throw new PipelineError("No signal survived the citation validator. Try a broader question.");
+    await this.stage("signals", `${this.s.signals.length} complaints kept, ${this.s.rejected} dropped because we couldn't find their exact words on the page`, "ok");
+    if (!this.s.signals.length) throw new PipelineError("No complaint passed the exact-words check. Try a broader topic.");
     await this.ctx.store.setSignals(this.s.runId, this.s.signals);
     this.next("cluster");
   }
@@ -472,9 +475,9 @@ class Pipeline {
   // ---- cluster -------------------------------------------------------------
 
   async cluster(): Promise<void> {
-    await this.stage("cluster", "Clustering signals into problem clusters");
+    await this.stage("cluster", "Grouping the complaints");
     const lines = this.s.signals.map((s) => `[${s.id}] (${s.type}, intensity ${s.intensity}, ${s.who ?? "?"}) ${s.statement}`).join("\n");
-    const raw = await this.ctx.llm.complete("cluster", "Grouping signals", prompts.clusterPrompt(lines), (v) => {
+    const raw = await this.ctx.llm.complete("cluster", "Grouping complaints that are about the same thing", prompts.clusterPrompt(lines), (v) => {
       const clusters = need(v, "clusters");
       if (!Array.isArray(clusters)) throw new Error("clusters must be a list");
       const out = clusters.filter((c): c is Record<string, unknown> => isRecord(c) && Boolean(str(c.name) && str(c.jobToBeDone) && str(c.searchKeyword)));
@@ -496,8 +499,8 @@ class Pipeline {
         searchKeyword: cleanQuery(str(c.searchKeyword).replace(/,/g, " ")).slice(0, 80) || cap(str(c.name), 80), signalIds: ids, weak: ids.length < 2 || domains.size < 2,
       });
     }
-    if (!clusters.length) throw new PipelineError("Clustering produced no usable cluster.");
-    await this.stage("cluster", `${clusters.length} clusters (${clusters.filter((c) => c.weak).length} weak)`, "ok");
+    if (!clusters.length) throw new PipelineError("The complaints couldn't be grouped.");
+    await this.stage("cluster", `${clusters.length} groups of complaints (${clusters.filter((c) => c.weak).length} with only a little proof)`, "ok");
     this.s.clusters = clusters;
     await this.ctx.store.setClusters(this.s.runId, clusters);
     this.next("trends");
@@ -510,7 +513,7 @@ class Pipeline {
     // one TIMESERIES call compares up to 5 cluster keywords; RELATED_QUERIES takes exactly one
     const keywords = uniq(ordered.map((c) => c.searchKeyword.toLowerCase())).slice(0, 5);
     if (this.s.i === 0 && ordered.length) {
-      await this.stage("trends", "Google Trends — 12-month interest and rising queries");
+      await this.stage("trends", "Checking Google Trends: is this getting more popular?");
       await this.search("trends", "trends", "google_trends", { q: keywords.join(","), data_type: "TIMESERIES", date: "today 12-m" });
       this.s.i = 1;
       return;
@@ -518,7 +521,7 @@ class Pipeline {
     if (this.s.i === 1 && ordered.length) {
       await this.search("trends", "trends", "google_trends", { q: keywords[0], data_type: "RELATED_QUERIES", date: "today 12-m" });
     }
-    await this.stage("competitors", "Competitor pass — searching for existing products");
+    await this.stage("competitors", "Looking for products that already exist");
     this.s.compClusters = ordered.slice(0, 3).map((c) => c.id);
     this.next("comp-search");
   }
@@ -553,7 +556,7 @@ class Pipeline {
       if (cluster) await this.competitorsFor(cluster);
       if (this.s.i < this.s.compClusters.length) return;
     }
-    await this.stage("competitors", `${this.s.competitors.length} competitors, each traced to an evidence row`, "ok");
+    await this.stage("competitors", `${this.s.competitors.length} existing products found, each on a page we read`, "ok");
     await this.ctx.store.setCompetitors(this.s.runId, this.s.competitors);
     this.next("gaps");
   }
@@ -566,7 +569,7 @@ class Pipeline {
     const needs = this.s.signals.filter((s) => cluster.signalIds.includes(s.id)).map((s) => s.statement).join("; ");
     let raw: Record<string, unknown>[];
     try {
-      raw = await this.ctx.llm.complete("competitors", `Competitors for "${cluster.name}"`, prompts.competitorPrompt(
+      raw = await this.ctx.llm.complete("competitors", `Finding existing products for "${cluster.name}"`, prompts.competitorPrompt(
         cluster.name, cluster.jobToBeDone, needs, ev.map(row).join("\n")), (v) => {
         const comps = need(v, "competitors");
         if (!Array.isArray(comps)) throw new Error("competitors must be a list");
@@ -640,20 +643,20 @@ class Pipeline {
       gaps = await this.gapHypothesis();
     } catch (err) {
       // the problems and competitors found so far are still worth showing
-      await this.stage("gaps", `Gap analysis skipped: ${this.why(err, 160)}`, "warn");
+      await this.stage("gaps", `Couldn't work out what's missing: ${this.why(err, 160)}`, "warn");
     }
     this.s.gaps = gaps;
     await this.ctx.store.setGaps(this.s.runId, gaps);
     // most decisive kill query per gap first; spare budget goes to second queries
     this.s.verifyPlan = [];
     for (const rnd of [0, 1]) gaps.forEach((g, gi) => { if (rnd < g.killQueries.length) this.s.verifyPlan.push([gi, rnd]); });
-    if (gaps.length) await this.stage("verify", "Gap verification — running kill queries");
+    if (gaps.length) await this.stage("verify", "Checking whether anyone already solves it");
     this.next(gaps.length ? "verify-search" : "opportunity");
-    if (!gaps.length) await this.stage("score", "Scoring opportunities (deterministic, no LLM)");
+    if (!gaps.length) await this.stage("score", "Scoring the ideas");
   }
 
   private async gapHypothesis(): Promise<Gap[]> {
-    await this.stage("gaps", "Hypothesising gaps and the searches most likely to disprove them");
+    await this.stage("gaps", "Working out what's missing");
     const clusterLines = this.s.clusters.map((c) => {
       const sigs = this.s.signals.filter((s) => c.signalIds.includes(s.id));
       const domains = new Set(sigs.flatMap((s) => s.domains));
@@ -664,7 +667,7 @@ class Pipeline {
       `${c.name} (${c.category}; clusters ${c.clusterIds.join(",")}) [${c.evidenceIds.join(",")}] covers: ${c.coveredNeeds.join("; ") || "unknown"} | complaints: ${
         c.complaints.map((x) => `${x.text} [${x.evidenceId}]`).join("; ") || "none found"}`).join("\n") || "(no competitors found in evidence)";
 
-    const raw = await this.ctx.llm.complete("gaps", "Proposing candidate gaps", prompts.gapPrompt(clusterLines.join("\n"), compLines), (v) => {
+    const raw = await this.ctx.llm.complete("gaps", "Suggesting what's missing", prompts.gapPrompt(clusterLines.join("\n"), compLines), (v) => {
       const gaps = need(v, "gaps");
       if (!Array.isArray(gaps)) throw new Error("gaps must be a list");
       return gaps.filter((g): g is Record<string, unknown> => isRecord(g) && Boolean(str(g.unmetNeed) && str(g.whyExistingFail)));
@@ -683,7 +686,7 @@ class Pipeline {
       });
       if (gaps.length === 5) break;
     }
-    await this.stage("gaps", `${gaps.length} candidate gaps`, "ok");
+    await this.stage("gaps", `${gaps.length} things might be missing`, "ok");
     return gaps;
   }
 
@@ -708,8 +711,8 @@ class Pipeline {
     }
     await this.ctx.store.setGaps(this.s.runId, this.s.gaps);
     const tally = (status: string) => this.s.gaps.filter((g) => g.status === status).length;
-    await this.stage("verify", `${tally("open")} open, ${tally("partially-served")} partially served, ${tally("served")} served (crowded)`, "ok");
-    await this.stage("score", "Scoring opportunities (deterministic, no LLM)");
+    await this.stage("verify", `${tally("open")} nobody solves yet, ${tally("partially-served")} partly solved, ${tally("served")} already solved`, "ok");
+    await this.stage("score", "Scoring the ideas");
     this.next("opportunity");
   }
 
@@ -719,12 +722,12 @@ class Pipeline {
     if (!ev.length) {
       // an unverified gap must never be presented as open whitespace
       gap.status = "partially-served";
-      gap.remainingWedge = "Not verified — the kill query returned no evidence.";
+      gap.remainingWedge = "Not checked: the lookup found no web pages.";
       return;
     }
     try {
       const cluster = this.s.clusters.find((c) => c.id === gap.clusterId);
-      const raw = await this.ctx.llm.complete("verify", `Judging gap ${gap.id}`, prompts.verifyPrompt(
+      const raw = await this.ctx.llm.complete("verify", `Checking whether anyone already solves ${gap.id}`, prompts.verifyPrompt(
         gap.unmetNeed, segmentOf(cluster, this.s.signals), config.regionName(this.s.region), ev.map(row).join("\n")), (v) => {
         const status = need(v, "status");
         if (typeof status !== "string" || !GAP_STATUSES.has(status)) throw new Error(`status must be one of ${[...GAP_STATUSES].sort().join(", ")}`);
@@ -737,7 +740,7 @@ class Pipeline {
       gap.foundProducts = products
         .filter((p): p is Record<string, unknown> => isRecord(p) && typeof p.evidenceId === "string" && evById.has(p.evidenceId)
           && namedIn(cap(str(p.name), 120), evById.get(p.evidenceId) as Evidence))
-        .map((p): FoundProduct => ({ name: cap(str(p.name), 120), evidenceId: p.evidenceId as string, match: cap(str(p.match), 300) || "found by kill query" }))
+        .map((p): FoundProduct => ({ name: cap(str(p.name), 120), evidenceId: p.evidenceId as string, match: cap(str(p.match), 300) || "found while checking" }))
         .slice(0, 8);
       // "served" needs at least one product that resolves to kill-query evidence, and a gap with such
       // a product is never "open"
@@ -747,8 +750,8 @@ class Pipeline {
       gap.remainingWedge = cap(str(raw.remainingWedge), 400) || null;
     } catch (err) {
       gap.status = "partially-served";
-      gap.remainingWedge = "Not verified — the verifier failed.";
-      await this.stage("verify", `Gap ${gap.id}: ${this.why(err, 140)}`, "warn");
+      gap.remainingWedge = "Not checked: the writing helper couldn't judge it.";
+      await this.stage("verify", `Couldn't check ${gap.id}: ${this.why(err, 140)}`, "warn");
     }
   }
 
@@ -803,7 +806,7 @@ class Pipeline {
     let copy: Record<string, unknown> = {};
     const fields = ["title", "target", "problem", "existingSolutions", "gap", "pitch", "firstValidationStep"];
     try {
-      copy = await this.ctx.llm.complete("opportunity", `Writing opportunity card for "${cluster.name}"`, prompts.opportunityPrompt(JSON.stringify({
+      copy = await this.ctx.llm.complete("opportunity", `Writing up the idea for "${cluster.name}"`, prompts.opportunityPrompt(JSON.stringify({
         cluster: { name: cluster.name, jobToBeDone: cluster.jobToBeDone }, segment: target,
         signals: sigs.map((s) => ({ statement: s.statement, quote: s.quote, evidenceIds: s.evidenceIds })),
         competitors: relevant.map((c) => ({ name: c.name, category: c.category, pricing: c.pricing, rating: c.rating, complaints: c.complaints.map((x) => x.text), evidenceIds: c.evidenceIds })),
@@ -814,19 +817,19 @@ class Pipeline {
         return v as Record<string, unknown>;
       });
     } catch (err) {
-      await this.stage("opportunity", `Card copy fell back to evidence summary: ${this.why(err, 120)}`, "warn");
+      await this.stage("opportunity", `The writing helper couldn't write this idea up, so it shows the complaints as found: ${this.why(err, 120)}`, "warn");
     }
 
-    const existingFallback = relevant.map((c) => `${c.name}${cite(c.evidenceIds)}`).join(", ") || "No competitor surfaced in the evidence.";
+    const existingFallback = relevant.map((c) => `${c.name}${cite(c.evidenceIds)}`).join(", ") || "No existing product turned up in the pages we read.";
     this.s.opportunities.push({
       id: "O0", runId: this.s.runId, gapId: gap.id, clusterId: cluster.id,
       title: cap(str(copy.title), 120) || cluster.name, target: cap(str(copy.target), 160) || target,
       problem: cap(keepKnownCitations(str(copy.problem) || sigs.map((s) => `${s.statement}${cite(s.evidenceIds)}`).join(" "), known), 1500),
       existingSolutions: cap(keepKnownCitations(str(copy.existingSolutions) || existingFallback, known), 1500),
       gap: cap(keepKnownCitations(str(copy.gap) || `${gap.unmetNeed}${cite(gap.evidenceIds)}`, known), 1500),
-      pitch: cap(keepKnownCitations(str(copy.pitch), known), 400) || "Validate this gap with target users before building.",
+      pitch: cap(keepKnownCitations(str(copy.pitch), known), 400) || "Talk to the people this is for before building anything.",
       mvpScope: strList(copy.mvpScope).map((m) => cap(keepKnownCitations(m.trim(), known), 300)).filter(Boolean).slice(0, 5),
-      firstValidationStep: cap(keepKnownCitations(str(copy.firstValidationStep), known), 400) || "Interview five people from the target segment this week.",
+      firstValidationStep: cap(keepKnownCitations(str(copy.firstValidationStep), known), 400) || "Talk to five people this is for, this week.",
       score: scored.total, subScores: scored.subScores, confidence: scored.confidence, skeptic: [],
     });
     this.s.citedByGap[gap.id] = rowIds;
@@ -840,7 +843,7 @@ class Pipeline {
       if (this.s.i < reviewed.length) return;
     }
     await this.ctx.store.setOpportunities(this.s.runId, this.s.opportunities);
-    await this.stage("score", `${this.s.opportunities.length} opportunities ranked`, "ok");
+    await this.stage("score", `${this.s.opportunities.length} ideas scored`, "ok");
     this.next("finish");
   }
 
@@ -850,7 +853,7 @@ class Pipeline {
     const known = new Set(evById.keys());
     const rows = (this.s.citedByGap[o.gapId] ?? []).map((i) => evById.get(i)).filter((e): e is Evidence => e !== undefined).map(row).join("\n");
     try {
-      const raw = await this.ctx.llm.complete("skeptic", `Sceptic review of "${o.title}"`, prompts.skepticPrompt(JSON.stringify({
+      const raw = await this.ctx.llm.complete("skeptic", `Looking for reasons "${o.title}" might not work`, prompts.skepticPrompt(JSON.stringify({
         title: o.title, target: o.target, problem: o.problem, existingSolutions: o.existingSolutions, gap: o.gap, score: o.score, subScores: o.subScores, confidence: o.confidence,
       }), rows), (v) => {
         const objections = need(v, "objections");
@@ -862,7 +865,7 @@ class Pipeline {
         evidenceIds: uniq(strList(x.evidenceIds).filter((i) => known.has(i))).slice(0, 6),
       }));
     } catch (err) {
-      await this.stage("skeptic", `Skipped: ${this.why(err, 120)}`, "warn");
+      await this.stage("skeptic", `Skipped the "why it might not work" check: ${this.why(err, 120)}`, "warn");
     }
   }
 

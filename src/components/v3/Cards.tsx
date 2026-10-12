@@ -12,33 +12,30 @@ export interface CardProps {
   shortlisted: boolean;
   onToggleShortlist: () => void;
   onOpen: () => void;
-  /** hide the research-question line (the run page, where every card shares one question) */
+  /** hide the "from the search" line (the run page, where every card shares one topic) */
   hideOrigin?: boolean;
 }
 
-/** Where a finding came from: the research question plays the part a maker would on a launch site. */
+/** Where an idea came from: the search topic, the country and when it ran. */
 function Origin({ item, now }: { item: FeedItem; now: number }) {
   return (
     <p className="flex min-w-0 items-center gap-2 text-xs text-zinc-400">
-      <span
-        aria-hidden="true"
-        className="grid size-5 shrink-0 place-items-center rounded-full bg-zinc-800 font-mono text-[9px] font-semibold uppercase text-zinc-300 ring-1 ring-white/10"
-      >
-        {item.region}
+      <span className="shrink-0 text-zinc-300">{regionLabel(item.region)}</span>
+      <span aria-hidden="true" className="text-zinc-500">
+        ·
       </span>
-      <span className="sr-only">{regionLabel(item.region)}:</span>
       <span className="truncate" title={item.question}>
         {item.question}
       </span>
       <span aria-hidden="true" className="text-zinc-500">
         ·
       </span>
-      <span className="shrink-0">{item.demo ? "Recorded example" : item.superseded ? "Earlier run" : relativeDay(item.createdAt, now)}</span>
+      <span className="shrink-0">{item.demo ? "Example search" : item.superseded ? "Earlier search" : relativeDay(item.createdAt, now)}</span>
     </p>
   );
 }
 
-/** #1 of the current list: glowing border, the sub-score pentagon as its preview. */
+/** #1 of the current list: glowing border, the score pentagon as its preview. */
 export function FeaturedCard({ item, shortlisted, onToggleShortlist, onOpen, scopeLabel, hideOrigin }: Omit<CardProps, "rank" | "now"> & { scopeLabel: string }) {
   return (
     <section aria-labelledby={`lr3-featured-${item.key}`} className="lr3-appear relative" data-feed-key={item.key}>
@@ -72,12 +69,12 @@ export function FeaturedCard({ item, shortlisted, onToggleShortlist, onOpen, sco
 
               <dl className={cx("grid gap-x-6 gap-y-2 text-sm", !hideOrigin && "sm:grid-cols-2")}>
                 <div className="min-w-0">
-                  <dt className="text-xs text-zinc-400">For</dt>
+                  <dt className="text-xs text-zinc-400">Who it&apos;s for</dt>
                   <dd className="text-zinc-200">{item.opportunity.target}</dd>
                 </div>
                 {!hideOrigin && (
                   <div className="min-w-0">
-                    <dt className="text-xs text-zinc-400">Found by researching</dt>
+                    <dt className="text-xs text-zinc-400">From the search</dt>
                     <dd className="truncate text-zinc-200" title={item.question}>
                       {item.question} · {regionLabel(item.region)}
                     </dd>
@@ -91,7 +88,7 @@ export function FeaturedCard({ item, shortlisted, onToggleShortlist, onOpen, sco
                   onClick={onOpen}
                   className="group inline-flex h-9 items-center gap-2 rounded-lg bg-white px-3.5 text-sm font-medium text-zinc-900 transition-all duration-200 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300"
                 >
-                  Read the case
+                  Read more
                   <ArrowRightIcon size={15} className="transition-transform duration-200 group-hover:translate-x-0.5" />
                 </button>
                 <ShortlistButton active={shortlisted} onToggle={onToggleShortlist} title={item.title} />
@@ -102,8 +99,8 @@ export function FeaturedCard({ item, shortlisted, onToggleShortlist, onOpen, sco
             <div className="flex items-center justify-center gap-5 rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 md:flex-col md:justify-between">
               <div className="flex flex-col items-center gap-1.5 md:order-2">
                 <ScoreDial score={item.score} size="lg" />
-                <span aria-hidden="true" className="text-[11px] uppercase tracking-wider text-zinc-400">
-                  Score
+                <span aria-hidden="true" className="text-xs text-zinc-400">
+                  Idea score
                 </span>
               </div>
               <div className="hidden sm:block md:order-1">

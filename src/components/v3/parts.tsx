@@ -6,7 +6,7 @@ import { Fragment, useEffect, useId, useRef, useState, type ReactNode, type RefO
 
 import type { GapStatus, Opportunity } from "@/lib/types";
 import { citeGroups, safeUrl } from "@/lib/evidence";
-import { CONFIDENCE_NOTE, GAP_LABEL, SCORE_NOTE, SUB_SCORES, hueFor, monogram, type Source } from "@/lib/v3/feed";
+import { CONFIDENCE_NOTE, GAP_HELP, GAP_LABEL, HOW_IT_WORKS, SCORE_NOTE, SUB_SCORES, hueFor, monogram, sureLabel, type Source } from "@/lib/v3/feed";
 import { ExternalIcon, StarIcon } from "./icons";
 
 export function cx(...parts: (string | false | null | undefined)[]): string {
@@ -131,7 +131,7 @@ const TONES: Record<Tone, string> = {
 
 export function Badge({ tone = "neutral", children, dot }: { tone?: Tone; children: ReactNode; dot?: boolean }) {
   return (
-    <span className={cx("inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-[11px] font-medium leading-4", TONES[tone])}>
+    <span className={cx("inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-xs font-medium leading-5", TONES[tone])}>
       {dot && (
         <span className="relative flex size-1.5" aria-hidden="true">
           <span className="absolute inset-0 rounded-full bg-current opacity-60 motion-safe:animate-ping" />
@@ -143,23 +143,28 @@ export function Badge({ tone = "neutral", children, dot }: { tone?: Tone; childr
   );
 }
 
+/** "Is it solved?" badge, with its one-line meaning on hover and for screen readers. */
 export function GapBadge({ status }: { status: GapStatus | null }) {
   if (!status) return null;
   const tone: Tone = status === "open" ? "emerald" : status === "partially-served" ? "amber" : "rose";
+  const help = GAP_HELP[status];
   return (
-    <Badge tone={tone} dot={status === "open"}>
-      {GAP_LABEL[status]}
-    </Badge>
+    <span title={help} className="inline-flex">
+      <Badge tone={tone} dot={status === "open"}>
+        {GAP_LABEL[status]}
+        <span className="sr-only">. {help}</span>
+      </Badge>
+    </span>
   );
 }
 
-/** The confidence label with what it means on hover and for screen readers: it rates the evidence, not the idea. */
+/** "How sure we are" badge, with what it means on hover and for screen readers: it rates the proof, not the idea. */
 export function ConfidenceBadge({ value }: { value: string }) {
   const note = CONFIDENCE_NOTE[value];
   return (
     <span title={note} className="inline-flex">
       <Badge tone={value === "High" ? "indigo" : "neutral"}>
-        {value} confidence
+        {sureLabel(value)}
         {note && <span className="sr-only">. {note}</span>}
       </Badge>
     </span>
@@ -171,13 +176,13 @@ export function SubScoreRow({ label, what, value, max }: { label: string; what: 
   const v = Math.round(value * 10) / 10;
   return (
     <li>
-      <div className="flex justify-between gap-3 text-xs">
+      <div className="flex justify-between gap-3 text-sm">
         <span className="font-medium text-zinc-200">{label}</span>
         <span className="font-mono tabular-nums text-zinc-100">
           {v}/{max}
         </span>
       </div>
-      <p className="mt-0.5 text-[11px] leading-snug text-zinc-400">{what}</p>
+      <p className="mt-0.5 text-[13px] leading-snug text-zinc-400">{what}</p>
       <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-white/[0.07]" aria-hidden="true">
         <div className="lr3-fill h-full rounded-full bg-linear-to-r from-indigo-400 to-emerald-400" style={{ width: `${Math.max(0, Math.min(100, (v / max) * 100))}%` }} />
       </div>
@@ -185,22 +190,24 @@ export function SubScoreRow({ label, what, value, max }: { label: string; what: 
   );
 }
 
-/** "How the score works": the arithmetic in one paragraph and the five parts, behind a disclosure. */
+/** "How the score works": the five parts and what each one counts, in plain words, behind a disclosure. */
 export function ScoreExplainer({ className }: { className?: string }) {
   return (
     <details className={cx("group rounded-xl border border-white/[0.07] bg-white/[0.02] text-sm", className)}>
-      <summary className="cursor-pointer select-none rounded-xl px-4 py-2.5 text-xs font-medium text-zinc-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70">
+      <summary className="cursor-pointer select-none rounded-xl px-4 py-2.5 text-sm font-medium text-zinc-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70">
         How the score works
       </summary>
       <div className="space-y-3 border-t border-white/[0.06] px-4 py-3">
-        <p className="text-xs leading-relaxed text-zinc-300">{SCORE_NOTE}</p>
-        <dl className="space-y-2">
+        <p className="text-[13px] leading-relaxed text-zinc-300">
+          The idea score goes from 0 to 100. It adds up five parts: {SUB_SCORES.map((s) => s.label.toLowerCase()).join(", ")}. {SCORE_NOTE}
+        </p>
+        <dl className="space-y-2.5">
           {SUB_SCORES.map((s) => (
-            <div key={s.key} className="grid gap-x-3 sm:grid-cols-[9rem_1fr]">
-              <dt className="text-xs font-medium text-zinc-200">
-                {s.label} <span className="font-mono text-zinc-400">{s.max} pts</span>
+            <div key={s.key} className="grid gap-x-3 sm:grid-cols-[11rem_1fr]">
+              <dt className="text-[13px] font-medium text-zinc-200">
+                {s.label} <span className="font-mono text-zinc-400">up to {s.max}</span>
               </dt>
-              <dd className="text-xs leading-snug text-zinc-400">{s.what}</dd>
+              <dd className="text-[13px] leading-snug text-zinc-400">{s.what}</dd>
             </div>
           ))}
         </dl>
@@ -209,11 +216,30 @@ export function ScoreExplainer({ className }: { className?: string }) {
   );
 }
 
-export function ExampleBadge() {
-  return <Badge tone="amber">Recorded example</Badge>;
+/** The four numbered steps that explain what a search does. */
+export function HowItWorks({ className }: { className?: string }) {
+  return (
+    <ol className={cx("space-y-2.5", className)}>
+      {HOW_IT_WORKS.map((step, i) => (
+        <li key={i} className="flex items-start gap-3 text-sm leading-relaxed text-zinc-200">
+          <span aria-hidden="true" className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-indigo-400/15 font-mono text-xs font-semibold text-indigo-200 ring-1 ring-inset ring-indigo-400/30">
+            {i + 1}
+          </span>
+          <span className="sr-only">Step {i + 1}: </span>
+          <span>{step}</span>
+        </li>
+      ))}
+    </ol>
+  );
 }
 
-/** The ranking number: the opportunity's 0–100 score, with a ring that fills to it. */
+export function ExampleBadge() {
+  return <Badge tone="amber">Example search</Badge>;
+}
+
+/** The idea score, 0 to 100, with a ring that fills to it and what it means on hover. */
+const SCORE_DIAL_HELP = "Idea score out of 100. Higher means more people complain and fewer products solve it.";
+
 export function ScoreDial({ score, size = "md", className }: { score: number; size?: "sm" | "md" | "lg"; className?: string }) {
   const px = { sm: 40, md: 52, lg: 76 }[size];
   const stroke = size === "lg" ? 5 : 4;
@@ -222,7 +248,7 @@ export function ScoreDial({ score, size = "md", className }: { score: number; si
   const pct = Math.max(0, Math.min(100, score)) / 100;
   const color = score >= 60 ? "#34d399" : score >= 40 ? "#818cf8" : "#a1a1aa";
   return (
-    <span className={cx("relative inline-grid shrink-0 place-items-center", className)} style={{ width: px, height: px }}>
+    <span className={cx("relative inline-grid shrink-0 place-items-center", className)} style={{ width: px, height: px }} title={SCORE_DIAL_HELP}>
       <svg width={px} height={px} className="-rotate-90" aria-hidden="true">
         <circle cx={px / 2} cy={px / 2} r={r} stroke="rgba(255,255,255,0.08)" strokeWidth={stroke} fill="none" />
         <circle
@@ -243,15 +269,17 @@ export function ScoreDial({ score, size = "md", className }: { score: number; si
           {Math.round(score)}
         </span>
       </span>
-      <span className="sr-only">Score {Math.round(score)} out of 100</span>
+      <span className="sr-only">
+        Idea score {Math.round(score)} out of 100. {SCORE_DIAL_HELP}
+      </span>
     </span>
   );
 }
 
 /**
- * The feed's one personal action. LaunchRadar has no accounts, so there is nothing to upvote with;
- * this keeps a shortlist in this browser, shared with the triage board. The accessible name stays
- * constant and contains the visible word; aria-pressed carries the state.
+ * The feed's one personal action: the star saves an idea in this browser (the list is shared with
+ * the triage board). The accessible name stays constant and contains the visible word; aria-pressed
+ * carries the state.
  */
 export function ShortlistButton({
   active,
@@ -269,7 +297,7 @@ export function ShortlistButton({
     <button
       type="button"
       aria-pressed={active}
-      aria-label={`Shortlist ${title}`}
+      aria-label={`Save ${title}`}
       data-shortlist=""
       onClick={(e) => {
         e.stopPropagation();
@@ -288,14 +316,14 @@ export function ShortlistButton({
       <span key={popKey} className={cx("inline-flex", popKey > 0 && "lr3-pop")}>
         <StarIcon size={15} filled={active} />
       </span>
-      {!compact && <span>Shortlist</span>}
+      {!compact && <span>Save</span>}
     </button>
   );
 }
 
-/** The five sub-scores as a pentagon: the hero card's "preview", drawn from real numbers. */
+/** The five parts of the score as a pentagon: the hero card's "preview", drawn from real numbers. */
 export function ScoreRadar({ o, size = 220, labels = true }: { o: Opportunity; size?: number; labels?: boolean }) {
-  const pad = labels ? 34 : 6;
+  const pad = labels ? 42 : 6;
   const R = size / 2 - pad;
   const cxp = size / 2;
   const cyp = size / 2;
@@ -308,7 +336,7 @@ export function ScoreRadar({ o, size = 220, labels = true }: { o: Opportunity; s
   const values = SUB_SCORES.map((s) => Math.max(0, Math.min(1, (o.subScores?.[s.key] ?? 0) / s.max)));
   const shape = values.map((v, i) => pt(i, Math.max(v, 0.04)).join(",")).join(" ");
   const gid = useId().replace(/:/g, "");
-  const label = `Sub-scores: ${SUB_SCORES.map((s) => `${s.label} ${raw(s.key)} of ${s.max}`).join(", ")}`;
+  const label = `The parts of the score: ${SUB_SCORES.map((s) => `${s.label} ${raw(s.key)} of ${s.max}`).join(", ")}`;
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} role="img" aria-label={label}>
       <defs>
@@ -333,9 +361,9 @@ export function ScoreRadar({ o, size = 220, labels = true }: { o: Opportunity; s
         SUB_SCORES.map((s, i) => {
           const [x, y] = pt(i, 1.2);
           return (
-            <text key={s.key} x={x} y={y} textAnchor="middle" dominantBaseline="middle" className="fill-zinc-400 text-[10px]">
+            <text key={s.key} x={x} y={y} textAnchor="middle" dominantBaseline="middle" className="fill-zinc-400 text-xs">
               <tspan>{s.short}</tspan>
-              <tspan x={x} dy="12" className="fill-zinc-200 font-mono">
+              <tspan x={x} dy="14" className="fill-zinc-200 font-mono">
                 {raw(s.key)}/{s.max}
               </tspan>
             </text>
@@ -345,14 +373,14 @@ export function ScoreRadar({ o, size = 220, labels = true }: { o: Opportunity; s
   );
 }
 
-/** One source: a link when the search result has an address, plain text when it does not. */
+/** One web page we read: a link when the result has an address, plain text when it does not. */
 export function SourceLine({ s, n }: { s: Source; n?: number }) {
   const body = (
     <>
       {n !== undefined ? (
         <span className="mt-0.5 w-5 shrink-0 text-right font-mono text-xs text-zinc-400">{n}</span>
       ) : (
-        <span aria-hidden="true" className="mt-0.5 grid size-4 shrink-0 place-items-center rounded-sm bg-white/10 text-[9px] font-semibold uppercase text-zinc-300">
+        <span aria-hidden="true" className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-sm bg-white/10 text-xs font-semibold uppercase text-zinc-300">
           {(s.domain || s.kind).replace(/^www\./, "").charAt(0)}
         </span>
       )}
@@ -380,7 +408,7 @@ export function SourceLine({ s, n }: { s: Source; n?: number }) {
 }
 
 /**
- * "Sources" button: the pages an opportunity cites. The panel aligns to the button's side of the
+ * "N web pages" button: the pages an idea came from. The panel aligns to the button's side of the
  * card and opens downward unless there is more room above.
  */
 export function SourcesPopover({
@@ -402,7 +430,7 @@ export function SourcesPopover({
   const trigger = useRef<HTMLButtonElement>(null);
   const id = useId();
   if (!sources.length) return null;
-  const label = `${sources.length} ${sources.length === 1 ? "source" : "sources"}`;
+  const label = `${sources.length} ${sources.length === 1 ? "web page" : "web pages"}`;
   return (
     <div ref={ref} className="relative z-10">
       <button
@@ -437,7 +465,7 @@ export function SourcesPopover({
             align === "end" ? "right-0" : "left-0",
           )}
         >
-          <p className="px-2.5 pb-1 pt-1.5 text-[11px] font-medium uppercase tracking-wider text-zinc-400">Cited pages</p>
+          <p className="px-2.5 pb-1 pt-1.5 text-[13px] font-semibold text-zinc-300">Web pages we read</p>
           <ul>
             {sources.slice(0, 5).map((s) => (
               <li key={s.id}>
@@ -455,7 +483,7 @@ export function SourcesPopover({
             }}
             className="mt-1 w-full rounded-lg px-2.5 py-2 text-left text-xs font-medium text-indigo-300 transition-colors hover:bg-white/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-400/70"
           >
-            {sources.length > 5 ? `See all ${sources.length} with the full case` : "Read the full case"}
+            {sources.length > 5 ? `See all ${sources.length} pages and read more` : "Read more about this idea"}
           </button>
         </div>
       )}
@@ -463,7 +491,7 @@ export function SourcesPopover({
   );
 }
 
-/** Prose whose [E1,E2] citations become numbered footnote links into the Sources list. */
+/** Prose whose [E1,E2] citations become numbered footnote links into the "Web pages we read" list. */
 export function CitedText({ text, footnotes, anchor }: { text: string; footnotes: Record<string, number>; anchor: string }) {
   const groups = citeGroups(text ?? "");
   if (!groups.length) return <>{text}</>;
@@ -474,11 +502,11 @@ export function CitedText({ text, footnotes, anchor }: { text: string; footnotes
     const nums = [...new Set(g.ids.map((id) => footnotes[id]).filter(Boolean))].sort((a, b) => a - b);
     if (nums.length)
       out.push(
-        <sup key={`c${gi}`} className="ml-0.5 whitespace-nowrap">
+        <sup key={`c${gi}`} className="ml-0.5 whitespace-nowrap text-xs">
           {nums.map((n, i) => (
             <Fragment key={n}>
               {i > 0 && <span aria-hidden="true" className="text-zinc-500">,</span>}
-              <a href={`#${anchor}-${n}`} className="rounded font-mono text-[10px] font-medium text-indigo-300 hover:text-indigo-200 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label={`Source ${n}`}>
+              <a href={`#${anchor}-${n}`} className="rounded font-mono text-xs font-medium text-indigo-300 hover:text-indigo-200 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label={`Web page ${n}`}>
                 {n}
               </a>
             </Fragment>

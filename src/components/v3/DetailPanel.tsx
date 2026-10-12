@@ -13,13 +13,13 @@ const ANCHOR = "lr3-src";
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="border-t border-white/[0.06] pt-5">
-      <h3 className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-zinc-400">{title}</h3>
+      <h3 className="mb-2 text-sm font-semibold text-zinc-300">{title}</h3>
       <div className="text-[15px] leading-relaxed text-zinc-200">{children}</div>
     </section>
   );
 }
 
-/** The full case for one opportunity, every cited sentence footnoted to the result it came from. */
+/** Everything about one idea, every cited sentence footnoted to the web page it came from. */
 export default function DetailPanel({
   item,
   shortlisted,
@@ -37,7 +37,7 @@ export default function DetailPanel({
   const o = item.opportunity;
   const panelRef = useRef<HTMLDivElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
-  // focus starts on the scrollable case, so arrow keys and Page Down read it and Space never closes it
+  // focus starts on the scrollable text, so arrow keys and Page Down read it and Space never closes it
   useModal(panelRef, onClose, bodyRef);
 
   return (
@@ -94,7 +94,7 @@ export default function DetailPanel({
             <div className="mx-auto" aria-hidden="true">
               <ScoreRadar o={o} size={190} />
             </div>
-            <ul className="space-y-3" aria-label="Sub-scores">
+            <ul className="space-y-3" aria-label="The parts of the score">
               {SUB_SCORES.map((s) => (
                 <SubScoreRow key={s.key} label={s.label} what={s.what} value={o.subScores?.[s.key] ?? 0} max={s.max} />
               ))}
@@ -106,14 +106,14 @@ export default function DetailPanel({
           <Block title="The problem">
             <CitedText text={o.problem} footnotes={item.footnotes} anchor={ANCHOR} />
           </Block>
-          <Block title="What exists today">
+          <Block title="What people use now">
             <CitedText text={o.existingSolutions} footnotes={item.footnotes} anchor={ANCHOR} />
           </Block>
-          <Block title="The gap">
+          <Block title="What's missing">
             <CitedText text={o.gap} footnotes={item.footnotes} anchor={ANCHOR} />
           </Block>
           {o.mvpScope?.length > 0 && (
-            <Block title="First version">
+            <Block title="What to build first">
               <ul className="list-disc space-y-1.5 pl-5 marker:text-zinc-500">
                 {o.mvpScope.map((m, i) => (
                   <li key={i}>
@@ -128,11 +128,11 @@ export default function DetailPanel({
           </Block>
 
           {o.skeptic?.length > 0 && (
-            <Block title="The case against">
+            <Block title="Why it might not work">
               <ul className="space-y-3">
                 {o.skeptic.map((s, i) => {
-                  // the evidence the objection names but does not cite inline still gets its footnotes,
-                  // so every source in the list below is referenced from the text
+                  // the pages the objection names but does not cite inline still get their footnotes,
+                  // so every page in the list below is referenced from the text
                   const inline = new Set(citeGroups(s.basis ?? "").flatMap((g) => g.ids));
                   const extra = [...new Set((s.evidenceIds ?? []).filter((id) => !inline.has(id)).map((id) => item.footnotes[id]).filter(Boolean))].sort((a, b) => a - b);
                   return (
@@ -140,11 +140,11 @@ export default function DetailPanel({
                       <p className="font-medium text-zinc-100">
                         {stripCites(s.objection)}
                         {extra.length > 0 && (
-                          <sup className="ml-0.5 whitespace-nowrap">
+                          <sup className="ml-0.5 whitespace-nowrap text-xs">
                             {extra.map((n, j) => (
                               <Fragment key={n}>
                                 {j > 0 && <span aria-hidden="true" className="text-zinc-500">,</span>}
-                                <a href={`#${ANCHOR}-${n}`} className="rounded font-mono text-[10px] font-medium text-indigo-300 hover:text-indigo-200 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label={`Source ${n}`}>
+                                <a href={`#${ANCHOR}-${n}`} className="rounded font-mono text-xs font-medium text-indigo-300 hover:text-indigo-200 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label={`Web page ${n}`}>
                                   {n}
                                 </a>
                               </Fragment>
@@ -155,7 +155,11 @@ export default function DetailPanel({
                       <p className="mt-1 text-sm text-zinc-300">
                         <CitedText text={s.basis} footnotes={item.footnotes} anchor={ANCHOR} />
                       </p>
-                      {s.wouldChangeMind && <p className="mt-2 text-sm text-zinc-300">Would change the verdict: {stripCites(s.wouldChangeMind)}</p>}
+                      {s.wouldChangeMind && (
+                        <p className="mt-2 text-sm text-zinc-300">
+                          <span className="font-medium text-zinc-200">What would change our mind:</span> {stripCites(s.wouldChangeMind)}
+                        </p>
+                      )}
                     </li>
                   );
                 })}
@@ -164,8 +168,8 @@ export default function DetailPanel({
           )}
 
           {item.sources.length > 0 && (
-            <Block title={`Sources (${item.sources.length})`}>
-              <p className="-mt-1 mb-2 text-xs text-zinc-400">Search results this case cites, numbered in reading order.</p>
+            <Block title={`Web pages we read (${item.sources.length})`}>
+              <p className="-mt-1 mb-2 text-[13px] text-zinc-400">The pages this idea came from, numbered in the order the text mentions them.</p>
               <ol className="space-y-1">
                 {item.sources.map((s, i) => (
                   <li key={s.id} id={`${ANCHOR}-${i + 1}`} className="scroll-mt-4 rounded-lg target:bg-indigo-400/10">
@@ -184,7 +188,7 @@ export default function DetailPanel({
               href={`/runs/${item.runId}`}
               className="group ml-auto inline-flex h-9 items-center gap-2 rounded-lg bg-white px-3.5 text-sm font-medium text-zinc-900 transition-colors hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300"
             >
-              Open the whole run
+              Open the whole search
               <ArrowRightIcon size={15} className="transition-transform duration-200 group-hover:translate-x-0.5" />
             </Link>
           )}

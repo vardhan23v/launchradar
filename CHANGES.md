@@ -331,3 +331,24 @@ Everything confirmed in `AUDIT.md` sections 1 and 3 is fixed; the Worker test su
   and demo runs show "replayed <time>" instead of a fake research date.
 - Metadata: `metadataBase`, title template, Open Graph and Twitter tags, a "Research run" title, `robots.txt`; the
   create-next-app SVGs and the report view's fonts and colour tokens are gone from `globals.css` and the root layout.
+
+## Plain words everywhere (12 October 2026)
+
+The user asked for an interface "even a kid should understand". Every visible word in the dashboard,
+the run page, the dialog, the Worker's log and error messages, the Markdown export and the recorded
+example now uses one everyday word per concept: a run is a **search**, one SerpApi call is a
+**lookup**, an opportunity is an **idea**, a signal is a **complaint**, a competitor is an **existing
+product**, a gap is **what's missing** (Nobody solves this yet / Partly solved / Already solved),
+confidence is **how sure we are** (Very sure / Fairly sure / Not very sure), sources are **web pages we
+read**, and the five score parts are How much it hurts / Getting popular / People would pay / Room for
+something new / Weak existing products, each with a one-line definition. The vocabulary lives only in
+`src/lib/v3/feed.ts` and `src/lib/v3/run.ts`.
+
+Also: a two-sentence intro and a four-step "How does this work?" explainer on the home page and in the
+dialog; the run page has four sections (Ideas / What people complain about / Existing products / Where
+we looked) with plain stage names (Pick lookups → Look around the web → Find complaints → Group them →
+Find existing products → Check if anyone solves it → Score the ideas) and summary sentences such as
+"We did 8 lookups and read 34 web pages."; status badges "Done, with little proof" and "Done, no ideas
+found"; no visible text under 12 px and no uppercase tracking labels; developer detail (env var names,
+HTTP codes) only in trailing brackets. JSON field names, event shapes and tests' behaviour are
+unchanged; the 45 Worker tests were updated for the new sentences.

@@ -24,7 +24,7 @@ function checkView(v: RunView, events: StepEvent[]) {
   expect(v.run.searchesUsed).toBe(v.searchCalls.filter((c) => c.billed).length);
   expect(v.run.lastProgressAt).toBeGreaterThanOrEqual(v.run.createdAt);
   const done = events.find((e) => e.type === "stage" && e.stage === "done");
-  expect(done && done.type === "stage" ? done.message : "").toMatch(/^Run complete in [\d.]+s: 1 opportunity was found from \d+ searches\.$/);
+  expect(done && done.type === "stage" ? done.message : "").toMatch(/^Done in [\d.]+s: 1 idea from \d+ lookups\.$/);
 
   // citation validator: 3 good signals; fabricated id, paraphrase and injected claim rejected
   expect(v.signals.map((s) => s.id)).toEqual(["S1", "S2", "S3"]);
@@ -143,13 +143,13 @@ describe("pipeline (in-process)", () => {
     const v = await store.view("run_limited") as RunView;
     const failed = v.searchCalls.filter((c) => c.status === "failed");
     expect(failed.length).toBeGreaterThanOrEqual(1);
-    expect(failed.every((c) => c.engine === "google_news" && c.billed && c.error === "SerpApi timed out")).toBe(true);
+    expect(failed.every((c) => c.engine === "google_news" && c.billed && c.error === "The web lookup took too long")).toBe(true);
     expect(v.run).toMatchObject({ status: "complete", outcome: "limited", failedSearches: failed.length, searchCalls: v.searchCalls.length });
     expect(v.run.searchesUsed).toBe(v.searchCalls.filter((c) => c.billed).length); // timed-out calls are counted as billed
     expect(v.opportunities).toHaveLength(1);
     const events = (await store.eventsFor("run_limited")).map(([, e]) => e);
     const done = events.find((e) => e.type === "stage" && e.stage === "done");
-    expect(done).toMatchObject({ level: "warn", message: `Run complete with limited evidence: ${failed.length} of ${v.searchCalls.length} searches failed (SerpApi timed out), so 1 opportunity was found.` });
+    expect(done).toMatchObject({ level: "warn", message: `Done, but with less proof than usual: ${failed.length} of ${v.searchCalls.length} lookups didn't work (the web lookup took too long), so 1 idea found.` });
     expect(events.at(-1)?.type).toBe("done");
   });
 });

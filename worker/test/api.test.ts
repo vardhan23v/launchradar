@@ -46,7 +46,7 @@ describe("serpapi service", () => {
     await store.createRun(makeRun({ id: "r1" }));
     const fixtures = new Map<string, unknown>();
     const serp = new SerpApiService(store, REPLAY, null, undefined, async (hash) => fixtures.get(hash) ?? null);
-    await expect(serp.search("google", { q: "zzz" }, "r1", "d", 1)).rejects.toThrow(/missing fixture/);
+    await expect(serp.search("google", { q: "zzz" }, "r1", "d", 1)).rejects.toThrow(/No recorded answer/);
 
     fixtures.set(await hashParams("google", toRawParams("google", { q: "ai tools" }, "in")), ORGANIC);
     const out = await serp.search("google", { q: "ai tools" }, "r1", "d", 2);
@@ -97,7 +97,7 @@ describe("serpapi service", () => {
     const failed = (await store.searchCallsFor("r1")).find((c) => c.status === "failed");
     expect(failed?.billed).toBe(false);
     // the response body never reaches the (public) run record: only a sentence this code wrote, with the status
-    expect(failed?.error).toBe("SerpApi 401: the API key was rejected (check SERPAPI_API_KEY).");
+    expect(failed?.error).toBe("The web lookup service said no (401): the key was rejected (SERPAPI_API_KEY).");
     expect(JSON.stringify(await store.searchCallsFor("r1"))).not.toMatch(/serp-secret|bad key|example\.com/);
     expect(typeof failed?.latencyMs).toBe("number");
   });
@@ -113,18 +113,18 @@ describe("serpapi service", () => {
       await sleep(3);
       throw new DOMException("The operation was aborted due to timeout", "TimeoutError");
     }, calls));
-    await expect(serp.search("google", { q: "slow" }, "r1", "d", 1)).rejects.toThrow("SerpApi timed out");
+    await expect(serp.search("google", { q: "slow" }, "r1", "d", 1)).rejects.toThrow("The web lookup took too long");
     expect(calls).toHaveLength(2); // one retry
     const [call] = await store.searchCallsFor("r1");
     // SerpApi may well have finished the search after this side gave up: count it, never under-count
-    expect(call).toMatchObject({ status: "failed", billed: true, error: "SerpApi timed out" });
+    expect(call).toMatchObject({ status: "failed", billed: true, error: "The web lookup took too long" });
     expect(call.latencyMs).toBeGreaterThanOrEqual(3);
     expect(await store.getRun("r1")).toMatchObject({ searchesUsed: 1, searchCalls: 1, failedSearches: 1 });
-    expect(await store.quotaBlock()).toContain("hourly search limit is reached (1 of 1");
+    expect(await store.quotaBlock()).toContain("hourly lookup limit is reached (1 of 1");
     // an unreachable host is not billed (the request never arrived)
     const roomy = new Store(env.DB, LIVE);
     const down = new SerpApiService(roomy, LIVE, null, answering(() => { throw new TypeError("fetch failed"); }, []));
-    await expect(down.search("google", { q: "down" }, "r1", "d", 2)).rejects.toThrow("SerpApi could not be reached");
+    await expect(down.search("google", { q: "down" }, "r1", "d", 2)).rejects.toThrow("We couldn't reach the web lookup service");
     expect((await roomy.searchCallsFor("r1"))[1]).toMatchObject({ status: "failed", billed: false });
     expect(await roomy.getRun("r1")).toMatchObject({ searchesUsed: 1, searchCalls: 2, failedSearches: 2 });
   });
@@ -288,12 +288,12 @@ describe("api routes", () => {
     const md = await api(`/api/runs/${demo.id}/export`);
     expect(md.headers.get("content-type")).toContain("text/markdown");
     expect(md.headers.get("content-disposition")).toContain(demo.id);
-    expect(await md.text()).toContain("## Opportunities (ranked)");
+    expect(await md.text()).toContain("## Ideas (ranked)");
 
     // the browser can export what it holds, with no run on the server
     const exported = await postJson("/api/export", view);
     expect(exported.status).toBe(200);
-    expect(await exported.text()).toContain("## Opportunities (ranked)");
+    expect(await exported.text()).toContain("## Ideas (ranked)");
     expect((await postJson("/api/export", { nope: 1 })).status).toBe(400);
     expect((await postJson("/api/export", { run: { id: "x", question: "q", region: "in", createdAt: 1, searchesUsed: 0, budget: 1 }, evidence: "no" })).status).toBe(400);
     const run = { id: "x", question: "q\n# injected heading", region: "in", createdAt: 1, finishedAt: null, searchesUsed: 0, budget: 1 };
@@ -335,12 +335,12 @@ describe("api routes", () => {
     await store.createRun(makeRun({ id: "b", status: "complete", createdAt: now - 10 * 60_000, searchesUsed: 0 })); // all from cache
     expect(await store.runStartBlock(now)).toBeNull();
     await store.createRun(makeRun({ id: "c", status: "failed", createdAt: now - 5 * 60_000 }));
-    expect(await store.runStartBlock(now)).toBe("The limit of 2 research runs per hour is reached. The next run can start in about 50 minutes.");
+    expect(await store.runStartBlock(now)).toBe("This server allows 2 searches per hour, and that is used up. The next search can start in about 50 minutes.");
     const refused = await postJson("/api/runs", { question: "meal kits" }, over);
     expect(refused.status).toBe(429);
-    expect(((await refused.json()) as { error: string }).error).toContain("next run can start in about 50 minutes");
+    expect(((await refused.json()) as { error: string }).error).toContain("next search can start in about 50 minutes");
     expect(await store.listRuns()).toHaveLength(4);
-    expect(((await (await api("/api/runs", {}, over)).json()) as { pipeline: { quota: string } }).pipeline.quota).toContain("2 research runs per hour");
+    expect(((await (await api("/api/runs", {}, over)).json()) as { pipeline: { quota: string } }).pipeline.quota).toContain("2 searches per hour");
     expect((await postJson("/api/runs", { demo: "ai-tools-college-india" }, over)).status).toBe(201);
     // 0 is "stop", never "unlimited"
     expect(await new Store(env.DB, { ...LIVE, RUNS_PER_HOUR: "0" }).runStartBlock(now)).toContain("RUNS_PER_HOUR=0");
@@ -361,7 +361,7 @@ describe("api routes", () => {
     const over: Partial<Env> = { HOURLY_SEARCH_GUARD: "2" };
     const res = await postJson("/api/runs", { question: "meal kits" }, over);
     expect(res.status).toBe(429);
-    expect(((await res.json()) as { error: string }).error).toContain("hourly search limit");
+    expect(((await res.json()) as { error: string }).error).toContain("hourly lookup limit");
     expect(res.headers.get("cache-control")).toBe("no-store");
     expect(await store.listRuns()).toEqual([]); // nothing was created, no LLM call was spent
     const home = await api("/api/runs", {}, over);
@@ -396,7 +396,7 @@ describe("spend and shared-state guards", () => {
     }, null)));
     expect(await store.runStartBlock(now)).toBeNull();
     await billed(10, now - 30 * 60_000);
-    expect(await store.runStartBlock(now)).toContain("cannot cover another run"); // 10 + 25 > 30
+    expect(await store.runStartBlock(now)).toContain("can't cover another search"); // 10 + 25 > 30
     const roomy = await freshStore({ ...LIVE, HOURLY_SEARCH_GUARD: "40" });
     await billed(20, now - 50 * 60_000);
     expect(await roomy.runStartBlock(now)).toContain("about 10 minutes"); // 20 + 25 > 40 until 5 expire

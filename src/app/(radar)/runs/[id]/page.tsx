@@ -7,7 +7,7 @@ import RunPage from "@/components/v3/RunPage";
  * live), and run pages are per-visitor working documents, not pages for search engines.
  */
 export const metadata: Metadata = {
-  title: "Research run",
+  title: "Search",
   description: "One research run: its progress, opportunities, problems, competitors, research log and sources.",
   robots: { index: false, follow: false },
 };

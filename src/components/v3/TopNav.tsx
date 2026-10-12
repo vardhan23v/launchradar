@@ -23,16 +23,16 @@ interface Props {
   apiNote: string | null;
   /** false while a dialog is open, so the search shortcut never pulls focus out of it */
   shortcutsEnabled?: boolean;
-  /** extra controls on the right, before New research (the run page's Export) */
+  /** extra controls on the right, before "New search" (the run page's download button) */
   actions?: ReactNode;
   /** a short trail after the logo, e.g. the run's status */
   crumb?: ReactNode;
 }
 
 const QUICK: { key: SortKey | "categories"; label: string; icon: typeof TrendIcon; hint: string }[] = [
-  { key: "momentum", label: "Trending", icon: TrendIcon, hint: "Sort by momentum: the 12-month search-interest slope, plus a bump when the run found recent news" },
-  { key: "categories", label: "Categories", icon: TagIcon, hint: "Filter by research question, gap status, confidence and region" },
-  { key: "score", label: "Top rated", icon: TrophyIcon, hint: "Sort by opportunity score" },
+  { key: "momentum", label: "Getting popular", icon: TrendIcon, hint: "Ideas whose problem more and more people search for first" },
+  { key: "categories", label: "Filters", icon: TagIcon, hint: "Pick a topic, whether it's solved, how sure we are, or a country" },
+  { key: "score", label: "Best score", icon: TrophyIcon, hint: "Ideas with the highest idea score first" },
 ];
 
 function SearchField({ search, inputRef, shortcut, className }: { search: SearchProps; inputRef: RefObject<HTMLInputElement | null>; shortcut: string; className?: string }) {
@@ -40,7 +40,7 @@ function SearchField({ search, inputRef, shortcut, className }: { search: Search
   return (
     <div className={cx("group relative flex items-center", className)}>
       <label htmlFor={id} className="sr-only">
-        Search opportunities
+        Search the ideas
       </label>
       <SearchIcon size={16} className="pointer-events-none absolute left-3 text-zinc-400 transition-colors group-focus-within:text-indigo-300" />
       <input
@@ -56,7 +56,7 @@ function SearchField({ search, inputRef, shortcut, className }: { search: Search
           }
         }}
         aria-keyshortcuts={shortcut === "⌘K" ? "Meta+K" : "Control+K"}
-        placeholder="Search opportunities, problems, questions…"
+        placeholder="Search ideas, problems, topics…"
         className="h-10 w-full rounded-xl border border-white/10 bg-white/[0.04] pl-9 pr-16 text-sm text-zinc-100 placeholder:text-zinc-400 transition-all duration-200 hover:border-white/15 focus:border-indigo-400/60 focus:bg-white/[0.06] focus:outline-none focus:ring-4 focus:ring-indigo-500/15 [&::-webkit-search-cancel-button]:hidden"
       />
       {search.value ? (
@@ -69,7 +69,7 @@ function SearchField({ search, inputRef, shortcut, className }: { search: Search
           <CloseIcon size={14} />
         </button>
       ) : (
-        <kbd aria-hidden="true" className="pointer-events-none absolute right-2.5 hidden rounded-md border border-white/10 bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] font-medium text-zinc-400 sm:inline-block">
+        <kbd aria-hidden="true" className="pointer-events-none absolute right-2.5 hidden rounded-md border border-white/10 bg-white/[0.06] px-1.5 py-0.5 font-mono text-xs font-medium text-zinc-400 sm:inline-block">
           {shortcut}
         </kbd>
       )}
@@ -122,7 +122,7 @@ export default function TopNav({ search, sort, onSort, onCategories, onNew, budg
   return (
     <header className="sticky top-0 z-40 border-b border-white/[0.06] bg-zinc-950/70 backdrop-blur-xl supports-[backdrop-filter]:bg-zinc-950/55">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6">
-        <Link href="/" className="flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label="LaunchRadar, all findings">
+        <Link href="/" className="flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label="LaunchRadar, all ideas">
           <RadarLogo />
           <span className="text-[15px] font-semibold tracking-tight text-white">LaunchRadar</span>
         </Link>
@@ -164,8 +164,8 @@ export default function TopNav({ search, sort, onSort, onCategories, onNew, budg
           >
             <span aria-hidden="true" className="lr3-sheen pointer-events-none absolute inset-0" />
             <PlusIcon size={16} />
-            <span className="hidden sm:inline">New research</span>
-            <span className="sr-only sm:hidden">New research</span>
+            <span className="hidden sm:inline">New search</span>
+            <span className="sr-only sm:hidden">New search</span>
           </button>
 
           <div ref={menuRef} className="relative">
@@ -173,7 +173,7 @@ export default function TopNav({ search, sort, onSort, onCategories, onNew, budg
               type="button"
               aria-expanded={menu}
               aria-controls={panelId}
-              aria-label="Search budget and status"
+              aria-label="Lookups left and server status"
               onClick={() => setMenu((v) => !v)}
               className="grid size-10 place-items-center rounded-xl border border-white/10 bg-white/[0.04] text-zinc-300 transition-all duration-200 hover:border-white/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70"
             >
@@ -185,7 +185,7 @@ export default function TopNav({ search, sort, onSort, onCategories, onNew, budg
                   {budget ? (
                     <>
                       <p className="flex justify-between gap-3 text-xs text-zinc-300">
-                        <span>Searches counted by the server this month</span>
+                        <span>Lookups this month</span>
                         <span className="font-mono tabular-nums text-zinc-100">
                           {budget.monthUsed}/{budget.monthLimit}
                         </span>
@@ -196,19 +196,19 @@ export default function TopNav({ search, sort, onSort, onCategories, onNew, budg
                           style={{ width: `${Math.min(100, (budget.monthUsed / Math.max(1, budget.monthLimit)) * 100)}%` }}
                         />
                       </div>
-                      <p className="mt-2 text-[11px] leading-snug text-zinc-400">
-                        The free server starts this count again whenever it restarts. SerpApi still enforces your plan&apos;s own monthly limit.
+                      <p className="mt-2 text-[13px] leading-snug text-zinc-400">
+                        Every search uses some lookups. The free server starts this count again whenever it restarts; the web lookup service also has its own monthly limit.
                       </p>
                     </>
                   ) : (
-                    <p className="text-xs text-zinc-400">Connecting to the research server…</p>
+                    <p className="text-[13px] text-zinc-400">Connecting to the server…</p>
                   )}
-                  {apiNote && <p className="mt-2 text-xs leading-snug text-zinc-200">{apiNote}</p>}
+                  {apiNote && <p className="mt-2 text-[13px] leading-snug text-zinc-200">{apiNote}</p>}
                 </div>
                 <div className="my-1 h-px bg-white/[0.06]" />
                 <Link href="/" className="block rounded-lg px-3 py-2 text-sm text-zinc-200 hover:bg-white/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-400/70" onClick={closeMenu}>
-                  All findings
-                  <span className="block text-xs text-zinc-400">Every opportunity from every finished run</span>
+                  All ideas
+                  <span className="block text-[13px] text-zinc-400">Every idea from every finished search</span>
                 </Link>
               </div>
             )}

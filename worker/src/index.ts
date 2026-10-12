@@ -81,8 +81,8 @@ async function readJson(request: Request, limit: number): Promise<unknown> {
 }
 
 function bodyError(err: unknown): Response | null {
-  if (err instanceof BodyTooLarge) return error(413, "Request body is too large");
-  if (err instanceof NotJson) return error(415, "Send the body as application/json");
+  if (err instanceof BodyTooLarge) return error(413, "That request is too big.");
+  if (err instanceof NotJson) return error(415, "Please send the request as JSON (application/json).");
   return null;
 }
 
@@ -126,10 +126,10 @@ async function startRun(request: Request, env: Env, store: Store): Promise<Respo
     throw err;
   }
   const start = parseStart(body);
-  if (!start) return error(400, "Invalid JSON body");
+  if (!start) return error(400, "We couldn't read that request (the JSON body is not what we expected).");
 
   if (start.demo !== null) {
-    if (!listDemos().some((d) => d.slug === start.demo)) return error(404, "unknown demo run");
+    if (!listDemos().some((d) => d.slug === start.demo)) return error(404, "There is no example search with that name.");
     // the example costs no searches, but every copy writes ~100 rows: past the hourly allowance
     // the newest copy is handed out again instead of writing another
     if ((await store.demoRunsSince(nowMs() - 3_600_000)) >= config.demoRunsPerHour(env)) {
@@ -140,12 +140,12 @@ async function startRun(request: Request, env: Env, store: Store): Promise<Respo
     await store.pruneDemoRuns(DEMO_KEEP);
     return json({ id, mode: "demo" }, 201);
   }
-  if (!start.question) return error(400, "question is required");
-  if (start.question.length > MAX_QUESTION) return error(400, `question is too long (max ${MAX_QUESTION} characters)`);
+  if (!start.question) return error(400, "Please type a topic.");
+  if (start.question.length > MAX_QUESTION) return error(400, `Please keep the topic under ${MAX_QUESTION} characters.`);
 
   const [ready, reason] = config.pipelineReadiness(env);
   // nothing is created, so nothing can be spent; the reason says which setting is missing
-  if (!ready) return error(503, reason ?? "Pipeline is not configured.");
+  if (!ready) return error(503, reason ?? "This server isn't set up for new searches.");
   // refuse before creating anything: a run that cannot finish its searches would only burn LLM calls
   if (config.serpapiMode(env) !== "replay") {
     const blocked = await store.runStartBlock();
@@ -160,12 +160,12 @@ async function startRun(request: Request, env: Env, store: Store): Promise<Respo
     searchCalls: 0, failedSearches: 0, outcome: null, lastProgressAt: now,
   };
   if (!(await store.createRunIfCapacity(run, config.concurrentRunLimit(env)))) {
-    return error(429, "Another research run is in progress. Try again when it finishes (usually within ten minutes).");
+    return error(429, "Another search is running. Try again when it finishes (usually within ten minutes).");
   }
   try {
     await env.RUNNER.get(env.RUNNER.idFromName(runId)).start(runId, start.question, start.region);
   } catch (err) {
-    const why = "The research job could not be started. Please try again.";
+    const why = "The search couldn't be started. Please try again.";
     if (await store.finishIfRunning(runId, { status: "failed", error: why, finishedAt: nowMs() })) {
       await store.appendEvents(runId, [
         { type: "stage", stage: "error", message: why, level: "error" },
@@ -183,7 +183,7 @@ async function handle(request: Request, env: Env): Promise<Response> {
   const url = new URL(request.url);
   const path = url.pathname.replace(/\/+$/, "") || "/";
   const r = route(path);
-  if (!r) return error(404, "Not found");
+  if (!r) return error(404, "There is nothing at this address.");
   const method = request.method;
 
   if (r.kind === "health") {
@@ -215,28 +215,28 @@ async function handle(request: Request, env: Env): Promise<Response> {
       const body = await readJson(request, MAX_EXPORT_BODY);
       return text(exportMarkdown(asRunView(body)), 200, "text/markdown; charset=utf-8");
     } catch (err) {
-      return bodyError(err) ?? error(400, "Send a complete run view as JSON.");
+      return bodyError(err) ?? error(400, "Please send a complete search as JSON.");
     }
   }
 
   const { runId, sub } = r;
-  if (!RUN_ID.test(runId)) return sub === "view" ? error(404, "Run not found") : text("Run not found", 404, "text/plain; charset=utf-8");
+  if (!RUN_ID.test(runId)) return sub === "view" ? error(404, "There is no search with this id.") : text("There is no search with this id.", 404, "text/plain; charset=utf-8");
 
   if (sub === "view") {
     let view = await store.view(runId);
     // a run whose job died must not show "running" forever: the watchdog runs when a running run is viewed
     if (view?.run.status === "running" && (await store.failStaleRuns()) > 0) view = await store.view(runId);
-    return view ? json(view) : error(404, "Run not found");
+    return view ? json(view) : error(404, "There is no search with this id.");
   }
   if (sub === "export") {
     const view = await store.view(runId);
-    if (!view) return text("Run not found", 404, "text/plain; charset=utf-8");
+    if (!view) return text("There is no search with this id.", 404, "text/plain; charset=utf-8");
     return text(exportMarkdown(view), 200, "text/markdown; charset=utf-8", { "content-disposition": `attachment; filename="launchradar-${runId}.md"` });
   }
 
   // stream
   const run = await store.getRun(runId);
-  if (run === null) return text("Run not found", 404, "text/plain; charset=utf-8");
+  if (run === null) return text("There is no search with this id.", 404, "text/plain; charset=utf-8");
   if (run.status === "running") await store.failStaleRuns();
   // EventSource resends the last id it saw; anything that is not a small index starts from the top
   const lastId = request.headers.get("last-event-id") ?? "";
@@ -244,7 +244,7 @@ async function handle(request: Request, env: Env): Promise<Response> {
   // a running run has nothing past its log yet: an id beyond it is not a resume but a forgery
   // (on a running example it would let the viewer complete a trace it never watched)
   if (fromIndex > 0 && run.status === "running" && fromIndex > (await store.eventCount(runId))) {
-    return text("Last-Event-ID is beyond this run's log", 400, "text/plain; charset=utf-8");
+    return text("That place in the log does not exist yet (Last-Event-ID is too big).", 400, "text/plain; charset=utf-8");
   }
   const chunks = (async function* () {
     yield `retry: ${RETRY_MS}\n\n`;
@@ -262,7 +262,7 @@ export default {
     } catch (err) {
       // never echo internals (or anything that could hold a key) to the browser
       console.error("unhandled", config.scrubSecrets(err instanceof Error ? err.message : String(err), env));
-      return error(500, "Internal error");
+      return error(500, "Something went wrong on our side.");
     }
   },
 } satisfies ExportedHandler<Env>;
