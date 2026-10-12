@@ -40,7 +40,6 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 [![Top language](https://img.shields.io/github/languages/top/vardhan23v/launchradar?style=for-the-badge&color=3178C6)](https://github.com/vardhan23v/launchradar)
 [![Code size](https://img.shields.io/github/languages/code-size/vardhan23v/launchradar?style=for-the-badge&color=111827)](https://github.com/vardhan23v/launchradar)
 [![Repo size](https://img.shields.io/github/repo-size/vardhan23v/launchradar?style=for-the-badge&color=111827)](https://github.com/vardhan23v/launchradar)
-[![Stars](https://img.shields.io/github/stars/vardhan23v/launchradar?style=for-the-badge&logo=github&color=111827)](https://github.com/vardhan23v/launchradar/stargazers)
 
 [Live app](https://launchradar-psi.vercel.app) · [API health](https://launchradar-api.launchradar-worker.workers.dev/api/health) · [Architecture](#architecture) · [Interfaces](#interfaces) · [Setup](#setup) · [Modes](#modes) · [Pipeline](#pipeline) · [Security](#security) · [Project layout](#project-layout) · [Tests](#tests) · [Deploying](#deploying-site-on-vercel-api-on-cloudflare-workers)
 
