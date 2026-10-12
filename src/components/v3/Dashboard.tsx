@@ -8,17 +8,21 @@
  * here shows there and the other way round.
  */
 
+import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-import type { RunView } from "@/lib/types";
+import type { Run, RunView } from "@/lib/types";
 import { listSavedRuns, loadSavedRun, saveFinishedRun } from "@/lib/history";
-import { loadIds, saveIds } from "@/lib/v2/adapter";
+import { latestStageOf } from "@/lib/v3/run";
+import { loadIds, saveIds } from "@/lib/v3/storage";
 import {
   EMPTY_FILTERS,
   activeFilterCount,
   applyFilters,
   buildFeed,
   facetCounts,
+  regionLabel,
+  relativeDay,
   runKey,
   sortItems,
   type FeedItem,
@@ -30,14 +34,25 @@ import { CardSkeleton, FeaturedCard, GridCard, ListRow } from "./Cards";
 import DetailPanel from "./DetailPanel";
 import FilterPanel from "./FilterPanel";
 import { blockedReasonFor, fetchRunEvents, getJson, useHome, useStartRun } from "./hooks";
-import { CloseIcon, FilterIcon, GridIcon, ListIcon, PlusIcon, RadarLogo } from "./icons";
+import { ArrowRightIcon, CloseIcon, FilterIcon, GridIcon, ListIcon, PlusIcon, RadarLogo } from "./icons";
 import NewResearchDialog from "./NewResearchDialog";
-import { FOCUS_FALLBACK_ID, Segmented, useModal } from "./parts";
+import { Badge, FOCUS_FALLBACK_ID, Segmented, useModal } from "./parts";
 import TopNav from "./TopNav";
 
 const VIEW_KEY = "lr:v3:view";
 const MAX_SERVER_RUNS = 12;
+const MAX_FAILED_RUNS = 5;
+/** how often the page asks after runs that are still in progress */
+const PROGRESS_POLL_MS = 5000;
 const LG = "(min-width: 1024px)";
+
+/** A run that is not finished (or did not finish), with the stage its view shows it to be in. */
+interface Tracked {
+  run: Run;
+  stage: string | null;
+}
+
+const inProgress = (r: Run) => r.status === "running" || r.status === "queued";
 
 function readViewMode(): ViewMode {
   try {
@@ -61,8 +76,11 @@ const SORTS: { key: SortKey; label: string }[] = [
 
 export default function Dashboard() {
   const { home, down, loaded } = useHome();
-  const { start, busy, error: startError, clearError } = useStartRun(home);
+  const { start, busy, error: startError, clearError } = useStartRun();
   const [views, setViews] = useState<RunView[]>([]);
+  // the latest word on each run in progress, from polling its view; it overrides the server's list
+  const [polled, setPolled] = useState<Record<string, Tracked>>({});
+  const [prefill, setPrefill] = useState<{ question: string; region: string } | null>(null);
   const [serverDone, setServerDone] = useState(false);
   const [capped, setCapped] = useState(0);
   const [slow, setSlow] = useState(false);
@@ -131,6 +149,50 @@ export default function Dashboard() {
       alive = false;
     };
   }, [loaded, home]);
+
+  // runs still in progress and runs that failed: listed above the feed, never hidden
+  const tracked = useMemo<Tracked[]>(() => (home?.runs ?? []).filter((r) => r.status !== "complete").map((run) => polled[run.id] ?? { run, stage: null }), [home, polled]);
+
+  // follow the runs in progress until they finish; a finished one joins the feed without a reload
+  const runningIds = useMemo(() => tracked.filter((t) => inProgress(t.run)).map((t) => t.run.id).join(","), [tracked]);
+  useEffect(() => {
+    if (!runningIds) return;
+    const ids = runningIds.split(",");
+    let alive = true;
+    const tick = async () => {
+      const fetched = await Promise.all(ids.map((id) => getJson<RunView>(`/api/runs/${id}`)));
+      if (!alive) return;
+      setPolled((prev) => {
+        const next = { ...prev };
+        fetched.forEach((v) => {
+          if (v) next[v.run.id] = { run: v.run, stage: latestStageOf(v) };
+        });
+        return next;
+      });
+      const finished = fetched.filter((v): v is RunView => !!v && v.run.status === "complete");
+      if (finished.length) {
+        setViews((prev) => [...prev, ...finished.filter((f) => !prev.some((p) => p.run.id === f.run.id))]);
+        setShortlist((prev) => new Set([...prev, ...shortlistFor(finished)]));
+      }
+    };
+    void tick();
+    const timer = window.setInterval(() => void tick(), PROGRESS_POLL_MS);
+    return () => {
+      alive = false;
+      window.clearInterval(timer);
+    };
+  }, [runningIds]);
+
+  const runningRuns = useMemo(() => tracked.filter((t) => inProgress(t.run)).sort((a, b) => b.run.createdAt - a.run.createdAt), [tracked]);
+  const failedRuns = useMemo(
+    () =>
+      tracked
+        .filter((t) => t.run.status === "failed" && !t.run.demo)
+        .sort((a, b) => b.run.createdAt - a.run.createdAt)
+        .slice(0, MAX_FAILED_RUNS)
+        .map((t) => t.run),
+    [tracked],
+  );
 
   const loading = !serverDone;
   const { items, runs } = useMemo(() => buildFeed(views, shortlist), [views, shortlist]);
@@ -210,8 +272,13 @@ export default function Dashboard() {
   const closeSheet = useCallback(() => setSheet(false), []);
   const closeDialog = useCallback(() => {
     setDialog(false);
+    setPrefill(null);
     clearError();
   }, [clearError]);
+  const openDialog = useCallback((p: { question: string; region: string } | null = null) => {
+    setPrefill(p);
+    setDialog(true);
+  }, []);
 
   const featured = visible[0];
   const rest = visible.slice(1);
@@ -237,7 +304,7 @@ export default function Dashboard() {
         sort={sort}
         onSort={setSort}
         onCategories={showCategories}
-        onNew={() => setDialog(true)}
+        onNew={() => openDialog()}
         budget={home?.budget ? { monthUsed: home.budget.monthUsed, monthLimit: home.budget.monthLimit } : null}
         apiNote={apiNote}
         shortcutsEnabled={!dialog && !sheet && !openItem}
@@ -328,6 +395,7 @@ export default function Dashboard() {
               Showing the {MAX_SERVER_RUNS} most recent questions from the server; {capped} older {capped === 1 ? "one is" : "ones are"} not loaded.
             </p>
           )}
+          {(runningRuns.length > 0 || failedRuns.length > 0) && <RunsStrip running={runningRuns} failed={failedRuns} now={now ?? 0} onRetry={(r) => openDialog({ question: r.question, region: r.region })} />}
 
           {loading && items.length === 0 ? (
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -336,7 +404,7 @@ export default function Dashboard() {
               ))}
             </div>
           ) : items.length === 0 ? (
-            <EmptyRadar onNew={() => setDialog(true)} onExample={example ? () => void start({ demo: example.slug }) : null} busy={busy} />
+            <EmptyRadar onNew={() => openDialog()} onExample={example ? () => void start({ demo: example.slug }) : null} busy={busy} error={dialog ? null : startError} />
           ) : visible.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-white/10 px-6 py-16 text-center">
               <p className="text-base font-medium text-zinc-100">Nothing matches these filters.</p>
@@ -395,13 +463,88 @@ export default function Dashboard() {
           blockedReason={blockedReason}
           runBudget={home?.budget?.run ?? 25}
           hasExample={!!example}
+          initialQuestion={prefill?.question ?? ""}
+          initialRegion={prefill?.region ?? "in"}
         />
       )}
     </div>
   );
 }
 
-function EmptyRadar({ onNew, onExample, busy }: { onNew: () => void; onExample: (() => void) | null; busy: boolean }) {
+/** Runs still in progress (with a link back to each) and runs that failed, with their error and a retry. */
+function RunsStrip({ running, failed, now, onRetry }: { running: Tracked[]; failed: Run[]; now: number; onRetry: (run: Run) => void }) {
+  const since = (ts: number) => {
+    const m = Math.max(0, Math.round((now - ts) / 60_000));
+    return m < 1 ? "just started" : m === 1 ? "1 minute in" : m < 60 ? `${m} minutes in` : relativeDay(ts, now);
+  };
+  return (
+    <section aria-label="Runs in progress and failed runs" aria-live="polite" className="space-y-3">
+      {running.length > 0 && (
+        <div className="rounded-2xl border border-indigo-400/20 bg-indigo-400/[0.05] p-4">
+          <h2 className="flex items-center gap-2 text-sm font-semibold text-zinc-100">
+            <Badge tone="indigo" dot>
+              In progress
+            </Badge>
+            <span>
+              {running.length} {running.length === 1 ? "run" : "runs"} still researching
+            </span>
+          </h2>
+          <ul className="mt-3 divide-y divide-white/[0.06]">
+            {running.map(({ run, stage }) => (
+              <li key={run.id} className="flex flex-wrap items-center gap-x-4 gap-y-1 py-2 text-sm">
+                <Link href={`/runs/${run.id}`} className="group inline-flex min-w-0 flex-1 items-center gap-2 rounded text-zinc-100 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70">
+                  <span className="truncate font-medium" title={run.question}>
+                    {run.question}
+                  </span>
+                  <ArrowRightIcon size={14} className="shrink-0 text-zinc-400 transition-transform duration-200 group-hover:translate-x-0.5" />
+                </Link>
+                <span className="shrink-0 text-xs text-zinc-400">
+                  {run.demo ? "Recorded example · " : `${regionLabel(run.region)} · `}
+                  {stage ? `${stage} stage` : "starting"} · {since(run.createdAt)}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {failed.length > 0 && (
+        <div className="rounded-2xl border border-rose-400/20 bg-rose-400/[0.04] p-4">
+          <h2 className="flex items-center gap-2 text-sm font-semibold text-zinc-100">
+            <Badge tone="rose">Stopped</Badge>
+            <span>
+              {failed.length} {failed.length === 1 ? "run did" : "runs did"} not finish
+            </span>
+          </h2>
+          <ul className="mt-3 divide-y divide-white/[0.06]">
+            {failed.map((run) => (
+              <li key={run.id} className="flex flex-wrap items-start gap-x-4 gap-y-1 py-2 text-sm">
+                <div className="min-w-0 flex-1">
+                  <Link href={`/runs/${run.id}`} className="rounded font-medium text-zinc-100 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70">
+                    {run.question}
+                  </Link>
+                  <p className="mt-0.5 text-xs text-rose-100/90 [overflow-wrap:anywhere]">{run.error ?? "The run stopped before it finished."}</p>
+                </div>
+                <span className="shrink-0 text-xs text-zinc-400">
+                  {regionLabel(run.region)} · {relativeDay(run.createdAt, now)}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => onRetry(run)}
+                  aria-label={`Run again: ${run.question}`}
+                  className="inline-flex h-8 shrink-0 items-center rounded-lg border border-white/10 px-2.5 text-xs font-medium text-zinc-100 hover:bg-white/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70"
+                >
+                  Run again
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </section>
+  );
+}
+
+function EmptyRadar({ onNew, onExample, busy, error }: { onNew: () => void; onExample: (() => void) | null; busy: boolean; error: string | null }) {
   return (
     <section className="relative overflow-hidden rounded-2xl border border-white/[0.07] bg-zinc-900/40 px-6 py-16 text-center">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(99,102,241,0.18),transparent_60%)]" />
@@ -412,6 +555,11 @@ function EmptyRadar({ onNew, onExample, busy }: { onNew: () => void; onExample: 
           Each research run adds the opportunities it finds here, ranked and filterable. Start with a market you know, or open the recorded example to see
           what a finished run looks like.
         </p>
+        {error && (
+          <p role="alert" className="mt-4 w-full rounded-xl border border-rose-400/25 bg-rose-400/[0.07] px-3.5 py-3 text-left text-sm text-rose-100">
+            {error}
+          </p>
+        )}
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
             type="button"

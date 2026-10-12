@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useRef } from "react";
+import { Fragment, useRef } from "react";
 
+import { citeGroups } from "@/lib/evidence";
 import { SUB_SCORES, regionLabel, stripCites, type FeedItem } from "@/lib/v3/feed";
 import { ArrowRightIcon, CloseIcon } from "./icons";
-import { CitedText, ConfidenceBadge, ExampleBadge, GapBadge, Monogram, ScoreDial, ScoreRadar, ShortlistButton, SourceLine, useModal } from "./parts";
+import { CitedText, ConfidenceBadge, ExampleBadge, GapBadge, Monogram, ScoreDial, ScoreExplainer, ScoreRadar, ShortlistButton, SourceLine, SubScoreRow, useModal } from "./parts";
 
 const ANCHOR = "lr3-src";
 
@@ -93,25 +94,13 @@ export default function DetailPanel({
             <div className="mx-auto" aria-hidden="true">
               <ScoreRadar o={o} size={190} />
             </div>
-            <ul className="space-y-2.5" aria-label="Sub-scores">
-              {SUB_SCORES.map((s) => {
-                const v = o.subScores?.[s.key] ?? 0;
-                return (
-                  <li key={s.key}>
-                    <div className="flex justify-between text-xs">
-                      <span className="text-zinc-300">{s.label}</span>
-                      <span className="font-mono tabular-nums text-zinc-100">
-                        {Math.round(v * 10) / 10}/{s.max}
-                      </span>
-                    </div>
-                    <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-white/[0.07]" aria-hidden="true">
-                      <div className="lr3-fill h-full rounded-full bg-linear-to-r from-indigo-400 to-emerald-400" style={{ width: `${(v / s.max) * 100}%` }} />
-                    </div>
-                  </li>
-                );
-              })}
+            <ul className="space-y-3" aria-label="Sub-scores">
+              {SUB_SCORES.map((s) => (
+                <SubScoreRow key={s.key} label={s.label} what={s.what} value={o.subScores?.[s.key] ?? 0} max={s.max} />
+              ))}
             </ul>
           </div>
+          <ScoreExplainer />
 
           <Block title="Who it's for">{o.target}</Block>
           <Block title="The problem">
@@ -141,15 +130,35 @@ export default function DetailPanel({
           {o.skeptic?.length > 0 && (
             <Block title="The case against">
               <ul className="space-y-3">
-                {o.skeptic.map((s, i) => (
-                  <li key={i} className="rounded-xl border border-rose-400/15 bg-rose-400/[0.04] p-3.5">
-                    <p className="font-medium text-zinc-100">{stripCites(s.objection)}</p>
-                    <p className="mt-1 text-sm text-zinc-300">
-                      <CitedText text={s.basis} footnotes={item.footnotes} anchor={ANCHOR} />
-                    </p>
-                    {s.wouldChangeMind && <p className="mt-2 text-sm text-zinc-300">Would change the verdict: {stripCites(s.wouldChangeMind)}</p>}
-                  </li>
-                ))}
+                {o.skeptic.map((s, i) => {
+                  // the evidence the objection names but does not cite inline still gets its footnotes,
+                  // so every source in the list below is referenced from the text
+                  const inline = new Set(citeGroups(s.basis ?? "").flatMap((g) => g.ids));
+                  const extra = [...new Set((s.evidenceIds ?? []).filter((id) => !inline.has(id)).map((id) => item.footnotes[id]).filter(Boolean))].sort((a, b) => a - b);
+                  return (
+                    <li key={i} className="rounded-xl border border-rose-400/15 bg-rose-400/[0.04] p-3.5">
+                      <p className="font-medium text-zinc-100">
+                        {stripCites(s.objection)}
+                        {extra.length > 0 && (
+                          <sup className="ml-0.5 whitespace-nowrap">
+                            {extra.map((n, j) => (
+                              <Fragment key={n}>
+                                {j > 0 && <span aria-hidden="true" className="text-zinc-500">,</span>}
+                                <a href={`#${ANCHOR}-${n}`} className="rounded font-mono text-[10px] font-medium text-indigo-300 hover:text-indigo-200 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70" aria-label={`Source ${n}`}>
+                                  {n}
+                                </a>
+                              </Fragment>
+                            ))}
+                          </sup>
+                        )}
+                      </p>
+                      <p className="mt-1 text-sm text-zinc-300">
+                        <CitedText text={s.basis} footnotes={item.footnotes} anchor={ANCHOR} />
+                      </p>
+                      {s.wouldChangeMind && <p className="mt-2 text-sm text-zinc-300">Would change the verdict: {stripCites(s.wouldChangeMind)}</p>}
+                    </li>
+                  );
+                })}
               </ul>
             </Block>
           )}

@@ -104,13 +104,12 @@ function parseStart(body: unknown): StartRequest | null {
 }
 
 type Route =
-  | { kind: "health" } | { kind: "runs" } | { kind: "live" } | { kind: "export-view" }
+  | { kind: "health" } | { kind: "runs" } | { kind: "export-view" }
   | { kind: "run"; runId: string; sub: "view" | "stream" | "export" };
 
 function route(path: string): Route | null {
   if (path === "/api/health") return { kind: "health" };
   if (path === "/api/runs") return { kind: "runs" };
-  if (path === "/api/runs/live") return { kind: "live" };
   if (path === "/api/export") return { kind: "export-view" };
   const m = /^\/api\/runs\/([^/]+)(?:\/(stream|export))?$/.exec(path);
   if (!m) return null;
@@ -154,9 +153,11 @@ async function startRun(request: Request, env: Env, store: Store): Promise<Respo
   }
 
   const runId = makeId("run");
+  const now = nowMs();
   const run: Run = {
     id: runId, question: start.question, region: start.region, questionType: null, status: "running", budget: config.runSearchBudget(env),
-    searchesUsed: 0, createdAt: nowMs(), finishedAt: null, demo: false, demoLabel: null, rejectedSignals: 0, error: null,
+    searchesUsed: 0, createdAt: now, finishedAt: null, demo: false, demoLabel: null, rejectedSignals: 0, error: null,
+    searchCalls: 0, failedSearches: 0, outcome: null, lastProgressAt: now,
   };
   if (!(await store.createRunIfCapacity(run, config.concurrentRunLimit(env)))) {
     return error(429, "Another research run is in progress. Try again when it finishes (usually within ten minutes).");
@@ -188,10 +189,6 @@ async function handle(request: Request, env: Env): Promise<Response> {
   if (r.kind === "health") {
     if (method !== "GET" && method !== "HEAD") return error(405, "Method not allowed");
     return json({ ok: true });
-  }
-  if (r.kind === "live") {
-    // the single-request mode existed for hosts that freeze a function after the response; here runs are background jobs
-    return error(410, "This host runs research in the background. POST /api/runs and follow /api/runs/{id}/stream.");
   }
   const allowed = r.kind === "export-view" ? ["POST"] : r.kind === "runs" ? ["GET", "POST"] : ["GET"];
   if (!allowed.includes(method)) return error(405, "Method not allowed");
@@ -226,7 +223,9 @@ async function handle(request: Request, env: Env): Promise<Response> {
   if (!RUN_ID.test(runId)) return sub === "view" ? error(404, "Run not found") : text("Run not found", 404, "text/plain; charset=utf-8");
 
   if (sub === "view") {
-    const view = await store.view(runId);
+    let view = await store.view(runId);
+    // a run whose job died must not show "running" forever: the watchdog runs when a running run is viewed
+    if (view?.run.status === "running" && (await store.failStaleRuns()) > 0) view = await store.view(runId);
     return view ? json(view) : error(404, "Run not found");
   }
   if (sub === "export") {
@@ -236,10 +235,17 @@ async function handle(request: Request, env: Env): Promise<Response> {
   }
 
   // stream
-  if ((await store.getRun(runId)) === null) return text("Run not found", 404, "text/plain; charset=utf-8");
+  const run = await store.getRun(runId);
+  if (run === null) return text("Run not found", 404, "text/plain; charset=utf-8");
+  if (run.status === "running") await store.failStaleRuns();
   // EventSource resends the last id it saw; anything that is not a small index starts from the top
   const lastId = request.headers.get("last-event-id") ?? "";
   const fromIndex = /^\d{1,6}$/.test(lastId) ? Number(lastId) + 1 : 0;
+  // a running run has nothing past its log yet: an id beyond it is not a resume but a forgery
+  // (on a running example it would let the viewer complete a trace it never watched)
+  if (fromIndex > 0 && run.status === "running" && fromIndex > (await store.eventCount(runId))) {
+    return text("Last-Event-ID is beyond this run's log", 400, "text/plain; charset=utf-8");
+  }
   const chunks = (async function* () {
     yield `retry: ${RETRY_MS}\n\n`;
     for await (const item of followRunEvents(store, runId, fromIndex, env, { isCancelled: () => request.signal.aborted })) yield encodeEvent(item);

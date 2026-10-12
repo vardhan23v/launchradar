@@ -135,7 +135,7 @@ export default function NewResearchDialog({
             </p>
           ) : (
             <p id={ids.note} className="mt-4 text-xs text-zinc-400">
-              Uses up to {runBudget} searches. A run takes a few minutes; you can leave the page and come back to it.
+              Uses up to {runBudget} searches. Runs usually take 5–10 minutes; you can leave and come back.
             </p>
           )}
           {error && (

@@ -1,13 +1,14 @@
 "use client";
 
 /**
- * One research run in the new design: live progress while it runs, then its opportunities,
- * problems, competitors, research log and sources.
+ * One research run: live progress while it runs, then its opportunities, problems, competitors,
+ * research log and sources.
  *
- * The data handling is the report view's (src/components/RunClient.tsx), unchanged in substance:
- *   (1) /runs/live: a run performed inside one streaming request (serverless hosts), via src/lib/live.ts
- *   (2) a run the server holds: its view, plus a resumable event stream (Last-Event-ID)
- *   (3) a finished run this browser keeps: preferred, because a server may have forgotten it
+ * Where the data comes from:
+ *   (1) a run the server holds: its view, plus a resumable event stream (Last-Event-ID)
+ *   (2) a finished run this browser keeps: preferred, because a server may have forgotten it
+ * While a run is in progress the page also polls the view every two seconds; the stream and the
+ * poll back each other up, and when both go quiet the page says so instead of pretending.
  */
 
 import { useRouter } from "next/navigation";
@@ -15,33 +16,40 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import type { Cluster, Evidence, RunView, Signal, StepEvent } from "@/lib/types";
 import { loadSavedRun, saveFinishedRun } from "@/lib/history";
-import { ensureLiveRun, subscribeLive } from "@/lib/live";
-import { PIPELINE, loadIds, saveIds } from "@/lib/v2/adapter";
-import { engineLabel } from "@/components/ui";
 import { GAP_LABEL, itemsForView, regionLabel, sortItems, stripCites, type FeedItem, type Source } from "@/lib/v3/feed";
+import { PIPELINE, engineLabel, outcomeOf, parseStepEvent, searchStats, stageMostlyFailed, stageOf, type SearchStats } from "@/lib/v3/run";
+import { loadIds, saveIds } from "@/lib/v3/storage";
 import { CardSkeleton, FeaturedCard, GridCard } from "./Cards";
 import DetailPanel from "./DetailPanel";
-import { blockedReasonFor, useHome, useStartRun } from "./hooks";
+import { UNREACHABLE, blockedReasonFor, fetchJson, useHome, useStartRun } from "./hooks";
 import { ArrowRightIcon, ExternalIcon, RadarLogo } from "./icons";
 import NewResearchDialog from "./NewResearchDialog";
-import { Badge, FOCUS_FALLBACK_ID, Segmented, SourceLine, cx } from "./parts";
+import { Badge, FOCUS_FALLBACK_ID, ScoreExplainer, Segmented, SourceLine, cx } from "./parts";
 import TopNav from "./TopNav";
 
 type Section = "opportunities" | "problems" | "competitors" | "log" | "sources";
 
-function stageOf(e: StepEvent): string | null {
-  if (e.type === "stage" || e.type === "llm") return e.stage;
-  if (e.type === "search_call") return e.call.stage;
-  return null;
-}
+/** How the first load went. Once a view exists, later failures become a connection state instead. */
+type Load = { kind: "loading" } | { kind: "ready" } | { kind: "not-found" } | { kind: "unreachable" } | { kind: "error"; message: string };
+
+const POLL_MS = 2000;
+/** EventSource reconnects on its own (retry: 2 s); only a reconnect that takes this long counts as lost */
+const STREAM_GRACE_MS = 8000;
+const FAILED_POLLS_BEFORE_LOST = 3;
 
 function plural(n: number, w: string): string {
   return `${n} ${w}${n === 1 ? "" : /(s|ch|sh|x)$/.test(w) ? "es" : "s"}`;
 }
 
-function summary(view: RunView): string {
+function summary(view: RunView, stats: SearchStats): string {
   const { run, evidence, signals, competitors, gaps } = view;
-  const parts = [`${plural(run.searchesUsed, "search")} returned ${plural(evidence.length, "result")}.`];
+  const parts: string[] = [];
+  if (stats.failed > 0) {
+    const ok = Math.max(0, stats.total - stats.failed);
+    parts.push(`${plural(stats.total, "search")} ran and ${stats.failed} failed; the other ${ok} returned ${plural(evidence.length, "result")}.`);
+  } else {
+    parts.push(`${plural(stats.total, "search")} returned ${plural(evidence.length, "result")}.`);
+  }
   if (signals.length > 0 || run.rejectedSignals > 0) {
     parts.push(
       `${plural(signals.length, "signal")} passed the word-for-word quote check${
@@ -59,7 +67,7 @@ function evidenceSource(e: Evidence): Source {
 
 /* ------------------------------------------------------------------ progress */
 
-function Stepper({ events, status }: { events: StepEvent[]; status: string }) {
+function Stepper({ events, status, stats }: { events: StepEvent[]; status: string; stats: SearchStats }) {
   let reached = -1;
   for (const e of events) {
     const st = e ? stageOf(e) : null;
@@ -81,19 +89,31 @@ function Stepper({ events, status }: { events: StepEvent[]; status: string }) {
         {PIPELINE.map((p, i) => {
           const past = done || i < reached;
           const now = !done && i === reached;
+          // a stage that lost most of its searches is not a success, whatever came after it
+          const warn = past && stageMostlyFailed(stats.byStage[i]);
           return (
-            <li key={p.id} className={cx("flex min-w-0 items-center gap-1.5 text-xs", now ? (failed ? "text-rose-300" : "text-indigo-200") : past ? "text-zinc-200" : "text-zinc-400")}>
+            <li key={p.id} className={cx("flex min-w-0 items-center gap-1.5 text-xs", now ? (failed ? "text-rose-300" : "text-indigo-200") : warn ? "text-amber-200" : past ? "text-zinc-200" : "text-zinc-400")}>
               <span
                 aria-hidden="true"
                 className={cx(
                   "grid size-4 shrink-0 place-items-center rounded-full text-[9px] font-semibold",
-                  past ? "bg-emerald-400/20 text-emerald-300" : now ? (failed ? "bg-rose-400/20" : "bg-indigo-400/25") : "bg-white/[0.06]",
+                  warn ? "bg-amber-400/20 text-amber-200" : past ? "bg-emerald-400/20 text-emerald-300" : now ? (failed ? "bg-rose-400/20" : "bg-indigo-400/25") : "bg-white/[0.06]",
                 )}
               >
-                {past ? "✓" : now && status === "running" ? <span className="size-1.5 rounded-full bg-indigo-300 motion-safe:animate-pulse" /> : i + 1}
+                {warn ? "!" : past ? "✓" : now && status === "running" ? <span className="size-1.5 rounded-full bg-indigo-300 motion-safe:animate-pulse" /> : i + 1}
               </span>
               <span className="truncate">{p.label}</span>
-              <span className="sr-only">{past ? ", done" : now ? (failed ? ", stopped here" : ", in progress") : ", not started"}</span>
+              <span className="sr-only">
+                {warn
+                  ? `, done, but ${stats.byStage[i].failed} of its ${stats.byStage[i].total} searches failed`
+                  : past
+                    ? ", done"
+                    : now
+                      ? failed
+                        ? ", stopped here"
+                        : ", in progress"
+                      : ", not started"}
+              </span>
             </li>
           );
         })}
@@ -222,57 +242,98 @@ function ProblemCard({ c, signals, byId, open, onToggle }: { c: Cluster; signals
   );
 }
 
+/* ------------------------------------------------------------------ notices */
+
+const retryButton = "inline-flex h-9 items-center rounded-lg border border-current/30 bg-white/[0.04] px-3 text-sm font-medium transition-colors hover:bg-white/[0.1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70";
+
+/** What a finished run with little or no evidence should tell the reader, and what to do next. */
+function OutcomeNotice({ outcome, stats, onRerun, canRerun }: { outcome: "limited" | "empty"; stats: SearchStats; onRerun: () => void; canRerun: boolean }) {
+  const heading = outcome === "empty" ? "This run finished without finding an opportunity." : "This run finished with limited evidence.";
+  const what =
+    stats.failed > 0
+      ? `${stats.failed} of its ${plural(stats.total, "search")} failed, so the findings below rest on less evidence than a full run would collect.`
+      : "Its searches ran, but the results did not hold a problem with a gap that passed the checks.";
+  return (
+    <div role="status" aria-live="polite" className="max-w-3xl rounded-xl border border-amber-400/25 bg-amber-400/[0.07] px-4 py-3 text-sm text-amber-50">
+      <p>
+        <span className="font-semibold">{heading}</span> {what}
+      </p>
+      {stats.reasons.length > 0 && (
+        <ul className="mt-2 list-disc space-y-0.5 pl-5 text-amber-100/90 marker:text-amber-300/60">
+          {stats.reasons.slice(0, 4).map((r) => (
+            <li key={r} className="[overflow-wrap:anywhere]">
+              {r}
+            </li>
+          ))}
+        </ul>
+      )}
+      <div className="mt-3 flex flex-wrap items-center gap-3">
+        <span className="text-amber-100/90">{stats.failed > 0 ? "Next step: run it again later, when the search service answers." : "Next step: run it again with a narrower market, or a different phrasing."}</span>
+        {canRerun && (
+          <button type="button" onClick={onRerun} className={cx(retryButton, "text-amber-50")}>
+            Run it again
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+
 /* ------------------------------------------------------------------ page */
 
 export default function RunPage({ runId }: { runId: string }) {
   const router = useRouter();
   const { home, down } = useHome();
-  const { start, busy, error: startErr, clearError } = useStartRun(home);
+  const { start, busy, error: startErr, clearError } = useStartRun();
   const [view, setView] = useState<RunView | null>(null);
   const [events, setEvents] = useState<StepEvent[]>([]);
-  const [notFound, setNotFound] = useState(false);
-  const [startError, setStartError] = useState<string | null>(null);
+  const [load, setLoad] = useState<Load>({ kind: "loading" });
+  const [connection, setConnection] = useState<"ok" | "lost">("ok");
+  const [attempt, setAttempt] = useState(0);
   const [section, setSection] = useState<Section>("opportunities");
   const [openItem, setOpenItem] = useState<FeedItem | null>(null);
   const [openProblem, setOpenProblem] = useState<string | null>(null);
   const [dialog, setDialog] = useState(false);
   const [shortlist, setShortlist] = useState<string[]>([]);
   const [exportState, setExportState] = useState<"idle" | "busy" | "failed">("idle");
-  const isLive = runId === "live";
-
-  const fetchView = useCallback(async () => {
-    const res = await fetch(`/api/runs/${runId}`).catch(() => null);
-    if (!res?.ok) return null;
-    const v = (await res.json()) as RunView;
-    setView(v);
-    return v;
-  }, [runId]);
-
-  // (1) a run streamed over a single request: the serverless path
+  // the data effect below reads the current view without depending on it (a new view must not reconnect the stream)
+  const viewRef = useRef<RunView | null>(null);
   useEffect(() => {
-    if (!isLive) return;
-    if (!ensureLiveRun()) {
-      router.replace("/");
-      return;
-    }
-    return subscribeLive((s) => {
-      if (s.view) setView(s.view);
-      setEvents(s.events);
-      if (s.error) setStartError(s.error);
-    });
-  }, [isLive, router]);
+    viewRef.current = view;
+  }, [view]);
 
-  // (2) a run the server knows, or (3) one saved in this browser
+  const retry = useCallback(() => setAttempt((a) => a + 1), []);
+
+  // (1) a run the server knows, or (2) one saved in this browser; `attempt` re-runs it on manual retry
   useEffect(() => {
-    if (isLive) return;
     let alive = true;
     let es: EventSource | null = null;
     let poll: number | undefined;
+    let grace: number | undefined;
+    let failedPolls = 0;
     const stop = () => {
       es?.close();
       es = null;
       if (poll !== undefined) window.clearInterval(poll);
       poll = undefined;
+      if (grace !== undefined) window.clearTimeout(grace);
+      grace = undefined;
+    };
+    const connected = () => {
+      if (!alive) return;
+      failedPolls = 0;
+      if (grace !== undefined) window.clearTimeout(grace);
+      grace = undefined;
+      setConnection("ok");
+    };
+    const fetchView = async (): Promise<RunView | null> => {
+      const r = await fetchJson<RunView>(`/api/runs/${runId}`);
+      if (!alive) return null;
+      if (r.kind === "ok") {
+        setView(r.data);
+        return r.data;
+      }
+      return null;
     };
     void (async () => {
       const saved = loadSavedRun(runId);
@@ -281,19 +342,33 @@ export default function RunPage({ runId }: { runId: string }) {
         if (!alive) return;
         setView(saved.view);
         setEvents(saved.events);
+        setLoad({ kind: "ready" });
         return;
       }
-      const v = await fetchView();
+      const r = await fetchJson<RunView>(`/api/runs/${runId}`);
       if (!alive) return;
-      if (!v) {
-        setNotFound(true);
+      let v: RunView | null;
+      if (r.kind === "ok") {
+        v = r.data;
+        setView(v);
+        setLoad({ kind: "ready" });
+        connected();
+      } else if (viewRef.current) {
+        // a retry that failed: keep what the page has and say the connection is gone
+        v = viewRef.current;
+        setConnection("lost");
+      } else {
+        setLoad(r.kind === "error" ? { kind: "error", message: r.message } : { kind: r.kind });
         return;
       }
       // a finished run replays its log instantly; events are stored by index, so reconnects never duplicate
       es = new EventSource(`/api/runs/${runId}/stream`);
+      es.onopen = connected;
       es.onmessage = (msg) => {
+        const e = parseStepEvent(msg.data);
+        if (!e) return; // a frame this page cannot read is dropped, never rendered
+        connected();
         const index = Number.parseInt(msg.lastEventId, 10);
-        const e = JSON.parse(msg.data as string) as StepEvent;
         setEvents((prev) => {
           if (!Number.isFinite(index)) return [...prev, e];
           if (prev[index] !== undefined) return prev;
@@ -305,30 +380,47 @@ export default function RunPage({ runId }: { runId: string }) {
         if (e.type === "done") stop();
       };
       es.onerror = () => {
-        if (es?.readyState === EventSource.CLOSED) stop();
+        if (!alive) return;
+        if (es?.readyState === EventSource.CLOSED) {
+          es.close();
+          es = null;
+          if (viewRef.current?.run.status === "running") setConnection("lost");
+          return;
+        }
+        // the browser is reconnecting (the API closes a live stream every 24 s by design): only a
+        // reconnect that does not come back counts as a lost connection
+        if (grace === undefined) grace = window.setTimeout(() => setConnection("lost"), STREAM_GRACE_MS);
       };
-      if (v.run.status === "running") {
+      if (v.run.status === "running" || v.run.status === "queued") {
         poll = window.setInterval(() => {
-          void fetchView().then((nv) => {
-            if (nv && nv.run.status !== "running" && poll !== undefined) {
+          void fetchJson<RunView>(`/api/runs/${runId}`).then((pr) => {
+            if (!alive) return;
+            if (pr.kind !== "ok") {
+              failedPolls += 1;
+              if (failedPolls >= FAILED_POLLS_BEFORE_LOST) setConnection("lost");
+              return;
+            }
+            connected();
+            setView(pr.data);
+            if (pr.data.run.status !== "running" && pr.data.run.status !== "queued" && poll !== undefined) {
               window.clearInterval(poll);
               poll = undefined;
             }
           });
-        }, 2000);
+        }, POLL_MS);
       }
     })();
     return () => {
       alive = false;
       stop();
     };
-  }, [runId, isLive, fetchView]);
+  }, [runId, attempt]);
 
   // keep a copy of a real run that finished here, so history survives whatever happens to the server's copy
   useEffect(() => {
-    if (isLive || !view || view.run.id !== runId) return;
+    if (!view || view.run.id !== runId) return;
     saveFinishedRun(view, events);
-  }, [isLive, runId, view, events]);
+  }, [runId, view, events]);
 
   const realId = view?.run.id;
   useEffect(() => {
@@ -364,6 +456,8 @@ export default function RunPage({ runId }: { runId: string }) {
 
   const items = useMemo(() => (view ? sortItems(itemsForView(view), "score") : []), [view]);
   const byId = useMemo(() => new Map((view?.evidence ?? []).map((e) => [e.id, e])), [view]);
+  const stats = useMemo(() => searchStats(events, view?.run), [events, view]);
+  const outcome = useMemo(() => (view ? outcomeOf(view, stats) : null), [view, stats]);
   const closeDetail = useCallback(() => setOpenItem(null), []);
   const closeDialog = useCallback(() => {
     setDialog(false);
@@ -400,25 +494,42 @@ export default function RunPage({ runId }: { runId: string }) {
     </div>
   );
 
-  if (notFound || (startError && !view)) {
+  if (!view && load.kind !== "loading" && load.kind !== "ready") {
+    const notFound = load.kind === "not-found";
+    const title = notFound ? "There is no run at this address" : load.kind === "unreachable" ? UNREACHABLE : "The research server could not answer";
+    const body = notFound
+      ? "The research server has no run with this id, and this browser has no copy of it."
+      : load.kind === "unreachable"
+        ? "The run may still be there. Check your connection, then try again."
+        : load.message;
     return shell(
-      <section className="mx-auto max-w-xl rounded-2xl border border-white/[0.07] bg-zinc-900/40 px-6 py-14 text-center">
+      <section className="mx-auto max-w-xl rounded-2xl border border-white/[0.07] bg-zinc-900/40 px-6 py-14 text-center" aria-live="polite">
         <RadarLogo size={48} />
         <h1 id={FOCUS_FALLBACK_ID} tabIndex={-1} className="mt-5 text-xl font-semibold tracking-tight text-white focus:outline-none">
-          {notFound ? "There is no run at this address" : "This run could not start"}
+          {title}
         </h1>
-        <p className="mt-2 text-sm text-zinc-300">
-          {notFound
-            ? "The research server has no run with this id, and this browser has no copy of it."
-            : startError}
-        </p>
-        <button
-          type="button"
-          onClick={() => router.push("/")}
-          className="mt-6 inline-flex h-10 items-center rounded-xl bg-white px-4 text-sm font-semibold text-zinc-900 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300"
-        >
-          Back to all findings
-        </button>
+        <p className="mt-2 text-sm text-zinc-300">{body}</p>
+        <div className="mt-6 flex flex-wrap justify-center gap-2">
+          {!notFound && (
+            <button
+              type="button"
+              onClick={retry}
+              className="inline-flex h-10 items-center rounded-xl bg-white px-4 text-sm font-semibold text-zinc-900 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300"
+            >
+              Retry
+            </button>
+          )}
+          <button
+            type="button"
+            onClick={() => router.push("/")}
+            className={cx(
+              "inline-flex h-10 items-center rounded-xl px-4 text-sm font-semibold focus-visible:outline-none focus-visible:ring-2",
+              notFound ? "bg-white text-zinc-900 hover:bg-indigo-50 focus-visible:ring-indigo-300" : "border border-white/10 text-zinc-200 hover:bg-white/[0.06] focus-visible:ring-indigo-400/70",
+            )}
+          >
+            Back to all findings
+          </button>
+        </div>
       </section>,
     );
   }
@@ -443,16 +554,24 @@ export default function RunPage({ runId }: { runId: string }) {
   const { run } = view;
   const running = run.status === "running" || run.status === "queued";
   const failed = run.status === "failed";
+  const disconnected = running && connection === "lost";
   const date = new Date(run.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "long", year: "numeric" });
+  const replayed = new Date(run.createdAt).toLocaleString(undefined, { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
   const crowded = view.gaps.filter((g) => g.status === "served");
   const searchCount = events.filter((e) => e?.type === "search_call").length;
 
-  const statusBadge = running ? (
+  const statusBadge = disconnected ? (
+    <Badge tone="amber">Connection lost</Badge>
+  ) : running ? (
     <Badge tone="indigo" dot>
       Researching
     </Badge>
   ) : failed ? (
     <Badge tone="rose">Stopped</Badge>
+  ) : outcome === "limited" ? (
+    <Badge tone="amber">Complete · limited evidence</Badge>
+  ) : outcome === "empty" ? (
+    <Badge tone="amber">Complete · no opportunities</Badge>
   ) : (
     <Badge tone="emerald">Complete</Badge>
   );
@@ -475,7 +594,8 @@ export default function RunPage({ runId }: { runId: string }) {
           <span aria-hidden="true" className="text-zinc-500">
             ·
           </span>
-          <span>{date}</span>
+          {/* the example's timestamp is when it was replayed, not when the research happened */}
+          <span>{run.demo ? `Recorded example, replayed ${replayed}` : date}</span>
           <span aria-hidden="true" className="text-zinc-500">
             ·
           </span>
@@ -487,15 +607,24 @@ export default function RunPage({ runId }: { runId: string }) {
           {run.question}
         </h1>
         <p className="max-w-3xl text-[15px] leading-relaxed text-zinc-300" aria-live="polite">
-          {running && run.searchesUsed === 0 ? "Planning the searches…" : summary(view)}
+          {running && stats.total === 0 ? "Planning the searches…" : summary(view, stats)}
         </p>
+        {disconnected && (
+          <div role="status" aria-live="polite" className="flex max-w-3xl flex-wrap items-center gap-3 rounded-xl border border-amber-400/25 bg-amber-400/[0.07] px-4 py-3 text-sm text-amber-50">
+            <span>Connection lost, retrying… The research keeps running on the server; this page will catch up when it can reach it again.</span>
+            <button type="button" onClick={retry} className={cx(retryButton, "text-amber-50")}>
+              Retry now
+            </button>
+          </div>
+        )}
         {run.error && (
           <p role="alert" className="max-w-3xl rounded-xl border border-rose-400/25 bg-rose-400/[0.07] px-4 py-3 text-sm text-rose-100">
             {run.error}
           </p>
         )}
+        {(outcome === "limited" || outcome === "empty") && <OutcomeNotice outcome={outcome} stats={stats} onRerun={() => setDialog(true)} canRerun={!run.demo} />}
         <div className="rounded-2xl border border-white/[0.07] bg-zinc-900/40 p-4 sm:p-5">
-          <Stepper events={events} status={run.status} />
+          <Stepper events={events} status={run.status} stats={stats} />
         </div>
       </header>
 
@@ -512,7 +641,11 @@ export default function RunPage({ runId }: { runId: string }) {
               </div>
             ) : (
               <p className="rounded-2xl border border-dashed border-white/10 px-6 py-12 text-center text-sm text-zinc-300">
-                {view.gaps.length > 0 ? "Every gap this run tested already has a product filling it, so there is nothing to recommend." : "This run did not get far enough to produce opportunities."}
+                {view.gaps.length > 0
+                  ? "Every gap this run tested already has a product filling it, so there is nothing to recommend."
+                  : stats.failed > 0
+                    ? "This run did not get far enough to produce opportunities: too many of its searches failed."
+                    : "This run did not get far enough to produce opportunities."}
               </p>
             )
           ) : (
@@ -542,6 +675,7 @@ export default function RunPage({ runId }: { runId: string }) {
                   ))}
                 </ul>
               )}
+              <ScoreExplainer />
             </>
           )}
 
@@ -612,14 +746,15 @@ export default function RunPage({ runId }: { runId: string }) {
                     <h3 className="text-base font-semibold text-zinc-50 [overflow-wrap:anywhere]">{c.name}</h3>
                     <p className="text-xs capitalize text-zinc-400">{c.category.replace(/-/g, " ")}</p>
                   </div>
+                  {/* "Not verified": the searches did not turn up a figure that passed the evidence check; it may still exist */}
                   <dl className="grid grid-cols-2 gap-2 text-sm">
                     <div className="rounded-lg bg-white/[0.03] px-3 py-2">
                       <dt className="text-[11px] uppercase tracking-wider text-zinc-400">Pricing</dt>
-                      <dd className="mt-0.5 text-zinc-100">{c.pricing ?? "Not found"}</dd>
+                      <dd className={cx("mt-0.5", c.pricing ? "text-zinc-100" : "text-zinc-400")}>{c.pricing ?? "Not verified"}</dd>
                     </div>
                     <div className="rounded-lg bg-white/[0.03] px-3 py-2">
                       <dt className="text-[11px] uppercase tracking-wider text-zinc-400">Rating</dt>
-                      <dd className="mt-0.5 font-mono tabular-nums text-zinc-100">{c.rating !== null ? c.rating.toFixed(1) : "Not found"}</dd>
+                      <dd className={cx("mt-0.5 tabular-nums", c.rating !== null ? "font-mono text-zinc-100" : "text-zinc-400")}>{c.rating !== null ? c.rating.toFixed(1) : "Not verified"}</dd>
                     </div>
                   </dl>
                   {c.complaints.length > 0 ? (

@@ -17,13 +17,58 @@ export type SortKey = "score" | "momentum" | "newest";
 export type DateRange = "today" | "week" | "all";
 export type ViewMode = "grid" | "list";
 
-export const SUB_SCORES: { key: keyof Opportunity["subScores"]; label: string; short: string; max: number }[] = [
-  { key: "pain", label: "Pain", short: "Pain", max: 30 },
-  { key: "momentum", label: "Momentum", short: "Mom.", max: 20 },
-  { key: "commercial", label: "Commercial intent", short: "Comm.", max: 20 },
-  { key: "whitespace", label: "Whitespace", short: "White.", max: 20 },
-  { key: "weakRivals", label: "Weak rivals", short: "Rivals", max: 10 },
+/**
+ * The five parts of the score, each with a one-line account of what the server computes for it
+ * (worker/src/score.ts). The definitions describe the arithmetic, not an interpretation.
+ */
+export const SUB_SCORES: { key: keyof Opportunity["subScores"]; label: string; short: string; max: number; what: string }[] = [
+  {
+    key: "pain",
+    label: "Pain",
+    short: "Pain",
+    max: 30,
+    what: "How strongly users describe the problem (the signals' average intensity, 1 to 5) and on how many different sites they say it (up to 6).",
+  },
+  {
+    key: "momentum",
+    label: "Momentum",
+    short: "Mom.",
+    max: 20,
+    what: "The 12-month Google Trends slope for the problem's keyword, plus a bump when at least two news results are from the last 90 days. No trend data scores 0.",
+  },
+  {
+    key: "commercial",
+    label: "Commercial intent",
+    short: "Comm.",
+    max: 20,
+    what: "Buying signals in the results: ads for the problem (half the weight, full at 4), whether any competitor publishes a price (30%), and job postings (20%, full at 10).",
+  },
+  {
+    key: "whitespace",
+    label: "Whitespace",
+    short: "White.",
+    max: 20,
+    what: "The gap check's verdict (open: full marks, partly served: half, already served: a tenth), reduced by each direct competitor or product the check found, to zero at 8.",
+  },
+  {
+    key: "weakRivals",
+    label: "Weak rivals",
+    short: "Rivals",
+    max: 10,
+    what: "The share of competitors in this problem's space that are rated under 4 or have three or more complaints in the evidence.",
+  },
 ];
+
+/** How the total is made, for the "How the score works" disclosure. */
+export const SCORE_NOTE =
+  "The score is deterministic: the same evidence always gives the same number, and nothing is imputed when evidence is missing. It is computed only from what the run's searches found, so it rates the evidence, not the idea. A high score is not commercial validation.";
+
+/** What the confidence label means (worker/src/score.ts): it rates the amount and spread of evidence, not the idea. */
+export const CONFIDENCE_NOTE: Record<string, string> = {
+  High: "High confidence: the run collected at least 30 results from at least 4 sites and 3 kinds of search, so the case rests on broad evidence.",
+  Medium: "Medium confidence: the run collected at least 12 results from at least 2 sites and 2 kinds of search. Treat the case as a lead, not a conclusion.",
+  Low: "Low confidence: the run collected fewer than 12 results, or they came from a single site or a single kind of search. The case rests on thin evidence.",
+};
 
 export const REGIONS: { code: string; label: string }[] = [
   { code: "in", label: "India" },

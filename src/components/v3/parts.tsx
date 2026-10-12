@@ -6,7 +6,7 @@ import { Fragment, useEffect, useId, useRef, useState, type ReactNode, type RefO
 
 import type { GapStatus, Opportunity } from "@/lib/types";
 import { citeGroups, safeUrl } from "@/lib/evidence";
-import { GAP_LABEL, SUB_SCORES, hueFor, monogram, type Source } from "@/lib/v3/feed";
+import { CONFIDENCE_NOTE, GAP_LABEL, SCORE_NOTE, SUB_SCORES, hueFor, monogram, type Source } from "@/lib/v3/feed";
 import { ExternalIcon, StarIcon } from "./icons";
 
 export function cx(...parts: (string | false | null | undefined)[]): string {
@@ -153,8 +153,60 @@ export function GapBadge({ status }: { status: GapStatus | null }) {
   );
 }
 
+/** The confidence label with what it means on hover and for screen readers: it rates the evidence, not the idea. */
 export function ConfidenceBadge({ value }: { value: string }) {
-  return <Badge tone={value === "High" ? "indigo" : "neutral"}>{value} confidence</Badge>;
+  const note = CONFIDENCE_NOTE[value];
+  return (
+    <span title={note} className="inline-flex">
+      <Badge tone={value === "High" ? "indigo" : "neutral"}>
+        {value} confidence
+        {note && <span className="sr-only">. {note}</span>}
+      </Badge>
+    </span>
+  );
+}
+
+/** One sub-score with its one-line definition and a bar to its maximum. */
+export function SubScoreRow({ label, what, value, max }: { label: string; what: string; value: number; max: number }) {
+  const v = Math.round(value * 10) / 10;
+  return (
+    <li>
+      <div className="flex justify-between gap-3 text-xs">
+        <span className="font-medium text-zinc-200">{label}</span>
+        <span className="font-mono tabular-nums text-zinc-100">
+          {v}/{max}
+        </span>
+      </div>
+      <p className="mt-0.5 text-[11px] leading-snug text-zinc-400">{what}</p>
+      <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-white/[0.07]" aria-hidden="true">
+        <div className="lr3-fill h-full rounded-full bg-linear-to-r from-indigo-400 to-emerald-400" style={{ width: `${Math.max(0, Math.min(100, (v / max) * 100))}%` }} />
+      </div>
+    </li>
+  );
+}
+
+/** "How the score works": the arithmetic in one paragraph and the five parts, behind a disclosure. */
+export function ScoreExplainer({ className }: { className?: string }) {
+  return (
+    <details className={cx("group rounded-xl border border-white/[0.07] bg-white/[0.02] text-sm", className)}>
+      <summary className="cursor-pointer select-none rounded-xl px-4 py-2.5 text-xs font-medium text-zinc-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70">
+        How the score works
+      </summary>
+      <div className="space-y-3 border-t border-white/[0.06] px-4 py-3">
+        <p className="text-xs leading-relaxed text-zinc-300">{SCORE_NOTE}</p>
+        <dl className="space-y-2">
+          {SUB_SCORES.map((s) => (
+            <div key={s.key} className="grid gap-x-3 sm:grid-cols-[9rem_1fr]">
+              <dt className="text-xs font-medium text-zinc-200">
+                {s.label} <span className="font-mono text-zinc-400">{s.max} pts</span>
+              </dt>
+              <dd className="text-xs leading-snug text-zinc-400">{s.what}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </details>
+  );
 }
 
 export function ExampleBadge() {

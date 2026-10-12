@@ -1,8 +1,8 @@
 import type { Run, RunView, StepEvent } from "./types";
 
 /**
- * Finished runs kept in this browser. On a serverless host the server forgets a run as soon
- * as its function is recycled, so the browser is the durable copy.
+ * Finished runs kept in this browser: a copy that survives a database clean-up, a change of API
+ * host or a local development database, so a finished run never vanishes from history.
  */
 const INDEX = "lr:runs";
 const KEEP = 6;

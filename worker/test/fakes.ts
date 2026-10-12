@@ -70,7 +70,8 @@ export function llmAnswer(prompt: string): unknown {
   if (prompt.includes("extract market signals")) {
     const waste = findId(prompt, "Meal kits are sized for families");
     return { signals: [
-      { type: "pain", statement: "Family-sized kits waste food for people living alone.", who: "bachelors", intensity: 4, evidenceIds: [waste], quote: "half the food gets wasted when you live alone" },
+      // a real id with a fabricated one beside it: kept, the fabricated id stripped
+      { type: "pain", statement: "Family-sized kits waste food for people living alone.", who: "bachelors", intensity: 4, evidenceIds: [waste, "E9999"], quote: "half the food gets wasted when you live alone" },
       { type: "pain", statement: "No time to shop for groceries after work.", who: "bachelors", intensity: 3,
         evidenceIds: [findId(prompt, "I never have time to shop[^\\n]*medium\\.com")], quote: "I never have time to shop for groceries after work" },
       { type: "pain", statement: "Meal kits cost more than groceries.", who: "bachelors", intensity: "3",
@@ -107,8 +108,13 @@ export function llmAnswer(prompt: string): unknown {
     ] };
   }
   if (prompt.includes("decide whether the hypothesised gap")) {
-    if (prompt.includes("SoloChef")) return { status: "served", foundProducts: [{ name: "SoloChef", evidenceId: findId(prompt, "SoloChef"), match: "exact" }], remainingWedge: null };
-    return { status: "open", foundProducts: [{ name: "Phantom", evidenceId: "E9999", match: "made up" }], remainingWedge: null };
+    if (prompt.includes("SoloChef")) {
+      const eid = findId(prompt, "SoloChef");
+      // a real product named in its row counts; an invented name on a real id does not
+      return { status: "served", foundProducts: [{ name: "SoloChef", evidenceId: eid, match: "exact" }, { name: "GhostKit", evidenceId: eid, match: "invented" }], remainingWedge: null };
+    }
+    // fabricated id, then an invented name on a real id: neither may turn this open gap into "partially-served"
+    return { status: "open", foundProducts: [{ name: "Phantom", evidenceId: "E9999", match: "made up" }, { name: "InventedBrand", evidenceId: findId(prompt, "Thread"), match: "made up" }], remainingWedge: null };
   }
   if (prompt.includes("write the opportunity card")) {
     return { title: "Evening ingredient drop", target: "bachelors", problem: "People have no time to shop [E9999].", existingSolutions: "None found.", gap: "Open.",
@@ -150,8 +156,10 @@ export async function freshStore(settings: Settings = REPLAY): Promise<Store> {
 }
 
 export function makeRun(over: Partial<Run> = {}): Run {
+  const createdAt = over.createdAt ?? 1;
   return {
     id: `run_${Math.random().toString(36).slice(2, 8)}`, question: "test", region: "in", questionType: null, status: "running", budget: 25,
-    searchesUsed: 0, createdAt: 1, finishedAt: null, demo: false, demoLabel: null, rejectedSignals: 0, error: null, ...over,
+    searchesUsed: 0, createdAt, finishedAt: null, demo: false, demoLabel: null, rejectedSignals: 0, error: null,
+    searchCalls: 0, failedSearches: 0, outcome: null, lastProgressAt: createdAt, ...over,
   };
 }

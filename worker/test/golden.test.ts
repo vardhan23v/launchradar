@@ -7,9 +7,10 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { verifyQuote } from "../src/citations";
 import { LlmClient } from "../src/llm";
-import { makeCtx, runPipeline } from "../src/pipeline";
+import { initialState, makeCtx, runPipeline, runUnit } from "../src/pipeline";
 import { SerpApiService } from "../src/serpapi";
 import type { Opportunity, RunView, StepEvent } from "../src/types";
+import { nowMs } from "../src/utils";
 import { citeGroups } from "../src/utils";
 import { fakeFetch, freshStore, LIVE, makeRun } from "./fakes";
 
@@ -18,11 +19,21 @@ function checkView(v: RunView, events: StepEvent[]) {
   expect(v.run.status).toBe("complete");
   expect(v.run.searchesUsed).toBeLessThanOrEqual(25);
   expect(v.run.questionType).toBe("physical_product");
+  // every search answered, so the run ends with full evidence, and the summary counts agree with the log
+  expect(v.run).toMatchObject({ outcome: "full", failedSearches: 0, searchCalls: v.searchCalls.length });
+  expect(v.run.searchesUsed).toBe(v.searchCalls.filter((c) => c.billed).length);
+  expect(v.run.lastProgressAt).toBeGreaterThanOrEqual(v.run.createdAt);
+  const done = events.find((e) => e.type === "stage" && e.stage === "done");
+  expect(done && done.type === "stage" ? done.message : "").toMatch(/^Run complete in [\d.]+s: 1 opportunity was found from \d+ searches\.$/);
 
   // citation validator: 3 good signals; fabricated id, paraphrase and injected claim rejected
   expect(v.signals.map((s) => s.id)).toEqual(["S1", "S2", "S3"]);
   expect(v.run.rejectedSignals).toBe(3);
   expect(v.signals.every((s) => verifyQuote(s.evidenceIds, s.quote, v.evidence)[0])).toBe(true);
+  const known = new Set(v.evidence.map((e) => e.id));
+  // a fabricated id beside a real one is stripped, so every footnote resolves
+  expect(v.signals[0].evidenceIds).toHaveLength(1);
+  expect(v.signals.every((s) => s.evidenceIds.every((i) => known.has(i)))).toBe(true);
   expect(JSON.stringify(v.signals)).not.toContain("MegaCorp");
 
   // clusters: unknown ids dropped; a signal lives in at most one cluster
@@ -34,9 +45,11 @@ function checkView(v: RunView, events: StepEvent[]) {
   expect(v.competitors[0].complaints).toHaveLength(1);
   expect(v.competitors[0].clusterIds).toEqual(["C1", "C2"]);
 
-  // gaps: ghost cluster dropped; served needs a product that resolves to evidence
+  // gaps: ghost cluster dropped; served needs a product that is named in the kill-query row it cites;
+  // an invented name on a real id ("InventedBrand") must not downgrade the open gap
   expect(v.gaps.map((g) => [g.clusterId, g.status])).toEqual([["C1", "served"], ["C2", "open"]]);
   expect(v.gaps[0].evidenceIds).toEqual(["E1"]);
+  expect(v.gaps[0].foundProducts.map((p) => p.name)).toEqual(["SoloChef"]);
   expect(v.gaps[1].foundProducts).toEqual([]);
 
   // the served gap is kept but gets no card; momentum comes from real trend data
@@ -45,7 +58,6 @@ function checkView(v: RunView, events: StepEvent[]) {
   expect(o.id).toBe("O1");
   expect(o.gapId).toBe("G2");
   expect(o.subScores.momentum).toBeGreaterThan(0);
-  const known = new Set(v.evidence.map((e) => e.id));
   for (const t of [o.problem, o.existingSolutions, o.gap]) expect(citeGroups(t).every((g) => g.ids.every((i) => known.has(i)))).toBe(true);
   expect(o.problem).not.toContain("E9999");
   expect(o.skeptic[0].evidenceIds).toEqual([]);
@@ -88,6 +100,57 @@ describe("pipeline (in-process)", () => {
     const dump = await dumpTables();
     expect(dump).not.toContain("serp-secret");
     expect(dump).not.toContain("llm-secret");
+  });
+
+  it("leaves one copy of every row when every unit is retried (a lost alarm state write)", async () => {
+    const store = await freshStore(LIVE);
+    await store.createRun(makeRun({ id: "run_retry", question: "meal kits for bachelors", region: "us" }));
+    const ctx = makeCtx(store, LIVE, "run_retry", new SerpApiService(store, LIVE, null, fakeFetch()), new LlmClient(LIVE, null, fakeFetch()));
+    let state = initialState("run_retry", "meal kits for bachelors", "us");
+    let units = 0;
+    while (state.phase !== "done") {
+      // the Durable Object persists the state only after the unit: a failed write re-runs the same unit from the same state
+      await runUnit(ctx, state);
+      state = await runUnit(ctx, state);
+      units += 1;
+    }
+    expect(units).toBeGreaterThan(20);
+    const v = await store.view("run_retry") as RunView;
+    expect(v.run.status).toBe("complete");
+    expect(v.signals.map((s) => s.id)).toEqual(["S1", "S2", "S3"]);
+    expect(v.run.rejectedSignals).toBe(3); // set from the state, not incremented twice
+    expect(v.competitors.map((c) => c.name)).toEqual(["FreshBox"]);
+    expect(v.clusters).toHaveLength(2);
+    expect(v.gaps).toHaveLength(2);
+    expect(v.opportunities).toHaveLength(1);
+    // a retried search hands back its recorded answer instead of searching (and paying) again
+    expect(v.searchCalls.map((c) => c.id)).toEqual([...new Set(v.searchCalls.map((c) => c.id))]);
+    expect(v.run.searchCalls).toBe(v.searchCalls.length);
+    expect((await store.eventsFor("run_retry")).filter(([, e]) => e.type === "done")).toHaveLength(1);
+  });
+
+  it("finishes with limited evidence, and says so, when discovery searches time out", async () => {
+    const store = await freshStore(LIVE);
+    await store.createRun(makeRun({ id: "run_limited", question: "meal kits for bachelors", region: "us", createdAt: nowMs() }));
+    const inner = fakeFetch();
+    const flaky: typeof inner = async (url, init) => {
+      if (new URL(url).searchParams.get("engine") === "google_news") throw new DOMException("timed out", "TimeoutError");
+      return inner(url, init);
+    };
+    const ctx = makeCtx(store, LIVE, "run_limited", new SerpApiService(store, LIVE, null, flaky), new LlmClient(LIVE, null, inner));
+    const state = await runPipeline(ctx, "run_limited", "meal kits for bachelors", "us");
+    expect(state.status).toBe("complete");
+    const v = await store.view("run_limited") as RunView;
+    const failed = v.searchCalls.filter((c) => c.status === "failed");
+    expect(failed.length).toBeGreaterThanOrEqual(1);
+    expect(failed.every((c) => c.engine === "google_news" && c.billed && c.error === "SerpApi timed out")).toBe(true);
+    expect(v.run).toMatchObject({ status: "complete", outcome: "limited", failedSearches: failed.length, searchCalls: v.searchCalls.length });
+    expect(v.run.searchesUsed).toBe(v.searchCalls.filter((c) => c.billed).length); // timed-out calls are counted as billed
+    expect(v.opportunities).toHaveLength(1);
+    const events = (await store.eventsFor("run_limited")).map(([, e]) => e);
+    const done = events.find((e) => e.type === "stage" && e.stage === "done");
+    expect(done).toMatchObject({ level: "warn", message: `Run complete with limited evidence: ${failed.length} of ${v.searchCalls.length} searches failed (SerpApi timed out), so 1 opportunity was found.` });
+    expect(events.at(-1)?.type).toBe("done");
   });
 });
 

@@ -6,9 +6,9 @@ import type { Env } from "../src/env";
 import { hashParams, toRawParams } from "../src/engines";
 import worker from "../src/index";
 import { BudgetExceeded, SerpApiService } from "../src/serpapi";
-import { Store } from "../src/store";
+import { INTERRUPTED, Store } from "../src/store";
 import { encodeEvent, followRunEvents, PING } from "../src/stream";
-import { nowMs } from "../src/utils";
+import { nowMs, sleep } from "../src/utils";
 import { freshStore, jsonResponse, LIVE, makeRun, REPLAY } from "./fakes";
 
 const ORGANIC = { search_metadata: { id: "sim_1" }, organic_results: [{ title: "T", link: "https://a.com", snippet: "S" }] };
@@ -53,7 +53,8 @@ describe("serpapi service", () => {
     expect(out.evidence[0].id).toBe("E1");
     expect(out.call.billed).toBe(false);
     expect(out.call.serpapiSearchId).toBe("sim_1");
-    expect((await store.getRun("r1"))?.searchesUsed).toBe(1);
+    // a replay is free, so it is not charged; the run still counts every call it made
+    expect(await store.getRun("r1")).toMatchObject({ searchesUsed: 0, searchCalls: 2, failedSearches: 1 });
   });
 
   it("caches identical searches, localises by region and never persists the key", async () => {
@@ -90,13 +91,62 @@ describe("serpapi service", () => {
     expect(calls).toHaveLength(2);
 
     const calls2: URL[] = [];
-    const serp = new SerpApiService(store, LIVE, null, answering(() => new Response("bad key api_key=serp-secret", { status: 401 }), calls2));
+    const serp = new SerpApiService(store, LIVE, null, answering(() => new Response("bad key api_key=serp-secret; account owner someone@example.com", { status: 401 }), calls2));
     await expect(serp.search("google", { q: "four" }, "r1", "d", 2)).rejects.toThrow(/401/);
     expect(calls2).toHaveLength(1);
     const failed = (await store.searchCallsFor("r1")).find((c) => c.status === "failed");
     expect(failed?.billed).toBe(false);
-    expect(failed?.error).not.toContain("serp-secret");
-    expect(failed?.error).toContain("[redacted]");
+    // the response body never reaches the (public) run record: only a sentence this code wrote, with the status
+    expect(failed?.error).toBe("SerpApi 401: the API key was rejected (check SERPAPI_API_KEY).");
+    expect(JSON.stringify(await store.searchCallsFor("r1"))).not.toMatch(/serp-secret|bad key|example\.com/);
+    expect(typeof failed?.latencyMs).toBe("number");
+  });
+
+  it("gives a search 45 s, retries a timeout once and counts it as billed", async () => {
+    const { SEARCH_TIMEOUT_MS } = await import("../src/config");
+    expect(SEARCH_TIMEOUT_MS).toBe(45_000);
+    const settings = { ...LIVE, HOURLY_SEARCH_GUARD: "1" };
+    const store = await freshStore(settings);
+    await store.createRun(makeRun({ id: "r1" }));
+    const calls: URL[] = [];
+    const serp = new SerpApiService(store, settings, null, answering(async () => {
+      await sleep(3);
+      throw new DOMException("The operation was aborted due to timeout", "TimeoutError");
+    }, calls));
+    await expect(serp.search("google", { q: "slow" }, "r1", "d", 1)).rejects.toThrow("SerpApi timed out");
+    expect(calls).toHaveLength(2); // one retry
+    const [call] = await store.searchCallsFor("r1");
+    // SerpApi may well have finished the search after this side gave up: count it, never under-count
+    expect(call).toMatchObject({ status: "failed", billed: true, error: "SerpApi timed out" });
+    expect(call.latencyMs).toBeGreaterThanOrEqual(3);
+    expect(await store.getRun("r1")).toMatchObject({ searchesUsed: 1, searchCalls: 1, failedSearches: 1 });
+    expect(await store.quotaBlock()).toContain("hourly search limit is reached (1 of 1");
+    // an unreachable host is not billed (the request never arrived)
+    const roomy = new Store(env.DB, LIVE);
+    const down = new SerpApiService(roomy, LIVE, null, answering(() => { throw new TypeError("fetch failed"); }, []));
+    await expect(down.search("google", { q: "down" }, "r1", "d", 2)).rejects.toThrow("SerpApi could not be reached");
+    expect((await roomy.searchCallsFor("r1"))[1]).toMatchObject({ status: "failed", billed: false });
+    expect(await roomy.getRun("r1")).toMatchObject({ searchesUsed: 1, searchCalls: 2, failedSearches: 2 });
+  });
+
+  it("HOURLY_SEARCH_GUARD=0 stops billed searches with a clear message instead of crashing", async () => {
+    const over: Partial<Env> = { HOURLY_SEARCH_GUARD: "0" };
+    const store = await freshStore({ ...LIVE, ...over });
+    expect(await store.quotaBlock()).toContain("HOURLY_SEARCH_GUARD=0");
+    expect(await store.runStartBlock()).toContain("HOURLY_SEARCH_GUARD=0");
+    await store.createRun(makeRun({ id: "r1" }));
+    const calls: URL[] = [];
+    const serp = new SerpApiService(store, { ...LIVE, ...over }, null, answering(() => jsonResponse(ORGANIC), calls));
+    await expect(serp.search("google", { q: "x" }, "r1", "d", 1)).rejects.toBeInstanceOf(BudgetExceeded);
+    expect(calls).toEqual([]);
+    expect((await store.searchCallsFor("r1"))[0]).toMatchObject({ status: "skipped", billed: false });
+    const home = await api("/api/runs", {}, over);
+    expect(home.status).toBe(200);
+    expect(((await home.json()) as { pipeline: { quota: string } }).pipeline.quota).toContain("HOURLY_SEARCH_GUARD=0");
+    const refused = await postJson("/api/runs", { question: "meal kits" }, over);
+    expect(refused.status).toBe(429);
+    expect(((await refused.json()) as { error: string }).error).toContain("switched off");
+    expect((await postJson("/api/runs", { demo: "ai-tools-college-india" }, over)).status).toBe(201);
   });
 
   it("counts billed searches against the monthly budget across runs", async () => {
@@ -132,11 +182,34 @@ describe("stream", () => {
   it("replays a demo, completes it and resumes from Last-Event-ID", async () => {
     const store = await freshStore(LIVE);
     const runId = await startDemoRun(store, "ai-tools-college-india");
+    expect(await store.getRun(runId)).toMatchObject({ searchCalls: 8, failedSearches: 0, outcome: "full" });
     const seen = await collect(store, runId);
     expect((await store.getRun(runId))?.status).toBe("complete");
     expect(seen.map(([i]) => i)).toEqual(seen.map((_, i) => i));
     expect(seen.at(-1)?.[1]).toBe("done");
     expect(await collect(store, runId, seen.length - 2)).toEqual(seen.slice(-2));
+  });
+
+  it("never lets a resume id past the log complete a running example, and still paces a finished one", async () => {
+    const store = await freshStore(LIVE);
+    const runId = await startDemoRun(store, "ai-tools-college-india");
+    const count = await store.eventCount(runId);
+    expect(await collect(store, runId, count + 50)).toEqual([]);
+    expect((await store.getRun(runId))?.status).toBe("running");
+    // through the route the forged id is refused outright
+    const forged = await api(`/api/runs/${runId}/stream`, { headers: { "last-event-id": String(count + 50) } });
+    expect(forged.status).toBe(400);
+    expect((await store.getRun(runId))?.status).toBe("running");
+    const seen = await collect(store, runId);
+    expect(seen.at(-1)?.[1]).toBe("done");
+    expect((await store.getRun(runId))?.status).toBe("complete");
+    // the reused copy is complete, but a visitor who opens it still sees the trace animate
+    const slow = { ...env, DEMO_DELAY_MS: "15", DEMO_DELAY_BASE_MS: "15" };
+    const started = nowMs();
+    let n = 0;
+    for await (const item of followRunEvents(store, runId, 0, slow, { windowMs: 10_000, pollMs: 10 })) if (item !== PING) n += 1;
+    expect(n).toBe(seen.length);
+    expect(nowMs() - started).toBeGreaterThanOrEqual(seen.length * 10);
   });
 
   it("hands a slow paced replay over to the reconnect instead of holding one request", async () => {
@@ -187,7 +260,6 @@ describe("api routes", () => {
     expect((await api("/api/runs", { method: "POST", headers: { "content-type": "application/json" }, body: "{bad" })).status).toBe(400);
     expect((await postJson("/api/runs", { question: "x".repeat(301) })).status).toBe(400);
     expect((await postJson("/api/runs", { question: "x".repeat(20_000) })).status).toBe(413);
-    expect((await api("/api/runs/live", { method: "POST", body: "{}" })).status).toBe(410);
     expect((await api("/api/health", { method: "DELETE" })).status).toBe(405);
     expect((await api("/api/runs/x", { method: "HEAD" })).status).toBe(405);
     expect((await api("/api/export", { method: "GET" })).status).toBe(405);
@@ -229,6 +301,50 @@ describe("api routes", () => {
     const oneLine = await (await postJson("/api/export", { run, evidence: [{ id: "E1", title: "a\nb", url: "https://x.test", snippet: "s" }] })).text();
     expect(oneLine).toContain("# LaunchRadar — q # injected heading");
     expect(oneLine).not.toMatch(/^# injected/m);
+    // an unknown region is reduced to a short code before it is written
+    const odd = await (await postJson("/api/export", { run: { ...run, region: "in\n# injected region <b>" } })).text();
+    expect(odd).toContain("- Region: ININJECT\n");
+    expect(odd).not.toContain("injected region");
+    expect(await (await postJson("/api/export", { run: { ...run, region: "UK" } })).text()).toContain("- Region: United Kingdom");
+  });
+
+  it("closes a run whose job died when its page or stream is opened", async () => {
+    const store = await freshStore(LIVE);
+    const now = nowMs();
+    await store.createRun(makeRun({ id: "dead", createdAt: now - 16 * 60_000 }));
+    await store.createRun(makeRun({ id: "demo_dead", demo: true, createdAt: now - 16 * 60_000 }));
+    await store.createRun(makeRun({ id: "alive", createdAt: now - 2 * 60_000 }));
+    const view = await (await api("/api/runs/dead")).json() as { run: { status: string; error: string | null } };
+    expect(view.run).toMatchObject({ status: "failed", error: INTERRUPTED });
+    expect(((await (await api("/api/runs/demo_dead")).json()) as { run: { status: string } }).run.status).toBe("complete");
+    expect(((await (await api("/api/runs/alive")).json()) as { run: { status: string } }).run.status).toBe("running");
+    // the stream of a dead run ends with its closing events instead of pinging forever
+    await store.createRun(makeRun({ id: "dead2", createdAt: now - 16 * 60_000 }));
+    const body = await (await api("/api/runs/dead2/stream")).text();
+    expect(body).toContain(INTERRUPTED);
+    expect(body).toContain('"type":"done"');
+  });
+
+  it("counts every live start against RUNS_PER_HOUR, cached or not", async () => {
+    const over: Partial<Env> = { RUNS_PER_HOUR: "2" };
+    const store = await freshStore({ ...LIVE, ...over });
+    const now = nowMs();
+    expect(await store.runStartBlock(now)).toBeNull();
+    await store.createRun(makeRun({ id: "a", status: "complete", createdAt: now - 70 * 60_000 })); // outside the hour
+    await store.createRun(makeRun({ id: "demo", demo: true, createdAt: now - 1_000 })); // the example never counts
+    await store.createRun(makeRun({ id: "b", status: "complete", createdAt: now - 10 * 60_000, searchesUsed: 0 })); // all from cache
+    expect(await store.runStartBlock(now)).toBeNull();
+    await store.createRun(makeRun({ id: "c", status: "failed", createdAt: now - 5 * 60_000 }));
+    expect(await store.runStartBlock(now)).toBe("The limit of 2 research runs per hour is reached. The next run can start in about 50 minutes.");
+    const refused = await postJson("/api/runs", { question: "meal kits" }, over);
+    expect(refused.status).toBe(429);
+    expect(((await refused.json()) as { error: string }).error).toContain("next run can start in about 50 minutes");
+    expect(await store.listRuns()).toHaveLength(4);
+    expect(((await (await api("/api/runs", {}, over)).json()) as { pipeline: { quota: string } }).pipeline.quota).toContain("2 research runs per hour");
+    expect((await postJson("/api/runs", { demo: "ai-tools-college-india" }, over)).status).toBe(201);
+    // 0 is "stop", never "unlimited"
+    expect(await new Store(env.DB, { ...LIVE, RUNS_PER_HOUR: "0" }).runStartBlock(now)).toContain("RUNS_PER_HOUR=0");
+    expect(await new Store(env.DB, { ...LIVE, RUNS_PER_HOUR: "-3" }).runStartBlock(now)).toBeNull(); // junk → default 6
   });
 
   it("refuses up front when the hourly quota is used and never caches answers", async () => {

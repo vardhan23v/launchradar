@@ -262,3 +262,72 @@ scrubbed of keys; JSON-only request bodies; own-key region lookup; bounded model
 links tied to cited pages; http(s)-only result links on the server and at every link in the site; shape-checked saved
 runs; CSV formula guarding; page security headers; a build-time check that `API_URL` is an https origin; and CI
 actions pinned to commit SHAs. See the README's Security section for the full list.
+
+## One interface: `/v2` and `/report` retired
+
+The production-readiness audit (`AUDIT.md`, 11 October 2026) found three interfaces serving the same runs and
+recommended keeping one. The radar dashboard (`/` and `/runs/[id]`, `src/components/v3`, `src/lib/v3`) was the only
+view with linked numbered footnotes, verbatim signal and complaint quotes, sub-scores, confidence, gap status and
+proper error, empty and partial states, so it is now the whole product. The original report view (`/report`,
+`/report/runs/[id]`) and the triage board (`/v2`, `/v2/runs/[id]`) are deleted; so is `/v3`, the dashboard's first
+address, which was a page that redirected. All five addresses are now permanent redirects in `next.config.mjs`
+(`/v2` and `/report` to `/`, their run pages to `/runs/[id]`, `/v3` to `/`), so links that were shared keep working.
+
+What the retired views got wrong, and why fixing them was not worth a third copy of everything:
+
+- **Stale budget copy.** `/v2` showed a "270 s budget" chip, "capped at 25 searches and 270 seconds", and a countdown
+  ring that reached "0 s left" while real runs on the Worker take seven minutes or more. The number came from a
+  serverless host that no longer exists.
+- **Snippets labelled as quotes.** `/v2` put raw search snippets under "Sources, quoted word for word" and exported
+  them as "Sources (verbatim)". The citation-checked quotes never reached it; it also dropped competitors and
+  confidence.
+- **360 px overflow.** The `/v2` top bar did not wrap, so the page scrolled sideways on a phone; `/report` export
+  failed silently and its Sources drawer trapped nothing.
+- **Duplicated logic.** The stage list, sub-score table and region list existed three times (`RunClient.tsx`,
+  `lib/v2/adapter.ts`, `lib/v3/feed.ts`), each slightly different, and both legacy forms could start a paid run on an
+  IME Enter or a double submit.
+
+Removed: `src/app/v2`, `src/app/report`, `src/app/v3`, `src/components/v2`, `src/components/HomeClient.tsx`,
+`src/components/RunClient.tsx`, `src/components/ui.tsx`, the triage board's scoped stylesheet `lr.css`, `src/lib/v2`
+(the adapter and view models), and `src/lib/live.ts` (the single-request run mode of the old serverless host, whose
+`/api/runs/live` route has answered 410 since the move to the Worker). The stage list, engine labels and the browser
+shortlist now live in `src/lib/v3/run.ts` and `src/lib/v3/storage.ts`.
+`REDESIGN.md` is now a short historical note. `robots.txt` allows everything; the old paths are redirects.
+
+## Audit fixes (12 October 2026)
+
+Everything confirmed in `AUDIT.md` sections 1 and 3 is fixed; the Worker test suite grew from 33 to 45 tests.
+
+**Research API (`worker/`)**
+- SerpApi calls get 45 s (was 20 s, which lost 9 of 16 searches in the only real run on the live database). Failed
+  calls record their real latency, and a timed-out live call is recorded as billed so the monthly counter never
+  under-counts.
+- A run now carries `searchCalls`, `failedSearches` and `outcome` (`full` / `limited` / `empty`); the final log line
+  says, for example, "Run complete with limited evidence: 9 of 16 searches failed (SerpApi timed out), so 0
+  opportunities were found."
+- `HOURLY_SEARCH_GUARD=0` stops billed searches instead of crashing the API with a 500.
+- Unknown evidence ids are stripped wherever they appear in a citation list; a found product only counts, and can
+  only mark a gap served, when its name appears in the kill-query result it cites; competitor names need 3 characters.
+- Stuck runs: every event updates `last_progress_at`; a run silent for 15 minutes is closed as interrupted (demos as
+  complete) when its page, its stream or the home page is opened, not only from the home page.
+- `RUNS_PER_HOUR` (default 6) counts every live start, so repeating a cached question cannot burn LLM calls or hold
+  the single run slot indefinitely.
+- Signals and competitors are written with replace semantics, so a retried Durable Object alarm leaves one copy.
+- SerpApi response bodies never reach the public log; fixture replays and cache hits are unbilled and uncharged; a
+  reused demo copy still replays paced; a forged `Last-Event-ID` cannot complete a running demo; export headings
+  sanitise the region; quotes cannot straddle the title/snippet boundary.
+
+**Dashboard (`src/`)**
+- A limited or empty run shows an amber notice with the failed-search count, the reasons from the log and a "Run it
+  again" button; its badge reads "Complete · limited evidence" or "Complete · no opportunities"; the summary counts
+  every search call so it agrees with the Research log; a stage that lost half its searches gets a warning mark.
+- "Connection lost, retrying…" with a manual retry replaces a pulsing "Researching" badge when the stream or polling
+  fails; it recovers on its own.
+- The home page lists runs in progress (with their stage) and stopped runs (with their error and a "Run again").
+- Network failure, a real 404 and a 500 are three different messages with next steps; starting the demo from the
+  empty radar shows its error; SSE frames are parsed defensively.
+- Every sub-score has a one-line definition, "How the score works" explains that the score is deterministic and from
+  evidence only, confidence has a tooltip, skeptic sources get footnotes, missing competitor facts read "Not verified",
+  and demo runs show "replayed <time>" instead of a fake research date.
+- Metadata: `metadataBase`, title template, Open Graph and Twitter tags, a "Research run" title, `robots.txt`; the
+  create-next-app SVGs and the report view's fonts and colour tokens are gone from `globals.css` and the root layout.

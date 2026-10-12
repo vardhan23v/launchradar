@@ -1,18 +1,20 @@
 import { describe, expect, it } from "vitest";
 
-import { validateSignals, verifyQuote } from "../src/citations";
+import { knownIds, validateSignals, verifyQuote } from "../src/citations";
 import * as config from "../src/config";
 import { loadFixture } from "../src/demo";
 import { hashParams, toRawParams } from "../src/engines";
 import { LlmClient, LlmError, parseJson } from "../src/llm";
 import { normalise } from "../src/normalise";
-import { cleanQuery, MAX_EXTRACT_ROWS, selectForExtraction, trendSlope } from "../src/pipeline";
+import { cleanQuery, MAX_EXTRACT_ROWS, selectForExtraction, summariseOutcome, trendSlope } from "../src/pipeline";
 import { computeScore, type ScoreInput } from "../src/score";
-import { INTERRUPTED } from "../src/store";
+import { ensureSchema, INTERRUPTED, resetSchemaCache, Store } from "../src/store";
 import type { Evidence, StepEvent } from "../src/types";
 import { citeGroups, keepKnownCitations, parseSerpDate } from "../src/utils";
 import { PipelineError, publicMessage } from "../src/pipeline";
 import { BudgetExceeded } from "../src/serpapi";
+import { env } from "cloudflare:test";
+
 import { freshStore, jsonResponse, LIVE, makeRun } from "./fakes";
 
 const EV = [{ id: "E1", title: "Thread", snippet: "The app   glitches on Indian school content", text: null }];
@@ -26,6 +28,61 @@ describe("citations", () => {
     const [valid, rejected] = validateSignals([{ evidenceIds: ["E1"], quote: "glitches" }, { evidenceIds: ["E9"], quote: "x" }], EV);
     expect(valid).toHaveLength(1);
     expect(rejected).toBe(1);
+  });
+
+  it("ignores unknown ids wherever they appear, but never lets them through", () => {
+    // a real id with a fabricated one beside it: the quote is still checked against the real row
+    expect(verifyQuote(["E1", "E9999"], "glitches on Indian school content", EV)[0]).toBe(true);
+    expect(verifyQuote(["E9999", "E1"], "glitches on Indian school content", EV)[0]).toBe(true);
+    expect(verifyQuote(["E1", "E9999"], "crashes on school content", EV)[0]).toBe(false);
+    expect(verifyQuote(["E9999", "E8888"], "glitches", EV)).toEqual([false, "unknown evidence id E9999, E8888"]);
+    expect(verifyQuote([], "glitches", EV)[1]).toBe("no evidence id given");
+    // what gets stored is only what the run contains
+    expect(knownIds(["E9999", "E1", 7, "E1"], EV)).toEqual(["E1", "E1"]);
+  });
+
+  it("does not let a quote straddle the title and the snippet", () => {
+    // "Thread" ends the title and "The app" starts the snippet: joined text once read "thread the app"
+    expect(verifyQuote(["E1"], "Thread The app", EV)[0]).toBe(false);
+    expect(verifyQuote(["E1"], "Thread", EV)[0]).toBe(true);
+    expect(verifyQuote(["E1"], "The app glitches", EV)[0]).toBe(true);
+  });
+});
+
+describe("run outcome", () => {
+  const call = (stage: string, status: "ok" | "failed" | "skipped", error?: string) => ({ stage, status, error });
+  const timedOut = (n: number) => Array.from({ length: n }, () => call("discovery", "failed", "SerpApi timed out"));
+  const fine = (n: number, stage = "discovery") => Array.from({ length: n }, () => call(stage, "ok"));
+
+  it("says plainly when searches failed and nothing was found", () => {
+    const r = summariseOutcome([...timedOut(9), ...fine(7)], [], 0, 2, 5, 424_700);
+    expect(r).toMatchObject({ outcome: "empty", searchCalls: 16, failedSearches: 9, level: "warn" });
+    expect(r.message).toBe("Run complete with limited evidence: 9 of 16 searches failed (SerpApi timed out), so 0 opportunities were found.");
+    // one opportunity, one failed discovery search → limited
+    const one = summariseOutcome([...timedOut(1), ...fine(15)], [{ status: "open" }], 1, 0, 5, 1000);
+    expect(one.outcome).toBe("limited");
+    expect(one.message).toBe("Run complete with limited evidence: 1 of 16 searches failed (SerpApi timed out), so 1 opportunity was found.");
+    // the validator throwing away most signals is limited evidence too
+    const rejected = summariseOutcome(fine(16), [{ status: "open" }], 2, 9, 4, 1000);
+    expect(rejected.outcome).toBe("limited");
+    expect(rejected.message).toBe("Run complete with limited evidence: the citation validator rejected 9 of 13 signals, so 2 opportunities were found.");
+    // mixed reasons name the most common one
+    const mixed = summariseOutcome([...timedOut(2), call("competitors", "failed", "SerpApi 429: rate limited."), ...fine(5)], [], 1, 0, 3, 1000);
+    expect(mixed.message).toContain("3 of 8 searches failed (SerpApi timed out, among others)");
+  });
+
+  it("is full when every evidence search answered, and explains an empty result", () => {
+    const full = summariseOutcome(fine(16), [{ status: "open" }], 2, 1, 5, 1000);
+    expect(full).toMatchObject({ outcome: "full", failedSearches: 0, level: "ok" });
+    expect(full.message).toBe("Run complete in 1.0s: 2 opportunities were found from 16 searches.");
+    // a lost kill query or trends call does not limit the evidence, but it is counted
+    const verify = summariseOutcome([...fine(15), call("verify", "failed", "SerpApi timed out")], [{ status: "open" }], 1, 0, 5, 1000);
+    expect(verify.outcome).toBe("full");
+    expect(verify.message).toBe("Run complete in 1.0s: 1 opportunity was found from 16 searches (1 failed).");
+    const served = summariseOutcome(fine(16), [{ status: "served" }, { status: "served" }], 0, 0, 5, 2500);
+    expect(served.outcome).toBe("empty");
+    expect(served.message).toBe("Run complete in 2.5s, but no opportunity was found: every candidate gap is already served.");
+    expect(summariseOutcome(fine(16), [], 0, 0, 5, 2500).message).toContain("no candidate gap was proposed");
   });
 });
 
@@ -212,21 +269,50 @@ describe("llm client", () => {
 });
 
 describe("store", () => {
-  it("closes interrupted live runs after the stale window, not demos or finished runs", async () => {
+  it("closes runs silent for 15 minutes: live ones as interrupted, examples as complete", async () => {
     const store = await freshStore(LIVE);
     const now = 10_000_000_000;
-    await store.createRun(makeRun({ id: "live1", createdAt: now - 41 * 60_000 }));
-    await store.createRun(makeRun({ id: "fresh", createdAt: now - 5 * 60_000 }));
-    await store.createRun(makeRun({ id: "demo1", demo: true, createdAt: now - 41 * 60_000 }));
+    await store.createRun(makeRun({ id: "live1", createdAt: now - 16 * 60_000 }));
+    // old but alive: its last event is recent, so it keeps running (an LLM 429 wait is not a death)
+    await store.createRun(makeRun({ id: "slow", createdAt: now - 41 * 60_000 }));
+    await store.appendEvents("slow", [{ type: "stage", stage: "planner", message: "m", level: "info" }]);
+    expect((await store.getRun("slow"))?.lastProgressAt).toBeGreaterThan(now - 60_000);
+    await env.DB.prepare("UPDATE runs SET last_progress_at = ? WHERE id = 'slow'").bind(now - 5 * 60_000).run();
+    await store.createRun(makeRun({ id: "fresh", createdAt: now - 14 * 60_000 }));
+    await store.createRun(makeRun({ id: "demo1", demo: true, createdAt: now - 16 * 60_000 }));
     await store.createRun(makeRun({ id: "old", status: "complete", createdAt: now - 41 * 60_000 }));
-    expect(await store.failStaleRuns(now)).toBe(1);
+    expect(await store.failStaleRuns(now)).toBe(2);
     const live1 = await store.getRun("live1");
     expect(live1?.status).toBe("failed");
     expect(live1?.error).toBe(INTERRUPTED);
+    expect(live1?.outcome).toBeNull();
     expect((await store.eventsFor("live1")).at(-1)?.[1].type).toBe("done");
+    expect((await store.getRun("slow"))?.status).toBe("running");
     expect((await store.getRun("fresh"))?.status).toBe("running");
-    expect((await store.getRun("demo1"))?.status).toBe("running");
+    // the example has every result already; its trace just stops animating
+    const demo1 = await store.getRun("demo1");
+    expect(demo1?.status).toBe("complete");
+    expect(demo1?.error).toBeNull();
+    expect((await store.eventsFor("demo1")).map(([, e]) => e.type)).toEqual(["stage", "status", "done"]);
     expect((await store.getRun("old"))?.status).toBe("complete");
+    expect(await store.failStaleRuns(now)).toBe(0); // nothing is closed twice
+  });
+
+  it("adds the progress column to a database created before the watchdog, keeping old runs readable", async () => {
+    await freshStore(LIVE);
+    await env.DB.batch(["runs"].map((t) => env.DB.prepare(`DROP TABLE ${t}`)));
+    await env.DB.prepare("CREATE TABLE runs (id TEXT PRIMARY KEY, created_at INTEGER NOT NULL, status TEXT NOT NULL, demo INTEGER NOT NULL DEFAULT 0, data TEXT NOT NULL)").run();
+    const { lastProgressAt: _p, searchCalls: _c, failedSearches: _f, outcome: _o, ...legacy } = makeRun({ id: "legacy", createdAt: 5_000 });
+    await env.DB.prepare("INSERT INTO runs (id, created_at, status, demo, data) VALUES (?, ?, ?, 0, ?)").bind("legacy", 5_000, "running", JSON.stringify(legacy)).run();
+    resetSchemaCache(env.DB);
+    await ensureSchema(env.DB);
+    const cols = (await env.DB.prepare("PRAGMA table_info(runs)").all<{ name: string }>()).results.map((c) => c.name);
+    expect(cols).toContain("last_progress_at");
+    const store = new Store(env.DB, LIVE);
+    expect(await store.getRun("legacy")).toMatchObject({ lastProgressAt: 5_000, searchCalls: 0, failedSearches: 0, outcome: null });
+    expect(await store.failStaleRuns(5_000 + 16 * 60_000)).toBe(1);
+    resetSchemaCache(env.DB);
+    await ensureSchema(env.DB); // a second pass finds the column and changes nothing
   });
 
   it("assigns dense evidence ids and event indexes in the database", async () => {

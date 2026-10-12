@@ -1,5 +1,5 @@
 /** Markdown report rendered server-side from a run view. */
-import { regionName } from "./config";
+import { isRegion, regionName } from "./config";
 import type { RunView } from "./types";
 import { isRecord } from "./utils";
 
@@ -34,13 +34,19 @@ const s = (v: unknown): string =>
 const list = (v: unknown): unknown[] => (Array.isArray(v) ? v : []);
 const recs = (v: unknown): Record<string, unknown>[] => list(v).filter(isRecord);
 
+/** The browser chooses the region text; an unknown value is reduced to a short code before it is written. */
+export function regionLabel(region: unknown): string {
+  if (isRegion(region)) return regionName(region);
+  return s(region).replace(/[^A-Za-z]/g, "").toUpperCase().slice(0, 8) || "UNKNOWN";
+}
+
 export function exportMarkdown(view: RunView): string {
   const run = view.run;
   const evidence = recs(view.evidence);
   const day = new Date(run.finishedAt ?? run.createdAt).toISOString().slice(0, 10);
   const out: string[] = [
     `# LaunchRadar — ${s(run.question)}`, "",
-    `- Region: ${regionName(run.region)}`, `- Run: ${s(run.id)} · ${day}`,
+    `- Region: ${regionLabel(run.region)}`, `- Run: ${s(run.id)} · ${day}`,
     `- Searches used: ${run.searchesUsed} / budget ${run.budget}`,
     `- Evidence: ${evidence.length} rows, ${new Set(evidence.map((e) => s(e.domain)).filter(Boolean)).size} domains, ${new Set(evidence.map((e) => s(e.blockType))).size} source types`, "",
     "## Opportunities (ranked)", "",

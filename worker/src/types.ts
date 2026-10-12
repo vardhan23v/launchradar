@@ -6,6 +6,11 @@
 export type RunStatus = "queued" | "running" | "complete" | "failed";
 export type CallStatus = "ok" | "failed" | "skipped";
 export type GapStatus = "open" | "partially-served" | "served";
+/**
+ * How much evidence a finished run ended with: "empty" when it found no opportunity, "limited"
+ * when a discovery or competitor search failed or the citation validator rejected most signals.
+ */
+export type RunOutcome = "full" | "limited" | "empty";
 
 export interface Run {
   id: string;
@@ -21,6 +26,14 @@ export interface Run {
   demoLabel: string | null;
   rejectedSignals: number;
   error: string | null;
+  /** every search the run made (ok, failed and skipped); `searchesUsed` counts only the billed ones */
+  searchCalls: number;
+  /** searches with status "failed" (timed out, refused upstream) */
+  failedSearches: number;
+  /** null until the run finishes (and for interrupted runs) */
+  outcome: RunOutcome | null;
+  /** when the run last wrote to its log; the watchdog closes a run that is silent for 15 minutes */
+  lastProgressAt: number;
 }
 
 export type Json = null | boolean | number | string | Json[] | { [key: string]: Json };

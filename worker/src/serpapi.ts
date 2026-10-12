@@ -17,13 +17,33 @@ export type FixtureSource = (hash: string) => Promise<unknown | null>;
 
 export class BudgetExceeded extends Error {}
 
-/** A search that failed for a reason this client describes itself (message already scrubbed). */
-export class SerpApiError extends Error {}
-
-export class SerpApiHttpError extends Error {
-  constructor(public readonly status: number, detail: string) {
-    super(`SerpApi ${status}: ${detail}`);
+/**
+ * A search that failed for a reason this client describes itself (message already scrubbed).
+ * `maybeBilled` is true when SerpApi may have completed the search after this side gave up on it
+ * (a timeout): the call is then counted as billed, so the spend guards never under-count.
+ */
+export class SerpApiError extends Error {
+  constructor(message: string, public readonly maybeBilled = false) {
+    super(message);
   }
+}
+
+/**
+ * An HTTP failure, described in words this code wrote: the response body stays out of the public
+ * research log (it goes, scrubbed, to the operator's console only). The status code is kept.
+ */
+export class SerpApiHttpError extends Error {
+  constructor(public readonly status: number) {
+    super(`SerpApi ${status}: ${httpReason(status)}`);
+  }
+}
+
+function httpReason(status: number): string {
+  if (status === 401) return "the API key was rejected (check SERPAPI_API_KEY).";
+  if (status === 403) return "access was refused for this key or plan.";
+  if (status === 429) return "rate limited or the plan's quota is exhausted.";
+  if (status >= 500) return "SerpApi had an internal error.";
+  return "SerpApi refused the request.";
 }
 
 /** Secrets never reach logs, the store or the browser — even inside error text. */
@@ -63,6 +83,7 @@ export class SerpApiService {
     const rawParams = toRawParams(engine, params, region ?? run.region);
     const phash = await hashParams(engine, rawParams);
     const ctx: CallCtx = { runId, stage, order };
+    const started = nowMs();
     // a pipeline unit that is retried after a crash must not search (and pay) twice:
     // the call id is deterministic, so a recorded answer is simply handed back
     const recorded = await this.store.searchCallById(`sc_${runId}_${order}`);
@@ -79,11 +100,10 @@ export class SerpApiService {
       if (cached !== null) return await this.replayCached(cached.call, cached.rows, ctx);
       // 3. quota guards apply only to searches that will be billed
       await this.assertQuota();
-      const started = nowMs();
       const body = await this.callNetwork(engine, rawParams);
       return await this.persistRaw(ctx, engine, rawParams, phash, body, false, true, started);
     } catch (err) {
-      await this.recordFailure(engine, rawParams, phash, ctx, err);
+      await this.recordFailure(engine, rawParams, phash, ctx, err, started);
       throw err;
     }
   }
@@ -100,14 +120,19 @@ export class SerpApiService {
     });
   }
 
-  /** A failed or skipped search still appears in the research trace; the run continues. */
-  private async recordFailure(engine: string, params: Params, phash: string, ctx: CallCtx, err: unknown): Promise<void> {
+  /**
+   * A failed or skipped search still appears in the research trace; the run continues. A search
+   * that timed out may have finished upstream, so it is recorded (and charged) as billed.
+   */
+  private async recordFailure(engine: string, params: Params, phash: string, ctx: CallCtx, err: unknown, started: number): Promise<void> {
     const message = err instanceof Error ? err.message : String(err);
+    const billed = err instanceof SerpApiError && err.maybeBilled;
     const call: SearchCall = {
       id: `sc_${ctx.runId}_${ctx.order}`, runId: ctx.runId, stage: ctx.stage, engine, params: redact(params), paramsHash: phash, cached: false,
-      status: err instanceof BudgetExceeded ? "skipped" : "failed", latencyMs: 0, resultCount: 0, createdAt: nowMs(), billed: false,
+      status: err instanceof BudgetExceeded ? "skipped" : "failed", latencyMs: nowMs() - started, resultCount: 0, createdAt: nowMs(), billed,
       error: scrub(message, this.settings).slice(0, 300),
     };
+    if (billed) await this.store.chargeSearch(ctx.runId);
     await this.store.addSearchCall(call, null);
     await this.emit(call, ctx, 0);
   }
@@ -132,7 +157,7 @@ export class SerpApiService {
     return this.persistRaw(ctx, engine, params, phash, raw, true, false, nowMs());
   }
 
-  /** 20 s timeout · one retry on 5xx, timeout or network failure · never on 4xx. */
+  /** SEARCH_TIMEOUT_MS per attempt · one retry on 5xx, timeout or network failure · never on 4xx. */
   private async callNetwork(engine: string, params: Params): Promise<unknown> {
     const key = serpapiKey(this.settings);
     if (!key) throw new SerpApiError(`SERPAPI_API_KEY is required for SERPAPI_MODE=${serpapiMode(this.settings)}.`);
@@ -141,19 +166,25 @@ export class SerpApiService {
     query.set("engine", engine);
     query.set("api_key", key);
     let last: Error = new Error("SerpApi call failed");
+    let timedOut = false; // an attempt SerpApi may have completed after this side stopped waiting
     for (let attempt = 0; attempt <= RETRIES_ON_5XX; attempt++) {
       try {
         const res = await this.fetchImpl(`https://serpapi.com/search.json?${query}`, { method: "GET", signal: AbortSignal.timeout(SEARCH_TIMEOUT_MS) });
-        if (res.status >= 400) throw new SerpApiHttpError(res.status, scrub(await res.text(), this.settings).slice(0, 200));
+        if (res.status >= 400) {
+          // the body is for the operator's console only, never for the run record
+          console.error("serpapi http error", res.status, engine, scrub(await res.text().catch(() => ""), this.settings).slice(0, 200));
+          throw new SerpApiHttpError(res.status);
+        }
         return await res.json();
       } catch (err) {
         last = err instanceof Error ? err : new Error(String(err));
+        if (last.name === "TimeoutError") timedOut = true;
         if (err instanceof SerpApiHttpError && err.status < 500) break;
       }
     }
     const why = last instanceof SerpApiHttpError ? last.message : last.name === "TimeoutError" ? "SerpApi timed out" : "SerpApi could not be reached";
-    if (!(last instanceof SerpApiHttpError)) console.error("serpapi request failed", scrub(last.message, this.settings));
-    throw new SerpApiError(scrub(why, this.settings));
+    if (!(last instanceof SerpApiHttpError)) console.error("serpapi request failed", engine, scrub(last.message, this.settings));
+    throw new SerpApiError(scrub(why, this.settings), timedOut);
   }
 
   private async persistRaw(ctx: CallCtx, engine: string, params: Params, phash: string, raw: unknown, cached: boolean, billed: boolean, started: number): Promise<SearchResult> {
@@ -170,7 +201,8 @@ export class SerpApiService {
       latencyMs: nowMs() - started, resultCount: rows.length, createdAt: nowMs(), billed,
     };
     if (searchId) call.serpapiSearchId = searchId;
-    await this.store.chargeSearch(ctx.runId);
+    // searchesUsed counts billed searches only: fixture replays and cache hits are free
+    if (billed) await this.store.chargeSearch(ctx.runId);
     return this.recordCall(call, rows, ctx);
   }
 }

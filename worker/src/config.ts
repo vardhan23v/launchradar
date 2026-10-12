@@ -22,6 +22,7 @@ export interface Settings {
   DEMO_DELAY_BASE_MS?: string;
   CONCURRENT_RUN_LIMIT?: string;
   DEMO_RUNS_PER_HOUR?: string;
+  RUNS_PER_HOUR?: string;
 }
 
 export const ALL_ENGINES = [
@@ -62,7 +63,8 @@ export const GAP_VERIFY_SHARE = 5;
 export const TRENDS_SHARE = 2;
 export const MIN_DISCOVERY_EVIDENCE = 15;
 
-export const SEARCH_TIMEOUT_MS = 20_000;
+// Google engines regularly take 30 s+ on SerpApi; a search that is cut off is still billed upstream
+export const SEARCH_TIMEOUT_MS = 45_000;
 export const RETRIES_ON_5XX = 1;
 export const LLM_TIMEOUT_MS = 90_000;
 
@@ -100,6 +102,11 @@ export const hourlyRateGuard = (s: Settings) => int(s.HOURLY_SEARCH_GUARD, 40, 0
 export const concurrentRunLimit = (s: Settings) => int(s.CONCURRENT_RUN_LIMIT, 1);
 /** How many fresh copies of the recorded example may be written per hour; beyond that the newest is reused. */
 export const demoRunsPerHour = (s: Settings) => int(s.DEMO_RUNS_PER_HOUR, 6);
+/**
+ * How many live runs may START per hour, whether or not their searches are billed: a cached run
+ * still costs LLM calls and holds the run slot. 0 stops new runs; there is no "unlimited".
+ */
+export const runsPerHour = (s: Settings) => int(s.RUNS_PER_HOUR, 6, 0);
 export const cacheTtlHours = (s: Settings) => int(s.CACHE_TTL_HOURS, 24);
 export const demoDelayMs = (s: Settings) => int(s.DEMO_DELAY_MS, 320);
 export const demoDelayBaseMs = (s: Settings) => int(s.DEMO_DELAY_BASE_MS, 120);

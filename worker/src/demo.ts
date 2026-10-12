@@ -19,15 +19,15 @@ export async function startDemoRun(store: Store, slug: string): Promise<string> 
   const f = loadFixture(slug);
   if (!f) throw new Error("unknown demo run");
   const runId = makeId("run");
+  const now = nowMs();
   const defaults: Run = {
     id: runId, question: f.question, region: f.region, questionType: null, status: "running", budget: 25, searchesUsed: 0,
-    createdAt: nowMs(), finishedAt: null, demo: true, demoLabel: null, rejectedSignals: 0, error: null,
+    createdAt: now, finishedAt: null, demo: true, demoLabel: null, rejectedSignals: 0, error: null,
+    // the counters are moved by addSearchCall below, exactly as in a live run
+    searchCalls: 0, failedSearches: 0, outcome: f.opportunities.length ? "full" : "empty", lastProgressAt: now,
   };
   const recorded: Partial<Run> = { ...f.run };
-  delete recorded.id;
-  delete recorded.createdAt;
-  delete recorded.finishedAt;
-  delete recorded.status;
+  for (const k of ["id", "createdAt", "finishedAt", "status", "searchCalls", "failedSearches", "lastProgressAt"] as const) delete recorded[k];
   const run: Run = { ...defaults, ...recorded };
   await store.createRun(run);
   try {
@@ -42,9 +42,9 @@ export async function startDemoRun(store: Store, slug: string): Promise<string> 
     }
     // the recorded rows keep their original evidence ids (the example splits some results into E9 and E9b)
     await store.addEvidence(runId, "demo", f.evidence.map(({ runId: _r, searchCallId, ...rest }) => ({ ...rest, searchCallId: callIds.get(searchCallId) ?? "demo" })));
-    await store.addSignals(runId, tag(f.signals) as Signal[]);
+    await store.setSignals(runId, tag(f.signals) as Signal[]);
     await store.setClusters(runId, tag(f.clusters) as Cluster[]);
-    await store.addCompetitors(runId, tag(f.competitors).map((c) => ({ ...c, clusterIds: c.clusterIds ?? [] })) as Competitor[]);
+    await store.setCompetitors(runId, tag(f.competitors).map((c) => ({ ...c, clusterIds: c.clusterIds ?? [] })) as Competitor[]);
     await store.setGaps(runId, tag(f.gaps) as Gap[]);
     await store.setOpportunities(runId, tag(f.opportunities) as Opportunity[]);
     await store.setEvents(runId, f.events);

@@ -9,13 +9,13 @@
  * free plan's own CPU, subrequest and D1-query budget instead of sharing one.
  */
 import * as config from "./config";
-import { verifyQuote } from "./citations";
+import { knownIds, verifyQuote } from "./citations";
 import { LlmClient, LlmError } from "./llm";
 import * as prompts from "./prompts";
 import { computeScore } from "./score";
 import { BudgetExceeded, SerpApiError, SerpApiService } from "./serpapi";
 import type { Store } from "./store";
-import type { Cluster, Competitor, Complaint, Evidence, FoundProduct, Gap, Opportunity, Params, Signal, StepEvent } from "./types";
+import type { Cluster, Competitor, Complaint, Evidence, FoundProduct, Gap, Opportunity, Params, RunOutcome, SearchCall, Signal, StepEvent } from "./types";
 import { isRecord, keepKnownCitations, keyTerms, need, normaliseQuery, nowMs, num, parseSerpDate, str, strList, uniq } from "./utils";
 
 // engines the planner may address with a plain text query
@@ -165,6 +165,63 @@ function row(e: Evidence): string {
   const text = neutral([e.title, e.snippet].filter(Boolean).join(" — "));
   const date = e.date ? ` · ${e.date.slice(0, 10)}` : "";
   return `[${e.id}] (${e.blockType} · ${e.domain || "n/a"}${date}) ${text}`;
+}
+
+/** Two characters ("AI", "Go") match almost any row; a name has to be at least this long to count. */
+const MIN_NAME = 3;
+
+/** A product or competitor name must literally appear in the evidence row it is attributed to (never LLM memory). */
+function namedIn(name: string, e: Evidence): boolean {
+  const needle = name.toLowerCase();
+  return needle.length >= MIN_NAME && `${e.title} ${e.snippet} ${e.url}`.toLowerCase().includes(needle);
+}
+
+/** Stages whose searches feed signal extraction and the competitor pass: losing them limits the evidence. */
+const EVIDENCE_STAGES = new Set(["autocomplete-seed", "discovery", "competitors"]);
+
+export interface OutcomeSummary {
+  outcome: RunOutcome;
+  searchCalls: number;
+  failedSearches: number;
+  message: string;
+  level: "ok" | "warn";
+}
+
+/**
+ * How the run ended, in one sentence a visitor can act on. "empty" when it found no opportunity;
+ * "limited" when a discovery or competitor search failed or the citation validator rejected most
+ * signals; "full" otherwise. The message says plainly how many searches failed and why.
+ */
+export function summariseOutcome(calls: Pick<SearchCall, "stage" | "status" | "error">[], gaps: Pick<Gap, "status">[], opportunities: number,
+  rejected: number, kept: number, elapsedMs: number): OutcomeSummary {
+  const failed = calls.filter((c) => c.status === "failed");
+  const lostEvidence = failed.some((c) => EVIDENCE_STAGES.has(c.stage));
+  const mostRejected = rejected > kept;
+  const outcome: RunOutcome = opportunities === 0 ? "empty" : lostEvidence || mostRejected ? "limited" : "full";
+  const secs = (elapsedMs / 1000).toFixed(1);
+  const found = `${opportunities} opportunit${opportunities === 1 ? "y was" : "ies were"} found`;
+  const failedNote = failed.length ? ` (${failed.length} failed)` : "";
+  let message: string;
+  if (lostEvidence || mostRejected) {
+    const parts: string[] = [];
+    if (failed.length) {
+      // the most common failure explains the loss; the log has each one
+      const tally = new Map<string, number>();
+      for (const c of failed) tally.set(c.error ?? "search failed", (tally.get(c.error ?? "search failed") ?? 0) + 1);
+      const [reason] = [...tally.entries()].sort((a, b) => b[1] - a[1])[0];
+      parts.push(`${failed.length} of ${calls.length} searches failed (${reason.replace(/\.$/, "")}${tally.size > 1 ? ", among others" : ""})`);
+    }
+    if (mostRejected) parts.push(`the citation validator rejected ${rejected} of ${rejected + kept} signals`);
+    message = `Run complete with limited evidence: ${parts.join(" and ")}, so ${found}.`;
+  } else if (opportunities === 0) {
+    const why = !gaps.length ? "no candidate gap was proposed"
+      : gaps.every((g) => g.status === "served") ? "every candidate gap is already served"
+      : "no candidate gap produced an opportunity card";
+    message = `Run complete in ${secs}s, but no opportunity was found: ${why}${failedNote}.`;
+  } else {
+    message = `Run complete in ${secs}s: ${found} from ${calls.length} searches${failedNote}.`;
+  }
+  return { outcome, searchCalls: calls.length, failedSearches: failed.length, message, level: outcome === "full" ? "ok" : "warn" };
 }
 
 const corePhrase = (q: string) => q.trim().split(/\s+/).slice(0, 8).join(" ");
@@ -381,9 +438,10 @@ class Pipeline {
     }
     const seen = new Set(this.s.signals.map((x) => normaliseQuery(x.statement)));
     for (const sig of raw) {
-      const ids = strList(sig.evidenceIds);
       const quote = str(sig.quote);
-      // the validator is the gate: unknown id, non-verbatim or trivially short quote → dropped and counted
+      // the validator is the gate: no known id, non-verbatim or trivially short quote → dropped and counted;
+      // only ids this batch contains are stored, so every footnote in the output resolves
+      const ids = knownIds(strList(sig.evidenceIds), batch);
       if (quote.length < MIN_QUOTE || quote.length > MAX_QUOTE || !verifyQuote(ids, quote, batch)[0]) {
         this.s.rejected += 1;
         continue;
@@ -403,11 +461,11 @@ class Pipeline {
     this.s.i += 1;
     if (this.s.i < this.s.batches.length) return;
 
-    const run = await this.ctx.store.getRun(this.s.runId);
-    await this.ctx.store.updateRun(this.s.runId, { rejectedSignals: (run?.rejectedSignals ?? 0) + this.s.rejected });
+    // the state carries the total, so a unit retried after a crash writes the same number, not double
+    await this.ctx.store.updateRun(this.s.runId, { rejectedSignals: this.s.rejected });
     await this.stage("signals", `${this.s.signals.length} signals kept, ${this.s.rejected} rejected by the citation validator`, "ok");
     if (!this.s.signals.length) throw new PipelineError("No signal survived the citation validator. Try a broader question.");
-    await this.ctx.store.addSignals(this.s.runId, this.s.signals);
+    await this.ctx.store.setSignals(this.s.runId, this.s.signals);
     this.next("cluster");
   }
 
@@ -496,7 +554,7 @@ class Pipeline {
       if (this.s.i < this.s.compClusters.length) return;
     }
     await this.stage("competitors", `${this.s.competitors.length} competitors, each traced to an evidence row`, "ok");
-    await this.ctx.store.addCompetitors(this.s.runId, this.s.competitors);
+    await this.ctx.store.setCompetitors(this.s.runId, this.s.competitors);
     this.next("gaps");
   }
 
@@ -526,10 +584,7 @@ class Pipeline {
       const name = cap(str(c.name), 120);
       const needle = name.toLowerCase();
       const cited = strList(c.evidenceIds).filter((i) => evById.has(i));
-      if (needle.length < 2 || !cited.some((i) => {
-        const e = evById.get(i) as Evidence;
-        return `${e.title} ${e.snippet} ${e.url}`.toLowerCase().includes(needle);
-      })) continue;
+      if (!cited.some((i) => namedIn(name, evById.get(i) as Evidence))) continue;
       const complaints: Complaint[] = [];
       const quoted = new Set<string>();
       for (const x of Array.isArray(c.complaints) ? c.complaints : []) {
@@ -675,10 +730,13 @@ class Pipeline {
         if (typeof status !== "string" || !GAP_STATUSES.has(status)) throw new Error(`status must be one of ${[...GAP_STATUSES].sort().join(", ")}`);
         return v as Record<string, unknown> & { status: Gap["status"] };
       });
-      const ids = new Set(ev.map((e) => e.id));
+      const evById = new Map(ev.map((e) => [e.id, e]));
       const products = Array.isArray(raw.foundProducts) ? raw.foundProducts : [];
+      // a found product decides the gap's status, so, like a competitor, it must be named in the
+      // kill-query row it cites — an invented name with a real id does not count
       gap.foundProducts = products
-        .filter((p): p is Record<string, unknown> => isRecord(p) && Boolean(str(p.name)) && typeof p.evidenceId === "string" && ids.has(p.evidenceId))
+        .filter((p): p is Record<string, unknown> => isRecord(p) && typeof p.evidenceId === "string" && evById.has(p.evidenceId)
+          && namedIn(cap(str(p.name), 120), evById.get(p.evidenceId) as Evidence))
         .map((p): FoundProduct => ({ name: cap(str(p.name), 120), evidenceId: p.evidenceId as string, match: cap(str(p.match), 300) || "found by kill query" }))
         .slice(0, 8);
       // "served" needs at least one product that resolves to kill-query evidence, and a gap with such
@@ -811,17 +869,22 @@ class Pipeline {
   // ---- terminal ------------------------------------------------------------
 
   async finish(): Promise<void> {
+    const calls = await this.ctx.store.searchCallsFor(this.s.runId);
+    const summary = summariseOutcome(calls, this.s.gaps, this.s.opportunities.length, this.s.rejected, this.s.signals.length, nowMs() - this.s.startedAt);
     // the log line first, so a viewer that sees the run turn complete has it; a run already closed
     // (as interrupted) keeps that ending
-    await this.stage("done", `Run complete in ${((nowMs() - this.s.startedAt) / 1000).toFixed(1)}s`, "ok");
-    if (await this.ctx.store.finishIfRunning(this.s.runId, { status: "complete", finishedAt: nowMs() })) await this.terminal("complete");
+    await this.stage("done", summary.message, summary.level);
+    const { outcome, searchCalls, failedSearches } = summary;
+    if (await this.ctx.store.finishIfRunning(this.s.runId, { status: "complete", finishedAt: nowMs(), outcome, searchCalls, failedSearches })) await this.terminal("complete");
     this.s.status = "complete";
     this.next("done");
   }
 
   async fail(err: unknown): Promise<void> {
     const message = this.why(err, 300);
-    if (await this.ctx.store.finishIfRunning(this.s.runId, { status: "failed", error: message, finishedAt: nowMs() })) {
+    const calls = await this.ctx.store.searchCallsFor(this.s.runId).catch((): SearchCall[] => []);
+    const counts = { searchCalls: calls.length, failedSearches: calls.filter((c) => c.status === "failed").length };
+    if (await this.ctx.store.finishIfRunning(this.s.runId, { status: "failed", error: message, finishedAt: nowMs(), ...counts })) {
       await this.stage("error", message, "error");
       await this.terminal("failed");
     }

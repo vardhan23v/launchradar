@@ -1,76 +1,45 @@
-# LaunchRadar — v2 triage interface (shipped additively under `/v2`)
+# The `/v2` triage board (retired)
 
-> Status: **integrated and verified.** This file started as a blind redesign spec; the facts below
-> replace its assumptions, which were written without repo access and have since been checked
-> against the real code (the redesign predated the knowledge that runs already had deep links at
-> `/runs/[id]`, and it guessed at payload shapes that `src/lib/types.ts` defines exactly).
+> Status: **retired.** `/v2` and `/v2/runs/[id]` are permanent redirects (HTTP 308, set in
+> `next.config.mjs`) to the radar dashboard at `/` and `/runs/[id]`. This file is kept as the
+> historical record of the triage board; the code it describes has been deleted.
 
-## 0. What actually shipped
+## What it was
 
-The redesigned triage board lives **alongside** the original report interface, never replacing it:
+A second interface, shipped additively alongside the original report view and never linked from
+it: a triage board for the same runs (shortlist / dismiss, a density toggle, a theme toggle,
+local Markdown/JSON/CSV exports). It lived in `src/app/v2` (with its own scoped stylesheet
+`lr.css`), `src/components/v2` (pure `HomeScreen`, `RunScreen`, `ResearchLog`, `primitives`, and
+the `HomeV2` / `RunV2` hosts that fetched data for them) and `src/lib/v2` (`adapter.ts`, the one
+place that mapped the API's JSON into the board's view models, and `viewModel.ts`).
 
-| Route | Component | Interface |
-| --- | --- | --- |
-| `/` and `/runs/[id]` | `src/components/HomeClient.tsx`, `src/components/RunClient.tsx` | The original report view — unchanged |
-| `/v2` | `src/app/v2/page.tsx` → `src/components/v2/HomeV2.tsx` → `HomeScreen.tsx` | The triage board |
-| `/v2/runs/[id]` | `src/app/v2/runs/[id]/page.tsx` → `src/components/v2/RunV2.tsx` → `RunScreen.tsx` | Same run, triage layout (id may be a real run id, a saved run id, or `live`) |
+The board was designed blind, without repo access, and then corrected against the real code:
+inline citations (`[E1,E2]`) in opportunity prose, publication dates versus retrieval dates, the
+tri-state gap status (`open` / `partially-served` / `served`) and skipped stages in budget-capped
+runs were the four assumptions that had to be fixed in the adapter.
 
-Pure screens and the layers that adapt real data to them:
+## Why it was retired
 
-- `src/components/v2/{HomeScreen,RunScreen,ResearchLog,primitives}.tsx` — pure: no fetch, no
-  storage, no router. All I/O arrives via props; every effect is a callback.
-- `src/lib/v2/adapter.ts` — the only place that knows both vocabularies (`src/lib/types.ts` → view
-  models). Also owns region codes, browser prefs (theme/density/triage ids) and `viewToRunVM`.
-- `src/lib/v2/viewModel.ts` — view models, tolerant mappers, `diffRuns` change view, exports
-  (Markdown/JSON/CSV generated locally from the browser's own copy).
-- `src/app/v2/lr.css` — scoped design system: every class `lr-`, every token `--lr-*`; imported
-  once by `src/app/v2/layout.tsx`, so `/` keeps `globals.css` untouched.
+The production-readiness audit of 11 October 2026 (`AUDIT.md`, section 4) compared the three
+interfaces and found that only the radar dashboard showed linked footnotes, verbatim signal and
+complaint quotes, sub-scores, confidence, gap status and proper error, empty and partial states.
+The board had drifted from the backend it was built for:
 
-## 1. Wiring facts (verified against the code)
+- its "270 s budget" chip, countdown ring and copy described a serverless host that no longer
+  exists (runs on the Worker take seven minutes or more);
+- it presented raw search snippets under "Sources, quoted word for word" and "Sources (verbatim)",
+  when the validated quotes never reached it;
+- it dropped competitors and confidence altogether;
+- it overflowed horizontally at 360 px;
+- its blocked-state text blamed missing credentials whatever the real cause;
+- and it was a third copy of the stage list, sub-score table and region list.
 
-- Serverless runs are **one streaming `POST /api/runs/live`** whose frames include
-  `{ type: "view", view }` snapshots, so no second request is ever needed. The live session is a
-  **module-level singleton** in `src/lib/live.ts`: duplicate POSTs would spend the search budget
-  twice, so components only subscribe and `ensureLiveRun()` starts at most one run.
-- Finished runs persist in `localStorage` (`src/lib/history.ts`, newest 6). Restoration prefers the
-  browser's copy because a serverless instance may have recycled and forgotten the run.
-- When a live run finishes, `live.ts` rewrites the address to the real run id. The prefix is
-  configurable (`setRunPathPrefix`): the v2 hosts set `/v2/runs/` while mounted and restore
-  `/runs/` on unmount, so v2 navigation can never leak into the original UI's addresses. Choices
-  made during the stream (shortlist/dismiss, keyed `live`) are carried to the finished id.
-- Regions: the form shows names, the backend takes short codes — converted in `adapter.ts`
-  (`codeForLabel`/`labelForCode`), defaults `in`.
-- Exports in v2 are generated client-side from the run view (`fileExports`); the original view's
-  `POST /api/export` endpoint is untouched.
+Rather than maintain three copies of the same logic, the dashboard became the only product and
+the two older views became redirects (see `CHANGES.md`, "One interface").
 
-## 2. Adapter accuracy notes (bugs found in the blind design and fixed)
+## What carried over
 
-1. **Citations in prose.** Opportunity prose cites sources inline as `[E1,E2]`. The blind design
-   only gathered evidence ids from found-products and skeptic objections. `opportunityVM` now also
-   parses the prose with `citeGroups` from `src/lib/evidence.ts`.
-2. **Dates are not retrieval timestamps.** `Evidence.date` is the source's publication date. The
-   view model field is `sourceDate` and the evidence card says "published …" — the blind design's
-   `retrievedAt`/("checked …") mislabelled it.
-3. **Partially-served gaps.** `Gap.status` is a tri-state (`open`/`partially-served`/`served`).
-   The blind design collapsed it to a boolean; `GapVM` keeps the real status and the UI shows
-   "Partially served" as its own answer, distinct from "Still open".
-4. **Skipped stages.** A budget-capped run can still end `complete` with stages skipped: the
-   backend reports those as warn-level stage events whose message mentions a skip
-   (`backend/app/pipeline.py`). `stagesFromEvents` marks a stage `skipped` (with the reason) when
-   it left nothing behind in the run, keeps `done` with the reason when only part of it was
-   skipped, and marks stages a failed run never reached as `skipped` rather than `done`.
-
-## 3. Verification performed
-
-- `tsc --noEmit` clean; `eslint src` clean; `next build` produces `/`, `/runs/[id]`, `/v2`,
-  `/v2/runs/[id]`; backend `pytest` — 24 passed.
-- Fixture checks against `viewToRunVM`/`stagesFromEvents` covering the four adapter notes above.
-- `next start` smoke test: `/`, `/v2`, `/v2/runs/live`, unknown run ids and the original
-  `/runs/abc` all serve 200; `/v2` HTML carries the scoped `lr-root` shell.
-
-## 4. Known limits
-
-- Keyboard palette/shortcuts and theme are per-interface: v2 keeps its prefs under `lr:v2:*`
-  storage keys, the original view keeps its own.
-- A re-run of a recorded demo is not possible by design (fixtures are fixed); the run screen's
-  "Re-run this question" always starts a fresh live run for real runs.
+- Deep links: `/v2/runs/<id>` opens the same run at `/runs/<id>`.
+- The shortlist star: the board's choices are read by the dashboard.
+- The design corrections listed above live on in the dashboard's feed logic
+  (`src/lib/v3/feed.ts`) and in `src/lib/evidence.ts`.

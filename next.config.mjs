@@ -30,6 +30,18 @@ const nextConfig = {
   async rewrites() {
     return [{ source: "/api/:path*", destination: `${API_URL}/api/:path*` }];
   },
+  // The radar dashboard (/ and /runs/[id]) is the only interface. The earlier views (the /report
+  // report view, the /v2 triage board) and the dashboard's first address (/v3) are retired; links
+  // that were shared land on the same run in the current design. permanent = HTTP 308.
+  async redirects() {
+    return [
+      { source: "/v2", destination: "/", permanent: true },
+      { source: "/v2/runs/:id", destination: "/runs/:id", permanent: true },
+      { source: "/report", destination: "/", permanent: true },
+      { source: "/report/runs/:id", destination: "/runs/:id", permanent: true },
+      { source: "/v3", destination: "/", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

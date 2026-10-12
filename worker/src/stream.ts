@@ -43,7 +43,8 @@ export async function* followRunEvents(store: Store, runId: string, fromIndex: n
   const first = await store.getRun(runId);
   if (!first) return;
   let cursor = Math.max(0, fromIndex);
-  const paced = first.demo && first.status === "running";
+  // the recorded example always animates, also when a reused copy has already been completed
+  const paced = first.demo;
   const deadline = nowMs() + windowMs;
   let lastSent = nowMs();
 
@@ -60,6 +61,10 @@ export async function* followRunEvents(store: Store, runId: string, fromIndex: n
     const run = await store.getRun(runId);
     if (!run) return;
     if (run.demo && run.status === "running") {
+      // only a viewer that has been handed the whole recorded trace may close it: a resume id past
+      // the end (the route refuses those) must never complete a run it has not watched
+      const count = await store.eventCount(runId);
+      if (cursor > count) return;
       // two viewers can reach the end together; only the one that makes the transition writes the ending
       if (await store.finishIfRunning(runId, { status: "complete", finishedAt: nowMs() })) {
         await store.appendEvents(runId, [{ type: "status", status: "complete" }, { type: "done", runId, searchesUsed: run.searchesUsed }]);

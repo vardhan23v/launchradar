@@ -1,4 +1,4 @@
-/** Line icons for the /v3 dashboard. 24-unit grid, 1.75 stroke, currentColor. */
+/** Line icons for the dashboard. 24-unit grid, 1.75 stroke, currentColor. */
 import type { SVGProps } from "react";
 
 type P = SVGProps<SVGSVGElement> & { size?: number };

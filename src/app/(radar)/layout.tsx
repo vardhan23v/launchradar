@@ -3,16 +3,19 @@ import { Geist } from "next/font/google";
 import "./radar.css";
 
 /**
- * Layout for the home page (the radar dashboard): dark, Geist, Tailwind utilities with a few scoped
- * keyframes. The report view (/report, /runs/[id]) and the triage board (/v2) keep their own styles.
+ * Layout for the radar dashboard (home page) and the run pages: dark, Geist, Tailwind utilities
+ * with a few scoped keyframes.
  */
 const geist = Geist({ variable: "--font-v3", subsets: ["latin"] });
 
+const DESCRIPTION = "Every opportunity LaunchRadar has found, ranked and filterable, with each case linked to the search results it cites.";
+
 export const metadata: Metadata = {
-  title: "LaunchRadar",
-  description: "Every opportunity LaunchRadar has found, ranked and filterable, with each case linked to the search results it cites.",
+  description: DESCRIPTION,
+  openGraph: { title: "LaunchRadar", description: DESCRIPTION, url: "/" },
+  twitter: { title: "LaunchRadar", description: DESCRIPTION },
 };
 
-export default function V3Layout({ children }: { children: React.ReactNode }) {
+export default function RadarLayout({ children }: { children: React.ReactNode }) {
   return <div className={`${geist.variable} lr3-root`}>{children}</div>;
 }

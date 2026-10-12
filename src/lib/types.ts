@@ -5,6 +5,8 @@
 export type GapStatus = "open" | "partially-served" | "served";
 export type RunStatus = "queued" | "running" | "complete" | "failed";
 export type CallStatus = "ok" | "failed" | "skipped";
+/** How much evidence a finished run ended with: "limited" when many searches failed, "empty" when it found nothing. */
+export type RunOutcome = "full" | "limited" | "empty";
 
 export interface Run {
   id: string;
@@ -20,6 +22,12 @@ export interface Run {
   demoLabel: string | null;
   rejectedSignals: number;
   error: string | null;
+  /** searches that failed (timed out, refused); older servers leave it out */
+  failedSearches?: number;
+  /** every search the run made, including failed ones (searchesUsed counts only charged ones) */
+  searchCalls?: number;
+  /** set by newer servers when the run finishes */
+  outcome?: RunOutcome | null;
 }
 
 export interface Evidence {

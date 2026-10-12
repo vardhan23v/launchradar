@@ -15,8 +15,6 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 [![API Status](https://img.shields.io/website?url=https%3A%2F%2Flaunchradar-api.launchradar-worker.workers.dev%2Fapi%2Fhealth&style=for-the-badge&label=API&up_message=online&down_message=offline&up_color=0E9F6E)](https://launchradar-api.launchradar-worker.workers.dev/api/health)
 [![Always on](https://img.shields.io/badge/Always_on-no_sleep-0E9F6E?style=for-the-badge)](#deploying-site-on-vercel-api-on-cloudflare-workers)
 [![Hosting cost](https://img.shields.io/badge/Hosting-%240%2Fmonth-0E9F6E?style=for-the-badge)](#deploying-site-on-vercel-api-on-cloudflare-workers)
-[![v2 triage board](https://img.shields.io/badge/%2Fv2-Triage_Board-0E9F76?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/v2)
-[![Report view](https://img.shields.io/badge/%2Freport-Report_view-c2410c?style=for-the-badge&logo=vercel&logoColor=white)](https://launchradar-psi.vercel.app/report)
 
 <!-- stack -->
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
@@ -35,7 +33,7 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 
 <!-- quality -->
 [![CI](https://img.shields.io/github/actions/workflow/status/vardhan23v/launchradar/ci.yml?style=for-the-badge&label=CI&logo=githubactions&logoColor=white)](https://github.com/vardhan23v/launchradar/actions/workflows/ci.yml)
-[![Tests](https://img.shields.io/badge/Tests-33_passing-0E9F6E?style=for-the-badge&logo=vitest&logoColor=white)](#tests)
+[![Tests](https://img.shields.io/badge/Tests-45_passing-0E9F6E?style=for-the-badge&logo=vitest&logoColor=white)](#tests)
 [![Security](https://img.shields.io/badge/Security-audited_%28partial%29-F59E0B?style=for-the-badge&logo=cloudflare&logoColor=white)](#security)
 [![Last Commit](https://img.shields.io/github/last-commit/vardhan23v/launchradar/main?style=for-the-badge&color=111827&label=Last%20Commit)](https://github.com/vardhan23v/launchradar/commits/main)
 [![Commit activity](https://img.shields.io/github/commit-activity/m/vardhan23v/launchradar?style=for-the-badge&color=111827)](https://github.com/vardhan23v/launchradar/commits/main)
@@ -68,17 +66,28 @@ The diagram source is [`docs/architecture.svg`](docs/architecture.svg).
 
 ## Interfaces
 
-Everything linked from the home page uses one design: dark (zinc-950), Geist, indigo actions, emerald for open gaps.
+One product, the radar dashboard, in one design: dark (zinc-950), Geist, indigo actions, emerald for open gaps.
 
 | Page | Route | What it shows |
 |---|---|---|
-| **Home: the radar** | `/` (old `/v3` links redirect here) | Every opportunity from every finished run in one ranked feed: #1 featured card with the sub-score pentagon, grid/list toggle, sticky filters (research question, gap status, confidence, region, date, shortlist), search with ⌘K / Ctrl+K, sort by score / momentum / newest, a detail panel with numbered source footnotes. |
+| **Home: the radar** | `/` | Every opportunity from every finished run in one ranked feed: #1 featured card with the sub-score pentagon, grid/list toggle, sticky filters (research question, gap status, confidence, region, date, shortlist), search with ⌘K / Ctrl+K, sort by score / momentum / newest, a detail panel with numbered source footnotes. |
 | **A research run** | `/runs/[id]` | Live progress (seven stages, research log), then the run's opportunities, problems with verbatim quotes, competitors with pricing, rating and complaints, the research log and every search result, plus Markdown export. |
 
-Two earlier designs are still served for anyone with a link, but nothing in the new design links to them:
-`/report` and `/report/runs/[id]` (the original print-like report view) and `/v2` (the triage board). The shortlist is shared
-between `/`, `/runs/[id]` and `/v2`. The new design lives in `src/components/v3`, `src/lib/v3/feed.ts` and the route group
-`src/app/(radar)` with its own stylesheet, so the older views' styles are untouched. See `REDESIGN.md` for the `/v2` record.
+The dashboard lives in `src/components/v3`, `src/lib/v3` and the route group `src/app/(radar)`. Two earlier designs
+(the report view and the `/v2` triage board) and the dashboard's first address (`/v3`) were retired after the October
+2026 audit (`AUDIT.md`, section 4); their addresses are permanent redirects (HTTP 308, `redirects()` in
+`next.config.mjs`), so links that were shared still open the same run:
+
+| Old address | Now |
+|---|---|
+| `/v2` | `/` |
+| `/v2/runs/[id]` | `/runs/[id]` |
+| `/report` | `/` |
+| `/report/runs/[id]` | `/runs/[id]` |
+| `/v3` | `/` |
+
+`REDESIGN.md` is the historical note on the triage board and why it went; `CHANGES.md` ("One interface") lists what
+the retired views got wrong.
 
 ## Stack
 
@@ -124,11 +133,21 @@ on the home page and replays the full research trace over SSE. To research a **n
   provider — `demo` only replays the recorded run. The home page says what is missing.
 - Budgets are guarded **before** any network cost:
   25 searches per run, 40 billed searches per hour, 250 per calendar month (`RUN_SEARCH_BUDGET`, `HOURLY_SEARCH_GUARD`,
-  `MONTHLY_SEARCH_BUDGET`; `0` stops all billed searches). Cache hits and fixture replays are never counted as billed.
-  The counters live in D1, so they survive deploys.
+  `MONTHLY_SEARCH_BUDGET`; `0` stops all billed searches with a message saying so). Cache hits and fixture replays are
+  unbilled and not charged, so a run's `searchesUsed` is exactly its billed searches; `searchCalls` counts every
+  search it made (`failedSearches` of them failed). The counters live in D1, so they survive deploys.
 - A new run must fit **whole**: it is refused up front unless the hour and the month can still cover its 25 searches,
   so a run never stops halfway after spending LLM calls. Only **one run at a time** is in progress across all visitors
-  (`CONCURRENT_RUN_LIMIT`); the home page says when the next one can start.
+  (`CONCURRENT_RUN_LIMIT`), and at most **6 live runs may start per hour** (`RUNS_PER_HOUR`), whether or not their
+  searches come from the cache — a cached run still spends LLM calls. The refusal (and the home page) says when the
+  next run can start.
+- Each SerpApi search gets **45 s** and one retry; a search that times out may still have been completed upstream, so
+  it is recorded and counted as **billed** (the guards never under-count).
+- A finished run carries an `outcome`: `full`, `limited` (a discovery or competitor search failed, or the citation
+  validator rejected most signals) or `empty` (no opportunity found). The last line of its log says the same in words,
+  e.g. "Run complete with limited evidence: 9 of 16 searches failed (SerpApi timed out), so 0 opportunities were found."
+- A run that writes nothing to its log for **15 minutes** was interrupted: it is closed as failed (a recorded example in
+  that state is closed as complete) the next time the run list, its page or its stream is opened.
 - Per-run split: discovery 12 (including 2 autocomplete seeds) · trends 2 ·
   competitors 6 · gap verification 5.
 
@@ -168,12 +187,12 @@ the keys, and they keep scraped or model-written text from doing anything but di
 
 | Area | What is enforced | Where |
 |---|---|---|
-| Spend | One live run at a time, claimed in one SQL statement; a run is refused unless the hour and month cover its whole search budget; per-run, hourly and monthly search caps checked before every billed search | `worker/src/index.ts`, `store.ts`, `serpapi.ts` |
+| Spend | One live run at a time, claimed in one SQL statement; at most 6 live run starts per hour whether or not their searches are billed (a cached run still costs LLM calls); a run is refused unless the hour and month cover its whole search budget; per-run, hourly and monthly search caps checked before every billed search; a timed-out search counts as billed | `worker/src/index.ts`, `store.ts`, `serpapi.ts` |
 | Shared database | The recorded example is copied at most 6 times an hour (then the newest copy is reused) and only the newest 10 copies are kept; the run list returns the newest 50; request bodies are capped (16 KiB to start a run, 2 MiB and 2,000 records to export) | `index.ts`, `store.ts`, `export.ts` |
-| Keys | Stored only as Worker secrets (never in the repository or the browser); the LLM key travels in a header and only over https; provider error bodies never reach a run, and every message shown publicly or logged is scrubbed of keys; `OPENAI_API_KEY` is only sent to OpenAI | `config.ts`, `llm.ts`, `serpapi.ts`, `pipeline.ts` |
-| Untrusted text | Scraped pages and model output are data: prompt rules go in the system message, the evidence block cannot be closed from inside it, every quote must be a verbatim substring of its cited result, model-written fields are length-bounded, competitor links must be pages the competitor was cited from | `prompts.ts`, `llm.ts`, `pipeline.ts`, `citations.ts` |
+| Keys | Stored only as Worker secrets (never in the repository or the browser); the LLM key travels in a header and only over https; an upstream HTTP error reaches a run only as a sentence this code wrote plus the status code (the response body goes, scrubbed, to the operator's console), and every message shown publicly or logged is scrubbed of keys; `OPENAI_API_KEY` is only sent to OpenAI | `config.ts`, `llm.ts`, `serpapi.ts`, `pipeline.ts` |
+| Untrusted text | Scraped pages and model output are data: prompt rules go in the system message, the evidence block cannot be closed from inside it, every quote must be a verbatim substring of one field of its cited result (it cannot straddle title and snippet), evidence ids the run does not contain are stripped before anything is stored, a competitor or "found product" name must appear in the row it cites (3+ characters), model-written fields are length-bounded, competitor links must be pages the competitor was cited from; an unknown region in an export becomes a short letter code | `prompts.ts`, `llm.ts`, `pipeline.ts`, `citations.ts`, `export.ts` |
 | Browser | Only absolute http(s) links become clickable (checked on the server and again at every link); React escapes all text; saved runs are shape-checked; CSV cells cannot start a spreadsheet formula; pages send `frame-ancestors 'none'`, `X-Frame-Options`, `nosniff`, a referrer and permissions policy and HSTS | `normalise.ts`, `src/lib/evidence.ts`, `src/lib/history.ts`, `next.config.mjs` |
-| Requests | Bodies must be `application/json` (no cross-site form posts); unknown routes and methods are refused before the database is touched; resume ids must be small integers; answers carry `Cache-Control: no-store` | `index.ts` |
+| Requests | Bodies must be `application/json` (no cross-site form posts); unknown routes and methods are refused before the database is touched; resume ids must be small integers, and one beyond a running run's log is refused (so a viewer cannot "complete" a running example); answers carry `Cache-Control: no-store` | `index.ts`, `stream.ts` |
 | CI | Read-only token, checkout without persisted credentials, actions pinned to commit SHAs | `.github/workflows/ci.yml` |
 
 The code was reviewed with Cloudflare's [security-audit skill](https://github.com/cloudflare/security-audit-skill)
@@ -208,25 +227,23 @@ worker/
   .dev.vars        local secrets for `npm run api` (git-ignored, never committed)
 .github/workflows/ci.yml  typecheck + tests for the Worker, typecheck + lint + build for the site
 docs/architecture.svg     the architecture diagram shown above
+next.config.mjs           /api/* rewrite to the Worker, security headers, redirects for the retired /v2, /report and /v3
 src/
-  app/             pages only (home, run, and the /v2 triage board)
-  app/v2/lr.css    the triage board's scoped design system (imported only by /v2)
-  app/(radar)/     the home page (radar dashboard) and its radar.css: font, page colour, keyframes
-  app/(radar)/runs/ the new-design run page
-  app/report/      the original report view (home and runs), no longer linked
-  components/      HomeClient, RunClient, ui primitives (report view)
-  components/v2/   HomeV2, RunV2 hosts + pure HomeScreen, RunScreen, ResearchLog, primitives
-  components/v3/   radar dashboard: Dashboard host, TopNav, Cards, FilterPanel, DetailPanel, NewResearchDialog
+  app/layout.tsx   root layout: fonts and globals.css (Tailwind)
+  app/(radar)/     the only interface: the home page (radar dashboard), its run page under runs/[id],
+                   and radar.css: font, page colour, keyframes
+  components/v3/   Dashboard host, TopNav, Cards, FilterPanel, DetailPanel, NewResearchDialog, RunPage, hooks, parts, icons
   lib/types.ts     TypeScript shapes of the API's JSON
+  lib/evidence.ts  citation parsing ([E1,E2]) and http(s)-only links
   lib/history.ts   finished runs kept in the browser
-  lib/v2/          adapter (real API -> view models, prefs) and viewModel (types, exports)
-  lib/v3/feed.ts   pure feed logic: runs -> ranked opportunities, filters, facets, source footnotes
+  lib/v3/          feed.ts: pure feed logic (runs -> ranked opportunities, filters, facets, source footnotes);
+                   run.ts: the stage list, engine labels and run outcome; storage.ts: the shortlist in the browser
 ```
 
 ## Tests
 
 ```bash
-npm test          # the Worker's 33 vitest tests, run inside the Workers runtime: no network, no quota
+npm test          # the Worker's 45 vitest tests, run inside the Workers runtime: no network, no quota
 npm run typecheck # tsc --noEmit (frontend); npm run typecheck:api for the Worker
 npm run lint      # eslint (frontend)
 npm run build     # frontend production build
@@ -270,8 +287,9 @@ Settings (all optional; non-secret ones live in `worker/wrangler.jsonc` under `v
 | `SERPAPI_MODE` | `live` | `replay` serves fixtures only (tests) |
 | `LLM_PROVIDER` / `LLM_BASE_URL` / `LLM_MODEL` / `LLM_REASONING_EFFORT` | `openai` / Groq / `openai/gpt-oss-120b` / `low` | any OpenAI-compatible gateway over https, or `gemini` |
 | `RUN_SEARCH_BUDGET` | `25` | searches one run may use |
-| `HOURLY_SEARCH_GUARD` / `MONTHLY_SEARCH_BUDGET` | `40` / `250` | billed searches per hour / calendar month; `0` stops spending |
-| `CONCURRENT_RUN_LIMIT` | `1` | live runs in progress at once, across all visitors |
+| `HOURLY_SEARCH_GUARD` / `MONTHLY_SEARCH_BUDGET` | `40` / `250` | billed searches per hour / calendar month; `0` stops spending (the home page says so) |
+| `CONCURRENT_RUN_LIMIT` | `1` | live runs in progress at once, across all visitors; a run silent for 15 minutes is closed as interrupted |
+| `RUNS_PER_HOUR` | `6` | live runs that may start per hour, billed or served from the cache; `0` stops new runs (there is no "unlimited") |
 | `DEMO_RUNS_PER_HOUR` | `6` | fresh copies of the recorded example per hour before the newest is reused |
 | `CACHE_TTL_HOURS` | `24` | identical searches inside this window are served from D1 for free |
 
@@ -304,7 +322,7 @@ Run research for a question on a local Worker with real keys, export the run as 
 - **D1 (SQLite) instead of Prisma** — plain SQL in `store.ts`; the schema is created by the Worker on first use.
 - **SerpApi client uses fetch directly** (not the official `serpapi` package) to keep the payload → evidence pipeline fully under our control.
 - **Validation is hand-written** rather than zod models: each LLM stage has a small validator that drops malformed items and fails the stage loudly when the shape is unusable.
-- **No shadcn/ui** — the UI is a small set of token-driven primitives in `src/components/ui.tsx` (light + dark, motion and shadows all from CSS variables in `globals.css`).
+- **No shadcn/ui** — the UI is a small set of components in `src/components/v3` styled with Tailwind utilities and a few scoped keyframes in `src/app/(radar)/radar.css`.
 - **Raw SerpApi JSON is not persisted** — only normalised rows plus `search_metadata.id`, to keep the database small.
 - **Review engines that need a product id** (`google_play_product`, `apple_reviews`, `google_maps_reviews`) are typed and normalised but not yet called by the pipeline.
 

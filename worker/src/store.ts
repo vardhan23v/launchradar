@@ -3,13 +3,14 @@
  * never see a half-written run. Ids that must be dense and unique under concurrency (evidence
  * E1, E2, …; event indexes) are assigned by the database, not by the caller.
  */
-import { hourlyRateGuard, monthlySearchBudget, runSearchBudget, type Settings } from "./config";
+import { hourlyRateGuard, monthlySearchBudget, runSearchBudget, runsPerHour, type Settings } from "./config";
 import type { Cluster, Competitor, Evidence, Gap, Opportunity, Row, Run, RunView, SearchCall, Signal, StepEvent } from "./types";
 import { nowMs } from "./utils";
 
 const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS runs (
-     id TEXT PRIMARY KEY, created_at INTEGER NOT NULL, status TEXT NOT NULL, demo INTEGER NOT NULL DEFAULT 0, data TEXT NOT NULL)`,
+     id TEXT PRIMARY KEY, created_at INTEGER NOT NULL, status TEXT NOT NULL, demo INTEGER NOT NULL DEFAULT 0, data TEXT NOT NULL,
+     last_progress_at INTEGER NOT NULL DEFAULT 0)`,
   `CREATE INDEX IF NOT EXISTS runs_created ON runs(created_at)`,
   `CREATE INDEX IF NOT EXISTS runs_status ON runs(status, demo, created_at)`,
   `CREATE TABLE IF NOT EXISTS events (run_id TEXT NOT NULL, idx INTEGER NOT NULL, data TEXT NOT NULL, PRIMARY KEY (run_id, idx))`,
@@ -28,8 +29,8 @@ const SCHEMA = [
 export const KINDS = ["signals", "clusters", "competitors", "gaps", "opportunities"] as const;
 export type Kind = (typeof KINDS)[number];
 
-/** A live run that has shown no progress for this long was interrupted (the workflow died). */
-export const STALE_RUN_MS = 40 * 60_000;
+/** A run that has written nothing to its log for this long was interrupted (the workflow died). */
+export const STALE_RUN_MS = 15 * 60_000;
 export const INTERRUPTED = "Interrupted: the research job stopped before this run finished. Start it again; saved searches replay from cache.";
 /** The home page shows the newest runs; older ones stay readable by id. */
 export const LIST_LIMIT = 50;
@@ -42,11 +43,25 @@ export function resetSchemaCache(db: D1Database): void {
   schemaReady.delete(db);
 }
 
+/**
+ * Tables created before the watchdog tracked progress lack `last_progress_at`; an ALTER is not
+ * idempotent in SQLite, so the column list is checked first. Old rows count their creation as
+ * their last progress, exactly as the earlier rule did.
+ */
+async function migrate(db: D1Database): Promise<void> {
+  const { results } = await db.prepare("PRAGMA table_info(runs)").all<{ name: string }>();
+  if (!results.some((c) => c.name === "last_progress_at")) {
+    await db.prepare("ALTER TABLE runs ADD COLUMN last_progress_at INTEGER NOT NULL DEFAULT 0").run();
+    await db.prepare("UPDATE runs SET last_progress_at = created_at, data = json_set(data, '$.lastProgressAt', created_at) WHERE last_progress_at = 0").run();
+  }
+  await db.prepare("CREATE INDEX IF NOT EXISTS runs_progress ON runs(status, last_progress_at)").run();
+}
+
 /** Creates the tables once per isolate. Idempotent, so a redeploy needs no migration step. */
 export function ensureSchema(db: D1Database): Promise<void> {
   let p = schemaReady.get(db);
   if (!p) {
-    p = db.batch(SCHEMA.map((sql) => db.prepare(sql))).then(() => undefined);
+    p = db.batch(SCHEMA.map((sql) => db.prepare(sql))).then(() => migrate(db));
     schemaReady.set(db, p);
     p.catch(() => schemaReady.delete(db)); // let the next request try again
   }
@@ -63,14 +78,22 @@ function parse<T>(text: string): T {
   return JSON.parse(text) as T;
 }
 
+/** Runs persisted before a field existed read as if it had its zero value. */
+function runOf(text: string): Run {
+  const stored = parse<Partial<Run> & Pick<Run, "id" | "createdAt">>(text);
+  return { searchCalls: 0, failedSearches: 0, outcome: null, lastProgressAt: stored.createdAt, ...stored } as Run;
+}
+
+const DEMO_DONE = "Replay finished.";
+
 export class Store {
   constructor(private readonly db: D1Database, private readonly settings: Settings) {}
 
   // ---- runs
 
   async createRun(run: Run): Promise<void> {
-    await this.db.prepare("INSERT INTO runs (id, created_at, status, demo, data) VALUES (?, ?, ?, ?, ?)")
-      .bind(run.id, run.createdAt, run.status, run.demo ? 1 : 0, JSON.stringify(run)).run();
+    await this.db.prepare("INSERT INTO runs (id, created_at, status, demo, data, last_progress_at) VALUES (?, ?, ?, ?, ?, ?)")
+      .bind(run.id, run.createdAt, run.status, run.demo ? 1 : 0, JSON.stringify(run), run.lastProgressAt).run();
   }
 
   /**
@@ -79,9 +102,9 @@ export class Store {
    */
   async createRunIfCapacity(run: Run, limit: number, now = nowMs()): Promise<boolean> {
     const res = await this.db.prepare(
-      `INSERT INTO runs (id, created_at, status, demo, data)
-       SELECT ?, ?, ?, 0, ? WHERE (SELECT COUNT(*) FROM runs WHERE status = 'running' AND demo = 0 AND created_at >= ?) < ?`,
-    ).bind(run.id, run.createdAt, run.status, JSON.stringify(run), now - STALE_RUN_MS, limit).run();
+      `INSERT INTO runs (id, created_at, status, demo, data, last_progress_at)
+       SELECT ?, ?, ?, 0, ?, ? WHERE (SELECT COUNT(*) FROM runs WHERE status = 'running' AND demo = 0 AND last_progress_at >= ?) < ?`,
+    ).bind(run.id, run.createdAt, run.status, JSON.stringify(run), run.lastProgressAt, now - STALE_RUN_MS, limit).run();
     return res.meta.changes === 1;
   }
 
@@ -143,24 +166,35 @@ export class Store {
 
   async getRun(runId: string): Promise<Run | null> {
     const row = await this.db.prepare("SELECT data FROM runs WHERE id = ?").bind(runId).first<RunRow>();
-    return row ? parse<Run>(row.data) : null;
+    return row ? runOf(row.data) : null;
   }
 
   async listRuns(limit = LIST_LIMIT): Promise<Run[]> {
     const { results } = await this.db.prepare("SELECT data FROM runs ORDER BY created_at DESC, id DESC LIMIT ?").bind(limit).all<RunRow>();
-    return results.map((r) => parse<Run>(r.data));
+    return results.map((r) => runOf(r.data));
   }
 
   /**
-   * A live run that is still "running" long after it started was interrupted: nothing will finish
-   * it, so it is closed with an explanation instead of spinning forever in the browser.
+   * A run that is still "running" but has written nothing to its log for STALE_RUN_MS was
+   * interrupted: nothing will finish it, so it is closed with an explanation instead of spinning
+   * forever in the browser. A recorded example in that state has every result already (the stream
+   * only paces its trace), so it is closed as complete.
    */
   async failStaleRuns(now = nowMs()): Promise<number> {
-    const { results } = await this.db.prepare("SELECT data FROM runs WHERE status = 'running' AND demo = 0 AND created_at < ?")
+    const { results } = await this.db.prepare("SELECT data FROM runs WHERE status = 'running' AND last_progress_at < ?")
       .bind(now - STALE_RUN_MS).all<RunRow>();
     for (const r of results) {
-      const run = parse<Run>(r.data);
+      const run = runOf(r.data);
       // two requests can see the same stale run; only the one that makes the transition closes it
+      if (run.demo) {
+        if (!(await this.finishIfRunning(run.id, { status: "complete", finishedAt: now }))) continue;
+        await this.appendEvents(run.id, [
+          { type: "stage", stage: "done", message: DEMO_DONE, level: "ok" },
+          { type: "status", status: "complete" },
+          { type: "done", runId: run.id, searchesUsed: run.searchesUsed },
+        ]);
+        continue;
+      }
       if (!(await this.finishIfRunning(run.id, { status: "failed", finishedAt: now, error: INTERRUPTED }))) continue;
       await this.appendEvents(run.id, [
         { type: "stage", stage: "error", message: INTERRUPTED, level: "error" },
@@ -173,16 +207,27 @@ export class Store {
 
   // ---- search calls, cache and quota
 
-  /** `rows` is the cached normalised result; it never travels to the browser. */
+  /**
+   * `rows` is the cached normalised result; it never travels to the browser. The run's own
+   * `searchCalls` / `failedSearches` counters move in the same batch, so the summary a viewer reads
+   * mid-run agrees with the log.
+   */
   async addSearchCall(call: SearchCall, rows: Row[] | null): Promise<void> {
     const { __rows: _ignored, ...params } = call.params as Record<string, unknown>;
     void _ignored;
     const data = JSON.stringify({ ...call, params });
-    await this.db.prepare(
-      `INSERT INTO search_calls (id, run_id, seq, params_hash, status, billed, created_at, data, rows)
-       SELECT ?, ?, COALESCE(MAX(seq), 0) + 1, ?, ?, ?, ?, ?, ? FROM search_calls WHERE run_id = ?`,
-    ).bind(call.id, call.runId, call.paramsHash, call.status, call.billed ? 1 : 0, call.createdAt, data,
-      rows === null ? null : JSON.stringify(rows), call.runId).run();
+    await this.db.batch([
+      this.db.prepare(
+        `INSERT INTO search_calls (id, run_id, seq, params_hash, status, billed, created_at, data, rows)
+         SELECT ?, ?, COALESCE(MAX(seq), 0) + 1, ?, ?, ?, ?, ?, ? FROM search_calls WHERE run_id = ?`,
+      ).bind(call.id, call.runId, call.paramsHash, call.status, call.billed ? 1 : 0, call.createdAt, data,
+        rows === null ? null : JSON.stringify(rows), call.runId),
+      this.db.prepare(
+        `UPDATE runs SET data = json_set(data,
+           '$.searchCalls', COALESCE(json_extract(data, '$.searchCalls'), 0) + 1,
+           '$.failedSearches', COALESCE(json_extract(data, '$.failedSearches'), 0) + ?) WHERE id = ?`,
+      ).bind(call.status === "failed" ? 1 : 0, call.runId),
+    ]);
   }
 
   async searchCallById(id: string): Promise<SearchCall | null> {
@@ -223,11 +268,20 @@ export class Store {
   }
 
   /**
-   * Why a NEW live run cannot start, or null. Besides the search guards it reserves a whole run's
-   * budget: a run that would hit the hourly or monthly guard halfway would spend LLM calls and
-   * then fail, so it is refused up front.
+   * Why a NEW live run cannot start, or null. Every live start counts against RUNS_PER_HOUR,
+   * billed or not (a run answered from the cache still spends LLM calls and holds the run slot).
+   * Besides the search guards it reserves a whole run's budget: a run that would hit the hourly or
+   * monthly guard halfway would spend LLM calls and then fail, so it is refused up front.
    */
   async runStartBlock(now = nowMs()): Promise<string | null> {
+    const perHour = runsPerHour(this.settings);
+    if (perHour === 0) return "New research runs are switched off (RUNS_PER_HOUR=0). The recorded example still works.";
+    const { results: starts } = await this.db.prepare("SELECT created_at FROM runs WHERE demo = 0 AND created_at >= ? ORDER BY created_at")
+      .bind(now - 3_600_000).all<{ created_at: number }>();
+    if (starts.length >= perHour) {
+      const minutes = Math.max(1, Math.ceil((starts[starts.length - perHour].created_at + 3_600_000 - now) / 60_000));
+      return `The limit of ${perHour} research run${perHour === 1 ? "" : "s"} per hour is reached. The next run can start in about ${minutes} minute${minutes === 1 ? "" : "s"}.`;
+    }
     const blocked = await this.quotaBlock(now);
     if (blocked) return blocked;
     const need = runSearchBudget(this.settings);
@@ -254,6 +308,7 @@ export class Store {
     const month = await this.billedSearchesThisMonth(now);
     if (month >= monthLimit) return `This month's search budget is used up (${month} of ${monthLimit}). It resets on the 1st.`;
     const limit = hourlyRateGuard(this.settings);
+    if (limit === 0) return "Billed searches are switched off (HOURLY_SEARCH_GUARD=0). The recorded example still works.";
     const { results } = await this.db.prepare("SELECT created_at FROM search_calls WHERE billed = 1 AND created_at >= ? ORDER BY created_at")
       .bind(now - 3_600_000).all<{ created_at: number }>();
     if (results.length >= limit) {
@@ -291,14 +346,11 @@ export class Store {
     return results.map((r) => this.evidenceOf(runId, r));
   }
 
-  private async add(kind: Kind, runId: string, rows: object[]): Promise<void> {
-    if (!rows.length) return;
-    const stmt = this.db.prepare(
-      "INSERT INTO entities (run_id, kind, seq, data) SELECT ?, ?, COALESCE(MAX(seq), 0) + 1, ? FROM entities WHERE run_id = ? AND kind = ?",
-    );
-    await this.db.batch(rows.map((r) => stmt.bind(runId, kind, JSON.stringify(r), runId, kind)));
-  }
-
+  /**
+   * Replaces a kind wholesale in one batch. Every writer hands over the complete list for the run
+   * (the pipeline writes each kind once, from its own state), so a unit that is retried after a
+   * crash leaves exactly one copy of every row instead of appending a second.
+   */
   private async set(kind: Kind, runId: string, rows: object[]): Promise<void> {
     const stmts = [this.db.prepare("DELETE FROM entities WHERE run_id = ? AND kind = ?").bind(runId, kind)];
     const insert = this.db.prepare("INSERT INTO entities (run_id, kind, seq, data) VALUES (?, ?, ?, ?)");
@@ -311,8 +363,8 @@ export class Store {
     return results.map((r) => parse<T>(r.data));
   }
 
-  addSignals = (runId: string, rows: Signal[]) => this.add("signals", runId, rows);
-  addCompetitors = (runId: string, rows: Competitor[]) => this.add("competitors", runId, rows);
+  setSignals = (runId: string, rows: Signal[]) => this.set("signals", runId, rows);
+  setCompetitors = (runId: string, rows: Competitor[]) => this.set("competitors", runId, rows);
   setClusters = (runId: string, rows: Cluster[]) => this.set("clusters", runId, rows);
   setGaps = (runId: string, rows: Gap[]) => this.set("gaps", runId, rows);
   setOpportunities = (runId: string, rows: Opportunity[]) => this.set("opportunities", runId, rows);
@@ -324,17 +376,23 @@ export class Store {
 
   // ---- step events
 
+  /** Every persisted event is progress: the watchdog measures silence from here. */
+  private touch(runId: string, now = nowMs()): D1PreparedStatement {
+    return this.db.prepare("UPDATE runs SET last_progress_at = ?, data = json_set(data, '$.lastProgressAt', ?) WHERE id = ?").bind(now, now, runId);
+  }
+
   async setEvents(runId: string, events: StepEvent[]): Promise<void> {
     const stmts = [this.db.prepare("DELETE FROM events WHERE run_id = ?").bind(runId)];
     const insert = this.db.prepare("INSERT INTO events (run_id, idx, data) VALUES (?, ?, ?)");
     events.forEach((e, i) => stmts.push(insert.bind(runId, i, JSON.stringify(e))));
+    stmts.push(this.touch(runId));
     await this.db.batch(stmts);
   }
 
   async appendEvents(runId: string, events: StepEvent[]): Promise<void> {
     if (!events.length) return;
     const stmt = this.db.prepare("INSERT INTO events (run_id, idx, data) SELECT ?, COALESCE(MAX(idx) + 1, 0), ? FROM events WHERE run_id = ?");
-    await this.db.batch(events.map((e) => stmt.bind(runId, JSON.stringify(e), runId)));
+    await this.db.batch([...events.map((e) => stmt.bind(runId, JSON.stringify(e), runId)), this.touch(runId)]);
   }
 
   /** Events from `fromIndex` on, as [index, event]. */
