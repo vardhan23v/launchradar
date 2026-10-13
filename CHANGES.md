@@ -398,3 +398,6 @@ in a browser afterwards.
 - Not changed, on purpose: a search id that only this browser knows still answers 200 (the page
   is a per-visitor working document); the "Saved (n)" pill lives in the menu on phones; the
   blocked-reason text for a server without keys is written for whoever runs the server.
+- Seen on the live site afterwards: in a narrow panel (under 420 px) the idea's title now takes a
+  row of its own under the monogram and the score, so no word is ever split; link previews of
+  searches saved before lookups were counted no longer say "from 0 lookups".

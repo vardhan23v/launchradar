@@ -213,10 +213,11 @@ export default function DetailPanel({
           data-print-body=""
           className="flex-1 space-y-5 overflow-y-auto overscroll-contain px-5 py-6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-400/40 sm:px-7"
         >
-          <div className="flex items-start gap-4">
+          {/* on a narrow panel the title takes a row of its own under the monogram and the score, so no word is split */}
+          <div className="flex flex-wrap items-start gap-4">
             <Monogram title={item.title} size="lg" />
-            <div className="min-w-0 flex-1">
-              <h2 id="lr3-detail-title" className="text-balance text-xl font-semibold tracking-tight text-white [overflow-wrap:anywhere] sm:text-2xl">
+            <div className="order-3 min-w-0 basis-full min-[420px]:order-2 min-[420px]:basis-0 min-[420px]:flex-1">
+              <h2 id="lr3-detail-title" className="text-balance text-xl font-semibold tracking-tight text-white [overflow-wrap:break-word] sm:text-2xl">
                 {item.title}
               </h2>
               <div className="mt-2 flex flex-wrap gap-1.5">
@@ -225,7 +226,9 @@ export default function DetailPanel({
                 <ConfidenceBadge value={item.confidence} />
               </div>
             </div>
-            <ScoreDial score={item.score} size="md" />
+            <div className="order-2 ml-auto min-[420px]:order-3 min-[420px]:ml-0">
+              <ScoreDial score={item.score} size="md" />
+            </div>
           </div>
 
           <p className="text-pretty text-lg leading-relaxed text-zinc-100">

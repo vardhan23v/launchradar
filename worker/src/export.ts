@@ -61,7 +61,9 @@ export function runMeta(run: Run, counts: RunCounts): RunMeta {
   else if (counts.opportunities === 0) summary = "Done, but no idea was found.";
   else {
     const proof = run.outcome === "limited" ? ", with less proof than usual" : "";
-    summary = `${count(counts.opportunities, "idea")} from ${count(run.searchCalls, "lookup")} across ${count(counts.evidence, "web page")}${proof}.`;
+    // rows saved before lookups were counted have 0 here; the sentence then says what it knows
+    const from = run.searchCalls > 0 ? ` from ${count(run.searchCalls, "lookup")}` : "";
+    summary = `${count(counts.opportunities, "idea")}${from} across ${count(counts.evidence, "web page")}${proof}.`;
   }
   return {
     id: run.id, question: run.question, region: run.region, status: run.status, outcome: run.outcome, demo: run.demo,
