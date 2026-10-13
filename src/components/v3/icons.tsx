@@ -105,6 +105,18 @@ export const ChevronDownIcon = (p: P) => (
     <path d="m6 9 6 6 6-6" />
   </Svg>
 );
+export const DownloadIcon = (p: P) => (
+  <Svg {...p}>
+    <path d="M12 4v11M7 10l5 5 5-5" />
+    <path d="M4 17v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2" />
+  </Svg>
+);
+export const KeyboardIcon = (p: P) => (
+  <Svg {...p}>
+    <rect x="3" y="6" width="18" height="12" rx="2" />
+    <path d="M7 10h.01M11 10h.01M15 10h.01M17 10h.01M7 14h10" />
+  </Svg>
+);
 
 /** The radar mark: rings, a sweeping beam and a pulsing blip. */
 export function RadarLogo({ size = 28 }: { size?: number }) {

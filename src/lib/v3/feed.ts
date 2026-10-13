@@ -12,6 +12,7 @@
 import { safeUrl } from "@/lib/evidence";
 import type { Evidence, GapStatus, Opportunity, RunView } from "@/lib/types";
 import { CITE_RE, citeGroups } from "@/lib/evidence";
+import { trendFor, type TrendSeries } from "@/lib/v3/trends";
 
 export type SortKey = "score" | "momentum" | "newest";
 export type DateRange = "today" | "week" | "all";
@@ -113,6 +114,16 @@ export const HOW_IT_WORKS: string[] = [
   "Complaints nobody solves yet become ideas, each with a score and the pages we read.",
 ];
 
+/** Ready-made topics offered under the box in the new-search dialog: simple, specific, one click to try. */
+export const TOPIC_IDEAS: string[] = [
+  "homework help for Class 10 students in India",
+  "meal planning for nurses",
+  "pet sitting in Bengaluru",
+  "learning guitar as an adult",
+  "pocket money apps for teens",
+  "finding a cricket ground to rent",
+];
+
 export const REGIONS: { code: string; label: string }[] = [
   { code: "in", label: "India" },
   { code: "us", label: "United States" },
@@ -175,11 +186,18 @@ export interface FeedItem {
   footnotes: Record<string, number>;
   /** lower-cased, citation-free text of everything the detail panel shows, for search */
   haystack: string;
+  /** the Google Trends line behind "Getting popular", when the search collected one */
+  trend?: TrendSeries | null;
 }
 
 /** Remove [E1,E2] citation markers from prose (they become footnotes in the detail panel). */
 export function stripCites(text: string): string {
-  return (text ?? "").replace(new RegExp(`\\s*${CITE_RE.source}`, "g"), "").replace(/\s+([.,;:])/g, "$1").trim();
+  // [E1,E2] become footnotes; [G1]-style markers (what's-missing ids written into prose) mean nothing to a reader
+  return (text ?? "")
+    .replace(new RegExp(`\\s*${CITE_RE.source}`, "g"), "")
+    .replace(/\s*\[(?:G\d+)(?:\s*,\s*G\d+)*\]/g, "")
+    .replace(/\s+([.,;:])/g, "$1")
+    .trim();
 }
 
 function firstSentence(text: string, max = 160): string {
@@ -260,6 +278,7 @@ export function itemsForView(v: RunView, superseded = false): FeedItem[] {
       sources,
       footnotes,
       haystack,
+      trend: trendFor(v, o),
     };
   });
 }
@@ -359,6 +378,57 @@ export function sortItems(items: FeedItem[], sort: SortKey): FeedItem[] {
   if (sort === "momentum") out.sort((a, b) => b.momentum - a.momentum || byScore(a, b));
   if (sort === "newest") out.sort((a, b) => b.createdAt - a.createdAt || byScore(a, b));
   return out;
+}
+
+/** The address that opens one idea on its search page (`?idea=` is read by the run page). `origin` makes it absolute. */
+export function ideaLink(item: Pick<FeedItem, "runId" | "opportunity">, origin = ""): string {
+  return `${origin}/runs/${encodeURIComponent(item.runId)}?idea=${encodeURIComponent(item.opportunity.id)}`;
+}
+
+/** The columns of the ideas spreadsheet, in order. */
+export const IDEA_COLUMNS: string[] = [
+  "Rank",
+  "Idea",
+  "Idea score",
+  ...SUB_SCORES.map((s) => s.label),
+  "Is it solved?",
+  "How sure we are",
+  "Who it's for",
+  "The problem",
+  "What's missing",
+  "Country",
+  "Topic",
+  "Link",
+  "Web pages",
+];
+
+const round1 = (n: number | undefined) => Math.round((n ?? 0) * 10) / 10;
+
+/**
+ * One spreadsheet row per idea, in the order given (the rank is the position in that order), in
+ * the same words the cards use. Citation markers are stripped from the prose. `origin` (the site's
+ * address, e.g. location.origin) makes the links absolute.
+ */
+export function ideaRows(items: FeedItem[], origin: string): Record<string, string | number>[] {
+  return items.map((it, i) => {
+    const o = it.opportunity;
+    const row: Record<string, string | number> = {
+      Rank: i + 1,
+      Idea: it.title,
+      "Idea score": round1(it.score),
+    };
+    for (const s of SUB_SCORES) row[s.label] = round1(o.subScores?.[s.key]);
+    row["Is it solved?"] = it.gapStatus ? GAP_LABEL[it.gapStatus] : "";
+    row["How sure we are"] = sureLabel(it.confidence);
+    row["Who it's for"] = o.target ?? "";
+    row["The problem"] = stripCites(o.problem);
+    row["What's missing"] = stripCites(o.gap);
+    row.Country = regionLabel(it.region);
+    row.Topic = it.question;
+    row.Link = ideaLink(it, origin);
+    row["Web pages"] = it.sources.length;
+    return row;
+  });
 }
 
 /** Counts per filter value over all items, so a filter never offers a choice that shows nothing. */

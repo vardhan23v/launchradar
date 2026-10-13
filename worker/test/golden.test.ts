@@ -9,8 +9,9 @@ import { verifyQuote } from "../src/citations";
 import { LlmClient } from "../src/llm";
 import { initialState, makeCtx, runPipeline, runUnit } from "../src/pipeline";
 import { SerpApiService } from "../src/serpapi";
+import { INTERRUPTED, Store } from "../src/store";
 import type { Opportunity, RunView, StepEvent } from "../src/types";
-import { nowMs } from "../src/utils";
+import { nowMs, sleep } from "../src/utils";
 import { citeGroups } from "../src/utils";
 import { fakeFetch, freshStore, LIVE, makeRun } from "./fakes";
 
@@ -154,43 +155,118 @@ describe("pipeline (in-process)", () => {
   });
 });
 
+type PhaseInfo = { phase: string; i: number; status: string | null; units: number } | null;
+
+/** Scripted answers through the global fetch: the Worker, the Durable Object and this test share one isolate, so that is the seam. */
+function stubNetwork(calls: string[] = []): void {
+  vi.stubGlobal("fetch", async (input: string | URL | Request, init?: RequestInit) => {
+    const url = input instanceof Request ? input.url : String(input);
+    calls.push(new URL(url).hostname);
+    return fakeFetch()(url, init ?? {});
+  });
+}
+
+async function startThroughWorker(): Promise<{ id: string; mode: string }> {
+  const started = await SELF.fetch("https://api.test/api/runs", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ question: "meal kits for bachelors", region: "us" }) });
+  expect(started.status).toBe(201);
+  return started.json() as Promise<{ id: string; mode: string }>;
+}
+
+/** Alarms fire on their own in the test runtime, one unit each: poll the object's position until `ready`. */
+async function phaseUntil(stub: { phase(): Promise<PhaseInfo> }, ready: (p: PhaseInfo) => boolean): Promise<PhaseInfo> {
+  let phase = await stub.phase();
+  for (let waited = 0; !ready(phase) && waited < 30_000; waited += 20) {
+    await sleep(20);
+    phase = await stub.phase();
+  }
+  return phase;
+}
+
+function parseStream(body: string): StepEvent[] {
+  return body.split("\n\n").map((b) => /^data: (.*)$/m.exec(b)?.[1]).filter((d): d is string => Boolean(d)).map((d) => JSON.parse(d) as StepEvent);
+}
+
 describe("pipeline (Worker + Durable Object)", () => {
-  afterEach(() => vi.unstubAllGlobals());
+  afterEach(() => {
+    vi.unstubAllGlobals();
+    vi.restoreAllMocks();
+  });
 
   it("runs a question in the background, one unit per alarm, and streams the trace", async () => {
     await freshStore(LIVE);
-    // the Worker, the Durable Object and this test share one isolate, so the global fetch is the seam
     const calls: string[] = [];
-    vi.stubGlobal("fetch", async (input: string | URL | Request, init?: RequestInit) => {
-      const url = input instanceof Request ? input.url : String(input);
-      calls.push(new URL(url).hostname);
-      return fakeFetch()(url, init ?? {});
-    });
-
-    const started = await SELF.fetch("https://api.test/api/runs", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ question: "meal kits for bachelors", region: "us" }) });
-    expect(started.status).toBe(201);
-    const { id, mode } = await started.json() as { id: string; mode: string };
+    stubNetwork(calls);
+    const { id, mode } = await startThroughWorker();
     expect(mode).toBe("live");
 
-    // alarms fire on their own in the test runtime, one unit each; wait for the last one
     const stub = env.RUNNER.get(env.RUNNER.idFromName(id));
-    let phase = await stub.phase();
-    for (let waited = 0; phase?.phase !== "done" && waited < 30_000; waited += 50) {
-      await new Promise((r) => setTimeout(r, 50));
-      phase = await stub.phase();
-    }
+    const phase = await phaseUntil(stub, (p) => p?.phase === "done");
     expect(phase).toMatchObject({ phase: "done", status: "complete" });
     expect(phase?.units).toBeGreaterThan(20); // one unit per alarm: searches, LLM calls and bookkeeping
     expect(new Set(calls)).toEqual(new Set(["serpapi.com", "llm.test"]));
 
     const v = await (await SELF.fetch(`https://api.test/api/runs/${id}`)).json() as RunView;
     const body = await (await SELF.fetch(`https://api.test/api/runs/${id}/stream`)).text();
-    const events = body.split("\n\n").map((b) => /^data: (.*)$/m.exec(b)?.[1]).filter((d): d is string => Boolean(d)).map((d) => JSON.parse(d) as StepEvent);
+    const events = parseStream(body);
     checkView(v, events);
     expect(body.startsWith("retry: 2000\n\n")).toBe(true);
     expect(v.searchCalls.every((c) => !("api_key" in c.params))).toBe(true);
     const dump = await dumpTables();
     expect(dump).not.toContain("serp-secret");
     expect(dump).not.toContain("llm-secret");
+
+    // the link preview and the run list count the same ideas, from counts alone
+    const meta = await (await SELF.fetch(`https://api.test/api/runs/${id}/meta`)).json();
+    expect(meta).toEqual({
+      id, question: "meal kits for bachelors", region: "us", status: "complete", outcome: "full", demo: false, createdAt: v.run.createdAt, finishedAt: v.run.finishedAt,
+      ideas: 1, complaints: 2, products: 1, lookups: v.searchCalls.length, failedSearches: 0,
+      summary: `1 idea from ${v.searchCalls.length} lookups across ${v.evidence.length} web pages.`,
+    });
+    const list = await (await SELF.fetch("https://api.test/api/runs")).json() as { runs: { id: string; ideas: number }[] };
+    expect(list.runs.find((r) => r.id === id)?.ideas).toBe(1);
+  });
+
+  it("closes the run as interrupted, at once, when an alarm fails outside the pipeline", async () => {
+    await freshStore(LIVE);
+    stubNetwork();
+    // Every alarm builds its own Store and reads the run before it runs a unit, so once armed, the
+    // first read on a Store never seen before is the next alarm's own: a database outage at a point
+    // the pipeline's error handling cannot see (a prototype spy reaches the object: one isolate)
+    const real = Store.prototype.getRun;
+    const seen = new WeakSet<Store>();
+    let armed = false, blown = false;
+    vi.spyOn(Store.prototype, "getRun").mockImplementation(async function (this: Store, runId: string) {
+      if (armed && !blown && !seen.has(this)) {
+        blown = true;
+        throw new Error("D1_ERROR: storage unavailable");
+      }
+      seen.add(this);
+      return real.call(this, runId);
+    });
+
+    const { id } = await startThroughWorker();
+    const stub = env.RUNNER.get(env.RUNNER.idFromName(id));
+    // a few units in (lookups already made), the next alarm fails before it can run a unit
+    let phase = await phaseUntil(stub, (p) => (p?.units ?? 0) >= 6);
+    expect(phase?.phase).not.toBe("done");
+    armed = true;
+    phase = await phaseUntil(stub, (p) => p?.phase === "done");
+    expect(blown).toBe(true);
+    expect(phase).toMatchObject({ phase: "done", status: "failed" });
+    // no alarm follows: the unit count stays where it was
+    await sleep(200);
+    expect((await stub.phase())?.units).toBe(phase?.units);
+
+    const v = await (await SELF.fetch(`https://api.test/api/runs/${id}`)).json() as RunView;
+    expect(v.run).toMatchObject({ status: "failed", error: INTERRUPTED, outcome: null });
+    expect(v.run.finishedAt).not.toBeNull();
+    expect(v.searchCalls.length).toBeGreaterThan(0); // the lookups it made are kept (and reused by the cache)
+    expect(v.run.searchCalls).toBe(v.searchCalls.length);
+    const events = parseStream(await (await SELF.fetch(`https://api.test/api/runs/${id}/stream`)).text());
+    expect(events.filter((e) => e.type === "stage" && e.message === INTERRUPTED)).toHaveLength(1);
+    expect(events.slice(-2).map((e) => e.type)).toEqual(["status", "done"]);
+    expect(events.filter((e) => e.type === "done")).toHaveLength(1);
+    const meta = await (await SELF.fetch(`https://api.test/api/runs/${id}/meta`)).json();
+    expect(meta).toMatchObject({ status: "failed", summary: "Stopped before it finished.", lookups: v.searchCalls.length, ideas: 0 });
   });
 });

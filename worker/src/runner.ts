@@ -6,6 +6,7 @@
  */
 import { DurableObject } from "cloudflare:workers";
 
+import { scrubSecrets } from "./config";
 import type { Env } from "./env";
 import { initialState, makeCtx, runUnit, type PipelineState } from "./pipeline";
 import { ensureSchema, Store } from "./store";
@@ -24,18 +25,41 @@ export class ResearchRunner extends DurableObject<Env> {
   override async alarm(): Promise<void> {
     const state = await this.ctx.storage.get<PipelineState>(STATE);
     if (!state || state.phase === "done") return;
-    await ensureSchema(this.env.DB);
-    const store = new Store(this.env.DB, this.env);
-    const run = await store.getRun(state.runId);
-    if (!run || run.status !== "running") {
-      // closed as interrupted (or deleted): spend nothing more on it
-      await this.ctx.storage.put(STATE, { ...state, phase: "done", status: run?.status === "complete" ? "complete" : "failed" });
-      return;
+    try {
+      await ensureSchema(this.env.DB);
+      const store = new Store(this.env.DB, this.env);
+      const run = await store.getRun(state.runId);
+      if (!run || run.status !== "running") {
+        // closed as interrupted (or deleted): spend nothing more on it
+        await this.ctx.storage.put(STATE, { ...state, phase: "done", status: run?.status === "complete" ? "complete" : "failed" });
+        return;
+      }
+      const next = await runUnit(makeCtx(store, this.env, state.runId), state);
+      const units = ((await this.ctx.storage.get<number>(UNITS)) ?? 0) + 1;
+      await this.ctx.storage.put({ [STATE]: next, [UNITS]: units });
+      if (next.phase !== "done") await this.ctx.storage.setAlarm(Date.now());
+    } catch (err) {
+      // a failure the pipeline could not handle itself (the database or this object's storage):
+      // close the run now, in the words the watchdog uses, and set no further alarm. Left to the
+      // platform, the alarm would be retried for a while and then dropped with the run still "running".
+      console.error("alarm failed", scrubSecrets(err instanceof Error ? `${err.name}: ${err.message}` : String(err), this.env));
+      await this.abandon(state);
     }
-    const next = await runUnit(makeCtx(store, this.env, state.runId), state);
-    const units = ((await this.ctx.storage.get<number>(UNITS)) ?? 0) + 1;
-    await this.ctx.storage.put({ [STATE]: next, [UNITS]: units });
-    if (next.phase !== "done") await this.ctx.storage.setAlarm(Date.now());
+  }
+
+  /** Closes the run as interrupted if it is still running, and marks the pipeline done so no alarm follows. */
+  private async abandon(state: PipelineState): Promise<void> {
+    let status: "complete" | "failed" = "failed";
+    try {
+      const store = new Store(this.env.DB, this.env);
+      const run = await store.getRun(state.runId);
+      if (run?.status === "running") await store.closeInterrupted(run);
+      else if (run?.status === "complete") status = "complete";
+    } catch (err) {
+      // the database itself is out of reach: the watchdog closes the run the same way once it has been silent for 15 minutes
+      console.error("alarm close failed", scrubSecrets(err instanceof Error ? `${err.name}: ${err.message}` : String(err), this.env));
+    }
+    await this.ctx.storage.put(STATE, { ...state, phase: "done", status });
   }
 
   /** The pipeline's position, for tests and diagnostics. Never includes evidence text or keys. */

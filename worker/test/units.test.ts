@@ -6,10 +6,11 @@ import { loadFixture } from "../src/demo";
 import { hashParams, toRawParams } from "../src/engines";
 import { LlmClient, LlmError, parseJson } from "../src/llm";
 import { normalise } from "../src/normalise";
+import { runMeta } from "../src/export";
 import { cleanQuery, MAX_EXTRACT_ROWS, selectForExtraction, summariseOutcome, trendSlope } from "../src/pipeline";
 import { computeScore, type ScoreInput } from "../src/score";
 import { ensureSchema, INTERRUPTED, resetSchemaCache, Store } from "../src/store";
-import type { Evidence, StepEvent } from "../src/types";
+import type { Evidence, SearchCall, StepEvent } from "../src/types";
 import { citeGroups, keepKnownCitations, parseSerpDate } from "../src/utils";
 import { PipelineError, publicMessage } from "../src/pipeline";
 import { BudgetExceeded } from "../src/serpapi";
@@ -83,6 +84,22 @@ describe("run outcome", () => {
     expect(served.outcome).toBe("empty");
     expect(served.message).toBe("Done in 2.5s, but no idea was found: someone already solves each one.");
     expect(summariseOutcome(fine(16), [], 0, 0, 5, 2500).message).toContain("we couldn't work out what's missing");
+  });
+});
+
+describe("link preview", () => {
+  it("says in one sentence how a run went, from counts alone", () => {
+    const counts = { opportunities: 1, clusters: 2, competitors: 3, evidence: 1 };
+    const done = makeRun({ status: "complete", outcome: "full", searchCalls: 1, finishedAt: 2 });
+    expect(runMeta(done, counts).summary).toBe("1 idea from 1 lookup across 1 web page.");
+    expect(runMeta({ ...done, outcome: "limited", searchCalls: 16 }, { ...counts, opportunities: 3, evidence: 98 }).summary)
+      .toBe("3 ideas from 16 lookups across 98 web pages, with less proof than usual.");
+    expect(runMeta({ ...done, outcome: "empty" }, { ...counts, opportunities: 0 }).summary).toBe("Done, but no idea was found.");
+    expect(runMeta(makeRun(), counts).summary).toBe("Still searching.");
+    // the recorded example has every result from the start, so it never reads as still searching
+    expect(runMeta(makeRun({ demo: true, searchCalls: 8 }), counts).summary).toBe("1 idea from 8 lookups across 1 web page.");
+    expect(runMeta(makeRun({ status: "failed", error: INTERRUPTED }), counts).summary).toBe("Stopped before it finished.");
+    expect(runMeta(done, counts)).toMatchObject({ id: done.id, status: "complete", outcome: "full", ideas: 1, complaints: 2, products: 3, lookups: 1, failedSearches: 0 });
   });
 });
 
@@ -325,8 +342,11 @@ describe("store", () => {
     await Promise.all([store.appendEvents("r1", [{ type: "status", status: "running" }]), store.appendEvents("r1", [{ type: "status", status: "running" }])]);
     expect((await store.eventsFor("r1")).map(([i]) => i)).toEqual([0, 1]);
     await store.updateRun("r1", { questionType: "b2b" });
-    await Promise.all([store.chargeSearch("r1"), store.chargeSearch("r1")]);
-    expect(await store.getRun("r1")).toMatchObject({ questionType: "b2b", searchesUsed: 2 });
+    // a billed call's charge travels in the same batch as its record: two at once never lose an increment
+    const billed = (id: string): SearchCall => ({ id, runId: "r1", stage: "d", engine: "google", params: {}, paramsHash: "h", cached: false, status: "ok", latencyMs: 0, resultCount: 0, createdAt: 1, billed: true });
+    await Promise.all([store.addSearchCall(billed("sc_r1_1"), null), store.addSearchCall(billed("sc_r1_2"), null)]);
+    expect(await store.getRun("r1")).toMatchObject({ questionType: "b2b", searchesUsed: 2, searchCalls: 2, failedSearches: 0 });
+    expect((await store.searchCallsFor("r1")).map((c) => c.id).sort()).toEqual(["sc_r1_1", "sc_r1_2"]);
     await expect(store.updateRun("nope", { status: "failed" })).rejects.toThrow(/run not found/);
   });
 });

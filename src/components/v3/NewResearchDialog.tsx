@@ -2,9 +2,9 @@
 
 import { useId, useRef, useState } from "react";
 
-import { INTRO, REGIONS } from "@/lib/v3/feed";
+import { INTRO, REGIONS, TOPIC_IDEAS } from "@/lib/v3/feed";
 import { ChevronDownIcon, CloseIcon, RadarLogo } from "./icons";
-import { HowItWorks, useModal } from "./parts";
+import { HowItWorks, cx, useModal } from "./parts";
 
 const MAX = 300; // the server refuses longer topics
 
@@ -38,10 +38,20 @@ export default function NewResearchDialog({
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   useModal(dialogRef, onClose, inputRef);
-  const ids = { q: useId(), count: useId(), note: useId(), region: useId(), how: useId() };
+  const ids = { q: useId(), count: useId(), note: useId(), region: useId(), how: useId(), ideas: useId() };
 
   const trimmed = question.trim();
   const canStart = !busy && !blockedReason && trimmed.length > 0 && trimmed.length <= MAX;
+
+  /** A ready-made topic fills the box; focus goes to its end so the reader can change it. */
+  const pickTopic = (topic: string) => {
+    setQuestion(topic);
+    const el = inputRef.current;
+    if (!el) return;
+    el.focus();
+    // the box shows the new text after React renders; put the cursor after it then
+    window.requestAnimationFrame(() => el.setSelectionRange(el.value.length, el.value.length));
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center p-0 sm:items-center sm:p-6">
@@ -120,6 +130,29 @@ export default function NewResearchDialog({
             <p id={ids.count} className="mt-1 text-right font-mono text-xs tabular-nums text-zinc-400">
               {question.length} of {MAX} characters
             </p>
+            <p id={ids.ideas} className="mt-2 text-[13px] font-medium text-zinc-300">
+              Try one of these
+            </p>
+            <ul aria-labelledby={ids.ideas} className="mt-1.5 flex flex-wrap gap-1.5">
+              {TOPIC_IDEAS.map((topic) => {
+                const picked = trimmed === topic;
+                return (
+                  <li key={topic}>
+                    <button
+                      type="button"
+                      aria-pressed={picked}
+                      onClick={() => pickTopic(topic)}
+                      className={cx(
+                        "rounded-full border px-3 py-1 text-xs font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70",
+                        picked ? "border-indigo-400/50 bg-indigo-400/15 text-indigo-100" : "border-white/10 bg-white/[0.03] text-zinc-200 hover:border-indigo-400/40 hover:bg-indigo-400/10 hover:text-white",
+                      )}
+                    >
+                      {topic}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
 
           <div>

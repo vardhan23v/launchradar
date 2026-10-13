@@ -176,3 +176,22 @@ export function latestStageOf(view: RunView): string {
   if (i >= 0) return PIPELINE[i].label;
   return calls.length > 0 || view.evidence.length > 0 ? stageLabel("discover") : stageLabel("plan");
 }
+
+/** The step a search is on right now: from the latest step event the page has, else from what the view holds. */
+export function currentStageLabel(events: StepEvent[], view: RunView): string {
+  for (let i = events.length - 1; i >= 0; i--) {
+    const e = events[i];
+    const key = e ? stageOf(e) : null;
+    const at = key ? stageIndex(key) : -1;
+    if (at >= 0) return PIPELINE[at].label;
+  }
+  return latestStageOf(view);
+}
+
+/** How long something has taken, as mm:ss (minutes keep counting past 59). */
+export function elapsedLabel(ms: number): string {
+  const total = Math.max(0, Math.floor(ms / 1000));
+  const minutes = Math.floor(total / 60);
+  const seconds = total % 60;
+  return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}

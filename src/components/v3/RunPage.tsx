@@ -11,17 +11,18 @@
  * poll back each other up, and when both go quiet the page says so instead of pretending.
  */
 
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import type { Cluster, Evidence, RunView, Signal, StepEvent } from "@/lib/types";
 import { loadSavedRun, saveFinishedRun } from "@/lib/history";
-import { CALL_STATUS_LABEL, CATEGORY_LABEL, GAP_LABEL, itemsForView, regionLabel, sortItems, stripCites, type FeedItem, type Source } from "@/lib/v3/feed";
-import { PIPELINE, engineLabel, outcomeOf, parseStepEvent, searchStats, stageMostlyFailed, stageOf, type SearchStats } from "@/lib/v3/run";
+import { downloadText, toCsv } from "@/lib/v3/csv";
+import { CALL_STATUS_LABEL, CATEGORY_LABEL, GAP_LABEL, IDEA_COLUMNS, ideaRows, itemsForView, regionLabel, sortItems, stripCites, type FeedItem, type Source } from "@/lib/v3/feed";
+import { PIPELINE, currentStageLabel, elapsedLabel, engineLabel, outcomeOf, parseStepEvent, searchStats, stageIndex, stageMostlyFailed, stageOf, type SearchStats } from "@/lib/v3/run";
 import { loadIds, saveIds } from "@/lib/v3/storage";
 import { CardSkeleton, FeaturedCard, GridCard } from "./Cards";
 import DetailPanel from "./DetailPanel";
-import { UNREACHABLE, blockedReasonFor, fetchJson, useHome, useStartRun } from "./hooks";
+import { UNREACHABLE, blockedReasonFor, fetchJson, useDoneNotice, useHome, useRunTitle, useStartRun } from "./hooks";
 import { ArrowRightIcon, ExternalIcon, RadarLogo } from "./icons";
 import NewResearchDialog from "./NewResearchDialog";
 import { Badge, FOCUS_FALLBACK_ID, ScoreExplainer, Segmented, SourceLine, cx } from "./parts";
@@ -36,6 +37,48 @@ const POLL_MS = 2000;
 /** EventSource reconnects on its own (retry: 2 s); only a reconnect that takes this long counts as lost */
 const STREAM_GRACE_MS = 8000;
 const FAILED_POLLS_BEFORE_LOST = 3;
+/** `/runs/<id>?idea=O1` opens that idea's panel */
+const IDEA_PARAM = "idea";
+
+function readIdeaParam(): string | null {
+  try {
+    return new URL(window.location.href).searchParams.get(IDEA_PARAM);
+  } catch {
+    return null;
+  }
+}
+
+/** The page's address with (or without) the open idea, changed in place: no navigation, no history entry. */
+function writeIdeaParam(id: string | null): void {
+  try {
+    const url = new URL(window.location.href);
+    if (id) url.searchParams.set(IDEA_PARAM, id);
+    else url.searchParams.delete(IDEA_PARAM);
+    window.history.replaceState(null, "", url.toString());
+  } catch {
+    /* an address this page cannot rewrite: the panel still opens */
+  }
+}
+
+/** How long the search has been going, ticking once a second. Not a live region: a screen reader would never stop hearing it. */
+function Elapsed({ since }: { since: number }) {
+  const [now, setNow] = useState<number | null>(null);
+  useEffect(() => {
+    const tick = () => setNow(Date.now());
+    const first = window.setTimeout(tick, 0);
+    const timer = window.setInterval(tick, 1000);
+    return () => {
+      window.clearTimeout(first);
+      window.clearInterval(timer);
+    };
+  }, []);
+  return (
+    <span className="font-mono text-xs tabular-nums text-zinc-400" title="How long the search has been going">
+      <span className="sr-only">Running for </span>
+      {now === null ? "00:00" : elapsedLabel(now - since)}
+    </span>
+  );
+}
 
 function plural(n: number, w: string): string {
   return `${n} ${w}${n === 1 ? "" : /(s|ch|sh|x)$/.test(w) ? "es" : "s"}`;
@@ -45,8 +88,13 @@ function plural(n: number, w: string): string {
  * The one-paragraph story of the search, in plain words: what we did, what we found, and (when it
  * ended with little or nothing) why. While the search is still going the same facts read "so far".
  */
-function summary(view: RunView, stats: SearchStats, outcome: "full" | "limited" | "empty" | null, running: boolean): string {
-  const { run, evidence, signals, competitors, gaps } = view;
+function summary(view: RunView, stats: SearchStats, outcome: "full" | "limited" | "empty" | null, running: boolean, reached = Number.MAX_SAFE_INTEGER): string {
+  const { run, evidence } = view;
+  // a running search can only show what its steps so far produced (the example replays with everything present from the start)
+  const after = (stage: string) => !running || reached >= stageIndex(stage);
+  const signals = after("extract") ? view.signals : [];
+  const competitors = after("competitors") ? view.competitors : [];
+  const gaps = after("verify") ? view.gaps : [];
   if (running && stats.total === 0) return "Picking what to look up…";
   const lookups = plural(stats.total, "lookup");
   const pages = plural(evidence.length, "web page");
@@ -95,14 +143,14 @@ function Stepper({ events, status, stats }: { events: StepEvent[]; status: strin
           style={{ width: `${pct}%` }}
         />
       </div>
-      <ol className="mt-3 grid grid-cols-3 gap-x-2 gap-y-2 sm:grid-cols-4 md:grid-cols-7" aria-label="Search steps">
+      <ol className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2 sm:grid-cols-4 md:grid-cols-7" aria-label="Search steps">
         {PIPELINE.map((p, i) => {
           const past = done || i < reached;
           const now = !done && i === reached;
           // a step that lost most of its lookups is not a success, whatever came after it
           const warn = past && stageMostlyFailed(stats.byStage[i]);
           return (
-            <li key={p.id} className={cx("flex min-w-0 items-center gap-1.5 text-xs", now ? (failed ? "text-rose-300" : "text-indigo-200") : warn ? "text-amber-200" : past ? "text-zinc-200" : "text-zinc-400")}>
+            <li key={p.id} className={cx("flex min-w-0 items-start gap-1.5 text-xs leading-5", now ? (failed ? "text-rose-300" : "text-indigo-200") : warn ? "text-amber-200" : past ? "text-zinc-200" : "text-zinc-400")}>
               <span
                 aria-hidden="true"
                 className={cx(
@@ -112,7 +160,7 @@ function Stepper({ events, status, stats }: { events: StepEvent[]; status: strin
               >
                 {warn ? "!" : past ? "✓" : now && status === "running" ? <span className="size-1.5 rounded-full bg-indigo-300 motion-safe:animate-pulse" /> : i + 1}
               </span>
-              <span className="truncate">{p.label}</span>
+              <span className="min-w-0 [overflow-wrap:anywhere] md:truncate" title={p.label}>{p.label}</span>
               <span className="sr-only">
                 {warn
                   ? `, done, but ${stats.byStage[i].failed} of its ${stats.byStage[i].total} lookups didn't work`
@@ -292,7 +340,6 @@ function OutcomeNotice({ outcome, stats, onRerun, canRerun }: { outcome: "limite
 /* ------------------------------------------------------------------ page */
 
 export default function RunPage({ runId }: { runId: string }) {
-  const router = useRouter();
   const { home, down } = useHome();
   const { start, busy, error: startErr, clearError } = useStartRun();
   const [view, setView] = useState<RunView | null>(null);
@@ -306,6 +353,9 @@ export default function RunPage({ runId }: { runId: string }) {
   const [dialog, setDialog] = useState(false);
   const [shortlist, setShortlist] = useState<string[]>([]);
   const [exportState, setExportState] = useState<"idle" | "busy" | "failed">("idle");
+  const [csvState, setCsvState] = useState<"idle" | "failed">("idle");
+  // the idea named in the address, until its panel has been opened
+  const pendingIdea = useRef<string | null>(null);
   // the data effect below reads the current view without depending on it (a new view must not reconnect the stream)
   const viewRef = useRef<RunView | null>(null);
   useEffect(() => {
@@ -313,6 +363,15 @@ export default function RunPage({ runId }: { runId: string }) {
   }, [view]);
 
   const retry = useCallback(() => setAttempt((a) => a + 1), []);
+
+  const status = view?.run.status ?? null;
+  const question = view?.run.question ?? null;
+  useRunTitle(status, question);
+  const notice = useDoneNotice(runId, status, question);
+
+  useEffect(() => {
+    pendingIdea.current = readIdeaParam();
+  }, [runId]);
 
   // (1) a run the server knows, or (2) one saved in this browser; `attempt` re-runs it on manual retry
   useEffect(() => {
@@ -452,12 +511,7 @@ export default function RunPage({ runId }: { runId: string }) {
     try {
       const res = await fetch("/api/export", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(view) });
       if (!res.ok) throw new Error(String(res.status));
-      const url = URL.createObjectURL(new Blob([await res.text()], { type: "text/markdown" }));
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = `launchradar-${view.run.id}.md`;
-      link.click();
-      URL.revokeObjectURL(url);
+      downloadText(`launchradar-${view.run.id}.md`, await res.text(), "text/markdown;charset=utf-8");
       setExportState("idle");
     } catch {
       setExportState("failed");
@@ -467,8 +521,49 @@ export default function RunPage({ runId }: { runId: string }) {
   const items = useMemo(() => (view ? sortItems(itemsForView(view), "score") : []), [view]);
   const byId = useMemo(() => new Map((view?.evidence ?? []).map((e) => [e.id, e])), [view]);
   const stats = useMemo(() => searchStats(events, view?.run), [events, view]);
+  const reached = useMemo(() => events.reduce((best, e) => {
+    const key = e ? stageOf(e) : null;
+    return Math.max(best, key ? stageIndex(key) : -1);
+  }, -1), [events]);
   const outcome = useMemo(() => (view ? outcomeOf(view, stats) : null), [view, stats]);
-  const closeDetail = useCallback(() => setOpenItem(null), []);
+  const openDetail = useCallback((item: FeedItem) => {
+    setOpenItem(item);
+    writeIdeaParam(item.opportunity.id);
+  }, []);
+  const closeDetail = useCallback(() => {
+    setOpenItem(null);
+    writeIdeaParam(null);
+  }, []);
+
+  // `?idea=O1` opens that idea once the search's ideas are here (a search still going may add it later)
+  useEffect(() => {
+    const id = pendingIdea.current;
+    if (!id || !view) return;
+    const item = items.find((i) => i.opportunity.id === id);
+    if (!item) {
+      // a finished search with no such idea: nothing to open, and the address drops the stray part
+      if (view.run.status !== "running" && view.run.status !== "queued") {
+        pendingIdea.current = null;
+        writeIdeaParam(null);
+      }
+      return;
+    }
+    pendingIdea.current = null;
+    const t = window.setTimeout(() => openDetail(item), 0);
+    return () => window.clearTimeout(t);
+  }, [items, view, openDetail]);
+
+  // the same columns as the home page's download, so the two files line up
+  const exportCsv = useCallback(() => {
+    if (!view || items.length === 0) return;
+    try {
+      downloadText(`launchradar-${view.run.id}.csv`, toCsv(ideaRows(items, window.location.origin), IDEA_COLUMNS), "text/csv;charset=utf-8");
+      setCsvState("idle");
+    } catch {
+      setCsvState("failed");
+    }
+  }, [view, items]);
+
   const closeDialog = useCallback(() => {
     setDialog(false);
     clearError();
@@ -485,7 +580,7 @@ export default function RunPage({ runId }: { runId: string }) {
         crumb={crumb}
         actions={actions}
       />
-      <main className="relative mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6">{children}</main>
+      <main id="main" tabIndex={-1} className="relative mx-auto max-w-7xl scroll-mt-20 px-4 pb-24 pt-8 outline-none sm:px-6">{children}</main>
       {dialog && (
         <NewResearchDialog
           onClose={closeDialog}
@@ -529,16 +624,15 @@ export default function RunPage({ runId }: { runId: string }) {
               Try again
             </button>
           )}
-          <button
-            type="button"
-            onClick={() => router.push("/")}
+          <Link
+            href="/"
             className={cx(
               "inline-flex h-10 items-center rounded-xl px-4 text-sm font-semibold focus-visible:outline-none focus-visible:ring-2",
               notFound ? "bg-white text-zinc-900 hover:bg-indigo-50 focus-visible:ring-indigo-300" : "border border-white/10 text-zinc-200 hover:bg-white/[0.06] focus-visible:ring-indigo-400/70",
             )}
           >
             Back to all ideas
-          </button>
+          </Link>
         </div>
       </section>,
     );
@@ -568,7 +662,9 @@ export default function RunPage({ runId }: { runId: string }) {
   const date = new Date(run.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "long", year: "numeric" });
   const replayed = new Date(run.createdAt).toLocaleString(undefined, { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
   const crowded = view.gaps.filter((g) => g.status === "served");
-  const lookupCount = events.filter((e) => e?.type === "search_call").length;
+  const logged = events.filter((e) => e?.type === "search_call").length;
+  // while a search runs the log is the truth; once it is over the server's total covers a log still loading
+  const lookupCount = running ? logged : Math.max(logged, view?.run.searchCalls ?? 0);
 
   const statusBadge = disconnected ? (
     <Badge tone="amber">Lost connection</Badge>
@@ -616,8 +712,29 @@ export default function RunPage({ runId }: { runId: string }) {
           {run.question}
         </h1>
         <p className="max-w-3xl text-[15px] leading-relaxed text-zinc-300" aria-live="polite">
-          {summary(view, stats, outcome, running)}
+          {summary(view, stats, outcome, running, reached)}
         </p>
+        {running && (
+          <div className="flex max-w-3xl flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+            <p aria-live="polite" className="text-zinc-300">
+              Now: <span className="font-medium text-indigo-200">{currentStageLabel(events, view)}</span>
+            </p>
+            <Elapsed since={run.createdAt} />
+            {notice.available &&
+              (notice.wanted ? (
+                <span className="flex items-center gap-2 text-xs text-emerald-200">
+                  We&apos;ll tell you when it&apos;s done.
+                  <button type="button" onClick={() => void notice.toggle()} className="rounded text-zinc-300 underline decoration-zinc-500 underline-offset-2 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70">
+                    Don&apos;t tell me
+                  </button>
+                </span>
+              ) : (
+                <button type="button" onClick={() => void notice.toggle()} className={cx(retryButton, "h-8 text-xs text-zinc-200")}>
+                  Tell me when it&apos;s done
+                </button>
+              ))}
+          </div>
+        )}
         {disconnected && (
           <div role="status" aria-live="polite" className="flex max-w-3xl flex-wrap items-center gap-3 rounded-xl border border-amber-400/25 bg-amber-400/[0.07] px-4 py-3 text-sm text-amber-50">
             <span>Lost connection, trying again… The search keeps going on the server; this page will catch up.</span>
@@ -637,7 +754,9 @@ export default function RunPage({ runId }: { runId: string }) {
         </div>
       </header>
 
-      <Segmented name="lr3-section" label="Section" value={section} onChange={setSection} options={sections} className="max-w-full overflow-x-auto [&>label]:flex-none sm:[&>label]:flex-1" />
+      <div className="lr3-scroll-x">
+        <Segmented name="lr3-section" label="Section" value={section} onChange={setSection} options={sections} className="max-w-full overflow-x-auto [&>label]:flex-none sm:[&>label]:flex-1" />
+      </div>
 
       {section === "ideas" && (
         <section aria-label="Ideas" className="space-y-6">
@@ -664,7 +783,7 @@ export default function RunPage({ runId }: { runId: string }) {
                 scopeLabel="#1 in this search"
                 shortlisted={shortlist.includes(items[0].opportunity.id)}
                 onToggleShortlist={() => toggleShortlist(items[0])}
-                onOpen={() => setOpenItem(items[0])}
+                onOpen={() => openDetail(items[0])}
                 hideOrigin
               />
               {items.length > 1 && (
@@ -677,7 +796,7 @@ export default function RunPage({ runId }: { runId: string }) {
                         now={0}
                         shortlisted={shortlist.includes(item.opportunity.id)}
                         onToggleShortlist={() => toggleShortlist(item)}
-                        onOpen={() => setOpenItem(item)}
+                        onOpen={() => openDetail(item)}
                         hideOrigin
                       />
                     </li>
@@ -827,6 +946,20 @@ export default function RunPage({ runId }: { runId: string }) {
         <ExternalIcon size={15} />
         <span className="sr-only sm:not-sr-only">{exportState === "busy" ? "Downloading…" : exportState === "failed" ? "Download didn't work, try again" : "Download"}</span>
       </button>
+      {items.length > 0 && (
+        <button
+          type="button"
+          onClick={exportCsv}
+          title="Download this search's ideas as a spreadsheet file (CSV)"
+          className="inline-flex h-10 items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-3 text-sm text-zinc-200 transition-all duration-200 hover:border-white/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70"
+        >
+          <svg width={15} height={15} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M4 10h16M4 15h16M10 4v16" />
+          </svg>
+          <span className="sr-only sm:not-sr-only">{csvState === "failed" ? "CSV didn't work, try again" : "Ideas (CSV)"}</span>
+        </button>
+      )}
     </>,
   );
 }

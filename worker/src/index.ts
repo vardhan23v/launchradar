@@ -9,8 +9,8 @@
 import * as config from "./config";
 import { listDemos, startDemoRun } from "./demo";
 import type { Env } from "./env";
-import { asRunView, exportMarkdown } from "./export";
-import { ensureSchema, Store } from "./store";
+import { asRunView, exportMarkdown, runMeta } from "./export";
+import { ensureSchema, STALE_RUN_MS, Store } from "./store";
 import { encodeEvent, followRunEvents, RETRY_MS, sseResponse } from "./stream";
 import type { Run } from "./types";
 import { isRecord, makeId, nowMs } from "./utils";
@@ -103,17 +103,18 @@ function parseStart(body: unknown): StartRequest | null {
   return { question, region, demo };
 }
 
+type RunSub = "view" | "meta" | "stream" | "export";
 type Route =
   | { kind: "health" } | { kind: "runs" } | { kind: "export-view" }
-  | { kind: "run"; runId: string; sub: "view" | "stream" | "export" };
+  | { kind: "run"; runId: string; sub: RunSub };
 
 function route(path: string): Route | null {
   if (path === "/api/health") return { kind: "health" };
   if (path === "/api/runs") return { kind: "runs" };
   if (path === "/api/export") return { kind: "export-view" };
-  const m = /^\/api\/runs\/([^/]+)(?:\/(stream|export))?$/.exec(path);
+  const m = /^\/api\/runs\/([^/]+)(?:\/(meta|stream|export))?$/.exec(path);
   if (!m) return null;
-  return { kind: "run", runId: m[1], sub: (m[2] as "stream" | "export" | undefined) ?? "view" };
+  return { kind: "run", runId: m[1], sub: (m[2] as Exclude<RunSub, "view"> | undefined) ?? "view" };
 }
 
 async function startRun(request: Request, env: Env, store: Store): Promise<Response> {
@@ -188,7 +189,9 @@ async function handle(request: Request, env: Env): Promise<Response> {
 
   if (r.kind === "health") {
     if (method !== "GET" && method !== "HEAD") return error(405, "Method not allowed");
-    return json({ ok: true });
+    await ensureSchema(env.DB);
+    // one indexed count, so a database outage fails the check — as it should
+    return json({ ok: true, time: new Date(nowMs()).toISOString(), runs: { running: await new Store(env.DB, env).liveRunsInProgress() } });
   }
   const allowed = r.kind === "export-view" ? ["POST"] : r.kind === "runs" ? ["GET", "POST"] : ["GET"];
   if (!allowed.includes(method)) return error(405, "Method not allowed");
@@ -220,23 +223,32 @@ async function handle(request: Request, env: Env): Promise<Response> {
   }
 
   const { runId, sub } = r;
-  if (!RUN_ID.test(runId)) return sub === "view" ? error(404, "There is no search with this id.") : text("There is no search with this id.", 404, "text/plain; charset=utf-8");
+  const missing = "There is no search with this id.";
+  if (!RUN_ID.test(runId)) return sub === "view" || sub === "meta" ? error(404, missing) : text(missing, 404, "text/plain; charset=utf-8");
 
+  if (sub === "meta") {
+    // link previews: the run row and one statement of counts, never the evidence rows. A dead run
+    // must not preview as "still searching", so the watchdog runs only when this run looks stale.
+    let run = await store.getRun(runId);
+    if (run?.status === "running" && run.lastProgressAt < nowMs() - STALE_RUN_MS && (await store.failStaleRuns()) > 0) run = await store.getRun(runId);
+    if (!run) return error(404, missing);
+    return json(runMeta(run, await store.counts(runId)));
+  }
   if (sub === "view") {
     let view = await store.view(runId);
     // a run whose job died must not show "running" forever: the watchdog runs when a running run is viewed
     if (view?.run.status === "running" && (await store.failStaleRuns()) > 0) view = await store.view(runId);
-    return view ? json(view) : error(404, "There is no search with this id.");
+    return view ? json(view) : error(404, missing);
   }
   if (sub === "export") {
     const view = await store.view(runId);
-    if (!view) return text("There is no search with this id.", 404, "text/plain; charset=utf-8");
+    if (!view) return text(missing, 404, "text/plain; charset=utf-8");
     return text(exportMarkdown(view), 200, "text/markdown; charset=utf-8", { "content-disposition": `attachment; filename="launchradar-${runId}.md"` });
   }
 
   // stream
   const run = await store.getRun(runId);
-  if (run === null) return text("There is no search with this id.", 404, "text/plain; charset=utf-8");
+  if (run === null) return text(missing, 404, "text/plain; charset=utf-8");
   if (run.status === "running") await store.failStaleRuns();
   // EventSource resends the last id it saw; anything that is not a small index starts from the top
   const lastId = request.headers.get("last-event-id") ?? "";

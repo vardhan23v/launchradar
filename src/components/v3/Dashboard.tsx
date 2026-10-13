@@ -13,15 +13,18 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import type { Run, RunView } from "@/lib/types";
 import { listSavedRuns, loadSavedRun, saveFinishedRun } from "@/lib/history";
+import { downloadText, toCsv } from "@/lib/v3/csv";
 import { latestStageOf } from "@/lib/v3/run";
 import { loadIds, saveIds } from "@/lib/v3/storage";
 import {
   EMPTY_FILTERS,
+  IDEA_COLUMNS,
   INTRO,
   activeFilterCount,
   applyFilters,
   buildFeed,
   facetCounts,
+  ideaRows,
   regionLabel,
   relativeDay,
   runKey,
@@ -35,7 +38,7 @@ import { CardSkeleton, FeaturedCard, GridCard, ListRow } from "./Cards";
 import DetailPanel from "./DetailPanel";
 import FilterPanel from "./FilterPanel";
 import { blockedReasonFor, fetchRunEvents, getJson, useHome, useStartRun } from "./hooks";
-import { ArrowRightIcon, CloseIcon, FilterIcon, GridIcon, ListIcon, PlusIcon, RadarLogo } from "./icons";
+import { ArrowRightIcon, CloseIcon, DownloadIcon, FilterIcon, GridIcon, ListIcon, PlusIcon, RadarLogo } from "./icons";
 import NewResearchDialog from "./NewResearchDialog";
 import { Badge, FOCUS_FALLBACK_ID, HowItWorks, Segmented, useModal } from "./parts";
 import TopNav from "./TopNav";
@@ -63,6 +66,12 @@ function readViewMode(): ViewMode {
   } catch {
     return "grid";
   }
+}
+
+/** Today's date for a file name, in the reader's own time zone: 2026-10-12. */
+function dateStamp(d: Date): string {
+  const two = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${two(d.getMonth() + 1)}-${two(d.getDate())}`;
 }
 
 function shortlistFor(views: RunView[]): Set<string> {
@@ -255,6 +264,14 @@ export default function Dashboard() {
     }
   };
 
+  // the ideas shown right now (filtered and sorted), as a spreadsheet
+  const downloadCsv = useCallback(() => {
+    if (!visible.length) return;
+    const csv = toCsv(ideaRows(visible, window.location.origin), IDEA_COLUMNS);
+    downloadText(`launchradar-ideas-${dateStamp(new Date())}.csv`, csv, "text/csv;charset=utf-8");
+  }, [visible]);
+  const toggleSavedOnly = useCallback(() => setFilters((f) => ({ ...f, shortlistedOnly: !f.shortlistedOnly })), []);
+
   const example = home?.demos[0];
   const blockedReason = blockedReasonFor(home, down);
   const apiNote = home || down ? (blockedReason ?? "You can start a new search.") : null;
@@ -299,7 +316,7 @@ export default function Dashboard() {
 
   return (
     <div className="lr3 relative min-h-screen overflow-x-clip bg-zinc-950 text-zinc-100 antialiased">
-      <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-[520px] bg-[radial-gradient(60%_60%_at_20%_0%,rgba(99,102,241,0.16),transparent_70%),radial-gradient(40%_50%_at_90%_10%,rgba(16,185,129,0.08),transparent_70%)]" />
+      <div data-print-hide="" aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-[520px] bg-[radial-gradient(60%_60%_at_20%_0%,rgba(99,102,241,0.16),transparent_70%),radial-gradient(40%_50%_at_90%_10%,rgba(16,185,129,0.08),transparent_70%)]" />
       <div aria-hidden="true" className="lr3-grid pointer-events-none absolute inset-x-0 top-0 h-[520px]" />
 
       <TopNav
@@ -311,9 +328,11 @@ export default function Dashboard() {
         budget={home?.budget ? { monthUsed: home.budget.monthUsed, monthLimit: home.budget.monthLimit } : null}
         apiNote={apiNote}
         shortcutsEnabled={!dialog && !sheet && !openItem}
+        saved={{ count: shortlistCount, active: filters.shortlistedOnly, onToggle: toggleSavedOnly }}
+        download={{ count: visible.length, onClick: downloadCsv }}
       />
 
-      <main className="relative mx-auto grid max-w-7xl gap-8 px-4 pb-24 pt-8 sm:px-6 lg:grid-cols-[240px_minmax(0,1fr)]">
+      <main id="main" tabIndex={-1} className="relative mx-auto grid max-w-7xl scroll-mt-20 gap-8 px-4 pb-24 pt-8 focus:outline-none sm:px-6 lg:grid-cols-[240px_minmax(0,1fr)]">
         <aside aria-label="Filters" className="hidden lg:block">
           <div data-scroll-box="" className="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto pb-6 pr-2 [scrollbar-width:thin]">
             <FilterPanel filters={filters} onChange={setFilters} counts={counts} shortlistCount={shortlistCount} idPrefix="side" />
@@ -327,21 +346,33 @@ export default function Dashboard() {
                 Ideas worth building
               </h1>
               <p className="mt-2 max-w-2xl text-pretty text-[15px] leading-relaxed text-zinc-200">{INTRO}</p>
-              <p className="mt-1.5 max-w-2xl text-sm text-zinc-300">
-                {loading && items.length === 0
-                  ? slow
-                    ? "Still loading. The server is taking longer than usual to answer."
-                    : "Loading ideas…"
-                  : items.length === 0
-                    ? "No ideas yet."
-                    : `${visible.length !== items.length ? `Showing ${visible.length} of ` : ""}${items.length} ${items.length === 1 ? "idea" : "ideas"} from ${runs.length} ${runs.length === 1 ? "search" : "searches"}. Every idea shows the web pages it came from.`}
-              </p>
+              <div className="mt-1.5 flex max-w-2xl flex-wrap items-center gap-x-4 gap-y-1 text-sm text-zinc-300">
+                <p>
+                  {loading && items.length === 0
+                    ? slow
+                      ? "Still loading. The server is taking longer than usual to answer."
+                      : "Loading ideas…"
+                    : items.length === 0
+                      ? "No ideas yet."
+                      : `${visible.length !== items.length ? `Showing ${visible.length} of ` : ""}${items.length} ${items.length === 1 ? "idea" : "ideas"} from ${runs.length} ${runs.length === 1 ? "search" : "searches"}. Every idea shows the web pages it came from.`}
+                </p>
+                <button
+                  type="button"
+                  onClick={downloadCsv}
+                  disabled={visible.length === 0}
+                  title="A spreadsheet of the ideas shown now, in this order, with their scores, who they're for and a link to each"
+                  className="inline-flex items-center gap-1.5 rounded font-medium text-indigo-300 transition-colors hover:text-indigo-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70 disabled:cursor-default disabled:text-zinc-500"
+                >
+                  <DownloadIcon size={14} />
+                  {visible.length === 0 ? "Download ideas (CSV)" : visible.length === 1 ? "Download this idea (CSV)" : `Download these ${visible.length} ideas (CSV)`}
+                </button>
+              </div>
               <p className="sr-only" aria-live="polite" aria-atomic="true">
                 {announce}
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-2">
+            <div data-print-hide="" className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
                 onClick={() => setSheet(true)}

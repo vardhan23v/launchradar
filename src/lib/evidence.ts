@@ -25,7 +25,7 @@ export interface CiteGroup {
  * Matches one citation group: [E1,E2], also with a letter suffix (E9b, used when one search result
  * is split into two evidence rows) and with spaces after the commas.
  */
-export const CITE_RE = /\[(E\d+[a-z]?(?:\s*,\s*E\d+[a-z]?)*)\]/g;
+export const CITE_RE = /[[(](E\d+[a-z]?(?:\s*,\s*E\d+[a-z]?)*)[\])]/g;
 
 /** [E1,E2] -> groups of ids with positions in the source text */
 export function citeGroups(text: string): CiteGroup[] {

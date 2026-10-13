@@ -352,3 +352,49 @@ Find existing products → Check if anyone solves it → Score the ideas) and su
 found"; no visible text under 12 px and no uppercase tracking labels; developer detail (env var names,
 HTTP codes) only in trailing brackets. JSON field names, event shapes and tests' behaviour are
 unchanged; the 45 Worker tests were updated for the new sentences.
+
+## New things you can do (13 October 2026)
+
+Three agents added features in parallel, each in its own files, and a fourth walked through the site
+in a browser afterwards.
+
+**On the home page**
+- "Try one of these": six ready-made topics in the New search dialog; one click fills the box.
+- Keyboard shortcuts: `/` or ⌘K searches, `N` opens a new search, `?` lists them all, Esc closes.
+- "Download these N ideas (CSV)": the ideas you are looking at, with the filters applied, as a
+  spreadsheet; every link in it opens the idea directly. Cells cannot start a spreadsheet formula.
+- "Saved (n)" in the top bar jumps to the ideas you starred.
+- A friendly "This page doesn't exist" page, a "Skip to content" link for keyboards, print styles,
+  and the basics to install LaunchRadar as an app (manifest, icons, theme colour).
+
+**On a search page**
+- Every idea has its own link: `/runs/<id>?idea=O1` opens that idea, and the panel has Copy link,
+  Share (where the browser supports it) and Print buttons. Shared links show the search's question
+  and a one-line summary as their preview, fetched from the new `GET /api/runs/{id}/meta`.
+- "Tell me when it's done": the browser tells you when a search finishes while you are on another
+  tab; the tab title always says "Searching…", "Done" or "Stopped" with the question.
+- "Now: <step>" and an elapsed timer while a search is running.
+- "Search interest over the last 12 months: going up / going down / about the same", a small chart
+  from Google Trends for each idea (the example search now carries this data too).
+- "Ideas (CSV)" next to the Markdown download.
+
+**On the server**
+- `GET /api/runs/{id}/meta` (cheap counts for link previews), `runs[].ideas` in the search list, and
+  `GET /api/health` now reports the time and how many live searches are running.
+- A crash inside a search's alarm loop now closes the search as stopped at once instead of leaving
+  it to the 15-minute watchdog; a billed lookup is recorded in the same database batch that charges
+  it, so a crash can no longer lose a paid lookup. Worker tests: 45 → 50.
+
+**After the QA walk-through (same day)**
+- Idea text no longer shows internal ids: "(E9)"-style references become numbered footnotes like
+  "[E9]" ones, "[G1]" markers are dropped, and the example search's text was rewritten without
+  "Bullet 1:" scaffolding or "Search: '…'" shorthand.
+- On phones the idea title wraps between words, the seven step names wrap in two columns instead
+  of being cut off, and the section strip fades at its right edge to show it scrolls.
+- The Markdown download uses the same helper as the CSV downloads, so the file is not revoked
+  before the browser starts saving it; "Back to all ideas" on a missing search is a real link.
+- While the example replays, the summary only counts what the steps so far could have found, and
+  "Where we looked (n)" matches the server's total as soon as a finished search loads.
+- Not changed, on purpose: a search id that only this browser knows still answers 200 (the page
+  is a per-visitor working document); the "Saved (n)" pill lives in the menu on phones; the
+  blocked-reason text for a server without keys is written for whoever runs the server.

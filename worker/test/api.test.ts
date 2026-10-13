@@ -1,5 +1,5 @@
 import { env } from "cloudflare:test";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import { startDemoRun } from "../src/demo";
 import type { Env } from "../src/env";
@@ -8,6 +8,7 @@ import worker from "../src/index";
 import { BudgetExceeded, SerpApiService } from "../src/serpapi";
 import { INTERRUPTED, Store } from "../src/store";
 import { encodeEvent, followRunEvents, PING } from "../src/stream";
+import type { Cluster, Opportunity } from "../src/types";
 import { nowMs, sleep } from "../src/utils";
 import { freshStore, jsonResponse, LIVE, makeRun, REPLAY } from "./fakes";
 
@@ -147,6 +148,26 @@ describe("serpapi service", () => {
     expect(refused.status).toBe(429);
     expect(((await refused.json()) as { error: string }).error).toContain("switched off");
     expect((await postJson("/api/runs", { demo: "ai-tools-college-india" }, over)).status).toBe(201);
+  });
+
+  it("counts a search SerpApi answered as billed even when its record could not be saved", async () => {
+    const settings = { ...LIVE, HOURLY_SEARCH_GUARD: "1" };
+    const store = await freshStore(settings);
+    await store.createRun(makeRun({ id: "r1" }));
+    const calls: URL[] = [];
+    const serp = new SerpApiService(store, settings, null, answering(() => jsonResponse(ORGANIC), calls));
+    // the record's first write fails (a database hiccup); the failure record that follows gets through
+    const spy = vi.spyOn(Store.prototype, "addSearchCall").mockRejectedValueOnce(new Error("D1_ERROR: write failed"));
+    await expect(serp.search("google", { q: "x" }, "r1", "d", 1)).rejects.toThrow("D1_ERROR");
+    spy.mockRestore();
+    expect(calls).toHaveLength(1);
+    const [call] = await store.searchCallsFor("r1");
+    // SerpApi answered, so it charged: the lookup stays on the books and the guards see it, while
+    // the database error itself stays out of the public record
+    expect(call).toMatchObject({ status: "failed", billed: true, error: "Something went wrong on our side during this lookup." });
+    expect(JSON.stringify(call)).not.toContain("D1_ERROR");
+    expect(await store.getRun("r1")).toMatchObject({ searchesUsed: 1, searchCalls: 1, failedSearches: 1 });
+    expect(await store.quotaBlock()).toContain("hourly lookup limit is reached (1 of 1");
   });
 
   it("counts billed searches against the monthly budget across runs", async () => {
@@ -306,6 +327,69 @@ describe("api routes", () => {
     expect(odd).toContain("- Region: ININJECT\n");
     expect(odd).not.toContain("injected region");
     expect(await (await postJson("/api/export", { run: { ...run, region: "UK" } })).text()).toContain("- Region: United Kingdom");
+  });
+
+  it("answers a link preview from counts alone", async () => {
+    const store = await freshStore(LIVE);
+    const demo = await (await postJson("/api/runs", { demo: "ai-tools-college-india" })).json() as { id: string };
+    const res = await api(`/api/runs/${demo.id}/meta`);
+    expect(res.status).toBe(200);
+    expect(res.headers.get("content-type")).toContain("application/json");
+    expect(res.headers.get("cache-control")).toBe("no-store");
+    const meta = await res.json() as Record<string, unknown>;
+    expect(Object.keys(meta)).toEqual(["id", "question", "region", "status", "outcome", "demo", "createdAt", "finishedAt", "ideas", "complaints", "products", "lookups", "failedSearches", "summary"]);
+    // the recorded example has every result from the start: it reads as finished while its trace is still replaying
+    expect(meta).toMatchObject({
+      id: demo.id, question: "AI tools for college students in India", region: "in", status: "running", outcome: "full", demo: true, finishedAt: null,
+      ideas: 2, complaints: 4, products: 7, lookups: 8, failedSearches: 0, summary: "2 ideas from 8 lookups across 34 web pages.",
+    });
+    expect(typeof meta.createdAt).toBe("number");
+
+    const now = nowMs();
+    await store.createRun(makeRun({ id: "busy", createdAt: now }));
+    expect(await (await api("/api/runs/busy/meta")).json()).toMatchObject({ status: "running", outcome: null, ideas: 0, lookups: 0, summary: "Still searching." });
+    await store.createRun(makeRun({ id: "none", status: "complete", outcome: "empty", finishedAt: now, searchCalls: 16, createdAt: now }));
+    expect(await (await api("/api/runs/none/meta")).json()).toMatchObject({ status: "complete", outcome: "empty", finishedAt: now, summary: "Done, but no idea was found." });
+    await store.createRun(makeRun({ id: "thin", status: "complete", outcome: "limited", finishedAt: now, searchCalls: 16, failedSearches: 3, createdAt: now }));
+    await store.setOpportunities("thin", [{ id: "O1" } as Opportunity]);
+    await store.setClusters("thin", [{ id: "C1" } as Cluster, { id: "C2" } as Cluster]);
+    await store.addEvidence("thin", "sc_thin_1", [{ blockType: "organic", title: "t", url: "", domain: "", snippet: "s", position: 1, meta: {} }]);
+    expect(await (await api("/api/runs/thin/meta")).json()).toMatchObject({
+      ideas: 1, complaints: 2, products: 0, lookups: 16, failedSearches: 3, summary: "1 idea from 16 lookups across 1 web page, with less proof than usual.",
+    });
+    // a run whose job died is closed first, so it never previews as still searching
+    await store.createRun(makeRun({ id: "dead", createdAt: now - 16 * 60_000 }));
+    expect(await (await api("/api/runs/dead/meta")).json()).toMatchObject({ status: "failed", summary: "Stopped before it finished." });
+    expect((await store.getRun("dead"))?.error).toBe(INTERRUPTED);
+
+    const gone = await api("/api/runs/nope/meta");
+    expect(gone.status).toBe(404);
+    expect(gone.headers.get("content-type")).toContain("application/json");
+    expect(await gone.json()).toEqual({ error: "There is no search with this id." });
+    expect((await api("/api/runs/%2e%2e%2fpackage/meta")).status).toBe(404);
+    expect((await api(`/api/runs/${demo.id}/meta`, { method: "POST", headers: { "content-type": "application/json" }, body: "{}" })).status).toBe(405);
+    expect((await api(`/api/runs/${demo.id}/meta`, { method: "HEAD" })).status).toBe(405);
+  });
+
+  it("lists each run with its idea count, and the health check says how many live searches are in progress", async () => {
+    const store = await freshStore(LIVE);
+    const now = nowMs();
+    const demo = await (await postJson("/api/runs", { demo: "ai-tools-college-india" })).json() as { id: string };
+    await store.createRun(makeRun({ id: "going", createdAt: now }));
+    await store.createRun(makeRun({ id: "dead", createdAt: now - 16 * 60_000 }));
+    const health = await api("/api/health");
+    expect(health.status).toBe(200);
+    expect(health.headers.get("cache-control")).toBe("no-store");
+    const body = await health.json() as { ok: boolean; time: string; runs: { running: number } };
+    // one live search in progress: "dead" has been silent too long, and the example never counts
+    expect(body).toEqual({ ok: true, time: expect.stringMatching(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/), runs: { running: 1 } });
+    expect(Math.abs(Date.parse(body.time) - nowMs())).toBeLessThan(10_000);
+    expect((await api("/api/health", { method: "HEAD" })).status).toBe(200);
+
+    const list = await (await api("/api/runs")).json() as { runs: { id: string; ideas: number; status: string }[] };
+    expect(Object.fromEntries(list.runs.map((r) => [r.id, r.ideas]))).toEqual({ going: 0, [demo.id]: 2, dead: 0 });
+    expect(list.runs.find((r) => r.id === "dead")?.status).toBe("failed"); // the list still runs the watchdog
+    expect(((await (await api("/api/health")).json()) as { runs: { running: number } }).runs.running).toBe(1);
   });
 
   it("closes a run whose job died when its page or stream is opened", async () => {

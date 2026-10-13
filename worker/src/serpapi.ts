@@ -91,6 +91,8 @@ export class SerpApiService {
       if (recorded.status !== "ok") throw new (recorded.status === "skipped" ? BudgetExceeded : SerpApiError)(recorded.error ?? "The lookup didn't work.");
       return { call: recorded, evidence: await this.store.evidenceForCall(runId, recorded.id), cached: recorded.cached };
     }
+    // SerpApi has charged for a search once it answers, whatever happens to the record afterwards
+    let paid = false;
     try {
       // 1. per-run budget — always, and before any cost
       if (run.searchesUsed >= run.budget) throw new BudgetExceeded(`This search has used all its lookups (${run.searchesUsed} of ${run.budget}).`);
@@ -101,9 +103,14 @@ export class SerpApiService {
       // 3. quota guards apply only to searches that will be billed
       await this.assertQuota();
       const body = await this.callNetwork(engine, rawParams);
+      paid = true;
+      // the charge is written in the same database batch as the record (addSearchCall), so there is no
+      // moment at which a run is charged for a lookup it has no record of. A record written before the
+      // call (to survive a crash during it) would need a fourth call status that the cache, the retry
+      // path and the browser all learn; the plan limit on SerpApi's side backstops that rare case.
       return await this.persistRaw(ctx, engine, rawParams, phash, body, false, true, started);
     } catch (err) {
-      await this.recordFailure(engine, rawParams, phash, ctx, err, started);
+      await this.recordFailure(engine, rawParams, phash, ctx, err, started, paid);
       throw err;
     }
   }
@@ -122,18 +129,20 @@ export class SerpApiService {
 
   /**
    * A failed or skipped search still appears in the research trace; the run continues. A search
-   * that timed out may have finished upstream, so it is recorded (and charged) as billed.
+   * that timed out may have finished upstream, and one SerpApi answered (`paid`) certainly did,
+   * so both are recorded (and charged) as billed: the spend guards never under-count. The record
+   * is public, so only a sentence this module wrote goes into it; anything else (a database
+   * error, say) becomes a fixed sentence and its details go to the operator's console.
    */
-  private async recordFailure(engine: string, params: Params, phash: string, ctx: CallCtx, err: unknown, started: number): Promise<void> {
-    const message = err instanceof Error ? err.message : String(err);
-    const billed = err instanceof SerpApiError && err.maybeBilled;
+  private async recordFailure(engine: string, params: Params, phash: string, ctx: CallCtx, err: unknown, started: number, paid: boolean): Promise<void> {
+    const known = err instanceof SerpApiError || err instanceof BudgetExceeded;
+    const billed = paid || (err instanceof SerpApiError && err.maybeBilled);
     const call: SearchCall = {
       id: `sc_${ctx.runId}_${ctx.order}`, runId: ctx.runId, stage: ctx.stage, engine, params: redact(params), paramsHash: phash, cached: false,
       status: err instanceof BudgetExceeded ? "skipped" : "failed", latencyMs: nowMs() - started, resultCount: 0, createdAt: nowMs(), billed,
-      error: scrub(message, this.settings).slice(0, 300),
+      error: known ? scrub(err.message, this.settings).slice(0, 300) : "Something went wrong on our side during this lookup.",
     };
-    if (billed) await this.store.chargeSearch(ctx.runId);
-    await this.store.addSearchCall(call, null);
+    await this.store.addSearchCall(call, null); // charges the run in the same batch when billed
     await this.emit(call, ctx, 0);
   }
 
@@ -201,8 +210,8 @@ export class SerpApiService {
       latencyMs: nowMs() - started, resultCount: rows.length, createdAt: nowMs(), billed,
     };
     if (searchId) call.serpapiSearchId = searchId;
-    // searchesUsed counts billed searches only: fixture replays and cache hits are free
-    if (billed) await this.store.chargeSearch(ctx.runId);
+    // searchesUsed counts billed searches only (fixture replays and cache hits are free): the store
+    // charges the run in the same batch that records the call
     return this.recordCall(call, rows, ctx);
   }
 }

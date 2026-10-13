@@ -134,3 +134,93 @@ body:has(.lr3-root) {
     transition-duration: 1ms !important;
   }
 }
+
+/* Printing: a white page, black text, no top bar, filters, buttons or decoration. An open idea
+   panel (a fixed drawer on screen) prints on its own as a plain full-width document. */
+@media print {
+  @page {
+    margin: 16mm;
+  }
+  body,
+  body:has(.lr3-root),
+  .lr3-root {
+    background: #fff !important;
+    color: #000 !important;
+    color-scheme: light;
+    overflow: visible !important; /* an open dialog locks the page's scroll; a locked page prints one sheet */
+  }
+  .lr3-root * {
+    color: #000 !important;
+    background: transparent !important;
+    border-color: #d4d4d8 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    backdrop-filter: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+  .lr3-root svg text {
+    fill: #000 !important;
+  }
+  .lr3-root header,
+  .lr3-root aside,
+  .lr3-root nav,
+  .lr3-root input,
+  .lr3-root select,
+  .lr3-root fieldset,
+  .lr3-root button:not([data-open]),
+  .lr3-root [data-print-hide],
+  .lr3-grid {
+    display: none !important;
+  }
+  /* the idea panel: static, full width, nothing behind it */
+  .lr3-root:has([role="dialog"][aria-modal="true"]) main {
+    display: none !important;
+  }
+  .lr3-root div:has(> [role="dialog"][aria-modal="true"]) {
+    position: static !important;
+    inset: auto !important;
+  }
+  .lr3-root div:has(> [role="dialog"][aria-modal="true"]) > [aria-hidden="true"] {
+    display: none !important;
+  }
+  .lr3-root [role="dialog"][aria-modal="true"] {
+    position: static !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    border: 0 !important;
+    transform: none !important;
+  }
+  .lr3-root [role="dialog"][aria-modal="true"] * {
+    overflow: visible !important;
+    max-height: none !important;
+  }
+  /* the web pages we read keep their addresses on paper, so the reader can still check */
+  .lr3-root [role="dialog"] a[href^="http"]::after {
+    content: " " attr(href);
+    font-size: 0.75rem;
+    color: #52525b !important;
+    word-break: break-all;
+  }
+}
+
+/* a strip that scrolls sideways on phones fades out at its right edge, so it is clear there is more */
+@media (max-width: 639px) {
+  .lr3-scroll-x {
+    position: relative;
+  }
+  .lr3-scroll-x::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2.5rem;
+    background: linear-gradient(to right, transparent, #09090b);
+    pointer-events: none;
+  }
+}

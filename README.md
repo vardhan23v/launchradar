@@ -33,7 +33,7 @@ to verbatim quotes pinned to a recorded SerpApi search response (see
 
 <!-- quality -->
 [![CI](https://img.shields.io/github/actions/workflow/status/vardhan23v/launchradar/ci.yml?style=for-the-badge&label=CI&logo=githubactions&logoColor=white)](https://github.com/vardhan23v/launchradar/actions/workflows/ci.yml)
-[![Tests](https://img.shields.io/badge/Tests-45_passing-0E9F6E?style=for-the-badge&logo=vitest&logoColor=white)](#tests)
+[![Tests](https://img.shields.io/badge/Tests-50_passing-0E9F6E?style=for-the-badge&logo=vitest&logoColor=white)](#tests)
 [![Security](https://img.shields.io/badge/Security-audited_%28partial%29-F59E0B?style=for-the-badge&logo=cloudflare&logoColor=white)](#security)
 [![Last Commit](https://img.shields.io/github/last-commit/vardhan23v/launchradar/main?style=for-the-badge&color=111827&label=Last%20Commit)](https://github.com/vardhan23v/launchradar/commits/main)
 [![Commit activity](https://img.shields.io/github/commit-activity/m/vardhan23v/launchradar?style=for-the-badge&color=111827)](https://github.com/vardhan23v/launchradar/commits/main)
@@ -71,6 +71,18 @@ One product, the radar dashboard, in one design: dark (zinc-950), Geist, indigo 
 |---|---|---|
 | **Home: the radar** | `/` | Every opportunity from every finished run in one ranked feed: #1 featured card with the sub-score pentagon, grid/list toggle, sticky filters (research question, gap status, confidence, region, date, shortlist), search with ⌘K / Ctrl+K, sort by score / momentum / newest, a detail panel with numbered source footnotes. |
 | **A research run** | `/runs/[id]` | Live progress (seven stages, research log), then the run's opportunities, problems with verbatim quotes, competitors with pricing, rating and complaints, the research log and every search result, plus Markdown export. |
+
+What you can do, in plain words:
+
+- **Keyboard shortcuts**: `/` or ⌘K / Ctrl K jumps to the search box, `N` starts a new search, `Esc` closes whatever is open, and `?` shows the list (also under "Keyboard shortcuts" in the menu).
+- **Download the ideas as a spreadsheet**: "Download these N ideas (CSV)" next to the results count, or "Download ideas (CSV)" in the menu, saves exactly the ideas you have filtered and sorted: one row each with the score and its five parts, whether it's solved, how sure we are, who it's for, the problem, what's missing, the country, the topic, a link back and how many web pages it rests on. The file opens in Excel, Numbers or Google Sheets.
+- **Share one idea**: every idea has an address of its own, `/runs/[id]?idea=…`, which opens its search page with that idea's panel open. The spreadsheet's links use it, and so does the share button in the panel.
+- **Tell me when it's done**: a search takes 5–10 minutes; ask for a browser notification on the search page and leave the tab, and it tells you when the ideas are in.
+- **Install it**: the site is a web app (`public/manifest.webmanifest`), so "Add to Home Screen" on a phone or "Install" in Chrome gives it its own window and icon.
+- **Saved ideas**: the star keeps an idea in this browser; "Saved (n)" in the top bar (on wider screens) and in the menu shows only those.
+- **Try a topic**: the new-search dialog offers six ready-made topics; one click fills the box.
+- **Print**: printing a page, or an open idea panel, gives a plain black-on-white document without the menus; the web pages we read keep their addresses.
+- **Skip to content**: the first Tab on any page offers "Skip to content".
 
 The dashboard lives in `src/components/v3`, `src/lib/v3` and the route group `src/app/(radar)`. Two earlier designs
 (the report view and the `/v2` triage board) and the dashboard's first address (`/v3`) were retired after the October
@@ -183,12 +195,29 @@ search job quit before it finished. Start it again; lookups we already did are r
 the pipeline — one search, one LLM call or one bookkeeping step — persists the pipeline state and schedules the next
 alarm. Each unit is its own invocation, so it has the free plan's full CPU, subrequest and query budget to itself, and a
 browser that closes the tab cannot stop a run. A unit that is retried after a crash finds its search already recorded
-(the call id is deterministic) and does not search again.
+(the call id is deterministic) and does not search again. If an alarm fails outside the pipeline's own error handling
+(the database or the object's storage out of reach), the object closes the run as interrupted — the same sentence the
+watchdog writes — marks the pipeline done and sets no further alarm, rather than leaving the platform to retry the alarm
+for a while and then drop it with the run still "running". When the database itself is what failed, the watchdog closes
+the run the same way once it has been silent for 15 minutes.
 
 `GET /api/runs/{id}/stream` replays the persisted log, then follows a running run for up to 24 s (with a `: ping` every
 10 s of silence) and closes; the browser's `EventSource` reconnects with `Last-Event-ID`, so no single request ever
 follows a ten-minute run. A finished run replays its whole log and the response ends. The recorded example is paced by the
 stream itself, so its trace animates.
+
+`GET /api/runs` lists the newest 50 runs; each carries `ideas`, its opportunity count, from one grouped query rather than
+one query per run. `GET /api/runs/{id}/meta` answers link previews cheaply, for the site's server-side metadata:
+`{ id, question, region, status, outcome, demo, createdAt, finishedAt, ideas, complaints, products, lookups, failedSearches, summary }`,
+where `ideas`, `complaints` and `products` count the opportunities, complaint groups and existing products, `lookups` is
+every search the run made (`failedSearches` of them failed) and `summary` is one sentence in the site's words: "3 ideas
+from 24 lookups across 112 web pages." (", with less proof than usual" when the outcome is `limited`), "Still searching.",
+"Done, but no idea was found." or "Stopped before it finished.". It reads the run row and one statement of counts, never
+the evidence rows; the recorded example reads as finished even while its trace is still being replayed; an unknown id
+answers 404 `{ "error": "There is no search with this id." }`, and any method but GET 405. `GET /api/health` returns
+`{ ok: true, time, runs: { running } }`: `time` is the server's clock (ISO 8601) and `running` the number of live searches
+in progress (heard from within the watchdog's 15 minutes; the recorded example is not counted), from one indexed count,
+so an unreachable database fails the check, as it should.
 
 ## Security
 
@@ -198,7 +227,7 @@ the keys, and they keep scraped or model-written text from doing anything but di
 
 | Area | What is enforced | Where |
 |---|---|---|
-| Spend | One live run at a time, claimed in one SQL statement; at most 6 live run starts per hour whether or not their searches are billed (a cached run still costs LLM calls); a run is refused unless the hour and month cover its whole search budget; per-run, hourly and monthly search caps checked before every billed search; a timed-out search counts as billed | `worker/src/index.ts`, `store.ts`, `serpapi.ts` |
+| Spend | One live run at a time, claimed in one SQL statement; at most 6 live run starts per hour whether or not their searches are billed (a cached run still costs LLM calls); a run is refused unless the hour and month cover its whole search budget; per-run, hourly and monthly search caps checked before every billed search; a timed-out search counts as billed, and so does one SerpApi answered but whose record could not be saved; a run's charge is written in the same database batch as the search record (never one without the other); a run whose job fails outside the pipeline is closed as interrupted at once and spends nothing more | `worker/src/index.ts`, `store.ts`, `serpapi.ts`, `runner.ts` |
 | Shared database | The recorded example is copied at most 6 times an hour (then the newest copy is reused) and only the newest 10 copies are kept; the run list returns the newest 50; request bodies are capped (16 KiB to start a run, 2 MiB and 2,000 records to export) | `index.ts`, `store.ts`, `export.ts` |
 | Keys | Stored only as Worker secrets (never in the repository or the browser); the LLM key travels in a header and only over https; an upstream HTTP error reaches a run only as a sentence this code wrote plus the status code (the response body goes, scrubbed, to the operator's console), and every message shown publicly or logged is scrubbed of keys; `OPENAI_API_KEY` is only sent to OpenAI | `config.ts`, `llm.ts`, `serpapi.ts`, `pipeline.ts` |
 | Untrusted text | Scraped pages and model output are data: prompt rules go in the system message, the evidence block cannot be closed from inside it, every quote must be a verbatim substring of one field of its cited result (it cannot straddle title and snippet), evidence ids the run does not contain are stripped before anything is stored, a competitor or "found product" name must appear in the row it cites (3+ characters), model-written fields are length-bounded, competitor links must be pages the competitor was cited from; an unknown region in an export becomes a short letter code | `prompts.ts`, `llm.ts`, `pipeline.ts`, `citations.ts`, `export.ts` |
@@ -254,7 +283,7 @@ src/
 ## Tests
 
 ```bash
-npm test          # the Worker's 45 vitest tests, run inside the Workers runtime: no network, no quota
+npm test          # the Worker's 50 vitest tests, run inside the Workers runtime: no network, no quota
 npm run typecheck # tsc --noEmit (frontend); npm run typecheck:api for the Worker
 npm run lint      # eslint (frontend)
 npm run build     # frontend production build
@@ -299,7 +328,7 @@ Settings (all optional; non-secret ones live in `worker/wrangler.jsonc` under `v
 | `LLM_PROVIDER` / `LLM_BASE_URL` / `LLM_MODEL` / `LLM_REASONING_EFFORT` | `openai` / Groq / `openai/gpt-oss-120b` / `low` | any OpenAI-compatible gateway over https, or `gemini` |
 | `RUN_SEARCH_BUDGET` | `25` | searches one run may use |
 | `HOURLY_SEARCH_GUARD` / `MONTHLY_SEARCH_BUDGET` | `40` / `250` | billed searches per hour / calendar month; `0` stops spending (the home page says so) |
-| `CONCURRENT_RUN_LIMIT` | `1` | live runs in progress at once, across all visitors; a run silent for 15 minutes is closed as interrupted |
+| `CONCURRENT_RUN_LIMIT` | `1` | live runs in progress at once, across all visitors; a run silent for 15 minutes is closed as interrupted; `/api/health` reports how many are in progress as `runs.running` |
 | `RUNS_PER_HOUR` | `6` | live runs that may start per hour, billed or served from the cache; `0` stops new runs (there is no "unlimited") |
 | `DEMO_RUNS_PER_HOUR` | `6` | fresh copies of the recorded example per hour before the newest is reused |
 | `CACHE_TTL_HOURS` | `24` | identical searches inside this window are served from D1 for free |

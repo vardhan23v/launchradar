@@ -193,6 +193,34 @@ export interface RunView {
   opportunities: Opportunity[];
 }
 
+/** A run as the list reports it: the run plus its idea count (one grouped query for the whole list, never one per run). */
+export interface RunListItem extends Run {
+  ideas: number;
+}
+
+/** What a link preview needs: the run's counts and one sentence about it, never the rows behind them. */
+export interface RunMeta {
+  id: string;
+  question: string;
+  region: string;
+  status: RunStatus;
+  outcome: RunOutcome | null;
+  demo: boolean;
+  createdAt: number;
+  finishedAt: number | null;
+  /** opportunities */
+  ideas: number;
+  /** complaint groups (clusters) */
+  complaints: number;
+  /** existing products (competitors) */
+  products: number;
+  /** every search the run made, as `Run.searchCalls` */
+  lookups: number;
+  failedSearches: number;
+  /** one plain sentence in the site's words, e.g. "3 ideas from 24 lookups across 112 web pages." */
+  summary: string;
+}
+
 export interface DemoFixture {
   slug: string;
   label: string;

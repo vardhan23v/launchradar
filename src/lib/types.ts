@@ -39,6 +39,8 @@ export interface Evidence {
   snippet: string;
   text?: string;
   date?: string;
+  /** what the lookup knew besides the text, e.g. `values` (keyword -> search interest) on a trend_point row */
+  meta?: Record<string, unknown>;
 }
 
 export interface Signal {
@@ -56,6 +58,8 @@ export interface Cluster {
   id: string;
   name: string;
   jobToBeDone: string;
+  /** the 2-4 words the trends lookup searched for this group */
+  searchKeyword?: string;
   signalIds: string[];
   weak: boolean;
 }
@@ -71,6 +75,8 @@ export interface Competitor {
 
 export interface Gap {
   id: string;
+  /** the complaint group this gap came from */
+  clusterId?: string;
   unmetNeed: string;
   status: GapStatus;
   killQueries: string[];
@@ -81,6 +87,8 @@ export interface Gap {
 export interface Opportunity {
   id: string;
   gapId: string;
+  /** the complaint group this idea came from */
+  clusterId?: string;
   title: string;
   target: string;
   problem: string;

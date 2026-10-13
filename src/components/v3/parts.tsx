@@ -16,6 +16,30 @@ export function cx(...parts: (string | false | null | undefined)[]): string {
 /** Where focus goes when the element that opened a dialog has left the page. */
 export const FOCUS_FALLBACK_ID = "lr3-main-heading";
 
+/**
+ * "Skip to content": the first thing Tab reaches on a page, invisible until then. It goes to the
+ * page's main element: `#main` when the page gives it that id (the browser handles it), otherwise
+ * the first <main>.
+ */
+export function SkipLink() {
+  return (
+    <a
+      href="#main"
+      onClick={(e) => {
+        if (document.getElementById("main")) return;
+        const main = document.querySelector<HTMLElement>("main");
+        if (!main) return;
+        e.preventDefault();
+        main.tabIndex = -1;
+        main.focus();
+      }}
+      className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-xl focus:bg-indigo-500 focus:px-4 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-200"
+    >
+      Skip to content
+    </a>
+  );
+}
+
 const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
 /**
@@ -492,8 +516,12 @@ export function SourcesPopover({
 }
 
 /** Prose whose [E1,E2] citations become numbered footnote links into the "Web pages we read" list. */
-export function CitedText({ text, footnotes, anchor }: { text: string; footnotes: Record<string, number>; anchor: string }) {
-  const groups = citeGroups(text ?? "");
+const GAP_MARK_RE = /\s*\[(?:G\d+)(?:\s*,\s*G\d+)*\]/g;
+
+export function CitedText({ text: raw, footnotes, anchor }: { text: string; footnotes: Record<string, number>; anchor: string }) {
+  // [G1]-style markers are ids of what's-missing checks written into prose; they mean nothing to a reader
+  const text = (raw ?? "").replace(GAP_MARK_RE, "");
+  const groups = citeGroups(text);
   if (!groups.length) return <>{text}</>;
   const out: ReactNode[] = [];
   let at = 0;

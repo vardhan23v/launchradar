@@ -54,10 +54,10 @@
     { "id": "E22", "blockType": "product", "title": "Grammarly Premium", "url": "https://www.grammarly.com", "domain": "grammarly.com", "snippet": "₹549 / month · 4.6 rating · 34k reviews", "position": 1, "searchCallId": "sc_demo_7" },
     { "id": "E23", "blockType": "product", "title": "Turnitin Originality (university)", "url": "https://www.turnitin.com", "domain": "turnitin.com", "snippet": "Bundled campus licence · paid per student seat.", "position": 2, "searchCallId": "sc_demo_7" },
     { "id": "E24", "blockType": "product", "title": "QuillBot Premium", "url": "https://quillbot.com", "domain": "quillbot.com", "snippet": "₹1199 / year · 4.4 rating · 12k reviews", "position": 3, "searchCallId": "sc_demo_7" },
-    { "id": "E25", "blockType": "trend_point", "title": "Interest 2025-09: 38", "url": "", "domain": "trends", "snippet": "Interest 2025-09: 38", "position": 1, "meta": { "value": 38 }, "searchCallId": "sc_demo_8" },
-    { "id": "E26", "blockType": "trend_point", "title": "Interest 2025-12: 52", "url": "", "domain": "trends", "snippet": "Interest 2025-12: 52", "position": 2, "meta": { "value": 52 }, "searchCallId": "sc_demo_8" },
-    { "id": "E27", "blockType": "trend_point", "title": "Interest 2026-03: 71", "url": "", "domain": "trends", "snippet": "Interest 2026-03: 71", "position": 3, "meta": { "value": 71 }, "searchCallId": "sc_demo_8" },
-    { "id": "E28", "blockType": "trend_point", "title": "Interest 2026-06: 84", "url": "", "domain": "trends", "snippet": "Interest 2026-06: 84", "position": 4, "meta": { "value": 84 }, "searchCallId": "sc_demo_8" },
+    {"id": "E25", "blockType": "trend_point", "title": "Search interest 2026-01", "url": "", "domain": "trends.google.com", "snippet": "2026-01 — ai answer checker syllabus: 38, ai study app india hindi: 40", "position": 1, "date": "2026-01-01T00:00:00+00:00", "meta": {"values": {"ai answer checker syllabus": 38, "ai study app india hindi": 40}}, "searchCallId": "sc_demo_8"},
+    {"id": "E26", "blockType": "trend_point", "title": "Search interest 2026-04", "url": "", "domain": "trends.google.com", "snippet": "2026-04 — ai answer checker syllabus: 52, ai study app india hindi: 44", "position": 2, "date": "2026-04-01T00:00:00+00:00", "meta": {"values": {"ai answer checker syllabus": 52, "ai study app india hindi": 44}}, "searchCallId": "sc_demo_8"},
+    {"id": "E27", "blockType": "trend_point", "title": "Search interest 2026-07", "url": "", "domain": "trends.google.com", "snippet": "2026-07 — ai answer checker syllabus: 71, ai study app india hindi: 51", "position": 3, "date": "2026-07-01T00:00:00+00:00", "meta": {"values": {"ai answer checker syllabus": 71, "ai study app india hindi": 51}}, "searchCallId": "sc_demo_8"},
+    {"id": "E28", "blockType": "trend_point", "title": "Search interest 2026-10", "url": "", "domain": "trends.google.com", "snippet": "2026-10 — ai answer checker syllabus: 84, ai study app india hindi: 57", "position": 4, "date": "2026-10-01T00:00:00+00:00", "meta": {"values": {"ai answer checker syllabus": 84, "ai study app india hindi": 57}}, "searchCallId": "sc_demo_8"},
     { "id": "E29", "blockType": "rising_query", "title": "ai tutor for board exams", "url": "", "domain": "trends", "snippet": "Rising: ai tutor for board exams", "position": 5, "searchCallId": "sc_demo_8" }
   ],
   "signals": [
@@ -103,16 +103,16 @@
       "target": "Indian college and school students who study with AI",
       "problem": "Students draft answers with AI but have no way to verify the content against their real syllabus [E9,E9b]. Faculty recommend manual cross-checking because generic tools don't validate claims against a syllabus [E9].",
       "existingSolutions": "Grammarly and Turnitin correct style and similarity, not accuracy against a syllabus [E22,E23]. Students fall back to hand-checking every answer [E9].",
-      "gap": "No tool checks an AI-drafted answer against the student's own syllabus and flags unverified claims. We checked, and nobody solves this yet [G1].",
+      "gap": "No tool checks an AI-drafted answer against the student's own syllabus and flags unverified claims. We checked, and nobody solves this yet.",
       "pitch": "Upload your syllabus, paste your AI-drafted answer, and get a claim-by-claim verification in minutes.",
-      "mvpScope": ["Bullet 1: syllabus upload and claim extraction", "Bullet 2: claim-by-syllabus match scoring and flags", "Bullet 3: annotated answer PDF output"],
+      "mvpScope": ["Upload a syllabus and pull out the claims from an answer", "Match each claim to the syllabus and flag the ones that do not fit", "Hand back the answer as a PDF with the flags marked"],
       "firstValidationStep": "Run 20 past exam answers through the checker with 5 college students this week.",
       "score": 61, "confidence": "High",
       "subScores": { "pain": 8, "momentum": 20, "commercial": 8.5, "whitespace": 20, "weakRivals": 4.5 },
       "skeptic": [
-        { "objection": "Syllabus data is fragmented across boards and editions, so a general checker will drift toward 'verified' noise.", "basis": "E9 documents that checking is already manual; generic accuracy tools demonstrably miss context (E22).", "evidenceIds": ["E9", "E22"], "wouldChangeMind": "Search: 'AI answer checker works on CBSE sample papers results'" },
-        { "objection": "Students may hesitate to trust an AI that judges another AI; the verifier itself needs human review.", "basis": "Faculty still mandate manual checks (E9) and universities treat AI-assisted work as an integrity issue (E7).", "evidenceIds": ["E7", "E9"], "wouldChangeMind": "Interview 20 students who used a syllabus-checker for one week." },
-        { "objection": "Detection pressure is rising; a tool that flags unverified claims could be read as circumvention software.", "basis": "UGC is drafting disclosure guidelines (E14) and plagiarism detection is being debated (E16).", "evidenceIds": ["E14", "E16"], "wouldChangeMind": "Search: 'university policy ai answer checking tool allowed'" }
+        { "objection": "Syllabus data is fragmented across boards and editions, so a general checker will drift toward 'verified' noise.", "basis": "Checking is still done by hand [E9], and general accuracy tools miss the context [E22].", "evidenceIds": ["E9", "E22"], "wouldChangeMind": "A web search for 'AI answer checker CBSE sample papers' that finds a tool which already works." },
+        { "objection": "Students may hesitate to trust an AI that judges another AI; the verifier itself needs human review.", "basis": "Teachers still insist on checking by hand [E9], and universities treat AI-assisted work as a cheating question [E7].", "evidenceIds": ["E7", "E9"], "wouldChangeMind": "Interview 20 students who used a syllabus-checker for one week." },
+        { "objection": "Detection pressure is rising; a tool that flags unverified claims could be read as circumvention software.", "basis": "The UGC is drafting rules about disclosing AI use [E14], and plagiarism detection is being debated [E16].", "evidenceIds": ["E14", "E16"], "wouldChangeMind": "A university policy that allows AI answer-checking tools, found by searching for it." }
       ]
     },
     {
@@ -121,16 +121,16 @@
       "target": "Hindi/Tamil/Telugu-medium students with photo-heavy notes",
       "problem": "Study apps fail on regional-language videos and on photos of handwritten or xerox textbook pages [E20,E21]. They fall back to manual notes because OCR misses Hindi textbooks [E10b].",
       "existingSolutions": "Doubtnut covers Indian languages but crashes on regional video and photo input [E20,E21]. Mindgrasp handles lectures yet its OCR misses Hindi and xerox scans [E10b].",
-      "gap": "No app reliably converts Indian-language textbook input to study notes. We checked: this is only partly solved, so there is room for something new [G2].",
+      "gap": "No app reliably converts Indian-language textbook input to study notes. We checked: this is only partly solved, so there is room for something new.",
       "pitch": "An AI study companion that reads Indian-language textbooks from a photo and produces notes in the student's own language.",
-      "mvpScope": ["Bullet 1: photo-to-notes pipeline for Hindi textbooks", "Bullet 2: video doubt-solving without crashes (regional languages)", "Bullet 3: free tier that stays useful past week one"],
+      "mvpScope": ["Turn a photo of a Hindi textbook page into study notes", "Video doubt-solving in regional languages that does not crash", "A free tier that stays useful after the first week"],
       "firstValidationStep": "Run a 1,000-photo Hindi OCR accuracy benchmark against Doubtnut this week.",
       "score": 48, "confidence": "High",
       "subScores": { "pain": 7.5, "momentum": 20, "commercial": 8.5, "whitespace": 7.5, "weakRivals": 4.5 },
       "skeptic": [
-        { "objection": "OCR on Indian-language xerox is genuinely hard; incumbents already ship partial support and burn engineering on it.", "basis": "Both Doubtnut and Mindgrasp show partial-but-broken input handling (E10b, E20, E21).", "evidenceIds": ["E10b", "E20", "E21"], "wouldChangeMind": "A 1,000-photo Hindi OCR benchmark where this product beats Doubtnut." },
-        { "objection": "Regional-language ARPU is low, and monetisation via freemium is unproven for this segment.", "basis": "EdTech shifted to freemium after funding cooled (E16b) and free tiers avoid mid-exam paywalls (E18).", "evidenceIds": ["E16b", "E18", "E24"], "wouldChangeMind": "Pre-order intent test across three states with 500 students." },
-        { "objection": "Vernacular AI tutor startups just raised record funding; the first-mover window is closing quickly.", "basis": "Record Q1 seed rounds reported for vernacular AI tutors (E15).", "evidenceIds": ["E15"], "wouldChangeMind": "Competitor scan for vernacular OCR note apps published in the last 90 days." }
+        { "objection": "OCR on Indian-language xerox is genuinely hard; incumbents already ship partial support and burn engineering on it.", "basis": "Both Doubtnut and Mindgrasp handle this input, but badly [E10b,E20,E21].", "evidenceIds": ["E10b", "E20", "E21"], "wouldChangeMind": "A 1,000-photo Hindi OCR benchmark where this product beats Doubtnut." },
+        { "objection": "Regional-language ARPU is low, and monetisation via freemium is unproven for this segment.", "basis": "EdTech moved to free-with-upgrades after funding cooled [E16b], and free tiers avoid mid-exam paywalls [E18].", "evidenceIds": ["E16b", "E18", "E24"], "wouldChangeMind": "Pre-order intent test across three states with 500 students." },
+        { "objection": "Vernacular AI tutor startups just raised record funding; the first-mover window is closing quickly.", "basis": "Record early funding rounds were reported for regional-language AI tutors [E15].", "evidenceIds": ["E15"], "wouldChangeMind": "Competitor scan for vernacular OCR note apps published in the last 90 days." }
       ]
     }
   ],

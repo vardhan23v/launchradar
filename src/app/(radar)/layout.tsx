@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+
+import { SkipLink } from "@/components/v3/parts";
 import "./radar.css";
 
 /**
@@ -17,5 +19,10 @@ export const metadata: Metadata = {
 };
 
 export default function RadarLayout({ children }: { children: React.ReactNode }) {
-  return <div className={`${geist.variable} lr3-root`}>{children}</div>;
+  return (
+    <div className={`${geist.variable} lr3-root`}>
+      <SkipLink />
+      {children}
+    </div>
+  );
 }

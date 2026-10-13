@@ -1,6 +1,7 @@
-/** Markdown report rendered server-side from a run view, in the words the site uses. */
+/** The Markdown report and the link-preview summary, rendered server-side in the words the site uses. */
 import { isRegion, regionName } from "./config";
-import type { RunView } from "./types";
+import type { RunCounts } from "./store";
+import type { Run, RunMeta, RunView } from "./types";
 import { isRecord } from "./utils";
 
 const LISTS = ["searchCalls", "evidence", "signals", "clusters", "competitors", "gaps", "opportunities"] as const;
@@ -46,6 +47,28 @@ const SURE_WORDS: Record<string, string> = { High: "very sure", Medium: "fairly 
 const CATEGORY_WORDS: Record<string, string> = { direct: "same kind of product", adjacent: "similar product", "generic-substitute": "workaround" };
 const CALL_WORDS: Record<string, string> = { failed: "didn't work", skipped: "skipped" };
 const word = (table: Record<string, string>, v: unknown): string => (Object.prototype.hasOwnProperty.call(table, s(v)) ? table[s(v)] : s(v));
+
+const count = (n: number, noun: string) => `${n} ${noun}${n === 1 ? "" : "s"}`;
+
+/**
+ * What a link preview shows for a run: its counts and one sentence. A recorded example has every
+ * result from the start, so it reads as finished even while its trace is still being replayed.
+ */
+export function runMeta(run: Run, counts: RunCounts): RunMeta {
+  let summary: string;
+  if (run.status === "failed") summary = "Stopped before it finished.";
+  else if (run.status !== "complete" && !run.demo) summary = "Still searching.";
+  else if (counts.opportunities === 0) summary = "Done, but no idea was found.";
+  else {
+    const proof = run.outcome === "limited" ? ", with less proof than usual" : "";
+    summary = `${count(counts.opportunities, "idea")} from ${count(run.searchCalls, "lookup")} across ${count(counts.evidence, "web page")}${proof}.`;
+  }
+  return {
+    id: run.id, question: run.question, region: run.region, status: run.status, outcome: run.outcome, demo: run.demo,
+    createdAt: run.createdAt, finishedAt: run.finishedAt, ideas: counts.opportunities, complaints: counts.clusters,
+    products: counts.competitors, lookups: run.searchCalls, failedSearches: run.failedSearches, summary,
+  };
+}
 
 export function exportMarkdown(view: RunView): string {
   const run = view.run;

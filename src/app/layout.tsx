@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -26,6 +26,19 @@ export const metadata: Metadata = {
     title: "LaunchRadar",
     description: DESCRIPTION,
   },
+  // installable: the manifest (public/manifest.webmanifest) and the home-screen icons
+  manifest: "/manifest.webmanifest",
+  appleWebApp: { capable: true, title: "LaunchRadar", statusBarStyle: "black" },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+};
+
+/** The browser chrome matches the page: dark, and the same near-black as the body. */
+export const viewport: Viewport = {
+  themeColor: "#09090b",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({

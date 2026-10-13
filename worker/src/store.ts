@@ -4,7 +4,7 @@
  * E1, E2, …; event indexes) are assigned by the database, not by the caller.
  */
 import { hourlyRateGuard, monthlySearchBudget, runSearchBudget, runsPerHour, type Settings } from "./config";
-import type { Cluster, Competitor, Evidence, Gap, Opportunity, Row, Run, RunView, SearchCall, Signal, StepEvent } from "./types";
+import type { Cluster, Competitor, Evidence, Gap, Opportunity, Row, Run, RunListItem, RunView, SearchCall, Signal, StepEvent } from "./types";
 import { nowMs } from "./utils";
 
 const SCHEMA = [
@@ -69,10 +69,19 @@ export function ensureSchema(db: D1Database): Promise<void> {
 }
 
 interface RunRow { data: string }
+interface RunListRow extends RunRow { ideas: number }
 interface SeqRow { seq: number; data: string; search_call_id?: string }
 interface EventRow { idx: number; data: string }
 interface CallRow { data: string; rows: string | null }
 interface CountRow { n: number }
+
+/** Counts behind a run, for the link-preview endpoint. */
+export interface RunCounts {
+  opportunities: number;
+  clusters: number;
+  competitors: number;
+  evidence: number;
+}
 
 function parse<T>(text: string): T {
   return JSON.parse(text) as T;
@@ -158,20 +167,52 @@ export class Store {
     if (!res.meta.changes) throw new Error(`run not found: ${runId}`);
   }
 
-  /** searchesUsed + 1 in one statement: parallel searches cannot lose an increment. */
-  async chargeSearch(runId: string): Promise<void> {
-    await this.db.prepare("UPDATE runs SET data = json_set(data, '$.searchesUsed', json_extract(data, '$.searchesUsed') + 1) WHERE id = ?")
-      .bind(runId).run();
-  }
-
   async getRun(runId: string): Promise<Run | null> {
     const row = await this.db.prepare("SELECT data FROM runs WHERE id = ?").bind(runId).first<RunRow>();
     return row ? runOf(row.data) : null;
   }
 
-  async listRuns(limit = LIST_LIMIT): Promise<Run[]> {
-    const { results } = await this.db.prepare("SELECT data FROM runs ORDER BY created_at DESC, id DESC LIMIT ?").bind(limit).all<RunRow>();
-    return results.map((r) => runOf(r.data));
+  /** The newest runs, each with its idea count: one grouped query for the whole list, never one per run. */
+  async listRuns(limit = LIST_LIMIT): Promise<RunListItem[]> {
+    const { results } = await this.db.prepare(
+      `SELECT r.data AS data, COUNT(e.run_id) AS ideas
+       FROM (SELECT id, created_at, data FROM runs ORDER BY created_at DESC, id DESC LIMIT ?) AS r
+       LEFT JOIN entities AS e ON e.run_id = r.id AND e.kind = 'opportunities'
+       GROUP BY r.id ORDER BY r.created_at DESC, r.id DESC`,
+    ).bind(limit).all<RunListRow>();
+    return results.map((r) => ({ ...runOf(r.data), ideas: r.ideas }));
+  }
+
+  /** Live runs in progress right now: running, and heard from within the watchdog's window (the example is not counted). */
+  async liveRunsInProgress(now = nowMs()): Promise<number> {
+    const row = await this.db.prepare("SELECT COUNT(*) AS n FROM runs WHERE status = 'running' AND demo = 0 AND last_progress_at >= ?")
+      .bind(now - STALE_RUN_MS).first<CountRow>();
+    return row?.n ?? 0;
+  }
+
+  /**
+   * The numbers behind a link preview, in one statement: ideas, complaint groups, existing products
+   * and web pages read. Only counts leave the database; the evidence rows are never loaded.
+   */
+  async counts(runId: string): Promise<RunCounts> {
+    const { results } = await this.db.prepare(
+      `SELECT kind, COUNT(*) AS n FROM entities WHERE run_id = ? AND kind IN ('opportunities', 'clusters', 'competitors') GROUP BY kind
+       UNION ALL SELECT 'evidence' AS kind, COUNT(*) AS n FROM evidence WHERE run_id = ?`,
+    ).bind(runId, runId).all<{ kind: string; n: number }>();
+    const out: RunCounts = { opportunities: 0, clusters: 0, competitors: 0, evidence: 0 };
+    for (const r of results) if (Object.prototype.hasOwnProperty.call(out, r.kind)) out[r.kind as keyof RunCounts] = r.n;
+    return out;
+  }
+
+  /** Closes a live run that nothing will finish: failed, with the one sentence the site shows for it. True when this call closed it. */
+  async closeInterrupted(run: Run, now = nowMs()): Promise<boolean> {
+    if (!(await this.finishIfRunning(run.id, { status: "failed", finishedAt: now, error: INTERRUPTED }))) return false;
+    await this.appendEvents(run.id, [
+      { type: "stage", stage: "error", message: INTERRUPTED, level: "error" },
+      { type: "status", status: "failed" },
+      { type: "done", runId: run.id, searchesUsed: run.searchesUsed },
+    ]);
+    return true;
   }
 
   /**
@@ -195,12 +236,7 @@ export class Store {
         ]);
         continue;
       }
-      if (!(await this.finishIfRunning(run.id, { status: "failed", finishedAt: now, error: INTERRUPTED }))) continue;
-      await this.appendEvents(run.id, [
-        { type: "stage", stage: "error", message: INTERRUPTED, level: "error" },
-        { type: "status", status: "failed" },
-        { type: "done", runId: run.id, searchesUsed: run.searchesUsed },
-      ]);
+      await this.closeInterrupted(run, now);
     }
     return results.length;
   }
@@ -210,7 +246,9 @@ export class Store {
   /**
    * `rows` is the cached normalised result; it never travels to the browser. The run's own
    * `searchCalls` / `failedSearches` counters move in the same batch, so the summary a viewer reads
-   * mid-run agrees with the log.
+   * mid-run agrees with the log, and so does `searchesUsed` for a billed call: the charge and the
+   * record are one transaction, so a crash can never leave a run charged for a lookup it has no
+   * record of, or holding a billed record it was not charged for.
    */
   async addSearchCall(call: SearchCall, rows: Row[] | null): Promise<void> {
     const { __rows: _ignored, ...params } = call.params as Record<string, unknown>;
@@ -225,8 +263,9 @@ export class Store {
       this.db.prepare(
         `UPDATE runs SET data = json_set(data,
            '$.searchCalls', COALESCE(json_extract(data, '$.searchCalls'), 0) + 1,
-           '$.failedSearches', COALESCE(json_extract(data, '$.failedSearches'), 0) + ?) WHERE id = ?`,
-      ).bind(call.status === "failed" ? 1 : 0, call.runId),
+           '$.failedSearches', COALESCE(json_extract(data, '$.failedSearches'), 0) + ?,
+           '$.searchesUsed', COALESCE(json_extract(data, '$.searchesUsed'), 0) + ?) WHERE id = ?`,
+      ).bind(call.status === "failed" ? 1 : 0, call.billed ? 1 : 0, call.runId),
     ]);
   }
 

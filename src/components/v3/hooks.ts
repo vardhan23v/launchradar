@@ -3,9 +3,9 @@
 /** Server status and run starting, shared by the dashboard and the run page. */
 
 import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
-import type { Run, StepEvent } from "@/lib/types";
+import type { Run, RunStatus, StepEvent } from "@/lib/types";
 import type { PendingRun } from "@/lib/history";
 import { parseStepEvent } from "@/lib/v3/run";
 
@@ -120,6 +120,132 @@ export function useStartRun() {
   );
 
   return { start, busy, error, clearError: useCallback(() => setError(null), []) };
+}
+
+/**
+ * The tab's title follows the search: "Searching… · question" while it runs, then "Done · question"
+ * or "Stopped · question". The title from before comes back when the page goes away.
+ */
+export function useRunTitle(status: RunStatus | null, question: string | null) {
+  const before = useRef<string | null>(null);
+  const ours = useRef<string | null>(null);
+  useEffect(() => {
+    if (before.current === null) before.current = document.title;
+    return () => {
+      // only undo a title this page set: the page we moved on to may have set its own already
+      if (before.current !== null && ours.current !== null && document.title === ours.current) document.title = before.current;
+    };
+  }, []);
+  useEffect(() => {
+    if (!status || !question) return;
+    const word = status === "complete" ? "Done" : status === "failed" ? "Stopped" : "Searching…";
+    const wanted = `${word} · ${question}`;
+    ours.current = wanted;
+    // The tab shows the first <title> in <head>. The page's own title (the link preview) is streamed
+    // in later and can land in <body>, so this writes a <head> title of its own and keeps it current.
+    const apply = () => {
+      let el = document.head.querySelector("title");
+      if (!el) {
+        el = document.createElement("title");
+        document.head.prepend(el);
+      }
+      if (el.textContent !== wanted) el.textContent = wanted;
+    };
+    apply();
+    const watcher = new MutationObserver(apply);
+    watcher.observe(document.head, { childList: true, subtree: true, characterData: true });
+    return () => watcher.disconnect();
+  }, [status, question]);
+}
+
+const notifyKey = (runId: string) => `lr:v3:notify:${runId}`;
+
+function rememberNotify(runId: string, on: boolean): void {
+  try {
+    if (on) window.sessionStorage.setItem(notifyKey(runId), "1");
+    else window.sessionStorage.removeItem(notifyKey(runId));
+  } catch {
+    /* storage blocked: the choice holds for this page only */
+  }
+}
+
+/** Asks for permission; older browsers answer through a callback instead of a promise, and a browser that throws has said no. */
+function askNotifyPermission(): Promise<NotificationPermission> {
+  return new Promise((resolve) => {
+    try {
+      const r: unknown = Notification.requestPermission((p) => resolve(p));
+      if (r && typeof (r as Promise<NotificationPermission>).then === "function") (r as Promise<NotificationPermission>).then(resolve, () => resolve("denied"));
+    } catch {
+      resolve("denied");
+    }
+  });
+}
+
+/**
+ * "Tell me when it's done": a browser notification when the search finishes while this tab is in
+ * the background. Permission is only ever asked for on a click, and the choice is kept per search
+ * for this tab (sessionStorage). `available` is false when the browser has no notifications or
+ * has refused them, so the button can stay hidden.
+ */
+export function useDoneNotice(runId: string, status: RunStatus | null, question: string | null) {
+  const [available, setAvailable] = useState(false);
+  const [wanted, setWanted] = useState(false);
+
+  // read after mount: the server render has no window, and permission may change between visits
+  useEffect(() => {
+    const t = window.setTimeout(() => {
+      try {
+        const has = typeof window !== "undefined" && "Notification" in window && typeof Notification !== "undefined";
+        setAvailable(has && Notification.permission !== "denied");
+        setWanted(has && Notification.permission === "granted" && window.sessionStorage.getItem(notifyKey(runId)) === "1");
+      } catch {
+        setAvailable(false);
+        setWanted(false);
+      }
+    }, 0);
+    return () => window.clearTimeout(t);
+  }, [runId]);
+
+  const toggle = useCallback(async () => {
+    if (wanted) {
+      rememberNotify(runId, false);
+      setWanted(false);
+      return;
+    }
+    const permission = await askNotifyPermission();
+    if (permission === "granted") {
+      rememberNotify(runId, true);
+      setWanted(true);
+    } else if (permission === "denied") {
+      setAvailable(false);
+    }
+  }, [runId, wanted]);
+
+  // one notification, when the search finishes during this visit and the reader is looking elsewhere
+  const previous = useRef<RunStatus | null>(status);
+  useEffect(() => {
+    const was = previous.current;
+    previous.current = status;
+    const finished = status === "complete" || status === "failed";
+    const wasRunning = was === "running" || was === "queued";
+    if (!finished || !wasRunning || !wanted || !question) return;
+    try {
+      if (!document.hidden || Notification.permission !== "granted") return;
+      const n = new Notification("LaunchRadar", { body: `${status === "complete" ? "Done" : "Stopped"}: ${question}`, tag: `lr-run-${runId}` });
+      n.onclick = () => {
+        try {
+          window.focus();
+          n.close();
+        } catch {
+          /* nothing to focus */
+        }
+      };
+    } catch {
+      /* the browser has the API but will not show one here */
+    }
+  }, [status, wanted, question, runId]);
+
+  return { available, wanted, toggle };
 }
 
 /**
